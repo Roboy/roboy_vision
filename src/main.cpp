@@ -11,16 +11,26 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <unistd.h>
+
+#include <string>
+
+#include "RoboyAdapter.h"
  
 using namespace std;
 using namespace cv;
- 
+
+RoboyAdapter * roboyAdapter;
+
+bool sendSteeringMessage(Rect* rect);
+
 int main(int argc, const char** argv)
 {
-    //create the cascade classifier object used for the face detection
+	roboyAdapter = new RoboyAdapter(3333, "127.0.0.1");
+
+	//create the cascade classifier object used for the face detection
     CascadeClassifier face_cascade;
     //use the haarcascade_frontalface_alt.xml library
-    face_cascade.load("haarcascade_frontalface_alt.xml");
+    face_cascade.load("../haarcascade_frontalface_alt.xml");
  
     //setup video capture device and link it to the first capture device
     VideoCapture captureDevice;
@@ -51,10 +61,8 @@ int main(int argc, const char** argv)
          
         Rect biggestRect;
         double biggest_area = 0;
-        Rect r;
-        for (int i = 0; i < faces.size(); i++)
+        for ( Rect r : faces)
         {
-            r = faces[i];
             if (r.size().area() > biggestRect.size().area())
             {
                 biggestRect = r;
@@ -65,29 +73,10 @@ int main(int argc, const char** argv)
         Point pt2(biggestRect.x, biggestRect.y);
  
         rectangle(captureFrame, pt1, pt2, cvScalar(0, 255, 0, 0), 1, 8, 0);
-        
-        
-        struct sockaddr_in serveraddr;
-        memset(&serveraddr, 0x00, sizeof(struct sockaddr_in));
-        
-        serveraddr.sin_family = AF_INET;
-        serveraddr.sin_port = htons(2222);
-        serveraddr.sin_addr.s_addr = inet_addr("127.0.0.1");
-        
-        int tcp_socket = 0;
-        
-        char data[100] = "TEST DATA";
-        
-        tcp_socket = socket(AF_INET, SOCK_STREAM, 0);
-        
-        connect(tcp_socket, (struct sockaddr *)&serveraddr, sizeof(serveraddr));
-        
-        write(tcp_socket, data, sizeof(data));
-        //printf("wrote message to network.\n");
-        
-   
-        
-/*        //draw a rectangle for all found faces in the vector array on the original image
+
+        sendSteeringMessage(&biggestRect);
+/*
+        //draw a rectangle for all found faces in the vector array on the original image
         for(int i = 0; i < faces.size(); i++)
         {
             Point pt1(faces[i].x + faces[i].width, faces[i].y + faces[i].height);
@@ -103,5 +92,11 @@ int main(int argc, const char** argv)
         waitKey(33);
     }
  
+    delete roboyAdapter;
+
     return 0;
+}
+
+bool sendSteeringMessage(Rect* rect){
+	return roboyAdapter->sendSteerHeadMessage(1, 2, 3);
 }
