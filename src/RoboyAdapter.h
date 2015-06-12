@@ -25,13 +25,12 @@ private:
 	int socketfd = 0;
 	struct sockaddr_in serverAddress;
 	int port = 0;
-	char buffer[256];
 
 public:
-	RoboyAdapter(int port = 22222, std::string inetAddress = "127.0.0.1");
+	RoboyAdapter(std::string inetAddress = "127.0.0.1", int port = 30000);
 	~RoboyAdapter();
 
-	bool sendSteerHeadMessage(int yaw, int tilt, int roll);
+	bool sendSteerHeadMessage(int roll, int pitch, int yaw) const;
 
 private:
 
