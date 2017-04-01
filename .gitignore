@@ -4,8 +4,9 @@ build
 .project
 .cproject
 
-# ignore own database for images
+# ignore databases for images
 own_db
+lfw
 test_imgs/fabian.jpg
 
 #ignore jupyter notebook checkpoints
