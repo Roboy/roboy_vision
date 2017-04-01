@@ -12,15 +12,3 @@ Repository to Roboy Vision Team
 ## Getting Started
 1. Download all required models using download_models.py in models directory.
 2. Experiment with jupyter notebooks in tutorials section for different parts of project: face detection, alignment & face recognition
-
-
-ros package can be built with catkin.
-
-Dependencies:
-- librealsense
-- pyrealsense
-- mxnet
-- opencv
-
-run face detection:
-python face_detection.py
