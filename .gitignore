@@ -1,6 +1,16 @@
+#std ignores
 build
 *~
 .project
 .cproject
+
+# ignore own database for images
 own_db
+test_imgs/fabian.jpg
+
+#ignore jupyter notebook checkpoints
 tutorials/.ipynb_checkpoints
+
+#ignore models
+models/*
+!models/download_models.py
