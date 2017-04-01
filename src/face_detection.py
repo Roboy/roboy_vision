@@ -1,8 +1,5 @@
-#Debugging
-import pdb
-import sys
+import sys 
 sys.path.append('..')
-#pdb.set_trace()
 
 # ROS imports
 import rospy
@@ -10,29 +7,58 @@ from std_msgs.msg import *
 from geometry_msgs.msg import *
 from vision.msg import *
 
-
-## Logging
-import logging
-logging.basicConfig(level = logging.INFO)
-
-#mxnet
-import mxnet as mx
-from models.mtcnn.mtcnn_detector import MtcnnDetector
-
 #basic imports
-import cv2
-import time
-import os
+import tensorflow as tf
 import numpy as np
+import cv2
+import os
+from models.mtcnn import detect_face
+from scipy import misc
+import time
 
 ## Realsense libraries
 import pyrealsense as pyrs
 from PIL import Image
 
+def detect_face_and_landmarks_mtcnn(img):
+    img = img[:,:,0:3]
+    bbs, lms = detect_face.detect_face(img, minsize, pnet, rnet, onet, threshold, factor)
+    boxes = []
+    landmarks = []
+    face_index = 0
+    for r in bbs:
+        r = r.astype(int)
+        points = []
+        for i in range(5):
+            points.append((lms[i][face_index] , lms[i+5][face_index]))
+        landmarks.append(points)
+        boxes.append((r[0] , r[1] , r[2] , r[3]))
+        #boxes.append(r[:4].astype(int).tolist())
+        face_index += 1
+    return boxes, landmarks
 
+EXPECT_SIZE = 160
+def align_face_mtcnn(img, bb, landmarks):
+    assert isinstance(bb, tuple)
+    cropped = img[bb[1]:bb[3],bb[0]:bb[2],:]
+    scaled = misc.imresize(cropped, (EXPECT_SIZE, EXPECT_SIZE), interp='bilinear')
+    return scaled	
+	
+def draw_rects(image, rects, resize_factor):
+    result = image.copy()
+    for left, top, right, bottom in rects:
+        cv2.rectangle(result, (left, top), (right, bottom), (0, 255, 0), 2)
+    return result
+
+def draw_landmarks(image, points):
+    result = image.copy()
+    for point in points:
+        cv2.circle(result, point, 3, (0, 255, 0), -1 )
+    return result	
+	
 if __name__ == '__main__':
 
-    	## start pyrealsense service
+    ## start pyrealsense service
 	pyrs.start()
 
 	#Image Size (define size of image)
@@ -47,12 +73,14 @@ if __name__ == '__main__':
 	
 	#ROS INIT
 	vision_object_pub = rospy.Publisher('vision_objects', VisionObject, queue_size=10)
-	keypoints_pub = rospy.Publisher('object_keypoints', ObjectKeypoints, queue_size=10)
-	pose_pub = rospy.Publisher('object_pose', ObjectPose, queue_size=10)
-        rospy.init_node('face_detection', anonymous=True)
+    rospy.init_node('face_detection', anonymous=True)
 
 	# Face Detection NN
-	detector = MtcnnDetector(model_folder='model', ctx=mx.cpu(0), num_worker = 4 , accurate_landmark = False)
+	sess = tf.Session(config=tf.ConfigProto(log_device_placement=False))
+    pnet, rnet, onet = detect_face.create_mtcnn(sess, None)
+	minsize = 20 # minimum size of face
+	threshold = [ 0.6, 0.7, 0.7 ]  # three steps's threshold
+	factor = 0.709 # scale factor
 
 
 	while True:  
@@ -70,21 +98,20 @@ if __name__ == '__main__':
 	    d_img = cv2.applyColorMap(d.astype(np.uint8), cv2.COLORMAP_RAINBOW)
 
 	    # Detect and align faces using MTCNN
-	    results = detector.detect_face(img)
-	    if results is None:
-		#only print img if no face found
-	  	cv2.imshow("detection result", c)
-		cv2.waitKey(10)
+	    total_boxes, points = detect_face_and_landmarks_mtcnn(img)
+	    
+		if total_boxes is None:
+			#only print img if no face found
+			cv2.imshow("detection result", c)
+			cv2.waitKey(10)
 	        continue
-	    total_boxes = results[0]
-	    points = results[1]
-	
-
+			
  	    #Show detection result
 	    draw = c.copy()
+		draw = draw_rects(image, total_boxes)
 	    #loop detected faces (boxes)
-	    for b in total_boxes:
-		cv2.rectangle(draw, (int(b[0]/resize_factor), int(b[1]/resize_factor)), (int(b[2]/resize_factor), int(b[3]/resize_factor)), (255, 255, 255))
+	    #for b in total_boxes:
+		#cv2.rectangle(draw, (int(b[0]/resize_factor), int(b[1]/resize_factor)), (int(b[2]/resize_factor), int(b[3]/resize_factor)), (255, 255, 255))
 	    #Loop face alignment (points)
 	    for p in points:
 		for i in range(5):
