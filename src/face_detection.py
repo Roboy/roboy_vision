@@ -1,5 +1,7 @@
 #Debugging
 import pdb
+import sys
+sys.path.append('..')
 #pdb.set_trace()
 
 # ROS imports
@@ -15,7 +17,7 @@ logging.basicConfig(level = logging.INFO)
 
 #mxnet
 import mxnet as mx
-from mtcnn_detector import MtcnnDetector
+from models.mtcnn.mtcnn_detector import MtcnnDetector
 
 #basic imports
 import cv2

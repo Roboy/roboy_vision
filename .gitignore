@@ -2,3 +2,5 @@ build
 *~
 .project
 .cproject
+own_db
+tutorials/.ipynb_checkpoints
