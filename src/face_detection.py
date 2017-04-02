@@ -94,9 +94,10 @@ def recognize_face(face_img, session, classifier):
 	feed_dict = {image_batch: np.expand_dims(face_img , 0), phase_train_placeholder: False }
 	rep = session.run(embeddings, feed_dict=feed_dict)[0]
 	out = clf.predict(rep.reshape(1,-1))
+	print(out)
 	names = np.load('../models/lfw_embeddings/facenet_names.npy')
 	time.sleep(1)
-	face_name = names[out]
+	face_name = names[out[0]]
 
 	# write back result
 	f = open(COMM_PATH + 'out', 'w')
