@@ -1,12 +1,14 @@
 import sys 
-sys.path.append('..')
+import os
 
+sys.path = ['/home/roboy/anaconda3/envs/roboy/lib/python3.6/site-packages'] + sys.path
+sys.path.append('/home/roboy/workspace/Vision/')
+#sys.path.append('/home/roboy/anaconda3/envs/roboy/lib/python3.6/site-packages')
 
 #basic imports
 import tensorflow as tf
 import numpy as np
 import cv2
-import os
 from models.mtcnn import detect_face
 from scipy import misc
 import time
@@ -102,6 +104,8 @@ if __name__ == '__main__':
 		draw = c.copy()
 		draw = draw_rects(draw, total_boxes, resize_factor)
 		draw = draw_landmarks(draw, points, resize_factor)
+		#for face_points in points:
+		#	print(d[face_points[2][0]/resize_factor, face_points[2][0]/resize_factor])
 		cv2.imshow("detection result", draw)	
 
 		#publish ROS Topics
