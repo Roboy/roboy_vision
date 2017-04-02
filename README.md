@@ -25,3 +25,23 @@ We recommend using Anaconda.
 ## Getting Started
 1. Download all required models using download_models.py in models directory.
 2. Experiment with jupyter notebooks in tutorials section for different parts of project: face detection, alignment & face recognition
+
+## Running with ROS
+
+Currently there is no ROS Integration for Python 3 which is why we are using File I/O for communication.
+This is all handled by the face detection. The Folder PYTHON3_COMM will be used for all file exchanges between Python3 and ROS. 
+
+To build all service messages run
+catkin_make
+in the root folder of the project. Then do
+source 
+
+To make the ROS interface available one has to start following two nodes:
+
+rosrun vision_service face_detector.py 
+rosrun vision_service recognizer.py
+
+To run the actual Face detector run
+source /home/roboy/anaconda3/bin/activate roboy
+./src/face_detection.py
+

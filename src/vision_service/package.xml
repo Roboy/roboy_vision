@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>vision</name>
+  <name>vision_service</name>
   <version>0.0.1</version>
   <description>The vision package</description>
 

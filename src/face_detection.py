@@ -1,21 +1,30 @@
-import sys 
-import os
 
+#Dirty Hacks to run on Roboy Nuke
+# Before running also activate the conda environment: source /home/roboy/anaconda3/bin/activate roboy
+import sys 
 sys.path = ['/home/roboy/anaconda3/envs/roboy/lib/python3.6/site-packages'] + sys.path
 sys.path.append('/home/roboy/workspace/Vision/')
-#sys.path.append('/home/roboy/anaconda3/envs/roboy/lib/python3.6/site-packages')
 
 #basic imports
-import tensorflow as tf
 import numpy as np
 import cv2
-from models.mtcnn import detect_face
+import os
 from scipy import misc
 import time
+
+#Import for NNs
+import tensorflow as tf
+from models.mtcnn import detect_face
 
 ## Realsense libraries
 import pyrealsense as pyrs
 
+# Define of standard face size for alignment
+EXPECT_SIZE = 160
+#Define of path for Communication to ROS using I/O on file system
+COMM_PATH = '/home/roboy/vision_ws/PYTHON3_COMM/'
+
+# Detect faces and landmarks using MTCNN Network
 def detect_face_and_landmarks_mtcnn(img):
     img = img[:,:,0:3]
     bbs, lms = detect_face.detect_face(img, minsize, pnet, rnet, onet, threshold, factor)
@@ -33,13 +42,14 @@ def detect_face_and_landmarks_mtcnn(img):
         face_index += 1
     return boxes, landmarks
 
-EXPECT_SIZE = 160
+# Align Found Faces found by MTCNN Network (= crop face region)
 def align_face_mtcnn(img, bb, landmarks):
     assert isinstance(bb, tuple)
     cropped = img[bb[1]:bb[3],bb[0]:bb[2],:]
     scaled = misc.imresize(cropped, (EXPECT_SIZE, EXPECT_SIZE), interp='bilinear')
     return scaled	
-	
+
+# Function to draw found bounding boxes
 def draw_rects(image, rects, resize_factor):
     result = image.copy()
     rects = (np.array(rects)/resize_factor).astype(int)
@@ -47,6 +57,7 @@ def draw_rects(image, rects, resize_factor):
         cv2.rectangle(result, (left, top), (right, bottom), (0, 255, 0), 2)
     return result
 
+#Function to draw found landmarks
 def draw_landmarks(image, points, resize_factor):
     result = image.copy()
     for face_points in points:
@@ -58,6 +69,20 @@ def draw_landmarks(image, points, resize_factor):
     		cv2.circle(result, point, 3, (0, 255, 0), -1 )
     return result	
 	
+# Function to check if a face appears in certain size
+FACE_AREA = 1500 # Face area for approx. 1.5m distance
+def face_detected(bounding_boxes):
+	face_area = 0
+	for left, top, right, bottom in bounding_boxes:
+		tmp_face_area = (right-left) * (bottom-top)
+		if(tmp_face_area > face_area):
+			face_area = tmp_face_area
+	if(face_area > FACE_AREA):
+		return True
+	else:
+		return False
+
+# MAIN
 if __name__ == '__main__':
 
     ## start pyrealsense service
@@ -72,7 +97,6 @@ if __name__ == '__main__':
 
 	#init realsense device
 	dev = pyrs.Device(device_id = 0, streams = [pyrs.ColourStream(width = x_pixel, height = y_pixel, fps = 30), pyrs.DepthStream()])
-	
 
 	# Face Detection NN
 	sess = tf.Session(config=tf.ConfigProto(log_device_placement=False))
@@ -85,47 +109,40 @@ if __name__ == '__main__':
 	while True:  
 	    # Get Frame from Realsense
 		dev.wait_for_frame()
-		c = dev.colour	    
-		c = cv2.cvtColor(c, cv2.COLOR_RGB2BGR)
+		# color image	    
+		c = cv2.cvtColor(dev.colour, cv2.COLOR_RGB2BGR)
+		#depth image
 		d = dev.depth*  dev.depth_scale * 1000
-		#print(c.shape)
-    	#resize images
+
+    	#resize images for faster processing with resize_factor
 		img = cv2.resize(c, (int(resize_factor*x_pixel),int(resize_factor*y_pixel)))
+		
 		d_img = cv2.resize(d, (int(resize_factor*x_pixel),int(resize_factor*y_pixel)))
 		d_img = cv2.applyColorMap(d.astype(np.uint8), cv2.COLORMAP_RAINBOW)
+		
 		# Detect and align faces using MTCNN
 		total_boxes, points = detect_face_and_landmarks_mtcnn(img)
-		if total_boxes is None:
+		
 		#only print img if no face found
+		if total_boxes is None:
 			cv2.imshow("detection result", c)
 			cv2.waitKey(10)
 			continue
+
+		# Check if faces nearby and communicate to ROS using file I/O
+		if face_detected(total_boxes):
+			if not os.path.exists(COMM_PATH + 'face'):
+				os.mknod(COMM_PATH + 'face')
+		else:
+			if os.path.exists(COMM_PATH + 'face'):
+				os.remove(COMM_PATH + 'face')
+
 		#Show detection result
 		draw = c.copy()
 		draw = draw_rects(draw, total_boxes, resize_factor)
 		draw = draw_landmarks(draw, points, resize_factor)
-		#for face_points in points:
-		#	print(d[face_points[2][0]/resize_factor, face_points[2][0]/resize_factor])
+
 		cv2.imshow("detection result", draw)	
-
-		#publish ROS Topics
-		#object_id = 0
-		#Loop face alignment (points)
-		#for p in points:
-		#points in p: 1 left eye, 2 right eye, 3 nose, 4 left mouth point, 5 right mouth point
-
-		#TODO: get depth at point 3 for distance and recalculate position in metres
-		# position(x,y,z)
-			#position = Point(p[3],p[8],d[int(p[3]),int(p[8])])
-
-		#TODO calculate Orientation from reference points
-		#orientation = Quaternion()
-
-		#key_points = []
-		#for x in range(5):
-		#	key_points.append(Point(p[i],p[i+5],0))
-		#object_pose = Pose(position,orientation)
-		
 
 	    #WAIT
 		cv2.waitKey(10)
