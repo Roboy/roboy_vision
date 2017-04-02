@@ -3,7 +3,7 @@
 # Before running also activate the conda environment: source /home/roboy/anaconda3/bin/activate roboy
 import sys 
 sys.path = ['/home/roboy/anaconda3/envs/roboy/lib/python3.6/site-packages'] + sys.path
-sys.path.append('/home/roboy/workspace/Vision/')
+sys.path.append('/home/roboy/vision_workspace/Vision/')
 
 #basic imports
 import numpy as np
@@ -92,15 +92,12 @@ def recognize_face(face_img):
 	face_name = "TEST"
 
 	# write back result
-	f = open(COMM_PATH + 'face', 'w')
+	f = open(COMM_PATH + 'out', 'w')
 	f.write(face_name)
 	f.close()
 	
 	# delete running flag
 	os.remove(COMM_PATH + 'running')
-
-	# delete request flag
-	os.remove(COMM_PATH + 'request')
 
 	print('done!')
 	return
@@ -128,6 +125,8 @@ if __name__ == '__main__':
 	threshold = [ 0.6, 0.7, 0.7 ]  # three steps's threshold
 	factor = 0.709 # scale factor
 
+	# store how many following frames no Face was detected.
+	no_face_detect_counter = 0
 
 	while True:  
 	    # Get Frame from Realsense
@@ -148,6 +147,12 @@ if __name__ == '__main__':
 		
 		#only print img if no face found
 		if len(total_boxes) is 0:
+			# remove face nearby flag (File I/O)
+			no_face_detect_counter+=1
+			if no_face_detect_counter > 3:
+			    if os.path.exists(COMM_PATH + 'face'):
+				    os.remove(COMM_PATH + 'face')
+			# show image and continue
 			cv2.imshow("detection result", c)
 			cv2.waitKey(10)
 			continue
@@ -155,15 +160,22 @@ if __name__ == '__main__':
 		# Check if faces nearby and communicate to ROS using file I/O
 		if face_detected(total_boxes):
 			if not os.path.exists(COMM_PATH + 'face'):
+				no_face_detect_counter = 0
 				os.mknod(COMM_PATH + 'face')
 		else:
-			if os.path.exists(COMM_PATH + 'face'):
-				os.remove(COMM_PATH + 'face')
+			no_face_detect_counter+=1
+			if no_face_detect_counter > 3:
+				if os.path.exists(COMM_PATH + 'face'):
+					os.remove(COMM_PATH + 'face')
 
 		## Call Face Recognition if Service has been triggered
 		if os.path.exists(COMM_PATH + 'request'):
 			if not os.path.exists(COMM_PATH + 'running'):
+				# create running flag
 				os.mknod(COMM_PATH + 'running')
+				# delete request flag
+				os.remove(COMM_PATH + 'request')
+				# start recognition thread
 				start_new_thread(recognize_face,(total_boxes[0],))
 
 		

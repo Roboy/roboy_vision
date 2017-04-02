@@ -10,12 +10,12 @@ PATH = '/home/roboy/vision_workspace/Vision/PYTHON3_COMM/'
 def check_file(object_id):
     name = ''
     os.mknod(PATH + 'request')
-    while(os.path.exists(PATH + 'request')):
+    while(not os.path.exists(PATH + 'out')):
         sleep(0.1)
 	continue
-    if os.path.exists(PATH + 'face'):
-	file = open(PATH + 'face', 'r') 
-	name = file.read() 
+    file = open(PATH + 'out', 'r') 
+    name = file.read()
+    os.remove(PATH + 'out') 
     return name
 
 def recognize_face_server():
@@ -25,8 +25,8 @@ def recognize_face_server():
     rospy.spin()
 
 if __name__ == "__main__":
-    if os.path.exists(PATH + 'face'):
-	os.remove(PATH + 'face')
+    if os.path.exists(PATH + 'out'):
+	os.remove(PATH + 'out')
     if os.path.exists(PATH + 'request'):
 	os.remove(PATH + 'request')
     recognize_face_server()
