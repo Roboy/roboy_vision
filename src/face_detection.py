@@ -11,6 +11,8 @@ import cv2
 import os
 from scipy import misc
 import time
+import re
+import pickle
 
 #Import for NNs
 import tensorflow as tf
@@ -46,7 +48,7 @@ def detect_face_and_landmarks_mtcnn(img):
     return boxes, landmarks
 
 # Align Found Faces found by MTCNN Network (= crop face region)
-def align_face_mtcnn(img, bb, landmarks):
+def align_face_mtcnn(img, bb):
     assert isinstance(bb, tuple)
     cropped = img[bb[1]:bb[3],bb[0]:bb[2],:]
     scaled = misc.imresize(cropped, (EXPECT_SIZE, EXPECT_SIZE), interp='bilinear')
@@ -86,10 +88,15 @@ def face_detected(bounding_boxes):
 		return False
 
 # Function to recognize a face using facenet
-def recognize_face(face_img):
+def recognize_face(face_img, session, classifier):
 	#TODO: Implementation of Facenet + classification
+
+	feed_dict = {image_batch: np.expand_dims(face_img , 0), phase_train_placeholder: False }
+	rep = session.run(embeddings, feed_dict=feed_dict)[0]
+	out = clf.predict(rep.reshape(1,-1))
+	names = np.load('../models/lfw_embeddings/facenet_names.npy')
 	time.sleep(1)
-	face_name = "TEST"
+	face_name = names[out]
 
 	# write back result
 	f = open(COMM_PATH + 'out', 'w')
@@ -101,6 +108,33 @@ def recognize_face(face_img):
 
 	print('done!')
 	return
+
+def load_model(model_dir, model_meta, model_content):
+    s = tf.InteractiveSession()
+    model_dir_exp = os.path.expanduser(model_dir)
+    saver = tf.train.import_meta_graph(os.path.join(model_dir_exp, meta_file))
+    saver.restore(tf.get_default_session(), os.path.join(model_dir_exp, ckpt_file))
+    tf.get_default_graph().as_graph_def()
+    return s
+
+def get_model_filenames(model_dir):
+    files = os.listdir(model_dir)
+    meta_files = [s for s in files if s.endswith('.meta')]
+    if len(meta_files)==0:
+        raise ValueError('No meta file found in the model directory (%s)' % model_dir)
+    elif len(meta_files)>1:
+        raise ValueError('There should not be more than one meta file in the model directory (%s)' % model_dir)
+    meta_file = meta_files[0]
+    meta_files = [s for s in files if '.ckpt' in s]
+    max_step = -1
+    for f in files:
+        step_str = re.match(r'(^model-[\w\- ]+.ckpt-(\d+))', f)
+        if step_str is not None and len(step_str.groups())>=2:
+            step = int(step_str.groups()[1])
+            if step > max_step:
+                max_step = step
+                ckpt_file = step_str.groups()[0]
+    return meta_file, ckpt_file
 
 # MAIN
 if __name__ == '__main__':
@@ -125,6 +159,19 @@ if __name__ == '__main__':
 	threshold = [ 0.6, 0.7, 0.7 ]  # three steps's threshold
 	factor = 0.709 # scale factor
 
+
+	# Face Recognition Facenet NN
+	print('Loading Facenet...')
+	svm_model = "../models/SVM/svm_lfw.mod"
+	clf = pickle.load( open( svm_model, "rb" ) )
+	model_dir = '../models/facenet'
+	meta_file, ckpt_file = get_model_filenames(os.path.expanduser(model_dir))
+	session = load_model(model_dir, meta_file, ckpt_file)
+	graph = tf.get_default_graph()
+	image_batch = graph.get_tensor_by_name("input:0")
+	phase_train_placeholder = graph.get_tensor_by_name("phase_train:0")
+	embeddings = graph.get_tensor_by_name("embeddings:0")
+	print('done.')
 	# store how many following frames no Face was detected.
 	no_face_detect_counter = 0
 
@@ -176,7 +223,7 @@ if __name__ == '__main__':
 				# delete request flag
 				os.remove(COMM_PATH + 'request')
 				# start recognition thread
-				start_new_thread(recognize_face,(total_boxes[0],))
+				start_new_thread(recognize_face,(align_face_mtcnn(img,total_boxes[0]), session, clf,))
 
 		
 		#Show detection result
