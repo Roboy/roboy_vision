@@ -16,13 +16,16 @@ import time
 import tensorflow as tf
 from models.mtcnn import detect_face
 
+#Threads
+from thread import start_new_thread
+
 ## Realsense libraries
 import pyrealsense as pyrs
 
 # Define of standard face size for alignment
 EXPECT_SIZE = 160
 #Define of path for Communication to ROS using I/O on file system
-COMM_PATH = '/home/roboy/vision_ws/PYTHON3_COMM/'
+COMM_PATH = '/home/roboy/vision_workspace/Vision/PYTHON3_COMM/'
 
 # Detect faces and landmarks using MTCNN Network
 def detect_face_and_landmarks_mtcnn(img):
@@ -82,6 +85,26 @@ def face_detected(bounding_boxes):
 	else:
 		return False
 
+# Function to recognize a face using facenet
+def recognize_face(face_img):
+	#TODO: Implementation of Facenet + classification
+	time.sleep(1)
+	face_name = "TEST"
+
+	# write back result
+	f = open(COMM_PATH + 'face', 'w')
+	f.write(face_name)
+	f.close()
+	
+	# delete running flag
+	os.remove(COMM_PATH + 'running')
+
+	# delete request flag
+	os.remove(COMM_PATH + 'request')
+
+	print('done!')
+	return
+
 # MAIN
 if __name__ == '__main__':
 
@@ -111,7 +134,7 @@ if __name__ == '__main__':
 		dev.wait_for_frame()
 		# color image	    
 		c = cv2.cvtColor(dev.colour, cv2.COLOR_RGB2BGR)
-		#depth image
+		#depth images
 		d = dev.depth*  dev.depth_scale * 1000
 
     	#resize images for faster processing with resize_factor
@@ -124,7 +147,7 @@ if __name__ == '__main__':
 		total_boxes, points = detect_face_and_landmarks_mtcnn(img)
 		
 		#only print img if no face found
-		if total_boxes is None:
+		if len(total_boxes) is 0:
 			cv2.imshow("detection result", c)
 			cv2.waitKey(10)
 			continue
@@ -137,6 +160,13 @@ if __name__ == '__main__':
 			if os.path.exists(COMM_PATH + 'face'):
 				os.remove(COMM_PATH + 'face')
 
+		## Call Face Recognition if Service has been triggered
+		if os.path.exists(COMM_PATH + 'request'):
+			if not os.path.exists(COMM_PATH + 'running'):
+				os.mknod(COMM_PATH + 'running')
+				start_new_thread(recognize_face,(total_boxes[0],))
+
+		
 		#Show detection result
 		draw = c.copy()
 		draw = draw_rects(draw, total_boxes, resize_factor)

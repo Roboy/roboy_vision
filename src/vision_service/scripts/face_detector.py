@@ -4,7 +4,7 @@ from vision_service.srv import *
 import rospy
 import os
 
-PATH = '/home/roboy/vision_ws/PYTHON3_COMM/face'
+PATH = '/home/roboy/vision_workspace/Vision/PYTHON3_COMM/face'
 
 def check_file(arg):
     return os.path.exists(PATH)

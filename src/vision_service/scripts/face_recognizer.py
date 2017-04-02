@@ -5,7 +5,7 @@ import rospy
 import os
 from time import sleep
 
-PATH = '/home/roboy/vision_ws/PYTHON3_COMM/'
+PATH = '/home/roboy/vision_workspace/Vision/PYTHON3_COMM/'
 
 def check_file(object_id):
     name = ''

@@ -14,3 +14,7 @@ tutorials/.ipynb_checkpoints
 #ignore models
 models/*
 !models/download_models.py
+
+#ignore build files
+build
+devel
