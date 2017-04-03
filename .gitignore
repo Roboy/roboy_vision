@@ -18,3 +18,6 @@ models/*
 #ignore build files
 build
 devel
+
+#ignore content of data exchange folder
+PYTHON3_COMM/*

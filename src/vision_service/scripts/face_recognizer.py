@@ -5,7 +5,7 @@ import rospy
 import os
 from time import sleep
 
-PATH = '/home/roboy/vision_workspace/Vision/PYTHON3_COMM/'
+PATH = os.environ['VISION_COMM_PATH']
 
 def check_file(object_id):
     name = ''
@@ -21,7 +21,7 @@ def check_file(object_id):
 def recognize_face_server():
     rospy.init_node('recognize_face_service')
     s = rospy.Service('recognize_face', recognition, check_file)
-    print "Service ready."
+    print "Face recognition service ready. Call with name 'recognize_face'."
     rospy.spin()
 
 if __name__ == "__main__":

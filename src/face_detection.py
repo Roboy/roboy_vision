@@ -94,7 +94,7 @@ def recognize_face(face_img, session, classifier):
 	feed_dict = {image_batch: np.expand_dims(face_img , 0), phase_train_placeholder: False }
 	rep = session.run(embeddings, feed_dict=feed_dict)[0]
 	out = clf.predict(rep.reshape(1,-1))
-	names = np.load('../models/lfw_embeddings/facenet_names.npy')
+	names = np.load('models/lfw_embeddings/facenet_names.npy')
 	face_name = names[out[0]]
 	
 	#------- Communication workaround -----------
@@ -143,10 +143,14 @@ if __name__ == '__main__':
 
 	#------- Communication workaround -----------
 	# remove all COMM Files
-	os.remove(COMM_PATH + 'face')
-	os.remove(COMM_PATH + 'request')
-	os.remove(COMM_PATH + 'out')
-	os.remove(COMM_PATH + 'running')
+	if os.path.exists(COMM_PATH + 'request'):
+		os.remove(COMM_PATH + 'request')
+	if os.path.exists(COMM_PATH + 'face'):
+		os.remove(COMM_PATH + 'face')
+	if os.path.exists(COMM_PATH + 'out'):
+		os.remove(COMM_PATH + 'out')
+	if os.path.exists(COMM_PATH + 'running'):
+		os.remove(COMM_PATH + 'running')
 	#--------------------------------------------
 	
     ## start pyrealsense service
@@ -178,9 +182,9 @@ if __name__ == '__main__':
 
 	# Face Recognition Facenet NN
 	print('Loading Facenet...')
-	svm_model = "../models/SVM/svm_lfw.mod"
+	svm_model = "models/SVM/svm_lfw.mod"
 	clf = pickle.load( open( svm_model, "rb" ) )
-	model_dir = '../models/facenet'
+	model_dir = 'models/facenet'
 	meta_file, ckpt_file = get_model_filenames(os.path.expanduser(model_dir))
 	session = load_model(model_dir, meta_file, ckpt_file)
 	graph = tf.get_default_graph()
@@ -214,8 +218,8 @@ if __name__ == '__main__':
 			if no_face_detect_counter > 3:
 				face_nearby = False
 				#------- Communication workaround -----------
-			    if os.path.exists(COMM_PATH + 'face'):
-				    os.remove(COMM_PATH + 'face')
+				if os.path.exists(COMM_PATH + 'face'):
+					os.remove(COMM_PATH + 'face')
 				#--------------------------------------------
 			# show image and continue
 			cv2.imshow("detection result", c)
