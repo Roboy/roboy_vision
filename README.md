@@ -28,8 +28,10 @@ We recommend using Anaconda.
 
 ## Running with ROS
 
-Currently there is no ROS Integration for Python 3 which is why we are using File I/O for communication.
-This is all handled by the face detection. The Folder PYTHON3_COMM will be used for all file exchanges between Python3 and ROS. 
+Currently there is no ROS Integration for Python 3 which is why we are using File I/O for communication. All communication is handled by face_detection.py
+
+Env Variable for PATH: VISION_COMM_PATH
+ The Folder PYTHON3_COMM will be used for all file exchanges between Python3 and ROS. 
 
 To build all service messages run
 ```shell
