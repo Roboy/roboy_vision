@@ -10,9 +10,17 @@ PATH = os.environ['VISION_COMM_PATH']
 def check_file(object_id):
     name = ''
     os.mknod(PATH + 'request')
+    i = 0
+    while(True):
+    	sleep(0.02)
+    	if not os.path.exists(PATH + 'request'):
+    		break
+    	if (i > 10):
+    		print('Timeout')
+    		return ''
+
     while(not os.path.exists(PATH + 'out')):
-        sleep(0.1)
-	continue
+    	sleep(0.1)
     file = open(PATH + 'out', 'r') 
     name = file.read()
     os.remove(PATH + 'out') 

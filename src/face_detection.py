@@ -93,9 +93,12 @@ def recognize_face(face_img, session, classifier):
 
 	feed_dict = {image_batch: np.expand_dims(face_img , 0), phase_train_placeholder: False }
 	rep = session.run(embeddings, feed_dict=feed_dict)[0]
-	out = clf.predict(rep.reshape(1,-1))
-	names = np.load('models/lfw_embeddings/facenet_names.npy')
-	face_name = names[out[0]]
+	probabilities = clf.predict_proba(rep.reshape(1,-1))
+	print(probabilities)
+	out = np.argmax(probabilities[0])
+	print(out)
+	names = np.load('models/own_embeddings/own_names.npy')
+	face_name = names[out]
 	
 	#------- Communication workaround -----------
 	# write back result
@@ -182,8 +185,9 @@ if __name__ == '__main__':
 
 	# Face Recognition Facenet NN
 	print('Loading Facenet...')
+	tree_model = "models/Tree/own.mod"
 	svm_model = "models/SVM/svm_lfw.mod"
-	clf = pickle.load( open( svm_model, "rb" ) )
+	clf = pickle.load( open( tree_model, "rb" ) )
 	model_dir = 'models/facenet'
 	meta_file, ckpt_file = get_model_filenames(os.path.expanduser(model_dir))
 	session = load_model(model_dir, meta_file, ckpt_file)
@@ -193,7 +197,7 @@ if __name__ == '__main__':
 	embeddings = graph.get_tensor_by_name("embeddings:0")
 	print('done.')
 	
-
+	print('Starting detection...')
 	while True:  
 	    # Get Frame from Realsense
 		dev.wait_for_frame()
