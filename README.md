@@ -32,16 +32,27 @@ Currently there is no ROS Integration for Python 3 which is why we are using Fil
 This is all handled by the face detection. The Folder PYTHON3_COMM will be used for all file exchanges between Python3 and ROS. 
 
 To build all service messages run
+```shell
 catkin_make
+```
 in the root folder of the project. Then do
-source 
-
+```shell
+source devel/setup.bash
+```
 To make the ROS interface available one has to start following two nodes:
-
+```shell
 rosrun vision_service face_detector.py 
 rosrun vision_service recognizer.py
-
+```
 To run the actual Face detector run
-source /home/roboy/anaconda3/bin/activate roboy
-./src/face_detection.py
+```shell
+./run_roboy_nuke
+```
 
+This will set all necessary environment variables on Roboy Nuke PC. You will have to edit the paths for your own machine.
+
+The two services can then be called using following ROS commands:
+```shell
+rosservice call /recognize_face 0
+rosservice call /rdetect_face
+```
