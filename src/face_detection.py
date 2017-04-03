@@ -44,7 +44,6 @@ def detect_face_and_landmarks_mtcnn(img):
             points.append((lms[i][face_index] , lms[i+5][face_index]))
         landmarks.append(points)
         boxes.append((r[0] , r[1] , r[2] , r[3]))
-        #boxes.append(r[:4].astype(int).tolist())
         face_index += 1
     return boxes, landmarks
 
@@ -94,9 +93,7 @@ def recognize_face(face_img, session, classifier):
 	feed_dict = {image_batch: np.expand_dims(face_img , 0), phase_train_placeholder: False }
 	rep = session.run(embeddings, feed_dict=feed_dict)[0]
 	probabilities = clf.predict_proba(rep.reshape(1,-1))
-	print(probabilities)
 	out = np.argmax(probabilities[0])
-	print(out)
 	names = np.load('models/own_embeddings/own_names.npy')
 	face_name = names[out]
 	
