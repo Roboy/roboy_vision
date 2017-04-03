@@ -1,11 +1,9 @@
 
 #Dirty Hacks to run on Roboy Nuke
-# Before running also activate the conda environment: source /home/roboy/anaconda3/bin/activate roboy
-import sys 
-sys.path = ['/home/roboy/anaconda3/envs/roboy/lib/python3.6/site-packages'] + sys.path
-sys.path.append('/home/roboy/vision_workspace/Vision/')
+# Before running also activate the conda environment: 
 
-#basic imports
+#basic imports#
+import sys 
 import numpy as np
 import cv2
 import os
@@ -26,8 +24,11 @@ import pyrealsense as pyrs
 
 # Define of standard face size for alignment
 EXPECT_SIZE = 160
+
+#------- Communication workaround -----------
 #Define of path for Communication to ROS using I/O on file system
-COMM_PATH = '/home/roboy/vision_workspace/Vision/PYTHON3_COMM/'
+COMM_PATH = os.environ['VISION_COMM_PATH']
+#--------------------------------------------
 
 # Detect faces and landmarks using MTCNN Network
 def detect_face_and_landmarks_mtcnn(img):
@@ -89,27 +90,26 @@ def face_detected(bounding_boxes):
 
 # Function to recognize a face using facenet
 def recognize_face(face_img, session, classifier):
-	#TODO: Implementation of Facenet + classification
 
 	feed_dict = {image_batch: np.expand_dims(face_img , 0), phase_train_placeholder: False }
 	rep = session.run(embeddings, feed_dict=feed_dict)[0]
 	out = clf.predict(rep.reshape(1,-1))
-	print(out)
 	names = np.load('../models/lfw_embeddings/facenet_names.npy')
-	time.sleep(1)
 	face_name = names[out[0]]
-
+	
+	#------- Communication workaround -----------
 	# write back result
 	f = open(COMM_PATH + 'out', 'w')
 	f.write(face_name)
 	f.close()
-	
 	# delete running flag
 	os.remove(COMM_PATH + 'running')
+	#--------------------------------------------
+	
+	print('classification successful!')
+	return face_name
 
-	print('done!')
-	return
-
+# function for importing facenet
 def load_model(model_dir, model_meta, model_content):
     s = tf.InteractiveSession()
     model_dir_exp = os.path.expanduser(model_dir)
@@ -118,6 +118,7 @@ def load_model(model_dir, model_meta, model_content):
     tf.get_default_graph().as_graph_def()
     return s
 
+# helper function for importing facenet
 def get_model_filenames(model_dir):
     files = os.listdir(model_dir)
     meta_files = [s for s in files if s.endswith('.meta')]
@@ -140,6 +141,14 @@ def get_model_filenames(model_dir):
 # MAIN
 if __name__ == '__main__':
 
+	#------- Communication workaround -----------
+	# remove all COMM Files
+	os.remove(COMM_PATH + 'face')
+	os.remove(COMM_PATH + 'request')
+	os.remove(COMM_PATH + 'out')
+	os.remove(COMM_PATH + 'running')
+	#--------------------------------------------
+	
     ## start pyrealsense service
 	pyrs.start()
 
@@ -149,7 +158,13 @@ if __name__ == '__main__':
 
 	# resize for faster processing
 	resize_factor = 0.5
-
+	
+	# store whether a face was detected nearby
+	face_nearby = False
+	
+	# store how many following frames no Face was detected nearby
+	no_face_detect_counter = 0
+	
 	#init realsense device
 	dev = pyrs.Device(device_id = 0, streams = [pyrs.ColourStream(width = x_pixel, height = y_pixel, fps = 30), pyrs.DepthStream()])
 
@@ -173,8 +188,7 @@ if __name__ == '__main__':
 	phase_train_placeholder = graph.get_tensor_by_name("phase_train:0")
 	embeddings = graph.get_tensor_by_name("embeddings:0")
 	print('done.')
-	# store how many following frames no Face was detected.
-	no_face_detect_counter = 0
+	
 
 	while True:  
 	    # Get Frame from Realsense
@@ -198,24 +212,35 @@ if __name__ == '__main__':
 			# remove face nearby flag (File I/O)
 			no_face_detect_counter+=1
 			if no_face_detect_counter > 3:
+				face_nearby = False
+				#------- Communication workaround -----------
 			    if os.path.exists(COMM_PATH + 'face'):
 				    os.remove(COMM_PATH + 'face')
+				#--------------------------------------------
 			# show image and continue
 			cv2.imshow("detection result", c)
 			cv2.waitKey(10)
 			continue
 
+		
 		# Check if faces nearby and communicate to ROS using file I/O
 		if face_detected(total_boxes):
+			face_nearby = True
+			#------- Communication workaround -----------
 			if not os.path.exists(COMM_PATH + 'face'):
 				no_face_detect_counter = 0
 				os.mknod(COMM_PATH + 'face')
+			#--------------------------------------------
 		else:
 			no_face_detect_counter+=1
 			if no_face_detect_counter > 3:
+				face_nearby = False
+				#------- Communication workaround -----------
 				if os.path.exists(COMM_PATH + 'face'):
 					os.remove(COMM_PATH + 'face')
-
+				#--------------------------------------------
+		
+		#------- Communication workaround -----------
 		## Call Face Recognition if Service has been triggered
 		if os.path.exists(COMM_PATH + 'request'):
 			if not os.path.exists(COMM_PATH + 'running'):
@@ -225,11 +250,15 @@ if __name__ == '__main__':
 				os.remove(COMM_PATH + 'request')
 				# start recognition thread
 				start_new_thread(recognize_face,(align_face_mtcnn(img,total_boxes[0]), session, clf,))
-
+		#--------------------------------------------
+		
+		## TODO:
+		# - remove all communication workaround blocks
+		# - create ros service returning face_nearby
+		# - create ros service calling recognize_face(face_img, session, classifier) and returning classification result
 		
 		#Show detection result
-		draw = c.copy()
-		draw = draw_rects(draw, total_boxes, resize_factor)
+		draw = draw_rects(c.copy(), total_boxes, resize_factor)
 		draw = draw_landmarks(draw, points, resize_factor)
 
 		cv2.imshow("detection result", draw)	
