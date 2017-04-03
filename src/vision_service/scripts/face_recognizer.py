@@ -16,8 +16,11 @@ def check_file(object_id):
     	if not os.path.exists(PATH + 'request'):
     		break
     	if (i > 10):
+            if os.path.exists(PATH + 'request'):
+                os.remove(PATH + 'request')
     		print('Timeout')
-    		return ''
+            return ''
+        i+=1
 
     while(not os.path.exists(PATH + 'out')):
     	sleep(0.1)
@@ -34,7 +37,7 @@ def recognize_face_server():
 
 if __name__ == "__main__":
     if os.path.exists(PATH + 'out'):
-	os.remove(PATH + 'out')
+	   os.remove(PATH + 'out')
     if os.path.exists(PATH + 'request'):
-	os.remove(PATH + 'request')
+	   os.remove(PATH + 'request')
     recognize_face_server()
