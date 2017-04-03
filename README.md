@@ -13,14 +13,32 @@ Repository to Roboy Vision Team
 ## Installation
 We recommend using Anaconda.
 1. Download Anaconda from: https://www.continuum.io/downloads#linux
-2. Install: bash ~/Downloads/Anaconda3-4.3.0-Linux-x86_64.sh
-3. Create Environment: conda create --name roboy python=3
-4. Work on Environment: source activate roboy
-5. Install OpenCV: conda install -c menpo opencv3=3.1.0
-6. Install Tensorflow: conda install -c conda-forge tensorflow=1.0.0
+2. Install Anaconda 
+```shell
+bash ~/Downloads/Anaconda3-4.3.0-Linux-x86_64.sh
+```
+3. Create Conda Environment 
+```shell
+conda create --name roboy python=3
+```
+4. Work on Environment: 
+```shell
+source activate roboy
+```
+5. Install OpenCV: 
+```shell
+conda install -c menpo opencv3=3.1.0
+```
+6. Install Tensorflow:
+```shell
+conda install -c conda-forge tensorflow=1.0.0
+```
 7. Install librealsense according to tutorial on https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md
-8. Install pyrealsense: pip install pyrealsense
-9. Install ROS according to http://wiki.ros.org/kinetic/Installation/Ubuntu
+8. Install pyrealsense: 
+```shell
+pip install pyrealsense
+```
+9. Install ROS outside the conda environment using Python 2.7 according to http://wiki.ros.org/kinetic/Installation/Ubuntu
 
 ## Getting Started
 1. Download all required models using download_models.py in models directory.

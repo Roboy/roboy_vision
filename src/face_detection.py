@@ -73,7 +73,20 @@ def draw_landmarks(image, points, resize_factor):
     		point = (int(point[0]/resize_factor), int(point[1]/resize_factor))
     		cv2.circle(result, point, 3, (0, 255, 0), -1 )
     return result	
-	
+
+# get the id of the bounding box of the closest face
+def get_closest_face(bounding_boxes):
+	i = 0
+	max_id = 0
+	face_area = 0
+	for left, top, right, bottom in bounding_boxes:
+		tmp_face_area = (right-left) * (bottom-top)
+		if(tmp_face_area > face_area):
+			max_id = i
+			face_area = tmp_face_area
+		i+=1
+	return max_id
+
 # Function to check if a face appears in certain size
 FACE_AREA = 1500 # Face area for approx. 1.5m distance
 def face_detected(bounding_boxes):
@@ -254,7 +267,8 @@ if __name__ == '__main__':
 				# delete request flag
 				os.remove(COMM_PATH + 'request')
 				# start recognition thread
-				start_new_thread(recognize_face,(align_face_mtcnn(img,total_boxes[0]), session, clf,))
+				print(get_closest_face(total_boxes))
+				start_new_thread(recognize_face,(align_face_mtcnn(img,total_boxes[get_closest_face(total_boxes)]), session, clf,))
 		#--------------------------------------------
 		
 		## TODO:
