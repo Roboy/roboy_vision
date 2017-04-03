@@ -28,10 +28,12 @@ We recommend using Anaconda.
 
 ## Running with ROS
 
-Currently there is no ROS Integration for Python 3 which is why we are using File I/O for communication. All communication is handled by face_detection.py
+Currently there is no ROS Integration for Python 3 which is why we are using File I/O for communication. Files will be written into a directory which has to be empty before.
 
-Env Variable for PATH: VISION_COMM_PATH
- The Folder PYTHON3_COMM will be used for all file exchanges between Python3 and ROS. 
+This directory is set using a environment variable containing the path:
+```shell
+export VISION_COMM_PATH='/yourpath/'
+```
 
 To build all service messages run
 ```shell
@@ -58,3 +60,5 @@ The two services can then be called using following ROS commands:
 rosservice call /recognize_face 0
 rosservice call /rdetect_face
 ```
+
+The recognize face gets the object_id as an argument. Currently this is not used and just the closest face is returned.
