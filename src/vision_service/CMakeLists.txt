@@ -8,17 +8,22 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
 )
 
- add_service_files(
-   FILES
-   wakeup.srv
-   recognition.srv
- )
+add_message_files(
+  FILES 
+  vision_object.msg
+)
+
+add_service_files(
+  FILES
+  wakeup.srv
+  recognition.srv
+)
 
 generate_messages(
-   DEPENDENCIES
+  DEPENDENCIES
   geometry_msgs
   std_msgs
- )
+)
 
 catkin_package(
 #  INCLUDE_DIRS include

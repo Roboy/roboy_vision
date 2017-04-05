@@ -12,8 +12,7 @@
 #	- Tracking not implemented (no unique face id provided)
 #	- 3D coodinates not implemented (face region used as distance measure)
 #	- Function for Face Recognition also implemented in this modue for simplicity (to be put into anothe rmodule)
-#	- ROS communication workaround: Creating files for communicating with ROS services because no Python 3 support for ROS (to be removed and replaced by actual ROS)
-#	  (Files will be written to path stored in env variable $COMM_PATH)
+#	- No ROS communication
 
 # basic imports
 import sys
@@ -38,11 +37,6 @@ EXPECT_SIZE = 160
 
 # Define bounding box size for proximity detetcion of faces (increase to make distance smaller)
 FACE_AREA = 1500  # Face area for approx. 1.5m distance
-
-#------- Communication workaround -----------
-#Define of path for Communication to ROS using I/O on file system
-COMM_PATH = os.environ['VISION_COMM_PATH']
-#--------------------------------------------
 
 
 ## Function to do face detection and alignment on an image
@@ -187,15 +181,6 @@ def recognize_face(face_img, session, classifier):
     names = np.load('models/own_embeddings/own_names.npy')
     face_name = names[out]
 
-    #------- Communication workaround -----------
-    # write back result
-    f = open(COMM_PATH + 'out', 'w')
-    f.write(face_name)
-    f.close()
-    # delete running flag
-    os.remove(COMM_PATH + 'running')
-    #--------------------------------------------
-
     print('classification: ' + face_name + ' probability: ' +
           probabilities[0][out])
     return face_name
@@ -252,18 +237,6 @@ def get_model_filenames(model_dir):
 #  Loads all data and processes realsense camera input in a loop.
 if __name__ == '__main__':
 
-    #------- Communication workaround -----------
-    # remove all COMM Files
-    if os.path.exists(COMM_PATH + 'request'):
-        os.remove(COMM_PATH + 'request')
-    if os.path.exists(COMM_PATH + 'face'):
-        os.remove(COMM_PATH + 'face')
-    if os.path.exists(COMM_PATH + 'out'):
-        os.remove(COMM_PATH + 'out')
-    if os.path.exists(COMM_PATH + 'running'):
-        os.remove(COMM_PATH + 'running')
-    #--------------------------------------------
-
     # start pyrealsense service
     pyrs.start()
 
@@ -314,7 +287,7 @@ if __name__ == '__main__':
     while True:
         # Get frame from realsense
         dev.wait_for_frame()
-        # color image	    
+        # color image  
         c = cv2.cvtColor(dev.colour, cv2.COLOR_RGB2BGR)
         #depth images
         d = dev.depth * dev.depth_scale * 1000
@@ -335,10 +308,6 @@ if __name__ == '__main__':
             no_face_detect_counter += 1
             if no_face_detect_counter > 3:
                 face_nearby = False
-                #------- Communication workaround -----------
-                if os.path.exists(COMM_PATH + 'face'):
-                    os.remove(COMM_PATH + 'face')
-                #--------------------------------------------
             # show image and continue
             cv2.imshow("detection result", c)
             cv2.waitKey(10)
@@ -347,37 +316,19 @@ if __name__ == '__main__':
         # Check if faces nearby
         if face_detected(total_boxes):
             face_nearby = True
-            #------- Communication workaround -----------
-            if not os.path.exists(COMM_PATH + 'face'):
-                no_face_detect_counter = 0
-                os.mknod(COMM_PATH + 'face')
-            #--------------------------------------------
         else:
             no_face_detect_counter += 1
             if no_face_detect_counter > 3:
                 face_nearby = False
-                #------- Communication workaround -----------
-                if os.path.exists(COMM_PATH + 'face'):
-                    os.remove(COMM_PATH + 'face')
-                #--------------------------------------------
 
-        #------- Communication workaround -----------
-        # Call Face Recognition if Service has been triggered
-        if os.path.exists(COMM_PATH + 'request'):
-            if not os.path.exists(COMM_PATH + 'running'):
-                # create running flag
-                os.mknod(COMM_PATH + 'running')
-                # delete request flag
-                os.remove(COMM_PATH + 'request')
-                # start recognition thread
-                print(get_closest_face(total_boxes))
-                start_new_thread(recognize_face, (align_face_mtcnn(
-                    img, total_boxes[get_closest_face(total_boxes)]), session,
-                                                  clf, ))
-        #--------------------------------------------
+        # TODO: Trigger Face Recognition only on service request
+        start_recognize_face = false
+        if start_recognize_face:
+            start_new_thread(recognize_face, (align_face_mtcnn(
+                img, total_boxes[get_closest_face(total_boxes)]), session,
+                                              clf, ))
 
-        ## TODO:
-        # - remove all communication workaround blocks
+        # TODO:
         # - create ros service returning face_nearby
         # - create ros service calling recognize_face(face_img, session, classifier) and returning classification result
 
