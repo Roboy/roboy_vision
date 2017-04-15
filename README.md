@@ -1,6 +1,10 @@
 # Roboy Vision
 Repository to Roboy Vision Team
 
+Documentation can be found here:
+[![Documentation Status](https://readthedocs.org/projects/roboyvision/badge/?version=devel)](http://roboyvision.readthedocs.io/en/latest/?badge=devel)
+
+
 ## Dependencies
 - Python 3.5
 - Tensorflow 1.x
@@ -46,37 +50,5 @@ pip install pyrealsense
 
 ## Running with ROS
 
-Currently there is no ROS Integration for Python 3 which is why we are using File I/O for communication. Files will be written into a directory which has to be empty before.
-
-This directory is set using a environment variable containing the path:
-```shell
-export VISION_COMM_PATH='/yourpath/'
-```
-
-To build all service messages run
-```shell
-catkin_make
-```
-in the root folder of the project. Then do
-```shell
-source devel/setup.bash
-```
-To make the ROS interface available one has to start following two nodes:
-```shell
-rosrun vision_service face_detector.py 
-rosrun vision_service recognizer.py
-```
-To run the actual Face detector run
-```shell
-./run_roboy_nuke
-```
-
-This will set all necessary environment variables on Roboy Nuke PC. You will have to edit the paths for your own machine.
-
-The two services can then be called using following ROS commands:
-```shell
-rosservice call /recognize_face 0
-rosservice call /rdetect_face
-```
-
-The recognize face gets the object_id as an argument. Currently this is not used and just the closest face is returned.
+Currently there is no ROS Integration for Python 3. This is why a workaround was integrated to implement ROS service communication with ROS running under python 2.7 and the vision module on python 3.6.
+Please refer to dirty_final_hack branch for details.
