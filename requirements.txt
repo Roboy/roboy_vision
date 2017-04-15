@@ -1,0 +1,12 @@
+numpy
+matplotlib
+dlib
+scikit-learn
+sklearn
+scipy
+Pillow
+requests
+psutil
+thread
+breathe
+sphinx_rtd_theme
