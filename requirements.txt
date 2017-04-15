@@ -1,4 +1,5 @@
 numpy
+cmake
 matplotlib
 dlib
 scikit-learn
