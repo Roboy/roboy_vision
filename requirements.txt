@@ -1,8 +1,5 @@
 numpy
-cmake
-boost-python
 matplotlib
-dlib
 scikit-learn
 sklearn
 scipy
