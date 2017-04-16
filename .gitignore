@@ -1,5 +1,4 @@
 #std ignores
-build
 *~
 .project
 .cproject

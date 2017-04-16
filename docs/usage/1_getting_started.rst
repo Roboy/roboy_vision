@@ -7,7 +7,6 @@ Tutorials
 As a start run the jupyter notebooks in tutorials section::
 
     source activate roboy
-    pip install jupyter-notebook
     cd ~/Vision/tutorials
     jupyter notebook
 

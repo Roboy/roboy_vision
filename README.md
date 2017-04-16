@@ -7,13 +7,13 @@ Documentation can be found here:
 
 
 ## Dependencies
-- Python 3.5
+- Python 3.x
 - Tensorflow 1.x
 - ROS Kinetic
 - OpenCV 3.x
 - librealsense 1.12.1 (Linux required Kernel max. 4.4!)
 - pyrealsense 1.4
-- libraries: numpy, matplotlib, dlib, re, signal, sklearn, scipy
+- python libraries: numpy, matplotlib, dlib, re, signal, sklearn, scipy
 
 
 ## Getting Started
@@ -24,4 +24,4 @@ Documentation can be found here:
 ## Running with ROS
 
 Currently there is no ROS Integration for Python 3. This is why a workaround was integrated to implement ROS service communication with ROS running under python 2.7 and the vision module on python 3.6.
-Please refer to dirty_final_hack branch for details.
+Please refer to **dirty_final_hack** branch for details.

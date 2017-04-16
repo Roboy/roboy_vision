@@ -53,7 +53,14 @@ Now you should be working in your virtual environment. We then will install all 
 
     pip install pyrealsense
 
-- Install ROS Kinetic according to tutorial on http://wiki.ros.org/kinetic/Installation/Ubuntu. ROS is currently running outside the conda environment using python 2.
+- For running the tutorials DLib and jupyter notebook will also be required::
+    
+    conda install -c menpo dlib
+    pip install jupyter
+
+- The Last step is to install ROS Kinetic. Since ROS currently is not running using Python3 we install outside the virtual environment and Python 2. The ROS installation tutorial can be found on: http://wiki.ros.org/kinetic/Installation/Ubuntu. 
+
+.. todo:: Compile ROS with Python 3 to be able to use together with Tensorflow v1.x
 
 Build
 ----------------
@@ -63,8 +70,8 @@ To build all ROS message and service files you can use catkin::
     cd ~/Vision
     catkin_make
 
-To build doxygen documentation run::
+To build doxygen documentation offline for viewing you can run::
 
     cd ~/Vision
-    sphinx-build -b html ./documentation ./build/documentation
+    sphinx-build -b html ./docs ./build/docs
 
