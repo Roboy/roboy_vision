@@ -31,4 +31,11 @@ For running face detection in real time you can run the script::
     python src/vision_service/scripts/face_detection.python
 
 
-This will show the currently detected images in an extra frame. Startig face recognition for a given face and to query whether a face is nearby are to be implemented as ROS services. Currently ROS is runnung with python 2.7 only. This is why in dirty_final_hack branch an alternative approach for Communication using File I/O was implemented. This should be replaced.
+This will show the currently detected faces using MTCNN including the corresponding feature points in an extra window. Integration with ROS is currently missing on this branch because of python 2 vs. python 3 constraint using ROS and Tensorfloe at the same time.
+
+This is why ROS communication was only implemented in **dirty_final_hack** branch (https://github.com/Roboy/Vision/tree/dirty_final_hack). Here an alternative approach for Communication using File I/O between python 2 and python 3 was implemented. Using this approach ROS will run in python 2, weheras face detection with tensorflow will run seperatly using python 3. This branch can be removed as soon as proper Python 3 integration was achieved.
+In this branch 2 services are offered:
+
+- Fae nearby: Query whether a face is nearby
+
+- Recognize face: Recognize name of a given face
