@@ -5,13 +5,17 @@ Interfaces to other modules will be realized using ROS Communication. Currently 
 
 - **wakeup service**: Service to be called to test whether a face is recognized within certain distance. Used by NLP for wakeup::
 
-    argument: (none)
-    returns: Bool face_nearby
+    # argument: (none)
+    # returns: Bool face_nearby
+    
+    rosservice call /detect_face
 
 - **recognition service**: Service called to recognize a face. Given a object ID the name of the detected person is returned::
 
-    argument: int object_id
-    returns: String name
+    # argument: int object_id
+    # returns: String name
+
+    rosservice call /recognize_face *object_id*
 
 - **vision_object message**: This message is published for every camera frame an object was detected. The message includes ID type and position of the object.
 

@@ -12,7 +12,7 @@ Basic decisions for Vision Package:
 Current implementation:
 
 - **Face detection** running in realtime with function to query whether a face is nearby (to be called as ROS service).
-- **Face recognition** implemnted as extra thread (to be called as ROS service on a given face). Using Facenet for calculating embeddings for a given face and SVM for classification. SVM currently trained on pictures of LFW (labelled Faces in the Wild) dataset, using Roboy Team members as next step.
+- **Face recognition** implemented as extra thread (to be called as ROS service on a given face). Using Facenet for calculating embeddings for a given face and SVM for classification. SVM currently trained on pictures of LFW (labelled Faces in the Wild) dataset, using Roboy Team members as next step.
 - **ROS services** currently not implemented in devel branch. Only workaround in dirty_final_hack branch.
  
 Plan for coming semester with priorities in red (5 being highest priority):
