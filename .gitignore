@@ -1,4 +1,18 @@
-build
+#std ignores
 *~
 .project
 .cproject
+
+# ignore databases for images
+datasets
+
+#ignore jupyter notebook checkpoints
+tutorials/.ipynb_checkpoints
+
+#ignore models
+models/*
+!models/download_models.py
+
+#ignore build files
+build
+devel

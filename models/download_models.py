@@ -10,7 +10,7 @@
 import zipfile
 import io
 from urllib.request import urlopen
-url = urlopen("https://www.dropbox.com/s/p9bm5wf1s0r0vmo/models.zip?dl=1")
+url = urlopen("https://www.dropbox.com/s/fjsen6tbdrgdj4s/models.zip?dl=1")
 zipfile = zipfile.ZipFile(io.BytesIO(url.read()))
 zipfile.extractall('./')
 zipfile.close()
