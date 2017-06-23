@@ -1,10 +1,18 @@
+"""@package FaceDetect
+1. Face is detected using Dlib library
+2. 68 landmarks are located on the face and circles are drawn over the landmarks.
+3. The position(rect) of the face is sent to the main process throught the RectQueue.
+4. Frame queue is as a future reference to send data to the main process
+"""
+
 from imutils import face_utils
 import imutils
 import dlib
 import cv2
+import RosMsgUtil
 
 
-def StartDetection(queue):
+def StartDetection(FrameQueue,RectQueue):
 	print("[INFO] loading facial landmark predictor...")
 	detector = dlib.get_frontal_face_detector()
 	predictor = dlib.shape_predictor("models/dlib/shape_predictor_68_face_landmarks.dat")
@@ -12,46 +20,28 @@ def StartDetection(queue):
 	#outVideo = cv2.VideoWriter('outputMouth.mp4',fourcc, 20.0, (400,225))
 	vs = cv2.VideoCapture(0)
 
-	while True:
-		# grab the frame from the threaded video stream, resize it to
-		# have a maximum width of 400 pixels, and convert it to
-		# grayscale
+	counter = 0
+	while counter<10:
+		"""
+		grab the frame from the threaded video stream, resize it to
+		have a maximum width of 800 pixels, and convert it to
+		grayscale"""
+		counter+=1
 		ok,frame = vs.read()
-		print("Crash")
 		if not ok:
 			break;
-		print("Crash")
-		frame = imutils.resize(frame, width=600)
-	#	height,width,channel = frame.shape
-		#print (height)
+		frame = imutils.resize(frame, width=800)
 		gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-		print("Crash")
 		# detect faces in the grayscale frame
 		rects = detector(gray, 0)
-		print("Crash")	# loop over the face detections
+		RectQueue.put(rects)
+		# loop over the face detections
 		for rect in rects:
-			# determine the facial landmarks for the face region, then
-			# convert the facial landmark (x, y)-coordinates to a NumPy
-			# array
 			shape = predictor(gray, rect)
 			shape = face_utils.shape_to_np(shape)
-	 
-			# loop over the (x, y)-coordinates for the facial landmarks
-			# and draw them on the image
-			count =0;
+			#print ("Rect from face_detect:",rect,"Detected face width: ",rect.right()-rect.left()," height:",rect.bottom()-rect.top())
 			for (x, y) in shape:
-				count+=1;
-				if(count>36 and count <49):
-					cv2.circle(frame, (x, y), 8, (0, 0, 0), -1)
-				else:
 					cv2.circle(frame, (x, y), 1, (0, 0, 255), -1)
-		  
-		# show the frame
-		queue.put(frame)
-	# 	cv2.imshow("Frame", frame)
-	# #	outVideo.write(frame)
-	# 	key = cv2.waitKey(0)# & 0xFF
-	 
-		# if the `q` key was pressed, break from the loop
-		# if key == ord("q"):
-		# 	break
+		#FrameQueue.put(frame)
+		RectQueue.put(rects)
+

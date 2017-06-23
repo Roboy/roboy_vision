@@ -45,8 +45,9 @@ def detect_face_and_landmarks_mtcnn(img):
 # Function to draw found bounding boxes
 def draw_rects(image, rects, resize_factor):
 	result = image.copy()
+	print ("a",rects);
 	rects = (np.array(rects)/resize_factor).astype(int)
-	print (rects);
+	
 	for left, top, right, bottom in rects:
 		cv2.rectangle(result, (left, top), (right, bottom), (0, 255, 0), 2)
 	return result

@@ -2,46 +2,51 @@ import os
  
 from multiprocessing import Process,Queue
 import FaceDetect
+import Multitracking
 import cv2
+import threading
+import sys
  
-def doubler(number):
-    """
-    A doubling function that can be used by a process
-    """
-    result = number * 2
+def TestProcess(number):
     proc = os.getpid()
     while True:
         print('{0} doubled to {1} by process id: {2}'.format(number, result, proc))
  
-def detectFaces(queue):
+def detectFaces(FrameQueue,RectQueue):
     print('module name:', __name__)
     print('parent process:', os.getppid())
     print('process id:', os.getpid())
 	#Start the face detection
-    FaceDetect.StartDetection(queue)
+    FaceDetect.StartDetection(FrameQueue,RectQueue)
+    sys.exit()
+    print ("Terminated")
 
 
-#def tracking():
+def tracking(RectQueue,TrackQueue):
     #Start tracking code here
+    print('module name:', __name__)
+    print('parent process:', os.getppid())
+    print('process id:', os.getpid())
+    Multitracking.StartTracking(RectQueue,TrackQueue)
+
 
 if __name__ == '__main__':
     procs = []
-    q = Queue()
+    FrameQueue = Queue();
+    RectQueue = Queue();
+    TrackQueue = Queue();
 
-    detectFaceProc = Process(target=detectFaces,args=(q,))
+    detectFaceProc = Process(target=detectFaces,args=(FrameQueue,RectQueue,))
+    trackProc = Process(target=tracking,args=(RectQueue,TrackQueue,))
     procs.append(detectFaceProc)
-    detectFaceProc.start()
+    procs.append(trackProc)
+    for proc in procs:
+        proc.start()
+
     while True:
-        cv2.imshow("frame",q.get())
+        cv2.imshow("frame",TrackQueue.get())
+        cv2.moveWindow("frame",20,20)
         cv2.waitKey(1)
     detectFaceProc.join()
-    # proc = Process(target=doubler,args=(1,))
-    # proc.start()
-    # proc.join()
- #	trackingProc = Process(target=tracking)
-    #Start the face detection:
-
-    # #for index, number in enumerate(numbers):
-    #     proc = Process(target=doubler, args=(number,))
-    #     procs.append(proc)
-    #     proc.start()
+    trackProc.join()
+    
