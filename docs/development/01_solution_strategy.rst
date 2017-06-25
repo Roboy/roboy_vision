@@ -15,9 +15,22 @@ Current implementation:
 - **Face recognition** implemented as extra thread (to be called as ROS service on a given face). Using Facenet for calculating embeddings for a given face and SVM for classification. SVM currently trained on pictures of LFW (labelled Faces in the Wild) dataset, using Roboy Team members as next step.
 - **Object Detection** is currently working on images; capable of detecting objects with 76.8 mAP on VOC 2007 dataset.
 - **ROS services** currently not implemented in devel branch. Only workaround in dirty_final_hack branch.
+- **Tracking objects/faces** running in realtime. This implementation is based on the MIL(Visual Tracking with Online Multiple Instance Learning). Also part of the Opencv_contrib module. 
  
 Plan for coming semester with priorities in red (5 being highest priority):
 
 .. _plan_for_semester:
 .. figure:: images/Plan.*
   :alt: Semester Plan
+
+
+Future plans on current implentation:
+* Improve tracking by implementing the GOTURN algorithm. 
+
+
+
+Architecture of the current System:
+
+.. __systemArchitecture:
+.. figure:: images/systemArchitecture.*
+	:alt: System Architecture
