@@ -7,9 +7,6 @@ Hardware Constraints
   :header: "Constraint Name", "Description"
   :widths: 20, 60
 
-  "Intel RealSense", "Provides additional depth information to be used for pose estimation"
-  
-  
 
 Operating System Constraints 
 
@@ -17,9 +14,6 @@ Operating System Constraints
   :header: "Constraint Name", "Description"
   :widths: 20, 60
 
-  "Ubuntu 16.04 Kernel 4.4", "Inteal Realsense librealsesne library not supported on newer Linux Kernels"
-
-  
   
 Programming Constraints
 

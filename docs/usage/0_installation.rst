@@ -41,17 +41,11 @@ Now you should be working in your virtual environment. We then will install all 
 
 - Install OpenCV::
 
-    conda install -c menpo opencv3=3.1.0
+    conda install -c menpo opencv3=3.2.0
 
 - Install Tensorflow::
 
     conda install -c conda-forge tensorflow=1.0.0
-
-- Install librealsense according to tutorial on https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md (this currently requires a Linux Kernel of maximum 4.4.x)
-
-- Install pyrealsense::
-
-    pip install pyrealsense
 
 - For running the tutorials DLib and jupyter notebook will also be required::
     
