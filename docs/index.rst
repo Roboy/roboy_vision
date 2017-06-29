@@ -36,6 +36,9 @@ The papers currently used for implementation should be understood:
 
 - `Joint Face Detection and Alignment using Multi-task Cascaded Convolutional Networks <https://kpzhang93.github.io/MTCNN_face_detection_alignment/paper/spl.pdf>`_
 - `FaceNet: A Unified Embedding for Face Recognition and Clustering <https://arxiv.org/pdf/1503.03832.pdf>`_
+- `DLIB: Facial landmarks and face recognition <http://www.pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/>`_
+- 'You Only Look Once: Unified, Real-Time Object Detection <https://pjreddie.com/media/files/papers/yolo.pdf>`_
+
 
 Furthermore there are plans to extend the implementation using this paper:
 
