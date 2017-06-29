@@ -70,6 +70,10 @@ To build doxygen documentation offline for viewing you can run::
     sphinx-build -b html ./docs ./build/docs
 
 
+Please download the files 
+    - SharedLibs
+    - StaticLibs 
+from https://drive.google.com/drive/folders/0B0cOyLVrawK5TFJhdGJvNE9wNzg
 
 Compiling opencv from source
 ----------------
