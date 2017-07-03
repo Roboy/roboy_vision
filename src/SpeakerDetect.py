@@ -25,11 +25,12 @@ def DetectSpeaker(FacepointQueue,SpeakerQueue):
         mouth.append(width)
         mouth.append(inner)
 
-        distances_list = distances.get(id) #load list of last 5 measurements for face
-        distances_list.insert(0, mouth) #add current measurement to the front
-        if(len(distances_list) > 5): #discard the oldest measurement, if list long enough
-            distances_list.pop(5)
-
+        if not distances.get(id): #checking whether there is a list for the key id
+            distances_list = distances.get(id) #load list of last 5 measurements for face
+            distances_list.insert(0, mouth) #add current measurement to the front
+            if(len(distances_list) > 5): #discard the oldest measurement, if list long enough
+                distances_list.pop(5)
+        else: break #should we throw an error here?
 
         speaking = False
         if (inner >= (width / 9.5)): #determine speaking
