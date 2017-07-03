@@ -10,11 +10,9 @@ We recommend the use of Anaconda. This allows all python libraries to only be in
 
 - Download Anaconda from https://www.continuum.io/downloads#linux::
 
-    bash ~/Downloads/Anaconda3-4.3.0-Linux-x86_64.sh
-
 - Install Anaconda:: 
 
-    bash ~/Downloads/Anaconda3-4.3.0-Linux-x86_64.sh
+    bash ~/Downloads/Anaconda3-4.4.0-Linux-x86_64.sh
 
 - Create a Conda Environment with the name "roboy" and python 3::
 
