@@ -39,7 +39,7 @@ Now you should be working in your virtual environment. We then will install all 
 
 - Install OpenCV::
 
-    conda install -c menpo opencv3=3.2.0
+    conda install -c menpo opencv3=3.1.0
 
 - Install Tensorflow::
 
