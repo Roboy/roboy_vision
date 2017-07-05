@@ -42,6 +42,7 @@ def DetectSpeaker(FacepointQueue,SpeakerQueue,FrameQueue,VisualQueue):
 
             distances[id] = distances_list
 
+
             speaking = False
             if (inner >= (width / 9.5)):
                 speaking = True
@@ -62,3 +63,5 @@ def DetectSpeaker(FacepointQueue,SpeakerQueue,FrameQueue,VisualQueue):
             speakers[id] = speaking
         SpeakerQueue.put(speakers)
    #     VisualQueue.put(frame)
+
+      
