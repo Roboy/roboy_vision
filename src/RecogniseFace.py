@@ -2,7 +2,7 @@ from imutils import face_utils
 import imutils
 import dlib
 import cv2
-import RosMsgUtil
+#import RosMsgUtil
 import os
 import re
 import numpy as np
@@ -36,11 +36,11 @@ def recogniseFace(RectsQueue):
         rects = RectsQueue.get()
         FaceVal = []
         if len(rects) >1:
-            print("MULTI FACEEEEEEEEEEEEEEEE")
+            # print("MULTI FACEEEEEEEEEEEEEEEE")
             for rect in rects:
                 FaceVal.append((rect.left(),rect.top(),rect.right(),rect.bottom()))
                 print(FaceVal)
-            print(":enght of Faceval",len(FaceVal))
+            # print(":enght of Faceval",len(FaceVal))
             ok,frame = vs.read()
             if not ok:
                 sys.exit();
@@ -52,7 +52,7 @@ def recogniseFace(RectsQueue):
             print("Range of FaceVal:",range(len(FaceVal)))
             facesEmbeddings = []
             for i in range(len(FaceVal)):
-                print("i is:",i)
+                # print("i is:",i)
                 aligned_face, lm = align_face_dlib(image, FaceVal[i], AlignDlib.INNER_EYES_AND_BOTTOM_LIP)
                 
                 feed_dict = {
@@ -62,10 +62,14 @@ def recogniseFace(RectsQueue):
 
                 rep = session.run(embeddings, feed_dict=feed_dict)[0]
                 facesEmbeddings.append(rep)
-                print("Face Embeddings are:",facesEmbeddings)
+            #    print("Face Embeddings are:",facesEmbeddings)
             if len(facesEmbeddings) >1:
                 d = facesEmbeddings[-1] - facesEmbeddings[-2]
-                print("  + Squared l2 distance between representations:\
+                diffVal = np.linalg.norm(d, axis=0)
+                # print(diffVal," Diffvalue")
+                if diffVal > 0.7:
+                    print("Two different Faces found")
+                    print("  + Squared l2 distance between representations:\
                      \ ",np.linalg.norm(d,axis=0))
                 #dist = np.linalg.norm(facesEmbeddings[-1] - facesEmbeddings[-2])
             #print(dist)

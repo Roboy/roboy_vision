@@ -58,14 +58,14 @@ if __name__ == '__main__':
     #trackProc = Process(target=tracking,args=(RectQueue,TrackQueue,))
     SpeakerProc = \
     Process(target=speakerDetect,args=(FacePointQueue,SpeakerQueue,FrameQueue,VisualQueue))
-    #recogniseFaceProc = Process(target=recogniseFace,args=(RectQueue,))
+    recogniseFaceProc = Process(target=recogniseFace,args=(RectQueue,))
  #   visualizerProc =Process( \
    #                         target=visualizer,args=(RectQueue,FacePointQueue,SpeakerQueue,FrameQueue,\
    #                                                 VisualQueue))
     procs.append(detectFaceProc)
     #procs.append(trackProc)
     procs.append(SpeakerProc)
-    #procs.append(recogniseFaceProc)
+    procs.append(recogniseFaceProc)
   #  procs.append(visualizerProc)
     for proc in procs:
         proc.start()
@@ -73,10 +73,10 @@ if __name__ == '__main__':
     while True:
         cv2.imshow("frame",FrameQueue.get())
         cv2.moveWindow("frame",20,20)
-        cv2.waitKey(1)
+        cv2.waitKey(10)
     detectFaceProc.join()
     SpeakerProc.join()
    # visualizerProc.join()
-    #recogniseFaceProc.join()
+    recogniseFaceProc.join()
     #trackProc.join()
     
