@@ -12,7 +12,7 @@ import cv2
 #import RosMsgUtil
 import pickle
 
-def StartDetection(FrameQueue,RectQueue,FacepointQueue,SpeakerQueue):
+def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue):
     print("[INFO] loading facial landmark predictor...")
     detector = dlib.get_frontal_face_detector()
     predictor = dlib.shape_predictor("../models/dlib/shape_predictor_68_face_landmarks.dat")

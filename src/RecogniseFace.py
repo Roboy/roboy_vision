@@ -245,7 +245,7 @@ def recogniseFace(RectsQueue):
                 image_batch: np.expand_dims(aligned_face, 0),
                 phase_train_placeholder: False
             }
-            train(session)
+           # train(session)
             # print("Done training/...................................")
             # break;
 
@@ -282,9 +282,9 @@ def recogniseFace(RectsQueue):
 
 
 # CLLAASSSSIIIFFFYINGG
-#             rep = session.run(embeddings, feed_dict=feed_dict)[0]
-#             facesEmbeddings.append(rep)
-#             print("Face Embeddings are:", facesEmbeddings)
+              rep = session.run(embeddings, feed_dict=feed_dict)[0]
+              facesEmbeddings.append(rep)
+              print("Face Embeddings are:", facesEmbeddings)
 #             classifier_filename_exp = "TrainedModel_1.pkl"
 #             paths, labels = get_image_paths_and_labels(dataset)
 #             with open(classifier_filename_exp, 'rb') as infile:
@@ -465,15 +465,14 @@ def load_data(image_paths, do_random_crop, do_random_flip, image_size, do_prewhi
         images[i,:,:,:] = img
     return images
 
-# def processImage(img):
-#     if img.ndim == 2:
-#         img = to_rgb(img)
-#     if do_prewhiten:
-#         img = prewhiten(img)
-#     img = crop(img, do_random_crop, image_size)
-#     img = flip(img, do_random_flip)
-#     images[i,:,:,:] = img
-#     return images
+def processImage(img, do_random_crop, do_random_flip, image_size, do_prewhiten=True):
+    if img.ndim == 2:
+        img = to_rgb(img)
+    if do_prewhiten:
+        img = prewhiten(img)
+    img = crop(img, do_random_crop, image_size)
+    img = flip(img, do_random_flip)
+    return img
 
 def to_rgb(img):
     w, h = img.shape
