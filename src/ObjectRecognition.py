@@ -7,6 +7,10 @@ import random
 import cv2
 import numpy as np
 
+detect_net=0
+detect_meta = 0
+
+
 
 def sample(probs):
     s = sum(probs)
@@ -44,7 +48,7 @@ class METADATA(Structure):
     # lib = CDLL("/home/pjreddie/documents/darknet/libdarknet.so", RTLD_GLOBAL)
 
 
-lib = CDLL("./libdarknet.so", RTLD_GLOBAL)
+lib = CDLL("../darknet/libdarknet.so", RTLD_GLOBAL)
 lib.network_width.argtypes = [c_void_p]
 lib.network_width.restype = c_int
 lib.network_height.argtypes = [c_void_p]
@@ -102,9 +106,9 @@ network_detect = lib.network_detect
 network_detect.argtypes = [c_void_p, IMAGE, c_float, c_float, c_float, POINTER(BOX), POINTER(POINTER(c_float))]
 
 
-
 def detect(net, meta, image, thresh=.5, hier_thresh=.5, nms=.45):
     # check if image is an OpenCV frame
+
     if isinstance(image, np.ndarray):
         # GET C,H,W, and DATA values
         img = image.transpose(2, 0, 1)
@@ -133,11 +137,12 @@ def detect(net, meta, image, thresh=.5, hier_thresh=.5, nms=.45):
     res = sorted(res, key=lambda x: -x[1])
     # free_image(im)
     # free_ptrs(cast(probs, POINTER(c_void_p)), num)
+
     return res
 
 
 def draw_results(res, img):
-    # print("Number of predictions: ",len(res))
+
     for element in res:
         box = element[2]
         xmin = int(box[0] - box[2] / 2. + 1)
@@ -150,22 +155,24 @@ def draw_results(res, img):
                     (xmin, ymin),
                     cv2.FONT_HERSHEY_SIMPLEX, 1.5, rand_color, thickness=3)
     return img
+DONE = 0
+def Initialize():
+    DONE = 0
+    detect_net = load_net("../darknet/cfg/yolo.cfg", "../darknet/yolo.weights", 0)
+    detect_meta = load_meta("../darknet/cfg/coco.data")
+	 
+def detectObjects(frame):
 
-def detectObjects(ObjectsQueue):
-
+    if not detect_net:
+	Initialize()	
+	print("Its empty")
     # LOAD DETECTION NET
-    detect_net = load_net("cfg/yolo.cfg", "yolo.weights", 0)
-    detect_meta = load_meta("cfg/coco.data")
-    cap = cv2.VideoCapture(0)
-
-    while cap.isOpened():
-        ret, frame = cap.read()
-        # RUN OBJECT DETECTION ON FRAME
-        frame = frame[0:376, 0:500]
-
+    #ret, frame = CameraFrame.read()
+    # RUN OBJECT DETECTION ON FRAME
+    frame = frame[0:376, 0:500]
+    if detect_net:
         result = detect(detect_net, detect_meta, frame, thresh=0.5)
-        # print "DETECT", result
+#        print "DETECT", result
         img = draw_results(result, frame)
         cv2.imshow('frame', img)
-        if cv2.waitKey(1) & 0xFF == ord('q'):
-            break
+        cv2.waitKey(1)

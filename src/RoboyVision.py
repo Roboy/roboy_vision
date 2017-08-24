@@ -6,7 +6,7 @@ import Multitracking
 import SpeakerDetect
 import RecogniseFace
 import cv2
-#import ObjectRecognition
+import ObjectRecognition
 import sys
 import Visualizer
 
@@ -34,10 +34,9 @@ def visualizer(CameraQueue,RectQueue,FacePointQueue,SpeakerQueue,FrameQueue,Visu
     Visualizer.StartVisualization(CameraQueue,RectQueue,FacePointQueue,SpeakerQueue,FrameQueue,VisualQueue)
 
 
-def ObjectRecognise(ObjectsQueue):
-    #ObjectRecognise().detectObjects(ObjectsQueue)
+def ObjectRecognise(CameraQueue,ObjectsQueue):
+    ObjectRecognition.detectObjects(CameraQueue,ObjectsQueue)
     print("as")
-
 
 
 
@@ -61,12 +60,12 @@ if __name__ == '__main__':
     #trackProc = Process(target=tracking,args=(RectQueue,TrackQueue,))
     SpeakerProc = \
     Process(target=speakerDetect,args=(FacePointQueue,SpeakerQueue,FrameQueue,VisualQueue))
-    recogniseFaceProc = Process(target=recogniseFace,args=(RectQueue,))
-    #detectObjectsProc = Process(target=ObjectRecognition,args=(ObjectsQueue,))
+    #recogniseFaceProc = Process(target=recogniseFace,args=(RectQueue,))
+    #detectObjectsProc = Process(target=ObjectRecognise,args=(CameraQueue,ObjectsQueue,))
     procs.append(detectFaceProc)
     #procs.append(trackProc)
     procs.append(SpeakerProc)
-    procs.append(recogniseFaceProc)
+    #procs.append(recogniseFaceProc)
     #procs.append(visualizerProc)
     #procs.append(detectObjectsProc)
     for proc in procs:
@@ -80,7 +79,7 @@ if __name__ == '__main__':
     SpeakerProc.join()
     #visualizerProc.join()
     #detectObjectsProc.join()
-    recogniseFaceProc.join()
+   # recogniseFaceProc.join()
 
     #trackProc.join()
     
