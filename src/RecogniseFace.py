@@ -282,9 +282,9 @@ def recogniseFace(RectsQueue):
 
 
 # CLLAASSSSIIIFFFYINGG
-              rep = session.run(embeddings, feed_dict=feed_dict)[0]
-              facesEmbeddings.append(rep)
-              print("Face Embeddings are:", facesEmbeddings)
+            rep = session.run(embeddings, feed_dict=feed_dict)[0]
+            facesEmbeddings.append(rep)
+            print("Face Embeddings are:", facesEmbeddings)
 #             classifier_filename_exp = "TrainedModel_1.pkl"
 #             paths, labels = get_image_paths_and_labels(dataset)
 #             with open(classifier_filename_exp, 'rb') as infile:
