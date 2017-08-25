@@ -19,14 +19,46 @@ def SendRosMsg():
 def PackageMsg():
     print("BS")
 
-
-def Advertise():
+def AdvertiseNewFacialFeatures():
     ws.send("{ \"op\": \"advertise\",\
                           \"type\": \"roboy_communication_cognition/NewFacialFeatures\",\
                           \"topic\": \"/roboy/cognition/vision/NewFacialFeatures\"\
                         }")    
 
-def SendFaceMsg():
+def AdvertiseFaceCoordinates():
+    ws.send("{ \"op\": \"advertise\",\
+                          \"type\": \"roboy_communication_cognition/FaceCoordinates\",\
+                          \"topic\": \"/roboy/cognition/vision/FaceCoordinates\"\
+                        }")   
+
+def AdvertiseFindObject():
+    ws.send("{ \"op\": \"advertise_service\",\
+                          \"type\": \"roboy_communication_cognition/FindObjects\",\
+                          \"service\": \"/roboy/cognition/vision/FindObjects\"\
+                        }")  
+
+def AdvertiseDescribeScene():
+    ws.send("{ \"op\": \"advertise_service\",\
+                          \"type\": \"roboy_communication_cognition/DescribeScene\",\
+                          \"service\": \"/roboy/cognition/vision/DescribeScene\"\
+                        }")  
+
+def AdvertiseLookAtSpeaker():
+    ws.send("{ \"op\": \"advertise_service\",\
+                          \"type\": \"roboy_communication_cognition/LookAtSpeaker\",\
+                          \"service\": \"/roboy/cognition/vision/LookAtSpeaker\"\
+                        }")  
+
+
+def AdvertiseContinously()
+while True:
+	AdvertiseNewFacialFeatures()
+	AdvertiseFaceCoordinates()
+	AdvertiseFindObject()
+	AdvertiseDescribeScene()
+	AdvertiseLookAtSpeaker()
+
+def SendNewFacialFeatures(i):
     ff = 0
     msg = {}
     msg["speaking"] = False
@@ -35,7 +67,7 @@ def SendFaceMsg():
 
     message["msg"] = msg
     message["op"] = "publish"
-    # message["id"] = "message:/roboy/cognition/vision/coordinates:" + str(msg["id"])
+    message["id"] = "message:/roboy/cognition/vision/coordinates:" + str(i)
     message["topic"] = "/roboy/cognition/vision/NewFacialFeatures"
   
 
@@ -43,6 +75,3 @@ def SendFaceMsg():
 
 
 
-Advertise()
-while True:
-	SendFaceMsg()
