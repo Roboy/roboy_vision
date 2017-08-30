@@ -47,12 +47,6 @@ Now you should be working in your virtual environment. We then will install all 
 
 Build
 ----------------
-
-To build all ROS message and service files you can use catkin::
-
-    cd ~/Vision
-    catkin_make
-
 To build doxygen documentation offline for viewing you can run::
 
     cd ~/Vision
