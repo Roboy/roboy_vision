@@ -10,11 +10,9 @@ We recommend the use of Anaconda. This allows all python libraries to only be in
 
 - Download Anaconda from https://www.continuum.io/downloads#linux::
 
-    bash ~/Downloads/Anaconda3-4.3.0-Linux-x86_64.sh
-
 - Install Anaconda:: 
 
-    bash ~/Downloads/Anaconda3-4.3.0-Linux-x86_64.sh
+    bash ~/Downloads/Anaconda3-4.4.0-Linux-x86_64.sh
 
 - Create a Conda Environment with the name "roboy" and python 3::
 
@@ -41,7 +39,7 @@ Now you should be working in your virtual environment. We then will install all 
 
 - Install OpenCV::
 
-    conda install -c menpo opencv3=3.2.0
+    conda install -c menpo opencv3=3.1.0
 
 - Install Tensorflow::
 
@@ -70,6 +68,10 @@ To build doxygen documentation offline for viewing you can run::
     sphinx-build -b html ./docs ./build/docs
 
 
+Please download the files 
+    - SharedLibs
+    - StaticLibs 
+from https://drive.google.com/drive/folders/0B0cOyLVrawK5TFJhdGJvNE9wNzg
 
 Compiling opencv from source
 ----------------
