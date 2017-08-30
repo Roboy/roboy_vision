@@ -1,14 +1,13 @@
 Public Interfaces
 =================
 
-Interfaces to other modules will be realized using ROS Communication. Currently 3 interfaces have been designed for communication with NLP:
+Interfaces to other modules will be realized using ROS Communication. Currently 5 interfaces have been designed for communication, although not all have been fully implemented due to the not fully assembled Roboy to test it on.
 
-- **wakeup service**: Service to be called to test whether a face is recognized within certain distance. Used by NLP for wakeup::
+- **FaceCoordinates message**: For each recognized face in the current frame, this message publishes the id, a boolean indicating whether the person is speaking and the 3D position (depth from ZED camera still to be implemented)::
 
-    # argument: (none)
-    # returns: Bool face_nearby
+    # returns: int32 id, bool speaking, float32 x, float32 y, float32 z
     
-    rosservice call /detect_face
+    rostopic echo /roboy/cognition/vision/FaceCoordinates
 
 - **recognition service**: Service called to recognize a face. Given a object ID the name of the detected person is returned::
 
