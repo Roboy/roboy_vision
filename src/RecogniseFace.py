@@ -1,3 +1,9 @@
+"""@package RecogniseFace
+1. Module responsible for Face Recognition
+2. This uses a model already trained on LWF, to extract facial features
+3. Another model of members from Roboy are trained
+4. We use a SVM classifier to classify the detected face to match with the model of trained faces
+"""
 from imutils import face_utils
 import imutils
 import dlib

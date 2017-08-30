@@ -1,4 +1,8 @@
-import websocket 
+"""@package RosMsgUtil
+1. This module has Util functions to send out ROS messages.
+2. The send functions here are called from different modules.
+"""
+import websocket
 import json as json
 import numpy as np
 ws = websocket.WebSocket();

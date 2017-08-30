@@ -1,3 +1,8 @@
+"""@package RoboyVision
+1. This is the main module.
+2. Each other components are created as seperate processes and spawned.
+3. This also creates Message queues and passes them onto different processes
+"""
 import os
  
 from multiprocessing import Process,Queue

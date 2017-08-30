@@ -34,7 +34,6 @@ def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue)
         grab the frame from the threaded video stream, resize it to
         have a maximum width of 800 pixels, and convert it to
         grayscale"""
-#        RosMsgUtil.AdvertiseContinuosly()
         ok,frame = vs.read()
         if not ok:
             break;
@@ -121,7 +120,7 @@ class METADATA(Structure):
     _fields_ = [("classes", c_int),
                 ("names", POINTER(c_char_p))]
 
-    # lib = CDLL("/home/pjreddie/documents/darknet/libdarknet.so", RTLD_GLOBAL)
+
 
 
 lib = CDLL("../darknet/libdarknet.so", RTLD_GLOBAL)
@@ -237,8 +236,6 @@ def Initialize():
     
 	 
 def detectObjects(frame,detect_net,detect_meta):
-
-
     #ret, frame = CameraFrame.read()
     # RUN OBJECT DETECTION ON FRAME
     frame = frame[0:376, 0:500]

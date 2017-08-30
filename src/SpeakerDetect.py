@@ -1,3 +1,8 @@
+"""@package Speakerdetect
+1. Face is received from the Facedetect module
+2. The speaking algorithm tries to identify speaking
+3. returns a dict of people who speak and their ID
+"""
 import dlib
 import cv2
 #import RosMsgUtil
