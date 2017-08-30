@@ -56,7 +56,7 @@ def DetectSpeaker(FacepointQueue,SpeakerQueue,FrameQueue,VisualQueue):
                     'speaking': speaking,
                     'coordinates': coordinates}
 
-	    i += 1
+
 
 
 
