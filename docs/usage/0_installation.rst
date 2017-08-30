@@ -10,8 +10,6 @@ We recommend the use of Anaconda. This allows all python libraries to only be in
 
 - Download Anaconda from https://www.continuum.io/downloads#linux::
 
-    bash ~/Downloads/Anaconda3-4.3.0-Linux-x86_64.sh
-
 - Install Anaconda:: 
 
     bash ~/Downloads/Anaconda3-4.3.0-Linux-x86_64.sh
@@ -21,6 +19,7 @@ We recommend the use of Anaconda. This allows all python libraries to only be in
     Do you wish the installer to prepend the Anaconda install location to PATH in your /home/name/.bashrc ? [yes¦no]
     
 - Restart the terminal.
+
 
 - Create a Conda Environment with the name "roboy" and python 3::
 
@@ -39,47 +38,32 @@ Dependencies
 
 Now you should be working in your virtual environment. We then will install all requirements. We are working with python 3, because of tensorflow requirements.
 
-- First clone the Vision repository and install the necessary python dependencies::
+- First clone the Vision repository and run the setup script to install most of the necessary dependencies::
 
     cd ~/
     git clone https://github.com/Roboy/Vision
-    pip install -r Vision/requirements.txt
 
-- Install OpenCV::
+    cd ~/Vision
+    chmod +x setup.sh
+    sudo ./setup.sh
+ 
+- Download Cuda from https://developer.nvidia.com/cuda-downloads
 
-    conda install -c menpo opencv3=3.1.0
+- Install Cuda with instructions from http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#axzz4rHIEa0GY
 
-- Install Tensorflow::
-
-    conda install -c conda-forge tensorflow=1.0.0
-
-- For running the tutorials DLib and jupyter notebook will also be required::
-    
-    conda install -c menpo dlib
-    pip install jupyter
-
-- The Last step is to install ROS Kinetic. Since ROS currently is not running using Python3 we install outside the virtual environment and Python 2. The ROS installation tutorial can be found on: http://wiki.ros.org/kinetic/Installation/Ubuntu. 
-
-.. todo:: Compile ROS with Python 3 to be able to use together with Tensorflow v1.x
 
 Build
 ----------------
-
-Install catkin::
-
-    sudo apt install catkin
-
-To build all ROS message and service files you can now use catkin::
-
-    cd ~/Vision
-    catkin_make
-
 To build doxygen documentation offline for viewing you can run::
 
     cd ~/Vision
     sphinx-build -b html ./docs ./build/docs
 
 
+Please download the files 
+    - SharedLibs
+    - StaticLibs 
+from https://drive.google.com/drive/folders/0B0cOyLVrawK5TFJhdGJvNE9wNzg
 
 Compiling opencv from source (MacOS)
 ----------------

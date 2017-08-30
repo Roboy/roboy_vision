@@ -1,0 +1,9 @@
+#type of looked for object
+string type
+---
+#was the object found?
+bool found
+#3D position of found object in transformed global coordinates
+float32 x
+float32 y
+float32 z
