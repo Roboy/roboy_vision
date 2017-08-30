@@ -38,3 +38,6 @@ Due to version clashes and Rospy not being available for Python 3, the ROS Commu
     # returns: bool turned
 
     rosservice call /roboy/cognition/vision/LookAtSpeaker
+
+
+A more detailed documentation of the ROS Communication as well as future plans can be viewed here: https://devanthro.atlassian.net/wiki/spaces/HT/pages/76402960/ROS+services+messages+overview
