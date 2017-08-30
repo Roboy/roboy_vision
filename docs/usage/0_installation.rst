@@ -31,28 +31,19 @@ Dependencies
 
 Now you should be working in your virtual environment. We then will install all requirements. We are working with python 3, because of tensorflow requirements.
 
-- First clone the Vision repository and install the necessary python dependencies::
+- First clone the Vision repository and run the setup script to install most of the necessary dependencies::
 
     cd ~/
     git clone https://github.com/Roboy/Vision
-    pip install -r Vision/requirements.txt
-
-- Install OpenCV::
-
-    conda install -c menpo opencv3=3.1.0
-
-- Install Tensorflow::
-
-    conda install -c conda-forge tensorflow=1.0.0
-
-- For running the tutorials DLib and jupyter notebook will also be required::
+    cd ~/Vision
+    chmod +x setup.sh
+    sudo ./setup.sh
     
-    conda install -c menpo dlib
-    pip install jupyter
+    
+- Download Cuda from https://developer.nvidia.com/cuda-downloads
 
-- The Last step is to install ROS Kinetic. Since ROS currently is not running using Python3 we install outside the virtual environment and Python 2. The ROS installation tutorial can be found on: http://wiki.ros.org/kinetic/Installation/Ubuntu. 
+- Install Cuda with instructions from http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#axzz4rHIEa0GY
 
-.. todo:: Compile ROS with Python 3 to be able to use together with Tensorflow v1.x
 
 Build
 ----------------
