@@ -36,14 +36,14 @@ def AdvertiseLookAtSpeaker():
 
 
 def AdvertiseContinously()
-while True:
 	AdvertiseNewFacialFeatures()
 	AdvertiseFaceCoordinates()
 	AdvertiseFindObject()
 	AdvertiseDescribeScene()
 	AdvertiseLookAtSpeaker()
-	#also put ReceiveServiceRequests here?
+	ReceiveServiceRequests()
 
+	
 def SendNewFacialFeatures(ff, speaking, i):
 	try:
 		msg = {}
@@ -79,20 +79,46 @@ def SendFaceCoordinates(id, speaking, position, i):
 	except Exception as e:
 			logging.exception("Something went wrong in SendFaceCoordinates in RosMsgUtil.py")
 
-def FindObject(type):
+def FindObject(type, i):
 	try:
+		msg = {}
+		msg = #function to find object and return "found": bool, 3d position in float32
+
+		msg["objects_detected"] = objects_detected
+
+		message = {}
+		message["values"] = msg
+	    message["op"] = "service_response"
+	    message["id"] = "service_response:/roboy/cognition/vision/FindObject:" + str(i)
+	    message["service"] = "/roboy/cognition/vision/FindObject"
 		
+		await ws.send(json.dumps(message))
 	except Exception as e:
 		logging.exception("Something went wrong in FindObject in RosMsgUtil.py")
 
-def DescribeScene():
+def DescribeScene(i):
 	try:
+		msg = {}
+		objects_detected = #get Object Queue here
+
+		msg["objects_detected"] = objects_detected
+
+		message = {}
+		message["values"] = msg
+	    message["op"] = "service_response"
+	    message["id"] = "service_response:/roboy/cognition/vision/DescribeScene:" + str(i)
+	    message["service"] = "/roboy/cognition/vision/DescribeScene"
+		
+		await ws.send(json.dumps(message))
 
 	except Exception as e:
 		logging.exception("Something went wrong in DescribeScene in RosMsgUtil.py")
 
-def LookAtSpeaker():
+def LookAtSpeaker(i):
 	try:
+		##
+		##
+		##
 	except Exception as e:
 		logging.exception("Something went wrong in LookAtSpeaker in RosMsgUtil.py")
 
@@ -104,10 +130,10 @@ def ReceiveServiceRequests():
 		if request_type = "call_service":
 			service = json.loads(request)["service"]
 			if service = "/roboy/cognition/vision/FindObjects":
-				FindObject(json.loads(request)["args"]["type"])
+				FindObject(json.loads(request)["args"]["type"], json.loads(request)["args"]["id"])
 			elif service = "/roboy/cognition/vision/DescribeScene":
-				DescribeScene()
+				DescribeScene(json.loads(request)["args"]["id"])
 			elif service = "/roboy/cognition/vision/LookAtSpeaker":
-				LookAtSpeaker()
+				LookAtSpeaker(json.loads(request)["args"]["id"])
 	except Exception as e:
 		logging.exception("Something went wrong in ReceiveServiceRequests in RosMsgUtil.py")			
