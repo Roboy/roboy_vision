@@ -34,11 +34,12 @@ def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue)
         grab the frame from the threaded video stream, resize it to
         have a maximum width of 800 pixels, and convert it to
         grayscale"""
+#        RosMsgUtil.AdvertiseContinuosly()
         ok,frame = vs.read()
         if not ok:
             break;
         #frame = imutils.resize(frame, width=800)\
-	frame = frame[0:376, 0:500]
+        frame = frame[0:376, 0:500]
 
        	detectObjects(frame,detect_net,detect_meta) 
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)

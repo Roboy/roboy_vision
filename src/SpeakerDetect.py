@@ -3,19 +3,10 @@ import cv2
 #import RosMsgUtil
 import sys
 import pickle
-import asyncio
-import websockets
 import json as json
 
 def DetectSpeaker(FacepointQueue,SpeakerQueue,FrameQueue,VisualQueue):
     distances = {1:list()}
-    async with websockets.connect('ws://localhost:9090') as websocket:
-    # advertise the message/topic
-    await websocket.send("{ \"op\": \"advertise\",\
-                      \"type\": \"vision_service/msg/FaceCoordinates\",\
-                      \"topic\": \"/roboy/cognition/vision/FaceCoordinates\"\
-                    }")
-
     while True:
         #dictionary of facial landmarks of each face
         Facepoints = pickle.loads(FacepointQueue.get())
@@ -60,17 +51,8 @@ def DetectSpeaker(FacepointQueue,SpeakerQueue,FrameQueue,VisualQueue):
                     'speaking': speaking,
                     'coordinates': coordinates}
 
-            message["values"] = face
-            message["op"] = "service_response"
-            message["id"] = "message:/roboy/cognition/vision/FaceCoordinates:" + str(i)
-            message["topic"] = "/roboy/cognition/vision/FaceCoordinates"
-            i += 1
+	    i += 1
 
-            await websocket.send(json.dumps(message))
 
-            except Exception as e:
-            logging.exception("Oopsie! Got an exception in vision/FaceCoordinates")
 
         SpeakerQueue.put(speakers)
-    logging.basicConfig(level=logging.INFO)
-    asyncio.get_event_loop().run_until_complete(service_callback())
