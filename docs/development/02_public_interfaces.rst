@@ -2,6 +2,7 @@ Public Interfaces
 =================
 
 Interfaces to other modules will be realized using ROS Communication. Currently 5 interfaces have been designed for communication, although not all have been fully implemented due to the not fully assembled Roboy to test it on.
+Due to version clashes and Rospy not being available for Python 3, the ROS Communication is implemented using websocket.
 
 - **FaceCoordinates message**: For each recognized face in the current frame, this message publishes the id, a boolean indicating whether the person is speaking and the 3D position (depth from ZED camera still to be implemented)::
 
