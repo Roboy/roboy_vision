@@ -2,22 +2,7 @@ import websocket
 import json as json
 import numpy as np
 ws = websocket.WebSocket();
-#ws.connect("ws://bot.roboy.org:9090")
 ws.connect('ws://localhost:9090')	
-def SendRosMsg():
-	message = {}
-	message["speaking"] = True
-	message["ff"] = 0
-    # ws.send("""data:'{"receiver":"/roboy/cognition/vision/faces","msg":"{data:''}","type":"package/Type"}'""")
-	ws.send(json.dumps(message))
-	print("Sent")
-	print("Receiving...")
-	ws.close()
-	print("ads")
-
-#Package the msg in JSON
-def PackageMsg():
-    print("BS")
 
 def AdvertiseNewFacialFeatures():
     ws.send("{ \"op\": \"advertise\",\
@@ -57,21 +42,72 @@ while True:
 	AdvertiseFindObject()
 	AdvertiseDescribeScene()
 	AdvertiseLookAtSpeaker()
+	#also put ReceiveServiceRequests here?
 
-def SendNewFacialFeatures(i):
-    ff = 0
-    msg = {}
-    msg["speaking"] = False
-    msg["ff"] = 0
-    message = {}
+def SendNewFacialFeatures(ff, speaking, i):
+	try:
+		msg = {}
+		msg["ff"] = ff
+		msg["speaking"] = speaking
 
-    message["msg"] = msg
-    message["op"] = "publish"
-    message["id"] = "message:/roboy/cognition/vision/coordinates:" + str(i)
-    message["topic"] = "/roboy/cognition/vision/NewFacialFeatures"
-  
+		message = {}
+		message["msg"] = msg
+		message["op"] = "publish"
+		message["id"] = "message:/roboy/cognition/vision/NewFacialFeatures:" + str(i)
+		message["topic"] = "/roboy/cognition/vision/NewFacialFeatures"
 
-    ws.send(json.dumps(message))
+		await ws.send(json.dumps(message))
+	except Exception as e:
+			logging.exception("Something went wrong in SendNewFacialFeatures in RosMsgUtil.py")
+
+def SendFaceCoordinates(id, speaking, position, i):
+	try:
+		msg = {}
+		msg["id"] = id
+		msg["speaking"] = speaking
+		msg["x"] = position[0]
+		msg["y"] = position[1]
+		msg["z"] = position[2]
+		
+	    message = {}
+		message["msg"] = msg
+	    message["op"] = "publish"
+	    message["id"] = "message:/roboy/cognition/vision/FaceCoordinates:" + str(i)
+	    message["topic"] = "/roboy/cognition/vision/FaceCoordinates"
+	  
+	    await ws.send(json.dumps(message))
+	except Exception as e:
+			logging.exception("Something went wrong in SendFaceCoordinates in RosMsgUtil.py")
+
+def FindObject(type):
+	try:
+		
+	except Exception as e:
+		logging.exception("Something went wrong in FindObject in RosMsgUtil.py")
+
+def DescribeScene():
+	try:
+
+	except Exception as e:
+		logging.exception("Something went wrong in DescribeScene in RosMsgUtil.py")
+
+def LookAtSpeaker():
+	try:
+	except Exception as e:
+		logging.exception("Something went wrong in LookAtSpeaker in RosMsgUtil.py")
 
 
-
+def ReceiveServiceRequests():
+	try:
+		request = await ws.recv()
+		request_type = json.loads(request)["op"]
+		if request_type = "call_service":
+			service = json.loads(request)["service"]
+			if service = "/roboy/cognition/vision/FindObjects":
+				FindObject(json.loads(request)["args"]["type"])
+			elif service = "/roboy/cognition/vision/DescribeScene":
+				DescribeScene()
+			elif service = "/roboy/cognition/vision/LookAtSpeaker":
+				LookAtSpeaker()
+	except Exception as e:
+		logging.exception("Something went wrong in ReceiveServiceRequests in RosMsgUtil.py")			
