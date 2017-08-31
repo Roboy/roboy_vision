@@ -38,7 +38,7 @@ def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue)
         if not ok:
             break;
         #frame = imutils.resize(frame, width=800)\
-	frame = frame[0:376, 0:500]
+        frame = frame[0:376, 0:500]
 
        	detectObjects(frame,detect_net,detect_meta) 
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -120,7 +120,7 @@ class METADATA(Structure):
     _fields_ = [("classes", c_int),
                 ("names", POINTER(c_char_p))]
 
-    # lib = CDLL("/home/pjreddie/documents/darknet/libdarknet.so", RTLD_GLOBAL)
+
 
 
 lib = CDLL("../darknet/libdarknet.so", RTLD_GLOBAL)
@@ -236,8 +236,6 @@ def Initialize():
     
 	 
 def detectObjects(frame,detect_net,detect_meta):
-
-
     #ret, frame = CameraFrame.read()
     # RUN OBJECT DETECTION ON FRAME
     frame = frame[0:376, 0:500]

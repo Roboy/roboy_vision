@@ -1,3 +1,9 @@
+"""@package RecogniseFace
+This is currently not used. We need to figure out way to synchronize image access across different processes.
+1. One place used to visualization.
+
+"""
+
 import os
  
 from multiprocessing import Process,Queue

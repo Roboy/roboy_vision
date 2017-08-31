@@ -2,11 +2,10 @@
 export PYTHONPATH=
 export PATH=~/miniconda3/bin:$PATH
 
-conda create -n python35 python=3.5
-source activate python35
+conda create -n Roboy python=3.5
+source activate Roboy
 
 cd ~/
-git clone https://github.com/Roboy/Vision
 pip install -r Vision/requirements.txt
 conda install -c menpo opencv3=3.2.0
 conda install -c conda-forge tensorflow=1.0.0

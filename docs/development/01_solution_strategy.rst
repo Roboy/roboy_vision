@@ -8,14 +8,14 @@ Basic decisions for Vision Package:
 - Face detection using this approach: `Joint Face Detection and Alignment using MTCNNs <https://kpzhang93.github.io/MTCNN_face_detection_alignment/paper/spl.pdf>`_. Good real time performance, other modules to be built on top.
 - Face embeddings using `FaceNet <https://arxiv.org/pdf/1503.03832.pdf>`_. These embeddings can be used for recognition.
 - Speaker detection using facial landmarks from `DLIB <http://www.pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/>`_
-- Ojbect recognition using `YOLO <https://pjreddie.com/media/files/papers/yolo.pdf>`_
+- Object recognition using `YOLO <https://pjreddie.com/media/files/papers/yolo.pdf>`_
 
 
 Current implementation:
 
 - **RoboyVision** as main, handling all sub-modules: 
 	- **Face Detection** using Facenet for calculating embeddings for a given face and SVM for classification. SVM currently trained on pictures of 	LFW (labelled Faces in the Wild) dataset, using Roboy Team members as next step. Sends coordinates to **Tracker** and facial landmarks to 		**Speaker Detection**
-	- **Speaker Detection** using DLIB's facial landmarks to caluclate specific mouth parameters (width, lip distance) of each face to determine, 		whether a person is speaking
+	- **Speaker Detection** using DLIB's facial landmarks to calculate specific mouth parameters (width, lip distance) of each face to determine, 		whether a person is speaking
 	- **ROS services** are handled by RoboyVision via websocket
 	- **Object recognition** is implemented based on YOLO	
 	- **Tracking objects/faces** running in realtime. This implementation is based on the MIL(Visual Tracking with Online Multiple Instance 		Learning). Also part of the Opencv_contrib module. 

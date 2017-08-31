@@ -1,5 +1,10 @@
-## This object recgnition module is a wrapper of the python module.
-##
+"""@package RecogniseFace
+1. This is a python wrapper for the YOLO implementation in C.
+2. uses Ctypes as a way to access C module.
+3. libdarknet.so is a pre compiled library which works only on Linux!
+
+"""
+
 
 from ctypes import *
 import math

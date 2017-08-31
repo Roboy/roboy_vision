@@ -12,7 +12,14 @@ We recommend the use of Anaconda. This allows all python libraries to only be in
 
 - Install Anaconda:: 
 
-    bash ~/Downloads/Anaconda3-4.4.0-Linux-x86_64.sh
+    bash ~/Downloads/Anaconda3-4.3.0-Linux-x86_64.sh
+    
+- Enter 'yes' when prompted with the following question:
+
+    Do you wish the installer to prepend the Anaconda install location to PATH in your /home/name/.bashrc ? [yes¦no]
+    
+- Restart the terminal.
+
 
 - Create a Conda Environment with the name "roboy" and python 3::
 
@@ -31,37 +38,22 @@ Dependencies
 
 Now you should be working in your virtual environment. We then will install all requirements. We are working with python 3, because of tensorflow requirements.
 
-- First clone the Vision repository and install the necessary python dependencies::
+- First clone the Vision repository and run the setup script to install most of the necessary dependencies::
 
     cd ~/
     git clone https://github.com/Roboy/Vision
-    pip install -r Vision/requirements.txt
 
-- Install OpenCV::
+    cd ~/Vision
+    chmod +x setup.sh
+    sudo ./setup.sh
+ 
+- Download Cuda from https://developer.nvidia.com/cuda-downloads
 
-    conda install -c menpo opencv3=3.1.0
+- Install Cuda with instructions from http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#axzz4rHIEa0GY
 
-- Install Tensorflow::
-
-    conda install -c conda-forge tensorflow=1.0.0
-
-- For running the tutorials DLib and jupyter notebook will also be required::
-    
-    conda install -c menpo dlib
-    pip install jupyter
-
-- The Last step is to install ROS Kinetic. Since ROS currently is not running using Python3 we install outside the virtual environment and Python 2. The ROS installation tutorial can be found on: http://wiki.ros.org/kinetic/Installation/Ubuntu. 
-
-.. todo:: Compile ROS with Python 3 to be able to use together with Tensorflow v1.x
 
 Build
 ----------------
-
-To build all ROS message and service files you can use catkin::
-
-    cd ~/Vision
-    catkin_make
-
 To build doxygen documentation offline for viewing you can run::
 
     cd ~/Vision
@@ -73,7 +65,7 @@ Please download the files
     - StaticLibs 
 from https://drive.google.com/drive/folders/0B0cOyLVrawK5TFJhdGJvNE9wNzg
 
-Compiling opencv from source
+Compiling opencv from source (MacOS)
 ----------------
 
 Note: This is required only if you want to work with multiple object/face tracking. This step is needed as this Multiple tracking is part of opencv_contrib module which needs to be compiled along with opencv, as it doesnt gets shipped with openv. 
@@ -148,4 +140,54 @@ You should see the libraries build in the shared and static libraries folders.
     - ls -s cv2.cpython-36m-darwin.so cv2.so
 
 The above step would help in creating a symbolic link so you can use it with python.
+
+
+Compiling opencv from source (Linux)
+-------------------------------------
+
+You will need the following packages:
+
+    - GCC 4.4.x or later
+    - CMake 2.6 or higher
+    - Git
+    - GTK+2.x or higher, including headers (libgtk2.0-dev)
+    - pkg-config
+    - Python 2.6 or later and Numpy 1.5 or later with developer packages (python-dev, python-numpy)
+    - ffmpeg or libav development packages: libavcodec-dev, libavformat-dev, libswscale-dev
+    - [optional] libtbb2 libtbb-dev
+    - [optional] libdc1394 2.x
+    - [optional] libjpeg-dev, libpng-dev, libtiff-dev, libjasper-dev, libdc1394-22-dev
+    
+Step 1: The packages can be installed using Terminal as follows:
+    
+    [compiler] sudo apt-get install build-essential
+    
+    [required] sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+    
+    [optional] sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
+    
+    
+Step 2: Get the latest stable version of OpenCV from https://sourceforge.net/projects/opencvlibrary/
+
+    2a: Download the source tarball and unpack it.
+    
+    2b: In terminal, cd into the working directory followed by cloning the OpenCV repository::
+    
+        cd ~/<my_working_directory>
+        
+        git clone https://github.com/opencv/opencv.git
+    
+Step 3: Building OpenCV from source using CMake:
+
+    3a: Create a temporary directory, here denoted as <cmake_binary_dir>, where you want to put the generated Makefiles, project files as well the object files and output binaries.
+    
+    3b: Enter the <cmake_binary_dir> and type::
+    
+        cmake <path to the OpenCV source directory>
+        
+Step 4: Enter the created temporary directory (<cmake_binary_dir>) and proceed with::
+
+    make
+    
+    sudo make install
 
