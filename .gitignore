@@ -13,6 +13,14 @@ tutorials/.ipynb_checkpoints
 models/*
 !models/download_models.py
 
+#ignore idea files
+.idea/*
+
+#ignore pycache files
+__pycache__
+.pyc
+
+
 #ignore build files
 build
 devel
