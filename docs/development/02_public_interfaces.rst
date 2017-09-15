@@ -1,4 +1,4 @@
-Public Interfaces
+Public Interfaces(ROS)
 =================
 
 Interfaces to other modules will be realized using ROS Communication. Currently 5 interfaces have been designed for communication, although not all have been fully implemented due to the not fully assembled Roboy to test it on.

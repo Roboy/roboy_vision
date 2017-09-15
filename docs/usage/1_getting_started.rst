@@ -21,7 +21,7 @@ There is four different tutorials:
 - **Face_Recognition** tutorial shows how to run the classification on an image or webcam input. It demonstrates this using KNN and the classifiers trained in the previous tutorial. 
 
 
-Real Time
+Real Time - How to run Vision module.
 ---------
 
 For running face detection in real time you can run the script::

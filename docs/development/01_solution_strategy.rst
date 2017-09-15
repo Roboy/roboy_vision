@@ -19,6 +19,8 @@ Current implementation:
 	- **ROS services** are handled by RoboyVision via websocket
 	- **Object recognition** is implemented based on YOLO	
 	- **Tracking objects/faces** running in realtime. This implementation is based on the MIL(Visual Tracking with Online Multiple Instance 		Learning). Also part of the Opencv_contrib module. 
+
+Read about the Public Interfaces (ROS) `here <http://roboyvision.readthedocs.io/en/latest/development/02_public_interfaces.html>`_
  
 Plan for this semester with priorities in red (5 being highest priority):
 
