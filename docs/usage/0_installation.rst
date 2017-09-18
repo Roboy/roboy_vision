@@ -190,4 +190,13 @@ Step 4: Enter the created temporary directory (<cmake_binary_dir>) and proceed w
     make
     
     sudo make install
+    
+    
+Running the Vision module
+--------------------------
+
+Finally, to run the entire module, run the 'RoboyVision.py' script in the 'src' folder::
+
+       python RoboyVision.py
+
 
