@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_ros_msg_util_8py" kind="file" language="Python">
+    <compoundname>RosMsgUtil.py</compoundname>
+    <innernamespace refid="namespace_ros_msg_util">RosMsgUtil</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>websocket<sp/></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">SendRosMsg(Msg):</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>ws<sp/>=<sp/>websocket.WebSocket();</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>ws.connect(</highlight><highlight class="stringliteral">&quot;ws://bot.roboy.org:9090&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>ws.send(</highlight><highlight class="stringliteral">&quot;&quot;&quot;data:&apos;{&quot;receiver&quot;:&quot;/roboy/cognition/vision/faces&quot;,&quot;msg&quot;:&quot;{data:&apos;&apos;}&quot;,&quot;type&quot;:&quot;package/Type&quot;}&apos;&quot;&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/>(</highlight><highlight class="stringliteral">&quot;Sent&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/>(</highlight><highlight class="stringliteral">&quot;Reeiving...&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>ws.close()<sp/><sp/></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py"/>
+  </compounddef>
+</doxygen>

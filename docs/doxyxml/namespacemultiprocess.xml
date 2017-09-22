@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacemultiprocess" kind="namespace" language="Python">
+    <compoundname>multiprocess</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="multiprocess_8py_1a650da6aa92f3c38dc2206bc22100bb79" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list multiprocess.procs</definition>
+        <argsstring></argsstring>
+        <name>procs</name>
+        <initializer>= []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/multiprocess.py" line="34" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/multiprocess.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiprocess_8py_1ab99ed8aa05995a55bcbe78dbd4c9b605" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiprocess.FrameQueue</definition>
+        <argsstring></argsstring>
+        <name>FrameQueue</name>
+        <initializer>= Queue();</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/multiprocess.py" line="35" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/multiprocess.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiprocess_8py_1a44fe6c208eb7f0fbb0cc9a5993da2fd3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiprocess.RectQueue</definition>
+        <argsstring></argsstring>
+        <name>RectQueue</name>
+        <initializer>= Queue();</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/multiprocess.py" line="36" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/multiprocess.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiprocess_8py_1a872f93feac73859e8a20920312208117" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiprocess.TrackQueue</definition>
+        <argsstring></argsstring>
+        <name>TrackQueue</name>
+        <initializer>= Queue();</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/multiprocess.py" line="37" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/multiprocess.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiprocess_8py_1aec2f52f24f340e4274c15574734648ff" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiprocess.detectFaceProc</definition>
+        <argsstring></argsstring>
+        <name>detectFaceProc</name>
+        <initializer>= Process(target=detectFaces,args=(FrameQueue,RectQueue,))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/multiprocess.py" line="39" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/multiprocess.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiprocess_8py_1ac356ba29427f316e7b2967d3e8a0daa5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiprocess.trackProc</definition>
+        <argsstring></argsstring>
+        <name>trackProc</name>
+        <initializer>= Process(target=tracking,args=(RectQueue,TrackQueue,))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/multiprocess.py" line="40" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/multiprocess.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="multiprocess_8py_1a245b2ff0a36af587655479ae020a7572" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def multiprocess.TestProcess</definition>
+        <argsstring>(number)</argsstring>
+        <name>TestProcess</name>
+        <param>
+          <type>number</type>
+          <defname>number</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/multiprocess.py" line="10" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/multiprocess.py" bodystart="10" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="multiprocess_8py_1a92d4261f808ca65992649eeba44ad30f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def multiprocess.detectFaces</definition>
+        <argsstring>(FrameQueue, RectQueue)</argsstring>
+        <name>detectFaces</name>
+        <param>
+          <type>FrameQueue</type>
+          <defname>FrameQueue</defname>
+        </param>
+        <param>
+          <type>RectQueue</type>
+          <defname>RectQueue</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/multiprocess.py" line="15" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/multiprocess.py" bodystart="15" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="multiprocess_8py_1a9bd0c831972c9fd871cdfe5d992cd766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def multiprocess.tracking</definition>
+        <argsstring>(RectQueue, TrackQueue)</argsstring>
+        <name>tracking</name>
+        <param>
+          <type>RectQueue</type>
+          <defname>RectQueue</defname>
+        </param>
+        <param>
+          <type>TrackQueue</type>
+          <defname>TrackQueue</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/multiprocess.py" line="25" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/multiprocess.py" bodystart="25" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/multiprocess.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

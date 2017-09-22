@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespace_multitracking" kind="namespace" language="Python">
+    <compoundname>Multitracking</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_multitracking_1a66348b124770a0b2a6a47f166e256077" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Multitracking.StartTracking</definition>
+        <argsstring>(RectsQueue, TrackQueue)</argsstring>
+        <name>StartTracking</name>
+        <param>
+          <type>RectsQueue</type>
+          <defname>RectsQueue</defname>
+        </param>
+        <param>
+          <type>TrackQueue</type>
+          <defname>TrackQueue</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>The co-ords of the object to be tracked is received through the Rects Queue. MIL MultiTracking is used through OpenCV Contrib
+Drawn rectangle is passed over the TrackQueue
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/Multitracking.py" line="13" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/Multitracking.py" bodystart="13" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>@package Multitracking
+1. Coordinates of the detected object is send though Rects Queue.
+2. Currently, MIL tracking algorithm has been employed.
+3. A rectangle is drawn over the tracked object andis sent to the main process through TrackQueue
+</verbatim> </para>    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/Multitracking.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

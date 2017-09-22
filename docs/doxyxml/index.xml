@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="namespaceface__detection" kind="namespace"><name>face_detection</name>
+    <member refid="namespaceface__detection_1ab433958e585531e23d1131e0e9eb864e" kind="variable"><name>EXPECT_SIZE</name></member>
+    <member refid="namespaceface__detection_1ab43c800d256522837d99d747f95a7b3d" kind="variable"><name>FACE_AREA</name></member>
+    <member refid="namespaceface__detection_1aa15e87d39d8e34b508d69ddac7b90ce7" kind="variable"><name>x_pixel</name></member>
+    <member refid="namespaceface__detection_1a8e5edb36f091f16de9bf4143dad161a7" kind="variable"><name>y_pixel</name></member>
+    <member refid="namespaceface__detection_1afe61fcf118eb49b7b93ae7fd3aad2d77" kind="variable"><name>resize_factor</name></member>
+    <member refid="namespaceface__detection_1ac62eadd194ee6ccaf4f1a4f37bc42fdc" kind="variable"><name>face_nearby</name></member>
+    <member refid="namespaceface__detection_1ab74afac4da488030a2104c38c0a76dfe" kind="variable"><name>no_face_detect_counter</name></member>
+    <member refid="namespaceface__detection_1ad58a94c14e6035a9affc5e3b6e1e0d5b" kind="variable"><name>dev</name></member>
+    <member refid="namespaceface__detection_1adf4ee84e30b7bbc5689a21560c1c1521" kind="variable"><name>sess</name></member>
+    <member refid="namespaceface__detection_1ac7235acdc3a45d825f63d667099ef73d" kind="variable"><name>pnet</name></member>
+    <member refid="namespaceface__detection_1a9893ecab44577e4ca067f90cf5ee480a" kind="variable"><name>rnet</name></member>
+    <member refid="namespaceface__detection_1a62cca833140dd2f1e65c4e1aff094313" kind="variable"><name>onet</name></member>
+    <member refid="namespaceface__detection_1a3daf1f7ce9fa3a22a3da3095ffc97bc1" kind="variable"><name>minsize</name></member>
+    <member refid="namespaceface__detection_1a4b994bf9c598e7eaad17cc524f762ccb" kind="variable"><name>threshold</name></member>
+    <member refid="namespaceface__detection_1a62280a81aa21adeea04b90f2f3a4d1fb" kind="variable"><name>factor</name></member>
+    <member refid="namespaceface__detection_1aa5b851272336a147835658338f25e994" kind="variable"><name>tree_model</name></member>
+    <member refid="namespaceface__detection_1a983b9c72a29736be04ca695cafa07f5c" kind="variable"><name>svm_model</name></member>
+    <member refid="namespaceface__detection_1a6d0efd1df3e9ef85c2da833a5245c62f" kind="variable"><name>clf</name></member>
+    <member refid="namespaceface__detection_1a75769885ce8899a7b9518668d3c4d9a5" kind="variable"><name>model_dir</name></member>
+    <member refid="namespaceface__detection_1a892aa3a61fa78754f13f64fa1907fc43" kind="variable"><name>meta_file</name></member>
+    <member refid="namespaceface__detection_1a9c35c4322d735d756d5b16becaffe5e7" kind="variable"><name>ckpt_file</name></member>
+    <member refid="namespaceface__detection_1a94e024c78c1322896e7efca32dfbde80" kind="variable"><name>session</name></member>
+    <member refid="namespaceface__detection_1a24101d6831bbc13d6f8080977949b076" kind="variable"><name>graph</name></member>
+    <member refid="namespaceface__detection_1a32fe9ddbf20a9252d7a66d6f32d48384" kind="variable"><name>image_batch</name></member>
+    <member refid="namespaceface__detection_1a95451f3bc37522531f6b1632a029aba0" kind="variable"><name>phase_train_placeholder</name></member>
+    <member refid="namespaceface__detection_1a5917c931cb20c905d8992fb91c733c2d" kind="variable"><name>embeddings</name></member>
+    <member refid="namespaceface__detection_1a25ed1a82e42405300aea9a46978b3a0c" kind="variable"><name>c</name></member>
+    <member refid="namespaceface__detection_1a7a3f6a1084780270c455712b147c0e2c" kind="variable"><name>d</name></member>
+    <member refid="namespaceface__detection_1ae665e8f63e2177e5b34f9d0c12a0881d" kind="variable"><name>img</name></member>
+    <member refid="namespaceface__detection_1ad6ae0f903d802902863ca36f91b84465" kind="variable"><name>d_img</name></member>
+    <member refid="namespaceface__detection_1a31be66b6a0573f93c37293ff8006ce52" kind="variable"><name>total_boxes</name></member>
+    <member refid="namespaceface__detection_1a7f1731448a2d950ab30e5088a5f8bff8" kind="variable"><name>points</name></member>
+    <member refid="namespaceface__detection_1a96c3f7b731ec65b8a07d959b53b58958" kind="variable"><name>start_recognize_face</name></member>
+    <member refid="namespaceface__detection_1a2e872654d792938de1f31f8889db8083" kind="variable"><name>draw</name></member>
+    <member refid="namespaceface__detection_1a504d15424b80d78ad34f608f419fbfcf" kind="function"><name>detect_face_and_landmarks_mtcnn</name></member>
+    <member refid="namespaceface__detection_1ad092251552201bffe5b0a9c03cfadb84" kind="function"><name>align_face_mtcnn</name></member>
+    <member refid="namespaceface__detection_1ad86d2091fa67bdc2816dc397a3754df1" kind="function"><name>draw_rects</name></member>
+    <member refid="namespaceface__detection_1a00df40f5cff2df790be52b45de27fb62" kind="function"><name>draw_landmarks</name></member>
+    <member refid="namespaceface__detection_1ab5d79d07ad6fb04cfa99e9cb3672c80a" kind="function"><name>get_closest_face</name></member>
+    <member refid="namespaceface__detection_1a1f6cacba7956a523078efc4d646d1a08" kind="function"><name>face_detected</name></member>
+    <member refid="namespaceface__detection_1a2a8120285c1546f7c888d4172d8c4961" kind="function"><name>recognize_face</name></member>
+    <member refid="namespaceface__detection_1a764ab9f47d3086ecc957eeb3ee07e196" kind="function"><name>load_model</name></member>
+    <member refid="namespaceface__detection_1a4848f6a2163ddf93d0430e16fe7da285" kind="function"><name>get_model_filenames</name></member>
+  </compound>
+  <compound refid="namespace_face_detect" kind="namespace"><name>FaceDetect</name>
+    <member refid="namespace_face_detect_1a656bcbcb2a8f5cefd8cb4e8b599998f3" kind="function"><name>StartDetection</name></member>
+  </compound>
+  <compound refid="namespacemultiprocess" kind="namespace"><name>multiprocess</name>
+    <member refid="multiprocess_8py_1a650da6aa92f3c38dc2206bc22100bb79" kind="variable"><name>procs</name></member>
+    <member refid="multiprocess_8py_1ab99ed8aa05995a55bcbe78dbd4c9b605" kind="variable"><name>FrameQueue</name></member>
+    <member refid="multiprocess_8py_1a44fe6c208eb7f0fbb0cc9a5993da2fd3" kind="variable"><name>RectQueue</name></member>
+    <member refid="multiprocess_8py_1a872f93feac73859e8a20920312208117" kind="variable"><name>TrackQueue</name></member>
+    <member refid="multiprocess_8py_1aec2f52f24f340e4274c15574734648ff" kind="variable"><name>detectFaceProc</name></member>
+    <member refid="multiprocess_8py_1ac356ba29427f316e7b2967d3e8a0daa5" kind="variable"><name>trackProc</name></member>
+    <member refid="multiprocess_8py_1a245b2ff0a36af587655479ae020a7572" kind="function"><name>TestProcess</name></member>
+    <member refid="multiprocess_8py_1a92d4261f808ca65992649eeba44ad30f" kind="function"><name>detectFaces</name></member>
+    <member refid="multiprocess_8py_1a9bd0c831972c9fd871cdfe5d992cd766" kind="function"><name>tracking</name></member>
+  </compound>
+  <compound refid="namespace_multitracking" kind="namespace"><name>Multitracking</name>
+    <member refid="namespace_multitracking_1a66348b124770a0b2a6a47f166e256077" kind="function"><name>StartTracking</name></member>
+  </compound>
+  <compound refid="namespace_roboy_vision" kind="namespace"><name>RoboyVision</name>
+    <member refid="_roboy_vision_8py_1ae4f8f162c22a5ed59dcb27e9a48eb829" kind="variable"><name>procs</name></member>
+    <member refid="_roboy_vision_8py_1ab4bcecb6e81ca693803541c8d949d38b" kind="variable"><name>FrameQueue</name></member>
+    <member refid="_roboy_vision_8py_1a79c124eaedd51404dfb2812516016d51" kind="variable"><name>RectQueue</name></member>
+    <member refid="_roboy_vision_8py_1a19fb7461108e0ab1c692d58cea1e830f" kind="variable"><name>TrackQueue</name></member>
+    <member refid="_roboy_vision_8py_1a08a8fbadcc280bdcfeba429412b9d9d6" kind="variable"><name>SpeakerQueue</name></member>
+    <member refid="_roboy_vision_8py_1a911e8e79f60e3f17606a6dba83ea7f8f" kind="variable"><name>detectFaceProc</name></member>
+    <member refid="_roboy_vision_8py_1aac8a1e0039744dcdbcfcb870ad875eb5" kind="variable"><name>trackProc</name></member>
+    <member refid="_roboy_vision_8py_1a00b8269e1c2c452da634cc813a4be42d" kind="variable"><name>SpeakerProc</name></member>
+    <member refid="_roboy_vision_8py_1ab127e439d46f62f0b0867f6ad1940dd4" kind="function"><name>TestProcess</name></member>
+    <member refid="_roboy_vision_8py_1a2bf878862fbc1ecf9190af6285a67a79" kind="function"><name>detectFaces</name></member>
+    <member refid="_roboy_vision_8py_1ada3f0d5a189db260ec982966536357b9" kind="function"><name>tracking</name></member>
+    <member refid="_roboy_vision_8py_1a337eea9da7a607ee93e3b798136e1750" kind="function"><name>speakerDetect</name></member>
+  </compound>
+  <compound refid="namespace_ros_msg_util" kind="namespace"><name>RosMsgUtil</name>
+    <member refid="_ros_msg_util_8py_1a047090fee27c72474cb774a3ede9fd2f" kind="function"><name>SendRosMsg</name></member>
+  </compound>
+  <compound refid="namespace_speaker_detect" kind="namespace"><name>SpeakerDetect</name>
+    <member refid="_speaker_detect_8py_1a5fd74de28e9aebc0e29c44800e735e39" kind="function"><name>DetectSpeaker</name></member>
+  </compound>
+  <compound refid="_c_make_lists_8txt" kind="file"><name>CMakeLists.txt</name>
+    <member refid="_c_make_lists_8txt_1a70b0be35802e7a1df142361751d711ef" kind="variable"><name>_cmd_str</name></member>
+    <member refid="_c_make_lists_8txt_1ab5607a27f36503780247017dd038c906" kind="function"><name>cmake_minimum_required</name></member>
+    <member refid="_c_make_lists_8txt_1a3872d6c7d25506c3b3a62f1e0b82ca83" kind="function"><name>execute_process</name></member>
+  </compound>
+  <compound refid="vision__service_2_c_make_lists_8txt" kind="file"><name>CMakeLists.txt</name>
+    <member refid="vision__service_2_c_make_lists_8txt_1a9a78300deacd6cc76969a4da2d31e798" kind="function"><name>cmake_minimum_required</name></member>
+  </compound>
+  <compound refid="_face_detect_8py" kind="file"><name>FaceDetect.py</name>
+  </compound>
+  <compound refid="multiprocess_8py" kind="file"><name>multiprocess.py</name>
+  </compound>
+  <compound refid="_multitracking_8py" kind="file"><name>Multitracking.py</name>
+  </compound>
+  <compound refid="_roboy_vision_8py" kind="file"><name>RoboyVision.py</name>
+  </compound>
+  <compound refid="_ros_msg_util_8py" kind="file"><name>RosMsgUtil.py</name>
+  </compound>
+  <compound refid="_speaker_detect_8py" kind="file"><name>SpeakerDetect.py</name>
+  </compound>
+  <compound refid="face__detection_8py" kind="file"><name>face_detection.py</name>
+  </compound>
+  <compound refid="dir_22646c97983fbacd357b4ba82fa3c4b7" kind="dir"><name>/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>/home/ubuntu/workspace/roboy_vision/src</name>
+  </compound>
+  <compound refid="dir_d339c7f4ae4c5a2cd564de3c5a271e5f" kind="dir"><name>/home/ubuntu/workspace/roboy_vision/src/vision_service</name>
+  </compound>
+</doxygenindex>
