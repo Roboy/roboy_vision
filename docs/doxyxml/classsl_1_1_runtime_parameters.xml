@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classsl_1_1_runtime_parameters" kind="class" language="C++" prot="public">
+    <compoundname>sl::RuntimeParameters</compoundname>
+    <includes refid="_camera_8hpp" local="no">Camera.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsl_1_1_runtime_parameters_1abe3c765b7a447380fe9625ea5b07ded9" prot="public" static="no" mutable="no">
+        <type><ref refid="group___enumerations_1gab2582f40a88ce7c33d5edfd6ca3ea0f6" kindref="member">SENSING_MODE</ref></type>
+        <definition>SENSING_MODE sl::RuntimeParameters::sensing_mode</definition>
+        <argsstring></argsstring>
+        <name>sensing_mode</name>
+        <briefdescription>
+<para>Defines the type of disparity map, more info : sl::SENSING_MODE definition. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="235" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_runtime_parameters_1a7c8ae9713defaff49dbc5d75ecf7c49d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool sl::RuntimeParameters::enable_depth</definition>
+        <argsstring></argsstring>
+        <name>enable_depth</name>
+        <briefdescription>
+<para>Defines if the depth map should be computed. </para>        </briefdescription>
+        <detaileddescription>
+<para>If false, only the images are available. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="241" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_runtime_parameters_1a69ee9a32dd1c27d1cfc27638d597229d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool sl::RuntimeParameters::enable_point_cloud</definition>
+        <argsstring></argsstring>
+        <name>enable_point_cloud</name>
+        <briefdescription>
+<para>Defines if the point cloud should be computed (including XYZRGBA). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="246" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_runtime_parameters_1a5e193b875a24331330ddcf9b5bf7a09b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool sl::RuntimeParameters::move_point_cloud_to_world_frame</definition>
+        <argsstring></argsstring>
+        <name>move_point_cloud_to_world_frame</name>
+        <briefdescription>
+<para>Apply the current pose to the point cloud. </para>        </briefdescription>
+        <detaileddescription>
+<para>It means that values of point cloud will be defined in world frame (as opposite to the camera frame). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="251" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsl_1_1_runtime_parameters_1a3c58c59fefdc17dd8fa3c55e9593b982" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sl::RuntimeParameters::RuntimeParameters</definition>
+        <argsstring>(SENSING_MODE sensing_mode_=SENSING_MODE::SENSING_MODE_STANDARD, bool enable_depth_=true, bool enable_point_cloud_=true, bool move_point_cloud_to_world_frame_=false)</argsstring>
+        <name>RuntimeParameters</name>
+        <param>
+          <type><ref refid="group___enumerations_1gab2582f40a88ce7c33d5edfd6ca3ea0f6" kindref="member">SENSING_MODE</ref></type>
+          <declname>sensing_mode_</declname>
+          <defval>SENSING_MODE::SENSING_MODE_STANDARD</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enable_depth_</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enable_point_cloud_</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>move_point_cloud_to_world_frame_</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Default constructor, set all parameters to their default and optimized values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="256" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="256" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_runtime_parameters_1a71968e3ba71e7c1eec1ddcde43ffdfcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl::RuntimeParameters::save</definition>
+        <argsstring>(sl::String filename)</argsstring>
+        <name>save</name>
+        <param>
+          <type>sl::String</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Saves the current bunch of parameters into a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the path to the file in which the parameters will be stored. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the file was successfully saved, otherwise false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="268" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_runtime_parameters_1a2e116bee326e9304ada7aa4d1ca9417e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl::RuntimeParameters::load</definition>
+        <argsstring>(sl::String filename)</argsstring>
+        <name>load</name>
+        <param>
+          <type>sl::String</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Loads the values of the parameters contained in a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the path to the file from which the parameters will be loaded. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the file was successfully loaded, otherwise false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="275" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Contains all the <ref refid="classsl_1_1_camera_1a14192b74f20d25463f87032a86259899" kindref="member">Camera::grab()</ref> parameters. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="230" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="230" bodyend="276"/>
+    <listofallmembers>
+      <member refid="classsl_1_1_runtime_parameters_1a7c8ae9713defaff49dbc5d75ecf7c49d" prot="public" virt="non-virtual"><scope>sl::RuntimeParameters</scope><name>enable_depth</name></member>
+      <member refid="classsl_1_1_runtime_parameters_1a69ee9a32dd1c27d1cfc27638d597229d" prot="public" virt="non-virtual"><scope>sl::RuntimeParameters</scope><name>enable_point_cloud</name></member>
+      <member refid="classsl_1_1_runtime_parameters_1a2e116bee326e9304ada7aa4d1ca9417e" prot="public" virt="non-virtual"><scope>sl::RuntimeParameters</scope><name>load</name></member>
+      <member refid="classsl_1_1_runtime_parameters_1a5e193b875a24331330ddcf9b5bf7a09b" prot="public" virt="non-virtual"><scope>sl::RuntimeParameters</scope><name>move_point_cloud_to_world_frame</name></member>
+      <member refid="classsl_1_1_runtime_parameters_1a3c58c59fefdc17dd8fa3c55e9593b982" prot="public" virt="non-virtual"><scope>sl::RuntimeParameters</scope><name>RuntimeParameters</name></member>
+      <member refid="classsl_1_1_runtime_parameters_1a71968e3ba71e7c1eec1ddcde43ffdfcf" prot="public" virt="non-virtual"><scope>sl::RuntimeParameters</scope><name>save</name></member>
+      <member refid="classsl_1_1_runtime_parameters_1abe3c765b7a447380fe9625ea5b07ded9" prot="public" virt="non-virtual"><scope>sl::RuntimeParameters</scope><name>sensing_mode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

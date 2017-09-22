@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="matrix_8h" kind="file" language="C++">
+    <compoundname>matrix.h</compoundname>
+    <includes refid="darknet_8h" local="yes">darknet.h</includes>
+    <includedby refid="data_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h</includedby>
+    <includedby refid="matrix_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/matrix.c</includedby>
+    <incdepgraph>
+      <node id="1246">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1244">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/matrix.h</label>
+        <link refid="matrix.h"/>
+        <childnode refid="1245" relation="include">
+        </childnode>
+      </node>
+      <node id="1245">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="1246" relation="include">
+        </childnode>
+        <childnode refid="1247" relation="include">
+        </childnode>
+        <childnode refid="1248" relation="include">
+        </childnode>
+        <childnode refid="1249" relation="include">
+        </childnode>
+      </node>
+      <node id="1249">
+        <label>pthread.h</label>
+      </node>
+      <node id="1248">
+        <label>string.h</label>
+      </node>
+      <node id="1247">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1263">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/deconvolutional_layer.h</label>
+        <link refid="deconvolutional__layer_8h_source"/>
+      </node>
+      <node id="1271">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/rnn_layer.h</label>
+        <link refid="rnn__layer_8h_source"/>
+      </node>
+      <node id="1272">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/normalization_layer.h</label>
+        <link refid="normalization__layer_8h_source"/>
+      </node>
+      <node id="1266">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/dropout_layer.h</label>
+        <link refid="dropout__layer_8h_source"/>
+      </node>
+      <node id="1255">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h</label>
+        <link refid="convolutional__layer_8h_source"/>
+      </node>
+      <node id="1260">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/connected_layer.h</label>
+        <link refid="connected__layer_8h_source"/>
+      </node>
+      <node id="1251">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h</label>
+        <link refid="data_8h_source"/>
+        <childnode refid="1252" relation="include">
+        </childnode>
+      </node>
+      <node id="1252">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.h</label>
+        <link refid="network_8h_source"/>
+        <childnode refid="1253" relation="include">
+        </childnode>
+        <childnode refid="1254" relation="include">
+        </childnode>
+        <childnode refid="1255" relation="include">
+        </childnode>
+        <childnode refid="1256" relation="include">
+        </childnode>
+        <childnode refid="1257" relation="include">
+        </childnode>
+        <childnode refid="1258" relation="include">
+        </childnode>
+        <childnode refid="1259" relation="include">
+        </childnode>
+        <childnode refid="1260" relation="include">
+        </childnode>
+        <childnode refid="1261" relation="include">
+        </childnode>
+        <childnode refid="1262" relation="include">
+        </childnode>
+        <childnode refid="1263" relation="include">
+        </childnode>
+        <childnode refid="1264" relation="include">
+        </childnode>
+        <childnode refid="1265" relation="include">
+        </childnode>
+        <childnode refid="1266" relation="include">
+        </childnode>
+        <childnode refid="1267" relation="include">
+        </childnode>
+        <childnode refid="1268" relation="include">
+        </childnode>
+        <childnode refid="1269" relation="include">
+        </childnode>
+        <childnode refid="1270" relation="include">
+        </childnode>
+        <childnode refid="1271" relation="include">
+        </childnode>
+        <childnode refid="1272" relation="include">
+        </childnode>
+        <childnode refid="1273" relation="include">
+        </childnode>
+        <childnode refid="1274" relation="include">
+        </childnode>
+        <childnode refid="1275" relation="include">
+        </childnode>
+      </node>
+      <node id="1259">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.h</label>
+        <link refid="parser_8h_source"/>
+      </node>
+      <node id="1253">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/activation_layer.h</label>
+        <link refid="activation__layer_8h_source"/>
+      </node>
+      <node id="1257">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/detection_layer.h</label>
+        <link refid="detection__layer_8h_source"/>
+      </node>
+      <node id="1268">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.h</label>
+        <link refid="local__layer_8h_source"/>
+      </node>
+      <node id="1258">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/cost_layer.h</label>
+        <link refid="cost__layer_8h_source"/>
+      </node>
+      <node id="1250">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/matrix.h</label>
+        <link refid="matrix.h"/>
+        <childnode refid="1251" relation="include">
+        </childnode>
+      </node>
+      <node id="1256">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/batchnorm_layer.h</label>
+        <link refid="batchnorm__layer_8h_source"/>
+      </node>
+      <node id="1274">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/route_layer.h</label>
+        <link refid="route__layer_8h_source"/>
+      </node>
+      <node id="1270">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.h</label>
+        <link refid="maxpool__layer_8h_source"/>
+      </node>
+      <node id="1264">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/region_layer.h</label>
+        <link refid="region__layer_8h_source"/>
+      </node>
+      <node id="1254">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/avgpool_layer.h</label>
+        <link refid="avgpool__layer_8h_source"/>
+      </node>
+      <node id="1269">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/lstm_layer.h</label>
+        <link refid="lstm__layer_8h_source"/>
+      </node>
+      <node id="1273">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/reorg_layer.h</label>
+        <link refid="reorg__layer_8h_source"/>
+      </node>
+      <node id="1265">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/softmax_layer.h</label>
+        <link refid="softmax__layer_8h_source"/>
+      </node>
+      <node id="1261">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crnn_layer.h</label>
+        <link refid="crnn__layer_8h_source"/>
+      </node>
+      <node id="1275">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/shortcut_layer.h</label>
+        <link refid="shortcut__layer_8h_source"/>
+      </node>
+      <node id="1267">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/gru_layer.h</label>
+        <link refid="gru__layer_8h_source"/>
+      </node>
+      <node id="1262">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crop_layer.h</label>
+        <link refid="crop__layer_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="matrix_8h_1a740942b240172fa3517b229f2e471bd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmatrix" kindref="compound">matrix</ref></type>
+        <definition>matrix copy_matrix</definition>
+        <argsstring>(matrix m)</argsstring>
+        <name>copy_matrix</name>
+        <param>
+          <type><ref refid="structmatrix" kindref="compound">matrix</ref></type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/matrix.h" line="5" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/matrix.c" bodystart="77" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="matrix_8h_1a351aa1d3aab0557ae4206f81a84b190e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_matrix</definition>
+        <argsstring>(matrix m)</argsstring>
+        <name>print_matrix</name>
+        <param>
+          <type><ref refid="structmatrix" kindref="compound">matrix</ref></type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/matrix.h" line="6" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/matrix.c" bodystart="174" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="matrix_8h_1a7bfa78622f014b79c789e83d809c579a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmatrix" kindref="compound">matrix</ref></type>
+        <definition>matrix hold_out_matrix</definition>
+        <argsstring>(matrix *m, int n)</argsstring>
+        <name>hold_out_matrix</name>
+        <param>
+          <type><ref refid="structmatrix" kindref="compound">matrix</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/matrix.h" line="8" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/matrix.c" bodystart="104" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="matrix_8h_1a2f40e69a38757ece1beb945fd74a22a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmatrix" kindref="compound">matrix</ref></type>
+        <definition>matrix resize_matrix</definition>
+        <argsstring>(matrix m, int size)</argsstring>
+        <name>resize_matrix</name>
+        <param>
+          <type><ref refid="structmatrix" kindref="compound">matrix</ref></type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/matrix.h" line="9" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/matrix.c" bodystart="47" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="matrix_8h_1a7889328e829b311e1aee8161858d73cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float *</type>
+        <definition>float* pop_column</definition>
+        <argsstring>(matrix *m, int c)</argsstring>
+        <name>pop_column</name>
+        <param>
+          <type><ref refid="structmatrix" kindref="compound">matrix</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/matrix.h" line="11" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/matrix.c" bodystart="119" bodyend="131"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MATRIX_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MATRIX_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;darknet.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="structmatrix" kindref="compound">matrix</ref><sp/>copy_matrix(<ref refid="structmatrix" kindref="compound">matrix</ref><sp/>m);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_matrix(<ref refid="structmatrix" kindref="compound">matrix</ref><sp/>m);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><ref refid="structmatrix" kindref="compound">matrix</ref><sp/>hold_out_matrix(<ref refid="structmatrix" kindref="compound">matrix</ref><sp/>*m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><ref refid="structmatrix" kindref="compound">matrix</ref><sp/>resize_matrix(<ref refid="structmatrix" kindref="compound">matrix</ref><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*pop_column(<ref refid="structmatrix" kindref="compound">matrix</ref><sp/>*m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/matrix.h"/>
+  </compounddef>
+</doxygen>

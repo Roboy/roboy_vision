@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classsl_1_1_pose" kind="class" language="C++" prot="public">
+    <compoundname>sl::Pose</compoundname>
+    <includes refid="_camera_8hpp" local="no">Camera.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsl_1_1_pose_1a129b4734e846ad8f7a0417e748549e1f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool sl::Pose::valid</definition>
+        <argsstring></argsstring>
+        <name>valid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>boolean that indicates if tracking is activated or not. You should check that first if something wrong. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="552" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="552" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_pose_1aa2723fd786eb09184428488e6304a462" prot="public" static="no" mutable="no">
+        <type>unsigned long long</type>
+        <definition>unsigned long long sl::Pose::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Timestamp of the pose. This timestamp should be compared with the camera timestamp for synchronization. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="555" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="555" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_pose_1a32ec3d582f6903deb56d4e4419f882d9" prot="public" static="no" mutable="no">
+        <type><ref refid="classsl_1_1_transform" kindref="compound">sl::Transform</ref></type>
+        <definition>sl::Transform sl::Pose::pose_data</definition>
+        <argsstring></argsstring>
+        <name>pose_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>4x4 Matrix which contains the rotation (3x3) and the translation. <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> is extracted from this transform as well. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="558" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="558" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_pose_1ab2cbbe892126f4576542245e5f89489a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sl::Pose::pose_confidence</definition>
+        <argsstring></argsstring>
+        <name>pose_confidence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Confidence/Quality of the pose estimation for the target frame <linebreak/>
+ A confidence metric of the tracking [0-100], 0 means that the tracking is lost, 100 means that the tracking can be fully trusted. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="563" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="563" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsl_1_1_pose_1a8e59aedc9fc86826abfdb487d1f2c842" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Pose::Pose</definition>
+        <argsstring>()</argsstring>
+        <name>Pose</name>
+        <briefdescription>
+<para>Default constructor which creates an empty <ref refid="classsl_1_1_pose" kindref="compound">Pose</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="510" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_pose_1abec443bf2ab086bdb6d7b9762d4e276c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Pose::Pose</definition>
+        <argsstring>(const Pose &amp;pose)</argsstring>
+        <name>Pose</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_pose" kindref="compound">Pose</ref> &amp;</type>
+          <declname>pose</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classsl_1_1_pose" kindref="compound">Pose</ref> constructor with deep copy. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="515" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_pose_1a6b41af79c10c167d094b9a876123ba89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Pose::Pose</definition>
+        <argsstring>(const sl::Transform &amp;pose_data, unsigned long long mtimestamp=0, int mconfidence=0)</argsstring>
+        <name>Pose</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_transform" kindref="compound">sl::Transform</ref> &amp;</type>
+          <declname>pose_data</declname>
+        </param>
+        <param>
+          <type>unsigned long long</type>
+          <declname>mtimestamp</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mconfidence</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para><ref refid="classsl_1_1_pose" kindref="compound">Pose</ref> constructor with deep copy. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="520" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_pose_1ab729ca23d6b1a43a0bf2aa9c544b63da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Pose::~Pose</definition>
+        <argsstring>()</argsstring>
+        <name>~Pose</name>
+        <briefdescription>
+<para><ref refid="classsl_1_1_pose" kindref="compound">Pose</ref> destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="525" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_pose_1a98f2f644798acf5b0077e1bacd51f58c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsl_1_1_translation" kindref="compound">sl::Translation</ref></type>
+        <definition>sl::Translation sl::Pose::getTranslation</definition>
+        <argsstring>()</argsstring>
+        <name>getTranslation</name>
+        <briefdescription>
+<para>Returns the camera translation from the pose. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The translation vector of the ZED position. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="531" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_pose_1a543744c60f0b58e46f93829d7643b93b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsl_1_1_orientation" kindref="compound">sl::Orientation</ref></type>
+        <definition>sl::Orientation sl::Pose::getOrientation</definition>
+        <argsstring>()</argsstring>
+        <name>getOrientation</name>
+        <briefdescription>
+<para>Returns the camera orientation from the pose. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The orientation vector of the ZED position. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="537" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_pose_1ab5cef413704973026c9aa6ff720bdd77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsl_1_1_rotation" kindref="compound">sl::Rotation</ref></type>
+        <definition>sl::Rotation sl::Pose::getRotation</definition>
+        <argsstring>()</argsstring>
+        <name>getRotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief Returns the camera rotation (3x3) from the pose. <simplesect kind="return"><para>The rotation matrix of the ZED position. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="543" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_pose_1a101982c095c721372b7a2d37d0db0a97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl::Vector3&lt; float &gt;</type>
+        <definition>sl::Vector3&lt;float&gt; sl::Pose::getRotationVector</definition>
+        <argsstring>()</argsstring>
+        <name>getRotationVector</name>
+        <briefdescription>
+<para>Returns the camera rotation (3x1) of the pose. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The rotation vector of the ZED position. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="549" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The class <ref refid="classsl_1_1_pose" kindref="compound">Pose</ref> contains the Motion tracking data which gives the position and orientation of the ZED in space (orientation/quaternion, rotation matrix, translation/position) and other connected values (timestamp, confidence). </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="328">
+        <label>sl::Transform</label>
+        <link refid="classsl_1_1_transform"/>
+        <childnode refid="329" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="327">
+        <label>sl::Pose</label>
+        <link refid="classsl_1_1_pose"/>
+        <childnode refid="328" relation="usage">
+          <edgelabel>pose_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="329">
+        <label>sl::Matrix4f</label>
+        <link refid="classsl_1_1_matrix4f"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="505" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="505" bodyend="564"/>
+    <listofallmembers>
+      <member refid="classsl_1_1_pose_1a543744c60f0b58e46f93829d7643b93b" prot="public" virt="non-virtual"><scope>sl::Pose</scope><name>getOrientation</name></member>
+      <member refid="classsl_1_1_pose_1ab5cef413704973026c9aa6ff720bdd77" prot="public" virt="non-virtual"><scope>sl::Pose</scope><name>getRotation</name></member>
+      <member refid="classsl_1_1_pose_1a101982c095c721372b7a2d37d0db0a97" prot="public" virt="non-virtual"><scope>sl::Pose</scope><name>getRotationVector</name></member>
+      <member refid="classsl_1_1_pose_1a98f2f644798acf5b0077e1bacd51f58c" prot="public" virt="non-virtual"><scope>sl::Pose</scope><name>getTranslation</name></member>
+      <member refid="classsl_1_1_pose_1a8e59aedc9fc86826abfdb487d1f2c842" prot="public" virt="non-virtual"><scope>sl::Pose</scope><name>Pose</name></member>
+      <member refid="classsl_1_1_pose_1abec443bf2ab086bdb6d7b9762d4e276c" prot="public" virt="non-virtual"><scope>sl::Pose</scope><name>Pose</name></member>
+      <member refid="classsl_1_1_pose_1a6b41af79c10c167d094b9a876123ba89" prot="public" virt="non-virtual"><scope>sl::Pose</scope><name>Pose</name></member>
+      <member refid="classsl_1_1_pose_1ab2cbbe892126f4576542245e5f89489a" prot="public" virt="non-virtual"><scope>sl::Pose</scope><name>pose_confidence</name></member>
+      <member refid="classsl_1_1_pose_1a32ec3d582f6903deb56d4e4419f882d9" prot="public" virt="non-virtual"><scope>sl::Pose</scope><name>pose_data</name></member>
+      <member refid="classsl_1_1_pose_1aa2723fd786eb09184428488e6304a462" prot="public" virt="non-virtual"><scope>sl::Pose</scope><name>timestamp</name></member>
+      <member refid="classsl_1_1_pose_1a129b4734e846ad8f7a0417e748549e1f" prot="public" virt="non-virtual"><scope>sl::Pose</scope><name>valid</name></member>
+      <member refid="classsl_1_1_pose_1ab729ca23d6b1a43a0bf2aa9c544b63da" prot="public" virt="non-virtual"><scope>sl::Pose</scope><name>~Pose</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

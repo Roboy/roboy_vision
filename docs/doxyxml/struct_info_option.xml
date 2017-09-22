@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_info_option" kind="struct" language="C++" prot="public">
+    <compoundname>InfoOption</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_info_option_1a7feb0e3aa1e80110241c2532e9160c7b" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string InfoOption::svo_path</definition>
+        <argsstring></argsstring>
+        <name>svo_path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp" line="18" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_info_option_1abe7d4e5853e5eb0106302606d388b24f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool InfoOption::recordingMode</definition>
+        <argsstring></argsstring>
+        <name>recordingMode</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp" line="19" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_info_option_1aa04f2acdd6d5f1ac9d3eef5309113216" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string InfoOption::output_path</definition>
+        <argsstring></argsstring>
+        <name>output_path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp" line="20" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_info_option_1adabab5f3339437110b75fd322432b8d0" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool InfoOption::computeDisparity</definition>
+        <argsstring></argsstring>
+        <name>computeDisparity</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp" line="21" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_info_option_1aaf2c540713e7d2dfc58b90b10c5afa6b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool InfoOption::videoMode</definition>
+        <argsstring></argsstring>
+        <name>videoMode</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp" line="22" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp" line="17" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp" bodystart="17" bodyend="23"/>
+    <listofallmembers>
+      <member refid="struct_info_option_1adabab5f3339437110b75fd322432b8d0" prot="public" virt="non-virtual"><scope>InfoOption</scope><name>computeDisparity</name></member>
+      <member refid="struct_info_option_1aa04f2acdd6d5f1ac9d3eef5309113216" prot="public" virt="non-virtual"><scope>InfoOption</scope><name>output_path</name></member>
+      <member refid="struct_info_option_1abe7d4e5853e5eb0106302606d388b24f" prot="public" virt="non-virtual"><scope>InfoOption</scope><name>recordingMode</name></member>
+      <member refid="struct_info_option_1a7feb0e3aa1e80110241c2532e9160c7b" prot="public" virt="non-virtual"><scope>InfoOption</scope><name>svo_path</name></member>
+      <member refid="struct_info_option_1aaf2c540713e7d2dfc58b90b10c5afa6b" prot="public" virt="non-virtual"><scope>InfoOption</scope><name>videoMode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

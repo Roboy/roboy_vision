@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="crnn__layer_8h" kind="file" language="C++">
+    <compoundname>crnn_layer.h</compoundname>
+    <includes refid="activations_8h" local="yes">activations.h</includes>
+    <includes refid="layer_8h" local="yes">layer.h</includes>
+    <includes refid="network_8h" local="yes">network.h</includes>
+    <includedby refid="crnn__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crnn_layer.c</includedby>
+    <includedby refid="network_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.c</includedby>
+    <includedby refid="parser_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c</includedby>
+    <incdepgraph>
+      <node id="647">
+        <label>box.h</label>
+        <link refid="box_8h_source"/>
+        <childnode refid="636" relation="include">
+        </childnode>
+      </node>
+      <node id="646">
+        <label>float.h</label>
+      </node>
+      <node id="637">
+        <label>stdlib.h</label>
+      </node>
+      <node id="641">
+        <label>cuda.h</label>
+        <link refid="cuda_8h_source"/>
+        <childnode refid="636" relation="include">
+        </childnode>
+      </node>
+      <node id="648">
+        <label>data.h</label>
+        <link refid="data_8h_source"/>
+        <childnode refid="640" relation="include">
+        </childnode>
+        <childnode refid="636" relation="include">
+        </childnode>
+        <childnode refid="649" relation="include">
+        </childnode>
+        <childnode refid="650" relation="include">
+        </childnode>
+        <childnode refid="645" relation="include">
+        </childnode>
+        <childnode refid="651" relation="include">
+        </childnode>
+      </node>
+      <node id="644">
+        <label>network.h</label>
+        <link refid="network_8h_source"/>
+        <childnode refid="636" relation="include">
+        </childnode>
+        <childnode refid="645" relation="include">
+        </childnode>
+        <childnode refid="643" relation="include">
+        </childnode>
+        <childnode refid="648" relation="include">
+        </childnode>
+        <childnode refid="651" relation="include">
+        </childnode>
+      </node>
+      <node id="635">
+        <label>activations.h</label>
+        <link refid="activations_8h_source"/>
+        <childnode refid="636" relation="include">
+        </childnode>
+        <childnode refid="641" relation="include">
+        </childnode>
+        <childnode refid="642" relation="include">
+        </childnode>
+      </node>
+      <node id="650">
+        <label>list.h</label>
+        <link refid="list_8h_source"/>
+        <childnode refid="636" relation="include">
+        </childnode>
+      </node>
+      <node id="649">
+        <label>matrix.h</label>
+        <link refid="matrix_8h_source"/>
+        <childnode refid="636" relation="include">
+        </childnode>
+      </node>
+      <node id="636">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="637" relation="include">
+        </childnode>
+        <childnode refid="638" relation="include">
+        </childnode>
+        <childnode refid="639" relation="include">
+        </childnode>
+        <childnode refid="640" relation="include">
+        </childnode>
+      </node>
+      <node id="643">
+        <label>layer.h</label>
+        <link refid="layer_8h_source"/>
+        <childnode refid="636" relation="include">
+        </childnode>
+      </node>
+      <node id="640">
+        <label>pthread.h</label>
+      </node>
+      <node id="645">
+        <label>image.h</label>
+        <link refid="image_8h_source"/>
+        <childnode refid="637" relation="include">
+        </childnode>
+        <childnode refid="638" relation="include">
+        </childnode>
+        <childnode refid="646" relation="include">
+        </childnode>
+        <childnode refid="639" relation="include">
+        </childnode>
+        <childnode refid="642" relation="include">
+        </childnode>
+        <childnode refid="647" relation="include">
+        </childnode>
+        <childnode refid="636" relation="include">
+        </childnode>
+      </node>
+      <node id="639">
+        <label>string.h</label>
+      </node>
+      <node id="642">
+        <label>math.h</label>
+      </node>
+      <node id="634">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crnn_layer.h</label>
+        <link refid="crnn_layer.h"/>
+        <childnode refid="635" relation="include">
+        </childnode>
+        <childnode refid="643" relation="include">
+        </childnode>
+        <childnode refid="644" relation="include">
+        </childnode>
+      </node>
+      <node id="651">
+        <label>tree.h</label>
+        <link refid="tree_8h_source"/>
+        <childnode refid="636" relation="include">
+        </childnode>
+      </node>
+      <node id="638">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="crnn__layer_8h_1a3a5caefacf770ad4004a2fff8970569d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlayer" kindref="compound">layer</ref></type>
+        <definition>layer make_crnn_layer</definition>
+        <argsstring>(int batch, int h, int w, int c, int hidden_filters, int output_filters, int steps, ACTIVATION activation, int batch_normalize)</argsstring>
+        <name>make_crnn_layer</name>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hidden_filters</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>output_filters</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>steps</declname>
+        </param>
+        <param>
+          <type>ACTIVATION</type>
+          <declname>activation</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>batch_normalize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crnn_layer.h" line="9" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crnn_layer.c" bodystart="29" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="crnn__layer_8h_1a1dc9e7102b478aeb420e2f1558c204ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void forward_crnn_layer</definition>
+        <argsstring>(layer l, network net)</argsstring>
+        <name>forward_crnn_layer</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">layer</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crnn_layer.h" line="11" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crnn_layer.c" bodystart="91" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="crnn__layer_8h_1a9398f65558364ee35dcaa4bac49a3d1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void backward_crnn_layer</definition>
+        <argsstring>(layer l, network net)</argsstring>
+        <name>backward_crnn_layer</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">layer</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crnn_layer.h" line="12" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crnn_layer.c" bodystart="132" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="crnn__layer_8h_1a422e7cb889739fec2265e19baa2c2c85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void update_crnn_layer</definition>
+        <argsstring>(layer l, update_args a)</argsstring>
+        <name>update_crnn_layer</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">layer</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="structupdate__args" kindref="compound">update_args</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crnn_layer.h" line="13" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crnn_layer.c" bodystart="84" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CRNN_LAYER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRNN_LAYER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;activations.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;layer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;network.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><ref refid="structlayer" kindref="compound">layer</ref><sp/>make_crnn_layer(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hidden_filters,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>output_filters,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>steps,<sp/>ACTIVATION<sp/>activation,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch_normalize);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>forward_crnn_layer(<ref refid="structlayer" kindref="compound">layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_crnn_layer(<ref refid="structlayer" kindref="compound">layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update_crnn_layer(<ref refid="structlayer" kindref="compound">layer</ref><sp/>l,<sp/><ref refid="structupdate__args" kindref="compound">update_args</ref><sp/>a);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>forward_crnn_layer_gpu(<ref refid="structlayer" kindref="compound">layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_crnn_layer_gpu(<ref refid="structlayer" kindref="compound">layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update_crnn_layer_gpu(<ref refid="structlayer" kindref="compound">layer</ref><sp/>l,<sp/><ref refid="structupdate__args" kindref="compound">update_args</ref><sp/>a);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>push_crnn_layer(<ref refid="structlayer" kindref="compound">layer</ref><sp/>l);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pull_crnn_layer(<ref refid="structlayer" kindref="compound">layer</ref><sp/>l);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crnn_layer.h"/>
+  </compounddef>
+</doxygen>

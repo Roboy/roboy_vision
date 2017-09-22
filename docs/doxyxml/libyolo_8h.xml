@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="libyolo_8h" kind="file" language="C++">
+    <compoundname>libyolo.h</compoundname>
+    <includes refid="image_8h" local="yes">./darknet/src/image.h</includes>
+    <includedby refid="libyolo_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c</includedby>
+    <includedby refid="module_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/module.c</includedby>
+    <incdepgraph>
+      <node id="1876">
+        <label>box.h</label>
+        <link refid="box_8h_source"/>
+        <childnode refid="1877" relation="include">
+        </childnode>
+      </node>
+      <node id="1873">
+        <label>float.h</label>
+      </node>
+      <node id="1871">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1869">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.h</label>
+        <link refid="libyolo.h"/>
+        <childnode refid="1870" relation="include">
+        </childnode>
+      </node>
+      <node id="1877">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="1871" relation="include">
+        </childnode>
+        <childnode refid="1872" relation="include">
+        </childnode>
+        <childnode refid="1874" relation="include">
+        </childnode>
+        <childnode refid="1878" relation="include">
+        </childnode>
+      </node>
+      <node id="1878">
+        <label>pthread.h</label>
+      </node>
+      <node id="1870">
+        <label>./darknet/src/image.h</label>
+        <link refid="image_8h_source"/>
+        <childnode refid="1871" relation="include">
+        </childnode>
+        <childnode refid="1872" relation="include">
+        </childnode>
+        <childnode refid="1873" relation="include">
+        </childnode>
+        <childnode refid="1874" relation="include">
+        </childnode>
+        <childnode refid="1875" relation="include">
+        </childnode>
+        <childnode refid="1876" relation="include">
+        </childnode>
+        <childnode refid="1877" relation="include">
+        </childnode>
+      </node>
+      <node id="1874">
+        <label>string.h</label>
+      </node>
+      <node id="1875">
+        <label>math.h</label>
+      </node>
+      <node id="1872">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structdetection__info" prot="public">detection_info</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="libyolo_8h_1a18c5801d4b1bf76a64becb3a92c89d15" prot="public" static="no">
+        <type>void *</type>
+        <definition>typedef void* yolo_handle</definition>
+        <argsstring></argsstring>
+        <name>yolo_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.h" line="5" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="libyolo_8h_1a5fc358f01397f6e5c313683ce77d610e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>yolo_handle</type>
+        <definition>yolo_handle yolo_init</definition>
+        <argsstring>(char *darknet_path, char *datacfg, char *cfgfile, char *weightfile)</argsstring>
+        <name>yolo_init</name>
+        <param>
+          <type>char *</type>
+          <declname>darknet_path</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>datacfg</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>cfgfile</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>weightfile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.h" line="16" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" bodystart="53" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="libyolo_8h_1a6e334fce613f4739faea7be17ace4017" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void yolo_cleanup</definition>
+        <argsstring>(yolo_handle handle)</argsstring>
+        <name>yolo_cleanup</name>
+        <param>
+          <type>yolo_handle</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.h" line="17" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" bodystart="86" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="libyolo_8h_1a267d3fd2e6c3a66fa18954248180e066" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdetection__info" kindref="compound">detection_info</ref> **</type>
+        <definition>detection_info** yolo_detect</definition>
+        <argsstring>(yolo_handle handle, image im, float thresh, float hier_thresh, int *num)</argsstring>
+        <name>yolo_detect</name>
+        <param>
+          <type>yolo_handle</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>im</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thresh</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>hier_thresh</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.h" line="18" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" bodystart="97" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="libyolo_8h_1a9a6d07d7e75b0dc159b4b59ec233c563" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdetection__info" kindref="compound">detection_info</ref> **</type>
+        <definition>detection_info** yolo_test</definition>
+        <argsstring>(yolo_handle handle, char *filename, float thresh, float hier_thresh, int *num)</argsstring>
+        <name>yolo_test</name>
+        <param>
+          <type>yolo_handle</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thresh</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>hier_thresh</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.h" line="19" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" bodystart="124" bodyend="154"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LIBYOLO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LIBYOLO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;./darknet/src/image.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>yolo_handle;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="structdetection__info" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>name[32];</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>left;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>right;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>top;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bottom;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>prob;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}<sp/><ref refid="structdetection__info" kindref="compound">detection_info</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">yolo_handle<sp/>yolo_init(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*darknet_path,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*datacfg,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*cfgfile,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*weightfile);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>yolo_cleanup(yolo_handle<sp/>handle);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="structdetection__info" kindref="compound">detection_info</ref><sp/>**yolo_detect(yolo_handle<sp/>handle,<sp/><ref refid="structimage" kindref="compound">image</ref><sp/>im,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>thresh,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>hier_thresh,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*num);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="structdetection__info" kindref="compound">detection_info</ref><sp/>**yolo_test(yolo_handle<sp/>handle,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>thresh,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>hier_thresh,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*num);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>LIBYOLO_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.h"/>
+  </compounddef>
+</doxygen>

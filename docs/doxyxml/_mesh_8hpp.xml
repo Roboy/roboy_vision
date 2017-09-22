@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_mesh_8hpp" kind="file" language="C++">
+    <compoundname>Mesh.hpp</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">string</includes>
+    <includes local="no">fstream</includes>
+    <includes refid="_core_8hpp" local="no">sl/Core.hpp</includes>
+    <includedby refid="_camera_8hpp" local="yes">/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp</includedby>
+    <incdepgraph>
+      <node id="2005">
+        <label>iomanip</label>
+      </node>
+      <node id="2019">
+        <label>device_launch_parameters.h</label>
+      </node>
+      <node id="2013">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2011">
+        <label>cuda.h</label>
+        <link refid="cuda_8h_source"/>
+        <childnode refid="2012" relation="include">
+        </childnode>
+      </node>
+      <node id="2017">
+        <label>cuda_runtime.h</label>
+      </node>
+      <node id="1999">
+        <label>cmath</label>
+      </node>
+      <node id="1993">
+        <label>string</label>
+      </node>
+      <node id="2007">
+        <label>memory.h</label>
+      </node>
+      <node id="1994">
+        <label>fstream</label>
+      </node>
+      <node id="1996">
+        <label>sl/types.hpp</label>
+        <link refid="types_8hpp_source"/>
+        <childnode refid="1997" relation="include">
+        </childnode>
+        <childnode refid="1998" relation="include">
+        </childnode>
+        <childnode refid="1999" relation="include">
+        </childnode>
+        <childnode refid="2000" relation="include">
+        </childnode>
+        <childnode refid="2001" relation="include">
+        </childnode>
+        <childnode refid="2002" relation="include">
+        </childnode>
+        <childnode refid="2003" relation="include">
+        </childnode>
+        <childnode refid="2004" relation="include">
+        </childnode>
+        <childnode refid="1994" relation="include">
+        </childnode>
+        <childnode refid="2005" relation="include">
+        </childnode>
+        <childnode refid="2006" relation="include">
+        </childnode>
+        <childnode refid="2007" relation="include">
+        </childnode>
+        <childnode refid="2008" relation="include">
+        </childnode>
+        <childnode refid="2009" relation="include">
+        </childnode>
+        <childnode refid="2010" relation="include">
+        </childnode>
+        <childnode refid="1992" relation="include">
+        </childnode>
+        <childnode refid="2011" relation="include">
+        </childnode>
+        <childnode refid="2017" relation="include">
+        </childnode>
+        <childnode refid="2018" relation="include">
+        </childnode>
+        <childnode refid="2019" relation="include">
+        </childnode>
+        <childnode refid="2020" relation="include">
+        </childnode>
+      </node>
+      <node id="2012">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="2013" relation="include">
+        </childnode>
+        <childnode refid="2014" relation="include">
+        </childnode>
+        <childnode refid="2015" relation="include">
+        </childnode>
+        <childnode refid="2016" relation="include">
+        </childnode>
+      </node>
+      <node id="2016">
+        <label>pthread.h</label>
+      </node>
+      <node id="2015">
+        <label>string.h</label>
+      </node>
+      <node id="2000">
+        <label>cstdio</label>
+      </node>
+      <node id="2003">
+        <label>ctime</label>
+      </node>
+      <node id="2020">
+        <label>unistd.h</label>
+      </node>
+      <node id="1992">
+        <label>vector</label>
+      </node>
+      <node id="1995">
+        <label>sl/Core.hpp</label>
+        <link refid="_core_8hpp_source"/>
+        <childnode refid="1996" relation="include">
+        </childnode>
+      </node>
+      <node id="2009">
+        <label>sstream</label>
+      </node>
+      <node id="2001">
+        <label>cstdlib</label>
+      </node>
+      <node id="2006">
+        <label>iostream</label>
+      </node>
+      <node id="2004">
+        <label>ctype.h</label>
+      </node>
+      <node id="2008">
+        <label>mutex</label>
+      </node>
+      <node id="2018">
+        <label>cuda_runtime_api.h</label>
+      </node>
+      <node id="1998">
+        <label>chrono</label>
+      </node>
+      <node id="2010">
+        <label>thread</label>
+      </node>
+      <node id="1991">
+        <label>/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp</label>
+        <link refid="Mesh.hpp"/>
+        <childnode refid="1992" relation="include">
+        </childnode>
+        <childnode refid="1993" relation="include">
+        </childnode>
+        <childnode refid="1994" relation="include">
+        </childnode>
+        <childnode refid="1995" relation="include">
+        </childnode>
+      </node>
+      <node id="1997">
+        <label>algorithm</label>
+      </node>
+      <node id="2014">
+        <label>stdio.h</label>
+      </node>
+      <node id="2002">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2023">
+        <label>/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp</label>
+        <link refid="utils_8hpp_source"/>
+      </node>
+      <node id="2022">
+        <label>/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp</label>
+        <link refid="_camera_8hpp_source"/>
+        <childnode refid="2023" relation="include">
+        </childnode>
+      </node>
+      <node id="2021">
+        <label>/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp</label>
+        <link refid="Mesh.hpp"/>
+        <childnode refid="2022" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsl_1_1_mesh_filter_parameters" prot="public">sl::MeshFilterParameters</innerclass>
+    <innerclass refid="classsl_1_1_mesh" prot="public">sl::Mesh</innerclass>
+    <innerclass refid="structsl_1_1_mesh_1_1_indice" prot="public">sl::Mesh::Indice</innerclass>
+    <innerclass refid="structsl_1_1_mesh_1_1_texture" prot="public">sl::Mesh::Texture</innerclass>
+    <innernamespace refid="namespacesl">sl</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_mesh_8hpp_1ae1bdf4e4a4f720d46fb9bc6daca14122" prot="public" static="no">
+        <name>SL_EXPORT_DLL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="19" column="10" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__MESH_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__MESH_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sl/Core.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_WIN32)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SL_SCANNING_EXPORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SL_EXPORT_DLL<sp/>__declspec(dllexport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SL_EXPORT_DLL<sp/>__declspec(dllimport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>__GNUC__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SL_EXPORT_DLL<sp/>__attribute__((visibility(&quot;default&quot;)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SL_EXPORT_DLL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesl" kindref="compound">sl</ref><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MESH_FILE_PLY,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MESH_FILE_PLY_BIN,<sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MESH_FILE_OBJ,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MESH_FILE_LAST</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>MESH_FILE_FORMAT;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MESH_TEXTURE_RGB,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MESH_TEXTURE_RGBA,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MESH_TEXTURE_LAST,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>MESH_TEXTURE_FORMAT;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classsl_1_1_mesh_filter_parameters" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SL_EXPORT_DLL<sp/><ref refid="classsl_1_1_mesh_filter_parameters" kindref="compound">MeshFilterParameters</ref><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60" refid="classsl_1_1_mesh_filter_parameters_1a32a951440c75507b494d66cc93c0f7a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="61" refid="classsl_1_1_mesh_filter_parameters_1a32a951440c75507b494d66cc93c0f7a9aea276ab529887391d5af5b6c0e4066aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_mesh_filter_parameters_1a32a951440c75507b494d66cc93c0f7a9aea276ab529887391d5af5b6c0e4066aa" kindref="member">FILTER_LOW</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62" refid="classsl_1_1_mesh_filter_parameters_1a32a951440c75507b494d66cc93c0f7a9ad5d72405b7ef1b81c1c2c31af956f4e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_mesh_filter_parameters_1a32a951440c75507b494d66cc93c0f7a9ad5d72405b7ef1b81c1c2c31af956f4e3" kindref="member">FILTER_MEDIUM</ref>,<sp/></highlight></codeline>
+<codeline lineno="63" refid="classsl_1_1_mesh_filter_parameters_1a32a951440c75507b494d66cc93c0f7a9adb5693efdc46acc91d309071da6e6da8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FILTER_HIGH<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><ref refid="classsl_1_1_mesh_filter_parameters_1a32a951440c75507b494d66cc93c0f7a9" kindref="member">FILTER</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="classsl_1_1_mesh_filter_parameters_1a55b9f9ea7e772633d2c3a7f2a1cd85a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_mesh_filter_parameters_1a55b9f9ea7e772633d2c3a7f2a1cd85a4" kindref="member">MeshFilterParameters</ref>(FILTER<sp/>filtering_<sp/>=<sp/>FILTER_LOW)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(filtering_);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="classsl_1_1_mesh_filter_parameters_1ac3cf2e8337715214db38f814ea51f0cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(FILTER<sp/>filtering_<sp/>=<sp/>FILTER_LOW)<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>filtering<sp/>=<sp/>filtering_;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FILTER<sp/>filtering<sp/>=<sp/>FILTER::FILTER_LOW;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>save(sl::String<sp/>filename);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>load(sl::String<sp/>filename);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="classsl_1_1_mesh" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SL_EXPORT_DLL<sp/><ref refid="classsl_1_1_mesh" kindref="compound">Mesh</ref><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CameraMemberHandler;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_mesh" kindref="compound">Mesh</ref>();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~<ref refid="classsl_1_1_mesh" kindref="compound">Mesh</ref>();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="classsl_1_1_mesh_1ac7a4284697870fdaf2825924dc138afa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;sl::float3&gt;<sp/><ref refid="classsl_1_1_mesh_1ac7a4284697870fdaf2825924dc138afa" kindref="member">vertices</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="classsl_1_1_mesh_1a1bf4407e45db4b4db82b835fb0fb035d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;sl::uint3&gt;<sp/><ref refid="classsl_1_1_mesh_1a1bf4407e45db4b4db82b835fb0fb035d" kindref="member">triangles</ref>;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="classsl_1_1_mesh_1a151f499d5541ffeee6b0572caaf596ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;sl::float3&gt;<sp/><ref refid="classsl_1_1_mesh_1a151f499d5541ffeee6b0572caaf596ba" kindref="member">normals</ref>;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="classsl_1_1_mesh_1a0d120710403b59c5a5a0d3603a3d2733" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;sl::float2&gt;<sp/><ref refid="classsl_1_1_mesh_1a0d120710403b59c5a5a0d3603a3d2733" kindref="member">uv</ref>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="structsl_1_1_mesh_1_1_indice" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsl_1_1_mesh_1_1_indice" kindref="compound">Indice</ref><sp/>{</highlight></codeline>
+<codeline lineno="145" refid="structsl_1_1_mesh_1_1_indice_1a6d4ecd8f4b15532078d4b5239f0a9d08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sl::uint3<sp/><ref refid="structsl_1_1_mesh_1_1_indice_1a6d4ecd8f4b15532078d4b5239f0a9d08" kindref="member">v_vn_ind</ref>;<sp/></highlight></codeline>
+<codeline lineno="146" refid="structsl_1_1_mesh_1_1_indice_1ab536e0a8c679aa1a55d963bf559b24a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sl::uint3<sp/><ref refid="structsl_1_1_mesh_1_1_indice_1ab536e0a8c679aa1a55d963bf559b24a9" kindref="member">uv_ind</ref>;<sp/></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="classsl_1_1_mesh_1a47d0ad7d5a23c69f3dde291b42585f7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;Indice&gt;&gt;<sp/><ref refid="classsl_1_1_mesh_1a47d0ad7d5a23c69f3dde291b42585f7a" kindref="member">material_indices</ref>;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="structsl_1_1_mesh_1_1_texture" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsl_1_1_mesh_1_1_texture" kindref="compound">Texture</ref><sp/>{</highlight></codeline>
+<codeline lineno="162" refid="structsl_1_1_mesh_1_1_texture_1a2dd3890f869460ebcdf72b5e18398f80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structsl_1_1_mesh_1_1_texture_1a2dd3890f869460ebcdf72b5e18398f80" kindref="member">name</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="163" refid="structsl_1_1_mesh_1_1_texture_1a71339e10d13314f0ea3e200ee3268e2a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_mat" kindref="compound">sl::Mat</ref><sp/><ref refid="structsl_1_1_mesh_1_1_texture_1a71339e10d13314f0ea3e200ee3268e2a" kindref="member">texture</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="164" refid="structsl_1_1_mesh_1_1_texture_1a41c2226fff158633a13b6c59d4096e4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structsl_1_1_mesh_1_1_texture_1a41c2226fff158633a13b6c59d4096e4b" kindref="member">indice_gl</ref>;<sp/></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="classsl_1_1_mesh_1af7d74931d215b6eaa46294543c8c90a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;Texture&gt;<sp/><ref refid="classsl_1_1_mesh_1af7d74931d215b6eaa46294543c8c90a4" kindref="member">textures</ref>;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>filter(<ref refid="classsl_1_1_mesh_filter_parameters" kindref="compound">MeshFilterParameters</ref><sp/>params<sp/>=<sp/><ref refid="classsl_1_1_mesh_filter_parameters" kindref="compound">MeshFilterParameters</ref>());</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>applyTexture(MESH_TEXTURE_FORMAT<sp/>texture_format<sp/>=<sp/>MESH_TEXTURE_RGB);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>save(std::string<sp/>filename,<sp/>MESH_FILE_FORMAT<sp/>type<sp/>=<sp/>MESH_FILE_OBJ);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>load(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>filename);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>clear();</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sl::TextureImagePool<sp/>im_pool;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsl_1_1_camera_parameters" kindref="compound">sl::CameraParameters</ref><sp/>cam_param;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min_d,<sp/>max_d;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>welded;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>memory<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>MESH_HPP_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacevoc__label" kind="namespace" language="Python">
+    <compoundname>voc_label</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="voc__label_8py_1a41c13500b772a8e333989ee599cb5e59" prot="public" static="no" mutable="no">
+        <type><ref refid="structlist" kindref="compound">list</ref></type>
+        <definition>list voc_label.sets</definition>
+        <argsstring></argsstring>
+        <name>sets</name>
+        <initializer>= [(&apos;2012&apos;, &apos;train&apos;), (&apos;2012&apos;, &apos;val&apos;), (&apos;2007&apos;, &apos;train&apos;), (&apos;2007&apos;, &apos;val&apos;), (&apos;2007&apos;, &apos;test&apos;)]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/scripts/voc_label.py" line="7" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/scripts/voc_label.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="voc__label_8py_1a0dadf92eb37e0de693533dbafa6223d7" prot="public" static="no" mutable="no">
+        <type><ref refid="structlist" kindref="compound">list</ref></type>
+        <definition>list voc_label.classes</definition>
+        <argsstring></argsstring>
+        <name>classes</name>
+        <initializer>= [&quot;aeroplane&quot;, &quot;bicycle&quot;, &quot;bird&quot;, &quot;boat&quot;, &quot;bottle&quot;, &quot;bus&quot;, &quot;car&quot;, &quot;cat&quot;, &quot;chair&quot;, &quot;cow&quot;, &quot;diningtable&quot;, &quot;dog&quot;, &quot;horse&quot;, &quot;motorbike&quot;, &quot;person&quot;, &quot;pottedplant&quot;, &quot;sheep&quot;, &quot;sofa&quot;, &quot;train&quot;, &quot;tvmonitor&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/scripts/voc_label.py" line="9" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/scripts/voc_label.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="voc__label_8py_1aae3f517979bd13e02baba600c32fa954" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>voc_label.wd</definition>
+        <argsstring></argsstring>
+        <name>wd</name>
+        <initializer>= getcwd()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/scripts/voc_label.py" line="45" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/scripts/voc_label.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="voc__label_8py_1a57a526ed1c226d30a484d56ca3fcda07" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>voc_label.image_ids</definition>
+        <argsstring></argsstring>
+        <name>image_ids</name>
+        <initializer>= open(&apos;VOCdevkit/VOC%s/ImageSets/Main/%s.txt&apos;%(year, image_set)).read().strip().split()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/scripts/voc_label.py" line="50" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/scripts/voc_label.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="voc__label_8py_1a6842cb03274520125ec688c9a076c3a6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>voc_label.list_file</definition>
+        <argsstring></argsstring>
+        <name>list_file</name>
+        <initializer>= open(&apos;%s_%s.txt&apos;%(year, image_set), &apos;w&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/scripts/voc_label.py" line="51" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/scripts/voc_label.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="voc__label_8py_1a6acb30b6d6bbb5769eac3381abeab0aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def voc_label.convert</definition>
+        <argsstring>(size, box)</argsstring>
+        <name>convert</name>
+        <param>
+          <type>size</type>
+          <defname>size</defname>
+        </param>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref></type>
+          <defname>box</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/scripts/voc_label.py" line="12" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/scripts/voc_label.py" bodystart="12" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="voc__label_8py_1a88b8266c71d2efb8bcdbb3a033f210e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def voc_label.convert_annotation</definition>
+        <argsstring>(year, image_id)</argsstring>
+        <name>convert_annotation</name>
+        <param>
+          <type>year</type>
+          <defname>year</defname>
+        </param>
+        <param>
+          <type>image_id</type>
+          <defname>image_id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/scripts/voc_label.py" line="25" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/scripts/voc_label.py" bodystart="25" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/scripts/voc_label.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structsl_1_1_recording_state" kind="struct" language="C++" prot="public">
+    <compoundname>sl::RecordingState</compoundname>
+    <includes refid="defines_8hpp" local="no">defines.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsl_1_1_recording_state_1ae38498e98bfa7a8078164fdefdf2ad8b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool sl::RecordingState::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>status of current frame. May be true for success or false if frame could not be written in the SVO file. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="345" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsl_1_1_recording_state_1a5e05a3c1f3464108d7f54ea43dc21406" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double sl::RecordingState::current_compression_time</definition>
+        <argsstring></argsstring>
+        <name>current_compression_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compression time for the current frame in ms. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="346" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsl_1_1_recording_state_1ac2642a5a173938dc2ecbddfe643cc978" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double sl::RecordingState::current_compression_ratio</definition>
+        <argsstring></argsstring>
+        <name>current_compression_ratio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compression ratio (% of raw size) for the current frame. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="347" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsl_1_1_recording_state_1a6d8f07fa5fe5f15c0657539c72267651" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double sl::RecordingState::average_compression_time</definition>
+        <argsstring></argsstring>
+        <name>average_compression_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>average compression time in ms since beginning of recording. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="348" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsl_1_1_recording_state_1ae7cc2a74972cb61579fe7b2b700f191f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double sl::RecordingState::average_compression_ratio</definition>
+        <argsstring></argsstring>
+        <name>average_compression_ratio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compression ratio (% of raw size) since beginning of recording. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="349" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Recording structure that contains information about SVO. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="344" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="344" bodyend="350"/>
+    <listofallmembers>
+      <member refid="structsl_1_1_recording_state_1ae7cc2a74972cb61579fe7b2b700f191f" prot="public" virt="non-virtual"><scope>sl::RecordingState</scope><name>average_compression_ratio</name></member>
+      <member refid="structsl_1_1_recording_state_1a6d8f07fa5fe5f15c0657539c72267651" prot="public" virt="non-virtual"><scope>sl::RecordingState</scope><name>average_compression_time</name></member>
+      <member refid="structsl_1_1_recording_state_1ac2642a5a173938dc2ecbddfe643cc978" prot="public" virt="non-virtual"><scope>sl::RecordingState</scope><name>current_compression_ratio</name></member>
+      <member refid="structsl_1_1_recording_state_1a5e05a3c1f3464108d7f54ea43dc21406" prot="public" virt="non-virtual"><scope>sl::RecordingState</scope><name>current_compression_time</name></member>
+      <member refid="structsl_1_1_recording_state_1ae38498e98bfa7a8078164fdefdf2ad8b" prot="public" virt="non-virtual"><scope>sl::RecordingState</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

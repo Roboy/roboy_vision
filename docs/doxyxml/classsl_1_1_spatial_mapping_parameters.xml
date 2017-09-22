@@ -1,0 +1,415 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classsl_1_1_spatial_mapping_parameters" kind="class" language="C++" prot="public">
+    <compoundname>sl::SpatialMappingParameters</compoundname>
+    <includes refid="_camera_8hpp" local="no">Camera.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="group___enumerations_1gab3c6b2780832f777c410f9502b9a43ae" prot="public" static="no">
+        <name>RESOLUTION</name>
+        <enumvalue id="classsl_1_1_spatial_mapping_parameters_1gab3c6b2780832f777c410f9502b9a43aeab0142f7153241abd403b2d1534afc688" prot="public">
+          <name>RESOLUTION_HIGH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Create a detail geometry, requires lots of memory. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsl_1_1_spatial_mapping_parameters_1gab3c6b2780832f777c410f9502b9a43aea751b2e88dac7975556a1e8ed4fd4eb19" prot="public">
+          <name>RESOLUTION_MEDIUM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Smalls variations in the geometry will disappear, useful for big object </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsl_1_1_spatial_mapping_parameters_1gab3c6b2780832f777c410f9502b9a43aea5b4fc183b75c1978e739f12a94e9d9b6" prot="public">
+          <name>RESOLUTION_LOW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Keeps only huge variations of the geometry , useful outdoor. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>List the spatial mapping resolution presets. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="349" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="349" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___enumerations_1ga69d6c6e3532b4cf2d40a981577ddaf11" prot="public" static="no">
+        <name>RANGE</name>
+        <enumvalue id="classsl_1_1_spatial_mapping_parameters_1ga69d6c6e3532b4cf2d40a981577ddaf11a3b335cecf5cee9f647b8ecdf79cbc260" prot="public">
+          <name>RANGE_NEAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Only depth close to the camera will be used by the spatial mapping. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsl_1_1_spatial_mapping_parameters_1ga69d6c6e3532b4cf2d40a981577ddaf11a5c522d43588dce620226b18b6d0e6efe" prot="public">
+          <name>RANGE_MEDIUM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Medium depth range. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsl_1_1_spatial_mapping_parameters_1ga69d6c6e3532b4cf2d40a981577ddaf11ae24fdacc07a34859d54063cfb783412a" prot="public">
+          <name>RANGE_FAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Takes into account objects that are far, useful outdoor. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>List the spatial mapping depth range presets. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="360" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="360" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsl_1_1_spatial_mapping_parameters_1aea3772dc2ba0be826a2c61b19885da35" prot="public" static="no">
+        <type>std::pair&lt; float, float &gt;</type>
+        <definition>typedef std::pair&lt;float, float&gt; sl::SpatialMappingParameters::interval</definition>
+        <argsstring></argsstring>
+        <name>interval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="343" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsl_1_1_spatial_mapping_parameters_1aefff427b300c32d03fe89db0db6f190d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sl::SpatialMappingParameters::max_memory_usage</definition>
+        <argsstring></argsstring>
+        <name>max_memory_usage</name>
+        <initializer>= 2048</initializer>
+        <briefdescription>
+<para>The maximum CPU memory (in mega bytes) allocated for the meshing process (will fit your configuration in any case). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="446" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="446" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_spatial_mapping_parameters_1a084ed725d78d5b8193b642b0ab9d79ff" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool sl::SpatialMappingParameters::save_texture</definition>
+        <argsstring></argsstring>
+        <name>save_texture</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Set to true if you want be able to apply texture to your mesh after its creation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This option will take more memory. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="452" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_spatial_mapping_parameters_1a4d399c9328cc14c24627897dc9c8fb61" prot="public" static="no" mutable="no">
+        <type>const interval</type>
+        <definition>const interval sl::SpatialMappingParameters::allowed_min</definition>
+        <argsstring></argsstring>
+        <name>allowed_min</name>
+        <initializer>= std::make_pair(0.3f, 10.f)</initializer>
+        <briefdescription>
+<para>The minimal depth value allowed by the spatial mapping. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="457" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_spatial_mapping_parameters_1acd355a514569a4eb3792adc33a493d55" prot="public" static="no" mutable="no">
+        <type>const interval</type>
+        <definition>const interval sl::SpatialMappingParameters::allowed_max</definition>
+        <argsstring></argsstring>
+        <name>allowed_max</name>
+        <initializer>= std::make_pair(2.f, 20.f)</initializer>
+        <briefdescription>
+<para>The maximal depth value allowed by the spatial mapping. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="462" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="462" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_spatial_mapping_parameters_1a4d44851574e69965611ea97cc233e757" prot="public" static="no" mutable="no">
+        <type>interval</type>
+        <definition>interval sl::SpatialMappingParameters::range_meter</definition>
+        <argsstring></argsstring>
+        <name>range_meter</name>
+        <initializer>= std::make_pair(0.7f, 5.f)</initializer>
+        <briefdescription>
+<para>Depth integration range in meters. <linebreak/>
+range_meter.first should fit interval::allowed_min.<linebreak/>
+range_meter.first will be set to <ref refid="classsl_1_1_camera_1a8d2f7788b0660cb3a6762ef9e0d912d4" kindref="member">sl::Camera::getDepthMinRangeValue</ref> if you do not change it.<linebreak/>
+range_meter.second should fit interval::allowed_max. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="471" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_spatial_mapping_parameters_1abb682c66741e155da0d5bdc1b84689b4" prot="public" static="no" mutable="no">
+        <type>const interval</type>
+        <definition>const interval sl::SpatialMappingParameters::allowed_resolution</definition>
+        <argsstring></argsstring>
+        <name>allowed_resolution</name>
+        <initializer>= std::make_pair(0.01f, 0.2f)</initializer>
+        <briefdescription>
+<para>The resolutions allowed by the spatial mapping. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="476" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="476" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_spatial_mapping_parameters_1afb199606fdab2338cfb854d98e764a09" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::SpatialMappingParameters::resolution_meter</definition>
+        <argsstring></argsstring>
+        <name>resolution_meter</name>
+        <initializer>= 0.03f</initializer>
+        <briefdescription>
+<para>Spatial mapping resolution in meters, should fit interval::allowed_resolution. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="481" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="481" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsl_1_1_spatial_mapping_parameters_1a4df44c154f4cefd8ef854895bfb50621" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sl::SpatialMappingParameters::SpatialMappingParameters</definition>
+        <argsstring>(RESOLUTION resolution=RESOLUTION_HIGH, RANGE range=RANGE_MEDIUM, int max_memory_usage_=2048, bool save_texture_=true)</argsstring>
+        <name>SpatialMappingParameters</name>
+        <param>
+          <type><ref refid="group___enumerations_1gab3c6b2780832f777c410f9502b9a43ae" kindref="member">RESOLUTION</ref></type>
+          <declname>resolution</declname>
+          <defval><ref refid="classsl_1_1_spatial_mapping_parameters_1gab3c6b2780832f777c410f9502b9a43aeab0142f7153241abd403b2d1534afc688" kindref="member">RESOLUTION_HIGH</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1ga69d6c6e3532b4cf2d40a981577ddaf11" kindref="member">RANGE</ref></type>
+          <declname>range</declname>
+          <defval><ref refid="classsl_1_1_spatial_mapping_parameters_1ga69d6c6e3532b4cf2d40a981577ddaf11a5c522d43588dce620226b18b6d0e6efe" kindref="member">RANGE_MEDIUM</ref></defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_memory_usage_</declname>
+          <defval>2048</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>save_texture_</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Default constructor, set all parameters to their default and optimized values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="369" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="369" bodyend="377"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_spatial_mapping_parameters_1a042bb4dbe51049c5c0598405f82ae00b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::SpatialMappingParameters::set</definition>
+        <argsstring>(RESOLUTION resolution=RESOLUTION_HIGH)</argsstring>
+        <name>set</name>
+        <param>
+          <type><ref refid="group___enumerations_1gab3c6b2780832f777c410f9502b9a43ae" kindref="member">RESOLUTION</ref></type>
+          <declname>resolution</declname>
+          <defval><ref refid="classsl_1_1_spatial_mapping_parameters_1gab3c6b2780832f777c410f9502b9a43aeab0142f7153241abd403b2d1534afc688" kindref="member">RESOLUTION_HIGH</ref></defval>
+        </param>
+        <briefdescription>
+<para>Sets the resolution corresponding to the given <ref refid="group___enumerations_1gab3c6b2780832f777c410f9502b9a43ae" kindref="member">sl::SpatialMappingParameters::RESOLUTION</ref> preset. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resolution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the desired <ref refid="group___enumerations_1gab3c6b2780832f777c410f9502b9a43ae" kindref="member">sl::SpatialMappingParameters::RESOLUTION</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="407" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="407" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_spatial_mapping_parameters_1abb9f8f011c9fa57e64cda71675b85adb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::SpatialMappingParameters::set</definition>
+        <argsstring>(RANGE range=RANGE_MEDIUM)</argsstring>
+        <name>set</name>
+        <param>
+          <type><ref refid="group___enumerations_1ga69d6c6e3532b4cf2d40a981577ddaf11" kindref="member">RANGE</ref></type>
+          <declname>range</declname>
+          <defval><ref refid="classsl_1_1_spatial_mapping_parameters_1ga69d6c6e3532b4cf2d40a981577ddaf11a5c522d43588dce620226b18b6d0e6efe" kindref="member">RANGE_MEDIUM</ref></defval>
+        </param>
+        <briefdescription>
+<para>Sets the maximum value of depth corresponding to the given <ref refid="group___enumerations_1ga69d6c6e3532b4cf2d40a981577ddaf11" kindref="member">sl::SpatialMappingParameters::RANGE</ref> presets. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the desired <ref refid="group___enumerations_1ga69d6c6e3532b4cf2d40a981577ddaf11" kindref="member">sl::SpatialMappingParameters::RANGE</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="439" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="439" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_spatial_mapping_parameters_1a3f2ea3d4d3364b6e483e6f6710eb5984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl::SpatialMappingParameters::save</definition>
+        <argsstring>(sl::String filename)</argsstring>
+        <name>save</name>
+        <param>
+          <type>sl::String</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Saves the current bunch of parameters into a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the path to the file in which the parameters will be stored. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the file was successfully saved, otherwise false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="488" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_spatial_mapping_parameters_1acea6c3f7a0c6c27060b214a96a1f1bf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl::SpatialMappingParameters::load</definition>
+        <argsstring>(sl::String filename)</argsstring>
+        <name>load</name>
+        <param>
+          <type>sl::String</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Loads the values of the parameters contained in a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the path to the file from which the parameters will be loaded. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the file was successfully loaded, otherwise false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="495" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsl_1_1_spatial_mapping_parameters_1a0289cbe4d842e3a66ef0182617a26056" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>static float sl::SpatialMappingParameters::get</definition>
+        <argsstring>(RESOLUTION resolution=RESOLUTION_HIGH)</argsstring>
+        <name>get</name>
+        <param>
+          <type><ref refid="group___enumerations_1gab3c6b2780832f777c410f9502b9a43ae" kindref="member">RESOLUTION</ref></type>
+          <declname>resolution</declname>
+          <defval><ref refid="classsl_1_1_spatial_mapping_parameters_1gab3c6b2780832f777c410f9502b9a43aeab0142f7153241abd403b2d1534afc688" kindref="member">RESOLUTION_HIGH</ref></defval>
+        </param>
+        <briefdescription>
+<para>Return the resolution corresponding to the given <ref refid="group___enumerations_1gab3c6b2780832f777c410f9502b9a43ae" kindref="member">sl::SpatialMappingParameters::RESOLUTION</ref> preset. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resolution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the desired <ref refid="group___enumerations_1gab3c6b2780832f777c410f9502b9a43ae" kindref="member">sl::SpatialMappingParameters::RESOLUTION</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The resolution in meter. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="384" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="384" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_spatial_mapping_parameters_1aa64516526f42a811fff2035dca9c32ff" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>static float sl::SpatialMappingParameters::get</definition>
+        <argsstring>(RANGE range=RANGE_MEDIUM)</argsstring>
+        <name>get</name>
+        <param>
+          <type><ref refid="group___enumerations_1ga69d6c6e3532b4cf2d40a981577ddaf11" kindref="member">RANGE</ref></type>
+          <declname>range</declname>
+          <defval><ref refid="classsl_1_1_spatial_mapping_parameters_1ga69d6c6e3532b4cf2d40a981577ddaf11a5c522d43588dce620226b18b6d0e6efe" kindref="member">RANGE_MEDIUM</ref></defval>
+        </param>
+        <briefdescription>
+<para>Return the maximum value of depth corresponding to the given <ref refid="group___enumerations_1ga69d6c6e3532b4cf2d40a981577ddaf11" kindref="member">sl::SpatialMappingParameters::RANGE</ref> presets. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the desired <ref refid="group___enumerations_1ga69d6c6e3532b4cf2d40a981577ddaf11" kindref="member">sl::SpatialMappingParameters::RANGE</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The maximum value of depth. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="416" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="416" bodyend="433"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Parameters for ZED scanning initialization. </para>    </briefdescription>
+    <detaileddescription>
+<para><linebreak/>
+ A default constructor is enabled and set to its default parameters. <simplesect kind="note"><para>Parameters can be user adjusted. </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="341" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="341" bodyend="498"/>
+    <listofallmembers>
+      <member refid="classsl_1_1_spatial_mapping_parameters_1acd355a514569a4eb3792adc33a493d55" prot="public" virt="non-virtual"><scope>sl::SpatialMappingParameters</scope><name>allowed_max</name></member>
+      <member refid="classsl_1_1_spatial_mapping_parameters_1a4d399c9328cc14c24627897dc9c8fb61" prot="public" virt="non-virtual"><scope>sl::SpatialMappingParameters</scope><name>allowed_min</name></member>
+      <member refid="classsl_1_1_spatial_mapping_parameters_1abb682c66741e155da0d5bdc1b84689b4" prot="public" virt="non-virtual"><scope>sl::SpatialMappingParameters</scope><name>allowed_resolution</name></member>
+      <member refid="classsl_1_1_spatial_mapping_parameters_1a0289cbe4d842e3a66ef0182617a26056" prot="public" virt="non-virtual"><scope>sl::SpatialMappingParameters</scope><name>get</name></member>
+      <member refid="classsl_1_1_spatial_mapping_parameters_1aa64516526f42a811fff2035dca9c32ff" prot="public" virt="non-virtual"><scope>sl::SpatialMappingParameters</scope><name>get</name></member>
+      <member refid="classsl_1_1_spatial_mapping_parameters_1aea3772dc2ba0be826a2c61b19885da35" prot="public" virt="non-virtual"><scope>sl::SpatialMappingParameters</scope><name>interval</name></member>
+      <member refid="classsl_1_1_spatial_mapping_parameters_1acea6c3f7a0c6c27060b214a96a1f1bf9" prot="public" virt="non-virtual"><scope>sl::SpatialMappingParameters</scope><name>load</name></member>
+      <member refid="classsl_1_1_spatial_mapping_parameters_1aefff427b300c32d03fe89db0db6f190d" prot="public" virt="non-virtual"><scope>sl::SpatialMappingParameters</scope><name>max_memory_usage</name></member>
+      <member refid="group___enumerations_1ga69d6c6e3532b4cf2d40a981577ddaf11" prot="public" virt="non-virtual"><scope>sl::SpatialMappingParameters</scope><name>RANGE</name></member>
+      <member refid="classsl_1_1_spatial_mapping_parameters_1ga69d6c6e3532b4cf2d40a981577ddaf11ae24fdacc07a34859d54063cfb783412a" prot="public" virt="non-virtual"><scope>sl::SpatialMappingParameters</scope><name>RANGE_FAR</name></member>
+      <member refid="classsl_1_1_spatial_mapping_parameters_1ga69d6c6e3532b4cf2d40a981577ddaf11a5c522d43588dce620226b18b6d0e6efe" prot="public" virt="non-virtual"><scope>sl::SpatialMappingParameters</scope><name>RANGE_MEDIUM</name></member>
+      <member refid="classsl_1_1_spatial_mapping_parameters_1a4d44851574e69965611ea97cc233e757" prot="public" virt="non-virtual"><scope>sl::SpatialMappingParameters</scope><name>range_meter</name></member>
+      <member refid="classsl_1_1_spatial_mapping_parameters_1ga69d6c6e3532b4cf2d40a981577ddaf11a3b335cecf5cee9f647b8ecdf79cbc260" prot="public" virt="non-virtual"><scope>sl::SpatialMappingParameters</scope><name>RANGE_NEAR</name></member>
+      <member refid="group___enumerations_1gab3c6b2780832f777c410f9502b9a43ae" prot="public" virt="non-virtual"><scope>sl::SpatialMappingParameters</scope><name>RESOLUTION</name></member>
+      <member refid="classsl_1_1_spatial_mapping_parameters_1gab3c6b2780832f777c410f9502b9a43aeab0142f7153241abd403b2d1534afc688" prot="public" virt="non-virtual"><scope>sl::SpatialMappingParameters</scope><name>RESOLUTION_HIGH</name></member>
+      <member refid="classsl_1_1_spatial_mapping_parameters_1gab3c6b2780832f777c410f9502b9a43aea5b4fc183b75c1978e739f12a94e9d9b6" prot="public" virt="non-virtual"><scope>sl::SpatialMappingParameters</scope><name>RESOLUTION_LOW</name></member>
+      <member refid="classsl_1_1_spatial_mapping_parameters_1gab3c6b2780832f777c410f9502b9a43aea751b2e88dac7975556a1e8ed4fd4eb19" prot="public" virt="non-virtual"><scope>sl::SpatialMappingParameters</scope><name>RESOLUTION_MEDIUM</name></member>
+      <member refid="classsl_1_1_spatial_mapping_parameters_1afb199606fdab2338cfb854d98e764a09" prot="public" virt="non-virtual"><scope>sl::SpatialMappingParameters</scope><name>resolution_meter</name></member>
+      <member refid="classsl_1_1_spatial_mapping_parameters_1a3f2ea3d4d3364b6e483e6f6710eb5984" prot="public" virt="non-virtual"><scope>sl::SpatialMappingParameters</scope><name>save</name></member>
+      <member refid="classsl_1_1_spatial_mapping_parameters_1a084ed725d78d5b8193b642b0ab9d79ff" prot="public" virt="non-virtual"><scope>sl::SpatialMappingParameters</scope><name>save_texture</name></member>
+      <member refid="classsl_1_1_spatial_mapping_parameters_1a042bb4dbe51049c5c0598405f82ae00b" prot="public" virt="non-virtual"><scope>sl::SpatialMappingParameters</scope><name>set</name></member>
+      <member refid="classsl_1_1_spatial_mapping_parameters_1abb9f8f011c9fa57e64cda71675b85adb" prot="public" virt="non-virtual"><scope>sl::SpatialMappingParameters</scope><name>set</name></member>
+      <member refid="classsl_1_1_spatial_mapping_parameters_1a4df44c154f4cefd8ef854895bfb50621" prot="public" virt="non-virtual"><scope>sl::SpatialMappingParameters</scope><name>SpatialMappingParameters</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

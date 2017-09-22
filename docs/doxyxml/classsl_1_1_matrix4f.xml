@@ -1,0 +1,776 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classsl_1_1_matrix4f" kind="class" language="C++" prot="public">
+    <compoundname>sl::Matrix4f</compoundname>
+    <derivedcompoundref refid="classsl_1_1_transform" prot="public" virt="non-virtual">sl::Transform</derivedcompoundref>
+    <includes refid="types_8hpp" local="no">types.hpp</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classsl_1_1_matrix4f_1a1ea844e29dea5af3c2cf7b55ddcc4a00" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int sl::Matrix4f::nbElem</definition>
+        <argsstring></argsstring>
+        <name>nbElem</name>
+        <initializer>= 16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1202" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1202" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsl_1_1_matrix4f_1a8e774029d7152bce0c1d3e0cd9bd0f5e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::Matrix4f::r00</definition>
+        <argsstring></argsstring>
+        <name>r00</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1206" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_matrix4f_1acf34b2775d44ce13a24431916cfcbc7a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::Matrix4f::r01</definition>
+        <argsstring></argsstring>
+        <name>r01</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1206" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_matrix4f_1a18fc852ecdc9777f79d6f49963b0c476" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::Matrix4f::r02</definition>
+        <argsstring></argsstring>
+        <name>r02</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1206" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_matrix4f_1a60ee3cffb46d4547c6f086aec638c02a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::Matrix4f::tx</definition>
+        <argsstring></argsstring>
+        <name>tx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1206" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_matrix4f_1a9328621a658d4a2b4a3557837503ba6f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::Matrix4f::r10</definition>
+        <argsstring></argsstring>
+        <name>r10</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1206" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_matrix4f_1a74e8b116337f6c15649a8edf2a62f08e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::Matrix4f::r11</definition>
+        <argsstring></argsstring>
+        <name>r11</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1206" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_matrix4f_1a57befd263b91f780ee6a5aef37075687" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::Matrix4f::r12</definition>
+        <argsstring></argsstring>
+        <name>r12</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1206" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_matrix4f_1ae24c1f2be6600483c0b39d56ab2b5278" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::Matrix4f::ty</definition>
+        <argsstring></argsstring>
+        <name>ty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1206" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_matrix4f_1a734bebad04033a8ccf053ec7ef074952" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::Matrix4f::r20</definition>
+        <argsstring></argsstring>
+        <name>r20</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1206" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_matrix4f_1a26c0779be65b396319437c326cd13cdb" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::Matrix4f::r21</definition>
+        <argsstring></argsstring>
+        <name>r21</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1206" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_matrix4f_1a222afeae4b3c27566b4e77adbc7fd4e0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::Matrix4f::r22</definition>
+        <argsstring></argsstring>
+        <name>r22</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1206" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_matrix4f_1a34e50a8187f918efae21684c6a71f8e5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::Matrix4f::tz</definition>
+        <argsstring></argsstring>
+        <name>tz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1206" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_matrix4f_1ae2a93285c199fa85743ea4b355c218d1" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::Matrix4f::m30</definition>
+        <argsstring></argsstring>
+        <name>m30</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1206" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_matrix4f_1af76884e0f67d7c213767b6cc0deaf5ce" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::Matrix4f::m31</definition>
+        <argsstring></argsstring>
+        <name>m31</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1206" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_matrix4f_1af39e407d6aecd5b4150faa96f793a84f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::Matrix4f::m32</definition>
+        <argsstring></argsstring>
+        <name>m32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1206" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_matrix4f_1a9ae104646f74f1ca2f5907fa5098d459" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::Matrix4f::m33</definition>
+        <argsstring></argsstring>
+        <name>m33</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1206" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_matrix4f_1a132361263753687f4b7033d17d2e4231" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::Matrix4f::m[nbElem]</definition>
+        <argsstring>[nbElem]</argsstring>
+        <name>m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1209" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_matrix4f_1a10dd88f4735e8b488523e57eedd76897" prot="public" static="no" mutable="no">
+        <type>union sl::Matrix4f::@5</type>
+        <definition>union sl::Matrix4f::@5 sl::Matrix4f::@6</definition>
+        <argsstring></argsstring>
+        <name>@6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1210" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_matrix4f_1ade7ab277157a58637172f5a5071bd4db" prot="public" static="no" mutable="no">
+        <type>sl::String</type>
+        <definition>sl::String sl::Matrix4f::matrix_name</definition>
+        <argsstring></argsstring>
+        <name>matrix_name</name>
+        <briefdescription>
+<para>Name of the matrix (optional). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1340" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1340" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsl_1_1_matrix4f_1a51d6886104a13fed531a2ad43e2ba41e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Matrix4f::Matrix4f</definition>
+        <argsstring>()</argsstring>
+        <name>Matrix4f</name>
+        <briefdescription>
+<para><ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1215" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_matrix4f_1a87ff5c4813d321b3f75c223c69f3d6c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Matrix4f::Matrix4f</definition>
+        <argsstring>(float data[])</argsstring>
+        <name>Matrix4f</name>
+        <param>
+          <type>float</type>
+          <declname>data</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para><ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> copy constructor (deep copy). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1220" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_matrix4f_1a9a2c6ee41ff9f60c9b38ffd98bcec638" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Matrix4f::Matrix4f</definition>
+        <argsstring>(const Matrix4f &amp;mat)</argsstring>
+        <name>Matrix4f</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> copy constructor (deep copy). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> to copy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1226" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_matrix4f_1a9b893c23d49d4a0b8779b8bbb3beae4c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref></type>
+        <definition>Matrix4f sl::Matrix4f::operator*</definition>
+        <argsstring>(const Matrix4f &amp;mat) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief Gives the result of the multiplication between two <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1231" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_matrix4f_1ad00405eeef566a989118a03e9e2f0426" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref></type>
+        <definition>Matrix4f sl::Matrix4f::operator*</definition>
+        <argsstring>(const double &amp;scalar) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>scalar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief Gives the result of the multiplication between a <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> and a scalar. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1236" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_matrix4f_1ad742b7faad74fbaaeaedb5f833e435db" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl::Matrix4f::operator==</definition>
+        <argsstring>(const Matrix4f &amp;mat) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief Test two <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> equality. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1241" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_matrix4f_1a5baf40c2695639fde1ae298dd5c45c64" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl::Matrix4f::operator!=</definition>
+        <argsstring>(const Matrix4f &amp;mat) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief Test two <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> inequality. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1246" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_matrix4f_1a0edeefb3b78ebf2542995e0e20833f75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float &amp;</type>
+        <definition>float&amp; sl::Matrix4f::operator()</definition>
+        <argsstring>(int u, int v)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>int</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Gets access to a specific point in the <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> (read / write). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: specify the row. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: specify the column. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value at the u, v coordinates. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1254" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_matrix4f_1a0678ad955aa52c47937257a2c1f6587a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+        <definition>ERROR_CODE sl::Matrix4f::inverse</definition>
+        <argsstring>()</argsstring>
+        <name>inverse</name>
+        <briefdescription>
+<para>Sets the <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> to its inverse. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>SUCCESS if the inverse has been computed, ERROR_CODE_FAILURE is not (det = 0). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1260" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_matrix4f_1a989b3cf6879084f8804098cf5397d450" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Matrix4f::transpose</definition>
+        <argsstring>()</argsstring>
+        <name>transpose</name>
+        <briefdescription>
+<para>Sets the <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> to its transpose. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1272" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_matrix4f_1a546cfd7d75e408e88cee4869a5c6cc91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Matrix4f::setIdentity</definition>
+        <argsstring>()</argsstring>
+        <name>setIdentity</name>
+        <briefdescription>
+<para>Sets the <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> to identity. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1284" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_matrix4f_1a73012039f843e5041baeb98cb370e2cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Matrix4f::setZeros</definition>
+        <argsstring>()</argsstring>
+        <name>setZeros</name>
+        <briefdescription>
+<para>Sets the <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> to zero. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1295" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_matrix4f_1a2a1592134649fe695e265995fd3d598a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+        <definition>ERROR_CODE sl::Matrix4f::setSubMatrix3f</definition>
+        <argsstring>(sl::Matrix3f input, int row=0, int column=0)</argsstring>
+        <name>setSubMatrix3f</name>
+        <param>
+          <type><ref refid="classsl_1_1_matrix3f" kindref="compound">sl::Matrix3f</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>column</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Sets a 3x3 Matrix inside the <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Can be used to set the rotation matrix when the matrix4f is a pose or an isometric matrix. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classsl_1_1_matrix3f" kindref="compound">sl::Matrix3f</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: sub matrix to put inside the <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: index of the row to start the 3x3 block. Must be 0 or 1. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: index of the column to start the 3x3 block. Must be 0 or 1. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SUCCESS if everything went well, ERROR_CODE_FAILURE otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1311" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_matrix4f_1ac5f637fec939c8abfd08e1d1adacfcb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+        <definition>ERROR_CODE sl::Matrix4f::setSubVector3f</definition>
+        <argsstring>(sl::Vector3&lt; float &gt; input, int column=3)</argsstring>
+        <name>setSubVector3f</name>
+        <param>
+          <type>sl::Vector3&lt; float &gt;</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>column</declname>
+          <defval>3</defval>
+        </param>
+        <briefdescription>
+<para>Sets a 3x1 Vector inside the <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> at the specified column index. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Can be used to set the Translation/Position matrix when the matrix4f is a pose or an isometry. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sl::Vector3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: sub vector to put inside the <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: index of the column to start the 3x3 block. By default, it is the last column (translation for a <ref refid="classsl_1_1_pose" kindref="compound">Pose</ref>). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SUCCESS if everything went well, ERROR_CODE_FAILURE otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1320" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_matrix4f_1acdbb2319a8105ff17636b95c986ad62e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+        <definition>ERROR_CODE sl::Matrix4f::setSubVector4f</definition>
+        <argsstring>(sl::Vector4&lt; float &gt; input, int column=3)</argsstring>
+        <name>setSubVector4f</name>
+        <param>
+          <type>sl::Vector4&lt; float &gt;</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>column</declname>
+          <defval>3</defval>
+        </param>
+        <briefdescription>
+<para>Sets a 4x1 Vector inside the <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> at the specified column index. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Can be used to set the Translation/Position matrix when the matrix4f is a pose or an isometry. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sl::Vector4</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: sub vector to put inside the <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: index of the column to start the 3x3 block. By default, it is the last column (translation for a <ref refid="classsl_1_1_pose" kindref="compound">Pose</ref>). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SUCCESS if everything went well, ERROR_CODE_FAILURE otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1329" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_matrix4f_1a18f441c99bc93c191553ea34662e7d25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl::String</type>
+        <definition>sl::String sl::Matrix4f::getInfos</definition>
+        <argsstring>()</argsstring>
+        <name>getInfos</name>
+        <briefdescription>
+<para>Return the components of the <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> in a sl::String. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A sl::String containing the components of the current <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1335" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsl_1_1_matrix4f_1a5f0c318a1064ee5bf9735d9abd3df43a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref></type>
+        <definition>static Matrix4f sl::Matrix4f::inverse</definition>
+        <argsstring>(const Matrix4f &amp;mat)</argsstring>
+        <name>inverse</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+<para>Creates the inverse of a <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> to compute the inverse from. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The inverse of the given <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1267" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_matrix4f_1aee343c8bcd6853c2e9341fd7c0eefbcc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref></type>
+        <definition>static Matrix4f sl::Matrix4f::transpose</definition>
+        <argsstring>(const Matrix4f &amp;mat)</argsstring>
+        <name>transpose</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+<para>Creates the transpose of a <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> to compute the transpose from. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The transpose of the given <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1279" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_matrix4f_1ad1240f12cc95f9077a649d00ccf5b0da" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref></type>
+        <definition>static Matrix4f sl::Matrix4f::identity</definition>
+        <argsstring>()</argsstring>
+        <name>identity</name>
+        <briefdescription>
+<para>Creates an identity <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> set to identity. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1290" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_matrix4f_1a0164dd9c062a1dc3f8672c4e25cc4440" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref></type>
+        <definition>static Matrix4f sl::Matrix4f::zeros</definition>
+        <argsstring>()</argsstring>
+        <name>zeros</name>
+        <briefdescription>
+<para>Creates a <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> filled with zeros. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> set to zero. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1301" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The class <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> represent a generic fourth-dimensional matrix. </para>    </briefdescription>
+    <detaileddescription>
+<para><linebreak/>
+<linebreak/>
+ <ref refid="classsl_1_1_matrix4f" kindref="compound">sl::Matrix4f</ref> is defined in a row-major order: <linebreak/>
+ - It means that, in the value buffer, the entire first row is stored first, followed by the entire second row, and so on. <linebreak/>
+ - you can access the data by the &apos;m&apos; ptr or by the element name as : r00, r01, r02, tx | 0 1 2 3 | r10, r11, r12, ty &lt;-&gt; m| 4 5 6 7 | r20, r21, r22, tz | 8 9 10 11 | m30, m31, m32, m33 | 12 13 14 15 | </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="286">
+        <label>sl::Transform</label>
+        <link refid="classsl_1_1_transform"/>
+        <childnode refid="285" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="285">
+        <label>sl::Matrix4f</label>
+        <link refid="classsl_1_1_matrix4f"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1200" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1200" bodyend="1341"/>
+    <listofallmembers>
+      <member refid="classsl_1_1_matrix4f_1a18f441c99bc93c191553ea34662e7d25" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>getInfos</name></member>
+      <member refid="classsl_1_1_matrix4f_1ad1240f12cc95f9077a649d00ccf5b0da" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>identity</name></member>
+      <member refid="classsl_1_1_matrix4f_1a0678ad955aa52c47937257a2c1f6587a" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>inverse</name></member>
+      <member refid="classsl_1_1_matrix4f_1a5f0c318a1064ee5bf9735d9abd3df43a" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>inverse</name></member>
+      <member refid="classsl_1_1_matrix4f_1a132361263753687f4b7033d17d2e4231" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>m</name></member>
+      <member refid="classsl_1_1_matrix4f_1ae2a93285c199fa85743ea4b355c218d1" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>m30</name></member>
+      <member refid="classsl_1_1_matrix4f_1af76884e0f67d7c213767b6cc0deaf5ce" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>m31</name></member>
+      <member refid="classsl_1_1_matrix4f_1af39e407d6aecd5b4150faa96f793a84f" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>m32</name></member>
+      <member refid="classsl_1_1_matrix4f_1a9ae104646f74f1ca2f5907fa5098d459" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>m33</name></member>
+      <member refid="classsl_1_1_matrix4f_1a51d6886104a13fed531a2ad43e2ba41e" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>Matrix4f</name></member>
+      <member refid="classsl_1_1_matrix4f_1a87ff5c4813d321b3f75c223c69f3d6c4" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>Matrix4f</name></member>
+      <member refid="classsl_1_1_matrix4f_1a9a2c6ee41ff9f60c9b38ffd98bcec638" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>Matrix4f</name></member>
+      <member refid="classsl_1_1_matrix4f_1ade7ab277157a58637172f5a5071bd4db" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>matrix_name</name></member>
+      <member refid="classsl_1_1_matrix4f_1a1ea844e29dea5af3c2cf7b55ddcc4a00" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>nbElem</name></member>
+      <member refid="classsl_1_1_matrix4f_1a5baf40c2695639fde1ae298dd5c45c64" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>operator!=</name></member>
+      <member refid="classsl_1_1_matrix4f_1a0edeefb3b78ebf2542995e0e20833f75" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>operator()</name></member>
+      <member refid="classsl_1_1_matrix4f_1a9b893c23d49d4a0b8779b8bbb3beae4c" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>operator*</name></member>
+      <member refid="classsl_1_1_matrix4f_1ad00405eeef566a989118a03e9e2f0426" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>operator*</name></member>
+      <member refid="classsl_1_1_matrix4f_1ad742b7faad74fbaaeaedb5f833e435db" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>operator==</name></member>
+      <member refid="classsl_1_1_matrix4f_1a8e774029d7152bce0c1d3e0cd9bd0f5e" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>r00</name></member>
+      <member refid="classsl_1_1_matrix4f_1acf34b2775d44ce13a24431916cfcbc7a" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>r01</name></member>
+      <member refid="classsl_1_1_matrix4f_1a18fc852ecdc9777f79d6f49963b0c476" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>r02</name></member>
+      <member refid="classsl_1_1_matrix4f_1a9328621a658d4a2b4a3557837503ba6f" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>r10</name></member>
+      <member refid="classsl_1_1_matrix4f_1a74e8b116337f6c15649a8edf2a62f08e" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>r11</name></member>
+      <member refid="classsl_1_1_matrix4f_1a57befd263b91f780ee6a5aef37075687" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>r12</name></member>
+      <member refid="classsl_1_1_matrix4f_1a734bebad04033a8ccf053ec7ef074952" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>r20</name></member>
+      <member refid="classsl_1_1_matrix4f_1a26c0779be65b396319437c326cd13cdb" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>r21</name></member>
+      <member refid="classsl_1_1_matrix4f_1a222afeae4b3c27566b4e77adbc7fd4e0" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>r22</name></member>
+      <member refid="classsl_1_1_matrix4f_1a546cfd7d75e408e88cee4869a5c6cc91" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>setIdentity</name></member>
+      <member refid="classsl_1_1_matrix4f_1a2a1592134649fe695e265995fd3d598a" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>setSubMatrix3f</name></member>
+      <member refid="classsl_1_1_matrix4f_1ac5f637fec939c8abfd08e1d1adacfcb7" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>setSubVector3f</name></member>
+      <member refid="classsl_1_1_matrix4f_1acdbb2319a8105ff17636b95c986ad62e" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>setSubVector4f</name></member>
+      <member refid="classsl_1_1_matrix4f_1a73012039f843e5041baeb98cb370e2cd" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>setZeros</name></member>
+      <member refid="classsl_1_1_matrix4f_1a989b3cf6879084f8804098cf5397d450" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>transpose</name></member>
+      <member refid="classsl_1_1_matrix4f_1aee343c8bcd6853c2e9341fd7c0eefbcc" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>transpose</name></member>
+      <member refid="classsl_1_1_matrix4f_1a60ee3cffb46d4547c6f086aec638c02a" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>tx</name></member>
+      <member refid="classsl_1_1_matrix4f_1ae24c1f2be6600483c0b39d56ab2b5278" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>ty</name></member>
+      <member refid="classsl_1_1_matrix4f_1a34e50a8187f918efae21684c6a71f8e5" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>tz</name></member>
+      <member refid="classsl_1_1_matrix4f_1a0164dd9c062a1dc3f8672c4e25cc4440" prot="public" virt="non-virtual"><scope>sl::Matrix4f</scope><name>zeros</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

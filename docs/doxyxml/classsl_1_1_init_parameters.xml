@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classsl_1_1_init_parameters" kind="class" language="C++" prot="public">
+    <compoundname>sl::InitParameters</compoundname>
+    <includes refid="_camera_8hpp" local="no">Camera.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsl_1_1_init_parameters_1a297b9f1acc720379514c15a6edaafecb" prot="public" static="no" mutable="no">
+        <type><ref refid="group___enumerations_1gaeafb9a9ca728b455b54ed5abdac04a06" kindref="member">RESOLUTION</ref></type>
+        <definition>RESOLUTION sl::InitParameters::camera_resolution</definition>
+        <argsstring></argsstring>
+        <name>camera_resolution</name>
+        <briefdescription>
+<para>Define the chosen ZED resolution <linebreak/>
+ default : RESOLUTION_HD720. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="89" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_init_parameters_1a6fbbd31329da260c1850e8cd8e58d1dd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sl::InitParameters::camera_fps</definition>
+        <argsstring></argsstring>
+        <name>camera_fps</name>
+        <briefdescription>
+<para>Requested FPS for this resolution. </para>        </briefdescription>
+        <detaileddescription>
+<para>set as 0 will choose the default FPS for this resolution (see User guide). <linebreak/>
+ default : 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="95" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_init_parameters_1a0fba4f968fec3e03bc8230ea3d350879" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sl::InitParameters::camera_linux_id</definition>
+        <argsstring></argsstring>
+        <name>camera_linux_id</name>
+        <briefdescription>
+<para>ONLY for LINUX : if multiple ZEDs are connected, it will choose the first zed listed (if zed_linux_id=0), the second listed (if zed_linux_id=1), ... </para>        </briefdescription>
+        <detaileddescription>
+<para>Each ZED will create its own memory (CPU and GPU), therefore the number of ZED available will depend on the configuration of your computer. Currently not available for Windows <linebreak/>
+ default : 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="103" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_init_parameters_1afa93c49d837c36e191aeb05ddd4369da" prot="public" static="no" mutable="no">
+        <type>sl::String</type>
+        <definition>sl::String sl::InitParameters::svo_input_filename</definition>
+        <argsstring></argsstring>
+        <name>svo_input_filename</name>
+        <briefdescription>
+<para>Path with filename to the recorded SVO file. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="108" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_init_parameters_1ad44de247b60b818ff9b8d241fb85da1b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool sl::InitParameters::svo_real_time_mode</definition>
+        <argsstring></argsstring>
+        <name>svo_real_time_mode</name>
+        <briefdescription>
+<para>When enabled the timestamp is taken as reference to determine the reading framerate. </para>        </briefdescription>
+        <detaileddescription>
+<para>This mode simulates the live camera and consequently skipped frames if the computation framerate is too slow. <linebreak/>
+ default : false </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="115" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_init_parameters_1a2799e6931e10a3aa6c40c94e9f415143" prot="public" static="no" mutable="no">
+        <type><ref refid="group___enumerations_1gaff0aee1a44b17bccb1a69a42ff18f8e5" kindref="member">UNIT</ref></type>
+        <definition>UNIT sl::InitParameters::coordinate_units</definition>
+        <argsstring></argsstring>
+        <name>coordinate_units</name>
+        <briefdescription>
+<para>Define the unit for all the metric values ( depth, point cloud, tracking). </para>        </briefdescription>
+        <detaileddescription>
+<para><linebreak/>
+ default : sl::UNIT::UNIT_MILLIMETER </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="121" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_init_parameters_1a08a7ffc64eacc7273b2503e67880508a" prot="public" static="no" mutable="no">
+        <type><ref refid="group___enumerations_1ga11d40998d9e455a331ee9aa71e6e0de9" kindref="member">COORDINATE_SYSTEM</ref></type>
+        <definition>COORDINATE_SYSTEM sl::InitParameters::coordinate_system</definition>
+        <argsstring></argsstring>
+        <name>coordinate_system</name>
+        <briefdescription>
+<para>Define the coordinate system of the world frame (and the camera frame as well). </para>        </briefdescription>
+        <detaileddescription>
+<para><linebreak/>
+ This defines the order of the axis of the coordinate system. see COORDINATE_SYSTEM for more information. <linebreak/>
+ default : COORDINATE_SYSTEM::COORDINATE_SYSTEM_IMAGE </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="128" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_init_parameters_1aecbfd32ca0b028752777dc971e0d09c3" prot="public" static="no" mutable="no">
+        <type><ref refid="group___enumerations_1gae47b83cff7f4ae0910ca2e12f6c1f839" kindref="member">DEPTH_MODE</ref></type>
+        <definition>DEPTH_MODE sl::InitParameters::depth_mode</definition>
+        <argsstring></argsstring>
+        <name>depth_mode</name>
+        <briefdescription>
+<para>Defines the quality of the depth map, affects the level of details and also the computation time. </para>        </briefdescription>
+        <detaileddescription>
+<para><linebreak/>
+ default : DEPTH_MODE::DEPTH_MODE_PERFORMANCE </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="134" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_init_parameters_1a86077adea3e9f9f7646c7a8f396c859a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::InitParameters::depth_minimum_distance</definition>
+        <argsstring></argsstring>
+        <name>depth_minimum_distance</name>
+        <briefdescription>
+<para>Specify the minimum depth information that will be computed, in the sl::UNIT you previously define. </para>        </briefdescription>
+        <detaileddescription>
+<para><linebreak/>
+ default : 70cm (-1) <simplesect kind="warning"><para>The computation time is affected by the value, exponentially. The closer it gets the longer the disparity search will take. In case of limited computation power, consider increasing the value. </para></simplesect>
+<simplesect kind="note"><para>This value is used to calculate the disparity range estimation ( in pixels). Due to metric to pixel conversion, a small difference may occur with the value returned by getDepthMinRange(). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="143" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_init_parameters_1a204357c7d77addbb2294c9ed48605107" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sl::InitParameters::camera_image_flip</definition>
+        <argsstring></argsstring>
+        <name>camera_image_flip</name>
+        <briefdescription>
+<para>Defines if the image are horizontally flipped. </para>        </briefdescription>
+        <detaileddescription>
+<para><linebreak/>
+ default : 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="149" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_init_parameters_1a8871b5ceaed785b7084f165149f1087f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool sl::InitParameters::camera_disable_self_calib</definition>
+        <argsstring></argsstring>
+        <name>camera_disable_self_calib</name>
+        <briefdescription>
+<para>If set to true, it will disable self-calibration and take the optional calibration parameters without optimizing them. </para>        </briefdescription>
+        <detaileddescription>
+<para>It is advised to leave it as false, so that calibration parameters can be optimized. <linebreak/>
+ default : false </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="156" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_init_parameters_1a20144983846d5a243b1269ffcf671450" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sl::InitParameters::camera_buffer_count_linux</definition>
+        <argsstring></argsstring>
+        <name>camera_buffer_count_linux</name>
+        <briefdescription>
+<para>Set the number of buffers in the internal grabbing process. </para>        </briefdescription>
+        <detaileddescription>
+<para><linebreak/>
+ decrease this number may reduce latency but can also produce more corrupted frames. <linebreak/>
+ default: 4 <simplesect kind="warning"><para>Linux Only, this parameter has no effect on Windows. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="164" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_init_parameters_1a35fadfeb1650ba56ff453cec25a2df14" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool sl::InitParameters::sdk_verbose</definition>
+        <argsstring></argsstring>
+        <name>sdk_verbose</name>
+        <briefdescription>
+<para>If set to true, it will output some information about the current status of initialization. </para>        </briefdescription>
+        <detaileddescription>
+<para><linebreak/>
+ default : false </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="170" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_init_parameters_1a5c1cc2907ca3f7e69dcbcd99b50b05f6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sl::InitParameters::sdk_gpu_id</definition>
+        <argsstring></argsstring>
+        <name>sdk_gpu_id</name>
+        <briefdescription>
+<para>Defines the graphics card on which the computation will be done. </para>        </briefdescription>
+        <detaileddescription>
+<para>The default value search the more powerful (most CUDA cores) usable GPU. <linebreak/>
+ default : -1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="176" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsl_1_1_init_parameters_1aaeefc36782a9d96d2d078acfafe41e88" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sl::InitParameters::InitParameters</definition>
+        <argsstring>(RESOLUTION camera_resolution_=RESOLUTION_HD720, int camera_fps_=0, int camera_linux_id_=0, sl::String svo_input_filename_=sl::String(), bool svo_real_time_mode_=false, DEPTH_MODE depth_mode_=DEPTH_MODE_PERFORMANCE, UNIT coordinate_units_=UNIT_MILLIMETER, COORDINATE_SYSTEM coordinate_system_=COORDINATE_SYSTEM_IMAGE, bool sdk_verbose_=false, int sdk_gpu_id_=-1, float depth_minimum_distance_=-1., bool camera_disable_self_calib_=false, bool camera_image_flip_=false, int camera_buffer_count_linux_=4)</argsstring>
+        <name>InitParameters</name>
+        <param>
+          <type><ref refid="group___enumerations_1gaeafb9a9ca728b455b54ed5abdac04a06" kindref="member">RESOLUTION</ref></type>
+          <declname>camera_resolution_</declname>
+          <defval>RESOLUTION_HD720</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>camera_fps_</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>camera_linux_id_</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>sl::String</type>
+          <declname>svo_input_filename_</declname>
+          <defval>sl::String()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>svo_real_time_mode_</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1gae47b83cff7f4ae0910ca2e12f6c1f839" kindref="member">DEPTH_MODE</ref></type>
+          <declname>depth_mode_</declname>
+          <defval>DEPTH_MODE_PERFORMANCE</defval>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1gaff0aee1a44b17bccb1a69a42ff18f8e5" kindref="member">UNIT</ref></type>
+          <declname>coordinate_units_</declname>
+          <defval>UNIT_MILLIMETER</defval>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1ga11d40998d9e455a331ee9aa71e6e0de9" kindref="member">COORDINATE_SYSTEM</ref></type>
+          <declname>coordinate_system_</declname>
+          <defval>COORDINATE_SYSTEM_IMAGE</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sdk_verbose_</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sdk_gpu_id_</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>depth_minimum_distance_</declname>
+          <defval>-1.</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>camera_disable_self_calib_</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>camera_image_flip_</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>camera_buffer_count_linux_</declname>
+          <defval>4</defval>
+        </param>
+        <briefdescription>
+<para>Default constructor, set all parameters to their default and optimized values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="181" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="181" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_init_parameters_1a86efc1704ce028658a94b6f40ae5ac9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl::InitParameters::save</definition>
+        <argsstring>(sl::String filename)</argsstring>
+        <name>save</name>
+        <param>
+          <type>sl::String</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Saves the current bunch of parameters into a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the path to the file in which the parameters will be stored. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if file was successfully saved, otherwise false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="216" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_init_parameters_1a3f1254a2fa3f53decedb21dde475f6e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl::InitParameters::load</definition>
+        <argsstring>(sl::String filename)</argsstring>
+        <name>load</name>
+        <param>
+          <type>sl::String</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Loads the values of the parameters contained in a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the path to the file from which the parameters will be loaded. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the file was successfully loaded, otherwise false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="223" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Parameters for ZED initialization. </para>    </briefdescription>
+    <detaileddescription>
+<para>A default constructor is enable. </para>    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="83" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="83" bodyend="224"/>
+    <listofallmembers>
+      <member refid="classsl_1_1_init_parameters_1a20144983846d5a243b1269ffcf671450" prot="public" virt="non-virtual"><scope>sl::InitParameters</scope><name>camera_buffer_count_linux</name></member>
+      <member refid="classsl_1_1_init_parameters_1a8871b5ceaed785b7084f165149f1087f" prot="public" virt="non-virtual"><scope>sl::InitParameters</scope><name>camera_disable_self_calib</name></member>
+      <member refid="classsl_1_1_init_parameters_1a6fbbd31329da260c1850e8cd8e58d1dd" prot="public" virt="non-virtual"><scope>sl::InitParameters</scope><name>camera_fps</name></member>
+      <member refid="classsl_1_1_init_parameters_1a204357c7d77addbb2294c9ed48605107" prot="public" virt="non-virtual"><scope>sl::InitParameters</scope><name>camera_image_flip</name></member>
+      <member refid="classsl_1_1_init_parameters_1a0fba4f968fec3e03bc8230ea3d350879" prot="public" virt="non-virtual"><scope>sl::InitParameters</scope><name>camera_linux_id</name></member>
+      <member refid="classsl_1_1_init_parameters_1a297b9f1acc720379514c15a6edaafecb" prot="public" virt="non-virtual"><scope>sl::InitParameters</scope><name>camera_resolution</name></member>
+      <member refid="classsl_1_1_init_parameters_1a08a7ffc64eacc7273b2503e67880508a" prot="public" virt="non-virtual"><scope>sl::InitParameters</scope><name>coordinate_system</name></member>
+      <member refid="classsl_1_1_init_parameters_1a2799e6931e10a3aa6c40c94e9f415143" prot="public" virt="non-virtual"><scope>sl::InitParameters</scope><name>coordinate_units</name></member>
+      <member refid="classsl_1_1_init_parameters_1a86077adea3e9f9f7646c7a8f396c859a" prot="public" virt="non-virtual"><scope>sl::InitParameters</scope><name>depth_minimum_distance</name></member>
+      <member refid="classsl_1_1_init_parameters_1aecbfd32ca0b028752777dc971e0d09c3" prot="public" virt="non-virtual"><scope>sl::InitParameters</scope><name>depth_mode</name></member>
+      <member refid="classsl_1_1_init_parameters_1aaeefc36782a9d96d2d078acfafe41e88" prot="public" virt="non-virtual"><scope>sl::InitParameters</scope><name>InitParameters</name></member>
+      <member refid="classsl_1_1_init_parameters_1a3f1254a2fa3f53decedb21dde475f6e9" prot="public" virt="non-virtual"><scope>sl::InitParameters</scope><name>load</name></member>
+      <member refid="classsl_1_1_init_parameters_1a86efc1704ce028658a94b6f40ae5ac9b" prot="public" virt="non-virtual"><scope>sl::InitParameters</scope><name>save</name></member>
+      <member refid="classsl_1_1_init_parameters_1a5c1cc2907ca3f7e69dcbcd99b50b05f6" prot="public" virt="non-virtual"><scope>sl::InitParameters</scope><name>sdk_gpu_id</name></member>
+      <member refid="classsl_1_1_init_parameters_1a35fadfeb1650ba56ff453cec25a2df14" prot="public" virt="non-virtual"><scope>sl::InitParameters</scope><name>sdk_verbose</name></member>
+      <member refid="classsl_1_1_init_parameters_1afa93c49d837c36e191aeb05ddd4369da" prot="public" virt="non-virtual"><scope>sl::InitParameters</scope><name>svo_input_filename</name></member>
+      <member refid="classsl_1_1_init_parameters_1ad44de247b60b818ff9b8d241fb85da1b" prot="public" virt="non-virtual"><scope>sl::InitParameters</scope><name>svo_real_time_mode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

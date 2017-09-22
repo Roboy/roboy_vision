@@ -1,0 +1,679 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_camera_8hpp" kind="file" language="C++">
+    <compoundname>Camera.hpp</compoundname>
+    <includes refid="_core_8hpp" local="yes">sl/Core.hpp</includes>
+    <includes refid="_mesh_8hpp" local="yes">sl/Mesh.hpp</includes>
+    <includes refid="defines_8hpp" local="yes">sl/defines.hpp</includes>
+    <includes refid="cuda_8h" local="no">cuda.h</includes>
+    <includes local="no">opencv2/opencv.hpp</includes>
+    <includedby refid="utils_8hpp" local="no">/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp</includedby>
+    <includedby refid="zed_roboy_8cpp" local="no">/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.cpp</includedby>
+    <incdepgraph>
+      <node id="1924">
+        <label>iomanip</label>
+      </node>
+      <node id="1945">
+        <label>limits</label>
+      </node>
+      <node id="1944">
+        <label>cstdint</label>
+      </node>
+      <node id="1939">
+        <label>device_launch_parameters.h</label>
+      </node>
+      <node id="1933">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1943">
+        <label>sl/defines.hpp</label>
+        <link refid="defines_8hpp_source"/>
+        <childnode refid="1944" relation="include">
+        </childnode>
+        <childnode refid="1920" relation="include">
+        </childnode>
+        <childnode refid="1925" relation="include">
+        </childnode>
+        <childnode refid="1930" relation="include">
+        </childnode>
+        <childnode refid="1945" relation="include">
+        </childnode>
+        <childnode refid="1940" relation="include">
+        </childnode>
+      </node>
+      <node id="1931">
+        <label>cuda.h</label>
+        <link refid="cuda_8h_source"/>
+        <childnode refid="1932" relation="include">
+        </childnode>
+      </node>
+      <node id="1937">
+        <label>cuda_runtime.h</label>
+      </node>
+      <node id="1917">
+        <label>cmath</label>
+      </node>
+      <node id="1946">
+        <label>opencv2/opencv.hpp</label>
+      </node>
+      <node id="1942">
+        <label>string</label>
+      </node>
+      <node id="1926">
+        <label>memory.h</label>
+      </node>
+      <node id="1923">
+        <label>fstream</label>
+      </node>
+      <node id="1914">
+        <label>sl/types.hpp</label>
+        <link refid="types_8hpp_source"/>
+        <childnode refid="1915" relation="include">
+        </childnode>
+        <childnode refid="1916" relation="include">
+        </childnode>
+        <childnode refid="1917" relation="include">
+        </childnode>
+        <childnode refid="1918" relation="include">
+        </childnode>
+        <childnode refid="1919" relation="include">
+        </childnode>
+        <childnode refid="1920" relation="include">
+        </childnode>
+        <childnode refid="1921" relation="include">
+        </childnode>
+        <childnode refid="1922" relation="include">
+        </childnode>
+        <childnode refid="1923" relation="include">
+        </childnode>
+        <childnode refid="1924" relation="include">
+        </childnode>
+        <childnode refid="1925" relation="include">
+        </childnode>
+        <childnode refid="1926" relation="include">
+        </childnode>
+        <childnode refid="1927" relation="include">
+        </childnode>
+        <childnode refid="1928" relation="include">
+        </childnode>
+        <childnode refid="1929" relation="include">
+        </childnode>
+        <childnode refid="1930" relation="include">
+        </childnode>
+        <childnode refid="1931" relation="include">
+        </childnode>
+        <childnode refid="1937" relation="include">
+        </childnode>
+        <childnode refid="1938" relation="include">
+        </childnode>
+        <childnode refid="1939" relation="include">
+        </childnode>
+        <childnode refid="1940" relation="include">
+        </childnode>
+      </node>
+      <node id="1932">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="1933" relation="include">
+        </childnode>
+        <childnode refid="1934" relation="include">
+        </childnode>
+        <childnode refid="1935" relation="include">
+        </childnode>
+        <childnode refid="1936" relation="include">
+        </childnode>
+      </node>
+      <node id="1936">
+        <label>pthread.h</label>
+      </node>
+      <node id="1935">
+        <label>string.h</label>
+      </node>
+      <node id="1918">
+        <label>cstdio</label>
+      </node>
+      <node id="1921">
+        <label>ctime</label>
+      </node>
+      <node id="1940">
+        <label>unistd.h</label>
+      </node>
+      <node id="1930">
+        <label>vector</label>
+      </node>
+      <node id="1913">
+        <label>sl/Core.hpp</label>
+        <link refid="_core_8hpp_source"/>
+        <childnode refid="1914" relation="include">
+        </childnode>
+      </node>
+      <node id="1928">
+        <label>sstream</label>
+      </node>
+      <node id="1919">
+        <label>cstdlib</label>
+      </node>
+      <node id="1925">
+        <label>iostream</label>
+      </node>
+      <node id="1922">
+        <label>ctype.h</label>
+      </node>
+      <node id="1912">
+        <label>/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp</label>
+        <link refid="Camera.hpp"/>
+        <childnode refid="1913" relation="include">
+        </childnode>
+        <childnode refid="1941" relation="include">
+        </childnode>
+        <childnode refid="1943" relation="include">
+        </childnode>
+        <childnode refid="1931" relation="include">
+        </childnode>
+        <childnode refid="1946" relation="include">
+        </childnode>
+      </node>
+      <node id="1927">
+        <label>mutex</label>
+      </node>
+      <node id="1938">
+        <label>cuda_runtime_api.h</label>
+      </node>
+      <node id="1916">
+        <label>chrono</label>
+      </node>
+      <node id="1929">
+        <label>thread</label>
+      </node>
+      <node id="1941">
+        <label>sl/Mesh.hpp</label>
+        <link refid="_mesh_8hpp_source"/>
+        <childnode refid="1930" relation="include">
+        </childnode>
+        <childnode refid="1942" relation="include">
+        </childnode>
+        <childnode refid="1923" relation="include">
+        </childnode>
+        <childnode refid="1913" relation="include">
+        </childnode>
+      </node>
+      <node id="1915">
+        <label>algorithm</label>
+      </node>
+      <node id="1934">
+        <label>stdio.h</label>
+      </node>
+      <node id="1920">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1948">
+        <label>/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp</label>
+        <link refid="utils_8hpp_source"/>
+      </node>
+      <node id="1947">
+        <label>/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp</label>
+        <link refid="Camera.hpp"/>
+        <childnode refid="1948" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsl_1_1_init_parameters" prot="public">sl::InitParameters</innerclass>
+    <innerclass refid="classsl_1_1_runtime_parameters" prot="public">sl::RuntimeParameters</innerclass>
+    <innerclass refid="classsl_1_1_tracking_parameters" prot="public">sl::TrackingParameters</innerclass>
+    <innerclass refid="classsl_1_1_spatial_mapping_parameters" prot="public">sl::SpatialMappingParameters</innerclass>
+    <innerclass refid="classsl_1_1_pose" prot="public">sl::Pose</innerclass>
+    <innerclass refid="classsl_1_1_camera" prot="public">sl::Camera</innerclass>
+    <innernamespace refid="namespacesl">sl</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>SOFTWARE<sp/>LICENSE</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>BY<sp/>USING<sp/>YOUR<sp/>ZED<sp/>CAMERA<sp/>YOU<sp/>AGREE<sp/>TO<sp/>THIS<sp/>SOFTWARE<sp/>LICENSE.<sp/>BEFORE<sp/>SETTING<sp/>IT<sp/>UP,</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>PLEASE<sp/>READ<sp/>THIS<sp/>SOFTWARE<sp/>LICENSE<sp/>CAREFULLY.<sp/>IF<sp/>YOU<sp/>DO<sp/>NOT<sp/>ACCEPT<sp/>THIS</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>SOFTWARE<sp/>LICENSE,<sp/>DO<sp/>NOT<sp/>USE<sp/>YOUR<sp/>ZED<sp/>CAMERA.<sp/>RETURN<sp/>IT<sp/>TO<sp/>UNUSED<sp/>TO</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>STEREOLABS<sp/>FOR<sp/>A<sp/>REFUND.<sp/>Contact<sp/>STEREOLABS<sp/>at<sp/>contact@stereolabs.com</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>1.<sp/>Definitions</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>&quot;Authorized<sp/>Accessory&quot;<sp/>means<sp/>a<sp/>STEREOLABS<sp/>branded<sp/>ZED,<sp/>and<sp/>a<sp/>STEREOLABS</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>licensed,<sp/>third<sp/>party<sp/>branded,<sp/>ZED<sp/>hardware<sp/>accessory<sp/>whose<sp/>packaging</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>bears<sp/>the<sp/>official<sp/>&quot;Licensed<sp/>for<sp/>ZED&quot;<sp/>logo.<sp/>The<sp/>ZED<sp/>Camera<sp/>is<sp/>an<sp/>Authorized</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/>Accessory<sp/>solely<sp/>for<sp/>purpose<sp/>of<sp/>this<sp/>Software<sp/>license.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>&quot;Software&quot;<sp/>means<sp/>the<sp/>Software<sp/>Development<sp/>Kit,<sp/>pre-installed<sp/>in<sp/>the<sp/>ZED</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>USB<sp/>flash<sp/>drive<sp/>included<sp/>in<sp/>the<sp/>ZED<sp/>packaging,<sp/>and<sp/>including<sp/>any</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>updates<sp/>STEREOLABS<sp/>may<sp/>make<sp/>available<sp/>from<sp/>time<sp/>to<sp/>time.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>&quot;Unauthorized<sp/>Accessories&quot;<sp/>means<sp/>all<sp/>hardware<sp/>accessories<sp/>other<sp/>than</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>an<sp/>Authorized<sp/>Accessory.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>&quot;Unauthorized<sp/>Software&quot;<sp/>means<sp/>any<sp/>software<sp/>not<sp/>distributed<sp/>by<sp/>STEREOLABS.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>&quot;You&quot;<sp/>means<sp/>the<sp/>user<sp/>of<sp/>a<sp/>ZED<sp/>Camera.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>2.<sp/>License</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>a.<sp/>The<sp/>Software<sp/>is<sp/>licensed<sp/>to<sp/>You,<sp/>not<sp/>sold.<sp/>You<sp/>are<sp/>licensed<sp/>to<sp/>use<sp/>the</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>Software<sp/>only<sp/>as<sp/>pre-installed<sp/>in<sp/>Your<sp/>ZED<sp/>USB<sp/>flash<sp/>drive,<sp/>and<sp/>updated<sp/>by</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>STEREOLABS<sp/>from<sp/>time<sp/>to<sp/>time.<sp/>You<sp/>may<sp/>not<sp/>copy<sp/>or<sp/>reverse<sp/>engineer<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>b.<sp/>As<sp/>conditions<sp/>to<sp/>this<sp/>Software<sp/>license,<sp/>You<sp/>agree<sp/>that:</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>i.<sp/>You<sp/>will<sp/>use<sp/>Your<sp/>Software<sp/>with<sp/>ZED<sp/>Camera<sp/>only<sp/>and<sp/>not<sp/>with<sp/>any</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>other<sp/>device<sp/>(including).<sp/>You<sp/>will<sp/>not<sp/>use<sp/>Unauthorized<sp/>Accessories.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/>They<sp/>may<sp/>not<sp/>work<sp/>or<sp/>may<sp/>stop<sp/>working<sp/>permanently<sp/>after<sp/>a<sp/>Software<sp/>update.</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>ii.<sp/>You<sp/>will<sp/>not<sp/>use<sp/>or<sp/>install<sp/>any<sp/>Unauthorized<sp/>Software.</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/>If<sp/>You<sp/>do,<sp/>Your<sp/>ZED<sp/>Camera<sp/>may<sp/>stop<sp/>working<sp/>permanently<sp/>at<sp/>that<sp/>time</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/>or<sp/>after<sp/>a<sp/>later<sp/>Software<sp/>update.</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>iii.<sp/>You<sp/>will<sp/>not<sp/>attempt<sp/>to<sp/>defeat<sp/>or<sp/>circumvent<sp/>any<sp/>Software</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/>technical<sp/>limitation,<sp/>security,<sp/>or<sp/>anti-piracy<sp/>system.<sp/>If<sp/>You<sp/>do,</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*<sp/>Your<sp/>ZED<sp/>Camera<sp/>may<sp/>stop<sp/>working<sp/>permanently<sp/>at<sp/>that<sp/>time<sp/>or<sp/>after<sp/>a</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/>later<sp/>Software<sp/>update.</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>iv.<sp/>STEREOLABS<sp/>may<sp/>use<sp/>technical<sp/>measures,<sp/>including<sp/>Software</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/>updates,<sp/>to<sp/>limit<sp/>use<sp/>of<sp/>the<sp/>Software<sp/>to<sp/>the<sp/>ZED<sp/>Camera,<sp/>to<sp/>prevent</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>use<sp/>of<sp/>Unauthorized<sp/>Accessories,<sp/>and<sp/>to<sp/>protect<sp/>the<sp/>technical<sp/>limitations,</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/>security<sp/>and<sp/>anti-piracy<sp/>systems<sp/>in<sp/>the<sp/>ZED<sp/>Camera.</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>v.<sp/>STEREOLABS<sp/>may<sp/>update<sp/>the<sp/>Software<sp/>from<sp/>time<sp/>to<sp/>time<sp/>without</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*<sp/>further<sp/>notice<sp/>to<sp/>You,<sp/>for<sp/>example,<sp/>to<sp/>update<sp/>any<sp/>technical<sp/>limitation,</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*<sp/>security,<sp/>or<sp/>anti-piracy<sp/>system.</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/>3.<sp/>Warranty</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/>The<sp/>Software<sp/>is<sp/>covered<sp/>by<sp/>the<sp/>Limited<sp/>Warranty<sp/>for<sp/>Your<sp/>ZED<sp/>Camera,</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*<sp/>and<sp/>STEREOLABS<sp/>gives<sp/>no<sp/>other<sp/>guarantee,<sp/>warranty,<sp/>or<sp/>condition<sp/>for</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*<sp/>the<sp/>Software.<sp/>No<sp/>one<sp/>else<sp/>may<sp/>give<sp/>any<sp/>guarantee,<sp/>warranty,<sp/>or<sp/>condition</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*<sp/>on<sp/>STEREOLABS&apos;s<sp/>behalf.</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*<sp/>4.<sp/>EXCLUSION<sp/>OF<sp/>CERTAIN<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*<sp/>STEREOLABS<sp/>IS<sp/>NOT<sp/>RESPONSIBLE<sp/>FOR<sp/>ANY<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>OR</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*<sp/>CONSEQUENTIAL<sp/>DAMAGES;<sp/>ANY<sp/>LOSS<sp/>OF<sp/>DATA,<sp/>PRIVACY,<sp/>CONFIDENTIALITY,<sp/>OR</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*<sp/>PROFITS;<sp/>OR<sp/>ANY<sp/>INABILITY<sp/>TO<sp/>USE<sp/>THE<sp/>SOFTWARE.<sp/>THESE<sp/>EXCLUSIONS<sp/>APPLY</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*<sp/>EVEN<sp/>IF<sp/>STEREOLABS<sp/>HAS<sp/>BEEN<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>THESE<sp/>DAMAGES,</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*<sp/>AND<sp/>EVEN<sp/>IF<sp/>ANY<sp/>REMEDY<sp/>FAILS<sp/>OF<sp/>ITS<sp/>ESSENTIAL<sp/>PURPOSE.</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/>*<sp/>5.<sp/>Choice<sp/>of<sp/>Law</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*<sp/>French<sp/>law<sp/>governs<sp/>the<sp/>interpretation<sp/>of<sp/>this<sp/>Software<sp/>license<sp/>and<sp/>any</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*<sp/>claim<sp/>that<sp/>STEREOLABS<sp/>has<sp/>breached<sp/>it,<sp/>regardless<sp/>of<sp/>conflict<sp/>of</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*<sp/>law<sp/>principles.</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__CAMERA_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__CAMERA_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sl/Core.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sl/Mesh.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sl/defines.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cuda.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;opencv2/opencv.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesl" kindref="compound">sl</ref><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="classsl_1_1_init_parameters" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SLSTEREO_EXPORT_DLL<sp/><ref refid="classsl_1_1_init_parameters" kindref="compound">InitParameters</ref><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="89" refid="classsl_1_1_init_parameters_1a297b9f1acc720379514c15a6edaafecb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1gaeafb9a9ca728b455b54ed5abdac04a06" kindref="member">RESOLUTION</ref><sp/><ref refid="classsl_1_1_init_parameters_1a297b9f1acc720379514c15a6edaafecb" kindref="member">camera_resolution</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="classsl_1_1_init_parameters_1a6fbbd31329da260c1850e8cd8e58d1dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_init_parameters_1a6fbbd31329da260c1850e8cd8e58d1dd" kindref="member">camera_fps</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="classsl_1_1_init_parameters_1a0fba4f968fec3e03bc8230ea3d350879" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_init_parameters_1a0fba4f968fec3e03bc8230ea3d350879" kindref="member">camera_linux_id</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="classsl_1_1_init_parameters_1afa93c49d837c36e191aeb05ddd4369da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sl::String<sp/><ref refid="classsl_1_1_init_parameters_1afa93c49d837c36e191aeb05ddd4369da" kindref="member">svo_input_filename</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="classsl_1_1_init_parameters_1ad44de247b60b818ff9b8d241fb85da1b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_init_parameters_1ad44de247b60b818ff9b8d241fb85da1b" kindref="member">svo_real_time_mode</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="classsl_1_1_init_parameters_1a2799e6931e10a3aa6c40c94e9f415143" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1gaff0aee1a44b17bccb1a69a42ff18f8e5" kindref="member">UNIT</ref><sp/><ref refid="classsl_1_1_init_parameters_1a2799e6931e10a3aa6c40c94e9f415143" kindref="member">coordinate_units</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="classsl_1_1_init_parameters_1a08a7ffc64eacc7273b2503e67880508a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga11d40998d9e455a331ee9aa71e6e0de9" kindref="member">COORDINATE_SYSTEM</ref><sp/><ref refid="classsl_1_1_init_parameters_1a08a7ffc64eacc7273b2503e67880508a" kindref="member">coordinate_system</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="classsl_1_1_init_parameters_1aecbfd32ca0b028752777dc971e0d09c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1gae47b83cff7f4ae0910ca2e12f6c1f839" kindref="member">DEPTH_MODE</ref><sp/><ref refid="classsl_1_1_init_parameters_1aecbfd32ca0b028752777dc971e0d09c3" kindref="member">depth_mode</ref>;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="classsl_1_1_init_parameters_1a86077adea3e9f9f7646c7a8f396c859a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_init_parameters_1a86077adea3e9f9f7646c7a8f396c859a" kindref="member">depth_minimum_distance</ref>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="classsl_1_1_init_parameters_1a204357c7d77addbb2294c9ed48605107" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_init_parameters_1a204357c7d77addbb2294c9ed48605107" kindref="member">camera_image_flip</ref>;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="classsl_1_1_init_parameters_1a8871b5ceaed785b7084f165149f1087f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_init_parameters_1a8871b5ceaed785b7084f165149f1087f" kindref="member">camera_disable_self_calib</ref>;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="classsl_1_1_init_parameters_1a20144983846d5a243b1269ffcf671450" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_init_parameters_1a20144983846d5a243b1269ffcf671450" kindref="member">camera_buffer_count_linux</ref>;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="classsl_1_1_init_parameters_1a35fadfeb1650ba56ff453cec25a2df14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_init_parameters_1a35fadfeb1650ba56ff453cec25a2df14" kindref="member">sdk_verbose</ref>;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="classsl_1_1_init_parameters_1a5c1cc2907ca3f7e69dcbcd99b50b05f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_init_parameters_1a5c1cc2907ca3f7e69dcbcd99b50b05f6" kindref="member">sdk_gpu_id</ref>;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="classsl_1_1_init_parameters_1aaeefc36782a9d96d2d078acfafe41e88" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_init_parameters_1aaeefc36782a9d96d2d078acfafe41e88" kindref="member">InitParameters</ref>(<ref refid="group___enumerations_1gaeafb9a9ca728b455b54ed5abdac04a06" kindref="member">RESOLUTION</ref><sp/>camera_resolution_<sp/>=<sp/>RESOLUTION_HD720,</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>camera_fps_<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>camera_linux_id_<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sl::String<sp/>svo_input_filename_<sp/>=<sp/>sl::String(),</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>svo_real_time_mode_<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1gae47b83cff7f4ae0910ca2e12f6c1f839" kindref="member">DEPTH_MODE</ref><sp/>depth_mode_<sp/>=<sp/>DEPTH_MODE_PERFORMANCE,</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1gaff0aee1a44b17bccb1a69a42ff18f8e5" kindref="member">UNIT</ref><sp/>coordinate_units_<sp/>=<sp/>UNIT_MILLIMETER,</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga11d40998d9e455a331ee9aa71e6e0de9" kindref="member">COORDINATE_SYSTEM</ref><sp/>coordinate_system_<sp/>=<sp/>COORDINATE_SYSTEM_IMAGE,</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sdk_verbose_<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sdk_gpu_id_<sp/>=<sp/>-1,</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>depth_minimum_distance_<sp/>=<sp/>-1.,</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>camera_disable_self_calib_<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>camera_image_flip_<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>camera_buffer_count_linux_<sp/>=<sp/>4)</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>camera_resolution(camera_resolution_)</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>camera_fps(camera_fps_)</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>camera_linux_id(camera_linux_id_)</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>svo_input_filename(svo_input_filename_)</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>svo_real_time_mode(svo_real_time_mode_)</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>depth_mode(depth_mode_)</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>coordinate_units(coordinate_units_)</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>coordinate_system(coordinate_system_)</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>sdk_verbose(sdk_verbose_)</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>sdk_gpu_id(sdk_gpu_id_)</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>depth_minimum_distance(depth_minimum_distance_)</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>camera_disable_self_calib(camera_disable_self_calib_)</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>camera_image_flip(camera_image_flip_)</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>camera_buffer_count_linux(camera_buffer_count_linux_)<sp/>{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>save(sl::String<sp/>filename);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>load(sl::String<sp/>filename);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230" refid="classsl_1_1_runtime_parameters" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SLSTEREO_EXPORT_DLL<sp/><ref refid="classsl_1_1_runtime_parameters" kindref="compound">RuntimeParameters</ref><sp/>{</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="235" refid="classsl_1_1_runtime_parameters_1abe3c765b7a447380fe9625ea5b07ded9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1gab2582f40a88ce7c33d5edfd6ca3ea0f6" kindref="member">SENSING_MODE</ref><sp/><ref refid="classsl_1_1_runtime_parameters_1abe3c765b7a447380fe9625ea5b07ded9" kindref="member">sensing_mode</ref>;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241" refid="classsl_1_1_runtime_parameters_1a7c8ae9713defaff49dbc5d75ecf7c49d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_runtime_parameters_1a7c8ae9713defaff49dbc5d75ecf7c49d" kindref="member">enable_depth</ref>;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246" refid="classsl_1_1_runtime_parameters_1a69ee9a32dd1c27d1cfc27638d597229d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_runtime_parameters_1a69ee9a32dd1c27d1cfc27638d597229d" kindref="member">enable_point_cloud</ref>;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251" refid="classsl_1_1_runtime_parameters_1a5e193b875a24331330ddcf9b5bf7a09b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_runtime_parameters_1a5e193b875a24331330ddcf9b5bf7a09b" kindref="member">move_point_cloud_to_world_frame</ref>;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256" refid="classsl_1_1_runtime_parameters_1a3c58c59fefdc17dd8fa3c55e9593b982" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_runtime_parameters_1a3c58c59fefdc17dd8fa3c55e9593b982" kindref="member">RuntimeParameters</ref>(<ref refid="group___enumerations_1gab2582f40a88ce7c33d5edfd6ca3ea0f6" kindref="member">SENSING_MODE</ref><sp/>sensing_mode_<sp/>=<sp/>SENSING_MODE::SENSING_MODE_STANDARD,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_depth_<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_point_cloud_<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>move_point_cloud_to_world_frame_<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>sensing_mode(sensing_mode_)</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>enable_depth(enable_depth_)</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>enable_point_cloud(enable_point_cloud_)</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>move_point_cloud_to_world_frame(move_point_cloud_to_world_frame_)<sp/>{</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>save(sl::String<sp/>filename);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>load(sl::String<sp/>filename);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284" refid="classsl_1_1_tracking_parameters" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SLSTEREO_EXPORT_DLL<sp/><ref refid="classsl_1_1_tracking_parameters" kindref="compound">TrackingParameters</ref><sp/>{</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="292" refid="classsl_1_1_tracking_parameters_1ac5340ce86d617b05ab8c55dbc3c720db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_transform" kindref="compound">sl::Transform</ref><sp/><ref refid="classsl_1_1_tracking_parameters_1ac5340ce86d617b05ab8c55dbc3c720db" kindref="member">initial_world_transform</ref>;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300" refid="classsl_1_1_tracking_parameters_1a3c044cf2ee1410c88c8bd5d83e7dc540" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_tracking_parameters_1a3c044cf2ee1410c88c8bd5d83e7dc540" kindref="member">enable_spatial_memory</ref>;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309" refid="classsl_1_1_tracking_parameters_1a732207f4036e66410a39a4c77ab8904b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sl::String<sp/><ref refid="classsl_1_1_tracking_parameters_1a732207f4036e66410a39a4c77ab8904b" kindref="member">area_file_path</ref>;</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314" refid="classsl_1_1_tracking_parameters_1a13ba90c840ad0f7322f4984d042e0509" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_tracking_parameters_1a13ba90c840ad0f7322f4984d042e0509" kindref="member">TrackingParameters</ref>(<ref refid="classsl_1_1_transform" kindref="compound">sl::Transform</ref><sp/>init_pos<sp/>=<sp/><ref refid="classsl_1_1_transform" kindref="compound">sl::Transform</ref>(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_enable_memory<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>sl::String<sp/>_area_path<sp/>=<sp/>sl::String())</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>initial_world_transform(init_pos)</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>enable_spatial_memory(_enable_memory)</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>area_file_path(_area_path)<sp/>{</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>save(sl::String<sp/>filename);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>load(sl::String<sp/>filename);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341" refid="classsl_1_1_spatial_mapping_parameters" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SLSTEREO_EXPORT_DLL<sp/><ref refid="classsl_1_1_spatial_mapping_parameters" kindref="compound">SpatialMappingParameters</ref><sp/>{</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::pair&lt;float,<sp/>float&gt;<sp/>interval;</highlight></codeline>
+<codeline lineno="349" refid="group___enumerations_1gab3c6b2780832f777c410f9502b9a43ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="350" refid="classsl_1_1_spatial_mapping_parameters_1gab3c6b2780832f777c410f9502b9a43aeab0142f7153241abd403b2d1534afc688" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_spatial_mapping_parameters_1gab3c6b2780832f777c410f9502b9a43aeab0142f7153241abd403b2d1534afc688" kindref="member">RESOLUTION_HIGH</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="351" refid="classsl_1_1_spatial_mapping_parameters_1gab3c6b2780832f777c410f9502b9a43aea751b2e88dac7975556a1e8ed4fd4eb19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_spatial_mapping_parameters_1gab3c6b2780832f777c410f9502b9a43aea751b2e88dac7975556a1e8ed4fd4eb19" kindref="member">RESOLUTION_MEDIUM</ref>,<sp/></highlight></codeline>
+<codeline lineno="352" refid="classsl_1_1_spatial_mapping_parameters_1gab3c6b2780832f777c410f9502b9a43aea5b4fc183b75c1978e739f12a94e9d9b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RESOLUTION_LOW<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><ref refid="group___enumerations_1gaeafb9a9ca728b455b54ed5abdac04a06" kindref="member">RESOLUTION</ref>;</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360" refid="group___enumerations_1ga69d6c6e3532b4cf2d40a981577ddaf11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="361" refid="classsl_1_1_spatial_mapping_parameters_1ga69d6c6e3532b4cf2d40a981577ddaf11a3b335cecf5cee9f647b8ecdf79cbc260" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_spatial_mapping_parameters_1ga69d6c6e3532b4cf2d40a981577ddaf11a3b335cecf5cee9f647b8ecdf79cbc260" kindref="member">RANGE_NEAR</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="362" refid="classsl_1_1_spatial_mapping_parameters_1ga69d6c6e3532b4cf2d40a981577ddaf11a5c522d43588dce620226b18b6d0e6efe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_spatial_mapping_parameters_1ga69d6c6e3532b4cf2d40a981577ddaf11a5c522d43588dce620226b18b6d0e6efe" kindref="member">RANGE_MEDIUM</ref>,<sp/></highlight></codeline>
+<codeline lineno="363" refid="classsl_1_1_spatial_mapping_parameters_1ga69d6c6e3532b4cf2d40a981577ddaf11ae24fdacc07a34859d54063cfb783412a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RANGE_FAR<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><ref refid="group___enumerations_1ga69d6c6e3532b4cf2d40a981577ddaf11" kindref="member">RANGE</ref>;</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369" refid="classsl_1_1_spatial_mapping_parameters_1a4df44c154f4cefd8ef854895bfb50621" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_spatial_mapping_parameters_1a4df44c154f4cefd8ef854895bfb50621" kindref="member">SpatialMappingParameters</ref>(RESOLUTION<sp/>resolution<sp/>=<sp/>RESOLUTION_HIGH,</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RANGE<sp/>range<sp/>=<sp/>RANGE_MEDIUM,</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_memory_usage_<sp/>=<sp/>2048,<sp/></highlight><highlight class="comment">//<sp/>Maximum<sp/>RAM<sp/>allowed<sp/>in<sp/>MB<sp/>(power<sp/>of<sp/>2,<sp/>ex:<sp/>512,<sp/>1024,<sp/>2048...)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>save_texture_<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max_memory_usage<sp/>=<sp/>max_memory_usage_;</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>save_texture<sp/>=<sp/>save_texture_;</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(resolution);</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(range);</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight></codeline>
+<codeline lineno="384" refid="classsl_1_1_spatial_mapping_parameters_1a0289cbe4d842e3a66ef0182617a26056" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">(RESOLUTION<sp/>resolution<sp/>=<sp/>RESOLUTION_HIGH)<sp/>{</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>resolution_m<sp/>=<sp/>0.5f;</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(resolution)<sp/>{</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_spatial_mapping_parameters_1gab3c6b2780832f777c410f9502b9a43aeab0142f7153241abd403b2d1534afc688" kindref="member">SpatialMappingParameters::RESOLUTION_HIGH</ref>:</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resolution_m<sp/>=<sp/>0.02f;</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_spatial_mapping_parameters_1gab3c6b2780832f777c410f9502b9a43aea751b2e88dac7975556a1e8ed4fd4eb19" kindref="member">SpatialMappingParameters::RESOLUTION_MEDIUM</ref>:</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resolution_m<sp/>=<sp/>0.05f;</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_spatial_mapping_parameters_1gab3c6b2780832f777c410f9502b9a43aea5b4fc183b75c1978e739f12a94e9d9b6" kindref="member">SpatialMappingParameters::RESOLUTION_LOW</ref>:</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resolution_m<sp/>=<sp/>0.08f;</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resolution_m<sp/>=<sp/>0.05f;</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>resolution_m;</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407" refid="classsl_1_1_spatial_mapping_parameters_1a042bb4dbe51049c5c0598405f82ae00b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(RESOLUTION<sp/>resolution<sp/>=<sp/>RESOLUTION_HIGH)<sp/>{</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resolution_meter<sp/>=<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">(resolution);</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416" refid="classsl_1_1_spatial_mapping_parameters_1aa64516526f42a811fff2035dca9c32ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">(RANGE<sp/>range<sp/>=<sp/>RANGE_MEDIUM)<sp/>{</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>range_max<sp/>=<sp/>5.;</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(range)<sp/>{</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_spatial_mapping_parameters_1ga69d6c6e3532b4cf2d40a981577ddaf11a3b335cecf5cee9f647b8ecdf79cbc260" kindref="member">SpatialMappingParameters::RANGE_NEAR</ref>:</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>range_max<sp/>=<sp/>3.5f;</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_spatial_mapping_parameters_1ga69d6c6e3532b4cf2d40a981577ddaf11a5c522d43588dce620226b18b6d0e6efe" kindref="member">SpatialMappingParameters::RANGE_MEDIUM</ref>:</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>range_max<sp/>=<sp/>5.f;</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_spatial_mapping_parameters_1ga69d6c6e3532b4cf2d40a981577ddaf11ae24fdacc07a34859d54063cfb783412a" kindref="member">SpatialMappingParameters::RANGE_FAR</ref>:</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>range_max<sp/>=<sp/>10.f;</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>range_max<sp/>=<sp/>5.f;</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>range_max;</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"></highlight></codeline>
+<codeline lineno="439" refid="classsl_1_1_spatial_mapping_parameters_1abb9f8f011c9fa57e64cda71675b85adb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(RANGE<sp/>range<sp/>=<sp/>RANGE_MEDIUM)<sp/>{</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>range_meter.second<sp/>=<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">(range);</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"></highlight></codeline>
+<codeline lineno="446" refid="classsl_1_1_spatial_mapping_parameters_1aefff427b300c32d03fe89db0db6f190d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_memory_usage<sp/>=<sp/>2048;</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight></codeline>
+<codeline lineno="452" refid="classsl_1_1_spatial_mapping_parameters_1a084ed725d78d5b8193b642b0ab9d79ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>save_texture<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="457" refid="classsl_1_1_spatial_mapping_parameters_1a4d399c9328cc14c24627897dc9c8fb61" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>interval<sp/>allowed_min<sp/>=<sp/>std::make_pair(0.3f,<sp/>10.f);</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"></highlight></codeline>
+<codeline lineno="462" refid="classsl_1_1_spatial_mapping_parameters_1acd355a514569a4eb3792adc33a493d55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>interval<sp/>allowed_max<sp/>=<sp/>std::make_pair(2.f,<sp/>20.f);</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"></highlight></codeline>
+<codeline lineno="471" refid="classsl_1_1_spatial_mapping_parameters_1a4d44851574e69965611ea97cc233e757" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>interval<sp/>range_meter<sp/>=<sp/>std::make_pair(0.7f,<sp/>5.f);</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"></highlight></codeline>
+<codeline lineno="476" refid="classsl_1_1_spatial_mapping_parameters_1abb682c66741e155da0d5bdc1b84689b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>interval<sp/>allowed_resolution<sp/>=<sp/>std::make_pair(0.01f,<sp/>0.2f);</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"></highlight></codeline>
+<codeline lineno="481" refid="classsl_1_1_spatial_mapping_parameters_1afb199606fdab2338cfb854d98e764a09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>resolution_meter<sp/>=<sp/>0.03f;</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"></highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>save(sl::String<sp/>filename);</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"></highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>load(sl::String<sp/>filename);</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="497"><highlight class="normal"></highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"></highlight></codeline>
+<codeline lineno="505" refid="classsl_1_1_pose" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SLSTEREO_EXPORT_DLL<sp/><ref refid="classsl_1_1_pose" kindref="compound">Pose</ref><sp/>{</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_pose" kindref="compound">Pose</ref>();</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"></highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_pose" kindref="compound">Pose</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_pose" kindref="compound">Pose</ref><sp/>&amp;pose);</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"></highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_pose" kindref="compound">Pose</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_transform" kindref="compound">sl::Transform</ref><sp/>&amp;pose_data,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>mtimestamp<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mconfidence<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"></highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~<ref refid="classsl_1_1_pose" kindref="compound">Pose</ref>();</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"></highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_translation" kindref="compound">sl::Translation</ref><sp/>getTranslation();</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"></highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_orientation" kindref="compound">sl::Orientation</ref><sp/>getOrientation();</highlight></codeline>
+<codeline lineno="538"><highlight class="normal"></highlight></codeline>
+<codeline lineno="543"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_rotation" kindref="compound">sl::Rotation</ref><sp/>getRotation();</highlight></codeline>
+<codeline lineno="544"><highlight class="normal"></highlight></codeline>
+<codeline lineno="549"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sl::Vector3&lt;float&gt;<sp/>getRotationVector();</highlight></codeline>
+<codeline lineno="550"><highlight class="normal"></highlight></codeline>
+<codeline lineno="552" refid="classsl_1_1_pose_1a129b4734e846ad8f7a0417e748549e1f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_pose_1a129b4734e846ad8f7a0417e748549e1f" kindref="member">valid</ref>;</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"></highlight></codeline>
+<codeline lineno="555" refid="classsl_1_1_pose_1aa2723fd786eb09184428488e6304a462" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_pose_1aa2723fd786eb09184428488e6304a462" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"></highlight></codeline>
+<codeline lineno="558" refid="classsl_1_1_pose_1a32ec3d582f6903deb56d4e4419f882d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_transform" kindref="compound">sl::Transform</ref><sp/><ref refid="classsl_1_1_pose_1a32ec3d582f6903deb56d4e4419f882d9" kindref="member">pose_data</ref>;</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"></highlight></codeline>
+<codeline lineno="563" refid="classsl_1_1_pose_1ab2cbbe892126f4576542245e5f89489a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_pose_1ab2cbbe892126f4576542245e5f89489a" kindref="member">pose_confidence</ref>;</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"></highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CameraMemberHandler;</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"></highlight></codeline>
+<codeline lineno="571" refid="classsl_1_1_camera" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SLSTEREO_EXPORT_DLL<sp/><ref refid="classsl_1_1_camera" kindref="compound">Camera</ref><sp/>{</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_camera" kindref="compound">Camera</ref>();</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"></highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~<ref refid="classsl_1_1_camera" kindref="compound">Camera</ref>();</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"></highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>close();</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"></highlight></codeline>
+<codeline lineno="598"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref><sp/>open(<ref refid="classsl_1_1_init_parameters" kindref="compound">InitParameters</ref><sp/>init_parameters<sp/>=<sp/><ref refid="classsl_1_1_init_parameters" kindref="compound">InitParameters</ref>());</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"></highlight></codeline>
+<codeline lineno="604" refid="classsl_1_1_camera_1a319c18ce4292a3f5f1cc2c1fccf47da0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_camera_1a319c18ce4292a3f5f1cc2c1fccf47da0" kindref="member">isOpened</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>opened;</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="607"><highlight class="normal"></highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref><sp/>grab(<ref refid="classsl_1_1_runtime_parameters" kindref="compound">RuntimeParameters</ref><sp/>rt_parameters<sp/>=<sp/><ref refid="classsl_1_1_runtime_parameters" kindref="compound">RuntimeParameters</ref>());</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"></highlight></codeline>
+<codeline lineno="628"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref><sp/>retrieveImage(<ref refid="classsl_1_1_mat" kindref="compound">Mat</ref><sp/>&amp;mat,<sp/><ref refid="group___enumerations_1ga616e75740529ed8585a58fd521b38a55" kindref="member">VIEW</ref><sp/>view<sp/>=<sp/>VIEW_LEFT,<sp/><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref><sp/>type<sp/>=<sp/>MEM_CPU);</highlight></codeline>
+<codeline lineno="629"><highlight class="normal"></highlight></codeline>
+<codeline lineno="641"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref><sp/>retrieveMeasure(<ref refid="classsl_1_1_mat" kindref="compound">Mat</ref><sp/>&amp;mat,<sp/><ref refid="group___enumerations_1ga1fef76ba52aeb9305c1864e4b56fd426" kindref="member">MEASURE</ref><sp/>measure<sp/>=<sp/>MEASURE_DEPTH,<sp/><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref><sp/>type<sp/>=<sp/>MEM_CPU);</highlight></codeline>
+<codeline lineno="642"><highlight class="normal"></highlight></codeline>
+<codeline lineno="651"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setConfidenceThreshold(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>conf_threshold_value);</highlight></codeline>
+<codeline lineno="652"><highlight class="normal"></highlight></codeline>
+<codeline lineno="658"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>getConfidenceThreshold();</highlight></codeline>
+<codeline lineno="659"><highlight class="normal"></highlight></codeline>
+<codeline lineno="664"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CUcontext<sp/>getCUDAContext();</highlight></codeline>
+<codeline lineno="665"><highlight class="normal"></highlight></codeline>
+<codeline lineno="670"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsl_1_1_resolution" kindref="compound">Resolution</ref><sp/>getResolution();</highlight></codeline>
+<codeline lineno="671"><highlight class="normal"></highlight></codeline>
+<codeline lineno="676"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setDepthMaxRangeValue(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>depth_max_range);</highlight></codeline>
+<codeline lineno="677"><highlight class="normal"></highlight></codeline>
+<codeline lineno="682"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>getDepthMaxRangeValue();</highlight></codeline>
+<codeline lineno="683"><highlight class="normal"></highlight></codeline>
+<codeline lineno="688"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>getDepthMinRangeValue();</highlight></codeline>
+<codeline lineno="689"><highlight class="normal"></highlight></codeline>
+<codeline lineno="691"></codeline>
+<codeline lineno="697"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setSVOPosition(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frame_number);</highlight></codeline>
+<codeline lineno="698"><highlight class="normal"></highlight></codeline>
+<codeline lineno="704"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>getSVOPosition();</highlight></codeline>
+<codeline lineno="705"><highlight class="normal"></highlight></codeline>
+<codeline lineno="711"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>getSVONumberOfFrames();</highlight></codeline>
+<codeline lineno="712"><highlight class="normal"></highlight></codeline>
+<codeline lineno="720"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setCameraSettings(<ref refid="group___enumerations_1gaee3848f5141a0b411e15424bdca87d5e" kindref="member">CAMERA_SETTINGS</ref><sp/>settings,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>use_default<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="721"><highlight class="normal"></highlight></codeline>
+<codeline lineno="728"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>getCameraSettings(<ref refid="group___enumerations_1gaee3848f5141a0b411e15424bdca87d5e" kindref="member">CAMERA_SETTINGS</ref><sp/>setting);</highlight></codeline>
+<codeline lineno="729"><highlight class="normal"></highlight></codeline>
+<codeline lineno="734"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>getCameraFPS();</highlight></codeline>
+<codeline lineno="735"><highlight class="normal"></highlight></codeline>
+<codeline lineno="741"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setCameraFPS(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>desired_fps);</highlight></codeline>
+<codeline lineno="742"><highlight class="normal"></highlight></codeline>
+<codeline lineno="748"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>getCurrentFPS();</highlight></codeline>
+<codeline lineno="749"><highlight class="normal"></highlight></codeline>
+<codeline lineno="755"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>getCameraTimestamp();</highlight></codeline>
+<codeline lineno="756"><highlight class="normal"></highlight></codeline>
+<codeline lineno="762"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>getCurrentTimestamp();</highlight></codeline>
+<codeline lineno="763"><highlight class="normal"></highlight></codeline>
+<codeline lineno="769"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>getFrameDroppedCount();</highlight></codeline>
+<codeline lineno="770"><highlight class="normal"></highlight></codeline>
+<codeline lineno="776"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsl_1_1_camera_information" kindref="compound">CameraInformation</ref><sp/>getCameraInformation();</highlight></codeline>
+<codeline lineno="778"></codeline>
+<codeline lineno="780"></codeline>
+<codeline lineno="786"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga640f6de66ba32dc48f1dc7ba8587e951" kindref="member">SELF_CALIBRATION_STATE</ref><sp/>getSelfCalibrationState();</highlight></codeline>
+<codeline lineno="787"><highlight class="normal"></highlight></codeline>
+<codeline lineno="795"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>resetSelfCalibration();</highlight></codeline>
+<codeline lineno="797"><highlight class="normal"></highlight></codeline>
+<codeline lineno="798"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="799"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Tracking<sp/>functions:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="800"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-----------------------------------------------------------------</highlight></codeline>
+<codeline lineno="802"><highlight class="comment"></highlight></codeline>
+<codeline lineno="810"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref><sp/>enableTracking(<ref refid="classsl_1_1_tracking_parameters" kindref="compound">TrackingParameters</ref><sp/>tracking_params<sp/>=<sp/><ref refid="classsl_1_1_tracking_parameters" kindref="compound">TrackingParameters</ref>());</highlight></codeline>
+<codeline lineno="811"><highlight class="normal"></highlight></codeline>
+<codeline lineno="823"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga8edb798f42f7bd7778a2d0bec2c3efa6" kindref="member">sl::TRACKING_STATE</ref><sp/>getPosition(<ref refid="classsl_1_1_pose" kindref="compound">sl::Pose</ref><sp/>&amp;camera_pose,<sp/><ref refid="group___enumerations_1ga0fb1f25b68868e0a7c98a1144afa1b02" kindref="member">REFERENCE_FRAME</ref><sp/>reference_frame<sp/>=<sp/>sl::REFERENCE_FRAME_WORLD);</highlight></codeline>
+<codeline lineno="824"><highlight class="normal"></highlight></codeline>
+<codeline lineno="829"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1gada46476408f223f533f7f5eafed8efba" kindref="member">sl::AREA_EXPORT_STATE</ref><sp/>getAreaExportState();</highlight></codeline>
+<codeline lineno="830"><highlight class="normal"></highlight></codeline>
+<codeline lineno="840"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>disableTracking(sl::String<sp/>area_file_path<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="841"><highlight class="normal"></highlight></codeline>
+<codeline lineno="846"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>resetTracking(<ref refid="classsl_1_1_transform" kindref="compound">sl::Transform</ref><sp/>&amp;path);</highlight></codeline>
+<codeline lineno="848"><highlight class="normal"></highlight></codeline>
+<codeline lineno="849"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="850"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Spatial<sp/>Mapping<sp/>functions:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="851"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-----------------------------------------------------------------</highlight></codeline>
+<codeline lineno="853"><highlight class="comment"></highlight></codeline>
+<codeline lineno="868"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref><sp/>enableSpatialMapping(<ref refid="classsl_1_1_spatial_mapping_parameters" kindref="compound">SpatialMappingParameters</ref><sp/>spatial_mapping_parameters<sp/>=<sp/><ref refid="classsl_1_1_spatial_mapping_parameters" kindref="compound">SpatialMappingParameters</ref>());</highlight></codeline>
+<codeline lineno="869"><highlight class="normal"></highlight></codeline>
+<codeline lineno="874"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pauseSpatialMapping(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>status);</highlight></codeline>
+<codeline lineno="875"><highlight class="normal"></highlight></codeline>
+<codeline lineno="880"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1gaab0cb46ab3ba6cac91b4aff07ea78441" kindref="member">SPATIAL_MAPPING_STATE</ref><sp/>getSpatialMappingState();</highlight></codeline>
+<codeline lineno="881"><highlight class="normal"></highlight></codeline>
+<codeline lineno="882"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="883"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Blocking<sp/>(synchronous)<sp/>function<sp/>of<sp/>mesh<sp/>generation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="884"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-----------------------------------------------------------------</highlight></codeline>
+<codeline lineno="892"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref><sp/>extractWholeMesh(<ref refid="classsl_1_1_mesh" kindref="compound">sl::Mesh</ref><sp/>&amp;mesh);</highlight></codeline>
+<codeline lineno="893"><highlight class="normal"></highlight></codeline>
+<codeline lineno="894"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="895"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Async<sp/>functions<sp/>of<sp/>mesh<sp/>generation<sp/>(<sp/>*Async())</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="896"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-----------------------------------------------------------------</highlight></codeline>
+<codeline lineno="901"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>requestMeshAsync();</highlight></codeline>
+<codeline lineno="902"><highlight class="normal"></highlight></codeline>
+<codeline lineno="907"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref><sp/>getMeshRequestStatusAsync();</highlight></codeline>
+<codeline lineno="908"><highlight class="normal"></highlight></codeline>
+<codeline lineno="914"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref><sp/>retrieveMeshAsync(<ref refid="classsl_1_1_mesh" kindref="compound">sl::Mesh</ref><sp/>&amp;mesh);</highlight></codeline>
+<codeline lineno="915"><highlight class="normal"></highlight></codeline>
+<codeline lineno="920"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>disableSpatialMapping();</highlight></codeline>
+<codeline lineno="922"><highlight class="normal"></highlight></codeline>
+<codeline lineno="923"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="924"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Specific<sp/>When<sp/>Recording<sp/>mode<sp/>is<sp/>activated</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="925"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-----------------------------------------------------------------</highlight></codeline>
+<codeline lineno="927"><highlight class="comment"></highlight></codeline>
+<codeline lineno="938"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref><sp/>enableRecording(sl::String<sp/>video_filename,<sp/><ref refid="group___enumerations_1ga5faff26ba7fac5c49cfa76345a94a1e7" kindref="member">SVO_COMPRESSION_MODE</ref><sp/>compression_mode<sp/>=<sp/>SVO_COMPRESSION_MODE_LOSSLESS);</highlight></codeline>
+<codeline lineno="939"><highlight class="normal"></highlight></codeline>
+<codeline lineno="945"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsl_1_1_recording_state" kindref="compound">sl::RecordingState</ref><sp/>record();</highlight></codeline>
+<codeline lineno="946"><highlight class="normal"></highlight></codeline>
+<codeline lineno="950"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>disableRecording();</highlight></codeline>
+<codeline lineno="952"><highlight class="normal"></highlight></codeline>
+<codeline lineno="953"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="954"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Utils<sp/>(static)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="955"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-----------------------------------------------------------------</highlight></codeline>
+<codeline lineno="960"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>sl::String<sp/>getSDKVersion();</highlight></codeline>
+<codeline lineno="961"><highlight class="normal"></highlight></codeline>
+<codeline lineno="967"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>isZEDconnected();</highlight></codeline>
+<codeline lineno="968"><highlight class="normal"></highlight></codeline>
+<codeline lineno="975"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">sl::ERROR_CODE</ref><sp/>sticktoCPUCore(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cpu_core);</highlight></codeline>
+<codeline lineno="976"><highlight class="normal"></highlight></codeline>
+<codeline lineno="977"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="978"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref><sp/>openCamera(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="979"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>nextImage(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="980"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>initMemory();</highlight></codeline>
+<codeline lineno="981"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>initRectifier();</highlight></codeline>
+<codeline lineno="982"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CameraMemberHandler<sp/>*h<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="983"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>opened<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="984"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="995"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>SLSTEREO_EXPORT_DLL<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>saveDepthAs(<ref refid="classsl_1_1_camera" kindref="compound">sl::Camera</ref><sp/>&amp;zed,<sp/><ref refid="group___enumerations_1ga1d7cf4471913aefe220580c5ffe24250" kindref="member">sl::DEPTH_FORMAT</ref><sp/>format,<sp/>sl::String<sp/>name,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>factor<sp/>=<sp/>1.);</highlight></codeline>
+<codeline lineno="996"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1007"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>SLSTEREO_EXPORT_DLL<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>savePointCloudAs(<ref refid="classsl_1_1_camera" kindref="compound">sl::Camera</ref><sp/>&amp;zed,<sp/><ref refid="group___enumerations_1gaec4e6209d4075d67533e7f4078663b95" kindref="member">sl::POINT_CLOUD_FORMAT</ref><sp/>format,<sp/>sl::String<sp/>name,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>with_color<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>keep_occluded_point<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1008"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1009"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1010"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__CAMERA_HPP__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp"/>
+  </compounddef>
+</doxygen>

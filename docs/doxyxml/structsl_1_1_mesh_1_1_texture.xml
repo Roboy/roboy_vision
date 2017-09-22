@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structsl_1_1_mesh_1_1_texture" kind="struct" language="C++" prot="public">
+    <compoundname>sl::Mesh::Texture</compoundname>
+    <includes refid="_mesh_8hpp" local="no">Mesh.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsl_1_1_mesh_1_1_texture_1a2dd3890f869460ebcdf72b5e18398f80" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string sl::Mesh::Texture::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The name of the file in which the texture is saved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="162" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsl_1_1_mesh_1_1_texture_1a71339e10d13314f0ea3e200ee3268e2a" prot="public" static="no" mutable="no">
+        <type><ref refid="classsl_1_1_mat" kindref="compound">sl::Mat</ref></type>
+        <definition>sl::Mat sl::Mesh::Texture::texture</definition>
+        <argsstring></argsstring>
+        <name>texture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A <ref refid="classsl_1_1_mat" kindref="compound">sl::Mat</ref> that contains the data of the texture. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="163" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsl_1_1_mesh_1_1_texture_1a41c2226fff158633a13b6c59d4096e4b" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int sl::Mesh::Texture::indice_gl</definition>
+        <argsstring></argsstring>
+        <name>indice_gl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>useful for openGL binding reference (value not set by the SDK). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="164" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Contains information about texture images associated to the <ref refid="classsl_1_1_mesh" kindref="compound">Mesh</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="359">
+        <label>sl::Mesh::Texture</label>
+        <link refid="structsl_1_1_mesh_1_1_texture"/>
+        <childnode refid="360" relation="usage">
+          <edgelabel>texture</edgelabel>
+        </childnode>
+      </node>
+      <node id="361">
+        <label>sl::Resolution</label>
+        <link refid="structsl_1_1_resolution"/>
+      </node>
+      <node id="360">
+        <label>sl::Mat</label>
+        <link refid="classsl_1_1_mat"/>
+        <childnode refid="361" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="161" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="161" bodyend="165"/>
+    <listofallmembers>
+      <member refid="structsl_1_1_mesh_1_1_texture_1a41c2226fff158633a13b6c59d4096e4b" prot="public" virt="non-virtual"><scope>sl::Mesh::Texture</scope><name>indice_gl</name></member>
+      <member refid="structsl_1_1_mesh_1_1_texture_1a2dd3890f869460ebcdf72b5e18398f80" prot="public" virt="non-virtual"><scope>sl::Mesh::Texture</scope><name>name</name></member>
+      <member refid="structsl_1_1_mesh_1_1_texture_1a71339e10d13314f0ea3e200ee3268e2a" prot="public" virt="non-virtual"><scope>sl::Mesh::Texture</scope><name>texture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

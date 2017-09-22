@@ -1,0 +1,367 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classsl_1_1_orientation" kind="class" language="C++" prot="public">
+    <compoundname>sl::Orientation</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Vector4&lt; float &gt;</basecompoundref>
+    <includes refid="_core_8hpp" local="no">Core.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsl_1_1_orientation_1aed5078026ab7b20cbe54dcb290064fb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Orientation::Orientation</definition>
+        <argsstring>()</argsstring>
+        <name>Orientation</name>
+        <briefdescription>
+<para>empty <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="765" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_orientation_1af5b04c95fe1e864b6ee9ab7f675cde19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Orientation::Orientation</definition>
+        <argsstring>(const Orientation &amp;orientation)</argsstring>
+        <name>Orientation</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> &amp;</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> copy constructor (deep copy). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orientation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> to copy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="771" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_orientation_1aeb54b3ed7c9a52a6bd5cb6d4eabf228b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Orientation::Orientation</definition>
+        <argsstring>(const Vector4&lt; float &gt; &amp;in)</argsstring>
+        <name>Orientation</name>
+        <param>
+          <type>const Vector4&lt; float &gt; &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> copy constructor (deep copy). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the vector to copy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="777" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_orientation_1a95c87f353b7007c437756ec857cdbd8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Orientation::Orientation</definition>
+        <argsstring>(const Rotation &amp;rotation)</argsstring>
+        <name>Orientation</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_rotation" kindref="compound">Rotation</ref> &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> constructor from an <ref refid="classsl_1_1_rotation" kindref="compound">Rotation</ref>. <linebreak/>
+ It converts the <ref refid="classsl_1_1_rotation" kindref="compound">Rotation</ref> representation to the <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> one. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the <ref refid="classsl_1_1_rotation" kindref="compound">Rotation</ref> to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="784" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_orientation_1a0fddc732f7b9401fd31907d429b0ffe7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Orientation::Orientation</definition>
+        <argsstring>(const Translation &amp;tr1, const Translation &amp;tr2)</argsstring>
+        <name>Orientation</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref> &amp;</type>
+          <declname>tr1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref> &amp;</type>
+          <declname>tr2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> constructor from a vector represented by two <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tr1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the first point of the vector. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tr2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the second point of the vector. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="791" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_orientation_1a23c6a52e55ffd17da3fd5d7dd2798bbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float sl::Orientation::operator()</definition>
+        <argsstring>(int x)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Returns the value at specific position in the <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the position of the value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value at the x position. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="798" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_orientation_1a3939e8f520262bf7c0877b94b401205c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref></type>
+        <definition>Orientation sl::Orientation::operator*</definition>
+        <argsstring>(const Orientation &amp;orientation) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> &amp;</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief Multiplication operator by an <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orientation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the orientation. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current orientation after being multiplied by the other orientation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="805" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_orientation_1a45f2d50ad48d3c2dfb6e366be21f182a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Orientation::setRotation</definition>
+        <argsstring>(const Rotation &amp;rotation)</argsstring>
+        <name>setRotation</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_rotation" kindref="compound">Rotation</ref> &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+<para>Sets the orientation from a <ref refid="classsl_1_1_rotation" kindref="compound">Rotation</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the <ref refid="classsl_1_1_rotation" kindref="compound">Rotation</ref> to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="811" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_orientation_1ad34c29a84e6d0a2e0a667518ac3fc109" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsl_1_1_rotation" kindref="compound">Rotation</ref></type>
+        <definition>Rotation sl::Orientation::getRotation</definition>
+        <argsstring>() const </argsstring>
+        <name>getRotation</name>
+        <briefdescription>
+<para>Returns the current orientation as a <ref refid="classsl_1_1_rotation" kindref="compound">Rotation</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The rotation computed from the orientation data. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="817" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_orientation_1a735e3b109d0f40b77e3626eed35fdcf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Orientation::setIdentity</definition>
+        <argsstring>()</argsstring>
+        <name>setIdentity</name>
+        <briefdescription>
+<para>Sets the current <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> to identity. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="822" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_orientation_1a6c011f88a0a43192f5ed6ed194a34e7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Orientation::setZeros</definition>
+        <argsstring>()</argsstring>
+        <name>setZeros</name>
+        <briefdescription>
+<para>Fills the current <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> with zeros. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="833" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_orientation_1af60dd7fd14c6a268798baf983da4e1a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Orientation::normalise</definition>
+        <argsstring>()</argsstring>
+        <name>normalise</name>
+        <briefdescription>
+<para>Normalizes the current <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="844" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsl_1_1_orientation_1afc8ff0ead749129cab9d5e979fa02a5b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref></type>
+        <definition>static Orientation sl::Orientation::identity</definition>
+        <argsstring>()</argsstring>
+        <name>identity</name>
+        <briefdescription>
+<para>Creates an <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> initialized to identity. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An identity <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="828" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_orientation_1a1764eee76a9ce6924d5afc3c1ad20786" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref></type>
+        <definition>static Orientation sl::Orientation::zeros</definition>
+        <argsstring>()</argsstring>
+        <name>zeros</name>
+        <briefdescription>
+<para>Creates an <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> filled with zeros. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> filled with zeros. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="839" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_orientation_1a25bc4d552af091cd690c777b5652cbcc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref></type>
+        <definition>static Orientation sl::Orientation::normalise</definition>
+        <argsstring>(const Orientation &amp;orient)</argsstring>
+        <name>normalise</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> &amp;</type>
+          <declname>orient</declname>
+        </param>
+        <briefdescription>
+<para>Creates the normalized version of an existing <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The normalized version of the <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="851" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The class <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> is designed to contains orientation data from the tracking. <linebreak/>
+<linebreak/>
+ <ref refid="classsl_1_1_orientation" kindref="compound">sl::Orientation</ref> is a vector defined as [ox, oy, oz, ow]. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="323">
+        <label>Vector4&lt; float &gt;</label>
+      </node>
+      <node id="322">
+        <label>sl::Orientation</label>
+        <link refid="classsl_1_1_orientation"/>
+        <childnode refid="323" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="325">
+        <label>Vector4&lt; float &gt;</label>
+      </node>
+      <node id="324">
+        <label>sl::Orientation</label>
+        <link refid="classsl_1_1_orientation"/>
+        <childnode refid="325" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="760" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="760" bodyend="852"/>
+    <listofallmembers>
+      <member refid="classsl_1_1_orientation_1ad34c29a84e6d0a2e0a667518ac3fc109" prot="public" virt="non-virtual"><scope>sl::Orientation</scope><name>getRotation</name></member>
+      <member refid="classsl_1_1_orientation_1afc8ff0ead749129cab9d5e979fa02a5b" prot="public" virt="non-virtual"><scope>sl::Orientation</scope><name>identity</name></member>
+      <member refid="classsl_1_1_orientation_1af60dd7fd14c6a268798baf983da4e1a7" prot="public" virt="non-virtual"><scope>sl::Orientation</scope><name>normalise</name></member>
+      <member refid="classsl_1_1_orientation_1a25bc4d552af091cd690c777b5652cbcc" prot="public" virt="non-virtual"><scope>sl::Orientation</scope><name>normalise</name></member>
+      <member refid="classsl_1_1_orientation_1a23c6a52e55ffd17da3fd5d7dd2798bbe" prot="public" virt="non-virtual"><scope>sl::Orientation</scope><name>operator()</name></member>
+      <member refid="classsl_1_1_orientation_1a3939e8f520262bf7c0877b94b401205c" prot="public" virt="non-virtual"><scope>sl::Orientation</scope><name>operator*</name></member>
+      <member refid="classsl_1_1_orientation_1aed5078026ab7b20cbe54dcb290064fb4" prot="public" virt="non-virtual"><scope>sl::Orientation</scope><name>Orientation</name></member>
+      <member refid="classsl_1_1_orientation_1af5b04c95fe1e864b6ee9ab7f675cde19" prot="public" virt="non-virtual"><scope>sl::Orientation</scope><name>Orientation</name></member>
+      <member refid="classsl_1_1_orientation_1aeb54b3ed7c9a52a6bd5cb6d4eabf228b" prot="public" virt="non-virtual"><scope>sl::Orientation</scope><name>Orientation</name></member>
+      <member refid="classsl_1_1_orientation_1a95c87f353b7007c437756ec857cdbd8f" prot="public" virt="non-virtual"><scope>sl::Orientation</scope><name>Orientation</name></member>
+      <member refid="classsl_1_1_orientation_1a0fddc732f7b9401fd31907d429b0ffe7" prot="public" virt="non-virtual"><scope>sl::Orientation</scope><name>Orientation</name></member>
+      <member refid="classsl_1_1_orientation_1a735e3b109d0f40b77e3626eed35fdcf1" prot="public" virt="non-virtual"><scope>sl::Orientation</scope><name>setIdentity</name></member>
+      <member refid="classsl_1_1_orientation_1a45f2d50ad48d3c2dfb6e366be21f182a" prot="public" virt="non-virtual"><scope>sl::Orientation</scope><name>setRotation</name></member>
+      <member refid="classsl_1_1_orientation_1a6c011f88a0a43192f5ed6ed194a34e7d" prot="public" virt="non-virtual"><scope>sl::Orientation</scope><name>setZeros</name></member>
+      <member refid="classsl_1_1_orientation_1a1764eee76a9ce6924d5afc3c1ad20786" prot="public" virt="non-virtual"><scope>sl::Orientation</scope><name>zeros</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

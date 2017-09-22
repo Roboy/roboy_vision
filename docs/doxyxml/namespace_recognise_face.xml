@@ -1,0 +1,387 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespace_recognise_face" kind="namespace" language="Python">
+    <compoundname>RecogniseFace</compoundname>
+    <innerclass refid="class_recognise_face_1_1_image_class" prot="public">RecogniseFace::ImageClass</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_recognise_face_1af3f26015a0bba1fb4293661819ddba38" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RecogniseFace.IMAGE_SIZE</definition>
+        <argsstring></argsstring>
+        <name>IMAGE_SIZE</name>
+        <initializer>= 160</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" line="28" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_recognise_face_1a721692decd03cfb35e8c4d7568f28bdf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RecogniseFace.EXPECT_SIZE</definition>
+        <argsstring></argsstring>
+        <name>EXPECT_SIZE</name>
+        <initializer>= 160</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" line="73" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_recognise_face_1ade7881a5b8036ba31c7e83e53aa544ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RecogniseFace.recogniseFace</definition>
+        <argsstring>(RectsQueue)</argsstring>
+        <name>recogniseFace</name>
+        <param>
+          <type>RectsQueue</type>
+          <defname>RectsQueue</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" line="29" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" bodystart="29" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_recognise_face_1a79358db8036109402cfde3fc188817ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RecogniseFace.align_face_dlib</definition>
+        <argsstring>(image, face_box, landmarkIndices=AlignDlib.OUTER_EYES_AND_NOSE)</argsstring>
+        <name>align_face_dlib</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <defname>image</defname>
+        </param>
+        <param>
+          <type>face_box</type>
+          <defname>face_box</defname>
+        </param>
+        <param>
+          <type>landmarkIndices</type>
+          <defname>landmarkIndices</defname>
+          <defval>AlignDlib.OUTER_EYES_AND_NOSE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" line="74" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" bodystart="74" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_recognise_face_1ad5f37e922b5d71eb34316b64540a072b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RecogniseFace.load_model</definition>
+        <argsstring>(model_dir, model_meta, model_content)</argsstring>
+        <name>load_model</name>
+        <param>
+          <type>model_dir</type>
+          <defname>model_dir</defname>
+        </param>
+        <param>
+          <type>model_meta</type>
+          <defname>model_meta</defname>
+        </param>
+        <param>
+          <type>model_content</type>
+          <defname>model_content</defname>
+        </param>
+        <briefdescription>
+<para>Function to load a tensorflow model. </para>        </briefdescription>
+        <detaileddescription>
+<para>TODO: To be moved into other module <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model_dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>model directory </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model_meta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>meta file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model_content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>checpoint file </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns a tensorflow session </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" line="91" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" bodystart="91" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_recognise_face_1a14ca14c16cad05250f0954fa45940dbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RecogniseFace.get_model_filenames</definition>
+        <argsstring>(model_dir)</argsstring>
+        <name>get_model_filenames</name>
+        <param>
+          <type>model_dir</type>
+          <defname>model_dir</defname>
+        </param>
+        <briefdescription>
+<para>Helper Function to load a tensorlow model. </para>        </briefdescription>
+        <detaileddescription>
+<para>TODO: To be moved into other module The function finds the meta_file and checkpoint within a given path <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model_dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path where the model is stored </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns meta_file and checkpoint </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" line="113" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" bodystart="113" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_recognise_face_1aeb11b4b0c0eee5ab7004cdef5b25fd43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RecogniseFace.get_image_paths_and_labels</definition>
+        <argsstring>(dataset)</argsstring>
+        <name>get_image_paths_and_labels</name>
+        <param>
+          <type>dataset</type>
+          <defname>dataset</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" line="135" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" bodystart="135" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_recognise_face_1a4006bb28dc983a1b4fe6a8cfe1ad4ad6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RecogniseFace.get_image_paths</definition>
+        <argsstring>(facedir)</argsstring>
+        <name>get_image_paths</name>
+        <param>
+          <type>facedir</type>
+          <defname>facedir</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" line="157" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" bodystart="157" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_recognise_face_1a91a8b6903517c448798f3d92e664dc74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RecogniseFace.get_dataset</definition>
+        <argsstring>(paths, has_class_directories=True)</argsstring>
+        <name>get_dataset</name>
+        <param>
+          <type>paths</type>
+          <defname>paths</defname>
+        </param>
+        <param>
+          <type>has_class_directories</type>
+          <defname>has_class_directories</defname>
+          <defval>True</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" line="165" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" bodystart="165" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_recognise_face_1a41af07cf61f45263b540be249d443f01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RecogniseFace.load_data</definition>
+        <argsstring>(image_paths, do_random_crop, do_random_flip, image_size, do_prewhiten=True)</argsstring>
+        <name>load_data</name>
+        <param>
+          <type>image_paths</type>
+          <defname>image_paths</defname>
+        </param>
+        <param>
+          <type>do_random_crop</type>
+          <defname>do_random_crop</defname>
+        </param>
+        <param>
+          <type>do_random_flip</type>
+          <defname>do_random_flip</defname>
+        </param>
+        <param>
+          <type>image_size</type>
+          <defname>image_size</defname>
+        </param>
+        <param>
+          <type>do_prewhiten</type>
+          <defname>do_prewhiten</defname>
+          <defval>True</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" line="181" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" bodystart="181" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_recognise_face_1ace98e6a75c28a0f8769d454a35e85094" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RecogniseFace.processImage</definition>
+        <argsstring>(img, do_random_crop, do_random_flip, image_size, do_prewhiten=True)</argsstring>
+        <name>processImage</name>
+        <param>
+          <type>img</type>
+          <defname>img</defname>
+        </param>
+        <param>
+          <type>do_random_crop</type>
+          <defname>do_random_crop</defname>
+        </param>
+        <param>
+          <type>do_random_flip</type>
+          <defname>do_random_flip</defname>
+        </param>
+        <param>
+          <type>image_size</type>
+          <defname>image_size</defname>
+        </param>
+        <param>
+          <type>do_prewhiten</type>
+          <defname>do_prewhiten</defname>
+          <defval>True</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" line="196" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" bodystart="196" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_recognise_face_1af6234800f169b072ad82d88202e77186" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RecogniseFace.to_rgb</definition>
+        <argsstring>(img)</argsstring>
+        <name>to_rgb</name>
+        <param>
+          <type>img</type>
+          <defname>img</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" line="205" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" bodystart="205" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_recognise_face_1a128a3421c74321b21f82ce88aa6171e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RecogniseFace.prewhiten</definition>
+        <argsstring>(x)</argsstring>
+        <name>prewhiten</name>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" line="211" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" bodystart="211" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_recognise_face_1a33fb79a5426d89e59efbe948bd5b00fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RecogniseFace.crop</definition>
+        <argsstring>(image, random_crop, image_size)</argsstring>
+        <name>crop</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <defname>image</defname>
+        </param>
+        <param>
+          <type>random_crop</type>
+          <defname>random_crop</defname>
+        </param>
+        <param>
+          <type>image_size</type>
+          <defname>image_size</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" line="220" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" bodystart="220" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_recognise_face_1a7d37a1137580d663d68d076beb4ff484" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RecogniseFace.flip</definition>
+        <argsstring>(image, random_flip)</argsstring>
+        <name>flip</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <defname>image</defname>
+        </param>
+        <param>
+          <type>random_flip</type>
+          <defname>random_flip</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" line="233" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" bodystart="233" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_recognise_face_1a1f5dfb6d272131ad107dfcab6a4b931b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RecogniseFace.train</definition>
+        <argsstring>(session)</argsstring>
+        <name>train</name>
+        <param>
+          <type>session</type>
+          <defname>session</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" line="240" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" bodystart="240" bodyend="294"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>@package RecogniseFace
+1. Module responsible for Face Recognition
+2. This uses a model already trained on LWF, to extract facial features
+3. Another model of members from Roboy are trained
+4. We use a SVM classifier to classify the detected face to match with the model of trained faces
+</verbatim> </para>    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

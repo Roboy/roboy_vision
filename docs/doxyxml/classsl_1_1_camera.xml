@@ -1,0 +1,1198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classsl_1_1_camera" kind="class" language="C++" prot="public">
+    <compoundname>sl::Camera</compoundname>
+    <includes refid="_camera_8hpp" local="no">Camera.hpp</includes>
+      <sectiondef kind="user-defined">
+      <header>Camera infos</header>
+      <memberdef kind="function" id="classsl_1_1_camera_1ab6c7dd754ba8e971b5c70bfa37fad7d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Camera::setSVOPosition</definition>
+        <argsstring>(int frame_number)</argsstring>
+        <name>setSVOPosition</name>
+        <param>
+          <type>int</type>
+          <declname>frame_number</declname>
+        </param>
+        <briefdescription>
+<para>Sets the position of the SVO file to a desired frame. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the number of the desired frame to be decoded. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Works only if the camera is open in SVO playback mode. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="697" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a1f1f2c3dbe056dd95a68cf1377855787" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sl::Camera::getSVOPosition</definition>
+        <argsstring>()</argsstring>
+        <name>getSVOPosition</name>
+        <briefdescription>
+<para>Returns the current position of the SVO file. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current position in the SVO file as int (-1 if the SDK is not reading a SVO). </para></simplesect>
+<simplesect kind="note"><para>Works only if the camera is open in SVO reading mode. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="704" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1abcf4b772a1b5cfbda5e655b79036fcd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sl::Camera::getSVONumberOfFrames</definition>
+        <argsstring>()</argsstring>
+        <name>getSVONumberOfFrames</name>
+        <briefdescription>
+<para>Returns the number of frames in the SVO file. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The total number of frames in the SVO file (-1 if the SDK is not reading a SVO). </para></simplesect>
+<simplesect kind="note"><para>Works only if the camera is open in SVO reading mode. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="711" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a042310027994e0751149be52445654dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Camera::setCameraSettings</definition>
+        <argsstring>(CAMERA_SETTINGS settings, int value, bool use_default=false)</argsstring>
+        <name>setCameraSettings</name>
+        <param>
+          <type><ref refid="group___enumerations_1gaee3848f5141a0b411e15424bdca87d5e" kindref="member">CAMERA_SETTINGS</ref></type>
+          <declname>settings</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>use_default</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Sets the value to the corresponding sl::CAMERA_SETTINGS (Gain, brightness, hue, exposure...). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: enum for the control mode. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: value to set for the corresponding control. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>use_default</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: will set default (or automatic) value if set to true (value (int) will not be taken into account). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Works only if the camera is open in live mode. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="720" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a43de7f980bdbf5ce84bb069a803b90b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sl::Camera::getCameraSettings</definition>
+        <argsstring>(CAMERA_SETTINGS setting)</argsstring>
+        <name>getCameraSettings</name>
+        <param>
+          <type><ref refid="group___enumerations_1gaee3848f5141a0b411e15424bdca87d5e" kindref="member">CAMERA_SETTINGS</ref></type>
+          <declname>setting</declname>
+        </param>
+        <briefdescription>
+<para>Returns the current value to the corresponding sl::CAMERA_SETTINGS (Gain, brightness, hue, exposure...). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>setting</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: enum for the control mode. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value for the corresponding control (-1 if something wrong happened). </para></simplesect>
+<simplesect kind="note"><para>Works only if the camera is open in live mode. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="728" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a0c19001d9eafc583f038e10399f50dd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float sl::Camera::getCameraFPS</definition>
+        <argsstring>()</argsstring>
+        <name>getCameraFPS</name>
+        <briefdescription>
+<para>Returns the current FPS of the camera. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current FPS (or recorded FPS for SVO). Return -1.f if something goes wrong. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="734" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a8e83dc2fff60207377c739de9970196f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Camera::setCameraFPS</definition>
+        <argsstring>(int desired_fps)</argsstring>
+        <name>setCameraFPS</name>
+        <param>
+          <type>int</type>
+          <declname>desired_fps</declname>
+        </param>
+        <briefdescription>
+<para>Sets a new frame rate for the camera, or the closest available frame rate. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>desired_fps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the new desired frame rate. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Works only if the camera is open in live mode. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="741" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1abf6e9de50f7e87e90b5addeb6483fd01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float sl::Camera::getCurrentFPS</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentFPS</name>
+        <briefdescription>
+<para>Returns the current FPS of the application/callback. <linebreak/>
+ It is based on the difference of camera timestamps between two successful <ref refid="classsl_1_1_camera_1a14192b74f20d25463f87032a86259899" kindref="member">grab()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current FPS of the application (if grab leads the application) or callback (if ZED is called in a thread) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="748" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1aafa49ae47bcc61eeffc2d8d33130b8f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned long long</type>
+        <definition>unsigned long long sl::Camera::getCameraTimestamp</definition>
+        <argsstring>()</argsstring>
+        <name>getCameraTimestamp</name>
+        <briefdescription>
+<para>Returns the timestamp at the time the frame has been extracted from USB stream. (should be called after a <ref refid="classsl_1_1_camera_1a14192b74f20d25463f87032a86259899" kindref="member">grab()</ref>). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The timestamp of the frame grab in ns. -1 if not available (SVO file without compression). </para></simplesect>
+<simplesect kind="note"><para>SVO file from SDK 1.0.0 (with compression) contains the camera timestamp for each frame. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="755" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1aabf1a28b7f5801ba7a4e7f50ce187f8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned long long</type>
+        <definition>unsigned long long sl::Camera::getCurrentTimestamp</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentTimestamp</name>
+        <briefdescription>
+<para>Returns the current timestamp at the time the function is called. Can be compared to the camera <ref refid="classsl_1_1_camera_1aafa49ae47bcc61eeffc2d8d33130b8f3" kindref="member">sl::Camera::getCameraTimestamp</ref> for synchronization. <linebreak/>
+ Use this function to compare the current timestamp and the camera timestamp, since they have the same reference (Computer start time). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current timestamp in ns. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="762" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1aaf48c95288af1eeaa998f8a4f6f3e596" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int sl::Camera::getFrameDroppedCount</definition>
+        <argsstring>()</argsstring>
+        <name>getFrameDroppedCount</name>
+        <briefdescription>
+<para>Returns the number of frame dropped since <ref refid="classsl_1_1_camera_1a14192b74f20d25463f87032a86259899" kindref="member">sl::Camera::grab</ref> has been called for the first time. <linebreak/>
+ Based on camera timestamp and FPS comparison. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of frame dropped since first <ref refid="classsl_1_1_camera_1a14192b74f20d25463f87032a86259899" kindref="member">sl::Camera::grab</ref> call. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="769" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a5e14af2a51e3ce4636f0d23ec4cdab17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structsl_1_1_camera_information" kindref="compound">CameraInformation</ref></type>
+        <definition>CameraInformation sl::Camera::getCameraInformation</definition>
+        <argsstring>()</argsstring>
+        <name>getCameraInformation</name>
+        <briefdescription>
+<para>Returns camera informations (calibration parameters, serial number and current firmware version). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="structsl_1_1_camera_information" kindref="compound">CameraInformation</ref> containing the calibration parameters of the ZED, as well as serial number and firmware version It also returns the ZED Serial Number (as uint) (Live or SVO) and the ZED Firmware version (as uint), 0 if the ZED is not connected. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="776" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Self calibration</header>
+      <memberdef kind="function" id="classsl_1_1_camera_1ad1c1d70626009aa53d680b8a054f7671" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga640f6de66ba32dc48f1dc7ba8587e951" kindref="member">SELF_CALIBRATION_STATE</ref></type>
+        <definition>SELF_CALIBRATION_STATE sl::Camera::getSelfCalibrationState</definition>
+        <argsstring>()</argsstring>
+        <name>getSelfCalibrationState</name>
+        <briefdescription>
+<para>Returns the current status of the self-calibration. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A status code given informations about the self calibration status. For more details see sl::SELF_CALIBRATION_STATE. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="786" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a8b5b9dd8a26ec7b6bf9fa3e52cedce26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Camera::resetSelfCalibration</definition>
+        <argsstring>()</argsstring>
+        <name>resetSelfCalibration</name>
+        <briefdescription>
+<para>Resets the self camera calibration. This function can be called at any time AFTER the <ref refid="classsl_1_1_camera_1a46f6220e257357d510392317fd620095" kindref="member">sl::Camera::open</ref> function has been called. It will reset and calculate again correction for misalignment, convergence and color mismatch. It can be called after changing camera parameters without needing to restart your executable. </para>        </briefdescription>
+        <detaileddescription>
+<para>if no problem was encountered, the camera will use new parameters. Otherwise, it will be the old ones. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="795" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Tracking</header>
+      <memberdef kind="function" id="classsl_1_1_camera_1a4cec5a2c36cdf5fa047ffb5c02b27a2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+        <definition>ERROR_CODE sl::Camera::enableTracking</definition>
+        <argsstring>(TrackingParameters tracking_params=TrackingParameters())</argsstring>
+        <name>enableTracking</name>
+        <param>
+          <type><ref refid="classsl_1_1_tracking_parameters" kindref="compound">TrackingParameters</ref></type>
+          <declname>tracking_params</declname>
+          <defval><ref refid="classsl_1_1_tracking_parameters" kindref="compound">TrackingParameters</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Initializes and start the tracking processes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tracking_params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Structure of <ref refid="classsl_1_1_tracking_parameters" kindref="compound">sl::TrackingParameters</ref>, which defines specific parameters for tracking. <linebreak/>
+ default : Leave it empty to get best default parameters or create your own structure to change tracking parameters according to <ref refid="classsl_1_1_tracking_parameters" kindref="compound">sl::TrackingParameters</ref> documentation. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sl::ERROR_CODE_FAILURE if the <ref refid="classsl_1_1_tracking_parameters_1a732207f4036e66410a39a4c77ab8904b" kindref="member">sl::TrackingParameters::area_file_path</ref> file wasn&apos;t found, sl::SUCCESS otherwise. </para></simplesect>
+<simplesect kind="warning"><para>The area localization is a beta feature, the behavior might change in the future. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="810" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a1cca2d3f207c285ad3e0905519ce7da4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga8edb798f42f7bd7778a2d0bec2c3efa6" kindref="member">sl::TRACKING_STATE</ref></type>
+        <definition>sl::TRACKING_STATE sl::Camera::getPosition</definition>
+        <argsstring>(sl::Pose &amp;camera_pose, REFERENCE_FRAME reference_frame=sl::REFERENCE_FRAME_WORLD)</argsstring>
+        <name>getPosition</name>
+        <param>
+          <type><ref refid="classsl_1_1_pose" kindref="compound">sl::Pose</ref> &amp;</type>
+          <declname>camera_pose</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1ga0fb1f25b68868e0a7c98a1144afa1b02" kindref="member">REFERENCE_FRAME</ref></type>
+          <declname>reference_frame</declname>
+          <defval>sl::REFERENCE_FRAME_WORLD</defval>
+        </param>
+        <briefdescription>
+<para>Fills the position of the camera frame in the world frame and return the current state of the Tracker. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The camera frame is positioned at the back of the left eye of the ZED. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera_pose</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(out) : the pose containing the position of the camera (path or position) and other information (timestamp, confidence) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reference_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: defines the reference from which you want the pose to be expressed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current state of the tracking process.</para></simplesect>
+<linebreak/>
+ Extract <ref refid="classsl_1_1_rotation" kindref="compound">Rotation</ref> Matrix : camera_pose.getRotation(); <linebreak/>
+ Extract <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref> Vector: camera_pose.getTranslation(); <linebreak/>
+ Convert to <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> / quaternion : camera_pose.getOrientation(); </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="823" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a34aca0d464cda80d6a2e6460e839066d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1gada46476408f223f533f7f5eafed8efba" kindref="member">sl::AREA_EXPORT_STATE</ref></type>
+        <definition>sl::AREA_EXPORT_STATE sl::Camera::getAreaExportState</definition>
+        <argsstring>()</argsstring>
+        <name>getAreaExportState</name>
+        <briefdescription>
+<para>Returns the state of exportation of the area database (spatial memory). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current state of the exportation of the area file. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="829" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1ac3f091825c04aa6c1690717790422f5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Camera::disableTracking</definition>
+        <argsstring>(sl::String area_file_path=&quot;&quot;)</argsstring>
+        <name>disableTracking</name>
+        <param>
+          <type>sl::String</type>
+          <declname>area_file_path</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Disables motion tracking. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>area_file_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(optional) : if set, save the spatial database in a &apos;.area&apos; file. areaFilePath is the name and path of the database, e.g. : &quot;path/to/file/myArea1.area&quot;.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para>This feature is still in beta, you might encounter reloading issues. <linebreak/>
+ Please also note that the &apos;.area&apos; database depends on the depth map sl::SENSING_MODE chosen during the recording. The same mode must be used to reload the database. </para></simplesect>
+<simplesect kind="note"><para>The saving is done asynchronously, the state can be get by <ref refid="classsl_1_1_camera_1a34aca0d464cda80d6a2e6460e839066d" kindref="member">getAreaExportState()</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="840" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1acee0785272ca265791cddb023b08a915" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Camera::resetTracking</definition>
+        <argsstring>(sl::Transform &amp;path)</argsstring>
+        <name>resetTracking</name>
+        <param>
+          <type><ref refid="classsl_1_1_transform" kindref="compound">sl::Transform</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Resets the tracking, re-initializes the path with the transformation matrix given. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Please note that this function will also flush the area database built / loaded. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="846" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Spatial Mapping</header>
+      <memberdef kind="function" id="classsl_1_1_camera_1aed259220037a328027552c023337c1bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+        <definition>ERROR_CODE sl::Camera::enableSpatialMapping</definition>
+        <argsstring>(SpatialMappingParameters spatial_mapping_parameters=SpatialMappingParameters())</argsstring>
+        <name>enableSpatialMapping</name>
+        <param>
+          <type><ref refid="classsl_1_1_spatial_mapping_parameters" kindref="compound">SpatialMappingParameters</ref></type>
+          <declname>spatial_mapping_parameters</declname>
+          <defval><ref refid="classsl_1_1_spatial_mapping_parameters" kindref="compound">SpatialMappingParameters</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Initializes and starts the spatial mapping processes. The spatial mapping will create a geometric representation of the scene based on both tracking data and 3D point clouds. The resulting output is a <ref refid="classsl_1_1_mesh" kindref="compound">sl::Mesh</ref> and can be obtained by the <ref refid="classsl_1_1_camera_1a3d9a2ea2052448d7007cd35ddb090e60" kindref="member">sl::Camera::extractWholeMesh</ref> function or with <ref refid="classsl_1_1_camera_1a8b5e61ca38c5b6f047af34e81f9845d7" kindref="member">sl::Camera::retrieveMeshAsync</ref> after calling <ref refid="classsl_1_1_camera_1a2a12e42c2ca3ccd432af15b7e0f17b16" kindref="member">sl::Camera::requestMeshAsync</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spatial_mapping_parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the structure containing all the specific parameters for the spatial mapping. <linebreak/>
+ default : Leave it empty to get best default parameters or initialize it from a preset. For more informations, checkout the <ref refid="classsl_1_1_spatial_mapping_parameters" kindref="compound">sl::SpatialMappingParameters</ref> documentation. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sl::SUCCESS if everything went fine, sl::ERROR_CODE_FAILURE otherwise </para></simplesect>
+<simplesect kind="warning"><para>The tracking needs to be enabled to create a map </para></simplesect>
+<simplesect kind="warning"><para>The performance greatly depends on the input parameters. If the mapping framerate is too slow in live mode, consider using a SVO file, or choose a coarser mesh resolution </para></simplesect>
+<simplesect kind="note"><para>This features is using host memory (RAM) to store the 3D map, the maximum amount of available memory allowed can be tweaked using the <ref refid="classsl_1_1_spatial_mapping_parameters" kindref="compound">SpatialMappingParameters</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="868" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1aacead039ea9f5d71f87d95bfdd1a0a98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Camera::pauseSpatialMapping</definition>
+        <argsstring>(bool status)</argsstring>
+        <name>pauseSpatialMapping</name>
+        <param>
+          <type>bool</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>Switches the pause status of the data integration mechanism for the spatial mapping. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: if true, the integration is paused. If false, the spatial mapping is resumed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="874" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a7373a0e4c662faf48b3260ed3b0b8195" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1gaab0cb46ab3ba6cac91b4aff07ea78441" kindref="member">SPATIAL_MAPPING_STATE</ref></type>
+        <definition>SPATIAL_MAPPING_STATE sl::Camera::getSpatialMappingState</definition>
+        <argsstring>()</argsstring>
+        <name>getSpatialMappingState</name>
+        <briefdescription>
+<para>Returns the current spatial mapping state. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>status The current state of the spatial mapping process </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="880" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a3d9a2ea2052448d7007cd35ddb090e60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+        <definition>ERROR_CODE sl::Camera::extractWholeMesh</definition>
+        <argsstring>(sl::Mesh &amp;mesh)</argsstring>
+        <name>extractWholeMesh</name>
+        <param>
+          <type><ref refid="classsl_1_1_mesh" kindref="compound">sl::Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+<para>Extracts the current mesh from the spatial mapping process. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function will return when the mesh has been created or updated. This is therefore a blocking function. You should either call it in a thread or at the end of the mapping process. Calling this function in the grab loop will block the depth and tracking computation and therefore gives bad results. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(out) : The mesh to be filled. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sl::SUCCESS if the mesh is filled and available, otherwise sl::ERROR_CODE_FAILURE. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="892" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a2a12e42c2ca3ccd432af15b7e0f17b16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Camera::requestMeshAsync</definition>
+        <argsstring>()</argsstring>
+        <name>requestMeshAsync</name>
+        <briefdescription>
+<para>Starts the mesh generation process in a non blocking thread from the spatial mapping process. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Only one mesh generation can be done at a time, consequently while the previous launch is not done every call will be ignored. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="901" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a7d1e621b9a470e41ab1006d5c4894c8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+        <definition>ERROR_CODE sl::Camera::getMeshRequestStatusAsync</definition>
+        <argsstring>()</argsstring>
+        <name>getMeshRequestStatusAsync</name>
+        <briefdescription>
+<para>Returns the mesh generation status, useful to after calling requestMeshAsync. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>sl::SUCCESS if the mesh is ready and not yet retrieved, otherwise sl::ERROR_CODE_FAILURE. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="907" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a8b5e61ca38c5b6f047af34e81f9845d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+        <definition>ERROR_CODE sl::Camera::retrieveMeshAsync</definition>
+        <argsstring>(sl::Mesh &amp;mesh)</argsstring>
+        <name>retrieveMeshAsync</name>
+        <param>
+          <type><ref refid="classsl_1_1_mesh" kindref="compound">sl::Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the generated mesh after calling requestMeshAsync. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(out) : The mesh to be filled. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sl::SUCCESS if the mesh is retrieved, otherwise sl::ERROR_CODE_FAILURE. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="914" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1ac3906327424766088031c211c641633b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Camera::disableSpatialMapping</definition>
+        <argsstring>()</argsstring>
+        <name>disableSpatialMapping</name>
+        <briefdescription>
+<para>Disables the Spatial Mapping process. All the spatial mapping functions are disables, mesh cannot be retrieves after this call. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="920" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Recorder</header>
+      <memberdef kind="function" id="classsl_1_1_camera_1a91f24c692fe0200c8869410bbd4d86f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+        <definition>ERROR_CODE sl::Camera::enableRecording</definition>
+        <argsstring>(sl::String video_filename, SVO_COMPRESSION_MODE compression_mode=SVO_COMPRESSION_MODE_LOSSLESS)</argsstring>
+        <name>enableRecording</name>
+        <param>
+          <type>sl::String</type>
+          <declname>video_filename</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1ga5faff26ba7fac5c49cfa76345a94a1e7" kindref="member">SVO_COMPRESSION_MODE</ref></type>
+          <declname>compression_mode</declname>
+          <defval>SVO_COMPRESSION_MODE_LOSSLESS</defval>
+        </param>
+        <briefdescription>
+<para>Creates a file for recording the current frames. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>video_filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: can be a *.svo file or a *.avi file (detected by the suffix name provided). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>compression_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: can be one of the sl::SVO_COMPRESSION_MODE enum. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para>This function can be called multiple times during ZED lifetime, but if video_filename is already existing, the file will be erased. </para></simplesect>
+<simplesect kind="return"><para>an sl::ERROR_CODE that defines if file was successfully created and can be filled with images. <linebreak/>
+ * sl::SUCCESS if file can be filled <linebreak/>
+ * sl::ERROR_CODE_SVO_RECORDING_ERROR if something wrong happens. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="938" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1aef4220ada9addd9d5ad3efeb3fc5e81c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structsl_1_1_recording_state" kindref="compound">sl::RecordingState</ref></type>
+        <definition>sl::RecordingState sl::Camera::record</definition>
+        <argsstring>()</argsstring>
+        <name>record</name>
+        <briefdescription>
+<para>Records the current frame provided by <ref refid="classsl_1_1_camera_1a14192b74f20d25463f87032a86259899" kindref="member">grab()</ref> into the file. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para><ref refid="classsl_1_1_camera_1a14192b74f20d25463f87032a86259899" kindref="member">grab()</ref> must be called before <ref refid="classsl_1_1_camera_1aef4220ada9addd9d5ad3efeb3fc5e81c" kindref="member">record()</ref> to take the last frame available. Otherwise, it will be the last grabbed frame. </para></simplesect>
+<simplesect kind="return"><para>The recording state structure, for more details see <ref refid="structsl_1_1_recording_state" kindref="compound">sl::RecordingState</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="945" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a71d015b53e3f4e373bf814d0fb13c30b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Camera::disableRecording</definition>
+        <argsstring>()</argsstring>
+        <name>disableRecording</name>
+        <briefdescription>
+<para>Disables the recording and closes the generated file. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="950" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsl_1_1_camera_1af8953b73a88a57200d4ba6bdc1fedac0" prot="private" static="no" mutable="no">
+        <type>CameraMemberHandler *</type>
+        <definition>CameraMemberHandler* sl::Camera::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="982" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="982" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_camera_1af0a96dd0f1b2b12a16b9f8d1ea8fa0ec" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool sl::Camera::opened</definition>
+        <argsstring></argsstring>
+        <name>opened</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="983" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="983" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsl_1_1_camera_1a989438ceb0411138d9e71443183aeabf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Camera::Camera</definition>
+        <argsstring>()</argsstring>
+        <name>Camera</name>
+        <briefdescription>
+<para>Default constructor which creates an empty <ref refid="classsl_1_1_camera" kindref="compound">Camera</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="576" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a8a956963c1a5fcd096d471d32ef8cdee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Camera::~Camera</definition>
+        <argsstring>()</argsstring>
+        <name>~Camera</name>
+        <briefdescription>
+<para><ref refid="classsl_1_1_camera" kindref="compound">Camera</ref> destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="581" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1aea6e65a70af62fd36574d2f0e9ab9337" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Camera::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <briefdescription>
+<para>Closes the camera and free the memory. <ref refid="classsl_1_1_camera_1a46f6220e257357d510392317fd620095" kindref="member">Camera::open</ref> can then be called again to reset the camera if needed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="587" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a46f6220e257357d510392317fd620095" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+        <definition>ERROR_CODE sl::Camera::open</definition>
+        <argsstring>(InitParameters init_parameters=InitParameters())</argsstring>
+        <name>open</name>
+        <param>
+          <type><ref refid="classsl_1_1_init_parameters" kindref="compound">InitParameters</ref></type>
+          <declname>init_parameters</declname>
+          <defval><ref refid="classsl_1_1_init_parameters" kindref="compound">InitParameters</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Opens the ZED camera in the desired mode (live/SVO), sets all the defined parameters, checks hardware requirements and launch internal self calibration. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>init_parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: a structure containing all the individual parameters</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An error code given informations about the internal process, if SUCCESS is returned, the camera is ready to use. Every other code indicates an error and the program should be stopped. For more details see sl::ERROR_CODE. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="598" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a319c18ce4292a3f5f1cc2c1fccf47da0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl::Camera::isOpened</definition>
+        <argsstring>()</argsstring>
+        <name>isOpened</name>
+        <briefdescription>
+<para>Tests if the camera is opened and running. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the ZED is already setup, otherwise false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="604" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="604" bodyend="606"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a14192b74f20d25463f87032a86259899" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+        <definition>ERROR_CODE sl::Camera::grab</definition>
+        <argsstring>(RuntimeParameters rt_parameters=RuntimeParameters())</argsstring>
+        <name>grab</name>
+        <param>
+          <type><ref refid="classsl_1_1_runtime_parameters" kindref="compound">RuntimeParameters</ref></type>
+          <declname>rt_parameters</declname>
+          <defval><ref refid="classsl_1_1_runtime_parameters" kindref="compound">RuntimeParameters</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Grabs a new image, rectifies it and computes the disparity map and optionally the depth map. The grabbing function is typically called in the main loop. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rt_parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: a structure containing all the individual parameters. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An sl::SUCCESS if no problem was encountered, sl::ERROR_CODE_NOT_A_NEW_FRAME otherwise if something wrong happens </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="617" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a0e2077880cf79fba5623d8bc64c16b5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+        <definition>ERROR_CODE sl::Camera::retrieveImage</definition>
+        <argsstring>(Mat &amp;mat, VIEW view=VIEW_LEFT, MEM type=MEM_CPU)</argsstring>
+        <name>retrieveImage</name>
+        <param>
+          <type><ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1ga616e75740529ed8585a58fd521b38a55" kindref="member">VIEW</ref></type>
+          <declname>view</declname>
+          <defval>VIEW_LEFT</defval>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref></type>
+          <declname>type</declname>
+          <defval>MEM_CPU</defval>
+        </param>
+        <briefdescription>
+<para>Downloads the rectified image from the device and returns the CPU buffer. The retrieve function should be called after the function <ref refid="classsl_1_1_camera_1a14192b74f20d25463f87032a86259899" kindref="member">Camera::grab</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> to store the image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: defines the image side wanted (see sl::VIEW) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the memory type desired. sl::MEM_CPU by default. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SUCCESS if the method succeeded, ERROR_CODE_FAILURE if an error occurred. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="628" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a18fd2e1ecd50348d924a4ac07f3e691e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+        <definition>ERROR_CODE sl::Camera::retrieveMeasure</definition>
+        <argsstring>(Mat &amp;mat, MEASURE measure=MEASURE_DEPTH, MEM type=MEM_CPU)</argsstring>
+        <name>retrieveMeasure</name>
+        <param>
+          <type><ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1ga1fef76ba52aeb9305c1864e4b56fd426" kindref="member">MEASURE</ref></type>
+          <declname>measure</declname>
+          <defval>MEASURE_DEPTH</defval>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref></type>
+          <declname>type</declname>
+          <defval>MEM_CPU</defval>
+        </param>
+        <briefdescription>
+<para>Downloads the measure (disparity, depth or confidence of disparity) from the device and returns the CPU buffer. The retrieve function should be called after the function <ref refid="classsl_1_1_camera_1a14192b74f20d25463f87032a86259899" kindref="member">Camera::grab</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> to store the measures. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>measure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: defines the type wanted, such as disparity map, depth map or the confidence (see sl::MEASURE) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the memory type desired. sl::MEM_CPU by default. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SUCCESS if the method succeeded, ERROR_CODE_FAILURE if an error occurred. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="641" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1ac5413f4067f9cd5f6b138a7acc579ca7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Camera::setConfidenceThreshold</definition>
+        <argsstring>(int conf_threshold_value)</argsstring>
+        <name>setConfidenceThreshold</name>
+        <param>
+          <type>int</type>
+          <declname>conf_threshold_value</declname>
+        </param>
+        <briefdescription>
+<para>Sets a threshold for the disparity map confidence (and by extension the depth map). The function should be called before <ref refid="classsl_1_1_camera_1a14192b74f20d25463f87032a86259899" kindref="member">Camera::grab</ref> to be taken into account. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf_threshold_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: a value in [1,100]. A lower value means more confidence and precision (but less density), an upper value reduces the filtering (more density, less certainty). Other value means no filtering. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="651" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a78bfaba5276e172461db8b3ee22b3976" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sl::Camera::getConfidenceThreshold</definition>
+        <argsstring>()</argsstring>
+        <name>getConfidenceThreshold</name>
+        <briefdescription>
+<para>Returns the current confidence threshold value apply to the disparity map (and by extension the depth map). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current threshold value between 0 and 100. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="658" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a844fd4ac55156ee3c34e9695b9478ab0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CUcontext</type>
+        <definition>CUcontext sl::Camera::getCUDAContext</definition>
+        <argsstring>()</argsstring>
+        <name>getCUDAContext</name>
+        <briefdescription>
+<para>Returns the CUDA context used for all the computation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The CUDA context created by the inner process. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="664" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a751b127b2d23d46cf4d1fd603446e40f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structsl_1_1_resolution" kindref="compound">Resolution</ref></type>
+        <definition>Resolution sl::Camera::getResolution</definition>
+        <argsstring>()</argsstring>
+        <name>getResolution</name>
+        <briefdescription>
+<para>Returns the current image size. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The image resolution. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="670" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a70e8bfe3c1cb62ca4ff793060c19fb90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Camera::setDepthMaxRangeValue</definition>
+        <argsstring>(float depth_max_range)</argsstring>
+        <name>setDepthMaxRangeValue</name>
+        <param>
+          <type>float</type>
+          <declname>depth_max_range</declname>
+        </param>
+        <briefdescription>
+<para>Sets the maximum distance of depth/disparity estimation (all values after this limit will be reported as TOO_FAR value). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>depth_max_range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: maximum distance in the defined sl::UNIT. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="676" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a47e29523f26640da6833dfe04fb18814" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float sl::Camera::getDepthMaxRangeValue</definition>
+        <argsstring>()</argsstring>
+        <name>getDepthMaxRangeValue</name>
+        <briefdescription>
+<para>Returns the current maximum distance of depth/disparity estimation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current maximum distance that can be computed in the defined sl::UNIT. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="682" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a8d2f7788b0660cb3a6762ef9e0d912d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float sl::Camera::getDepthMinRangeValue</definition>
+        <argsstring>()</argsstring>
+        <name>getDepthMinRangeValue</name>
+        <briefdescription>
+<para>Returns the closest measurable distance by the camera, according to the camera and the depth map parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The minimum distance that can be computed in the defined sl::UNIT. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="688" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsl_1_1_camera_1a810aef0886a21ee41fb1a32b1b852f7b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl::String</type>
+        <definition>static sl::String sl::Camera::getSDKVersion</definition>
+        <argsstring>()</argsstring>
+        <name>getSDKVersion</name>
+        <briefdescription>
+<para>Returns the version of the currently installed ZED SDK. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The ZED SDK version as a string with the following format : MAJOR.MINOR.PATCH </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="960" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a377ac09dd9c3a00fad9639ef66160797" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int sl::Camera::isZEDconnected</definition>
+        <argsstring>()</argsstring>
+        <name>isZEDconnected</name>
+        <briefdescription>
+<para>Checks if ZED cameras are connected, can be called before instantiating a <ref refid="classsl_1_1_camera" kindref="compound">Camera</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of connected ZED. </para></simplesect>
+<simplesect kind="warning"><para>On Windows, only one ZED is accessible so this function will return 1 even if multiple ZED are connected. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="967" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a9a14246a648d5d93b97af30a2b1d907e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">sl::ERROR_CODE</ref></type>
+        <definition>static sl::ERROR_CODE sl::Camera::sticktoCPUCore</definition>
+        <argsstring>(int cpu_core)</argsstring>
+        <name>sticktoCPUCore</name>
+        <param>
+          <type>int</type>
+          <declname>cpu_core</declname>
+        </param>
+        <briefdescription>
+<para>Sticks the calling thread to a specific CPU core. This function is only available for Jetson TK1 and TX1. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cpuCore</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: int that defines the core the thread must be run on. could be between 0 and 3. (cpu0,cpu1,cpu2,cpu3). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sl::SUCCESS if stick is OK, otherwise status error. </para></simplesect>
+<simplesect kind="warning"><para>Function only available for Jetson. On other platform, result will be always 0 and no operations are performed. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="975" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsl_1_1_camera_1acf9c05e4388581a7b5ea5d8870e892b8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+        <definition>ERROR_CODE sl::Camera::openCamera</definition>
+        <argsstring>(bool)</argsstring>
+        <name>openCamera</name>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="978" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a92d3536a836bcc39d9beb5b70b03a142" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl::Camera::nextImage</definition>
+        <argsstring>(bool)</argsstring>
+        <name>nextImage</name>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="979" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a795ebe3e25327beb97be51da814e5d20" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sl::Camera::initMemory</definition>
+        <argsstring>()</argsstring>
+        <name>initMemory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="980" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_camera_1a449ea58dac0b9104a0f0da3d8574ddfa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl::Camera::initRectifier</definition>
+        <argsstring>()</argsstring>
+        <name>initRectifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="981" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The main class to use the ZED camera. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="571" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="571" bodyend="984"/>
+    <listofallmembers>
+      <member refid="classsl_1_1_camera_1a989438ceb0411138d9e71443183aeabf" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>Camera</name></member>
+      <member refid="classsl_1_1_camera_1aea6e65a70af62fd36574d2f0e9ab9337" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>close</name></member>
+      <member refid="classsl_1_1_camera_1a71d015b53e3f4e373bf814d0fb13c30b" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>disableRecording</name></member>
+      <member refid="classsl_1_1_camera_1ac3906327424766088031c211c641633b" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>disableSpatialMapping</name></member>
+      <member refid="classsl_1_1_camera_1ac3f091825c04aa6c1690717790422f5a" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>disableTracking</name></member>
+      <member refid="classsl_1_1_camera_1a91f24c692fe0200c8869410bbd4d86f5" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>enableRecording</name></member>
+      <member refid="classsl_1_1_camera_1aed259220037a328027552c023337c1bf" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>enableSpatialMapping</name></member>
+      <member refid="classsl_1_1_camera_1a4cec5a2c36cdf5fa047ffb5c02b27a2d" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>enableTracking</name></member>
+      <member refid="classsl_1_1_camera_1a3d9a2ea2052448d7007cd35ddb090e60" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>extractWholeMesh</name></member>
+      <member refid="classsl_1_1_camera_1a34aca0d464cda80d6a2e6460e839066d" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>getAreaExportState</name></member>
+      <member refid="classsl_1_1_camera_1a0c19001d9eafc583f038e10399f50dd3" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>getCameraFPS</name></member>
+      <member refid="classsl_1_1_camera_1a5e14af2a51e3ce4636f0d23ec4cdab17" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>getCameraInformation</name></member>
+      <member refid="classsl_1_1_camera_1a43de7f980bdbf5ce84bb069a803b90b0" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>getCameraSettings</name></member>
+      <member refid="classsl_1_1_camera_1aafa49ae47bcc61eeffc2d8d33130b8f3" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>getCameraTimestamp</name></member>
+      <member refid="classsl_1_1_camera_1a78bfaba5276e172461db8b3ee22b3976" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>getConfidenceThreshold</name></member>
+      <member refid="classsl_1_1_camera_1a844fd4ac55156ee3c34e9695b9478ab0" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>getCUDAContext</name></member>
+      <member refid="classsl_1_1_camera_1abf6e9de50f7e87e90b5addeb6483fd01" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>getCurrentFPS</name></member>
+      <member refid="classsl_1_1_camera_1aabf1a28b7f5801ba7a4e7f50ce187f8c" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>getCurrentTimestamp</name></member>
+      <member refid="classsl_1_1_camera_1a47e29523f26640da6833dfe04fb18814" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>getDepthMaxRangeValue</name></member>
+      <member refid="classsl_1_1_camera_1a8d2f7788b0660cb3a6762ef9e0d912d4" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>getDepthMinRangeValue</name></member>
+      <member refid="classsl_1_1_camera_1aaf48c95288af1eeaa998f8a4f6f3e596" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>getFrameDroppedCount</name></member>
+      <member refid="classsl_1_1_camera_1a7d1e621b9a470e41ab1006d5c4894c8e" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>getMeshRequestStatusAsync</name></member>
+      <member refid="classsl_1_1_camera_1a1cca2d3f207c285ad3e0905519ce7da4" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>getPosition</name></member>
+      <member refid="classsl_1_1_camera_1a751b127b2d23d46cf4d1fd603446e40f" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>getResolution</name></member>
+      <member refid="classsl_1_1_camera_1a810aef0886a21ee41fb1a32b1b852f7b" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>getSDKVersion</name></member>
+      <member refid="classsl_1_1_camera_1ad1c1d70626009aa53d680b8a054f7671" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>getSelfCalibrationState</name></member>
+      <member refid="classsl_1_1_camera_1a7373a0e4c662faf48b3260ed3b0b8195" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>getSpatialMappingState</name></member>
+      <member refid="classsl_1_1_camera_1abcf4b772a1b5cfbda5e655b79036fcd5" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>getSVONumberOfFrames</name></member>
+      <member refid="classsl_1_1_camera_1a1f1f2c3dbe056dd95a68cf1377855787" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>getSVOPosition</name></member>
+      <member refid="classsl_1_1_camera_1a14192b74f20d25463f87032a86259899" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>grab</name></member>
+      <member refid="classsl_1_1_camera_1af8953b73a88a57200d4ba6bdc1fedac0" prot="private" virt="non-virtual"><scope>sl::Camera</scope><name>h</name></member>
+      <member refid="classsl_1_1_camera_1a795ebe3e25327beb97be51da814e5d20" prot="private" virt="non-virtual"><scope>sl::Camera</scope><name>initMemory</name></member>
+      <member refid="classsl_1_1_camera_1a449ea58dac0b9104a0f0da3d8574ddfa" prot="private" virt="non-virtual"><scope>sl::Camera</scope><name>initRectifier</name></member>
+      <member refid="classsl_1_1_camera_1a319c18ce4292a3f5f1cc2c1fccf47da0" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>isOpened</name></member>
+      <member refid="classsl_1_1_camera_1a377ac09dd9c3a00fad9639ef66160797" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>isZEDconnected</name></member>
+      <member refid="classsl_1_1_camera_1a92d3536a836bcc39d9beb5b70b03a142" prot="private" virt="non-virtual"><scope>sl::Camera</scope><name>nextImage</name></member>
+      <member refid="classsl_1_1_camera_1a46f6220e257357d510392317fd620095" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>open</name></member>
+      <member refid="classsl_1_1_camera_1acf9c05e4388581a7b5ea5d8870e892b8" prot="private" virt="non-virtual"><scope>sl::Camera</scope><name>openCamera</name></member>
+      <member refid="classsl_1_1_camera_1af0a96dd0f1b2b12a16b9f8d1ea8fa0ec" prot="private" virt="non-virtual"><scope>sl::Camera</scope><name>opened</name></member>
+      <member refid="classsl_1_1_camera_1aacead039ea9f5d71f87d95bfdd1a0a98" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>pauseSpatialMapping</name></member>
+      <member refid="classsl_1_1_camera_1aef4220ada9addd9d5ad3efeb3fc5e81c" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>record</name></member>
+      <member refid="classsl_1_1_camera_1a2a12e42c2ca3ccd432af15b7e0f17b16" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>requestMeshAsync</name></member>
+      <member refid="classsl_1_1_camera_1a8b5b9dd8a26ec7b6bf9fa3e52cedce26" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>resetSelfCalibration</name></member>
+      <member refid="classsl_1_1_camera_1acee0785272ca265791cddb023b08a915" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>resetTracking</name></member>
+      <member refid="classsl_1_1_camera_1a0e2077880cf79fba5623d8bc64c16b5e" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>retrieveImage</name></member>
+      <member refid="classsl_1_1_camera_1a18fd2e1ecd50348d924a4ac07f3e691e" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>retrieveMeasure</name></member>
+      <member refid="classsl_1_1_camera_1a8b5e61ca38c5b6f047af34e81f9845d7" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>retrieveMeshAsync</name></member>
+      <member refid="classsl_1_1_camera_1a8e83dc2fff60207377c739de9970196f" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>setCameraFPS</name></member>
+      <member refid="classsl_1_1_camera_1a042310027994e0751149be52445654dc" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>setCameraSettings</name></member>
+      <member refid="classsl_1_1_camera_1ac5413f4067f9cd5f6b138a7acc579ca7" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>setConfidenceThreshold</name></member>
+      <member refid="classsl_1_1_camera_1a70e8bfe3c1cb62ca4ff793060c19fb90" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>setDepthMaxRangeValue</name></member>
+      <member refid="classsl_1_1_camera_1ab6c7dd754ba8e971b5c70bfa37fad7d2" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>setSVOPosition</name></member>
+      <member refid="classsl_1_1_camera_1a9a14246a648d5d93b97af30a2b1d907e" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>sticktoCPUCore</name></member>
+      <member refid="classsl_1_1_camera_1a8a956963c1a5fcd096d471d32ef8cdee" prot="public" virt="non-virtual"><scope>sl::Camera</scope><name>~Camera</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

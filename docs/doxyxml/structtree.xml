@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtree" kind="struct" language="C++" prot="public">
+    <compoundname>tree</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtree_1a08371bc037edecea4f1632c2185b1ff1" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* tree::leaf</definition>
+        <argsstring></argsstring>
+        <name>leaf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="42" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtree_1a2273fc7497601bfaf9121d1a797453b5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tree::n</definition>
+        <argsstring></argsstring>
+        <name>n</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="43" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtree_1a77b1eb5cb07b504420034ed006f75cb5" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* tree::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="44" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtree_1ac33525f8c2ea9df09aa39e4e5f0f46b0" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* tree::child</definition>
+        <argsstring></argsstring>
+        <name>child</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="45" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtree_1a3accabb15b1b96d0f81e40341e55cc20" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* tree::group</definition>
+        <argsstring></argsstring>
+        <name>group</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="46" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtree_1aef62d17752842a143625d7313073c068" prot="public" static="no" mutable="no">
+        <type>char **</type>
+        <definition>char** tree::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="47" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtree_1ab4d92fc866330ea5e427d6b5b8075604" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tree::groups</definition>
+        <argsstring></argsstring>
+        <name>groups</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="49" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtree_1a4b84be443f42bcf6cc16fd9d3fa1f326" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* tree::group_size</definition>
+        <argsstring></argsstring>
+        <name>group_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="50" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtree_1a349dec53fea0efa2e19de49785a2f0ff" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* tree::group_offset</definition>
+        <argsstring></argsstring>
+        <name>group_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="51" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="41" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="41" bodyend="52"/>
+    <listofallmembers>
+      <member refid="structtree_1ac33525f8c2ea9df09aa39e4e5f0f46b0" prot="public" virt="non-virtual"><scope>tree</scope><name>child</name></member>
+      <member refid="structtree_1a3accabb15b1b96d0f81e40341e55cc20" prot="public" virt="non-virtual"><scope>tree</scope><name>group</name></member>
+      <member refid="structtree_1a349dec53fea0efa2e19de49785a2f0ff" prot="public" virt="non-virtual"><scope>tree</scope><name>group_offset</name></member>
+      <member refid="structtree_1a4b84be443f42bcf6cc16fd9d3fa1f326" prot="public" virt="non-virtual"><scope>tree</scope><name>group_size</name></member>
+      <member refid="structtree_1ab4d92fc866330ea5e427d6b5b8075604" prot="public" virt="non-virtual"><scope>tree</scope><name>groups</name></member>
+      <member refid="structtree_1a08371bc037edecea4f1632c2185b1ff1" prot="public" virt="non-virtual"><scope>tree</scope><name>leaf</name></member>
+      <member refid="structtree_1a2273fc7497601bfaf9121d1a797453b5" prot="public" virt="non-virtual"><scope>tree</scope><name>n</name></member>
+      <member refid="structtree_1aef62d17752842a143625d7313073c068" prot="public" virt="non-virtual"><scope>tree</scope><name>name</name></member>
+      <member refid="structtree_1a77b1eb5cb07b504420034ed006f75cb5" prot="public" virt="non-virtual"><scope>tree</scope><name>parent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

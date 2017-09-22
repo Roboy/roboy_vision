@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_recognise_face_1_1_image_class" kind="class" language="Python" prot="public">
+    <compoundname>RecogniseFace::ImageClass</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_recognise_face_1_1_image_class_1a77fcc076d7dc95dc2865154159a2559a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RecogniseFace.ImageClass::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" line="148" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_recognise_face_1_1_image_class_1a1b15c6b8df8011ddc33027eba04c8d28" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RecogniseFace.ImageClass::image_paths</definition>
+        <argsstring></argsstring>
+        <name>image_paths</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" line="149" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_recognise_face_1_1_image_class_1a3276a5fad7a73fa121b3dbcdd0f7f74b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RecogniseFace.ImageClass.__init__</definition>
+        <argsstring>(self, name, image_paths)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>image_paths</type>
+          <defname>image_paths</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" line="147" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" bodystart="147" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="class_recognise_face_1_1_image_class_1a6097d0cf2ffda8879cea44062b733308" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RecogniseFace.ImageClass.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" line="151" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" bodystart="151" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_recognise_face_1_1_image_class_1a2581dc343f9fa30959b2c3875c0a7411" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RecogniseFace.ImageClass.__len__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__len__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" line="154" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" bodystart="154" bodyend="156"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" line="144" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RecogniseFace.py" bodystart="144" bodyend="157"/>
+    <listofallmembers>
+      <member refid="class_recognise_face_1_1_image_class_1a3276a5fad7a73fa121b3dbcdd0f7f74b" prot="public" virt="non-virtual"><scope>RecogniseFace::ImageClass</scope><name>__init__</name></member>
+      <member refid="class_recognise_face_1_1_image_class_1a2581dc343f9fa30959b2c3875c0a7411" prot="public" virt="non-virtual"><scope>RecogniseFace::ImageClass</scope><name>__len__</name></member>
+      <member refid="class_recognise_face_1_1_image_class_1a6097d0cf2ffda8879cea44062b733308" prot="public" virt="non-virtual"><scope>RecogniseFace::ImageClass</scope><name>__str__</name></member>
+      <member refid="class_recognise_face_1_1_image_class_1a1b15c6b8df8011ddc33027eba04c8d28" prot="public" virt="non-virtual"><scope>RecogniseFace::ImageClass</scope><name>image_paths</name></member>
+      <member refid="class_recognise_face_1_1_image_class_1a77fcc076d7dc95dc2865154159a2559a" prot="public" virt="non-virtual"><scope>RecogniseFace::ImageClass</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

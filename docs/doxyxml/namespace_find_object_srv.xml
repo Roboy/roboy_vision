@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespace_find_object_srv" kind="namespace" language="Python">
+    <compoundname>FindObjectSrv</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_find_object_srv_8py_1a8f672313dedf79c7d70978875a286598" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FindObjectSrv.i</definition>
+        <argsstring></argsstring>
+        <name>i</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/FindObjectSrv.py" line="28" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/FindObjectSrv.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_find_object_srv_8py_1af116287da25fef736066be0dc29a858a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>FindObjectSrv.request</definition>
+        <argsstring></argsstring>
+        <name>request</name>
+        <initializer>= awaitwebsocket.recv()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/FindObjectSrv.py" line="33" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/FindObjectSrv.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_find_object_srv_8py_1ad62853cd5d5bd944efca8d156cd2d4c4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>FindObjectSrv.type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <initializer>= json.loads(request)[&quot;type&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/FindObjectSrv.py" line="35" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/FindObjectSrv.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_find_object_srv_8py_1a43e4485aceef5b43c784f79f802fe2dd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>FindObjectSrv.FoundObjects</definition>
+        <argsstring></argsstring>
+        <name>FoundObjects</name>
+        <initializer>= ObjectRects.getQueue();</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/FindObjectSrv.py" line="38" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/FindObjectSrv.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_find_object_srv_8py_1aea9b408f8634373a0e40377f9e2532ac" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FindObjectSrv::found</definition>
+        <argsstring></argsstring>
+        <name>found</name>
+        <initializer>= False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/FindObjectSrv.py" line="42" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/FindObjectSrv.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_find_object_srv_8py_1ac7df88ea89fb3a757b4740c0a6f69b24" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary FindObjectSrv::coordinates</definition>
+        <argsstring></argsstring>
+        <name>coordinates</name>
+        <initializer>= {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/FindObjectSrv.py" line="43" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/FindObjectSrv.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_find_object_srv_8py_1a33bf77de6c977d24d2012ae9f6a5d581" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary FindObjectSrv.answer</definition>
+        <argsstring></argsstring>
+        <name>answer</name>
+        <initializer>= {&apos;found&apos;: found,
+                          &apos;coordinates&apos;: coordinates}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/FindObjectSrv.py" line="50" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/FindObjectSrv.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_find_object_srv_8py_1aca4f9d73a771e1a7d208d568eadf276a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>FindObjectSrv.level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/FindObjectSrv.py" line="64" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/FindObjectSrv.py" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_find_object_srv_8py_1a30ded3f382f1e5267f9f1fd4fc93d394" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def FindObjectSrv.service_callback</definition>
+        <argsstring>()</argsstring>
+        <name>service_callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/FindObjectSrv.py" line="19" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/FindObjectSrv.py" bodystart="19" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/FindObjectSrv.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

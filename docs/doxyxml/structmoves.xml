@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structmoves" kind="struct" language="C++" prot="public">
+    <compoundname>moves</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmoves_1ac078836de92eeac5dda2fb83ae0b0f2f" prot="public" static="no" mutable="no">
+        <type>char **</type>
+        <definition>char** moves::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/examples/go.c" line="10" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/examples/go.c" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmoves_1aa81066b4e56914d3d6fa93fee404e062" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int moves::n</definition>
+        <argsstring></argsstring>
+        <name>n</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/examples/go.c" line="11" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/examples/go.c" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/examples/go.c" line="9" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/examples/go.c" bodystart="9" bodyend="12"/>
+    <listofallmembers>
+      <member refid="structmoves_1ac078836de92eeac5dda2fb83ae0b0f2f" prot="public" virt="non-virtual"><scope>moves</scope><name>data</name></member>
+      <member refid="structmoves_1aa81066b4e56914d3d6fa93fee404e062" prot="public" virt="non-virtual"><scope>moves</scope><name>n</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

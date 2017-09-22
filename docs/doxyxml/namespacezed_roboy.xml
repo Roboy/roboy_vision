@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacezed_roboy" kind="namespace" language="Python">
+    <compoundname>zedRoboy</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="zed_roboy_8py_1a4203541eb4a71e5ab39e0b643ef11558" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>zedRoboy.lib</definition>
+        <argsstring></argsstring>
+        <name>lib</name>
+        <initializer>= CDLL(&quot;/usr/local/.so&quot;, RTLD_GLOBAL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" line="4" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="zed_roboy_8py_1aa47d9124e10f11066eb44d232ff923b6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>zedRoboy.net</definition>
+        <argsstring></argsstring>
+        <name>net</name>
+        <initializer>= load_net(&quot;cfg/densenet.cfg&quot;, &quot;/home/pjreddie/trained/densenet201.weights&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" line="52" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="zed_roboy_8py_1a0932ea3d52df9389440d434d694b5c77" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>zedRoboy.im</definition>
+        <argsstring></argsstring>
+        <name>im</name>
+        <initializer>= load_img(&quot;data/wolf.jpg&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" line="53" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="zed_roboy_8py_1a2861f919c41041984c8ccc2772af327b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>zedRoboy.meta</definition>
+        <argsstring></argsstring>
+        <name>meta</name>
+        <initializer>= load_meta(&quot;cfg/imagenet1k.data&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" line="54" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="zed_roboy_8py_1a1f467fc929ddcf1778f9830163d2f991" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>zedRoboy.r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <initializer>= classify(net, meta, im)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" line="55" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="zed_roboy_8py_1a037f9f0e787f3c735f57f5c1bcf04378" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def zedRoboy.load_meta</definition>
+        <argsstring>(f)</argsstring>
+        <name>load_meta</name>
+        <param>
+          <type>f</type>
+          <defname>f</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" line="6" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" bodystart="6" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="zed_roboy_8py_1a98ef65c9c234b5213ded4f80e40851f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def zedRoboy.load_net</definition>
+        <argsstring>(cfg, weights)</argsstring>
+        <name>load_net</name>
+        <param>
+          <type>cfg</type>
+          <defname>cfg</defname>
+        </param>
+        <param>
+          <type>weights</type>
+          <defname>weights</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" line="11" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" bodystart="11" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="zed_roboy_8py_1aee48c4fa8cb817f7046753305f510014" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def zedRoboy.load_img</definition>
+        <argsstring>(f)</argsstring>
+        <name>load_img</name>
+        <param>
+          <type>f</type>
+          <defname>f</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" line="17" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" bodystart="17" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="zed_roboy_8py_1a50a132f583d87cf9eb68b09a04a9cc3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def zedRoboy.letterbox_img</definition>
+        <argsstring>(im, w, h)</argsstring>
+        <name>letterbox_img</name>
+        <param>
+          <type>im</type>
+          <defname>im</defname>
+        </param>
+        <param>
+          <type>w</type>
+          <defname>w</defname>
+        </param>
+        <param>
+          <type>h</type>
+          <defname>h</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" line="23" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" bodystart="23" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="zed_roboy_8py_1a35446c229a48b4f8be382b087f6deda6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def zedRoboy.predict</definition>
+        <argsstring>(net, im)</argsstring>
+        <name>predict</name>
+        <param>
+          <type>net</type>
+          <defname>net</defname>
+        </param>
+        <param>
+          <type>im</type>
+          <defname>im</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" line="29" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" bodystart="29" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="zed_roboy_8py_1a87179208b93ad0feab29c75d23805ec0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def zedRoboy.classify</definition>
+        <argsstring>(net, meta, im)</argsstring>
+        <name>classify</name>
+        <param>
+          <type>net</type>
+          <defname>net</defname>
+        </param>
+        <param>
+          <type>meta</type>
+          <defname>meta</defname>
+        </param>
+        <param>
+          <type>im</type>
+          <defname>im</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" line="35" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" bodystart="35" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="zed_roboy_8py_1ab120039f0e8c40247c4486004661c26c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def zedRoboy.detect</definition>
+        <argsstring>(net, meta, im)</argsstring>
+        <name>detect</name>
+        <param>
+          <type>net</type>
+          <defname>net</defname>
+        </param>
+        <param>
+          <type>meta</type>
+          <defname>meta</defname>
+        </param>
+        <param>
+          <type>im</type>
+          <defname>im</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" line="43" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" bodystart="43" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

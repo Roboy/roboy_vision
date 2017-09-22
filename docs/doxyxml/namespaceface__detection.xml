@@ -188,7 +188,7 @@
         <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="268" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="268" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceface__detection_1a4b994bf9c598e7eaad17cc524f762ccb" prot="public" static="no" mutable="no">
-        <type>list</type>
+        <type><ref refid="structlist" kindref="compound">list</ref></type>
         <definition>list face_detection.threshold</definition>
         <argsstring></argsstring>
         <name>threshold</name>

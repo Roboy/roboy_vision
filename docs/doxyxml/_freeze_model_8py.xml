@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_freeze_model_8py" kind="file" language="Python">
+    <compoundname>FreezeModel.py</compoundname>
+    <innernamespace refid="namespace_freeze_model">FreezeModel</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>os,<sp/>argparse</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>setuptools<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>setup,<sp/>find_packages</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keywordflow">except</highlight><highlight class="normal"><sp/>AttributeError:</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>setuptools<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>setup,<sp/>find_packages</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>tensorflow<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>tf</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>tensorflow.python.framework<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>graph_util</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">dir<sp/>=<sp/>os.path.dirname(os.path.realpath(__file__))</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">freeze_graph(model_folder):</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>We<sp/>retrieve<sp/>our<sp/>checkpoint<sp/>fullpath</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>checkpoint<sp/>=<sp/>tf.train.get_checkpoint_state(model_folder)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>input_checkpoint<sp/>=<sp/>checkpoint.model_checkpoint_path</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>We<sp/>precise<sp/>the<sp/>file<sp/>fullname<sp/>of<sp/>our<sp/>freezed<sp/>graph</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>absolute_model_folder<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">.join(input_checkpoint.split(</highlight><highlight class="stringliteral">&apos;/&apos;</highlight><highlight class="normal">)[:-1])</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>output_graph<sp/>=<sp/>absolute_model_folder<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/frozen_model.pb&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Before<sp/>exporting<sp/>our<sp/>graph,<sp/>we<sp/>need<sp/>to<sp/>precise<sp/>what<sp/>is<sp/>our<sp/>output<sp/>node</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>This<sp/>is<sp/>how<sp/>TF<sp/>decides<sp/>what<sp/>part<sp/>of<sp/>the<sp/>Graph<sp/>he<sp/>has<sp/>to<sp/>keep<sp/>and<sp/>what<sp/>part<sp/>it<sp/>can<sp/>dump</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>NOTE:<sp/>this<sp/>variable<sp/>is<sp/>plural,<sp/>because<sp/>you<sp/>can<sp/>have<sp/>multiple<sp/>output<sp/>nodes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>output_node_names<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Accuracy/predictions&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>We<sp/>clear<sp/>devices<sp/>to<sp/>allow<sp/>TensorFlow<sp/>to<sp/>control<sp/>on<sp/>which<sp/>device<sp/>it<sp/>will<sp/>load<sp/>operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>clear_devices<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>We<sp/>import<sp/>the<sp/>meta<sp/>graph<sp/>and<sp/>retrieve<sp/>a<sp/>Saver</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>saver<sp/>=<sp/>tf.train.import_meta_graph(input_checkpoint<sp/>+<sp/></highlight><highlight class="stringliteral">&apos;.meta&apos;</highlight><highlight class="normal">,<sp/>clear_devices=clear_devices)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>We<sp/>retrieve<sp/>the<sp/>protobuf<sp/>graph<sp/>definition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>graph<sp/>=<sp/>tf.get_default_graph()</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>input_graph_def<sp/>=<sp/>graph.as_graph_def()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>We<sp/>start<sp/>a<sp/>session<sp/>and<sp/>restore<sp/>the<sp/>graph<sp/>weights</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>with<sp/>tf.Session()<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>sess:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>saver.restore(sess,<sp/>input_checkpoint)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>We<sp/>use<sp/>a<sp/>built-in<sp/>TF<sp/>helper<sp/>to<sp/>export<sp/>variables<sp/>to<sp/>constants</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>output_graph_def<sp/>=<sp/>graph_util.convert_variables_to_constants(</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sess,<sp/></highlight><highlight class="comment">#<sp/>The<sp/>session<sp/>is<sp/>used<sp/>to<sp/>retrieve<sp/>the<sp/>weights</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>input_graph_def,<sp/></highlight><highlight class="comment">#<sp/>The<sp/>graph_def<sp/>is<sp/>used<sp/>to<sp/>retrieve<sp/>the<sp/>nodes<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>output_node_names.split(</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="comment">#<sp/>The<sp/>output<sp/>node<sp/>names<sp/>are<sp/>used<sp/>to<sp/>select<sp/>the<sp/>usefull<sp/>nodes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)<sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Finally<sp/>we<sp/>serialize<sp/>and<sp/>dump<sp/>the<sp/>output<sp/>graph<sp/>to<sp/>the<sp/>filesystem</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>with<sp/>tf.gfile.GFile(output_graph,<sp/></highlight><highlight class="stringliteral">&quot;wb&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>f:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f.write(output_graph_def.SerializeToString())</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;%d<sp/>ops<sp/>in<sp/>the<sp/>final<sp/>graph.&quot;</highlight><highlight class="normal"><sp/>%<sp/>len(output_graph_def.node))</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>__name__<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;__main__&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>parser<sp/>=<sp/>argparse.ArgumentParser()</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>parser.add_argument(</highlight><highlight class="stringliteral">&quot;--model_folder&quot;</highlight><highlight class="normal">,<sp/>type=str,<sp/>help=</highlight><highlight class="stringliteral">&quot;Model<sp/>folder<sp/>to<sp/>export&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>args<sp/>=<sp/>parser.parse_args()</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>freeze_graph(args.model_folder)</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/FreezeModel.py"/>
+  </compounddef>
+</doxygen>

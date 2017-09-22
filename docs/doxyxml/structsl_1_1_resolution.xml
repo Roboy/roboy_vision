@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structsl_1_1_resolution" kind="struct" language="C++" prot="public">
+    <compoundname>sl::Resolution</compoundname>
+    <includes refid="_core_8hpp" local="no">Core.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsl_1_1_resolution_1ac4dc47fc9738ccc5e1c8c37c0528eda3" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t sl::Resolution::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>array width in pixels </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="79" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsl_1_1_resolution_1a46ec383ce0c4d4941df656a29abfdc96" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t sl::Resolution::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>array height in pixels </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="80" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structsl_1_1_resolution_1a241e406210ffdccfd8989076a9c2413d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sl::Resolution::Resolution</definition>
+        <argsstring>(size_t w_=0, size_t h_=0)</argsstring>
+        <name>Resolution</name>
+        <param>
+          <type>size_t</type>
+          <declname>w_</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>h_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="82" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="structsl_1_1_resolution_1a641f0d53dca216b7cc64d5db7d846d99" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t sl::Resolution::area</definition>
+        <argsstring>()</argsstring>
+        <name>area</name>
+        <briefdescription>
+<para>Returns the area of the image. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of pixels of the array. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="91" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="91" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="structsl_1_1_resolution_1ae94d2282121e73497bf79b1443d7eb26" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl::Resolution::operator==</definition>
+        <argsstring>(const Resolution &amp;that) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="structsl_1_1_resolution" kindref="compound">Resolution</ref> &amp;</type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+<para>Tests if the given <ref refid="structsl_1_1_resolution" kindref="compound">sl::Resolution</ref> has the same properties. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the sizes matches. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="99" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="99" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="structsl_1_1_resolution_1a8e45d634d3d1764a7658e95ce1e0c33a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl::Resolution::operator!=</definition>
+        <argsstring>(const Resolution &amp;that) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="structsl_1_1_resolution" kindref="compound">Resolution</ref> &amp;</type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+<para>Tests if the given <ref refid="structsl_1_1_resolution" kindref="compound">sl::Resolution</ref> has different properties. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the sizes are not equal. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="107" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="107" bodyend="109"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Width and height of an array. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="78" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="78" bodyend="110"/>
+    <listofallmembers>
+      <member refid="structsl_1_1_resolution_1a641f0d53dca216b7cc64d5db7d846d99" prot="public" virt="non-virtual"><scope>sl::Resolution</scope><name>area</name></member>
+      <member refid="structsl_1_1_resolution_1a46ec383ce0c4d4941df656a29abfdc96" prot="public" virt="non-virtual"><scope>sl::Resolution</scope><name>height</name></member>
+      <member refid="structsl_1_1_resolution_1a8e45d634d3d1764a7658e95ce1e0c33a" prot="public" virt="non-virtual"><scope>sl::Resolution</scope><name>operator!=</name></member>
+      <member refid="structsl_1_1_resolution_1ae94d2282121e73497bf79b1443d7eb26" prot="public" virt="non-virtual"><scope>sl::Resolution</scope><name>operator==</name></member>
+      <member refid="structsl_1_1_resolution_1a241e406210ffdccfd8989076a9c2413d" prot="public" virt="non-virtual"><scope>sl::Resolution</scope><name>Resolution</name></member>
+      <member refid="structsl_1_1_resolution_1ac4dc47fc9738ccc5e1c8c37c0528eda3" prot="public" virt="non-virtual"><scope>sl::Resolution</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

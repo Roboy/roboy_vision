@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespaceexample" kind="namespace" language="Python">
+    <compoundname>example</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="example_8py_1a6196866579a9fb4495ab0e46174cd480" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string example.darknet_path</definition>
+        <argsstring></argsstring>
+        <name>darknet_path</name>
+        <initializer>= &apos;./darknet&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" line="7" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="example_8py_1a715e69d80515e1873f4a8895e791a7b0" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string example.datacfg</definition>
+        <argsstring></argsstring>
+        <name>datacfg</name>
+        <initializer>= &apos;cfg/coco.data&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" line="8" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="example_8py_1a9af7a51a3e4e4052cea6756e0f7e8270" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string example.cfgfile</definition>
+        <argsstring></argsstring>
+        <name>cfgfile</name>
+        <initializer>= &apos;cfg/tiny-yolo.cfg&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" line="9" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="example_8py_1a345cc251b6f3c1612fcc143ef19d57f2" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string example.weightfile</definition>
+        <argsstring></argsstring>
+        <name>weightfile</name>
+        <initializer>= &apos;../tiny-yolo.weights&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" line="10" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="example_8py_1a371e54ef790d910acbeb60cedccef1b7" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string example.filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <initializer>= &quot;/home/roboy/outputRoboy.mp4&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" line="12" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="example_8py_1ac6645201d08ffb7ee1e155c226eb8a48" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float example.thresh</definition>
+        <argsstring></argsstring>
+        <name>thresh</name>
+        <initializer>= 0.24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" line="13" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="example_8py_1ad715b9bf09dc787b306c0df8a6a71135" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float example.hier_thresh</definition>
+        <argsstring></argsstring>
+        <name>hier_thresh</name>
+        <initializer>= 0.5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" line="14" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="example_8py_1ad9a6a855bbfb436dd1c1d54d4b51b53f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>example.cam</definition>
+        <argsstring></argsstring>
+        <name>cam</name>
+        <initializer>= cv2.VideoCapture(filename)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" line="15" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="example_8py_1aad73de4e30a7ee755c1b8fa56308af23" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>example.ret_val</definition>
+        <argsstring></argsstring>
+        <name>ret_val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" line="16" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="example_8py_1add60b89fabf426d2f6a856dcdffa3ce9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>example.img</definition>
+        <argsstring></argsstring>
+        <name>img</name>
+        <initializer>= img.transpose(2,0,1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" line="16" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="example_8py_1aea6fac46e441938a8b7678b2890453c8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>example.fourcc</definition>
+        <argsstring></argsstring>
+        <name>fourcc</name>
+        <initializer>= cv2.VideoWriter_fourcc(*&apos;XVID&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" line="21" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="example_8py_1a79f05bb544d88acff65f5e30128fb56e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>example.outVideo</definition>
+        <argsstring></argsstring>
+        <name>outVideo</name>
+        <initializer>= cv2.VideoWriter(&apos;outputRoboySkyfall.mp4&apos;,fourcc, 20.0, (800,533))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" line="22" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="example_8py_1a89798b85b5dfff748acb2f36a16a28ef" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>example.ok</definition>
+        <argsstring></argsstring>
+        <name>ok</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" line="26" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="example_8py_1ae36ead689ab75a3a00d5caa0bf64c004" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>example.frame</definition>
+        <argsstring></argsstring>
+        <name>frame</name>
+        <initializer>= imutils.resize(img, width=800)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" line="27" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="example_8py_1a7401b4bf39b081c4347071a07cf29b8a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>example.c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" line="31" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="example_8py_1a90c60400c4a960ea2641d9bb99ee0b79" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>example.h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" line="31" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="example_8py_1aa6d473db14f379d54def670b1afa2d3d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>example.w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" line="31" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="example_8py_1a9b062b4feb0fe50b0056ed5abb65681c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>example.data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <initializer>= img.ravel()/255.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" line="33" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="example_8py_1a6dde0a43a51a642845ba6e45ddd92773" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>example.outputs</definition>
+        <argsstring></argsstring>
+        <name>outputs</name>
+        <initializer>= pyyolo.detect(w, h, c, <ref refid="structdata" kindref="compound">data</ref>, thresh, hier_thresh)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" line="35" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="example_8py_1aca4aa3fb57e0cc92d06a18fca5734bbc" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple example.p1</definition>
+        <argsstring></argsstring>
+        <name>p1</name>
+        <initializer>= (output[&apos;left&apos;],output[&apos;top&apos;])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" line="38" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="example_8py_1a8abed03ecd40f21e32309815dce81390" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple example.p2</definition>
+        <argsstring></argsstring>
+        <name>p2</name>
+        <initializer>= (output[&apos;right&apos;],output[&apos;bottom&apos;])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" line="39" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

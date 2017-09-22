@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_object_recognition_1_1_m_e_t_a_d_a_t_a" kind="class" language="Python" prot="public">
+    <compoundname>ObjectRecognition::METADATA</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Structure</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_object_recognition_1_1_m_e_t_a_d_a_t_a_1ab2078bc60e332e9e9ad28b0a4f221246" prot="private" static="yes" mutable="no">
+        <type><ref refid="structlist" kindref="compound">list</ref></type>
+        <definition>list ObjectRecognition.METADATA::_fields_</definition>
+        <argsstring></argsstring>
+        <name>_fields_</name>
+        <initializer>= [(&quot;classes&quot;, c_int),
+                (&quot;names&quot;, POINTER(c_char_p))]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="50" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="294">
+        <label>ObjectRecognition.METADATA</label>
+        <link refid="class_object_recognition_1_1_m_e_t_a_d_a_t_a"/>
+        <childnode refid="295" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="295">
+        <label>Structure</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="298">
+        <label>list</label>
+        <link refid="structlist"/>
+        <childnode refid="299" relation="usage">
+          <edgelabel>front</edgelabel>
+          <edgelabel>back</edgelabel>
+        </childnode>
+      </node>
+      <node id="299">
+        <label>node</label>
+        <link refid="structnode"/>
+        <childnode refid="299" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="296">
+        <label>ObjectRecognition.METADATA</label>
+        <link refid="class_object_recognition_1_1_m_e_t_a_d_a_t_a"/>
+        <childnode refid="297" relation="public-inheritance">
+        </childnode>
+        <childnode refid="298" relation="usage">
+          <edgelabel>_fields_</edgelabel>
+        </childnode>
+      </node>
+      <node id="297">
+        <label>Structure</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="49" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="49" bodyend="56"/>
+    <listofallmembers>
+      <member refid="class_object_recognition_1_1_m_e_t_a_d_a_t_a_1ab2078bc60e332e9e9ad28b0a4f221246" prot="private" virt="non-virtual"><scope>ObjectRecognition::METADATA</scope><name>_fields_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

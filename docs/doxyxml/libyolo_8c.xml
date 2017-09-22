@@ -1,0 +1,519 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="libyolo_8c" kind="file" language="C++">
+    <compoundname>libyolo.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">unistd.h</includes>
+    <includes refid="option__list_8h" local="yes">option_list.h</includes>
+    <includes refid="network_8h" local="yes">network.h</includes>
+    <includes refid="parser_8h" local="yes">parser.h</includes>
+    <includes refid="region__layer_8h" local="yes">region_layer.h</includes>
+    <includes refid="utils_8h" local="yes">utils.h</includes>
+    <includes refid="libyolo_8h" local="yes">libyolo.h</includes>
+    <incdepgraph>
+      <node id="1858">
+        <label>box.h</label>
+        <link refid="box_8h_source"/>
+        <childnode refid="1852" relation="include">
+        </childnode>
+      </node>
+      <node id="1856">
+        <label>float.h</label>
+      </node>
+      <node id="1848">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1850">
+        <label>option_list.h</label>
+        <link refid="option__list_8h_source"/>
+        <childnode refid="1851" relation="include">
+        </childnode>
+      </node>
+      <node id="1860">
+        <label>data.h</label>
+        <link refid="data_8h_source"/>
+        <childnode refid="1853" relation="include">
+        </childnode>
+        <childnode refid="1852" relation="include">
+        </childnode>
+        <childnode refid="1861" relation="include">
+        </childnode>
+        <childnode refid="1851" relation="include">
+        </childnode>
+        <childnode refid="1855" relation="include">
+        </childnode>
+        <childnode refid="1862" relation="include">
+        </childnode>
+      </node>
+      <node id="1845">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c</label>
+        <link refid="libyolo.c"/>
+        <childnode refid="1846" relation="include">
+        </childnode>
+        <childnode refid="1847" relation="include">
+        </childnode>
+        <childnode refid="1848" relation="include">
+        </childnode>
+        <childnode refid="1849" relation="include">
+        </childnode>
+        <childnode refid="1850" relation="include">
+        </childnode>
+        <childnode refid="1854" relation="include">
+        </childnode>
+        <childnode refid="1863" relation="include">
+        </childnode>
+        <childnode refid="1864" relation="include">
+        </childnode>
+        <childnode refid="1865" relation="include">
+        </childnode>
+        <childnode refid="1867" relation="include">
+        </childnode>
+      </node>
+      <node id="1867">
+        <label>libyolo.h</label>
+        <link refid="libyolo_8h_source"/>
+        <childnode refid="1855" relation="include">
+        </childnode>
+      </node>
+      <node id="1854">
+        <label>network.h</label>
+        <link refid="network_8h_source"/>
+        <childnode refid="1852" relation="include">
+        </childnode>
+        <childnode refid="1855" relation="include">
+        </childnode>
+        <childnode refid="1859" relation="include">
+        </childnode>
+        <childnode refid="1860" relation="include">
+        </childnode>
+        <childnode refid="1862" relation="include">
+        </childnode>
+      </node>
+      <node id="1863">
+        <label>parser.h</label>
+        <link refid="parser_8h_source"/>
+        <childnode refid="1852" relation="include">
+        </childnode>
+        <childnode refid="1854" relation="include">
+        </childnode>
+      </node>
+      <node id="1851">
+        <label>list.h</label>
+        <link refid="list_8h_source"/>
+        <childnode refid="1852" relation="include">
+        </childnode>
+      </node>
+      <node id="1861">
+        <label>matrix.h</label>
+        <link refid="matrix_8h_source"/>
+        <childnode refid="1852" relation="include">
+        </childnode>
+      </node>
+      <node id="1852">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="1848" relation="include">
+        </childnode>
+        <childnode refid="1846" relation="include">
+        </childnode>
+        <childnode refid="1847" relation="include">
+        </childnode>
+        <childnode refid="1853" relation="include">
+        </childnode>
+      </node>
+      <node id="1859">
+        <label>layer.h</label>
+        <link refid="layer_8h_source"/>
+        <childnode refid="1852" relation="include">
+        </childnode>
+      </node>
+      <node id="1853">
+        <label>pthread.h</label>
+      </node>
+      <node id="1855">
+        <label>image.h</label>
+        <link refid="image_8h_source"/>
+        <childnode refid="1848" relation="include">
+        </childnode>
+        <childnode refid="1846" relation="include">
+        </childnode>
+        <childnode refid="1856" relation="include">
+        </childnode>
+        <childnode refid="1847" relation="include">
+        </childnode>
+        <childnode refid="1857" relation="include">
+        </childnode>
+        <childnode refid="1858" relation="include">
+        </childnode>
+        <childnode refid="1852" relation="include">
+        </childnode>
+      </node>
+      <node id="1847">
+        <label>string.h</label>
+      </node>
+      <node id="1864">
+        <label>region_layer.h</label>
+        <link refid="region__layer_8h_source"/>
+        <childnode refid="1852" relation="include">
+        </childnode>
+        <childnode refid="1859" relation="include">
+        </childnode>
+        <childnode refid="1854" relation="include">
+        </childnode>
+      </node>
+      <node id="1849">
+        <label>unistd.h</label>
+      </node>
+      <node id="1865">
+        <label>utils.h</label>
+        <link refid="utils_8h_source"/>
+        <childnode refid="1846" relation="include">
+        </childnode>
+        <childnode refid="1866" relation="include">
+        </childnode>
+        <childnode refid="1852" relation="include">
+        </childnode>
+        <childnode refid="1851" relation="include">
+        </childnode>
+      </node>
+      <node id="1866">
+        <label>time.h</label>
+      </node>
+      <node id="1857">
+        <label>math.h</label>
+      </node>
+      <node id="1862">
+        <label>tree.h</label>
+        <link refid="tree_8h_source"/>
+        <childnode refid="1852" relation="include">
+        </childnode>
+      </node>
+      <node id="1846">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structyolo__obj" prot="public">yolo_obj</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="libyolo_8c_1a48a0fe008d15422bfe1759002824891d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void get_detection_info</definition>
+        <argsstring>(image im, int num, float thresh, box *boxes, float **probs, int classes, char **names, list *output)</argsstring>
+        <name>get_detection_info</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>im</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thresh</declname>
+        </param>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref> *</type>
+          <declname>boxes</declname>
+        </param>
+        <param>
+          <type>float **</type>
+          <declname>probs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>classes</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>names</declname>
+        </param>
+        <param>
+          <type><ref refid="structlist" kindref="compound">list</ref> *</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" line="21" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" bodystart="21" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="libyolo_8c_1a5fc358f01397f6e5c313683ce77d610e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>yolo_handle</type>
+        <definition>yolo_handle yolo_init</definition>
+        <argsstring>(char *darknet_path, char *datacfg, char *cfgfile, char *weightfile)</argsstring>
+        <name>yolo_init</name>
+        <param>
+          <type>char *</type>
+          <declname>darknet_path</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>datacfg</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>cfgfile</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>weightfile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" line="53" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" bodystart="53" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="libyolo_8c_1a6e334fce613f4739faea7be17ace4017" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void yolo_cleanup</definition>
+        <argsstring>(yolo_handle handle)</argsstring>
+        <name>yolo_cleanup</name>
+        <param>
+          <type>yolo_handle</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" line="86" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" bodystart="86" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="libyolo_8c_1a267d3fd2e6c3a66fa18954248180e066" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdetection__info" kindref="compound">detection_info</ref> **</type>
+        <definition>detection_info** yolo_detect</definition>
+        <argsstring>(yolo_handle handle, image im, float thresh, float hier_thresh, int *num)</argsstring>
+        <name>yolo_detect</name>
+        <param>
+          <type>yolo_handle</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>im</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thresh</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>hier_thresh</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" line="97" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" bodystart="97" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="libyolo_8c_1a9a6d07d7e75b0dc159b4b59ec233c563" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdetection__info" kindref="compound">detection_info</ref> **</type>
+        <definition>detection_info** yolo_test</definition>
+        <argsstring>(yolo_handle handle, char *filename, float thresh, float hier_thresh, int *num)</argsstring>
+        <name>yolo_test</name>
+        <param>
+          <type>yolo_handle</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thresh</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>hier_thresh</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" line="124" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" bodystart="124" bodyend="154"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;option_list.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;network.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;parser.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;region_layer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;utils.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;libyolo.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="structyolo__obj" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>darknet_path[1024];</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**names;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>nms;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>*boxes;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>**probs;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}<sp/><ref refid="structyolo__obj" kindref="compound">yolo_obj</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>get_detection_info(<ref refid="structimage" kindref="compound">image</ref><sp/>im,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>thresh,<sp/><ref refid="structbox" kindref="compound">box</ref><sp/>*boxes,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>**probs,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>classes,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**names,<sp/><ref refid="structlist" kindref="compound">list</ref><sp/>*output)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>num;<sp/>++i){</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">=<sp/>max_index(probs[i],<sp/>classes);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>prob<sp/>=<sp/>probs[i][</highlight><highlight class="keyword">class</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(prob<sp/>&gt;<sp/>thresh){</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>b<sp/>=<sp/>boxes[i];</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>left<sp/><sp/>=<sp/>(b.x-b.w/2.)*im.w;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>right<sp/>=<sp/>(b.x+b.w/2.)*im.w;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>top<sp/><sp/><sp/>=<sp/>(b.y-b.h/2.)*im.h;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bot<sp/><sp/><sp/>=<sp/>(b.y+b.h/2.)*im.h;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(left<sp/>&lt;<sp/>0)<sp/>left<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(right<sp/>&gt;<sp/>im.w-1)<sp/>right<sp/>=<sp/>im.w-1;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(top<sp/>&lt;<sp/>0)<sp/>top<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(bot<sp/>&gt;<sp/>im.h-1)<sp/>bot<sp/>=<sp/>im.h-1;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdetection__info" kindref="compound">detection_info</ref><sp/>*info<sp/>=<sp/>(<ref refid="structdetection__info" kindref="compound">detection_info</ref><sp/>*)malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structdetection__info" kindref="compound">detection_info</ref>));</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strncpy(info-&gt;name,<sp/>names[</highlight><highlight class="keyword">class</highlight><highlight class="normal">],<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(info-&gt;name));</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>info-&gt;left<sp/>=<sp/>left;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>info-&gt;right<sp/>=<sp/>right;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>info-&gt;top<sp/>=<sp/>top;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>info-&gt;bottom<sp/>=<sp/>bot;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>info-&gt;prob<sp/>=<sp/>prob;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list_insert(output,<sp/>info);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">yolo_handle<sp/>yolo_init(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*darknet_path,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*datacfg,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*cfgfile,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*weightfile)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structyolo__obj" kindref="compound">yolo_obj</ref><sp/>*obj<sp/>=<sp/>(<ref refid="structyolo__obj" kindref="compound">yolo_obj</ref><sp/>*)malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structyolo__obj" kindref="compound">yolo_obj</ref>));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!obj)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(obj,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structyolo__obj" kindref="compound">yolo_obj</ref>));</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>cur_dir[1024];</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>strncpy(obj-&gt;darknet_path,<sp/>darknet_path,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(obj-&gt;darknet_path));</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>getcwd(cur_dir,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(cur_dir));</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>chdir(darknet_path);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlist" kindref="compound">list</ref><sp/>*options<sp/>=<sp/>read_data_cfg(datacfg);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name_list<sp/>=<sp/>option_find_str(options,<sp/></highlight><highlight class="stringliteral">&quot;names&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;data/names.list&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>obj-&gt;names<sp/>=<sp/>get_labels(name_list);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>obj-&gt;net<sp/>=<sp/>parse_network_cfg(cfgfile);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(weightfile){</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>load_weights(&amp;obj-&gt;net,<sp/>weightfile);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>set_batch_network(&amp;obj-&gt;net,<sp/>1);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>srand(2222222);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>obj-&gt;nms=.4;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlayer" kindref="compound">layer</ref><sp/>l<sp/>=<sp/>obj-&gt;net.layers[obj-&gt;net.n-1];</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>obj-&gt;boxes<sp/>=<sp/>calloc(l.w*l.h*l.n,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structbox" kindref="compound">box</ref>));</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>obj-&gt;probs<sp/>=<sp/>calloc(l.w*l.h*l.n,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*));</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>l.w*l.h*l.n;<sp/>++j)<sp/>obj-&gt;probs[j]<sp/>=<sp/>calloc(l.classes<sp/>+<sp/>1,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*));</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>chdir(cur_dir);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(yolo_handle)obj;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>yolo_cleanup(yolo_handle<sp/>handle)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structyolo__obj" kindref="compound">yolo_obj</ref><sp/>*obj<sp/>=<sp/>(<ref refid="structyolo__obj" kindref="compound">yolo_obj</ref><sp/>*)handle;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(obj)<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlayer" kindref="compound">layer</ref><sp/>l<sp/>=<sp/>obj-&gt;net.layers[obj-&gt;net.n-1];</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(obj-&gt;boxes);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free_ptrs((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**)obj-&gt;probs,<sp/>l.w*l.h*l.n);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(obj);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><ref refid="structdetection__info" kindref="compound">detection_info</ref><sp/>**yolo_detect(yolo_handle<sp/>handle,<sp/><ref refid="structimage" kindref="compound">image</ref><sp/>im,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>thresh,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>hier_thresh,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*num)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structyolo__obj" kindref="compound">yolo_obj</ref><sp/>*obj<sp/>=<sp/>(<ref refid="structyolo__obj" kindref="compound">yolo_obj</ref><sp/>*)handle;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structimage" kindref="compound">image</ref><sp/>sized<sp/>=<sp/>letterbox_image(im,<sp/>obj-&gt;net.w,<sp/>obj-&gt;net.h);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*X<sp/>=<sp/>sized.data;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>clock_t<sp/>time;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>time=clock();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>network_predict(obj-&gt;net,<sp/>X);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Cam<sp/>frame<sp/>predicted<sp/>in<sp/>%f<sp/>seconds.\n&quot;</highlight><highlight class="normal">,<sp/>sec(clock()-time));</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlayer" kindref="compound">layer</ref><sp/>l<sp/>=<sp/>obj-&gt;net.layers[obj-&gt;net.n-1];</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>get_region_boxes(l,<sp/>im.w,<sp/>im.h,<sp/>obj-&gt;net.w,<sp/>obj-&gt;net.h,<sp/>thresh,<sp/>obj-&gt;probs,<sp/>obj-&gt;boxes,<sp/>NULL,<sp/>0,<sp/>0,<sp/>hier_thresh,<sp/>1);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(obj-&gt;nms)<sp/>do_nms_obj(obj-&gt;boxes,<sp/>obj-&gt;probs,<sp/>l.w*l.h*l.n,<sp/>l.classes,<sp/>obj-&gt;nms);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlist" kindref="compound">list</ref><sp/>*output<sp/>=<sp/>make_list();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>get_detection_info(im,<sp/>l.w*l.h*l.n,<sp/>thresh,<sp/>obj-&gt;boxes,<sp/>obj-&gt;probs,<sp/>l.classes,<sp/>obj-&gt;names,<sp/>output);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdetection__info" kindref="compound">detection_info</ref><sp/>**info<sp/>=<sp/>(<ref refid="structdetection__info" kindref="compound">detection_info</ref><sp/>**)list_to_array(output);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>*num<sp/>=<sp/>output-&gt;size;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>free_list(output);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>free_image(im);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>free_image(sized);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>info;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><ref refid="structdetection__info" kindref="compound">detection_info</ref><sp/>**yolo_test(yolo_handle<sp/>handle,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>thresh,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>hier_thresh,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*num)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structyolo__obj" kindref="compound">yolo_obj</ref><sp/>*obj<sp/>=<sp/>(<ref refid="structyolo__obj" kindref="compound">yolo_obj</ref><sp/>*)handle;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>input[256];</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>strncpy(input,<sp/>filename,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(input));</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structimage" kindref="compound">image</ref><sp/>im<sp/>=<sp/>load_image_color(input,0,0);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structimage" kindref="compound">image</ref><sp/>sized<sp/>=<sp/>letterbox_image(im,<sp/>obj-&gt;net.w,<sp/>obj-&gt;net.h);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*X<sp/>=<sp/>sized.data;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>clock_t<sp/>time;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>time=clock();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>network_predict(obj-&gt;net,<sp/>X);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%s:<sp/>Predicted<sp/>in<sp/>%f<sp/>seconds.\n&quot;</highlight><highlight class="normal">,<sp/>input,<sp/>sec(clock()-time));</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlayer" kindref="compound">layer</ref><sp/>l<sp/>=<sp/>obj-&gt;net.layers[obj-&gt;net.n-1];</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>get_region_boxes(l,<sp/>im.w,<sp/>im.h,<sp/>obj-&gt;net.w,<sp/>obj-&gt;net.h,<sp/>thresh,<sp/>obj-&gt;probs,<sp/>obj-&gt;boxes,<sp/>NULL,<sp/>0,<sp/>0,<sp/>hier_thresh,<sp/>1);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(obj-&gt;nms)<sp/>do_nms_obj(obj-&gt;boxes,<sp/>obj-&gt;probs,<sp/>l.w*l.h*l.n,<sp/>l.classes,<sp/>obj-&gt;nms);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlist" kindref="compound">list</ref><sp/>*output<sp/>=<sp/>make_list();</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>get_detection_info(im,<sp/>l.w*l.h*l.n,<sp/>thresh,<sp/>obj-&gt;boxes,<sp/>obj-&gt;probs,<sp/>l.classes,<sp/>obj-&gt;names,<sp/>output);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdetection__info" kindref="compound">detection_info</ref><sp/>**info<sp/>=<sp/>(<ref refid="structdetection__info" kindref="compound">detection_info</ref><sp/>**)list_to_array(output);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>*num<sp/>=<sp/>output-&gt;size;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>free_list(output);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>free_image(im);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>free_image(sized);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>info;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c"/>
+  </compounddef>
+</doxygen>

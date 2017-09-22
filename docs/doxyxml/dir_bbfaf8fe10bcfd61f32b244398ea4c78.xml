@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_bbfaf8fe10bcfd61f32b244398ea4c78" kind="dir">
+    <compoundname>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src</compoundname>
+    <innerfile refid="activation__layer_8c">activation_layer.c</innerfile>
+    <innerfile refid="activation__layer_8h">activation_layer.h</innerfile>
+    <innerfile refid="activations_8c">activations.c</innerfile>
+    <innerfile refid="activations_8h">activations.h</innerfile>
+    <innerfile refid="avgpool__layer_8c">avgpool_layer.c</innerfile>
+    <innerfile refid="avgpool__layer_8h">avgpool_layer.h</innerfile>
+    <innerfile refid="batchnorm__layer_8c">batchnorm_layer.c</innerfile>
+    <innerfile refid="batchnorm__layer_8h">batchnorm_layer.h</innerfile>
+    <innerfile refid="blas_8c">blas.c</innerfile>
+    <innerfile refid="blas_8h">blas.h</innerfile>
+    <innerfile refid="box_8c">box.c</innerfile>
+    <innerfile refid="box_8h">box.h</innerfile>
+    <innerfile refid="classifier_8h">classifier.h</innerfile>
+    <innerfile refid="col2im_8c">col2im.c</innerfile>
+    <innerfile refid="col2im_8h">col2im.h</innerfile>
+    <innerfile refid="compare_8c">compare.c</innerfile>
+    <innerfile refid="connected__layer_8c">connected_layer.c</innerfile>
+    <innerfile refid="connected__layer_8h">connected_layer.h</innerfile>
+    <innerfile refid="convolutional__layer_8c">convolutional_layer.c</innerfile>
+    <innerfile refid="convolutional__layer_8h">convolutional_layer.h</innerfile>
+    <innerfile refid="cost__layer_8c">cost_layer.c</innerfile>
+    <innerfile refid="cost__layer_8h">cost_layer.h</innerfile>
+    <innerfile refid="crnn__layer_8c">crnn_layer.c</innerfile>
+    <innerfile refid="crnn__layer_8h">crnn_layer.h</innerfile>
+    <innerfile refid="crop__layer_8c">crop_layer.c</innerfile>
+    <innerfile refid="crop__layer_8h">crop_layer.h</innerfile>
+    <innerfile refid="cuda_8c">cuda.c</innerfile>
+    <innerfile refid="cuda_8h">cuda.h</innerfile>
+    <innerfile refid="data_8c">data.c</innerfile>
+    <innerfile refid="data_8h">data.h</innerfile>
+    <innerfile refid="deconvolutional__layer_8c">deconvolutional_layer.c</innerfile>
+    <innerfile refid="deconvolutional__layer_8h">deconvolutional_layer.h</innerfile>
+    <innerfile refid="demo_8c">demo.c</innerfile>
+    <innerfile refid="demo_8h">demo.h</innerfile>
+    <innerfile refid="detection__layer_8c">detection_layer.c</innerfile>
+    <innerfile refid="detection__layer_8h">detection_layer.h</innerfile>
+    <innerfile refid="dropout__layer_8c">dropout_layer.c</innerfile>
+    <innerfile refid="dropout__layer_8h">dropout_layer.h</innerfile>
+    <innerfile refid="gemm_8c">gemm.c</innerfile>
+    <innerfile refid="gemm_8h">gemm.h</innerfile>
+    <innerfile refid="gru__layer_8c">gru_layer.c</innerfile>
+    <innerfile refid="gru__layer_8h">gru_layer.h</innerfile>
+    <innerfile refid="im2col_8c">im2col.c</innerfile>
+    <innerfile refid="im2col_8h">im2col.h</innerfile>
+    <innerfile refid="image_8c">image.c</innerfile>
+    <innerfile refid="image_8h">image.h</innerfile>
+    <innerfile refid="layer_8c">layer.c</innerfile>
+    <innerfile refid="layer_8h">layer.h</innerfile>
+    <innerfile refid="list_8c">list.c</innerfile>
+    <innerfile refid="list_8h">list.h</innerfile>
+    <innerfile refid="local__layer_8c">local_layer.c</innerfile>
+    <innerfile refid="local__layer_8h">local_layer.h</innerfile>
+    <innerfile refid="lstm__layer_8c">lstm_layer.c</innerfile>
+    <innerfile refid="lstm__layer_8h">lstm_layer.h</innerfile>
+    <innerfile refid="matrix_8c">matrix.c</innerfile>
+    <innerfile refid="matrix_8h">matrix.h</innerfile>
+    <innerfile refid="maxpool__layer_8c">maxpool_layer.c</innerfile>
+    <innerfile refid="maxpool__layer_8h">maxpool_layer.h</innerfile>
+    <innerfile refid="network_8c">network.c</innerfile>
+    <innerfile refid="network_8h">network.h</innerfile>
+    <innerfile refid="normalization__layer_8c">normalization_layer.c</innerfile>
+    <innerfile refid="normalization__layer_8h">normalization_layer.h</innerfile>
+    <innerfile refid="option__list_8c">option_list.c</innerfile>
+    <innerfile refid="option__list_8h">option_list.h</innerfile>
+    <innerfile refid="parser_8c">parser.c</innerfile>
+    <innerfile refid="parser_8h">parser.h</innerfile>
+    <innerfile refid="region__layer_8c">region_layer.c</innerfile>
+    <innerfile refid="region__layer_8h">region_layer.h</innerfile>
+    <innerfile refid="reorg__layer_8c">reorg_layer.c</innerfile>
+    <innerfile refid="reorg__layer_8h">reorg_layer.h</innerfile>
+    <innerfile refid="rnn__layer_8c">rnn_layer.c</innerfile>
+    <innerfile refid="rnn__layer_8h">rnn_layer.h</innerfile>
+    <innerfile refid="route__layer_8c">route_layer.c</innerfile>
+    <innerfile refid="route__layer_8h">route_layer.h</innerfile>
+    <innerfile refid="shortcut__layer_8c">shortcut_layer.c</innerfile>
+    <innerfile refid="shortcut__layer_8h">shortcut_layer.h</innerfile>
+    <innerfile refid="softmax__layer_8c">softmax_layer.c</innerfile>
+    <innerfile refid="softmax__layer_8h">softmax_layer.h</innerfile>
+    <innerfile refid="stb__image_8h">stb_image.h</innerfile>
+    <innerfile refid="stb__image__write_8h">stb_image_write.h</innerfile>
+    <innerfile refid="tree_8c">tree.c</innerfile>
+    <innerfile refid="tree_8h">tree.h</innerfile>
+    <innerfile refid="utils_8c">utils.c</innerfile>
+    <innerfile refid="utils_8h">utils.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/"/>
+  </compounddef>
+</doxygen>

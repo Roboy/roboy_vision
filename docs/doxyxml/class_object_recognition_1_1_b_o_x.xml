@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_object_recognition_1_1_b_o_x" kind="class" language="Python" prot="public">
+    <compoundname>ObjectRecognition::BOX</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Structure</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_object_recognition_1_1_b_o_x_1ad69563aa149c5ceb6aab6dfda2428811" prot="private" static="yes" mutable="no">
+        <type><ref refid="structlist" kindref="compound">list</ref></type>
+        <definition>list ObjectRecognition.BOX::_fields_</definition>
+        <argsstring></argsstring>
+        <name>_fields_</name>
+        <initializer>= [(&quot;x&quot;, c_float),
+                (&quot;y&quot;, c_float),
+                (&quot;w&quot;, c_float),
+                (&quot;h&quot;, c_float)]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="36" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="195">
+        <label>Structure</label>
+      </node>
+      <node id="194">
+        <label>ObjectRecognition.BOX</label>
+        <link refid="class_object_recognition_1_1_b_o_x"/>
+        <childnode refid="195" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="198">
+        <label>list</label>
+        <link refid="structlist"/>
+        <childnode refid="199" relation="usage">
+          <edgelabel>front</edgelabel>
+          <edgelabel>back</edgelabel>
+        </childnode>
+      </node>
+      <node id="199">
+        <label>node</label>
+        <link refid="structnode"/>
+        <childnode refid="199" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="197">
+        <label>Structure</label>
+      </node>
+      <node id="196">
+        <label>ObjectRecognition.BOX</label>
+        <link refid="class_object_recognition_1_1_b_o_x"/>
+        <childnode refid="197" relation="public-inheritance">
+        </childnode>
+        <childnode refid="198" relation="usage">
+          <edgelabel>_fields_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="35" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="35" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_object_recognition_1_1_b_o_x_1ad69563aa149c5ceb6aab6dfda2428811" prot="private" virt="non-virtual"><scope>ObjectRecognition::BOX</scope><name>_fields_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

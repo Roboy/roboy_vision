@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_312b8be5e38154290ec5606af79d7e60" kind="dir">
+    <compoundname>/home/ubuntu/workspace/roboy_vision/src/zed</compoundname>
+    <innerdir refid="dir_9ca374cf318daf1d05102cde9723090d">/home/ubuntu/workspace/roboy_vision/src/zed/sl</innerdir>
+    <innerfile refid="utils_8hpp">utils.hpp</innerfile>
+    <innerfile refid="zed_8cpp">zed.cpp</innerfile>
+    <innerfile refid="zed_roboy_8cpp">zedRoboy.cpp</innerfile>
+    <innerfile refid="zed_roboy_8py">zedRoboy.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/"/>
+  </compounddef>
+</doxygen>

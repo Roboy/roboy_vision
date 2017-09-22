@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structupdate__args" kind="struct" language="C++" prot="public">
+    <compoundname>update_args</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structupdate__args_1a1accceb722234c5aa3f38cc85c1d7cf7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int update_args::batch</definition>
+        <argsstring></argsstring>
+        <name>batch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="91" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structupdate__args_1a3a0145d580360b2ffae2879af7e68c67" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float update_args::learning_rate</definition>
+        <argsstring></argsstring>
+        <name>learning_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="92" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structupdate__args_1abc35ad880888473f137cb9744e874870" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float update_args::momentum</definition>
+        <argsstring></argsstring>
+        <name>momentum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="93" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structupdate__args_1a9eb5a4b5663dca4b69a13a19da674f19" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float update_args::decay</definition>
+        <argsstring></argsstring>
+        <name>decay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="94" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structupdate__args_1ab246da6c016ed395f727ab4f12df6e7d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int update_args::adam</definition>
+        <argsstring></argsstring>
+        <name>adam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="95" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structupdate__args_1a1822b0d844c349135590f3583415faec" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float update_args::B1</definition>
+        <argsstring></argsstring>
+        <name>B1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="96" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structupdate__args_1ad4542261082ee829820f2d6a750021f6" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float update_args::B2</definition>
+        <argsstring></argsstring>
+        <name>B2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="97" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structupdate__args_1a7a173936c93e7424d77347cfa9ab3f2f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float update_args::eps</definition>
+        <argsstring></argsstring>
+        <name>eps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="98" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structupdate__args_1addc09d90e7323fc19a4e04b0612ef10b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int update_args::t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="99" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="90" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="90" bodyend="100"/>
+    <listofallmembers>
+      <member refid="structupdate__args_1ab246da6c016ed395f727ab4f12df6e7d" prot="public" virt="non-virtual"><scope>update_args</scope><name>adam</name></member>
+      <member refid="structupdate__args_1a1822b0d844c349135590f3583415faec" prot="public" virt="non-virtual"><scope>update_args</scope><name>B1</name></member>
+      <member refid="structupdate__args_1ad4542261082ee829820f2d6a750021f6" prot="public" virt="non-virtual"><scope>update_args</scope><name>B2</name></member>
+      <member refid="structupdate__args_1a1accceb722234c5aa3f38cc85c1d7cf7" prot="public" virt="non-virtual"><scope>update_args</scope><name>batch</name></member>
+      <member refid="structupdate__args_1a9eb5a4b5663dca4b69a13a19da674f19" prot="public" virt="non-virtual"><scope>update_args</scope><name>decay</name></member>
+      <member refid="structupdate__args_1a7a173936c93e7424d77347cfa9ab3f2f" prot="public" virt="non-virtual"><scope>update_args</scope><name>eps</name></member>
+      <member refid="structupdate__args_1a3a0145d580360b2ffae2879af7e68c67" prot="public" virt="non-virtual"><scope>update_args</scope><name>learning_rate</name></member>
+      <member refid="structupdate__args_1abc35ad880888473f137cb9744e874870" prot="public" virt="non-virtual"><scope>update_args</scope><name>momentum</name></member>
+      <member refid="structupdate__args_1addc09d90e7323fc19a4e04b0612ef10b" prot="public" virt="non-virtual"><scope>update_args</scope><name>t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

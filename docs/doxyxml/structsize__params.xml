@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structsize__params" kind="struct" language="C++" prot="public">
+    <compoundname>size_params</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsize__params_1ac872965dfd440b79da4db7d613f36ed5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int size_params::batch</definition>
+        <argsstring></argsstring>
+        <name>batch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c" line="112" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsize__params_1ababcd3a740ca14059c55124b38bd1adf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int size_params::inputs</definition>
+        <argsstring></argsstring>
+        <name>inputs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c" line="113" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsize__params_1af2cdbb6a29f9aa108d3132fb36895769" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int size_params::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c" line="114" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsize__params_1a8497d7dc99707c0993f5a2046c38478f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int size_params::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c" line="115" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsize__params_1aa260a97f277fe40b200756374ffe410d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int size_params::c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c" line="116" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsize__params_1a1cc9cfac9ae1198cb6e3683ca228b4e7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int size_params::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c" line="117" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsize__params_1a6d1bb681fb27f447e5428776137a771a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int size_params::time_steps</definition>
+        <argsstring></argsstring>
+        <name>time_steps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c" line="118" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsize__params_1afd0e06058d3ccfc9ce96c72069a8a257" prot="public" static="no" mutable="no">
+        <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+        <definition>network size_params::net</definition>
+        <argsstring></argsstring>
+        <name>net</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c" line="119" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="346">
+        <label>network</label>
+        <link refid="structnetwork"/>
+        <childnode refid="347" relation="usage">
+          <edgelabel>layers</edgelabel>
+        </childnode>
+        <childnode refid="348" relation="usage">
+          <edgelabel>hierarchy</edgelabel>
+        </childnode>
+      </node>
+      <node id="345">
+        <label>size_params</label>
+        <link refid="structsize__params"/>
+        <childnode refid="346" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="348">
+        <label>tree</label>
+        <link refid="structtree"/>
+      </node>
+      <node id="347">
+        <label>layer</label>
+        <link refid="structlayer"/>
+        <childnode refid="347" relation="usage">
+          <edgelabel>wf</edgelabel>
+          <edgelabel>state_layer</edgelabel>
+          <edgelabel>wg</edgelabel>
+          <edgelabel>self_layer</edgelabel>
+          <edgelabel>uf</edgelabel>
+          <edgelabel>wh</edgelabel>
+          <edgelabel>input_r_layer</edgelabel>
+          <edgelabel>state_save_layer</edgelabel>
+          <edgelabel>ug</edgelabel>
+          <edgelabel>wi</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+        <childnode refid="348" relation="usage">
+          <edgelabel>softmax_tree</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c" line="111" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c" bodystart="111" bodyend="120"/>
+    <listofallmembers>
+      <member refid="structsize__params_1ac872965dfd440b79da4db7d613f36ed5" prot="public" virt="non-virtual"><scope>size_params</scope><name>batch</name></member>
+      <member refid="structsize__params_1aa260a97f277fe40b200756374ffe410d" prot="public" virt="non-virtual"><scope>size_params</scope><name>c</name></member>
+      <member refid="structsize__params_1af2cdbb6a29f9aa108d3132fb36895769" prot="public" virt="non-virtual"><scope>size_params</scope><name>h</name></member>
+      <member refid="structsize__params_1a1cc9cfac9ae1198cb6e3683ca228b4e7" prot="public" virt="non-virtual"><scope>size_params</scope><name>index</name></member>
+      <member refid="structsize__params_1ababcd3a740ca14059c55124b38bd1adf" prot="public" virt="non-virtual"><scope>size_params</scope><name>inputs</name></member>
+      <member refid="structsize__params_1afd0e06058d3ccfc9ce96c72069a8a257" prot="public" virt="non-virtual"><scope>size_params</scope><name>net</name></member>
+      <member refid="structsize__params_1a6d1bb681fb27f447e5428776137a771a" prot="public" virt="non-virtual"><scope>size_params</scope><name>time_steps</name></member>
+      <member refid="structsize__params_1a8497d7dc99707c0993f5a2046c38478f" prot="public" virt="non-virtual"><scope>size_params</scope><name>w</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

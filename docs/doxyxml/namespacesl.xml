@@ -1,0 +1,1941 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacesl" kind="namespace" language="C++">
+    <compoundname>sl</compoundname>
+    <innerclass refid="structsl_1_1_calibration_parameters" prot="public">sl::CalibrationParameters</innerclass>
+    <innerclass refid="classsl_1_1_camera" prot="public">sl::Camera</innerclass>
+    <innerclass refid="structsl_1_1_camera_information" prot="public">sl::CameraInformation</innerclass>
+    <innerclass refid="structsl_1_1_camera_parameters" prot="public">sl::CameraParameters</innerclass>
+    <innerclass refid="classsl_1_1_init_parameters" prot="public">sl::InitParameters</innerclass>
+    <innerclass refid="classsl_1_1_mat" prot="public">sl::Mat</innerclass>
+    <innerclass refid="classsl_1_1_matrix3f" prot="public">sl::Matrix3f</innerclass>
+    <innerclass refid="classsl_1_1_matrix4f" prot="public">sl::Matrix4f</innerclass>
+    <innerclass refid="classsl_1_1_mesh" prot="public">sl::Mesh</innerclass>
+    <innerclass refid="classsl_1_1_mesh_filter_parameters" prot="public">sl::MeshFilterParameters</innerclass>
+    <innerclass refid="classsl_1_1_orientation" prot="public">sl::Orientation</innerclass>
+    <innerclass refid="classsl_1_1_pose" prot="public">sl::Pose</innerclass>
+    <innerclass refid="structsl_1_1_recording_state" prot="public">sl::RecordingState</innerclass>
+    <innerclass refid="structsl_1_1_resolution" prot="public">sl::Resolution</innerclass>
+    <innerclass refid="classsl_1_1_rotation" prot="public">sl::Rotation</innerclass>
+    <innerclass refid="classsl_1_1_runtime_parameters" prot="public">sl::RuntimeParameters</innerclass>
+    <innerclass refid="classsl_1_1_spatial_mapping_parameters" prot="public">sl::SpatialMappingParameters</innerclass>
+    <innerclass refid="classsl_1_1_tracking_parameters" prot="public">sl::TrackingParameters</innerclass>
+    <innerclass refid="classsl_1_1_transform" prot="public">sl::Transform</innerclass>
+    <innerclass refid="classsl_1_1_translation" prot="public">sl::Translation</innerclass>
+      <sectiondef kind="user-defined">
+      <header>ENUM to string</header>
+      <memberdef kind="function" id="defines_8hpp_1adc2d797499df348787b53fe4dfb7de65" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string sl::resolution2str</definition>
+        <argsstring>(RESOLUTION res)</argsstring>
+        <name>resolution2str</name>
+        <param>
+          <type><ref refid="group___enumerations_1gaeafb9a9ca728b455b54ed5abdac04a06" kindref="member">RESOLUTION</ref></type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="368" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="368" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="defines_8hpp_1aa4df3060ed7d55ed41eaf54a1c93e09a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string sl::statusCode2str</definition>
+        <argsstring>(SELF_CALIBRATION_STATE stat)</argsstring>
+        <name>statusCode2str</name>
+        <param>
+          <type><ref refid="group___enumerations_1ga640f6de66ba32dc48f1dc7ba8587e951" kindref="member">SELF_CALIBRATION_STATE</ref></type>
+          <declname>stat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="390" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="390" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="defines_8hpp_1a332fca9390aa98b412dbb31d25b9ff84" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group___enumerations_1gae47b83cff7f4ae0910ca2e12f6c1f839" kindref="member">DEPTH_MODE</ref></type>
+        <definition>static DEPTH_MODE sl::str2mode</definition>
+        <argsstring>(std::string mode)</argsstring>
+        <name>str2mode</name>
+        <param>
+          <type>std::string</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="412" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="412" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="defines_8hpp_1a203e72814e76ebe8d29a6663e7f34cca" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string sl::depthMode2str</definition>
+        <argsstring>(DEPTH_MODE mode)</argsstring>
+        <name>depthMode2str</name>
+        <param>
+          <type><ref refid="group___enumerations_1gae47b83cff7f4ae0910ca2e12f6c1f839" kindref="member">DEPTH_MODE</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="425" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="425" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="defines_8hpp_1af9a6a080329dec9b989abdf634e15099" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string sl::sensingMode2str</definition>
+        <argsstring>(SENSING_MODE mode)</argsstring>
+        <name>sensingMode2str</name>
+        <param>
+          <type><ref refid="group___enumerations_1gab2582f40a88ce7c33d5edfd6ca3ea0f6" kindref="member">SENSING_MODE</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="444" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="444" bodyend="457"/>
+      </memberdef>
+      <memberdef kind="function" id="defines_8hpp_1aaf618e9e53e65306ef8307c2d4fc0e78" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string sl::unit2str</definition>
+        <argsstring>(UNIT unit)</argsstring>
+        <name>unit2str</name>
+        <param>
+          <type><ref refid="group___enumerations_1gaff0aee1a44b17bccb1a69a42ff18f8e5" kindref="member">UNIT</ref></type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="459" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="459" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="defines_8hpp_1a0098e24dcf4a0421b1322e05978d8dc2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group___enumerations_1gaff0aee1a44b17bccb1a69a42ff18f8e5" kindref="member">UNIT</ref></type>
+        <definition>static UNIT sl::str2unit</definition>
+        <argsstring>(std::string unit)</argsstring>
+        <name>str2unit</name>
+        <param>
+          <type>std::string</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="481" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="481" bodyend="494"/>
+      </memberdef>
+      <memberdef kind="function" id="defines_8hpp_1aa2155d3ebffd9de2c885094306ecf965" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string sl::trackingState2str</definition>
+        <argsstring>(TRACKING_STATE state)</argsstring>
+        <name>trackingState2str</name>
+        <param>
+          <type><ref refid="group___enumerations_1ga8edb798f42f7bd7778a2d0bec2c3efa6" kindref="member">TRACKING_STATE</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="496" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="496" bodyend="516"/>
+      </memberdef>
+      <memberdef kind="function" id="defines_8hpp_1ae1516eac957041448708530bb6d072f1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string sl::spatialMappingState2str</definition>
+        <argsstring>(SPATIAL_MAPPING_STATE state)</argsstring>
+        <name>spatialMappingState2str</name>
+        <param>
+          <type><ref refid="group___enumerations_1gaab0cb46ab3ba6cac91b4aff07ea78441" kindref="member">SPATIAL_MAPPING_STATE</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="518" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="518" bodyend="541"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" prot="public" static="no">
+        <name>MEM</name>
+        <enumvalue id="_core_8hpp_1gacce221d511ce5c81441e88b6b67dece3a220875ab9847fb689655811bd2d5e36f" prot="public">
+          <name>MEM_CPU</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CPU Memory (Processor side). </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_core_8hpp_1gacce221d511ce5c81441e88b6b67dece3a5a0e9f8906f0071b49d91113f440c18e" prot="public">
+          <name>MEM_GPU</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>GPU Memory (Graphic card side). </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>List available memory type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="174" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="174" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___enumerations_1ga94ef27af8db885e1f68672c1e55b8d28" prot="public" static="no">
+        <name>COPY_TYPE</name>
+        <enumvalue id="_core_8hpp_1ga94ef27af8db885e1f68672c1e55b8d28aa68da5498a6e88b08c7c9357996f0822" prot="public">
+          <name>COPY_TYPE_CPU_CPU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>copy data from CPU to CPU. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_core_8hpp_1ga94ef27af8db885e1f68672c1e55b8d28a192941bbdee89d4902b7dd259d75acb9" prot="public">
+          <name>COPY_TYPE_CPU_GPU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>copy data from CPU to GPU. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_core_8hpp_1ga94ef27af8db885e1f68672c1e55b8d28a325f5e3581cd9a6a0ade001bd8c50c72" prot="public">
+          <name>COPY_TYPE_GPU_GPU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>copy data from GPU to GPU. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_core_8hpp_1ga94ef27af8db885e1f68672c1e55b8d28a948ec3624646576be72e0651bd9aca15" prot="public">
+          <name>COPY_TYPE_GPU_CPU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>copy data from GPU to CPU. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>List available copy operation on <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="188" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="188" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___enumerations_1ga17040776536c6a3aea17eb101356af93" prot="public" static="no">
+        <name>MAT_TYPE</name>
+        <enumvalue id="_core_8hpp_1ga17040776536c6a3aea17eb101356af93a670ef5316c77a98a4c435afefcb7d035" prot="public">
+          <name>MAT_TYPE_32F_C1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>float 1 channel. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_core_8hpp_1ga17040776536c6a3aea17eb101356af93af7c49fb7e0c548d51c6a5a0e1c1706e9" prot="public">
+          <name>MAT_TYPE_32F_C2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>float 2 channels. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_core_8hpp_1ga17040776536c6a3aea17eb101356af93af22715c8120e8daa1235252353cdbbde" prot="public">
+          <name>MAT_TYPE_32F_C3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>float 3 channels. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_core_8hpp_1ga17040776536c6a3aea17eb101356af93a0e13ec00bf20aaa5ed8df7a813a02bec" prot="public">
+          <name>MAT_TYPE_32F_C4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>float 4 channels. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_core_8hpp_1ga17040776536c6a3aea17eb101356af93ada94478b1cdeae9c0d904921c2783c88" prot="public">
+          <name>MAT_TYPE_8U_C1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>unsigned char 1 channel. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_core_8hpp_1ga17040776536c6a3aea17eb101356af93a8a0275190bd5647888593b1d73f5d4aa" prot="public">
+          <name>MAT_TYPE_8U_C2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>unsigned char 2 channels. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_core_8hpp_1ga17040776536c6a3aea17eb101356af93a5cf57de94f9435bc1affb1ad2f41790b" prot="public">
+          <name>MAT_TYPE_8U_C3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>unsigned char 3 channels. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_core_8hpp_1ga17040776536c6a3aea17eb101356af93a58420f150033205aba8731a91e369386" prot="public">
+          <name>MAT_TYPE_8U_C4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>unsigned char 4 channels. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>List available <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> formats. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="200" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="200" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___enumerations_1gaeafb9a9ca728b455b54ed5abdac04a06" prot="public" static="no">
+        <name>RESOLUTION</name>
+        <enumvalue id="defines_8hpp_1gaeafb9a9ca728b455b54ed5abdac04a06a39a8316e9b9c5d6cd776d6d54f0c88b0" prot="public">
+          <name>RESOLUTION_HD2K</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>2208*1242, available framerates: 15 fps. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaeafb9a9ca728b455b54ed5abdac04a06a74c7144b16ca3b31fed92da70bcc87f5" prot="public">
+          <name>RESOLUTION_HD1080</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>1920*1080, available framerates: 15, 30 fps. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaeafb9a9ca728b455b54ed5abdac04a06aefccaacc8d3894bd584074b3934d0f93" prot="public">
+          <name>RESOLUTION_HD720</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>1280*720, available framerates: 15, 30, 60 fps. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaeafb9a9ca728b455b54ed5abdac04a06a05570b2e2208f329b41f5149ae89375c" prot="public">
+          <name>RESOLUTION_VGA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>672*376, available framerates: 15, 30, 60, 100 fps. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaeafb9a9ca728b455b54ed5abdac04a06aa9d9c609a366e6fd7331a9b8ef894a2c" prot="public">
+          <name>RESOLUTION_LAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>List available video resolutions. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>Since v1.0, VGA mode has been updated to WVGA (from 640*480 to 672*376) and requires a firmware update to function (&gt;= 1142). Firmware can be updated in the ZED Explorer. </para></simplesect>
+<simplesect kind="warning"><para>NVIDIA Jetson boards do not support all ZED video resolutions and framerates. For more information, please read the on-line API documentation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="117" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="117" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___enumerations_1gaee3848f5141a0b411e15424bdca87d5e" prot="public" static="no">
+        <name>CAMERA_SETTINGS</name>
+        <enumvalue id="defines_8hpp_1gaee3848f5141a0b411e15424bdca87d5ea54e90cfc139c35a27fd4dd443d9a7c38" prot="public">
+          <name>CAMERA_SETTINGS_BRIGHTNESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the brightness control. Affected value should be between 0 and 8. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaee3848f5141a0b411e15424bdca87d5eacbd2ea72f6fb874f860045be016a0170" prot="public">
+          <name>CAMERA_SETTINGS_CONTRAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the contrast control. Affected value should be between 0 and 8. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaee3848f5141a0b411e15424bdca87d5ea3401412fef5ca9dcf96a9e94e2990876" prot="public">
+          <name>CAMERA_SETTINGS_HUE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the hue control. Affected value should be between 0 and 11. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaee3848f5141a0b411e15424bdca87d5ea0cf6cba3e61358d0408531bf50c22456" prot="public">
+          <name>CAMERA_SETTINGS_SATURATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the saturation control. Affected value should be between 0 and 8. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaee3848f5141a0b411e15424bdca87d5ea49494729a8cb536eb7c0beba0051d196" prot="public">
+          <name>CAMERA_SETTINGS_GAIN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the gain control. Affected value should be between 0 and 100 for manual control. If ZED_EXPOSURE is set to -1, the gain is in auto mode too. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaee3848f5141a0b411e15424bdca87d5eacce0b501cef8ecdcfefd9cc4982c90f1" prot="public">
+          <name>CAMERA_SETTINGS_EXPOSURE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the exposure control. A -1 value enable the AutoExposure/AutoGain control,as the boolean parameter (default) does. Affected value should be between 0 and 100 for manual control. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaee3848f5141a0b411e15424bdca87d5eacc0c524030bc3917b9b19e7e42325a5f" prot="public">
+          <name>CAMERA_SETTINGS_WHITEBALANCE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the color temperature control. Affected value should be between 2800 and 6500 with a step of 100. A value of -1 set the AWB ( auto white balance), as the boolean parameter (default) does. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaee3848f5141a0b411e15424bdca87d5ea397fc02c21f0b3121f1004e3709c0191" prot="public">
+          <name>CAMERA_SETTINGS_AUTO_WHITEBALANCE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the status of white balance (automatic or manual). A value of 0 disable the AWB, while 1 activate it. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaee3848f5141a0b411e15424bdca87d5ea82ccebf0ddbbcacec23ca09360ed752b" prot="public">
+          <name>CAMERA_SETTINGS_LAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>List available camera settings for the ZED camera (contrast, hue, saturation, gain...). </para>        </briefdescription>
+        <detaileddescription>
+<para>Each enum defines one of those settings. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="131" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="131" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___enumerations_1ga640f6de66ba32dc48f1dc7ba8587e951" prot="public" static="no">
+        <name>SELF_CALIBRATION_STATE</name>
+        <enumvalue id="defines_8hpp_1ga640f6de66ba32dc48f1dc7ba8587e951a575864814f8cc07ab08f41d00940879b" prot="public">
+          <name>SELF_CALIBRATION_STATE_NOT_STARTED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Self calibration has not run yet (no <ref refid="classsl_1_1_camera_1a46f6220e257357d510392317fd620095" kindref="member">sl::Camera::open</ref> or <ref refid="classsl_1_1_camera_1a8b5b9dd8a26ec7b6bf9fa3e52cedce26" kindref="member">sl::Camera::resetSelfCalibration</ref> called). </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga640f6de66ba32dc48f1dc7ba8587e951ae3198f48fadbe499604f0efea6ec17ef" prot="public">
+          <name>SELF_CALIBRATION_STATE_RUNNING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Self calibration is currently running. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga640f6de66ba32dc48f1dc7ba8587e951aecd667a050411c25bb00ba9d1f2d3933" prot="public">
+          <name>SELF_CALIBRATION_STATE_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Self calibration has finished running but did not manage to get accurate values. Old parameters are taken instead. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga640f6de66ba32dc48f1dc7ba8587e951aed8e33d5ccebaaee53d3c2c5bb8c7545" prot="public">
+          <name>SELF_CALIBRATION_STATE_SUCCESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Self calibration has finished running and did manage to get accurate values. New parameters are set. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga640f6de66ba32dc48f1dc7ba8587e951a9bc9430bb46bf1d0c05f5c0e66af99e8" prot="public">
+          <name>SELF_CALIBRATION_STATE_LAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Status for self calibration. </para>        </briefdescription>
+        <detaileddescription>
+<para>Since v0.9.3, self-calibration is done in background and start in the <ref refid="classsl_1_1_camera_1a46f6220e257357d510392317fd620095" kindref="member">sl::Camera::open</ref> or Reset function. You can follow the current status for the self-calibration any time once ZED object has been construct. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="149" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="149" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___enumerations_1gae47b83cff7f4ae0910ca2e12f6c1f839" prot="public" static="no">
+        <name>DEPTH_MODE</name>
+        <enumvalue id="defines_8hpp_1gae47b83cff7f4ae0910ca2e12f6c1f839aa14b6f0dc7740c48f41414498bcdd1e1" prot="public">
+          <name>DEPTH_MODE_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This mode does not compute any depth map. Only rectified stereo images will be available. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gae47b83cff7f4ae0910ca2e12f6c1f839a2e69fda6388f664e73e05a9fddcf4d99" prot="public">
+          <name>DEPTH_MODE_PERFORMANCE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Fastest mode for depth computation. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gae47b83cff7f4ae0910ca2e12f6c1f839a2f9fd476db98af26046449e3a1ced8ce" prot="public">
+          <name>DEPTH_MODE_MEDIUM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Balanced quality mode. Depth map is robust in any environment and requires medium resources for computation. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gae47b83cff7f4ae0910ca2e12f6c1f839a2d27cd1abc280c5b7c13a5ea68165d26" prot="public">
+          <name>DEPTH_MODE_QUALITY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Best quality mode. Requires more compute power. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gae47b83cff7f4ae0910ca2e12f6c1f839a6d1a9533be82dda58ecb753d30efe4bd" prot="public">
+          <name>DEPTH_MODE_LAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>List available depth computation modes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="162" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="162" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___enumerations_1gab2582f40a88ce7c33d5edfd6ca3ea0f6" prot="public" static="no">
+        <name>SENSING_MODE</name>
+        <enumvalue id="defines_8hpp_1gab2582f40a88ce7c33d5edfd6ca3ea0f6ac5ca54807d28c0f0dd6851b021d12607" prot="public">
+          <name>SENSING_MODE_STANDARD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This mode outputs ZED standard depth map that preserves edges and depth accuracy. Applications example: Obstacle detection, Automated navigation, People detection, 3D reconstruction. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gab2582f40a88ce7c33d5edfd6ca3ea0f6a3b09c26bc117926b56a57e6984ecad26" prot="public">
+          <name>SENSING_MODE_FILL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This mode outputs a smooth and fully dense depth map. Applications example: AR/VR, Mixed-reality capture, Image post-processing. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gab2582f40a88ce7c33d5edfd6ca3ea0f6ae01e1e6928177faeb41132a2c180f5f8" prot="public">
+          <name>SENSING_MODE_LAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>List available depth sensing modes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="175" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="175" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___enumerations_1gaff0aee1a44b17bccb1a69a42ff18f8e5" prot="public" static="no">
+        <name>UNIT</name>
+        <enumvalue id="defines_8hpp_1gaff0aee1a44b17bccb1a69a42ff18f8e5a173184eb2e2495b30579af95c740f46e" prot="public">
+          <name>UNIT_MILLIMETER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaff0aee1a44b17bccb1a69a42ff18f8e5a10fbe05a3afe1749f4fc9b0737535195" prot="public">
+          <name>UNIT_CENTIMETER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaff0aee1a44b17bccb1a69a42ff18f8e5ab01ba77a3eb3b0f02e9615f8c2dd136f" prot="public">
+          <name>UNIT_METER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaff0aee1a44b17bccb1a69a42ff18f8e5a3107157b60b5fdf1497ba18293a1f0e9" prot="public">
+          <name>UNIT_INCH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaff0aee1a44b17bccb1a69a42ff18f8e5a910e57515c4f15d0a49f326d89bf3736" prot="public">
+          <name>UNIT_FOOT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaff0aee1a44b17bccb1a69a42ff18f8e5a0cb52cb05076971498c32634337aa0d7" prot="public">
+          <name>UNIT_LAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumerate for available metric unit of the depth. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="188" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="188" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___enumerations_1ga11d40998d9e455a331ee9aa71e6e0de9" prot="public" static="no">
+        <name>COORDINATE_SYSTEM</name>
+        <enumvalue id="defines_8hpp_1ga11d40998d9e455a331ee9aa71e6e0de9aaa5ba6e601b6aa58e310ceb1d3880af3" prot="public">
+          <name>COORDINATE_SYSTEM_IMAGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Standard coordinates system in computer vision. Used in OpenCV : see here : <ulink url="http://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html">http://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html</ulink> </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga11d40998d9e455a331ee9aa71e6e0de9aa19e2fee8eab7f670681e732021ba1cc" prot="public">
+          <name>COORDINATE_SYSTEM_LEFT_HANDED_Y_UP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Left-Handed with Y up and Z forward. Used in Unity with DirectX. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga11d40998d9e455a331ee9aa71e6e0de9a5ef59d75c755c89a30c67ed221e2c2ed" prot="public">
+          <name>COORDINATE_SYSTEM_RIGHT_HANDED_Y_UP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Right-Handed with Y pointing up and Z backward. Used in OpenGL. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga11d40998d9e455a331ee9aa71e6e0de9ad75370062fb53f3a08ebd31c1d636fd1" prot="public">
+          <name>COORDINATE_SYSTEM_RIGHT_HANDED_Z_UP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Right-Handed with Z pointing up and Y forward. Used in 3DSMax. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga11d40998d9e455a331ee9aa71e6e0de9aa2cdb0cad46c2e627ce6f09bc547c81d" prot="public">
+          <name>COORDINATE_SYSTEM_LEFT_HANDED_Z_UP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Left-Handed with Z axis pointing up and X forward. Used in Unreal Engine. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga11d40998d9e455a331ee9aa71e6e0de9a3640426a98a172f30aa8fd8978dfc73c" prot="public">
+          <name>COORDINATE_SYSTEM_LAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>List available coordinates systems for positional tracking and points cloud representation. </para>        </briefdescription>
+        <detaileddescription>
+<para>Positional tracking is provided in the given coordinates system. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="203" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="203" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___enumerations_1ga1fef76ba52aeb9305c1864e4b56fd426" prot="public" static="no">
+        <name>MEASURE</name>
+        <enumvalue id="defines_8hpp_1ga1fef76ba52aeb9305c1864e4b56fd426ac65d7b681404fd40c3df73469139a055" prot="public">
+          <name>MEASURE_DISPARITY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Disparity map, 1 channel, FLOAT. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga1fef76ba52aeb9305c1864e4b56fd426ad41a9e6e320bf0eb70bf797c0cc1a62e" prot="public">
+          <name>MEASURE_DEPTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Depth map, 1 channel, FLOAT. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga1fef76ba52aeb9305c1864e4b56fd426a4cea7f68283d8f1180f2f1f20db4f289" prot="public">
+          <name>MEASURE_CONFIDENCE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Certainty/confidence of the disparity map, 1 channel, FLOAT. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga1fef76ba52aeb9305c1864e4b56fd426a02a8e0c8580ad45af8e0851719478822" prot="public">
+          <name>MEASURE_XYZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Point cloud, 4 channels, FLOAT, channel 4 is empty. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga1fef76ba52aeb9305c1864e4b56fd426a6b9704a99577640e8e1361e3032c6600" prot="public">
+          <name>MEASURE_XYZRGBA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Colored point cloud, 4 channels, FLOAT, channel 4 contains color in R-G-B-A order. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga1fef76ba52aeb9305c1864e4b56fd426a21be37c3fa5cab165feff7849f8bf642" prot="public">
+          <name>MEASURE_XYZBGRA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Colored point cloud, 4 channels, FLOAT, channel 4 contains color in B-G-R-A order. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga1fef76ba52aeb9305c1864e4b56fd426a8915fea96ce3e04ce92d14872dbd4556" prot="public">
+          <name>MEASURE_XYZARGB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Colored point cloud, 4 channels, FLOAT, channel 4 contains color in A-R-G-B order. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga1fef76ba52aeb9305c1864e4b56fd426a503b3385b0d83921179ee79e8465f61a" prot="public">
+          <name>MEASURE_XYZABGR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Colored point cloud, 4 channels, FLOAT, channel 4 contains color in A-B-G-R order. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga1fef76ba52aeb9305c1864e4b56fd426ae643acbfd8bc8ffbba4d2bbf0c37d926" prot="public">
+          <name>MEASURE_LAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>List retrievable measures. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="217" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="217" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___enumerations_1ga616e75740529ed8585a58fd521b38a55" prot="public" static="no">
+        <name>VIEW</name>
+        <enumvalue id="defines_8hpp_1ga616e75740529ed8585a58fd521b38a55a26d97d55ae19090545e3652639b34f11" prot="public">
+          <name>VIEW_LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Rectified left image. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga616e75740529ed8585a58fd521b38a55a4d4faffa1073badd869793e2f65b4f31" prot="public">
+          <name>VIEW_RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Rectified right image. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga616e75740529ed8585a58fd521b38a55ab1d89c67063de22f91ec6a890c083229" prot="public">
+          <name>VIEW_LEFT_GRAY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Rectified left grayscale image. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga616e75740529ed8585a58fd521b38a55a29443d69defb218a69bc3451dbb5af51" prot="public">
+          <name>VIEW_RIGHT_GRAY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Rectified right grayscale image. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga616e75740529ed8585a58fd521b38a55ac7f5ce0918c472d03050e8d0bdbc3f4a" prot="public">
+          <name>VIEW_LEFT_UNRECTIFIED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Raw left image. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga616e75740529ed8585a58fd521b38a55af8fe2d33880c58d0e596bef1c3ddbc65" prot="public">
+          <name>VIEW_RIGHT_UNRECTIFIED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Raw right image. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga616e75740529ed8585a58fd521b38a55a2c7cbd20d0444c8dabeba87ddf8b874a" prot="public">
+          <name>VIEW_LEFT_UNRECTIFIED_GRAY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Raw left grayscale image. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga616e75740529ed8585a58fd521b38a55ac16ce37104832c83e6e4622750e81d03" prot="public">
+          <name>VIEW_RIGHT_UNRECTIFIED_GRAY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Raw right grayscale image. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga616e75740529ed8585a58fd521b38a55a2c7020f5bdd169c8475247e95915d753" prot="public">
+          <name>VIEW_SIDE_BY_SIDE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Left and right image (the image width is therefore doubled). </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga616e75740529ed8585a58fd521b38a55abcdbb96aaa1dd0b2d87c15cfb0efa7c8" prot="public">
+          <name>VIEW_DEPTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Normalized depth image. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga616e75740529ed8585a58fd521b38a55ad66115f13aef022939d817a54e5d187c" prot="public">
+          <name>VIEW_CONFIDENCE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Normalized confidence image. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga616e75740529ed8585a58fd521b38a55a37bbd1e0f3fbd8a094628506f67c4346" prot="public">
+          <name>VIEW_LAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>List available views. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="234" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="234" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___enumerations_1ga1d7cf4471913aefe220580c5ffe24250" prot="public" static="no">
+        <name>DEPTH_FORMAT</name>
+        <enumvalue id="defines_8hpp_1ga1d7cf4471913aefe220580c5ffe24250aa71ad03bc11c577ae2a09325ea4dc799" prot="public">
+          <name>DEPTH_FORMAT_PNG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PNG image format in 16bits. 32bits depth is mapped to 16bits color image to preserve the consistency of the data range. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga1d7cf4471913aefe220580c5ffe24250a548be8102c19b6cae69144753cd13ebc" prot="public">
+          <name>DEPTH_FORMAT_PFM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>stream of bytes, graphic image file format. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga1d7cf4471913aefe220580c5ffe24250a231cf46f07987230cea2581ccbec1255" prot="public">
+          <name>DEPTH_FORMAT_PGM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gray-scale image format. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga1d7cf4471913aefe220580c5ffe24250ae8707939a308cb2c5cbf59e80b7618d7" prot="public">
+          <name>DEPTH_FORMAT_LAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>List available file formats for saving depth maps. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="254" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="254" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___enumerations_1gaec4e6209d4075d67533e7f4078663b95" prot="public" static="no">
+        <name>POINT_CLOUD_FORMAT</name>
+        <enumvalue id="defines_8hpp_1gaec4e6209d4075d67533e7f4078663b95a9b1c9d1db82de8a24567532ad4bf5c79" prot="public">
+          <name>POINT_CLOUD_FORMAT_XYZ_ASCII</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Generic point cloud file format, without color information. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaec4e6209d4075d67533e7f4078663b95a51264ce0100c67a4598a7c1aa65553bd" prot="public">
+          <name>POINT_CLOUD_FORMAT_PCD_ASCII</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Point Cloud Data file, with color information. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaec4e6209d4075d67533e7f4078663b95ab5f4a62daae055adfe5bab048eed479b" prot="public">
+          <name>POINT_CLOUD_FORMAT_PLY_ASCII</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PoLYgon file format, with color information. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaec4e6209d4075d67533e7f4078663b95a12c9d5ad4b9d6ef4db7b9a283dfd4bed" prot="public">
+          <name>POINT_CLOUD_FORMAT_VTK_ASCII</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Visualization ToolKit file, without color information. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaec4e6209d4075d67533e7f4078663b95ac080e94f3b47fdd4f90bac615cc4b7c1" prot="public">
+          <name>POINT_CLOUD_FORMAT_LAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>List available file formats for saving point clouds. </para>        </briefdescription>
+        <detaileddescription>
+<para>Stores the spatial coordinates (x,y,z) of each pixel and optionally its RGB color. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="266" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="266" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___enumerations_1ga8edb798f42f7bd7778a2d0bec2c3efa6" prot="public" static="no">
+        <name>TRACKING_STATE</name>
+        <enumvalue id="defines_8hpp_1ga8edb798f42f7bd7778a2d0bec2c3efa6a26185d28665e45ec90763dd151278788" prot="public">
+          <name>TRACKING_STATE_SEARCHING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The camera is searching for a previously known position to locate itself. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga8edb798f42f7bd7778a2d0bec2c3efa6ac068f10cdaba9be4dc1ab84ecc3e6b4d" prot="public">
+          <name>TRACKING_STATE_OK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Positional tracking is working normally. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga8edb798f42f7bd7778a2d0bec2c3efa6a534b957a08ca9a49c006c29421451082" prot="public">
+          <name>TRACKING_STATE_OFF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Positional tracking is not enabled. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga8edb798f42f7bd7778a2d0bec2c3efa6a137c9e741018adb4c239b0b8c26b388e" prot="public">
+          <name>TRACKING_STATE_FPS_TOO_LOW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Effective FPS is too low to give proper results for motion tracking. Consider using PERFORMANCES parameters (DEPTH_MODE_PERFORMANCE, low camera resolution (VGA,HD720)) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga8edb798f42f7bd7778a2d0bec2c3efa6a22eef9c4d1e5b9e022c0539e2dc03c51" prot="public">
+          <name>TRACKING_STATE_LAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>List the different states of positional tracking. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="279" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="279" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___enumerations_1gada46476408f223f533f7f5eafed8efba" prot="public" static="no">
+        <name>AREA_EXPORT_STATE</name>
+        <enumvalue id="defines_8hpp_1gada46476408f223f533f7f5eafed8efbaaa87339a7369b130179e5f539e452af88" prot="public">
+          <name>AREA_EXPORT_STATE_SUCCESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The spatial memory file has been successfully created. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gada46476408f223f533f7f5eafed8efbaa4d0bb61dd6db45be664c0191dd1fc3e4" prot="public">
+          <name>AREA_EXPORT_STATE_RUNNING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The spatial memory is currently written. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gada46476408f223f533f7f5eafed8efbaaec9f973308e4677d05d0b7bdada4efe1" prot="public">
+          <name>AREA_EXPORT_STATE_NOT_STARTED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The spatial memory file exportation has not been called. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gada46476408f223f533f7f5eafed8efbaacf2b8369accdc65c27caaa0d33068b52" prot="public">
+          <name>AREA_EXPORT_STATE_FILE_EMPTY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The spatial memory contains no data, the file is empty. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gada46476408f223f533f7f5eafed8efbaa37c02e3619b806508486c819cc3af6fe" prot="public">
+          <name>AREA_EXPORT_STATE_FILE_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The spatial memory file has not been written because of a wrong file name. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gada46476408f223f533f7f5eafed8efbaa8cb7650959519351287b1cbca5f7d465" prot="public">
+          <name>AREA_EXPORT_STATE_SPATIAL_MEMORY_DISABLED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The spatial memory learning is disable, no file can be created. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gada46476408f223f533f7f5eafed8efbaad96612e89f4638ef9dd4727c172ebcaf" prot="public">
+          <name>AREA_EXPORT_STATE_LAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>List the different states of spatial memory area export. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="292" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="292" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___enumerations_1ga0fb1f25b68868e0a7c98a1144afa1b02" prot="public" static="no">
+        <name>REFERENCE_FRAME</name>
+        <enumvalue id="defines_8hpp_1ga0fb1f25b68868e0a7c98a1144afa1b02a9d4e29be56e4460985f80071538c84a8" prot="public">
+          <name>REFERENCE_FRAME_WORLD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The transform of <ref refid="classsl_1_1_pose" kindref="compound">sl::Pose</ref> will contains the motion with reference to the world frame (previously called PATH). </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga0fb1f25b68868e0a7c98a1144afa1b02a8bcecb251107946ad71aeed5fcbdfc32" prot="public">
+          <name>REFERENCE_FRAME_CAMERA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The transform of <ref refid="classsl_1_1_pose" kindref="compound">sl::Pose</ref> will contains the motion with reference to the previous camera frame (previously called POSE). </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga0fb1f25b68868e0a7c98a1144afa1b02a8542b556a37d7f682562eee414202527" prot="public">
+          <name>REFERENCE_FRAME_LAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Define which type of position matrix is used to store camera path and pose. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="307" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="307" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___enumerations_1gaab0cb46ab3ba6cac91b4aff07ea78441" prot="public" static="no">
+        <name>SPATIAL_MAPPING_STATE</name>
+        <enumvalue id="defines_8hpp_1gaab0cb46ab3ba6cac91b4aff07ea78441aaa784e3d7278e7ae518c4a861dc5fbe5" prot="public">
+          <name>SPATIAL_MAPPING_STATE_INITIALIZING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The spatial mapping is initializing. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaab0cb46ab3ba6cac91b4aff07ea78441a6c87d8ec67dd305f5b0bbe85dbf53005" prot="public">
+          <name>SPATIAL_MAPPING_STATE_OK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The depth and tracking data were correctly integrated in the fusion algorithm. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaab0cb46ab3ba6cac91b4aff07ea78441a553990ca13239cf3ed716b761c150939" prot="public">
+          <name>SPATIAL_MAPPING_STATE_NOT_ENOUGH_MEMORY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The maximum memory dedicated to the scanning has been reach, the mesh will no longer be updated. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaab0cb46ab3ba6cac91b4aff07ea78441a004ae95a812ed16cbef08f4a79d26883" prot="public">
+          <name>SPATIAL_MAPPING_STATE_NOT_ENABLED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><ref refid="classsl_1_1_camera_1aed259220037a328027552c023337c1bf" kindref="member">Camera::enableSpatialMapping()</ref> wasn&apos;t called (or the scanning was stopped and not relaunched). </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaab0cb46ab3ba6cac91b4aff07ea78441a615aa8df8455e35762514fa976e03efa" prot="public">
+          <name>SPATIAL_MAPPING_STATE_FPS_TOO_LOW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Effective FPS is too low to give proper results for spatial mapping. Consider using PERFORMANCES parameters (DEPTH_MODE_PERFORMANCE, low camera resolution (VGA,HD720), spatial mapping low resolution) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1gaab0cb46ab3ba6cac91b4aff07ea78441a91981f083eb1ef0d4048b440b8e0b704" prot="public">
+          <name>SPATIAL_MAPPING_STATE_LAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Gives the spatial mapping state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="318" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="318" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___enumerations_1ga5faff26ba7fac5c49cfa76345a94a1e7" prot="public" static="no">
+        <name>SVO_COMPRESSION_MODE</name>
+        <enumvalue id="defines_8hpp_1ga5faff26ba7fac5c49cfa76345a94a1e7a8fb13f58c8fae8701c0409dc94c36693" prot="public">
+          <name>SVO_COMPRESSION_MODE_RAW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>RAW images, no compression. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga5faff26ba7fac5c49cfa76345a94a1e7a82e97737bc5fa2bd2654801a52dc2b7c" prot="public">
+          <name>SVO_COMPRESSION_MODE_LOSSLESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>new Lossless, with PNG/ZSTD based compression : avg size = 42% of RAW). </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga5faff26ba7fac5c49cfa76345a94a1e7a35a9a3d5667b21258f40319cfa405d3c" prot="public">
+          <name>SVO_COMPRESSION_MODE_LOSSY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>new Lossy, with JPEG based compression : avg size = 22% of RAW). </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8hpp_1ga5faff26ba7fac5c49cfa76345a94a1e7a4fe7af8d4950446f6875ea3452888fc5" prot="public">
+          <name>SVO_COMPRESSION_MODE_LAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>List available compression modes for SVO recording. </para>        </briefdescription>
+        <detaileddescription>
+<para>sl::SVO_COMPRESSION_MODE_LOSSLESS is an improvement of previous lossless compression (used in ZED Explorer), even if size may be bigger, compression time is much faster. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="333" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="333" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="enum" id="_mesh_8hpp_1a3889686fbcb266c24dd731197c7c1508" prot="public" static="no">
+        <name>MESH_FILE_FORMAT</name>
+        <enumvalue id="_mesh_8hpp_1a3889686fbcb266c24dd731197c7c1508a5085a2851cf2acc24958f1e2a1c94b58" prot="public">
+          <name>MESH_FILE_PLY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Contains only vertices and faces. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_mesh_8hpp_1a3889686fbcb266c24dd731197c7c1508a5aa90e3d5c8b4920247e8baab61dac78" prot="public">
+          <name>MESH_FILE_PLY_BIN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Contains only vertices and faces, encoded in binary. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_mesh_8hpp_1a3889686fbcb266c24dd731197c7c1508a67325247f86e5f5e18d9e0c418bc8d0d" prot="public">
+          <name>MESH_FILE_OBJ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Contains vertices, normals, faces and textures informations if possible. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_mesh_8hpp_1a3889686fbcb266c24dd731197c7c1508abca1311f3a62eb6fd719b3f6f56cd20b" prot="public">
+          <name>MESH_FILE_LAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="29" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="29" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="enum" id="_mesh_8hpp_1aec6058c2b57082621ecbb2c657c9fee7" prot="public" static="no">
+        <name>MESH_TEXTURE_FORMAT</name>
+        <enumvalue id="_mesh_8hpp_1aec6058c2b57082621ecbb2c657c9fee7adf01a8b3e2cc876e1bd078f6e22c17ac" prot="public">
+          <name>MESH_TEXTURE_RGB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_mesh_8hpp_1aec6058c2b57082621ecbb2c657c9fee7a578d4d877a5990c2b6e66e8364cc75cf" prot="public">
+          <name>MESH_TEXTURE_RGBA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_mesh_8hpp_1aec6058c2b57082621ecbb2c657c9fee7a3ad2a4eba9434aac1b25a9dda0ae4a53" prot="public">
+          <name>MESH_TEXTURE_LAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="41" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="41" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" prot="public" static="no">
+        <name>ERROR_CODE</name>
+        <enumvalue id="types_8hpp_1ga6d4d2970f41dc0b475772623fac9c6cda4943bafb0afdac42e12c5451661b3ed1" prot="public">
+          <name>SUCCESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Standard code for successful behavior. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="types_8hpp_1ga6d4d2970f41dc0b475772623fac9c6cda474211615d75bb52fcc276b46ed6788d" prot="public">
+          <name>ERROR_CODE_FAILURE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Standard code for unsuccessful behavior. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="types_8hpp_1ga6d4d2970f41dc0b475772623fac9c6cda1fc0d4ff40d706689d0474688b08fbd3" prot="public">
+          <name>ERROR_CODE_NO_GPU_COMPATIBLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No GPU found or CUDA capability of the device is not supported. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="types_8hpp_1ga6d4d2970f41dc0b475772623fac9c6cdaae4240460778f0f7cf58b3e02a7840d2" prot="public">
+          <name>ERROR_CODE_NOT_ENOUGH_GPUMEM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Not enough GPU memory for this depth mode please try a faster mode (such as PERFORMANCE mode). </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="types_8hpp_1ga6d4d2970f41dc0b475772623fac9c6cda7915735ea105296fed54177db403bd4f" prot="public">
+          <name>ERROR_CODE_CAMERA_NOT_DETECTED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The ZED camera is not plugged or detected. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="types_8hpp_1ga6d4d2970f41dc0b475772623fac9c6cdac8e37dcddf898f7ff36f77a246ed01a7" prot="public">
+          <name>ERROR_CODE_INVALID_RESOLUTION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>For Jetson only, resolution not yet supported (USB3.0 bandwidth). </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="types_8hpp_1ga6d4d2970f41dc0b475772623fac9c6cda5fcc184db43f2c17a180f487af966c08" prot="public">
+          <name>ERROR_CODE_LOW_USB_BANDWIDTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This issue can occurs when you use multiple ZED or a USB 2.0 port (bandwidth issue). </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="types_8hpp_1ga6d4d2970f41dc0b475772623fac9c6cdaedb4996f0773e685f0afae877c177899" prot="public">
+          <name>ERROR_CODE_CALIBRATION_FILE_NOT_AVAILABLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>ZED calibration file is not found on the host machine. Use ZED Explorer or ZED Calibration to get one. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="types_8hpp_1ga6d4d2970f41dc0b475772623fac9c6cda05a80dfdd21c5506a1b8cdaa76b8879c" prot="public">
+          <name>ERROR_CODE_INVALID_SVO_FILE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The provided SVO file is not valid. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="types_8hpp_1ga6d4d2970f41dc0b475772623fac9c6cda2c4b8a73bf6048158c054c357b38d937" prot="public">
+          <name>ERROR_CODE_SVO_RECORDING_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>An recorder related error occurred (not enough free storage, invalid file). </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="types_8hpp_1ga6d4d2970f41dc0b475772623fac9c6cdadcfedcbe58264ba5daa2cfca2bd06396" prot="public">
+          <name>ERROR_CODE_INVALID_COORDINATE_SYSTEM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The requested coordinate system is not available. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="types_8hpp_1ga6d4d2970f41dc0b475772623fac9c6cda0b4ee2bde052a7a58b54631bac0c9ef2" prot="public">
+          <name>ERROR_CODE_INVALID_FIRMWARE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The firmware of the ZED is out of date. Update to the latest version. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="types_8hpp_1ga6d4d2970f41dc0b475772623fac9c6cda28fc25dd70bec280a2f892606ba03ace" prot="public">
+          <name>ERROR_CODE_NOT_A_NEW_FRAME</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>in grab() only, the current call return the same frame as last call. Not a new frame. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="types_8hpp_1ga6d4d2970f41dc0b475772623fac9c6cdac87e6f787accc43eb7adcbcbf38530bd" prot="public">
+          <name>ERROR_CODE_CUDA_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>in grab() only, a CUDA error has been detected in the process. Activate verbose in <ref refid="classsl_1_1_camera_1a46f6220e257357d510392317fd620095" kindref="member">sl::Camera::open</ref> for more info. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="types_8hpp_1ga6d4d2970f41dc0b475772623fac9c6cdac689eafaf9034d82cc7aba47d7490aae" prot="public">
+          <name>ERROR_CODE_CAMERA_NOT_INITIALIZED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>in grab() only, ZED SDK is not initialized. Probably a missing call to <ref refid="classsl_1_1_camera_1a46f6220e257357d510392317fd620095" kindref="member">sl::Camera::open</ref>. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="types_8hpp_1ga6d4d2970f41dc0b475772623fac9c6cda3ad40f4e0bfd668ee960d0fb85a7602a" prot="public">
+          <name>ERROR_CODE_NVIDIA_DRIVER_OUT_OF_DATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>your NVIDIA driver is too old and not compatible with your current CUDA version. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="types_8hpp_1ga6d4d2970f41dc0b475772623fac9c6cdaf097faefd3e5ac109304ab6a4f0829a8" prot="public">
+          <name>ERROR_CODE_INVALID_FUNCTION_CALL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>the call of the function is not valid in the current context. Could be a missing call of <ref refid="classsl_1_1_camera_1a46f6220e257357d510392317fd620095" kindref="member">sl::Camera::open</ref>. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="types_8hpp_1ga6d4d2970f41dc0b475772623fac9c6cda4a00d923c5bb7721d2856a320d9e5c89" prot="public">
+          <name>ERROR_CODE_CORRUPTED_SDK_INSTALLATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The SDK wasn&apos;t able to load its dependencies, the installer should be launched. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="types_8hpp_1ga6d4d2970f41dc0b475772623fac9c6cdac1cb66504a7a783f2e67de01959c6a0d" prot="public">
+          <name>ERROR_CODE_LAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>List error codes in the ZED SDK. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="148" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="148" bodyend="169"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="types_8hpp_1a6ae4d2097a3ad3c92907143dce9f061c" prot="public" static="no">
+        <type>float</type>
+        <definition>typedef float sl::float1</definition>
+        <argsstring></argsstring>
+        <name>float1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="996" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="996" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1a30d3aabc43a45a8cbf653be1ec128eee" prot="public" static="no">
+        <type>Vector2&lt; float &gt;</type>
+        <definition>typedef Vector2&lt;float&gt; sl::float2</definition>
+        <argsstring></argsstring>
+        <name>float2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1000" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1000" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1acb5128ddc88494152ffd4e77e4dbc290" prot="public" static="no">
+        <type>Vector3&lt; float &gt;</type>
+        <definition>typedef Vector3&lt;float&gt; sl::float3</definition>
+        <argsstring></argsstring>
+        <name>float3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1004" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1004" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1a34936ad409358132f48625f4915bbb7a" prot="public" static="no">
+        <type>Vector4&lt; float &gt;</type>
+        <definition>typedef Vector4&lt;float&gt; sl::float4</definition>
+        <argsstring></argsstring>
+        <name>float4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1008" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1008" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1a4426e799924173c21631d66e976ab4d2" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char sl::uchar1</definition>
+        <argsstring></argsstring>
+        <name>uchar1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1012" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1012" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1a4bab3d993b19a3b7b68d5d2b0c4f2565" prot="public" static="no">
+        <type>Vector2&lt; unsigned char &gt;</type>
+        <definition>typedef Vector2&lt;unsigned char&gt; sl::uchar2</definition>
+        <argsstring></argsstring>
+        <name>uchar2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1016" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1016" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1ab740985febc5bec9d8de906f7831e81a" prot="public" static="no">
+        <type>Vector3&lt; unsigned char &gt;</type>
+        <definition>typedef Vector3&lt;unsigned char&gt; sl::uchar3</definition>
+        <argsstring></argsstring>
+        <name>uchar3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1020" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1020" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1a46068fd0ea1e1ccbe457e5d85d2b9efe" prot="public" static="no">
+        <type>Vector4&lt; unsigned char &gt;</type>
+        <definition>typedef Vector4&lt;unsigned char&gt; sl::uchar4</definition>
+        <argsstring></argsstring>
+        <name>uchar4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1024" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1024" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1ac9ced61bc142b5aef46e1a8284fde4bf" prot="public" static="no">
+        <type>double</type>
+        <definition>typedef double sl::double1</definition>
+        <argsstring></argsstring>
+        <name>double1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1028" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1028" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1aa82c51add2da9c99caf8fd08452650ab" prot="public" static="no">
+        <type>Vector2&lt; double &gt;</type>
+        <definition>typedef Vector2&lt;double&gt; sl::double2</definition>
+        <argsstring></argsstring>
+        <name>double2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1032" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1032" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1a32db5ba83c8bed4f5f8aa68ce4b7f119" prot="public" static="no">
+        <type>Vector3&lt; double &gt;</type>
+        <definition>typedef Vector3&lt;double&gt; sl::double3</definition>
+        <argsstring></argsstring>
+        <name>double3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1036" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1036" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1af51a65cdd07490708437674c71da3061" prot="public" static="no">
+        <type>Vector4&lt; double &gt;</type>
+        <definition>typedef Vector4&lt;double&gt; sl::double4</definition>
+        <argsstring></argsstring>
+        <name>double4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1040" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1040" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1a8b4b553d95fbf0384beec2463f783eaf" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int sl::uint1</definition>
+        <argsstring></argsstring>
+        <name>uint1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1044" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1044" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1a256a378f7ccb0ea5fec744d190d572e0" prot="public" static="no">
+        <type>Vector2&lt; unsigned int &gt;</type>
+        <definition>typedef Vector2&lt;unsigned int&gt; sl::uint2</definition>
+        <argsstring></argsstring>
+        <name>uint2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1048" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1048" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1ab6eff6c7474d93824d2953fa07fa28ad" prot="public" static="no">
+        <type>Vector3&lt; unsigned int &gt;</type>
+        <definition>typedef Vector3&lt;unsigned int&gt; sl::uint3</definition>
+        <argsstring></argsstring>
+        <name>uint3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1052" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1052" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8hpp_1aa81b79f62507ac4a4c24d4c65b709ceb" prot="public" static="no">
+        <type>Vector4&lt; unsigned int &gt;</type>
+        <definition>typedef Vector4&lt;unsigned int&gt; sl::uint4</definition>
+        <argsstring></argsstring>
+        <name>uint4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1056" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1056" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_core_8hpp_1a2b4a6ef34c107af8b5707215e34dbebb" prot="public" static="no" mutable="no">
+        <type>class SL_CORE_EXPORT_DLL</type>
+        <definition>class SL_CORE_EXPORT_DLL sl::Rotation</definition>
+        <argsstring></argsstring>
+        <name>Rotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="179" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="629" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_core_8hpp_1adeb75e9f004eb4976db71e6c758c83bc" prot="public" static="no" mutable="no">
+        <type>class SL_CORE_EXPORT_DLL</type>
+        <definition>class SL_CORE_EXPORT_DLL sl::Translation</definition>
+        <argsstring></argsstring>
+        <name>Translation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="179" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="630" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_core_8hpp_1adaaa158aea75e8969bb2e8533b92e1b8" prot="public" static="no" mutable="no">
+        <type>class SL_CORE_EXPORT_DLL</type>
+        <definition>class SL_CORE_EXPORT_DLL sl::Orientation</definition>
+        <argsstring></argsstring>
+        <name>Orientation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="179" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="631" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_core_8hpp_1aec77b958273cabb36c05bdc5bd87b974" prot="public" static="no" mutable="no">
+        <type>class SL_CORE_EXPORT_DLL</type>
+        <definition>class SL_CORE_EXPORT_DLL sl::Transform</definition>
+        <argsstring></argsstring>
+        <name>Transform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="179" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="632" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="defines_8hpp_1adae980274395016fba28d6f07ee86b56" prot="public" static="yes" mutable="no">
+        <type>std::vector&lt; std::pair&lt; int, int &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;int, int&gt; &gt; sl::cameraResolution</definition>
+        <argsstring></argsstring>
+        <name>cameraResolution</name>
+        <initializer>= [] {
+        std::vector&lt;std::pair&lt;int, int&gt;&gt; v;
+        v.emplace_back(2208, 1242); 
+        v.emplace_back(1920, 1080); 
+        v.emplace_back(1280, 720);  
+        v.emplace_back(672, 376);   
+        return v;
+    }()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Available video modes for the ZED camera </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" line="353" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/defines.hpp" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_camera_8hpp_1a4462fcbee3481b97c2449527a5161018" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SLSTEREO_EXPORT_DLL bool</type>
+        <definition>SLSTEREO_EXPORT_DLL bool sl::saveDepthAs</definition>
+        <argsstring>(sl::Camera &amp;zed, sl::DEPTH_FORMAT format, sl::String name, float factor=1.)</argsstring>
+        <name>saveDepthAs</name>
+        <param>
+          <type><ref refid="classsl_1_1_camera" kindref="compound">sl::Camera</ref> &amp;</type>
+          <declname>zed</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1ga1d7cf4471913aefe220580c5ffe24250" kindref="member">sl::DEPTH_FORMAT</ref></type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>sl::String</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>factor</declname>
+          <defval>1.</defval>
+        </param>
+        <briefdescription>
+<para>Writes the current depth map into a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>zed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the current camera object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the depth file format you desired. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the name (path) in which the depth will be saved. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: only for PNG and PGM, apply a gain to the depth value (default 1.). The maximum value is 65536, so you can set the Camera::setDepthClampValue to 20000 and give a factor to 3, Do not forget to scale (by 1./factor) the pixel value to get the real depth. The occlusions are represented by 0. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>False if something wrong happen, else return true. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="995" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_camera_8hpp_1af008d524aefe5b6f5ff5225c2eb61bdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SLSTEREO_EXPORT_DLL bool</type>
+        <definition>SLSTEREO_EXPORT_DLL bool sl::savePointCloudAs</definition>
+        <argsstring>(sl::Camera &amp;zed, sl::POINT_CLOUD_FORMAT format, sl::String name, bool with_color=false, bool keep_occluded_point=false)</argsstring>
+        <name>savePointCloudAs</name>
+        <param>
+          <type><ref refid="classsl_1_1_camera" kindref="compound">sl::Camera</ref> &amp;</type>
+          <declname>zed</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1gaec4e6209d4075d67533e7f4078663b95" kindref="member">sl::POINT_CLOUD_FORMAT</ref></type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>sl::String</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>with_color</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>keep_occluded_point</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Writes the current point cloud into a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>zed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the current camera object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the point cloud file format you desired. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the name (path) in which the point cloud will be saved. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>with_color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: indicates if the color must be saved (default false). Not available for XYZ and VTK. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keep_occluded_point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: indicates if the non available data should be saved and set to 0 (default false), if set to true this give a Point Cloud with a size = height * width. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>False if something wrong happen, else return true. </para></simplesect>
+<simplesect kind="note"><para>The color is not saved for XYZ and VTK files. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="1007" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8hpp_1ad703618f1a847f60ceaada17ea09bce9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref></type>
+        <definition>MEM sl::operator|</definition>
+        <argsstring>(MEM a, MEM b)</argsstring>
+        <name>operator|</name>
+        <param>
+          <type><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="179" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="179" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="types_8hpp_1add2945b57c95b4771718bf45b7800b69" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>cudaError</type>
+        <definition>static cudaError sl::__cudaSafeCall</definition>
+        <argsstring>(cudaError err, const char *func, const char *file, const int line)</argsstring>
+        <name>__cudaSafeCall</name>
+        <param>
+          <type>cudaError</type>
+          <declname>err</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="130" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="130" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="types_8hpp_1afb24437d7e2e34e7cffbe81ae5c5505d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string sl::errorCode2str</definition>
+        <argsstring>(ERROR_CODE err)</argsstring>
+        <name>errorCode2str</name>
+        <param>
+          <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+          <declname>err</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="171" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="171" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="types_8hpp_1ac2128908f8598b06a801aba1412a5f5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::sleep_ms</definition>
+        <argsstring>(int time)</argsstring>
+        <name>sleep_ms</name>
+        <param>
+          <type>int</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Tells the program to wait for x ms. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the number of ms to wait. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="236" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="236" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="types_8hpp_1aa2bc96ee100618b0f05fe7364009600b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; sl::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Vector2&lt; T &gt; &amp;v2)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const Vector2&lt; T &gt; &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1346" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1346" bodyend="1349"/>
+      </memberdef>
+      <memberdef kind="function" id="types_8hpp_1a8f8beb25bb1201148f51738da6bf9304" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; sl::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Vector3&lt; T &gt; &amp;v3)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const Vector3&lt; T &gt; &amp;</type>
+          <declname>v3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1352" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1352" bodyend="1355"/>
+      </memberdef>
+      <memberdef kind="function" id="types_8hpp_1a0335e2da41bb6a2e8cae9bc07b9014b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; sl::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Vector4&lt; T &gt; &amp;v4)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const Vector4&lt; T &gt; &amp;</type>
+          <declname>v4</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" line="1358" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp" bodystart="1358" bodyend="1361"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="77" column="1"/>
+  </compounddef>
+</doxygen>

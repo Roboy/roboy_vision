@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classsl_1_1_translation" kind="class" language="C++" prot="public">
+    <compoundname>sl::Translation</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Vector3&lt; float &gt;</basecompoundref>
+    <includes refid="_core_8hpp" local="no">Core.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsl_1_1_translation_1a46237f612d621bc463c10cff89349ef5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Translation::Translation</definition>
+        <argsstring>()</argsstring>
+        <name>Translation</name>
+        <briefdescription>
+<para>empty <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref> default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="707" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_translation_1a8cc66af7e17c761daac3bdc719043c1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Translation::Translation</definition>
+        <argsstring>(const Translation &amp;translation)</argsstring>
+        <name>Translation</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref> &amp;</type>
+          <declname>translation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref> copy constructor (deep copy). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>translation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref> to copy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="713" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_translation_1acdc8563f70b6b8446db603fbb6b16820" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Translation::Translation</definition>
+        <argsstring>(float t1, float t2, float t3)</argsstring>
+        <name>Translation</name>
+        <param>
+          <type>float</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>t2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>t3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref> constructor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the x translation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the y translation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the z translation. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="721" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_translation_1ae1372f9a3b2acb3e4115dff8a41e7eb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Translation::Translation</definition>
+        <argsstring>(Vector3&lt; float &gt; in)</argsstring>
+        <name>Translation</name>
+        <param>
+          <type>Vector3&lt; float &gt;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref> constructor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: vector. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="727" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_translation_1aa67cf9b43af40fb2747694fea6366636" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsl_1_1_translation" kindref="compound">Translation</ref></type>
+        <definition>Translation sl::Translation::operator*</definition>
+        <argsstring>(const Orientation &amp;mat) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief Multiplication operator by an <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref> after being multiplied by the orientation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="734" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_translation_1acc8437c5daa8c5e9b50a626a75d7b8fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Translation::normalize</definition>
+        <argsstring>()</argsstring>
+        <name>normalize</name>
+        <briefdescription>
+<para>Normalizes the current translation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="739" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_translation_1ab55671ad7ecc4435268323db97e1058c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float &amp;</type>
+        <definition>float&amp; sl::Translation::operator()</definition>
+        <argsstring>(int x)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Get the value at specific position in the <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the position of the value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value at the x position. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="753" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsl_1_1_translation_1aca5266988f3f40b3e24db8855917898a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsl_1_1_translation" kindref="compound">Translation</ref></type>
+        <definition>static Translation sl::Translation::normalize</definition>
+        <argsstring>(const Translation &amp;tr)</argsstring>
+        <name>normalize</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref> &amp;</type>
+          <declname>tr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief Get the normalized version of a given <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref> to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An other <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref> object, which is equal to tr.normalize. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="746" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The class <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref> is designed to contains translation data from the tracking. <linebreak/>
+<linebreak/>
+ <ref refid="classsl_1_1_translation" kindref="compound">sl::Translation</ref> is a vector as [tx, ty, tz]. <linebreak/>
+ You can access the data with the &apos;t&apos; ptr or by element name as : tx, ty, tz &lt;-&gt; | 0 1 2 |. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="370">
+        <label>sl::Translation</label>
+        <link refid="classsl_1_1_translation"/>
+        <childnode refid="371" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="371">
+        <label>Vector3&lt; float &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="372">
+        <label>sl::Translation</label>
+        <link refid="classsl_1_1_translation"/>
+        <childnode refid="373" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="373">
+        <label>Vector3&lt; float &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="702" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="702" bodyend="754"/>
+    <listofallmembers>
+      <member refid="classsl_1_1_translation_1acc8437c5daa8c5e9b50a626a75d7b8fb" prot="public" virt="non-virtual"><scope>sl::Translation</scope><name>normalize</name></member>
+      <member refid="classsl_1_1_translation_1aca5266988f3f40b3e24db8855917898a" prot="public" virt="non-virtual"><scope>sl::Translation</scope><name>normalize</name></member>
+      <member refid="classsl_1_1_translation_1ab55671ad7ecc4435268323db97e1058c" prot="public" virt="non-virtual"><scope>sl::Translation</scope><name>operator()</name></member>
+      <member refid="classsl_1_1_translation_1aa67cf9b43af40fb2747694fea6366636" prot="public" virt="non-virtual"><scope>sl::Translation</scope><name>operator*</name></member>
+      <member refid="classsl_1_1_translation_1a46237f612d621bc463c10cff89349ef5" prot="public" virt="non-virtual"><scope>sl::Translation</scope><name>Translation</name></member>
+      <member refid="classsl_1_1_translation_1a8cc66af7e17c761daac3bdc719043c1b" prot="public" virt="non-virtual"><scope>sl::Translation</scope><name>Translation</name></member>
+      <member refid="classsl_1_1_translation_1acdc8563f70b6b8446db603fbb6b16820" prot="public" virt="non-virtual"><scope>sl::Translation</scope><name>Translation</name></member>
+      <member refid="classsl_1_1_translation_1ae1372f9a3b2acb3e4115dff8a41e7eb5" prot="public" virt="non-virtual"><scope>sl::Translation</scope><name>Translation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

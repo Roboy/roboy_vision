@@ -4,7 +4,7 @@
     <compoundname>multiprocess</compoundname>
       <sectiondef kind="var">
       <memberdef kind="variable" id="multiprocess_8py_1a650da6aa92f3c38dc2206bc22100bb79" prot="public" static="no" mutable="no">
-        <type>list</type>
+        <type><ref refid="structlist" kindref="compound">list</ref></type>
         <definition>list multiprocess.procs</definition>
         <argsstring></argsstring>
         <name>procs</name>

@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structyolo__obj" kind="struct" language="C++" prot="public">
+    <compoundname>yolo_obj</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structyolo__obj_1a3e76e52d489a29f776d2b1ab68792dbb" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char yolo_obj::darknet_path[1024]</definition>
+        <argsstring>[1024]</argsstring>
+        <name>darknet_path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" line="13" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structyolo__obj_1a133477cf9c7a4d125c29aefb59c984b8" prot="public" static="no" mutable="no">
+        <type>char **</type>
+        <definition>char** yolo_obj::names</definition>
+        <argsstring></argsstring>
+        <name>names</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" line="14" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structyolo__obj_1aa57c9af828fad2e300daece09e85dfd3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float yolo_obj::nms</definition>
+        <argsstring></argsstring>
+        <name>nms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" line="15" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structyolo__obj_1a90af060b27b435e2fee615f34d4b2dc7" prot="public" static="no" mutable="no">
+        <type><ref refid="structbox" kindref="compound">box</ref> *</type>
+        <definition>box* yolo_obj::boxes</definition>
+        <argsstring></argsstring>
+        <name>boxes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" line="16" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structyolo__obj_1a945da812be13fb3a795d713e9592a4ec" prot="public" static="no" mutable="no">
+        <type>float **</type>
+        <definition>float** yolo_obj::probs</definition>
+        <argsstring></argsstring>
+        <name>probs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" line="17" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structyolo__obj_1a9f6eb6528b5de887d4a80b86878f4267" prot="public" static="no" mutable="no">
+        <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+        <definition>network yolo_obj::net</definition>
+        <argsstring></argsstring>
+        <name>net</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" line="18" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="381">
+        <label>network</label>
+        <link refid="structnetwork"/>
+        <childnode refid="382" relation="usage">
+          <edgelabel>layers</edgelabel>
+        </childnode>
+        <childnode refid="383" relation="usage">
+          <edgelabel>hierarchy</edgelabel>
+        </childnode>
+      </node>
+      <node id="383">
+        <label>tree</label>
+        <link refid="structtree"/>
+      </node>
+      <node id="379">
+        <label>yolo_obj</label>
+        <link refid="structyolo__obj"/>
+        <childnode refid="380" relation="usage">
+          <edgelabel>boxes</edgelabel>
+        </childnode>
+        <childnode refid="381" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="380">
+        <label>box</label>
+        <link refid="structbox"/>
+      </node>
+      <node id="382">
+        <label>layer</label>
+        <link refid="structlayer"/>
+        <childnode refid="382" relation="usage">
+          <edgelabel>wf</edgelabel>
+          <edgelabel>state_layer</edgelabel>
+          <edgelabel>wg</edgelabel>
+          <edgelabel>self_layer</edgelabel>
+          <edgelabel>uf</edgelabel>
+          <edgelabel>wh</edgelabel>
+          <edgelabel>input_r_layer</edgelabel>
+          <edgelabel>state_save_layer</edgelabel>
+          <edgelabel>ug</edgelabel>
+          <edgelabel>wi</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+        <childnode refid="383" relation="usage">
+          <edgelabel>softmax_tree</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" line="12" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c" bodystart="12" bodyend="19"/>
+    <listofallmembers>
+      <member refid="structyolo__obj_1a90af060b27b435e2fee615f34d4b2dc7" prot="public" virt="non-virtual"><scope>yolo_obj</scope><name>boxes</name></member>
+      <member refid="structyolo__obj_1a3e76e52d489a29f776d2b1ab68792dbb" prot="public" virt="non-virtual"><scope>yolo_obj</scope><name>darknet_path</name></member>
+      <member refid="structyolo__obj_1a133477cf9c7a4d125c29aefb59c984b8" prot="public" virt="non-virtual"><scope>yolo_obj</scope><name>names</name></member>
+      <member refid="structyolo__obj_1a9f6eb6528b5de887d4a80b86878f4267" prot="public" virt="non-virtual"><scope>yolo_obj</scope><name>net</name></member>
+      <member refid="structyolo__obj_1aa57c9af828fad2e300daece09e85dfd3" prot="public" virt="non-virtual"><scope>yolo_obj</scope><name>nms</name></member>
+      <member refid="structyolo__obj_1a945da812be13fb3a795d713e9592a4ec" prot="public" virt="non-virtual"><scope>yolo_obj</scope><name>probs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

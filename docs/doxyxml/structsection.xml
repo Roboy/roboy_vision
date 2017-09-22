@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structsection" kind="struct" language="C++" prot="public">
+    <compoundname>section</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsection_1a0dc7e80c65705ebee2764d1f1fe590f8" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* section::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c" line="36" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsection_1a43f5552e0f6189b021835005204f3da6" prot="public" static="no" mutable="no">
+        <type><ref refid="structlist" kindref="compound">list</ref> *</type>
+        <definition>list* section::options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c" line="37" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="342">
+        <label>list</label>
+        <link refid="structlist"/>
+        <childnode refid="343" relation="usage">
+          <edgelabel>front</edgelabel>
+          <edgelabel>back</edgelabel>
+        </childnode>
+      </node>
+      <node id="343">
+        <label>node</label>
+        <link refid="structnode"/>
+        <childnode refid="343" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="341">
+        <label>section</label>
+        <link refid="structsection"/>
+        <childnode refid="342" relation="usage">
+          <edgelabel>options</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c" line="35" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c" bodystart="35" bodyend="38"/>
+    <listofallmembers>
+      <member refid="structsection_1a43f5552e0f6189b021835005204f3da6" prot="public" virt="non-virtual"><scope>section</scope><name>options</name></member>
+      <member refid="structsection_1a0dc7e80c65705ebee2764d1f1fe590f8" prot="public" virt="non-virtual"><scope>section</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

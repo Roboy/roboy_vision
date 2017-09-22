@@ -67,7 +67,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Roboy Vision Module Documentation'
-copyright = u'2017, Roboy Memory, based on Template by Dr. Peter'
+copyright = u'2017, Roboy Vision, based on Template by Dr. Peter'
 author = u'Roboy Vision, based on Template by Dr. Peter'
 
 # The version info for the project you're documenting, acts as replacement for

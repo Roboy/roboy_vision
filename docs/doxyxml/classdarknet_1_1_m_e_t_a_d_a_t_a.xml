@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdarknet_1_1_m_e_t_a_d_a_t_a" kind="class" language="Python" prot="public">
+    <compoundname>darknet::METADATA</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Structure</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classdarknet_1_1_m_e_t_a_d_a_t_a_1afcbbf91109a8300152f4fdcc489e116f" prot="private" static="yes" mutable="no">
+        <type><ref refid="structlist" kindref="compound">list</ref></type>
+        <definition>list darknet.METADATA::_fields_</definition>
+        <argsstring></argsstring>
+        <name>_fields_</name>
+        <initializer>= [(&quot;classes&quot;, c_int),
+                (&quot;names&quot;, POINTER(c_char_p))]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" line="10" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="308">
+        <label>darknet.METADATA</label>
+        <link refid="classdarknet_1_1_m_e_t_a_d_a_t_a"/>
+        <childnode refid="309" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="309">
+        <label>Structure</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="312">
+        <label>list</label>
+        <link refid="structlist"/>
+        <childnode refid="313" relation="usage">
+          <edgelabel>front</edgelabel>
+          <edgelabel>back</edgelabel>
+        </childnode>
+      </node>
+      <node id="310">
+        <label>darknet.METADATA</label>
+        <link refid="classdarknet_1_1_m_e_t_a_d_a_t_a"/>
+        <childnode refid="311" relation="public-inheritance">
+        </childnode>
+        <childnode refid="312" relation="usage">
+          <edgelabel>_fields_</edgelabel>
+        </childnode>
+      </node>
+      <node id="313">
+        <label>node</label>
+        <link refid="structnode"/>
+        <childnode refid="313" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="311">
+        <label>Structure</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" line="9" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" bodystart="9" bodyend="13"/>
+    <listofallmembers>
+      <member refid="classdarknet_1_1_m_e_t_a_d_a_t_a_1afcbbf91109a8300152f4fdcc489e116f" prot="private" virt="non-virtual"><scope>darknet::METADATA</scope><name>_fields_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

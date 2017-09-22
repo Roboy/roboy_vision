@@ -27,7 +27,7 @@
 <codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&apos;parent<sp/>process:&apos;</highlight><highlight class="normal">,<sp/>os.getppid())</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&apos;process<sp/>id:&apos;</highlight><highlight class="normal">,<sp/>os.getpid())</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#Start<sp/>the<sp/>face<sp/>detection</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_face_detect_1a656bcbcb2a8f5cefd8cb4e8b599998f3" kindref="member">FaceDetect.StartDetection</ref>(FrameQueue,RectQueue)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_face_detect_1a5b96c1c0b117289c356ada6288fcc871" kindref="member">FaceDetect.StartDetection</ref>(FrameQueue,RectQueue)</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>sys.exit()</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/>(</highlight><highlight class="stringliteral">&quot;Terminated&quot;</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>

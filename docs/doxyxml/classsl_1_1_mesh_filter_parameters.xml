@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classsl_1_1_mesh_filter_parameters" kind="class" language="C++" prot="public">
+    <compoundname>sl::MeshFilterParameters</compoundname>
+    <includes refid="_mesh_8hpp" local="no">Mesh.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classsl_1_1_mesh_filter_parameters_1a32a951440c75507b494d66cc93c0f7a9" prot="public" static="no">
+        <name>FILTER</name>
+        <enumvalue id="classsl_1_1_mesh_filter_parameters_1a32a951440c75507b494d66cc93c0f7a9aea276ab529887391d5af5b6c0e4066aa" prot="public">
+          <name>FILTER_LOW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Soft decimation and smoothing. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsl_1_1_mesh_filter_parameters_1a32a951440c75507b494d66cc93c0f7a9ad5d72405b7ef1b81c1c2c31af956f4e3" prot="public">
+          <name>FILTER_MEDIUM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Decimate the number of faces and apply a soft smooth. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsl_1_1_mesh_filter_parameters_1a32a951440c75507b494d66cc93c0f7a9adb5693efdc46acc91d309071da6e6da8" prot="public">
+          <name>FILTER_HIGH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Drasticly reduce the number of faces. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="60" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="60" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsl_1_1_mesh_filter_parameters_1af7e957318cd1c3761846642b2ba43928" prot="public" static="no" mutable="no">
+        <type><ref refid="classsl_1_1_mesh_filter_parameters_1a32a951440c75507b494d66cc93c0f7a9" kindref="member">FILTER</ref></type>
+        <definition>FILTER sl::MeshFilterParameters::filtering</definition>
+        <argsstring></argsstring>
+        <name>filtering</name>
+        <initializer>= FILTER::FILTER_LOW</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="81" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsl_1_1_mesh_filter_parameters_1a55b9f9ea7e772633d2c3a7f2a1cd85a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sl::MeshFilterParameters::MeshFilterParameters</definition>
+        <argsstring>(FILTER filtering_=FILTER_LOW)</argsstring>
+        <name>MeshFilterParameters</name>
+        <param>
+          <type><ref refid="classsl_1_1_mesh_filter_parameters_1a32a951440c75507b494d66cc93c0f7a9" kindref="member">FILTER</ref></type>
+          <declname>filtering_</declname>
+          <defval><ref refid="classsl_1_1_mesh_filter_parameters_1a32a951440c75507b494d66cc93c0f7a9aea276ab529887391d5af5b6c0e4066aa" kindref="member">FILTER_LOW</ref></defval>
+        </param>
+        <briefdescription>
+<para>Default constructor, set all parameters to their default and optimized values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="69" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mesh_filter_parameters_1ac3cf2e8337715214db38f814ea51f0cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::MeshFilterParameters::set</definition>
+        <argsstring>(FILTER filtering_=FILTER_LOW)</argsstring>
+        <name>set</name>
+        <param>
+          <type><ref refid="classsl_1_1_mesh_filter_parameters_1a32a951440c75507b494d66cc93c0f7a9" kindref="member">FILTER</ref></type>
+          <declname>filtering_</declname>
+          <defval><ref refid="classsl_1_1_mesh_filter_parameters_1a32a951440c75507b494d66cc93c0f7a9aea276ab529887391d5af5b6c0e4066aa" kindref="member">FILTER_LOW</ref></defval>
+        </param>
+        <briefdescription>
+<para>Sets the filtering intensity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filtering_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the desired <ref refid="classsl_1_1_mesh_filter_parameters_1a32a951440c75507b494d66cc93c0f7a9" kindref="member">sl::MeshFilterParameters::FILTER</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="77" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="77" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mesh_filter_parameters_1a5d6a6e7305774052e976c0a61892a01a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl::MeshFilterParameters::save</definition>
+        <argsstring>(sl::String filename)</argsstring>
+        <name>save</name>
+        <param>
+          <type>sl::String</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Saves the current bunch of parameters into a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the path to the file in which the parameters will be stored. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the file was successfully saved, otherwise false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mesh_filter_parameters_1ae744665744c054c781e8106f99dc87e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl::MeshFilterParameters::load</definition>
+        <argsstring>(sl::String filename)</argsstring>
+        <name>load</name>
+        <param>
+          <type>sl::String</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Loads the values of the parameters contained in a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the path to the file from which the parameters will be loaded. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the file was successfully loaded, otherwise false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="95" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Parameters for the optional filtering step of a <ref refid="classsl_1_1_mesh" kindref="compound">sl::Mesh</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><linebreak/>
+ A default constructor is enabled and set to its default parameters. <simplesect kind="note"><para>Parameters can be user adjusted. </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="53" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="53" bodyend="96"/>
+    <listofallmembers>
+      <member refid="classsl_1_1_mesh_filter_parameters_1a32a951440c75507b494d66cc93c0f7a9" prot="public" virt="non-virtual"><scope>sl::MeshFilterParameters</scope><name>FILTER</name></member>
+      <member refid="classsl_1_1_mesh_filter_parameters_1a32a951440c75507b494d66cc93c0f7a9adb5693efdc46acc91d309071da6e6da8" prot="public" virt="non-virtual"><scope>sl::MeshFilterParameters</scope><name>FILTER_HIGH</name></member>
+      <member refid="classsl_1_1_mesh_filter_parameters_1a32a951440c75507b494d66cc93c0f7a9aea276ab529887391d5af5b6c0e4066aa" prot="public" virt="non-virtual"><scope>sl::MeshFilterParameters</scope><name>FILTER_LOW</name></member>
+      <member refid="classsl_1_1_mesh_filter_parameters_1a32a951440c75507b494d66cc93c0f7a9ad5d72405b7ef1b81c1c2c31af956f4e3" prot="public" virt="non-virtual"><scope>sl::MeshFilterParameters</scope><name>FILTER_MEDIUM</name></member>
+      <member refid="classsl_1_1_mesh_filter_parameters_1af7e957318cd1c3761846642b2ba43928" prot="public" virt="non-virtual"><scope>sl::MeshFilterParameters</scope><name>filtering</name></member>
+      <member refid="classsl_1_1_mesh_filter_parameters_1ae744665744c054c781e8106f99dc87e5" prot="public" virt="non-virtual"><scope>sl::MeshFilterParameters</scope><name>load</name></member>
+      <member refid="classsl_1_1_mesh_filter_parameters_1a55b9f9ea7e772633d2c3a7f2a1cd85a4" prot="public" virt="non-virtual"><scope>sl::MeshFilterParameters</scope><name>MeshFilterParameters</name></member>
+      <member refid="classsl_1_1_mesh_filter_parameters_1a5d6a6e7305774052e976c0a61892a01a" prot="public" virt="non-virtual"><scope>sl::MeshFilterParameters</scope><name>save</name></member>
+      <member refid="classsl_1_1_mesh_filter_parameters_1ac3cf2e8337715214db38f814ea51f0cf" prot="public" virt="non-virtual"><scope>sl::MeshFilterParameters</scope><name>set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
