@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Architecture Documentation Wiki documentation build configuration file, created by
+# Software Documentation Template build configuration file, created by
 # sphinx-quickstart on Fri Jul 29 19:44:29 2016.
 #
 # This file is execfile()d with the current directory set to its
@@ -18,10 +18,10 @@
 #
 # import os
 # import sys
-sys.path.insert(0, os.path.abspath('.'))
+# sys.path.insert(0, os.path.abspath('.'))
 
 import sphinx_rtd_theme
-import subprocess, os, sys
+import subprocess, os
 
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 if on_rtd:
@@ -40,7 +40,7 @@ if on_rtd:
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.doctest',
-    'sphinx.ext.intersphinx',
+    #'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
     'sphinx.ext.coverage',
     'sphinx.ext.mathjax',
@@ -66,18 +66,18 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Roboy Vision Documentation'
-copyright = u'2017, Fabian Schoenert, based on Template by Dr. Peter'
-author = u'Fabian Schoenert, based on Template by Dr. Peter'
+project = u'Roboy Memory Module Documentation'
+copyright = u'2017, Roboy Memory, based on Template by Dr. Peter'
+author = u'Roboy Memory, based on Template by Dr. Peter'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = u'0.1.'
+version = u'0.0.'
 # The full version, including alpha/beta/rc tags.
-release = u'0.1.'
+release = u'0.0.'
 
 breathe_projects = { project: "doxyxml/" }
 breathe_default_project = project
@@ -154,7 +154,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
 #
-# html_title = u'Architecture Documentation Wiki v0.0.'
+# html_title = u'Software Documentation template v0.0.'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
@@ -174,7 +174,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-# html_static_path = ['_static']
+html_static_path = ['_static']
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
@@ -254,7 +254,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 # html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'RoboyVisionDocumentation'
+htmlhelp_basename = 'SoftwareDocumentationtemplatedoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -280,8 +280,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 # latex_documents = [
-#     (master_doc, 'ArchitectureDocumentationWiki.tex', u'Architecture Documentation Wiki Documentation',
-#      u'Raphael Dürscheid, based on Template by Dr. Peter', 'manual'),
+#     (master_doc, 'SoftwareDocumentationTemplate.tex', u'Software Documentation Template',
+#      u'Raphael D?rscheid, based on Template by Dr. Peter', 'manual'),
 # ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -322,7 +322,7 @@ latex_elements = {
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'roboyvisiondocumentation', u'Roboy Vision Documentation',
+    (master_doc, 'SoftwareDocumentationTemplate', u'Software Documentation Template',
      [author], 1)
 ]
 
@@ -337,8 +337,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'RoboyVisionDocumentation', u'Roboy Vision Documentation',
-     author, 'RoboyVisionDocumentation', 'Roboy Vision Repository.',
+    (master_doc, 'SoftwareDocumentationTemplate', u'Software Documentation Template',
+     author, 'SoftwareDocumentationTemplate', 'One line description of project.',
      'Miscellaneous'),
 ]
 
