@@ -66,9 +66,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Roboy Memory Module Documentation'
+project = u'Roboy Vision Module Documentation'
 copyright = u'2017, Roboy Memory, based on Template by Dr. Peter'
-author = u'Roboy Memory, based on Template by Dr. Peter'
+author = u'Roboy Vision, based on Template by Dr. Peter'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
