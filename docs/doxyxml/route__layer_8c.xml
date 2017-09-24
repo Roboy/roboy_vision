@@ -1,0 +1,387 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="route__layer_8c" kind="file" language="C++">
+    <compoundname>route_layer.c</compoundname>
+    <includes refid="route__layer_8h" local="yes">route_layer.h</includes>
+    <includes refid="cuda_8h" local="yes">cuda.h</includes>
+    <includes refid="blas_8h" local="yes">blas.h</includes>
+    <includes local="no">stdio.h</includes>
+    <incdepgraph>
+      <node id="1649">
+        <label>box.h</label>
+        <link refid="box_8h_source"/>
+        <childnode refid="1641" relation="include">
+        </childnode>
+      </node>
+      <node id="1647">
+        <label>float.h</label>
+      </node>
+      <node id="1642">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1655">
+        <label>cuda.h</label>
+        <link refid="cuda_8h_source"/>
+        <childnode refid="1641" relation="include">
+        </childnode>
+      </node>
+      <node id="1651">
+        <label>data.h</label>
+        <link refid="data_8h_source"/>
+        <childnode refid="1645" relation="include">
+        </childnode>
+        <childnode refid="1641" relation="include">
+        </childnode>
+        <childnode refid="1652" relation="include">
+        </childnode>
+        <childnode refid="1653" relation="include">
+        </childnode>
+        <childnode refid="1646" relation="include">
+        </childnode>
+        <childnode refid="1654" relation="include">
+        </childnode>
+      </node>
+      <node id="1640">
+        <label>network.h</label>
+        <link refid="network_8h_source"/>
+        <childnode refid="1641" relation="include">
+        </childnode>
+        <childnode refid="1646" relation="include">
+        </childnode>
+        <childnode refid="1650" relation="include">
+        </childnode>
+        <childnode refid="1651" relation="include">
+        </childnode>
+        <childnode refid="1654" relation="include">
+        </childnode>
+      </node>
+      <node id="1653">
+        <label>list.h</label>
+        <link refid="list_8h_source"/>
+        <childnode refid="1641" relation="include">
+        </childnode>
+      </node>
+      <node id="1652">
+        <label>matrix.h</label>
+        <link refid="matrix_8h_source"/>
+        <childnode refid="1641" relation="include">
+        </childnode>
+      </node>
+      <node id="1641">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="1642" relation="include">
+        </childnode>
+        <childnode refid="1643" relation="include">
+        </childnode>
+        <childnode refid="1644" relation="include">
+        </childnode>
+        <childnode refid="1645" relation="include">
+        </childnode>
+      </node>
+      <node id="1650">
+        <label>layer.h</label>
+        <link refid="layer_8h_source"/>
+        <childnode refid="1641" relation="include">
+        </childnode>
+      </node>
+      <node id="1638">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/route_layer.c</label>
+        <link refid="route_layer.c"/>
+        <childnode refid="1639" relation="include">
+        </childnode>
+        <childnode refid="1655" relation="include">
+        </childnode>
+        <childnode refid="1656" relation="include">
+        </childnode>
+        <childnode refid="1643" relation="include">
+        </childnode>
+      </node>
+      <node id="1645">
+        <label>pthread.h</label>
+      </node>
+      <node id="1639">
+        <label>route_layer.h</label>
+        <link refid="route__layer_8h_source"/>
+        <childnode refid="1640" relation="include">
+        </childnode>
+        <childnode refid="1650" relation="include">
+        </childnode>
+      </node>
+      <node id="1646">
+        <label>image.h</label>
+        <link refid="image_8h_source"/>
+        <childnode refid="1642" relation="include">
+        </childnode>
+        <childnode refid="1643" relation="include">
+        </childnode>
+        <childnode refid="1647" relation="include">
+        </childnode>
+        <childnode refid="1644" relation="include">
+        </childnode>
+        <childnode refid="1648" relation="include">
+        </childnode>
+        <childnode refid="1649" relation="include">
+        </childnode>
+        <childnode refid="1641" relation="include">
+        </childnode>
+      </node>
+      <node id="1644">
+        <label>string.h</label>
+      </node>
+      <node id="1656">
+        <label>blas.h</label>
+        <link refid="blas_8h_source"/>
+        <childnode refid="1641" relation="include">
+        </childnode>
+      </node>
+      <node id="1648">
+        <label>math.h</label>
+      </node>
+      <node id="1654">
+        <label>tree.h</label>
+        <link refid="tree_8h_source"/>
+        <childnode refid="1641" relation="include">
+        </childnode>
+      </node>
+      <node id="1643">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="route__layer_8c_1a449c9e7e19d744493886601e91b98e07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlayer" kindref="compound">route_layer</ref></type>
+        <definition>route_layer make_route_layer</definition>
+        <argsstring>(int batch, int n, int *input_layers, int *input_sizes)</argsstring>
+        <name>make_route_layer</name>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>input_layers</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>input_sizes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/route_layer.c" line="7" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/route_layer.c" bodystart="7" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="route__layer_8c_1a2a40d999a04e0a45314f3ddcb1f0eb92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void resize_route_layer</definition>
+        <argsstring>(route_layer *l, network *net)</argsstring>
+        <name>resize_route_layer</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">route_layer</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref> *</type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/route_layer.c" line="40" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/route_layer.c" bodystart="40" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="route__layer_8c_1a78927618d8d45f5a3e69c2c1783a6399" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void forward_route_layer</definition>
+        <argsstring>(const route_layer l, network net)</argsstring>
+        <name>forward_route_layer</name>
+        <param>
+          <type>const <ref refid="structlayer" kindref="compound">route_layer</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/route_layer.c" line="74" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/route_layer.c" bodystart="74" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="route__layer_8c_1a16c9f747bbf527bebf7014598ba3d66f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void backward_route_layer</definition>
+        <argsstring>(const route_layer l, network net)</argsstring>
+        <name>backward_route_layer</name>
+        <param>
+          <type>const <ref refid="structlayer" kindref="compound">route_layer</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/route_layer.c" line="89" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/route_layer.c" bodystart="89" bodyend="102"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;route_layer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cuda.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;blas.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><ref refid="structlayer" kindref="compound">route_layer</ref><sp/>make_route_layer(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*input_layers,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*input_sizes)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,</highlight><highlight class="stringliteral">&quot;route<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlayer" kindref="compound">route_layer</ref><sp/>l<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>l.type<sp/>=<sp/>ROUTE;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>l.batch<sp/>=<sp/>batch;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>l.n<sp/>=<sp/>n;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>l.input_layers<sp/>=<sp/>input_layers;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>l.input_sizes<sp/>=<sp/>input_sizes;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>outputs<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n;<sp/>++i){</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(stderr,</highlight><highlight class="stringliteral">&quot;<sp/>%d&quot;</highlight><highlight class="normal">,<sp/>input_layers[i]);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outputs<sp/>+=<sp/>input_sizes[i];</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>l.outputs<sp/>=<sp/>outputs;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>l.inputs<sp/>=<sp/>outputs;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>l.delta<sp/>=<sp/><sp/>calloc(outputs*batch,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>l.output<sp/>=<sp/>calloc(outputs*batch,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">));;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>l.forward<sp/>=<sp/>forward_route_layer;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>l.backward<sp/>=<sp/>backward_route_layer;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>l.forward_gpu<sp/>=<sp/>forward_route_layer_gpu;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>l.backward_gpu<sp/>=<sp/>backward_route_layer_gpu;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>l.delta_gpu<sp/>=<sp/><sp/>cuda_make_array(l.delta,<sp/>outputs*batch);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>l.output_gpu<sp/>=<sp/>cuda_make_array(l.output,<sp/>outputs*batch);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>resize_route_layer(<ref refid="structlayer" kindref="compound">route_layer</ref><sp/>*l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>*net)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlayer" kindref="compound">layer</ref><sp/>first<sp/>=<sp/>net-&gt;layers[l-&gt;input_layers[0]];</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>l-&gt;out_w<sp/>=<sp/>first.out_w;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>l-&gt;out_h<sp/>=<sp/>first.out_h;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>l-&gt;out_c<sp/>=<sp/>first.out_c;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>l-&gt;outputs<sp/>=<sp/>first.outputs;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>l-&gt;input_sizes[0]<sp/>=<sp/>first.outputs;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>l-&gt;n;<sp/>++i){</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>l-&gt;input_layers[i];</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlayer" kindref="compound">layer</ref><sp/>next<sp/>=<sp/>net-&gt;layers[index];</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l-&gt;outputs<sp/>+=<sp/>next.outputs;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l-&gt;input_sizes[i]<sp/>=<sp/>next.outputs;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(next.out_w<sp/>==<sp/>first.out_w<sp/>&amp;&amp;<sp/>next.out_h<sp/>==<sp/>first.out_h){</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l-&gt;out_c<sp/>+=<sp/>next.out_c;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%d<sp/>%d,<sp/>%d<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>next.out_w,<sp/>next.out_h,<sp/>first.out_w,<sp/>first.out_h);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l-&gt;out_h<sp/>=<sp/>l-&gt;out_w<sp/>=<sp/>l-&gt;out_c<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>l-&gt;inputs<sp/>=<sp/>l-&gt;outputs;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>l-&gt;delta<sp/>=<sp/><sp/>realloc(l-&gt;delta,<sp/>l-&gt;outputs*l-&gt;batch*</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>l-&gt;output<sp/>=<sp/>realloc(l-&gt;output,<sp/>l-&gt;outputs*l-&gt;batch*</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>cuda_free(l-&gt;output_gpu);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>cuda_free(l-&gt;delta_gpu);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>l-&gt;output_gpu<sp/><sp/>=<sp/>cuda_make_array(l-&gt;output,<sp/>l-&gt;outputs*l-&gt;batch);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>l-&gt;delta_gpu<sp/><sp/><sp/>=<sp/>cuda_make_array(l-&gt;delta,<sp/><sp/>l-&gt;outputs*l-&gt;batch);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>forward_route_layer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlayer" kindref="compound">route_layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>j;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>l.n;<sp/>++i){</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>l.input_layers[i];</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*input<sp/>=<sp/>net.layers[index].output;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>input_size<sp/>=<sp/>l.input_sizes[i];</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>l.batch;<sp/>++j){</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>copy_cpu(input_size,<sp/>input<sp/>+<sp/>j*input_size,<sp/>1,<sp/>l.output<sp/>+<sp/>offset<sp/>+<sp/>j*l.outputs,<sp/>1);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>+=<sp/>input_size;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_route_layer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlayer" kindref="compound">route_layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>j;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>l.n;<sp/>++i){</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>l.input_layers[i];</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*delta<sp/>=<sp/>net.layers[index].delta;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>input_size<sp/>=<sp/>l.input_sizes[i];</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>l.batch;<sp/>++j){</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>axpy_cpu(input_size,<sp/>1,<sp/>l.delta<sp/>+<sp/>offset<sp/>+<sp/>j*l.outputs,<sp/>1,<sp/>delta<sp/>+<sp/>j*input_size,<sp/>1);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>+=<sp/>input_size;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>forward_route_layer_gpu(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlayer" kindref="compound">route_layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>j;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>l.n;<sp/>++i){</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>l.input_layers[i];</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*input<sp/>=<sp/>net.layers[index].output_gpu;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>input_size<sp/>=<sp/>l.input_sizes[i];</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>l.batch;<sp/>++j){</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>copy_gpu(input_size,<sp/>input<sp/>+<sp/>j*input_size,<sp/>1,<sp/>l.output_gpu<sp/>+<sp/>offset<sp/>+<sp/>j*l.outputs,<sp/>1);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>+=<sp/>input_size;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_route_layer_gpu(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlayer" kindref="compound">route_layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>j;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>l.n;<sp/>++i){</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>l.input_layers[i];</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*delta<sp/>=<sp/>net.layers[index].delta_gpu;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>input_size<sp/>=<sp/>l.input_sizes[i];</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>l.batch;<sp/>++j){</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>axpy_gpu(input_size,<sp/>1,<sp/>l.delta_gpu<sp/>+<sp/>offset<sp/>+<sp/>j*l.outputs,<sp/>1,<sp/>delta<sp/>+<sp/>j*input_size,<sp/>1);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>+=<sp/>input_size;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/route_layer.c"/>
+  </compounddef>
+</doxygen>

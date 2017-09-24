@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_22646c97983fbacd357b4ba82fa3c4b7" kind="dir">
+    <compoundname>/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts</compoundname>
+    <innerfile refid="face__detection_8py">face_detection.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/"/>
+  </compounddef>
+</doxygen>

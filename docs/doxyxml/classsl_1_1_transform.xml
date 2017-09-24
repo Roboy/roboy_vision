@@ -1,0 +1,387 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classsl_1_1_transform" kind="class" language="C++" prot="public">
+    <compoundname>sl::Transform</compoundname>
+    <basecompoundref refid="classsl_1_1_matrix4f" prot="public" virt="non-virtual">sl::Matrix4f</basecompoundref>
+    <includes refid="_core_8hpp" local="no">Core.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsl_1_1_transform_1aa7789238ddc095d2fe3c249fb1e52dbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Transform::Transform</definition>
+        <argsstring>()</argsstring>
+        <name>Transform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief <ref refid="classsl_1_1_transform" kindref="compound">Transform</ref> default constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="864" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_transform_1a287e330810b424e4d1866441089417fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Transform::Transform</definition>
+        <argsstring>(const Transform &amp;motion)</argsstring>
+        <name>Transform</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_transform" kindref="compound">Transform</ref> &amp;</type>
+          <declname>motion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief <ref refid="classsl_1_1_transform" kindref="compound">Transform</ref> copy constructor (deep copy). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>motion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the <ref refid="classsl_1_1_transform" kindref="compound">Transform</ref> to copy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="870" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_transform_1a2745e2760ddaf8700733c2229457ff54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Transform::Transform</definition>
+        <argsstring>(const Matrix4f &amp;mat)</argsstring>
+        <name>Transform</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief <ref refid="classsl_1_1_transform" kindref="compound">Transform</ref> copy constructor (deep copy). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the <ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref> to copy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="876" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_transform_1a114cd14590b2629de3b70adf65b50ea4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Transform::Transform</definition>
+        <argsstring>(const Rotation &amp;rotation, const Translation &amp;translation)</argsstring>
+        <name>Transform</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_rotation" kindref="compound">Rotation</ref> &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref> &amp;</type>
+          <declname>translation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief <ref refid="classsl_1_1_transform" kindref="compound">Transform</ref> constructor from a <ref refid="classsl_1_1_rotation" kindref="compound">Rotation</ref> and a <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the <ref refid="classsl_1_1_rotation" kindref="compound">Rotation</ref> to copy. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>translation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref> to copy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="883" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_transform_1a7b27701a18c8834fe6df8d58a5c8a747" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Transform::Transform</definition>
+        <argsstring>(const Orientation &amp;orientation, const Translation &amp;translation)</argsstring>
+        <name>Transform</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> &amp;</type>
+          <declname>orientation</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref> &amp;</type>
+          <declname>translation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief <ref refid="classsl_1_1_transform" kindref="compound">Transform</ref> constructor from an <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> and a <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orientation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> to copy. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>translation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref> to copy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="890" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_transform_1a422600bf7760071cc9bd82234c5ed3c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Transform::setRotation</definition>
+        <argsstring>(const Rotation &amp;rotation)</argsstring>
+        <name>setRotation</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_rotation" kindref="compound">Rotation</ref> &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+<para>Sets the rotation of the current <ref refid="classsl_1_1_transform" kindref="compound">Transform</ref> from an <ref refid="classsl_1_1_rotation" kindref="compound">Rotation</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the <ref refid="classsl_1_1_rotation" kindref="compound">Rotation</ref> to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="896" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_transform_1a33be5c65db38ba4517c39ebfbc3bb874" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsl_1_1_rotation" kindref="compound">Rotation</ref></type>
+        <definition>Rotation sl::Transform::getRotation</definition>
+        <argsstring>() const </argsstring>
+        <name>getRotation</name>
+        <briefdescription>
+<para>Returns the <ref refid="classsl_1_1_rotation" kindref="compound">Rotation</ref> of the current <ref refid="classsl_1_1_transform" kindref="compound">Transform</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The <ref refid="classsl_1_1_rotation" kindref="compound">Rotation</ref> created from the <ref refid="classsl_1_1_transform" kindref="compound">Transform</ref> values. </para></simplesect>
+<simplesect kind="warning"><para>The given <ref refid="classsl_1_1_rotation" kindref="compound">Rotation</ref> contains a copy of the <ref refid="classsl_1_1_transform" kindref="compound">Transform</ref> values. Not references. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="903" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_transform_1aaa63849afb4940f33e31342c2da24d01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Transform::setTranslation</definition>
+        <argsstring>(const Translation &amp;translation)</argsstring>
+        <name>setTranslation</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref> &amp;</type>
+          <declname>translation</declname>
+        </param>
+        <briefdescription>
+<para>Sets the translation of the current <ref refid="classsl_1_1_transform" kindref="compound">Transform</ref> from an <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>translation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref> to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="909" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_transform_1a014f58dd0b03cbda7fdf5c3182ab0d97" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsl_1_1_translation" kindref="compound">Translation</ref></type>
+        <definition>Translation sl::Transform::getTranslation</definition>
+        <argsstring>() const </argsstring>
+        <name>getTranslation</name>
+        <briefdescription>
+<para>Returns the <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref> of the current <ref refid="classsl_1_1_transform" kindref="compound">Transform</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref> created from the <ref refid="classsl_1_1_transform" kindref="compound">Transform</ref> values. </para></simplesect>
+<simplesect kind="warning"><para>The given <ref refid="classsl_1_1_translation" kindref="compound">Translation</ref> contains a copy of the <ref refid="classsl_1_1_transform" kindref="compound">Transform</ref> values. Not references. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="916" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_transform_1a3adbf85da4901d54a4c1d8e08c79faf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Transform::setOrientation</definition>
+        <argsstring>(const Orientation &amp;orientation)</argsstring>
+        <name>setOrientation</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> &amp;</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+<para>Sets the orientation of the current <ref refid="classsl_1_1_transform" kindref="compound">Transform</ref> from an <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orientation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="922" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_transform_1a286d67ce436fa8f32f21c6921f2a61eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref></type>
+        <definition>Orientation sl::Transform::getOrientation</definition>
+        <argsstring>() const </argsstring>
+        <name>getOrientation</name>
+        <briefdescription>
+<para>Returns the <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> of the current <ref refid="classsl_1_1_transform" kindref="compound">Transform</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> created from the <ref refid="classsl_1_1_transform" kindref="compound">Transform</ref> values. </para></simplesect>
+<simplesect kind="warning"><para>The given <ref refid="classsl_1_1_orientation" kindref="compound">Orientation</ref> contains a copy of the <ref refid="classsl_1_1_transform" kindref="compound">Transform</ref> values. Not references. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="929" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_transform_1a83c6150dc59593c8f9dff634dae862e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl::Vector3&lt; float &gt;</type>
+        <definition>sl::Vector3&lt;float&gt; sl::Transform::getRotationVector</definition>
+        <argsstring>()</argsstring>
+        <name>getRotationVector</name>
+        <briefdescription>
+<para>Returns the vector <ref refid="classsl_1_1_rotation" kindref="compound">Rotation</ref> (3x1) of the <ref refid="classsl_1_1_transform" kindref="compound">Transform</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The rotation value for each axis (rx,ry,rz). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="935" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_transform_1a34683a3cf7e6fef9d589d97d20fc0f2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Transform::setRotationVector</definition>
+        <argsstring>(const sl::Vector3&lt; float &gt; &amp;vec_rot)</argsstring>
+        <name>setRotationVector</name>
+        <param>
+          <type>const sl::Vector3&lt; float &gt; &amp;</type>
+          <declname>vec_rot</declname>
+        </param>
+        <briefdescription>
+<para>Sets the <ref refid="classsl_1_1_rotation" kindref="compound">Rotation</ref> 3x3 of the <ref refid="classsl_1_1_transform" kindref="compound">Transform</ref> with a 3x1 rotation vector (using Rodrigues&apos; transformation). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_rot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: vector that contains the rotation value for each axis (rx,ry,rz). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="941" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The class <ref refid="classsl_1_1_transform" kindref="compound">Transform</ref> contains a 4x4 matrix that specifically contains a rotation 3x3 and a 3x1 translation. </para>    </briefdescription>
+    <detaileddescription>
+<para>It then contains the orientation as well. It can be used to create any type of Matrix4x4 or <ref refid="classsl_1_1_matrix4f" kindref="compound">sl::Matrix4f</ref> that must be specifically used for handling a rotation and position information (OpenGL, Tracking...) It inherits from the generic <ref refid="classsl_1_1_matrix4f" kindref="compound">sl::Matrix4f</ref> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="366">
+        <label>sl::Transform</label>
+        <link refid="classsl_1_1_transform"/>
+        <childnode refid="367" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="367">
+        <label>sl::Matrix4f</label>
+        <link refid="classsl_1_1_matrix4f"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="368">
+        <label>sl::Transform</label>
+        <link refid="classsl_1_1_transform"/>
+        <childnode refid="369" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="369">
+        <label>sl::Matrix4f</label>
+        <link refid="classsl_1_1_matrix4f"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="859" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="859" bodyend="942"/>
+    <listofallmembers>
+      <member refid="classsl_1_1_matrix4f_1a18f441c99bc93c191553ea34662e7d25" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>getInfos</name></member>
+      <member refid="classsl_1_1_transform_1a286d67ce436fa8f32f21c6921f2a61eb" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>getOrientation</name></member>
+      <member refid="classsl_1_1_transform_1a33be5c65db38ba4517c39ebfbc3bb874" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>getRotation</name></member>
+      <member refid="classsl_1_1_transform_1a83c6150dc59593c8f9dff634dae862e9" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>getRotationVector</name></member>
+      <member refid="classsl_1_1_transform_1a014f58dd0b03cbda7fdf5c3182ab0d97" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>getTranslation</name></member>
+      <member refid="classsl_1_1_matrix4f_1ad1240f12cc95f9077a649d00ccf5b0da" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>identity</name></member>
+      <member refid="classsl_1_1_matrix4f_1a0678ad955aa52c47937257a2c1f6587a" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>inverse</name></member>
+      <member refid="classsl_1_1_matrix4f_1a5f0c318a1064ee5bf9735d9abd3df43a" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>inverse</name></member>
+      <member refid="classsl_1_1_matrix4f_1a132361263753687f4b7033d17d2e4231" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>m</name></member>
+      <member refid="classsl_1_1_matrix4f_1ae2a93285c199fa85743ea4b355c218d1" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>m30</name></member>
+      <member refid="classsl_1_1_matrix4f_1af76884e0f67d7c213767b6cc0deaf5ce" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>m31</name></member>
+      <member refid="classsl_1_1_matrix4f_1af39e407d6aecd5b4150faa96f793a84f" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>m32</name></member>
+      <member refid="classsl_1_1_matrix4f_1a9ae104646f74f1ca2f5907fa5098d459" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>m33</name></member>
+      <member refid="classsl_1_1_matrix4f_1a51d6886104a13fed531a2ad43e2ba41e" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>Matrix4f</name></member>
+      <member refid="classsl_1_1_matrix4f_1a87ff5c4813d321b3f75c223c69f3d6c4" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>Matrix4f</name></member>
+      <member refid="classsl_1_1_matrix4f_1a9a2c6ee41ff9f60c9b38ffd98bcec638" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>Matrix4f</name></member>
+      <member refid="classsl_1_1_matrix4f_1ade7ab277157a58637172f5a5071bd4db" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>matrix_name</name></member>
+      <member refid="classsl_1_1_matrix4f_1a1ea844e29dea5af3c2cf7b55ddcc4a00" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>nbElem</name></member>
+      <member refid="classsl_1_1_matrix4f_1a5baf40c2695639fde1ae298dd5c45c64" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>operator!=</name></member>
+      <member refid="classsl_1_1_matrix4f_1a0edeefb3b78ebf2542995e0e20833f75" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>operator()</name></member>
+      <member refid="classsl_1_1_matrix4f_1a9b893c23d49d4a0b8779b8bbb3beae4c" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>operator*</name></member>
+      <member refid="classsl_1_1_matrix4f_1ad00405eeef566a989118a03e9e2f0426" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>operator*</name></member>
+      <member refid="classsl_1_1_matrix4f_1ad742b7faad74fbaaeaedb5f833e435db" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>operator==</name></member>
+      <member refid="classsl_1_1_matrix4f_1a8e774029d7152bce0c1d3e0cd9bd0f5e" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>r00</name></member>
+      <member refid="classsl_1_1_matrix4f_1acf34b2775d44ce13a24431916cfcbc7a" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>r01</name></member>
+      <member refid="classsl_1_1_matrix4f_1a18fc852ecdc9777f79d6f49963b0c476" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>r02</name></member>
+      <member refid="classsl_1_1_matrix4f_1a9328621a658d4a2b4a3557837503ba6f" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>r10</name></member>
+      <member refid="classsl_1_1_matrix4f_1a74e8b116337f6c15649a8edf2a62f08e" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>r11</name></member>
+      <member refid="classsl_1_1_matrix4f_1a57befd263b91f780ee6a5aef37075687" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>r12</name></member>
+      <member refid="classsl_1_1_matrix4f_1a734bebad04033a8ccf053ec7ef074952" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>r20</name></member>
+      <member refid="classsl_1_1_matrix4f_1a26c0779be65b396319437c326cd13cdb" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>r21</name></member>
+      <member refid="classsl_1_1_matrix4f_1a222afeae4b3c27566b4e77adbc7fd4e0" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>r22</name></member>
+      <member refid="classsl_1_1_matrix4f_1a546cfd7d75e408e88cee4869a5c6cc91" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>setIdentity</name></member>
+      <member refid="classsl_1_1_transform_1a3adbf85da4901d54a4c1d8e08c79faf6" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>setOrientation</name></member>
+      <member refid="classsl_1_1_transform_1a422600bf7760071cc9bd82234c5ed3c3" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>setRotation</name></member>
+      <member refid="classsl_1_1_transform_1a34683a3cf7e6fef9d589d97d20fc0f2f" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>setRotationVector</name></member>
+      <member refid="classsl_1_1_matrix4f_1a2a1592134649fe695e265995fd3d598a" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>setSubMatrix3f</name></member>
+      <member refid="classsl_1_1_matrix4f_1ac5f637fec939c8abfd08e1d1adacfcb7" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>setSubVector3f</name></member>
+      <member refid="classsl_1_1_matrix4f_1acdbb2319a8105ff17636b95c986ad62e" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>setSubVector4f</name></member>
+      <member refid="classsl_1_1_transform_1aaa63849afb4940f33e31342c2da24d01" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>setTranslation</name></member>
+      <member refid="classsl_1_1_matrix4f_1a73012039f843e5041baeb98cb370e2cd" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>setZeros</name></member>
+      <member refid="classsl_1_1_transform_1aa7789238ddc095d2fe3c249fb1e52dbb" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>Transform</name></member>
+      <member refid="classsl_1_1_transform_1a287e330810b424e4d1866441089417fb" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>Transform</name></member>
+      <member refid="classsl_1_1_transform_1a2745e2760ddaf8700733c2229457ff54" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>Transform</name></member>
+      <member refid="classsl_1_1_transform_1a114cd14590b2629de3b70adf65b50ea4" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>Transform</name></member>
+      <member refid="classsl_1_1_transform_1a7b27701a18c8834fe6df8d58a5c8a747" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>Transform</name></member>
+      <member refid="classsl_1_1_matrix4f_1a989b3cf6879084f8804098cf5397d450" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>transpose</name></member>
+      <member refid="classsl_1_1_matrix4f_1aee343c8bcd6853c2e9341fd7c0eefbcc" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>transpose</name></member>
+      <member refid="classsl_1_1_matrix4f_1a60ee3cffb46d4547c6f086aec638c02a" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>tx</name></member>
+      <member refid="classsl_1_1_matrix4f_1ae24c1f2be6600483c0b39d56ab2b5278" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>ty</name></member>
+      <member refid="classsl_1_1_matrix4f_1a34e50a8187f918efae21684c6a71f8e5" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>tz</name></member>
+      <member refid="classsl_1_1_matrix4f_1a0164dd9c062a1dc3f8672c4e25cc4440" prot="public" virt="non-virtual"><scope>sl::Transform</scope><name>zeros</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

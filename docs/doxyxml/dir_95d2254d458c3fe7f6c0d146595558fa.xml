@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_95d2254d458c3fe7f6c0d146595558fa" kind="dir">
+    <compoundname>/home/ubuntu/workspace/roboy_vision/src/pyyolo</compoundname>
+    <innerdir refid="dir_5270098623a1e501a01276d094cc269a">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet</innerdir>
+    <innerfile refid="example_8py">example.py</innerfile>
+    <innerfile refid="libyolo_8c">libyolo.c</innerfile>
+    <innerfile refid="libyolo_8h">libyolo.h</innerfile>
+    <innerfile refid="module_8c">module.c</innerfile>
+    <innerfile refid="setup_8py">setup.py</innerfile>
+    <innerfile refid="setup__gpu_8py">setup_gpu.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/"/>
+  </compounddef>
+</doxygen>

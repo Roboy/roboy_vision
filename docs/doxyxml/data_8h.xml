@@ -1,0 +1,1095 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="data_8h" kind="file" language="C++">
+    <compoundname>data.h</compoundname>
+    <includes local="no">pthread.h</includes>
+    <includes refid="darknet_8h" local="yes">darknet.h</includes>
+    <includes refid="matrix_8h" local="yes">matrix.h</includes>
+    <includes refid="list_8h" local="yes">list.h</includes>
+    <includes refid="image_8h" local="yes">image.h</includes>
+    <includes refid="tree_8h" local="yes">tree.h</includes>
+    <includedby refid="network_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.h</includedby>
+    <includedby refid="data_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c</includedby>
+    <includedby refid="network_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.c</includedby>
+    <includedby refid="tree_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/tree.c</includedby>
+    <incdepgraph>
+      <node id="745">
+        <label>box.h</label>
+        <link refid="box_8h_source"/>
+        <childnode refid="736" relation="include">
+        </childnode>
+      </node>
+      <node id="743">
+        <label>float.h</label>
+      </node>
+      <node id="737">
+        <label>stdlib.h</label>
+      </node>
+      <node id="734">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h</label>
+        <link refid="data.h"/>
+        <childnode refid="735" relation="include">
+        </childnode>
+        <childnode refid="736" relation="include">
+        </childnode>
+        <childnode refid="740" relation="include">
+        </childnode>
+        <childnode refid="741" relation="include">
+        </childnode>
+        <childnode refid="742" relation="include">
+        </childnode>
+        <childnode refid="746" relation="include">
+        </childnode>
+      </node>
+      <node id="741">
+        <label>list.h</label>
+        <link refid="list_8h_source"/>
+        <childnode refid="736" relation="include">
+        </childnode>
+      </node>
+      <node id="740">
+        <label>matrix.h</label>
+        <link refid="matrix_8h_source"/>
+        <childnode refid="736" relation="include">
+        </childnode>
+      </node>
+      <node id="736">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="737" relation="include">
+        </childnode>
+        <childnode refid="738" relation="include">
+        </childnode>
+        <childnode refid="739" relation="include">
+        </childnode>
+        <childnode refid="735" relation="include">
+        </childnode>
+      </node>
+      <node id="735">
+        <label>pthread.h</label>
+      </node>
+      <node id="742">
+        <label>image.h</label>
+        <link refid="image_8h_source"/>
+        <childnode refid="737" relation="include">
+        </childnode>
+        <childnode refid="738" relation="include">
+        </childnode>
+        <childnode refid="743" relation="include">
+        </childnode>
+        <childnode refid="739" relation="include">
+        </childnode>
+        <childnode refid="744" relation="include">
+        </childnode>
+        <childnode refid="745" relation="include">
+        </childnode>
+        <childnode refid="736" relation="include">
+        </childnode>
+      </node>
+      <node id="739">
+        <label>string.h</label>
+      </node>
+      <node id="744">
+        <label>math.h</label>
+      </node>
+      <node id="746">
+        <label>tree.h</label>
+        <link refid="tree_8h_source"/>
+        <childnode refid="736" relation="include">
+        </childnode>
+      </node>
+      <node id="738">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="759">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/deconvolutional_layer.h</label>
+        <link refid="deconvolutional__layer_8h_source"/>
+      </node>
+      <node id="767">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/rnn_layer.h</label>
+        <link refid="rnn__layer_8h_source"/>
+      </node>
+      <node id="768">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/normalization_layer.h</label>
+        <link refid="normalization__layer_8h_source"/>
+      </node>
+      <node id="762">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/dropout_layer.h</label>
+        <link refid="dropout__layer_8h_source"/>
+      </node>
+      <node id="751">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h</label>
+        <link refid="convolutional__layer_8h_source"/>
+      </node>
+      <node id="756">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/connected_layer.h</label>
+        <link refid="connected__layer_8h_source"/>
+      </node>
+      <node id="747">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h</label>
+        <link refid="data.h"/>
+        <childnode refid="748" relation="include">
+        </childnode>
+      </node>
+      <node id="748">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.h</label>
+        <link refid="network_8h_source"/>
+        <childnode refid="749" relation="include">
+        </childnode>
+        <childnode refid="750" relation="include">
+        </childnode>
+        <childnode refid="751" relation="include">
+        </childnode>
+        <childnode refid="752" relation="include">
+        </childnode>
+        <childnode refid="753" relation="include">
+        </childnode>
+        <childnode refid="754" relation="include">
+        </childnode>
+        <childnode refid="755" relation="include">
+        </childnode>
+        <childnode refid="756" relation="include">
+        </childnode>
+        <childnode refid="757" relation="include">
+        </childnode>
+        <childnode refid="758" relation="include">
+        </childnode>
+        <childnode refid="759" relation="include">
+        </childnode>
+        <childnode refid="760" relation="include">
+        </childnode>
+        <childnode refid="761" relation="include">
+        </childnode>
+        <childnode refid="762" relation="include">
+        </childnode>
+        <childnode refid="763" relation="include">
+        </childnode>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+        <childnode refid="766" relation="include">
+        </childnode>
+        <childnode refid="767" relation="include">
+        </childnode>
+        <childnode refid="768" relation="include">
+        </childnode>
+        <childnode refid="769" relation="include">
+        </childnode>
+        <childnode refid="770" relation="include">
+        </childnode>
+        <childnode refid="771" relation="include">
+        </childnode>
+      </node>
+      <node id="755">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.h</label>
+        <link refid="parser_8h_source"/>
+      </node>
+      <node id="749">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/activation_layer.h</label>
+        <link refid="activation__layer_8h_source"/>
+      </node>
+      <node id="753">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/detection_layer.h</label>
+        <link refid="detection__layer_8h_source"/>
+      </node>
+      <node id="764">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.h</label>
+        <link refid="local__layer_8h_source"/>
+      </node>
+      <node id="754">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/cost_layer.h</label>
+        <link refid="cost__layer_8h_source"/>
+      </node>
+      <node id="752">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/batchnorm_layer.h</label>
+        <link refid="batchnorm__layer_8h_source"/>
+      </node>
+      <node id="770">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/route_layer.h</label>
+        <link refid="route__layer_8h_source"/>
+      </node>
+      <node id="766">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.h</label>
+        <link refid="maxpool__layer_8h_source"/>
+      </node>
+      <node id="760">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/region_layer.h</label>
+        <link refid="region__layer_8h_source"/>
+      </node>
+      <node id="750">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/avgpool_layer.h</label>
+        <link refid="avgpool__layer_8h_source"/>
+      </node>
+      <node id="765">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/lstm_layer.h</label>
+        <link refid="lstm__layer_8h_source"/>
+      </node>
+      <node id="769">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/reorg_layer.h</label>
+        <link refid="reorg__layer_8h_source"/>
+      </node>
+      <node id="761">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/softmax_layer.h</label>
+        <link refid="softmax__layer_8h_source"/>
+      </node>
+      <node id="757">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crnn_layer.h</label>
+        <link refid="crnn__layer_8h_source"/>
+      </node>
+      <node id="771">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/shortcut_layer.h</label>
+        <link refid="shortcut__layer_8h_source"/>
+      </node>
+      <node id="763">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/gru_layer.h</label>
+        <link refid="gru__layer_8h_source"/>
+      </node>
+      <node id="758">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crop_layer.h</label>
+        <link refid="crop__layer_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="data_8h_1abdbfb59b4fa97ae5a30ded28e8defd39" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>static float distance_from_edge</definition>
+        <argsstring>(int x, int max)</argsstring>
+        <name>distance_from_edge</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" line="11" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" bodystart="11" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="data_8h_1af613daa4c07c1d470f0ced3afd6842a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void load_data_blocking</definition>
+        <argsstring>(load_args args)</argsstring>
+        <name>load_data_blocking</name>
+        <param>
+          <type><ref refid="structload__args" kindref="compound">load_args</ref></type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" line="21" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c" bodystart="1073" bodyend="1078"/>
+      </memberdef>
+      <memberdef kind="function" id="data_8h_1acf22fe41fdd547c8e14f36b236a812e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_letters</definition>
+        <argsstring>(float *pred, int n)</argsstring>
+        <name>print_letters</name>
+        <param>
+          <type>float *</type>
+          <declname>pred</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" line="24" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c" bodystart="444" bodyend="452"/>
+      </memberdef>
+      <memberdef kind="function" id="data_8h_1aef1c432b8082eca32f06d6369dc80f64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdata" kindref="compound">data</ref></type>
+        <definition>data load_data_captcha</definition>
+        <argsstring>(char **paths, int n, int m, int k, int w, int h)</argsstring>
+        <name>load_data_captcha</name>
+        <param>
+          <type>char **</type>
+          <declname>paths</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" line="25" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c" bodystart="469" bodyend="482"/>
+      </memberdef>
+      <memberdef kind="function" id="data_8h_1a62f386d1561d87d9c754c0e8f07aa3ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdata" kindref="compound">data</ref></type>
+        <definition>data load_data_captcha_encode</definition>
+        <argsstring>(char **paths, int n, int m, int w, int h)</argsstring>
+        <name>load_data_captcha_encode</name>
+        <param>
+          <type>char **</type>
+          <declname>paths</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" line="26" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c" bodystart="484" bodyend="494"/>
+      </memberdef>
+      <memberdef kind="function" id="data_8h_1acbd80b4bb77de421ce8f0715f6d2a80a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdata" kindref="compound">data</ref></type>
+        <definition>data load_data_detection</definition>
+        <argsstring>(int n, char **paths, int m, int w, int h, int boxes, int classes, float jitter, float hue, float saturation, float exposure)</argsstring>
+        <name>load_data_detection</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>paths</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>boxes</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>classes</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>jitter</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>hue</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>saturation</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>exposure</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" line="27" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c" bodystart="940" bodyend="990"/>
+      </memberdef>
+      <memberdef kind="function" id="data_8h_1a041e51bae1bacd4e84338849783e7d72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdata" kindref="compound">data</ref></type>
+        <definition>data load_data_tag</definition>
+        <argsstring>(char **paths, int n, int m, int k, int min, int max, int size, float angle, float aspect, float hue, float saturation, float exposure)</argsstring>
+        <name>load_data_tag</name>
+        <param>
+          <type>char **</type>
+          <declname>paths</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>aspect</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>hue</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>saturation</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>exposure</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" line="28" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c" bodystart="1181" bodyend="1192"/>
+      </memberdef>
+      <memberdef kind="function" id="data_8h_1a0f4978e407f22ee5001b48a8a4d326e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmatrix" kindref="compound">matrix</ref></type>
+        <definition>matrix load_image_augment_paths</definition>
+        <argsstring>(char **paths, int n, int min, int max, int size, float angle, float aspect, float hue, float saturation, float exposure, int center)</argsstring>
+        <name>load_image_augment_paths</name>
+        <param>
+          <type>char **</type>
+          <declname>paths</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>aspect</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>hue</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>saturation</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>exposure</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>center</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" line="29" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c" bodystart="105" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="data_8h_1a3994c72c392eae1b1c405d439de76e22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdata" kindref="compound">data</ref></type>
+        <definition>data load_data_super</definition>
+        <argsstring>(char **paths, int n, int m, int w, int h, int scale)</argsstring>
+        <name>load_data_super</name>
+        <param>
+          <type>char **</type>
+          <declname>paths</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" line="30" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c" bodystart="1129" bodyend="1157"/>
+      </memberdef>
+      <memberdef kind="function" id="data_8h_1a43b17bfc80111f0e9a22b5748e8db3e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdata" kindref="compound">data</ref></type>
+        <definition>data load_data_augment</definition>
+        <argsstring>(char **paths, int n, int m, char **labels, int k, tree *hierarchy, int min, int max, int size, float angle, float aspect, float hue, float saturation, float exposure, int center)</argsstring>
+        <name>load_data_augment</name>
+        <param>
+          <type>char **</type>
+          <declname>paths</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>labels</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type><ref refid="structtree" kindref="compound">tree</ref> *</type>
+          <declname>hierarchy</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>aspect</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>hue</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>saturation</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>exposure</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>center</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" line="31" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c" bodystart="1170" bodyend="1179"/>
+      </memberdef>
+      <memberdef kind="function" id="data_8h_1a3d031c19fccc2c31ec202bbeda1615c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdata" kindref="compound">data</ref></type>
+        <definition>data load_data_regression</definition>
+        <argsstring>(char **paths, int n, int m, int min, int max, int size, float angle, float aspect, float hue, float saturation, float exposure)</argsstring>
+        <name>load_data_regression</name>
+        <param>
+          <type>char **</type>
+          <declname>paths</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>aspect</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>hue</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>saturation</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>exposure</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" line="32" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c" bodystart="1159" bodyend="1168"/>
+      </memberdef>
+      <memberdef kind="function" id="data_8h_1af32b828afa01bcaac3fa78bb56ec3b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdata" kindref="compound">data</ref></type>
+        <definition>data load_go</definition>
+        <argsstring>(char *filename)</argsstring>
+        <name>load_go</name>
+        <param>
+          <type>char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" line="33" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c" bodystart="1340" bodyend="1384"/>
+      </memberdef>
+      <memberdef kind="function" id="data_8h_1afe091cc7ae2ab63ee2a2d6e8d89202f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdata" kindref="compound">data</ref></type>
+        <definition>data load_data_writing</definition>
+        <argsstring>(char **paths, int n, int m, int w, int h, int out_w, int out_h)</argsstring>
+        <name>load_data_writing</name>
+        <param>
+          <type>char **</type>
+          <declname>paths</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>out_w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>out_h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" line="36" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c" bodystart="1089" bodyend="1102"/>
+      </memberdef>
+      <memberdef kind="function" id="data_8h_1ac842a292f2eb715758b39d469bc47626" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void get_random_batch</definition>
+        <argsstring>(data d, int n, float *X, float *y)</argsstring>
+        <name>get_random_batch</name>
+        <param>
+          <type><ref refid="structdata" kindref="compound">data</ref></type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" line="38" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c" bodystart="1275" bodyend="1283"/>
+      </memberdef>
+      <memberdef kind="function" id="data_8h_1aa0c8acf66fbe38a9974f7f1a77f7dc77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdata" kindref="compound">data</ref></type>
+        <definition>data get_data_part</definition>
+        <argsstring>(data d, int part, int total)</argsstring>
+        <name>get_data_part</name>
+        <param>
+          <type><ref refid="structdata" kindref="compound">data</ref></type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>part</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" line="39" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c" bodystart="1439" bodyend="1450"/>
+      </memberdef>
+      <memberdef kind="function" id="data_8h_1ae73aa542052eed74b8248bc0df0136ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdata" kindref="compound">data</ref></type>
+        <definition>data get_random_data</definition>
+        <argsstring>(data d, int num)</argsstring>
+        <name>get_random_data</name>
+        <param>
+          <type><ref refid="structdata" kindref="compound">data</ref></type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" line="40" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c" bodystart="1452" bodyend="1473"/>
+      </memberdef>
+      <memberdef kind="function" id="data_8h_1ae288bc38519deb719f39a38b92b3d99c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdata" kindref="compound">data</ref></type>
+        <definition>data load_categorical_data_csv</definition>
+        <argsstring>(char *filename, int target, int k)</argsstring>
+        <name>load_categorical_data_csv</name>
+        <param>
+          <type>char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" line="41" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c" bodystart="1231" bodyend="1246"/>
+      </memberdef>
+      <memberdef kind="function" id="data_8h_1a8bb2e4f18bee940f1b3e76ada4bf7e09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void normalize_data_rows</definition>
+        <argsstring>(data d)</argsstring>
+        <name>normalize_data_rows</name>
+        <param>
+          <type><ref refid="structdata" kindref="compound">data</ref></type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" line="42" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c" bodystart="1431" bodyend="1437"/>
+      </memberdef>
+      <memberdef kind="function" id="data_8h_1acbb4f5fcc08c77620c177ea1b0cfc667" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void scale_data_rows</definition>
+        <argsstring>(data d, float s)</argsstring>
+        <name>scale_data_rows</name>
+        <param>
+          <type><ref refid="structdata" kindref="compound">data</ref></type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" line="43" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c" bodystart="1402" bodyend="1408"/>
+      </memberdef>
+      <memberdef kind="function" id="data_8h_1af343853074dfe80d14a052effdba825b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void translate_data_rows</definition>
+        <argsstring>(data d, float s)</argsstring>
+        <name>translate_data_rows</name>
+        <param>
+          <type><ref refid="structdata" kindref="compound">data</ref></type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" line="44" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c" bodystart="1410" bodyend="1416"/>
+      </memberdef>
+      <memberdef kind="function" id="data_8h_1a99c2d667a09e1234c18e14cac198a273" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void randomize_data</definition>
+        <argsstring>(data d)</argsstring>
+        <name>randomize_data</name>
+        <param>
+          <type><ref refid="structdata" kindref="compound">data</ref></type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" line="45" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c" bodystart="1387" bodyend="1400"/>
+      </memberdef>
+      <memberdef kind="function" id="data_8h_1a6ac403c4a56cc8405002dd98f09ee00a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdata" kindref="compound">data</ref> *</type>
+        <definition>data* split_data</definition>
+        <argsstring>(data d, int part, int total)</argsstring>
+        <name>split_data</name>
+        <param>
+          <type><ref refid="structdata" kindref="compound">data</ref></type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>part</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" line="46" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c" bodystart="1475" bodyend="1510"/>
+      </memberdef>
+      <memberdef kind="function" id="data_8h_1a4eca1b9b01ae2ff7a98094f7fa3661db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdata" kindref="compound">data</ref></type>
+        <definition>data concat_datas</definition>
+        <argsstring>(data *d, int n)</argsstring>
+        <name>concat_datas</name>
+        <param>
+          <type><ref refid="structdata" kindref="compound">data</ref> *</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" line="47" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c" bodystart="1219" bodyend="1229"/>
+      </memberdef>
+      <memberdef kind="function" id="data_8h_1a9aafc84188318df7ba98955af6390114" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fill_truth</definition>
+        <argsstring>(char *path, char **labels, int k, float *truth)</argsstring>
+        <name>fill_truth</name>
+        <param>
+          <type>char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>labels</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>truth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h" line="48" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c" bodystart="496" bodyend="508"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>DATA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DATA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;darknet.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;matrix.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;list.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;image.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;tree.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>distance_from_edge(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dx<sp/>=<sp/>(max/2)<sp/>-<sp/>x;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dx<sp/>&lt;<sp/>0)<sp/>dx<sp/>=<sp/>-dx;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>dx<sp/>=<sp/>(max/2)<sp/>+<sp/>1<sp/>-<sp/>dx;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>dx<sp/>*=<sp/>2;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dist<sp/>=<sp/>(float)dx/max;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dist<sp/>&gt;<sp/>1)<sp/>dist<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dist;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>load_data_blocking(<ref refid="structload__args" kindref="compound">load_args</ref><sp/>args);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_letters(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*pred,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><ref refid="structdata" kindref="compound">data</ref><sp/>load_data_captcha(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**paths,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><ref refid="structdata" kindref="compound">data</ref><sp/>load_data_captcha_encode(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**paths,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><ref refid="structdata" kindref="compound">data</ref><sp/>load_data_detection(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**paths,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>boxes,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>classes,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>jitter,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>hue,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>saturation,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>exposure);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><ref refid="structdata" kindref="compound">data</ref><sp/>load_data_tag(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**paths,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>aspect,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>hue,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>saturation,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>exposure);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><ref refid="structmatrix" kindref="compound">matrix</ref><sp/>load_image_augment_paths(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**paths,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>aspect,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>hue,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>saturation,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>exposure,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>center);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><ref refid="structdata" kindref="compound">data</ref><sp/>load_data_super(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**paths,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scale);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><ref refid="structdata" kindref="compound">data</ref><sp/>load_data_augment(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**paths,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**labels,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k,<sp/><ref refid="structtree" kindref="compound">tree</ref><sp/>*hierarchy,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>aspect,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>hue,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>saturation,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>exposure,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>center);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><ref refid="structdata" kindref="compound">data</ref><sp/>load_data_regression(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**paths,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>aspect,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>hue,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>saturation,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>exposure);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="structdata" kindref="compound">data</ref><sp/>load_go(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><ref refid="structdata" kindref="compound">data</ref><sp/>load_data_writing(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**paths,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>out_w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>out_h);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>get_random_batch(<ref refid="structdata" kindref="compound">data</ref><sp/>d,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*X,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*y);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><ref refid="structdata" kindref="compound">data</ref><sp/>get_data_part(<ref refid="structdata" kindref="compound">data</ref><sp/>d,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>part,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>total);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><ref refid="structdata" kindref="compound">data</ref><sp/>get_random_data(<ref refid="structdata" kindref="compound">data</ref><sp/>d,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><ref refid="structdata" kindref="compound">data</ref><sp/>load_categorical_data_csv(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>target,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>normalize_data_rows(<ref refid="structdata" kindref="compound">data</ref><sp/>d);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scale_data_rows(<ref refid="structdata" kindref="compound">data</ref><sp/>d,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>translate_data_rows(<ref refid="structdata" kindref="compound">data</ref><sp/>d,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>randomize_data(<ref refid="structdata" kindref="compound">data</ref><sp/>d);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><ref refid="structdata" kindref="compound">data</ref><sp/>*split_data(<ref refid="structdata" kindref="compound">data</ref><sp/>d,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>part,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>total);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><ref refid="structdata" kindref="compound">data</ref><sp/>concat_datas(<ref refid="structdata" kindref="compound">data</ref><sp/>*d,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fill_truth(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**labels,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*truth);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_c_make_lists_8txt" kind="file" language="C++">
+    <compoundname>CMakeLists.txt</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_c_make_lists_8txt_1a70b0be35802e7a1df142361751d711ef" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>_cmd_str</definition>
+        <argsstring></argsstring>
+        <name>_cmd_str</name>
+        <initializer>{_cmd}&quot;)
+  message(FATAL_ERROR &quot;Search for &apos;catkin&apos; in workspace failed (${_cmd_str}): ${_err}&quot;)
+endif()
+
+
+if(_res EQUAL 0)
+  set(catkin_EXTRAS_DIR &quot;${CMAKE_SOURCE_DIR}/${_out}/cmake&quot;)
+
+  include(${catkin_EXTRAS_DIR}/all.cmake NO_POLICY_SCOPE)
+  add_subdirectory(&quot;${_out}&quot;)
+
+else()
+
+
+  if(NOT DEFINED CMAKE_PREFIX_PATH)
+    if(NOT &quot;$ENV{CMAKE_PREFIX_PATH}&quot; STREQUAL &quot;&quot;)
+      string(REPLACE &quot;:&quot; &quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/CMakeLists.txt" line="19" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/CMakeLists.txt" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_c_make_lists_8txt_1ab5607a27f36503780247017dd038c906" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cmake_minimum_required</definition>
+        <argsstring>(VERSION 2.8.3) set(CATKIN_TOPLEVEL TRUE) set(_cmd&quot;catkin_find_pkg&quot;&quot;catkin&quot;&quot;$</argsstring>
+        <name>cmake_minimum_required</name>
+        <param>
+          <type>VERSION 2.8.</type>
+          <declname>3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/CMakeLists.txt" line="4" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/CMakeLists.txt" bodystart="4" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="_c_make_lists_8txt_1a3872d6c7d25506c3b3a62f1e0b82ca83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>execute_process</definition>
+        <argsstring>(COMMAND ${_cmd}RESULT_VARIABLE _res OUTPUT_VARIABLE _out ERROR_VARIABLE _err OUTPUT_STRIP_TRAILING_WHITESPACE ERROR_STRIP_TRAILING_WHITESPACE) if(NOT _res EQUAL 0 AND NOT _res EQUAL 2) string(REPLACE&quot;</argsstring>
+        <name>execute_process</name>
+        <param>
+          <type>COMMAND ${_cmd}RESULT_VARIABLE _res OUTPUT_VARIABLE _out ERROR_VARIABLE _err OUTPUT_STRIP_TRAILING_WHITESPACE</type>
+          <declname>ERROR_STRIP_TRAILING_WHITESPACE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/CMakeLists.txt" line="10" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#<sp/>toplevel<sp/>CMakeLists.txt<sp/>for<sp/>a<sp/>catkin<sp/>workspace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>catkin/cmake/toplevel.cmake</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">cmake_minimum_required(VERSION<sp/>2.8.3)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">set(CATKIN_TOPLEVEL<sp/>TRUE)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>search<sp/>for<sp/>catkin<sp/>within<sp/>the<sp/>workspace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">set</highlight><highlight class="normal">(_cmd<sp/></highlight><highlight class="stringliteral">&quot;catkin_find_pkg&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;catkin&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;${CMAKE_SOURCE_DIR}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">execute_process(COMMAND<sp/>${_cmd}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/>RESULT_VARIABLE<sp/>_res</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/>OUTPUT_VARIABLE<sp/>_out</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/>ERROR_VARIABLE<sp/>_err</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/>OUTPUT_STRIP_TRAILING_WHITESPACE</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/>ERROR_STRIP_TRAILING_WHITESPACE</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(NOT<sp/>_res<sp/>EQUAL<sp/>0<sp/>AND<sp/>NOT<sp/>_res<sp/>EQUAL<sp/>2)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="preprocessor">#<sp/>searching<sp/>fot<sp/>catkin<sp/>resulted<sp/>in<sp/>an<sp/>error</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>string(REPLACE<sp/></highlight><highlight class="stringliteral">&quot;;&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>_cmd_str<sp/></highlight><highlight class="stringliteral">&quot;${_cmd}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>message(FATAL_ERROR<sp/></highlight><highlight class="stringliteral">&quot;Search<sp/>for<sp/>&apos;catkin&apos;<sp/>in<sp/>workspace<sp/>failed<sp/>(${_cmd_str}):<sp/>${_err}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">endif()</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>catkin<sp/>from<sp/>workspace<sp/>or<sp/>via<sp/>find_package()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(_res<sp/>EQUAL<sp/>0)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(catkin_EXTRAS_DIR<sp/></highlight><highlight class="stringliteral">&quot;${CMAKE_SOURCE_DIR}/${_out}/cmake&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>#<sp/>include<sp/>all.cmake<sp/>without<sp/>add_subdirectory<sp/>to<sp/>let<sp/>it<sp/>operate<sp/>in<sp/>same<sp/>scope</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>include(${catkin_EXTRAS_DIR}/all.cmake<sp/>NO_POLICY_SCOPE)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>add_subdirectory(</highlight><highlight class="stringliteral">&quot;${_out}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">()</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#<sp/>use<sp/>either<sp/>CMAKE_PREFIX_PATH<sp/>explicitly<sp/>passed<sp/>to<sp/>CMake<sp/>as<sp/>a<sp/>command<sp/>line<sp/>argument</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#<sp/>or<sp/>CMAKE_PREFIX_PATH<sp/>from<sp/>the<sp/>environment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(NOT<sp/>DEFINED<sp/>CMAKE_PREFIX_PATH)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(NOT<sp/></highlight><highlight class="stringliteral">&quot;$ENV{CMAKE_PREFIX_PATH}&quot;</highlight><highlight class="normal"><sp/>STREQUAL<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>string(REPLACE<sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;;&quot;</highlight><highlight class="normal"><sp/>CMAKE_PREFIX_PATH<sp/>$ENV{CMAKE_PREFIX_PATH})</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>endif()</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>endif()</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="preprocessor">#<sp/>list<sp/>of<sp/>catkin<sp/>workspaces</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(catkin_search_path<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">(path<sp/>${CMAKE_PREFIX_PATH})</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(EXISTS<sp/></highlight><highlight class="stringliteral">&quot;${path}/.catkin&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlist" kindref="compound">list</ref>(FIND<sp/>catkin_search_path<sp/>${path}<sp/>_index)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(_index<sp/>EQUAL<sp/>-1)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlist" kindref="compound">list</ref>(APPEND<sp/>catkin_search_path<sp/>${path})</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>endif()</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>endif()</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>endforeach()</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="preprocessor">#<sp/>search<sp/>for<sp/>catkin<sp/>in<sp/>all<sp/>workspaces</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(CATKIN_TOPLEVEL_FIND_PACKAGE<sp/>TRUE)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>find_package(catkin<sp/>QUIET</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>NO_POLICY_SCOPE</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>PATHS<sp/>${catkin_search_path}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>NO_DEFAULT_PATH<sp/>NO_CMAKE_FIND_ROOT_PATH)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>unset(CATKIN_TOPLEVEL_FIND_PACKAGE)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>if(NOT<sp/>catkin_FOUND)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>message(FATAL_ERROR<sp/>&quot;find_package(catkin)<sp/>failed.<sp/>catkin<sp/>was<sp/>neither<sp/>found<sp/>in<sp/>the<sp/>workspace<sp/>nor<sp/>in<sp/>the<sp/>CMAKE_PREFIX_PATH.<sp/>One<sp/>reason<sp/>may<sp/>be<sp/>that<sp/>no<sp/>ROS<sp/><ref refid="namespacesetup" kindref="compound">setup</ref>.sh<sp/>was<sp/>sourced<sp/>before.&quot;)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>endif()</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">endif()</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">catkin_workspace()</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/CMakeLists.txt"/>
+  </compounddef>
+</doxygen>

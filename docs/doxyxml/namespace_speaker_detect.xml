@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespace_speaker_detect" kind="namespace" language="Python">
+    <compoundname>SpeakerDetect</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_speaker_detect_1ad34417bfb1e2f07c40b4b63e99841e42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def SpeakerDetect.DetectSpeaker</definition>
+        <argsstring>(FacepointQueue, SpeakerQueue, FrameQueue, VisualQueue)</argsstring>
+        <name>DetectSpeaker</name>
+        <param>
+          <type>FacepointQueue</type>
+          <defname>FacepointQueue</defname>
+        </param>
+        <param>
+          <type>SpeakerQueue</type>
+          <defname>SpeakerQueue</defname>
+        </param>
+        <param>
+          <type>FrameQueue</type>
+          <defname>FrameQueue</defname>
+        </param>
+        <param>
+          <type>VisualQueue</type>
+          <defname>VisualQueue</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/SpeakerDetect.py" line="13" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/SpeakerDetect.py" bodystart="13" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>@package Speakerdetect
+1. Face is received from the Facedetect module
+2. The speaking algorithm tries to identify speaking
+3. returns a dict of people who speak and their ID
+</verbatim> </para>    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/SpeakerDetect.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

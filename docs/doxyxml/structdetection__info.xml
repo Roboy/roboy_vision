@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structdetection__info" kind="struct" language="C++" prot="public">
+    <compoundname>detection_info</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdetection__info_1a6849f609b5dbb5ca28b87330caa0c35f" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char detection_info::name[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.h" line="8" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdetection__info_1ac02be536326e966f6bbfa2eccc8e5fb7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int detection_info::left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.h" line="9" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdetection__info_1aee061631478bb4b1be890a8dee01a4f8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int detection_info::right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.h" line="10" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdetection__info_1a12feb3cd3ee09bf1e1ed82e8029a2d3b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int detection_info::top</definition>
+        <argsstring></argsstring>
+        <name>top</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.h" line="11" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdetection__info_1a5ba72064cec16a2e9ed2a2193cc538e8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int detection_info::bottom</definition>
+        <argsstring></argsstring>
+        <name>bottom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.h" line="12" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdetection__info_1a00996287839a633c2cb54ac9487a322b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float detection_info::prob</definition>
+        <argsstring></argsstring>
+        <name>prob</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.h" line="13" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.h" line="7" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.h" bodystart="7" bodyend="14"/>
+    <listofallmembers>
+      <member refid="structdetection__info_1a5ba72064cec16a2e9ed2a2193cc538e8" prot="public" virt="non-virtual"><scope>detection_info</scope><name>bottom</name></member>
+      <member refid="structdetection__info_1ac02be536326e966f6bbfa2eccc8e5fb7" prot="public" virt="non-virtual"><scope>detection_info</scope><name>left</name></member>
+      <member refid="structdetection__info_1a6849f609b5dbb5ca28b87330caa0c35f" prot="public" virt="non-virtual"><scope>detection_info</scope><name>name</name></member>
+      <member refid="structdetection__info_1a00996287839a633c2cb54ac9487a322b" prot="public" virt="non-virtual"><scope>detection_info</scope><name>prob</name></member>
+      <member refid="structdetection__info_1aee061631478bb4b1be890a8dee01a4f8" prot="public" virt="non-virtual"><scope>detection_info</scope><name>right</name></member>
+      <member refid="structdetection__info_1a12feb3cd3ee09bf1e1ed82e8029a2d3b" prot="public" virt="non-virtual"><scope>detection_info</scope><name>top</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structstbi__io__callbacks" kind="struct" language="C++" prot="public">
+    <compoundname>stbi_io_callbacks</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structstbi__io__callbacks_1a623e46b3a2a019611601409926283a88" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* stbi_io_callbacks::read) (void *user, char *data, int size)</definition>
+        <argsstring>)(void *user, char *data, int size)</argsstring>
+        <name>read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/stb_image.h" line="426" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/stb_image.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbi__io__callbacks_1a257aac5480a90a6c4b8fbe86c1b01068" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* stbi_io_callbacks::skip) (void *user, int n)</definition>
+        <argsstring>)(void *user, int n)</argsstring>
+        <name>skip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/stb_image.h" line="427" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/stb_image.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbi__io__callbacks_1a319639db2f76e715eed7a7a974136832" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* stbi_io_callbacks::eof) (void *user)</definition>
+        <argsstring>)(void *user)</argsstring>
+        <name>eof</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/stb_image.h" line="428" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/stb_image.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/stb_image.h" line="425" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/stb_image.h" bodystart="424" bodyend="429"/>
+    <listofallmembers>
+      <member refid="structstbi__io__callbacks_1a319639db2f76e715eed7a7a974136832" prot="public" virt="non-virtual"><scope>stbi_io_callbacks</scope><name>eof</name></member>
+      <member refid="structstbi__io__callbacks_1a623e46b3a2a019611601409926283a88" prot="public" virt="non-virtual"><scope>stbi_io_callbacks</scope><name>read</name></member>
+      <member refid="structstbi__io__callbacks_1a257aac5480a90a6c4b8fbe86c1b01068" prot="public" virt="non-virtual"><scope>stbi_io_callbacks</scope><name>skip</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

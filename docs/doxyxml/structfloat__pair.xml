@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structfloat__pair" kind="struct" language="C++" prot="public">
+    <compoundname>float_pair</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structfloat__pair_1ae6eee479583279eca5354fcb97c655fc" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* float_pair::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/examples/rnn.c" line="6" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/examples/rnn.c" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfloat__pair_1a79e3fd0099b0139bfebf603277443f96" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* float_pair::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/examples/rnn.c" line="7" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/examples/rnn.c" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/examples/rnn.c" line="5" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/examples/rnn.c" bodystart="5" bodyend="8"/>
+    <listofallmembers>
+      <member refid="structfloat__pair_1ae6eee479583279eca5354fcb97c655fc" prot="public" virt="non-virtual"><scope>float_pair</scope><name>x</name></member>
+      <member refid="structfloat__pair_1a79e3fd0099b0139bfebf603277443f96" prot="public" virt="non-virtual"><scope>float_pair</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -8,3 +8,4 @@ requests
 psutil
 breathe
 sphinx_rtd_theme
+imutils

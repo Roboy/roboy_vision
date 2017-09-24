@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classsl_1_1_tracking_parameters" kind="class" language="C++" prot="public">
+    <compoundname>sl::TrackingParameters</compoundname>
+    <includes refid="_camera_8hpp" local="no">Camera.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsl_1_1_tracking_parameters_1ac5340ce86d617b05ab8c55dbc3c720db" prot="public" static="no" mutable="no">
+        <type><ref refid="classsl_1_1_transform" kindref="compound">sl::Transform</ref></type>
+        <definition>sl::Transform sl::TrackingParameters::initial_world_transform</definition>
+        <argsstring></argsstring>
+        <name>initial_world_transform</name>
+        <briefdescription>
+<para>Position of the camera in the world frame when camera is started. </para>        </briefdescription>
+        <detaileddescription>
+<para>By default it should be identity. <simplesect kind="note"><para>The camera frame (defines the reference frame for the camera) is by default positioned at the world frame when tracking is started. <linebreak/>
+ Use this <ref refid="classsl_1_1_transform" kindref="compound">sl::Transform</ref> to place the camera frame in the world frame. <linebreak/>
+ default : Identity matrix </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="292" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_tracking_parameters_1a3c044cf2ee1410c88c8bd5d83e7dc540" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool sl::TrackingParameters::enable_spatial_memory</definition>
+        <argsstring></argsstring>
+        <name>enable_spatial_memory</name>
+        <briefdescription>
+<para>This mode enables the camera to learn and remember its surroundings. </para>        </briefdescription>
+        <detaileddescription>
+<para>This helps correct motion tracking drift and position different cameras relative to each other in space. <simplesect kind="warning"><para>: This mode requires few resources to run and greatly improves tracking accuracy. We recommend to leave it on by default. <linebreak/>
+ default : true </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="300" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_tracking_parameters_1a732207f4036e66410a39a4c77ab8904b" prot="public" static="no" mutable="no">
+        <type>sl::String</type>
+        <definition>sl::String sl::TrackingParameters::area_file_path</definition>
+        <argsstring></argsstring>
+        <name>area_file_path</name>
+        <briefdescription>
+<para>Area localization mode can record and load (if areaFilePath is specified) a file that describes the surroundings. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Loading an area file will start a searching phase during which the camera will try to position itself in the previously learned area. </para></simplesect>
+<simplesect kind="warning"><para>: The area file describes a specific location. If you are using an area file describing a different location, the tracking function will continuously search for a position and may not find a correct one. </para></simplesect>
+<simplesect kind="warning"><para>The &apos;.area&apos; file can only be used with the same depth mode (sl::MODE) as the one used during area recording. <linebreak/>
+ default : NULL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="309" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsl_1_1_tracking_parameters_1a13ba90c840ad0f7322f4984d042e0509" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sl::TrackingParameters::TrackingParameters</definition>
+        <argsstring>(sl::Transform init_pos=sl::Transform(), bool _enable_memory=true, sl::String _area_path=sl::String())</argsstring>
+        <name>TrackingParameters</name>
+        <param>
+          <type><ref refid="classsl_1_1_transform" kindref="compound">sl::Transform</ref></type>
+          <declname>init_pos</declname>
+          <defval><ref refid="classsl_1_1_transform" kindref="compound">sl::Transform</ref>()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_enable_memory</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>sl::String</type>
+          <declname>_area_path</declname>
+          <defval>sl::String()</defval>
+        </param>
+        <briefdescription>
+<para>Default constructor, set all parameters to their default and optimized values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="314" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="314" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_tracking_parameters_1a244ef9014bdc63030e9d81b600be1504" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl::TrackingParameters::save</definition>
+        <argsstring>(sl::String filename)</argsstring>
+        <name>save</name>
+        <param>
+          <type>sl::String</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Saves the current bunch of parameters into a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the path to the file in which the parameters will be stored. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the file was successfully saved, otherwise false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="325" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_tracking_parameters_1a62d2ff6fa3bfa6523c52567459118951" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl::TrackingParameters::load</definition>
+        <argsstring>(sl::String filename)</argsstring>
+        <name>load</name>
+        <param>
+          <type>sl::String</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Loads the values of the parameters contained in a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the path to the file from which the parameters will be loaded. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the file was successfully loaded, otherwise false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="332" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Parameters for ZED tracking initialization. </para>    </briefdescription>
+    <detaileddescription>
+<para><linebreak/>
+ A default constructor is enabled and set to its default parameters. <simplesect kind="note"><para>Parameters can be user adjusted. </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="363">
+        <label>sl::TrackingParameters</label>
+        <link refid="classsl_1_1_tracking_parameters"/>
+        <childnode refid="364" relation="usage">
+          <edgelabel>initial_world_transform</edgelabel>
+        </childnode>
+      </node>
+      <node id="364">
+        <label>sl::Transform</label>
+        <link refid="classsl_1_1_transform"/>
+        <childnode refid="365" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="365">
+        <label>sl::Matrix4f</label>
+        <link refid="classsl_1_1_matrix4f"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" line="284" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp" bodystart="284" bodyend="333"/>
+    <listofallmembers>
+      <member refid="classsl_1_1_tracking_parameters_1a732207f4036e66410a39a4c77ab8904b" prot="public" virt="non-virtual"><scope>sl::TrackingParameters</scope><name>area_file_path</name></member>
+      <member refid="classsl_1_1_tracking_parameters_1a3c044cf2ee1410c88c8bd5d83e7dc540" prot="public" virt="non-virtual"><scope>sl::TrackingParameters</scope><name>enable_spatial_memory</name></member>
+      <member refid="classsl_1_1_tracking_parameters_1ac5340ce86d617b05ab8c55dbc3c720db" prot="public" virt="non-virtual"><scope>sl::TrackingParameters</scope><name>initial_world_transform</name></member>
+      <member refid="classsl_1_1_tracking_parameters_1a62d2ff6fa3bfa6523c52567459118951" prot="public" virt="non-virtual"><scope>sl::TrackingParameters</scope><name>load</name></member>
+      <member refid="classsl_1_1_tracking_parameters_1a244ef9014bdc63030e9d81b600be1504" prot="public" virt="non-virtual"><scope>sl::TrackingParameters</scope><name>save</name></member>
+      <member refid="classsl_1_1_tracking_parameters_1a13ba90c840ad0f7322f4984d042e0509" prot="public" virt="non-virtual"><scope>sl::TrackingParameters</scope><name>TrackingParameters</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

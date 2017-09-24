@@ -1,0 +1,428 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespace_object_recognition" kind="namespace" language="Python">
+    <compoundname>ObjectRecognition</compoundname>
+    <innerclass refid="class_object_recognition_1_1_b_o_x" prot="public">ObjectRecognition::BOX</innerclass>
+    <innerclass refid="class_object_recognition_1_1_i_m_a_g_e" prot="public">ObjectRecognition::IMAGE</innerclass>
+    <innerclass refid="class_object_recognition_1_1_m_e_t_a_d_a_t_a" prot="public">ObjectRecognition::METADATA</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_object_recognition_1a6552324c9eca56408c8ac18e46935ab2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ObjectRecognition.detect_net</definition>
+        <argsstring></argsstring>
+        <name>detect_net</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="15" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_object_recognition_1a01e401bf0567f460369aea86976a71f7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ObjectRecognition.detect_meta</definition>
+        <argsstring></argsstring>
+        <name>detect_meta</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="16" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_object_recognition_1a32f2c6a73771e23039e07be4f8ab5f1c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ObjectRecognition.lib</definition>
+        <argsstring></argsstring>
+        <name>lib</name>
+        <initializer>= CDLL(&quot;../darknet/libdarknet.so&quot;, RTLD_GLOBAL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="56" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_object_recognition_1a7730287b2a180c168774cc8d79a818e5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ObjectRecognition.argtypes</definition>
+        <argsstring></argsstring>
+        <name>argtypes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="57" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_object_recognition_1a7c0d6db1233a2158de05ba28b4a14e4c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ObjectRecognition.restype</definition>
+        <argsstring></argsstring>
+        <name>restype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="58" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_object_recognition_1af82c3047ab48d2e8042e3a2b95f0fef1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ObjectRecognition.predict</definition>
+        <argsstring></argsstring>
+        <name>predict</name>
+        <initializer>= lib.network_predict_p</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="62" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_object_recognition_1a8674bfd751077cc1ef0882714c7fade9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ObjectRecognition.make_boxes</definition>
+        <argsstring></argsstring>
+        <name>make_boxes</name>
+        <initializer>= lib.make_boxes</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="66" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_object_recognition_1a5c3a30b201e68ef1bd6efe7d8d1166ae" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ObjectRecognition.free_ptrs</definition>
+        <argsstring></argsstring>
+        <name>free_ptrs</name>
+        <initializer>= lib.free_ptrs</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="70" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_object_recognition_1a44957932d1cabce22f6a707386ade123" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ObjectRecognition.num_boxes</definition>
+        <argsstring></argsstring>
+        <name>num_boxes</name>
+        <initializer>= lib.num_boxes</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="73" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_object_recognition_1af6012188cde85c2b7d82def6f45107a6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ObjectRecognition.make_probs</definition>
+        <argsstring></argsstring>
+        <name>make_probs</name>
+        <initializer>= lib.make_probs</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="77" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_object_recognition_1abad12b55529896b5b193c05c4c4d3a4f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ObjectRecognition.detect</definition>
+        <argsstring></argsstring>
+        <name>detect</name>
+        <initializer>= lib.network_predict_p</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="81" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_object_recognition_1adabc93a1c31a859a3d45f573f9efc91c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ObjectRecognition.reset_rnn</definition>
+        <argsstring></argsstring>
+        <name>reset_rnn</name>
+        <initializer>= lib.reset_rnn</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="84" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_object_recognition_1a5910cb68a721e9cc55757cf01846bcb7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ObjectRecognition.load_net</definition>
+        <argsstring></argsstring>
+        <name>load_net</name>
+        <initializer>= lib.load_network_p</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="87" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_object_recognition_1a401dafa87fd4b71ee5162bfea1c6c0e1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ObjectRecognition.free_image</definition>
+        <argsstring></argsstring>
+        <name>free_image</name>
+        <initializer>= lib.free_image</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="91" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_object_recognition_1a80f65882e8c6a85ae41cc9a1622a91d3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ObjectRecognition.letterbox_image</definition>
+        <argsstring></argsstring>
+        <name>letterbox_image</name>
+        <initializer>= lib.letterbox_image</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="94" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_object_recognition_1a9f2d64f5616d441ce1ede7e450db1005" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ObjectRecognition.load_meta</definition>
+        <argsstring></argsstring>
+        <name>load_meta</name>
+        <initializer>= lib.get_metadata</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="98" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_object_recognition_1a6031d2be333b2d353506b7cbf1d5ccd3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ObjectRecognition.load_image</definition>
+        <argsstring></argsstring>
+        <name>load_image</name>
+        <initializer>= lib.load_image_color</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="102" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_object_recognition_1a5aeeb43488023ddd2e79d0534d51ad04" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ObjectRecognition.predict_image</definition>
+        <argsstring></argsstring>
+        <name>predict_image</name>
+        <initializer>= lib.network_predict_image</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="106" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_object_recognition_1aaa9b2a578fec69febf4665cf68e10588" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ObjectRecognition.network_detect</definition>
+        <argsstring></argsstring>
+        <name>network_detect</name>
+        <initializer>= lib.network_detect</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="110" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_object_recognition_1af3f3bb9574d0fe3f724926319e251451" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ObjectRecognition.DONE</definition>
+        <argsstring></argsstring>
+        <name>DONE</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="163" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_object_recognition_1a4eef2659ce23cd108b55204e26af7fd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ObjectRecognition.sample</definition>
+        <argsstring>(probs)</argsstring>
+        <name>sample</name>
+        <param>
+          <type>probs</type>
+          <defname>probs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="20" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="20" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_object_recognition_1aa4ac989e470d67e96fbf708310cc2661" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ObjectRecognition.c_array</definition>
+        <argsstring>(ctype, values)</argsstring>
+        <name>c_array</name>
+        <param>
+          <type>ctype</type>
+          <defname>ctype</defname>
+        </param>
+        <param>
+          <type>values</type>
+          <defname>values</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="31" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_object_recognition_1a7384088c24a1492df105302bd65d7695" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ObjectRecognition.detect</definition>
+        <argsstring>(net, meta, image, thresh=.5, hier_thresh=.5, nms=.45)</argsstring>
+        <name>detect</name>
+        <param>
+          <type>net</type>
+          <defname>net</defname>
+        </param>
+        <param>
+          <type>meta</type>
+          <defname>meta</defname>
+        </param>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <defname>image</defname>
+        </param>
+        <param>
+          <type>thresh</type>
+          <defname>thresh</defname>
+          <defval>.5</defval>
+        </param>
+        <param>
+          <type>hier_thresh</type>
+          <defname>hier_thresh</defname>
+          <defval>.5</defval>
+        </param>
+        <param>
+          <type>nms</type>
+          <defname>nms</defname>
+          <defval>.45</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="114" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="114" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_object_recognition_1aebb1f37cdec0c03146c32d837be6ba12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ObjectRecognition.draw_results</definition>
+        <argsstring>(res, img)</argsstring>
+        <name>draw_results</name>
+        <param>
+          <type>res</type>
+          <defname>res</defname>
+        </param>
+        <param>
+          <type>img</type>
+          <defname>img</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="149" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="149" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_object_recognition_1a3ce15bd5df3f05408dde08ad8cb78f9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ObjectRecognition.Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="164" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="164" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_object_recognition_1a09af927d9a8f86d4c6fc69c5acec3407" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ObjectRecognition.detectObjects</definition>
+        <argsstring>(frame)</argsstring>
+        <name>detectObjects</name>
+        <param>
+          <type>frame</type>
+          <defname>frame</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="169" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="169" bodyend="184"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>@package ObjectRecognition
+1. This is a python wrapper for the YOLO implementation in C.
+2. uses Ctypes as a way to access C module.
+3. libdarknet.so is a pre compiled library which works only on Linux!</verbatim> </para>    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

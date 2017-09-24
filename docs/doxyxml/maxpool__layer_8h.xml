@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="maxpool__layer_8h" kind="file" language="C++">
+    <compoundname>maxpool_layer.h</compoundname>
+    <includes refid="image_8h" local="yes">image.h</includes>
+    <includes refid="cuda_8h" local="yes">cuda.h</includes>
+    <includes refid="layer_8h" local="yes">layer.h</includes>
+    <includes refid="network_8h" local="yes">network.h</includes>
+    <includedby refid="maxpool__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.c</includedby>
+    <includedby refid="network_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.c</includedby>
+    <includedby refid="parser_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c</includedby>
+    <incdepgraph>
+      <node id="1302">
+        <label>box.h</label>
+        <link refid="box_8h_source"/>
+        <childnode refid="1303" relation="include">
+        </childnode>
+      </node>
+      <node id="1299">
+        <label>float.h</label>
+      </node>
+      <node id="1297">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1305">
+        <label>cuda.h</label>
+        <link refid="cuda_8h_source"/>
+        <childnode refid="1303" relation="include">
+        </childnode>
+      </node>
+      <node id="1308">
+        <label>data.h</label>
+        <link refid="data_8h_source"/>
+        <childnode refid="1304" relation="include">
+        </childnode>
+        <childnode refid="1303" relation="include">
+        </childnode>
+        <childnode refid="1309" relation="include">
+        </childnode>
+        <childnode refid="1310" relation="include">
+        </childnode>
+        <childnode refid="1296" relation="include">
+        </childnode>
+        <childnode refid="1311" relation="include">
+        </childnode>
+      </node>
+      <node id="1307">
+        <label>network.h</label>
+        <link refid="network_8h_source"/>
+        <childnode refid="1303" relation="include">
+        </childnode>
+        <childnode refid="1296" relation="include">
+        </childnode>
+        <childnode refid="1306" relation="include">
+        </childnode>
+        <childnode refid="1308" relation="include">
+        </childnode>
+        <childnode refid="1311" relation="include">
+        </childnode>
+      </node>
+      <node id="1310">
+        <label>list.h</label>
+        <link refid="list_8h_source"/>
+        <childnode refid="1303" relation="include">
+        </childnode>
+      </node>
+      <node id="1309">
+        <label>matrix.h</label>
+        <link refid="matrix_8h_source"/>
+        <childnode refid="1303" relation="include">
+        </childnode>
+      </node>
+      <node id="1303">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="1297" relation="include">
+        </childnode>
+        <childnode refid="1298" relation="include">
+        </childnode>
+        <childnode refid="1300" relation="include">
+        </childnode>
+        <childnode refid="1304" relation="include">
+        </childnode>
+      </node>
+      <node id="1306">
+        <label>layer.h</label>
+        <link refid="layer_8h_source"/>
+        <childnode refid="1303" relation="include">
+        </childnode>
+      </node>
+      <node id="1304">
+        <label>pthread.h</label>
+      </node>
+      <node id="1295">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.h</label>
+        <link refid="maxpool_layer.h"/>
+        <childnode refid="1296" relation="include">
+        </childnode>
+        <childnode refid="1305" relation="include">
+        </childnode>
+        <childnode refid="1306" relation="include">
+        </childnode>
+        <childnode refid="1307" relation="include">
+        </childnode>
+      </node>
+      <node id="1296">
+        <label>image.h</label>
+        <link refid="image_8h_source"/>
+        <childnode refid="1297" relation="include">
+        </childnode>
+        <childnode refid="1298" relation="include">
+        </childnode>
+        <childnode refid="1299" relation="include">
+        </childnode>
+        <childnode refid="1300" relation="include">
+        </childnode>
+        <childnode refid="1301" relation="include">
+        </childnode>
+        <childnode refid="1302" relation="include">
+        </childnode>
+        <childnode refid="1303" relation="include">
+        </childnode>
+      </node>
+      <node id="1300">
+        <label>string.h</label>
+      </node>
+      <node id="1301">
+        <label>math.h</label>
+      </node>
+      <node id="1311">
+        <label>tree.h</label>
+        <link refid="tree_8h_source"/>
+        <childnode refid="1303" relation="include">
+        </childnode>
+      </node>
+      <node id="1298">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="maxpool__layer_8h_1af2680c241702216bb2104740f7f631d0" prot="public" static="no">
+        <type><ref refid="structlayer" kindref="compound">layer</ref></type>
+        <definition>typedef layer maxpool_layer</definition>
+        <argsstring></argsstring>
+        <name>maxpool_layer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.h" line="9" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="maxpool__layer_8h_1a356b5d417d8a6e8c566a720c7c844d93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structimage" kindref="compound">image</ref></type>
+        <definition>image get_maxpool_image</definition>
+        <argsstring>(maxpool_layer l)</argsstring>
+        <name>get_maxpool_image</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">maxpool_layer</ref></type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.h" line="11" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.c" bodystart="5" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="maxpool__layer_8h_1aab71b9c66f18d8c10077462a76344a46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlayer" kindref="compound">maxpool_layer</ref></type>
+        <definition>maxpool_layer make_maxpool_layer</definition>
+        <argsstring>(int batch, int h, int w, int c, int size, int stride, int padding)</argsstring>
+        <name>make_maxpool_layer</name>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stride</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>padding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.h" line="12" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.c" bodystart="21" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="maxpool__layer_8h_1a46551094c5c40c7e88aec13f5dbd80e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void resize_maxpool_layer</definition>
+        <argsstring>(maxpool_layer *l, int w, int h)</argsstring>
+        <name>resize_maxpool_layer</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">maxpool_layer</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.h" line="13" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.c" bodystart="54" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="maxpool__layer_8h_1ad29869a0764197e9287713fbfb442cb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void forward_maxpool_layer</definition>
+        <argsstring>(const maxpool_layer l, network net)</argsstring>
+        <name>forward_maxpool_layer</name>
+        <param>
+          <type>const <ref refid="structlayer" kindref="compound">maxpool_layer</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.h" line="14" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.c" bodystart="79" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="maxpool__layer_8h_1a3e55da397b2063586b3efaa806560517" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void backward_maxpool_layer</definition>
+        <argsstring>(const maxpool_layer l, network net)</argsstring>
+        <name>backward_maxpool_layer</name>
+        <param>
+          <type>const <ref refid="structlayer" kindref="compound">maxpool_layer</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.h" line="15" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.c" bodystart="116" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MAXPOOL_LAYER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAXPOOL_LAYER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;image.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cuda.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;layer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;network.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structlayer" kindref="compound">layer</ref><sp/><ref refid="structlayer" kindref="compound">maxpool_layer</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><ref refid="structimage" kindref="compound">image</ref><sp/>get_maxpool_image(<ref refid="structlayer" kindref="compound">maxpool_layer</ref><sp/>l);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><ref refid="structlayer" kindref="compound">maxpool_layer</ref><sp/>make_maxpool_layer(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stride,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>padding);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>resize_maxpool_layer(<ref refid="structlayer" kindref="compound">maxpool_layer</ref><sp/>*l,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>forward_maxpool_layer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlayer" kindref="compound">maxpool_layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_maxpool_layer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlayer" kindref="compound">maxpool_layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>forward_maxpool_layer_gpu(<ref refid="structlayer" kindref="compound">maxpool_layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_maxpool_layer_gpu(<ref refid="structlayer" kindref="compound">maxpool_layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.h"/>
+  </compounddef>
+</doxygen>

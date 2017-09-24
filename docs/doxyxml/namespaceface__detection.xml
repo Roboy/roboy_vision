@@ -1,0 +1,808 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespaceface__detection" kind="namespace" language="Python">
+    <compoundname>face_detection</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceface__detection_1ab433958e585531e23d1131e0e9eb864e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int face_detection.EXPECT_SIZE</definition>
+        <argsstring></argsstring>
+        <name>EXPECT_SIZE</name>
+        <initializer>= 160</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="36" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1ab43c800d256522837d99d747f95a7b3d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int face_detection.FACE_AREA</definition>
+        <argsstring></argsstring>
+        <name>FACE_AREA</name>
+        <initializer>= 1500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="39" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1aa15e87d39d8e34b508d69ddac7b90ce7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int face_detection.x_pixel</definition>
+        <argsstring></argsstring>
+        <name>x_pixel</name>
+        <initializer>= 640</initializer>
+        <briefdescription>
+<para>Entry Point to run face detection. </para>        </briefdescription>
+        <detaileddescription>
+<para>Loads all data and processes realsense camera input in a loop. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="244" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1a8e5edb36f091f16de9bf4143dad161a7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int face_detection.y_pixel</definition>
+        <argsstring></argsstring>
+        <name>y_pixel</name>
+        <initializer>= 480</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="245" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1afe61fcf118eb49b7b93ae7fd3aad2d77" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float face_detection.resize_factor</definition>
+        <argsstring></argsstring>
+        <name>resize_factor</name>
+        <initializer>= 0.5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="248" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1ac62eadd194ee6ccaf4f1a4f37bc42fdc" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool face_detection::face_nearby</definition>
+        <argsstring></argsstring>
+        <name>face_nearby</name>
+        <initializer>= False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="251" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1ab74afac4da488030a2104c38c0a76dfe" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int face_detection.no_face_detect_counter</definition>
+        <argsstring></argsstring>
+        <name>no_face_detect_counter</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="255" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1ad58a94c14e6035a9affc5e3b6e1e0d5b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>face_detection.dev</definition>
+        <argsstring></argsstring>
+        <name>dev</name>
+        <initializer>= pyrs.Device(
+        device_id=0,
+        streams=[
+            pyrs.ColourStream(width=<ref refid="namespaceface__detection_1aa15e87d39d8e34b508d69ddac7b90ce7" kindref="member">x_pixel</ref>, height=y_pixel, fps=30),
+            pyrs.DepthStream()
+        ])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="258" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1adf4ee84e30b7bbc5689a21560c1c1521" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>face_detection.sess</definition>
+        <argsstring></argsstring>
+        <name>sess</name>
+        <initializer>= tf.Session(config=tf.ConfigProto(log_device_placement=False))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="266" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1ac7235acdc3a45d825f63d667099ef73d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>face_detection.pnet</definition>
+        <argsstring></argsstring>
+        <name>pnet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="267" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1a9893ecab44577e4ca067f90cf5ee480a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>face_detection.rnet</definition>
+        <argsstring></argsstring>
+        <name>rnet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="267" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1a62cca833140dd2f1e65c4e1aff094313" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>face_detection.onet</definition>
+        <argsstring></argsstring>
+        <name>onet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="267" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1a3daf1f7ce9fa3a22a3da3095ffc97bc1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int face_detection.minsize</definition>
+        <argsstring></argsstring>
+        <name>minsize</name>
+        <initializer>= 20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="268" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1a4b994bf9c598e7eaad17cc524f762ccb" prot="public" static="no" mutable="no">
+        <type><ref refid="structlist" kindref="compound">list</ref></type>
+        <definition>list face_detection.threshold</definition>
+        <argsstring></argsstring>
+        <name>threshold</name>
+        <initializer>= [0.6, 0.7, 0.7]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="269" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1a62280a81aa21adeea04b90f2f3a4d1fb" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float face_detection.factor</definition>
+        <argsstring></argsstring>
+        <name>factor</name>
+        <initializer>= 0.709</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="270" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1aa5b851272336a147835658338f25e994" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string face_detection.tree_model</definition>
+        <argsstring></argsstring>
+        <name>tree_model</name>
+        <initializer>= &quot;models/Tree/own.mod&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="274" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1a983b9c72a29736be04ca695cafa07f5c" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string face_detection.svm_model</definition>
+        <argsstring></argsstring>
+        <name>svm_model</name>
+        <initializer>= &quot;models/SVM/svm_lfw.mod&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="275" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1a6d0efd1df3e9ef85c2da833a5245c62f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>face_detection.clf</definition>
+        <argsstring></argsstring>
+        <name>clf</name>
+        <initializer>= pickle.load(open(tree_model, &quot;rb&quot;))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="276" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1a75769885ce8899a7b9518668d3c4d9a5" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string face_detection.model_dir</definition>
+        <argsstring></argsstring>
+        <name>model_dir</name>
+        <initializer>= &apos;models/facenet&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="277" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1a892aa3a61fa78754f13f64fa1907fc43" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>face_detection.meta_file</definition>
+        <argsstring></argsstring>
+        <name>meta_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="278" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1a9c35c4322d735d756d5b16becaffe5e7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>face_detection.ckpt_file</definition>
+        <argsstring></argsstring>
+        <name>ckpt_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="278" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1a94e024c78c1322896e7efca32dfbde80" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>face_detection.session</definition>
+        <argsstring></argsstring>
+        <name>session</name>
+        <initializer>= <ref refid="namespaceface__detection_1a764ab9f47d3086ecc957eeb3ee07e196" kindref="member">load_model</ref>(model_dir, meta_file, ckpt_file)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="279" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1a24101d6831bbc13d6f8080977949b076" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>face_detection.graph</definition>
+        <argsstring></argsstring>
+        <name>graph</name>
+        <initializer>= tf.get_default_graph()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="280" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1a32fe9ddbf20a9252d7a66d6f32d48384" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>face_detection.image_batch</definition>
+        <argsstring></argsstring>
+        <name>image_batch</name>
+        <initializer>= graph.get_tensor_by_name(&quot;input:0&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="281" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1a95451f3bc37522531f6b1632a029aba0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>face_detection.phase_train_placeholder</definition>
+        <argsstring></argsstring>
+        <name>phase_train_placeholder</name>
+        <initializer>= graph.get_tensor_by_name(&quot;phase_train:0&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="282" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1a5917c931cb20c905d8992fb91c733c2d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>face_detection.embeddings</definition>
+        <argsstring></argsstring>
+        <name>embeddings</name>
+        <initializer>= graph.get_tensor_by_name(&quot;embeddings:0&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="283" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1a25ed1a82e42405300aea9a46978b3a0c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>face_detection.c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <initializer>= cv2.cvtColor(dev.colour, cv2.COLOR_RGB2BGR)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="291" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1a7a3f6a1084780270c455712b147c0e2c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int face_detection.d</definition>
+        <argsstring></argsstring>
+        <name>d</name>
+        <initializer>= dev.depth*dev.depth_scale*1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="293" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1ae665e8f63e2177e5b34f9d0c12a0881d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>face_detection.img</definition>
+        <argsstring></argsstring>
+        <name>img</name>
+        <initializer>= cv2.resize(c, (int(resize_factor * <ref refid="namespaceface__detection_1aa15e87d39d8e34b508d69ddac7b90ce7" kindref="member">x_pixel</ref>), int(
+            resize_factor * y_pixel)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="296" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1ad6ae0f903d802902863ca36f91b84465" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>face_detection.d_img</definition>
+        <argsstring></argsstring>
+        <name>d_img</name>
+        <initializer>= cv2.resize(d, (int(resize_factor * <ref refid="namespaceface__detection_1aa15e87d39d8e34b508d69ddac7b90ce7" kindref="member">x_pixel</ref>), int(
+            resize_factor * y_pixel)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="299" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1a31be66b6a0573f93c37293ff8006ce52" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>face_detection.total_boxes</definition>
+        <argsstring></argsstring>
+        <name>total_boxes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="304" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1a7f1731448a2d950ab30e5088a5f8bff8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>face_detection.points</definition>
+        <argsstring></argsstring>
+        <name>points</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="304" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1a96c3f7b731ec65b8a07d959b53b58958" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>face_detection.start_recognize_face</definition>
+        <argsstring></argsstring>
+        <name>start_recognize_face</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="325" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceface__detection_1a2e872654d792938de1f31f8889db8083" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>face_detection.draw</definition>
+        <argsstring></argsstring>
+        <name>draw</name>
+        <initializer>= <ref refid="namespaceface__detection_1ad86d2091fa67bdc2816dc397a3754df1" kindref="member">draw_rects</ref>(c.copy(), total_boxes, resize_factor)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="336" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceface__detection_1a504d15424b80d78ad34f608f419fbfcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def face_detection.detect_face_and_landmarks_mtcnn</definition>
+        <argsstring>(img)</argsstring>
+        <name>detect_face_and_landmarks_mtcnn</name>
+        <param>
+          <type>img</type>
+          <defname>img</defname>
+        </param>
+        <briefdescription>
+<para>Function to do face detection and alignment on an image. </para>        </briefdescription>
+        <detaileddescription>
+<para>Run face detection on the full input image using a MTCNN for Joint Detection and Alignment from here: <ulink url="https://github.com/pangyupo/mxnet_mtcnn_face_detection">https://github.com/pangyupo/mxnet_mtcnn_face_detection</ulink> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>img</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The RGB image </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Bounding boxes bb and landmark points for eyes, nose and mouth edges. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="48" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="48" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceface__detection_1ad092251552201bffe5b0a9c03cfadb84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def face_detection.align_face_mtcnn</definition>
+        <argsstring>(img, bb)</argsstring>
+        <name>align_face_mtcnn</name>
+        <param>
+          <type>img</type>
+          <defname>img</defname>
+        </param>
+        <param>
+          <type>bb</type>
+          <defname>bb</defname>
+        </param>
+        <briefdescription>
+<para>Function to align detected faces. </para>        </briefdescription>
+        <detaileddescription>
+<para>The current implementation crops the picture given a face region. We do not use actual alignment because performance increase for face recognition is marginal and only slows down realtime performance as is also argued here: <ulink url="https://github.com/davidsandberg/facenet/issues/93">https://github.com/davidsandberg/facenet/issues/93</ulink> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>img</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The RGB image </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bounding box of a face as tuple (x1, y1, x2, y2) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the cropped face region. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="75" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="75" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceface__detection_1ad86d2091fa67bdc2816dc397a3754df1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def face_detection.draw_rects</definition>
+        <argsstring>(img, bbs, resize_factor=1)</argsstring>
+        <name>draw_rects</name>
+        <param>
+          <type>img</type>
+          <defname>img</defname>
+        </param>
+        <param>
+          <type>bbs</type>
+          <defname>bbs</defname>
+        </param>
+        <param>
+          <type>resize_factor</type>
+          <defname>resize_factor</defname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Function to draw bounding boxes in a picture. </para>        </briefdescription>
+        <detaileddescription>
+<para>Given an image, the bounding boxes for the corresponding face regions are drawn. Additionally a resize_factor is used if the bounding boxes were calculated on a scaled version of the input image. Default value of the resize factor is 1, meaning bounding boxes were calculated on the same image size. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>img</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The RGB image </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of bounding boxes of a face as tuple (x1, y1, x2, y2)  factor to scale up bounding box size if calculated on different picture scale. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Image overlayed with the bounding boxes. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="92" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="92" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceface__detection_1a00df40f5cff2df790be52b45de27fb62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def face_detection.draw_landmarks</definition>
+        <argsstring>(img, points, resize_factor)</argsstring>
+        <name>draw_landmarks</name>
+        <param>
+          <type>img</type>
+          <defname>img</defname>
+        </param>
+        <param>
+          <type>points</type>
+          <defname>points</defname>
+        </param>
+        <param>
+          <type>resize_factor</type>
+          <defname>resize_factor</defname>
+        </param>
+        <briefdescription>
+<para>Function to draw feature points in a picture. </para>        </briefdescription>
+        <detaileddescription>
+<para>Given an image, the feature points for the corresponding faces are drawn. Additionally a resize_factor is used if the feature points were calculated on a scaled version of the input image. Default value of the resize factor is 1, meaning the feature points were calculated on the same image size. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>img</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The RGB image </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>points</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array containing arrays of feature points of a face  factor to scale up bounding box size if calculated on different picture scale. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Image overlayed with the feature points </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="109" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="109" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceface__detection_1ab5d79d07ad6fb04cfa99e9cb3672c80a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def face_detection.get_closest_face</definition>
+        <argsstring>(bbs)</argsstring>
+        <name>get_closest_face</name>
+        <param>
+          <type>bbs</type>
+          <defname>bbs</defname>
+        </param>
+        <briefdescription>
+<para>Returns the closest face of all detected faces. </para>        </briefdescription>
+        <detaileddescription>
+<para>Current implementation uses bounding box size to compare proximity <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of bounding boxes of a face as tuple (x1, y1, x2, y2). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The array index of the biggest bounding box. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="124" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="124" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceface__detection_1a1f6cacba7956a523078efc4d646d1a08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def face_detection.face_detected</definition>
+        <argsstring>(bbs)</argsstring>
+        <name>face_detected</name>
+        <param>
+          <type>bbs</type>
+          <defname>bbs</defname>
+        </param>
+        <briefdescription>
+<para>Checks whether a face is visible within certain distance. </para>        </briefdescription>
+        <detaileddescription>
+<para>Current implementation uses bounding box to check for proximity. Key value defined in FACE_AREA. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of bounding boxes of a face as tuple (x1, y1, x2, y2). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if a face is close enough, False otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="143" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="143" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceface__detection_1a2a8120285c1546f7c888d4172d8c4961" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def face_detection.recognize_face</definition>
+        <argsstring>(face_img, session, classifier)</argsstring>
+        <name>recognize_face</name>
+        <param>
+          <type>face_img</type>
+          <defname>face_img</defname>
+        </param>
+        <param>
+          <type>session</type>
+          <defname>session</defname>
+        </param>
+        <param>
+          <type>classifier</type>
+          <defname>classifier</defname>
+        </param>
+        <briefdescription>
+<para>Identifies a face using Facenet. </para>        </briefdescription>
+        <detaileddescription>
+<para>TODO: To be moved into other module The function calculates the 128D embeddings of a given face using facenet in this implementation: <ulink url="https://github.com/davidsandberg/facenet">https://github.com/davidsandberg/facenet</ulink> Then the embeddings are run through a SVM classifier to identify the face.  The cropped image of the face region. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>session</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tensorflow session with FaceNet already loaded </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>classifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The SVM classifier already loaded </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return the name of the face. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="165" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="165" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceface__detection_1a764ab9f47d3086ecc957eeb3ee07e196" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def face_detection.load_model</definition>
+        <argsstring>(model_dir, model_meta, model_content)</argsstring>
+        <name>load_model</name>
+        <param>
+          <type>model_dir</type>
+          <defname>model_dir</defname>
+        </param>
+        <param>
+          <type>model_meta</type>
+          <defname>model_meta</defname>
+        </param>
+        <param>
+          <type>model_content</type>
+          <defname>model_content</defname>
+        </param>
+        <briefdescription>
+<para>Function to load a tensorflow model. </para>        </briefdescription>
+        <detaileddescription>
+<para>TODO: To be moved into other module <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model_dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>model directory </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model_meta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>meta file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model_content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>checpoint file </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns a tensorflow session </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="196" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="196" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceface__detection_1a4848f6a2163ddf93d0430e16fe7da285" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def face_detection.get_model_filenames</definition>
+        <argsstring>(model_dir)</argsstring>
+        <name>get_model_filenames</name>
+        <param>
+          <type>model_dir</type>
+          <defname>model_dir</defname>
+        </param>
+        <briefdescription>
+<para>Helper Function to load a tensorlow model. </para>        </briefdescription>
+        <detaileddescription>
+<para>TODO: To be moved into other module The function finds the meta_file and checkpoint within a given path <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model_dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path where the model is stored </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns meta_file and checkpoint </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="212" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" bodystart="212" bodyend="234"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module processes realsense camera input and runs face detection, alignment and pose estimation. </para>    </briefdescription>
+    <detaileddescription>
+<para>Module Tasks:<itemizedlist>
+<listitem><para>Main loop to process realsense camera input</para></listitem><listitem><para>Run Face Detection based MTCNN for Joint Face Detection &amp; Alignment for each frame</para></listitem><listitem><para>Track Face over frames</para></listitem><listitem><para>Calculate Face Position in 3D coordinates</para></listitem><listitem><para>Send ROS msg containing face area, key points and face pose and unique ID for each detected face</para></listitem></itemizedlist>
+</para><para>Current Workarounds:<itemizedlist>
+<listitem><para>Tracking not implemented (no unique face id provided)</para></listitem><listitem><para>3D coodinates not implemented (face region used as distance measure)</para></listitem><listitem><para>Function for Face Recognition also implemented in this modue for simplicity (to be put into anothe rmodule)</para></listitem><listitem><para>No ROS communication </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/vision_service/scripts/face_detection.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

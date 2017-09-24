@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespace_ros_msg_util" kind="namespace" language="Python">
+    <compoundname>RosMsgUtil</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_ros_msg_util_1a99714ba5a20b683e68c21345bded8b69" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RosMsgUtil.ws</definition>
+        <argsstring></argsstring>
+        <name>ws</name>
+        <initializer>= websocket.WebSocket();</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" line="8" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_ros_msg_util_1a9db45d121acd37a4c515a69034de0f2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RosMsgUtil.AdvertiseNewFacialFeatures</definition>
+        <argsstring>()</argsstring>
+        <name>AdvertiseNewFacialFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" line="11" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" bodystart="11" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_ros_msg_util_1a2511d65cd79ee8aaa1df2a61f693d429" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RosMsgUtil.AdvertiseFaceCoordinates</definition>
+        <argsstring>()</argsstring>
+        <name>AdvertiseFaceCoordinates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" line="17" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" bodystart="17" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_ros_msg_util_1a0ca8335e4fd3c654dc328107c7453df0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RosMsgUtil.AdvertiseFindObject</definition>
+        <argsstring>()</argsstring>
+        <name>AdvertiseFindObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" line="23" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" bodystart="23" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_ros_msg_util_1ae37a29a62c19f6c00584556b3bfc06e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RosMsgUtil.AdvertiseDescribeScene</definition>
+        <argsstring>()</argsstring>
+        <name>AdvertiseDescribeScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" line="29" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" bodystart="29" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_ros_msg_util_1a924be3189d0258bf33347abbc565f15a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RosMsgUtil.AdvertiseLookAtSpeaker</definition>
+        <argsstring>()</argsstring>
+        <name>AdvertiseLookAtSpeaker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" line="35" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" bodystart="35" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_ros_msg_util_1aaf28b1d95dd1742e6f6096c45665a9f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RosMsgUtil.AdvertiseContinously</definition>
+        <argsstring>()</argsstring>
+        <name>AdvertiseContinously</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" line="42" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" bodystart="42" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_ros_msg_util_1a952a005d6b7e5f6a9eae7a1b76259b24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RosMsgUtil.SendNewFacialFeatures</definition>
+        <argsstring>(ff, speaking, i)</argsstring>
+        <name>SendNewFacialFeatures</name>
+        <param>
+          <type>ff</type>
+          <defname>ff</defname>
+        </param>
+        <param>
+          <type>speaking</type>
+          <defname>speaking</defname>
+        </param>
+        <param>
+          <type>i</type>
+          <defname>i</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" line="51" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" bodystart="51" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_ros_msg_util_1af0b0bf63c2a1a48e7d603cd6568cd2cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RosMsgUtil.SendFaceCoordinates</definition>
+        <argsstring>(id, speaking, position, i)</argsstring>
+        <name>SendFaceCoordinates</name>
+        <param>
+          <type>id</type>
+          <defname>id</defname>
+        </param>
+        <param>
+          <type>speaking</type>
+          <defname>speaking</defname>
+        </param>
+        <param>
+          <type>position</type>
+          <defname>position</defname>
+        </param>
+        <param>
+          <type>i</type>
+          <defname>i</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" line="67" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" bodystart="67" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_ros_msg_util_1a969d0dc2577cc77f4b8708b681c92cd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RosMsgUtil.FindObject</definition>
+        <argsstring>(type, i)</argsstring>
+        <name>FindObject</name>
+        <param>
+          <type>type</type>
+          <defname>type</defname>
+        </param>
+        <param>
+          <type>i</type>
+          <defname>i</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" line="86" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" bodystart="86" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_ros_msg_util_1ad3eb5d4b5d4696cd6ded1310fe29fc99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RosMsgUtil.DescribeScene</definition>
+        <argsstring>(i)</argsstring>
+        <name>DescribeScene</name>
+        <param>
+          <type>i</type>
+          <defname>i</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" line="103" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" bodystart="103" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_ros_msg_util_1a848c1c0ea478de682faff232793d2f27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RosMsgUtil.LookAtSpeaker</definition>
+        <argsstring>(i)</argsstring>
+        <name>LookAtSpeaker</name>
+        <param>
+          <type>i</type>
+          <defname>i</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" line="121" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" bodystart="121" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_ros_msg_util_1a1762d83e987f576184477374de88aead" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RosMsgUtil.ReceiveServiceRequests</definition>
+        <argsstring>()</argsstring>
+        <name>ReceiveServiceRequests</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" line="129" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" bodystart="129" bodyend="143"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>@package RosMsgUtil
+1. This module has Util functions to send out ROS messages.
+2. The send functions here are called from different modules.
+</verbatim> </para>    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/RosMsgUtil.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

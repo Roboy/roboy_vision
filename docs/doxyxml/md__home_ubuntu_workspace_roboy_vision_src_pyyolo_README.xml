@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="md__home_ubuntu_workspace_roboy_vision_src_pyyolo_README" kind="page">
+    <compoundname>md__home_ubuntu_workspace_roboy_vision_src_pyyolo_README</compoundname>
+    <title>pyyolo</title>
+    <detaileddescription>
+<para>pyyolo is a simple wrapper for YOLO.</para><para><heading level="2">Building</heading>
+</para><para><orderedlist>
+<listitem><para>git clone <ndash/>recursive <ulink url="https://github.com/thomaspark-pkj/pyyolo.git">https://github.com/thomaspark-pkj/pyyolo.git</ulink></para></listitem><listitem><para>(optional) Set GPU=1 and CUDNN=1 in Makefile to use GPU.</para></listitem><listitem><para>make</para></listitem><listitem><para>rm -rf build</para></listitem><listitem><para>python setup.py build (use setup_gpu.py for GPU)</para></listitem><listitem><para>sudo python setup.py install (use setup_gpu.py for GPU)</para></listitem></orderedlist>
+</para><para><heading level="2">Test</heading>
+</para><para>Edit parameters in example.py <programlisting><codeline><highlight class="normal">python<sp/>example.py</highlight></codeline>
+</programlisting> Result <programlisting><codeline><highlight class="normal">{&apos;right&apos;:<sp/>194,<sp/>&apos;bottom&apos;:<sp/>353,<sp/>&apos;top&apos;:<sp/>264,<sp/>&apos;class&apos;:<sp/>&apos;dog&apos;,<sp/>&apos;prob&apos;:<sp/>0.8198755383491516,<sp/>&apos;left&apos;:<sp/>71}</highlight></codeline>
+<codeline><highlight class="normal">{&apos;right&apos;:<sp/>594,<sp/>&apos;bottom&apos;:<sp/>338,<sp/>&apos;top&apos;:<sp/>109,<sp/>&apos;class&apos;:<sp/>&apos;horse&apos;,<sp/>&apos;prob&apos;:<sp/>0.6106302738189697,<sp/>&apos;left&apos;:<sp/>411}</highlight></codeline>
+<codeline><highlight class="normal">{&apos;right&apos;:<sp/>274,<sp/>&apos;bottom&apos;:<sp/>381,<sp/>&apos;top&apos;:<sp/>101,<sp/>&apos;class&apos;:<sp/>&apos;person&apos;,<sp/>&apos;prob&apos;:<sp/>0.702547550201416,<sp/>&apos;left&apos;:<sp/>184}</highlight></codeline>
+<codeline><highlight class="normal">{&apos;right&apos;:<sp/>583,<sp/>&apos;bottom&apos;:<sp/>347,<sp/>&apos;top&apos;:<sp/>137,<sp/>&apos;class&apos;:<sp/>&apos;sheep&apos;,<sp/>&apos;prob&apos;:<sp/>0.7186083197593689,<sp/>&apos;left&apos;:<sp/>387}</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

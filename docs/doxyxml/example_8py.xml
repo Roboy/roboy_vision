@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="example_8py" kind="file" language="Python">
+    <compoundname>example.py</compoundname>
+    <innernamespace refid="namespaceexample">example</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>pyyolo</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>numpy<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>np</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>cv2</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>imutils</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">darknet_path<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;./darknet&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">datacfg<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;cfg/coco.data&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">cfgfile<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;cfg/tiny-yolo.cfg&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">weightfile<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;../tiny-yolo.weights&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">#filename<sp/>=<sp/>darknet_path<sp/>+<sp/>&apos;/data/person.jpg&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">filename<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/home/roboy/outputRoboy.mp4&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">thresh<sp/>=<sp/>0.24</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">hier_thresh<sp/>=<sp/>0.5</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">cam<sp/>=<sp/>cv2.VideoCapture(filename)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">ret_val,<sp/>img<sp/>=<sp/>cam.read()</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">print(ret_val)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>ret_val:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>sys.exit()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">pyyolo.init(darknet_path,<sp/>datacfg,<sp/>cfgfile,<sp/>weightfile)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">fourcc<sp/>=<sp/>cv2.VideoWriter_fourcc(*</highlight><highlight class="stringliteral">&apos;XVID&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">outVideo<sp/>=<sp/>cv2.VideoWriter(</highlight><highlight class="stringliteral">&apos;outputRoboySkyfall.mp4&apos;</highlight><highlight class="normal">,fourcc,<sp/>20.0,<sp/>(800,533))</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">print(</highlight><highlight class="stringliteral">&apos;-----<sp/>test<sp/>python<sp/>API<sp/>using<sp/>a<sp/>file&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>ok,img<sp/>=<sp/>cam.read()</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>frame<sp/>=<sp/>imutils.resize(img,<sp/>width=800)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>img.any():</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys.exit()</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>img<sp/>=<sp/>img.transpose(2,0,1)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>c,<sp/>h,<sp/>w<sp/>=<sp/>img.shape[0],<sp/>img.shape[1],<sp/>img.shape[2]</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/>w,<sp/>h,<sp/>c<sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>data<sp/>=<sp/>img.ravel()/255.0</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>data<sp/>=<sp/>np.ascontiguousarray(data,<sp/>dtype=np.float32)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>outputs<sp/>=<sp/>pyyolo.detect(w,<sp/>h,<sp/>c,<sp/>data,<sp/>thresh,<sp/>hier_thresh)<sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>output<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>outputs:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(output)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p1<sp/>=<sp/>(output[</highlight><highlight class="stringliteral">&apos;left&apos;</highlight><highlight class="normal">],output[</highlight><highlight class="stringliteral">&apos;top&apos;</highlight><highlight class="normal">])</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p2<sp/>=<sp/>(output[</highlight><highlight class="stringliteral">&apos;right&apos;</highlight><highlight class="normal">],output[</highlight><highlight class="stringliteral">&apos;bottom&apos;</highlight><highlight class="normal">])</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(p1,p2)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cv2.rectangle(frame,p1,p2,(0,0,255,10))</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outVideo.write(frame)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">#<sp/>free<sp/>model</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">pyyolo.cleanup()</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/example.py"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1560 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classsl_1_1_mat" kind="class" language="C++" prot="public">
+    <compoundname>sl::Mat</compoundname>
+    <includes refid="_core_8hpp" local="no">Core.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsl_1_1_mat_1a1b8818e34a401d1ccce177feb461660e" prot="private" static="no" mutable="no">
+        <type><ref refid="structsl_1_1_resolution" kindref="compound">Resolution</ref></type>
+        <definition>Resolution sl::Mat::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="222" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_mat_1a190686d7a04b1b34a9b9188e40c0c052" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t sl::Mat::channels</definition>
+        <argsstring></argsstring>
+        <name>channels</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="225" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_mat_1aecc0472aa384be4ddde60aa5020d7d6c" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t sl::Mat::step_gpu</definition>
+        <argsstring></argsstring>
+        <name>step_gpu</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="228" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_mat_1a9ce79307b948e7847d72f32572daf735" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t sl::Mat::step_cpu</definition>
+        <argsstring></argsstring>
+        <name>step_cpu</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="231" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_mat_1a5ec5ae50b77a9a5b55a424e0a1b61bf7" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t sl::Mat::pixel_bytes</definition>
+        <argsstring></argsstring>
+        <name>pixel_bytes</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="234" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_mat_1a4f25fd59bc85ad50187cb15ff5589730" prot="private" static="no" mutable="no">
+        <type><ref refid="group___enumerations_1ga17040776536c6a3aea17eb101356af93" kindref="member">MAT_TYPE</ref></type>
+        <definition>MAT_TYPE sl::Mat::data_type</definition>
+        <argsstring></argsstring>
+        <name>data_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="237" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_mat_1a6c1cd56ee2424b3da330f6acbf7ecd83" prot="private" static="no" mutable="no">
+        <type><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref></type>
+        <definition>MEM sl::Mat::mem_type</definition>
+        <argsstring></argsstring>
+        <name>mem_type</name>
+        <initializer>= sl::MEM_CPU</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="240" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_mat_1af1c36403db7a874091cde5180f10c5ca" prot="private" static="no" mutable="no">
+        <type>uchar1 *</type>
+        <definition>uchar1* sl::Mat::ptr_cpu</definition>
+        <argsstring></argsstring>
+        <name>ptr_cpu</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="243" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_mat_1af2b10932849ae34d88a2b40163eab656" prot="private" static="no" mutable="no">
+        <type>uchar1 *</type>
+        <definition>uchar1* sl::Mat::ptr_gpu</definition>
+        <argsstring></argsstring>
+        <name>ptr_gpu</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="246" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_mat_1a079701914ba2ddecdff6f32bd3a8a722" prot="private" static="no" mutable="no">
+        <type>uchar1 *</type>
+        <definition>uchar1* sl::Mat::ptr_internal</definition>
+        <argsstring></argsstring>
+        <name>ptr_internal</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="249" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_mat_1a4497d584e71492382344cbb274d29bdf" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool sl::Mat::init</definition>
+        <argsstring></argsstring>
+        <name>init</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="252" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_mat_1a8ba2aa2b51582dc5a8e490d72e160e50" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool sl::Mat::memory_owner</definition>
+        <argsstring></argsstring>
+        <name>memory_owner</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="255" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsl_1_1_mat_1aaa9ada80363236f594da15cab7ad8052" prot="public" static="no" mutable="no">
+        <type>sl::String</type>
+        <definition>sl::String sl::Mat::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="259" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_mat_1af31eed6ba830f84e14c16d3a90f5e8bc" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool sl::Mat::verbose</definition>
+        <argsstring></argsstring>
+        <name>verbose</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="262" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsl_1_1_mat_1a16f95ba4bc89d11589891a8ca5d72894" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sl::Mat::Mat</definition>
+        <argsstring>()</argsstring>
+        <name>Mat</name>
+        <briefdescription>
+<para>empty <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="267" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="267" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1ab3496d1fb566c43c04b049a5af1cde42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Mat::Mat</definition>
+        <argsstring>(size_t width, size_t height, MAT_TYPE mat_type, MEM memory_type=MEM_CPU)</argsstring>
+        <name>Mat</name>
+        <param>
+          <type>size_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1ga17040776536c6a3aea17eb101356af93" kindref="member">MAT_TYPE</ref></type>
+          <declname>mat_type</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref></type>
+          <declname>memory_type</declname>
+          <defval>MEM_CPU</defval>
+        </param>
+        <briefdescription>
+<para><ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: width of the matrix in pixels. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: height of the matrix in pixels. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mat_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the type of the matrix (sl::MAT_TYPE_32F_C1,sl::MAT_TYPE_8U_C4...) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memory_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: defines where the buffer will be stored. (sl::MEM_CPU and/or sl::MEM_GPU). This function directly allocates the requested memory. It calls <ref refid="classsl_1_1_mat_1a3cf3a9730997fd28539604cf5025f51f" kindref="member">Mat::alloc</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="278" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1accd96926bc14fba7318cbd0746b2b168" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Mat::Mat</definition>
+        <argsstring>(size_t width, size_t height, MAT_TYPE mat_type, sl::uchar1 *ptr, size_t step, MEM memory_type=MEM_CPU)</argsstring>
+        <name>Mat</name>
+        <param>
+          <type>size_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1ga17040776536c6a3aea17eb101356af93" kindref="member">MAT_TYPE</ref></type>
+          <declname>mat_type</declname>
+        </param>
+        <param>
+          <type>sl::uchar1 *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>step</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref></type>
+          <declname>memory_type</declname>
+          <defval>MEM_CPU</defval>
+        </param>
+        <briefdescription>
+<para><ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> constructor from an existing data pointer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: width of the matrix in pixels. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: height of the matrix in pixels. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mat_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the type of the matrix (sl::MAT_TYPE_32F_C1,sl::MAT_TYPE_8U_C4...) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointer to the data array. (CPU or GPU). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>step</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: step of the data array. (the Bytes size of one pixel row) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memory_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: defines where the buffer will be stored. (sl::MEM_CPU and/or sl::MEM_GPU). This function doesn&apos;t allocate the memory. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="290" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1a8a7367699f9a84973b0940aeaa30e7c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Mat::Mat</definition>
+        <argsstring>(size_t width, size_t height, MAT_TYPE mat_type, sl::uchar1 *ptr_cpu, size_t step_cpu, sl::uchar1 *ptr_gpu, size_t step_gpu)</argsstring>
+        <name>Mat</name>
+        <param>
+          <type>size_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1ga17040776536c6a3aea17eb101356af93" kindref="member">MAT_TYPE</ref></type>
+          <declname>mat_type</declname>
+        </param>
+        <param>
+          <type>sl::uchar1 *</type>
+          <declname>ptr_cpu</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>step_cpu</declname>
+        </param>
+        <param>
+          <type>sl::uchar1 *</type>
+          <declname>ptr_gpu</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>step_gpu</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> constructor from two existing data pointers, CPU and GPU. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: width of the matrix in pixels. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: height of the matrix in pixels. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mat_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the type of the matrix (sl::MAT_TYPE_32F_C1,sl::MAT_TYPE_8U_C4...) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptr_cpu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: CPU pointer to the data array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>step_cpu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: step of the CPU data array. (the Bytes size of one pixel row) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptr_gpu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GPU pointer to the data array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>step_gpu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: step of the GPU data array. (the Bytes size of one pixel row) This function doesn&apos;t allocate the memory. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="303" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1a558864850ec78dc18dbb41cdf1da7fed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Mat::Mat</definition>
+        <argsstring>(sl::Resolution resolution, MAT_TYPE mat_type, MEM memory_type=MEM_CPU)</argsstring>
+        <name>Mat</name>
+        <param>
+          <type><ref refid="structsl_1_1_resolution" kindref="compound">sl::Resolution</ref></type>
+          <declname>resolution</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1ga17040776536c6a3aea17eb101356af93" kindref="member">MAT_TYPE</ref></type>
+          <declname>mat_type</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref></type>
+          <declname>memory_type</declname>
+          <defval>MEM_CPU</defval>
+        </param>
+        <briefdescription>
+<para><ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resolution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the size of the matrix in pixels. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mat_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the type of the matrix (sl::MAT_TYPE_32F_C1,sl::MAT_TYPE_8U_C4...) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memory_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: defines where the buffer will be stored. (sl::MEM_CPU and/or sl::MEM_GPU). This function directly allocates the requested memory. It calls <ref refid="classsl_1_1_mat_1a3cf3a9730997fd28539604cf5025f51f" kindref="member">Mat::alloc</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="312" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1ad232a9a6e495b759c9b4a459df99fb85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Mat::Mat</definition>
+        <argsstring>(sl::Resolution resolution, MAT_TYPE mat_type, sl::uchar1 *ptr, size_t step, MEM memory_type=MEM_CPU)</argsstring>
+        <name>Mat</name>
+        <param>
+          <type><ref refid="structsl_1_1_resolution" kindref="compound">sl::Resolution</ref></type>
+          <declname>resolution</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1ga17040776536c6a3aea17eb101356af93" kindref="member">MAT_TYPE</ref></type>
+          <declname>mat_type</declname>
+        </param>
+        <param>
+          <type>sl::uchar1 *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>step</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref></type>
+          <declname>memory_type</declname>
+          <defval>MEM_CPU</defval>
+        </param>
+        <briefdescription>
+<para><ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> constructor from an existing data pointer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resolution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the size of the matrix in pixels. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mat_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the type of the matrix (sl::MAT_TYPE_32F_C1,sl::MAT_TYPE_8U_C4...) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointer to the data array. (CPU or GPU). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>step</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: step of the data array. (the Bytes size of one pixel row) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memory_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: defines where the buffer will be stored. (sl::MEM_CPU and/or sl::MEM_GPU). This function doesn&apos;t allocate the memory. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="323" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1ac992904132335eb22985491e065d7655" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Mat::Mat</definition>
+        <argsstring>(sl::Resolution resolution, MAT_TYPE mat_type, sl::uchar1 *ptr_cpu, size_t step_cpu, sl::uchar1 *ptr_gpu, size_t step_gpu)</argsstring>
+        <name>Mat</name>
+        <param>
+          <type><ref refid="structsl_1_1_resolution" kindref="compound">sl::Resolution</ref></type>
+          <declname>resolution</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1ga17040776536c6a3aea17eb101356af93" kindref="member">MAT_TYPE</ref></type>
+          <declname>mat_type</declname>
+        </param>
+        <param>
+          <type>sl::uchar1 *</type>
+          <declname>ptr_cpu</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>step_cpu</declname>
+        </param>
+        <param>
+          <type>sl::uchar1 *</type>
+          <declname>ptr_gpu</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>step_gpu</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> constructor from two existing data pointers, CPU and GPU. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resolution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the size of the matrix in pixels. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mat_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the type of the matrix (sl::MAT_TYPE_32F_C1,sl::MAT_TYPE_8U_C4...) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptr_cpu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: CPU pointer to the data array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>step_cpu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: step of the CPU data array. (the Bytes size of one pixel row) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptr_gpu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GPU pointer to the data array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>step_gpu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: step of the GPU data array. (the Bytes size of one pixel row) This function doesn&apos;t allocate the memory. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="335" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1a5cbf29ad487df8966a8e59f3f1a852ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Mat::Mat</definition>
+        <argsstring>(const sl::Mat &amp;mat)</argsstring>
+        <name>Mat</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_mat" kindref="compound">sl::Mat</ref> &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> constructor by copy (deep copy). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the reference to the <ref refid="classsl_1_1_mat" kindref="compound">sl::Mat</ref> to copy. This function allocates and duplicates the data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="342" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1a3cf3a9730997fd28539604cf5025f51f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Mat::alloc</definition>
+        <argsstring>(size_t width, size_t height, MAT_TYPE mat_type, MEM memory_type=MEM_CPU)</argsstring>
+        <name>alloc</name>
+        <param>
+          <type>size_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1ga17040776536c6a3aea17eb101356af93" kindref="member">MAT_TYPE</ref></type>
+          <declname>mat_type</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref></type>
+          <declname>memory_type</declname>
+          <defval>MEM_CPU</defval>
+        </param>
+        <briefdescription>
+<para>Allocates the <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> memory. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: width of the matrix in pixels </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: height of the matrix in pixels </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mat_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the type of the matrix (sl::MAT_TYPE_32F_C1,sl::MAT_TYPE_8U_C4...) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memory_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: defines where the buffer will be stored. (sl::MEM_CPU and/or sl::MEM_GPU). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para>It erases previously allocated memory. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="352" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1ae0d1c98be47ab299257ba9e2ef891f17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Mat::alloc</definition>
+        <argsstring>(sl::Resolution resolution, MAT_TYPE mat_type, MEM memory_type=MEM_CPU)</argsstring>
+        <name>alloc</name>
+        <param>
+          <type><ref refid="structsl_1_1_resolution" kindref="compound">sl::Resolution</ref></type>
+          <declname>resolution</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1ga17040776536c6a3aea17eb101356af93" kindref="member">MAT_TYPE</ref></type>
+          <declname>mat_type</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref></type>
+          <declname>memory_type</declname>
+          <defval>MEM_CPU</defval>
+        </param>
+        <briefdescription>
+<para>Allocates the <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> memory. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resolution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the size of the matrix in pixels. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mat_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the type of the matrix (sl::MAT_TYPE_32F_C1,sl::MAT_TYPE_8U_C4...) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memory_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: defines where the buffer will be stored. (sl::MEM_CPU and/or sl::MEM_GPU). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para>It erases previously allocated memory. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="361" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1ab5f2511d0ad0168a5c541c30f165c49d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Mat::~Mat</definition>
+        <argsstring>()</argsstring>
+        <name>~Mat</name>
+        <briefdescription>
+<para><ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> destructor. This function calls <ref refid="classsl_1_1_mat_1a15f83c814583c46a7d98d2ef48237cb5" kindref="member">Mat::free</ref> to release owned memory. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="366" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1a15f83c814583c46a7d98d2ef48237cb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Mat::free</definition>
+        <argsstring>(MEM memory_type=MEM_CPU|MEM_GPU)</argsstring>
+        <name>free</name>
+        <param>
+          <type><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref></type>
+          <declname>memory_type</declname>
+          <defval>MEM_CPU|MEM_GPU</defval>
+        </param>
+        <briefdescription>
+<para>Free the owned memory. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>memory_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: specify whether you want to free the sl::MEM_CPU and/or sl::MEM_GPU memory. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="372" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1a29a7f258cc02c36ab5027d179a908917" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> &amp;</type>
+        <definition>Mat&amp; sl::Mat::operator=</definition>
+        <argsstring>(const Mat &amp;that)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> &amp;</type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+<para>Performs a shallow copy. <linebreak/>
+ This function doesn&apos;t copy the data array, it only copies the pointer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>that</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the <ref refid="classsl_1_1_mat" kindref="compound">sl::Mat</ref> to be copied. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new <ref refid="classsl_1_1_mat" kindref="compound">sl::Mat</ref> object which point to the same data as that. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="380" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1adaed7bbba5825fe43059bcb57fdfe8fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+        <definition>ERROR_CODE sl::Mat::updateCPUfromGPU</definition>
+        <argsstring>()</argsstring>
+        <name>updateCPUfromGPU</name>
+        <briefdescription>
+<para>Downloads data from DEVICE (GPU) to HOST (CPU), if possible. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>sl::SUCCESS if everything went well, sl::ERROR_CODE_FAILURE otherwise. </para></simplesect>
+<simplesect kind="note"><para>If no CPU or GPU memory are available for this <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref>, some are directly allocated. </para></simplesect>
+<simplesect kind="note"><para>If verbose sets, you have informations in case of failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="388" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1a9f2b2ab1f9a5c324462c0f88d9f14c1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+        <definition>ERROR_CODE sl::Mat::updateGPUfromCPU</definition>
+        <argsstring>()</argsstring>
+        <name>updateGPUfromCPU</name>
+        <briefdescription>
+<para>Uploads data from HOST (CPU) to DEVICE (GPU), if possible. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>sl::SUCCESS if everything went well, sl::ERROR_CODE_FAILURE otherwise. </para></simplesect>
+<simplesect kind="note"><para>If no CPU or GPU memory are available for this <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref>, some are directly allocated. </para></simplesect>
+<simplesect kind="note"><para>If verbose sets, you have informations in case of failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="396" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1a23fccd289c42c4ad3d706cedcea1e9bf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+        <definition>ERROR_CODE sl::Mat::copyTo</definition>
+        <argsstring>(Mat &amp;dst, COPY_TYPE cpyType=COPY_TYPE_CPU_CPU) const </argsstring>
+        <name>copyTo</name>
+        <param>
+          <type><ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1ga94ef27af8db885e1f68672c1e55b8d28" kindref="member">COPY_TYPE</ref></type>
+          <declname>cpyType</declname>
+          <defval>COPY_TYPE_CPU_CPU</defval>
+        </param>
+        <briefdescription>
+<para>Copies data an other <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> (deep copy). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> where the data will be copied. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cpyType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: specify the memories that will be used for the copy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sl::SUCCESS if everything went well, sl::ERROR_CODE_FAILURE otherwise. </para></simplesect>
+<simplesect kind="note"><para>If the destination is not allocated or has a not a compatible sl::MAT_TYPE or <ref refid="structsl_1_1_resolution" kindref="compound">sl::Resolution</ref>, current memory is freed and new memory is directly allocated. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="406" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1afac32caeb0e2ef070de8179cd9a23a3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+        <definition>ERROR_CODE sl::Mat::setFrom</definition>
+        <argsstring>(const Mat &amp;src, COPY_TYPE cpyType=COPY_TYPE_CPU_CPU)</argsstring>
+        <name>setFrom</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> &amp;</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1ga94ef27af8db885e1f68672c1e55b8d28" kindref="member">COPY_TYPE</ref></type>
+          <declname>cpyType</declname>
+          <defval>COPY_TYPE_CPU_CPU</defval>
+        </param>
+        <briefdescription>
+<para>Copies data from an other <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> (deep copy). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> where the data will be copied from. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cpyType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: specify the memories that will be used for the update. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sl::SUCCESS if everything went well, sl::ERROR_CODE_FAILURE otherwise. </para></simplesect>
+<simplesect kind="note"><para>If the current <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> is not allocated or has a not a compatible sl::MAT_TYPE or <ref refid="structsl_1_1_resolution" kindref="compound">sl::Resolution</ref> with the source, current memory is freed and new memory is directly allocated. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="416" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1adc0bef933fe490a0aeb8b9459e76d3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+        <definition>ERROR_CODE sl::Mat::read</definition>
+        <argsstring>(const char *filePath)</argsstring>
+        <name>read</name>
+        <param>
+          <type>const char *</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>Reads an image from a file (only if sl::MEM_CPU is available on the current <ref refid="classsl_1_1_mat" kindref="compound">sl::Mat</ref>). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: file path including the name and extension. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sl::SUCCESS if everything went well, sl::ERROR_CODE_FAILURE otherwise. </para></simplesect>
+<simplesect kind="note"><para>Supported sl::MAT_TYPE are : sl::MAT_TYPE_8U_C1, sl::MAT_TYPE_8U_C3 and sl::MAT_TYPE_8U_C4.  input files format are PNG and JPEG.  verbose sets, you have informations in case of failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="426" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1ab287ce4716a4c6c52293fe9c481b65b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+        <definition>ERROR_CODE sl::Mat::write</definition>
+        <argsstring>(const char *filePath)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const char *</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>Writes the <ref refid="classsl_1_1_mat" kindref="compound">sl::Mat</ref> (only if sl::MEM_CPU is available) into a file as an image. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: file path including the name and extension. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sl::SUCCESS if everything went well, sl::ERROR_CODE_FAILURE otherwise. </para></simplesect>
+<simplesect kind="note"><para>Supported sl::MAT_TYPE are : sl::MAT_TYPE_8U_C1, sl::MAT_TYPE_8U_C3 and sl::MAT_TYPE_8U_C4.  output files format are PNG and JPEG.  verbose sets, you have informations in case of failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="436" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1aa4bc8633e4c27a73ceb4200d0f344a36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+        <definition>ERROR_CODE sl::Mat::setTo</definition>
+        <argsstring>(T value, MEM memory_type=MEM_CPU)</argsstring>
+        <name>setTo</name>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref></type>
+          <declname>memory_type</declname>
+          <defval>MEM_CPU</defval>
+        </param>
+        <briefdescription>
+<para>Fills the <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> with the given value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the value to be copied all over the matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memory_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: defines which buffer to fill, CPU and/or GPU. This function overwrite all the matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function is templated for sl::uchar1, sl::uchar2, sl::uchar3, sl::uchar4, sl::float1, sl::float2, sl::float3, sl::float4. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="446" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1a3b8fb9eb875bb023c57447eceb8a93a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename N</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+        <definition>ERROR_CODE sl::Mat::setValue</definition>
+        <argsstring>(size_t x, size_t y, N value, MEM memory_type=MEM_CPU)</argsstring>
+        <name>setValue</name>
+        <param>
+          <type>size_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>N</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref></type>
+          <declname>memory_type</declname>
+          <defval>MEM_CPU</defval>
+        </param>
+        <briefdescription>
+<para>Sets a value to a specific point in the matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: specify the column. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: specify the row. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the value to be set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memory_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: defines which memory will be updated. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sl::SUCCESS if everything went well, sl::ERROR_CODE_FAILURE otherwise. </para></simplesect>
+<simplesect kind="warning"><para>Not efficient for sl::MEM_GPU, use it on sparse data. </para></simplesect>
+<simplesect kind="note"><para>This function is templated for sl::uchar1, sl::uchar2, sl::uchar3, sl::uchar4, sl::float1, sl::float2, sl::float3, sl::float4. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="459" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1a079ba932c39140166fa17aa5c17e1e57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename N</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref></type>
+        <definition>ERROR_CODE sl::Mat::getValue</definition>
+        <argsstring>(size_t x, size_t y, N *value, MEM memory_type=MEM_CPU)</argsstring>
+        <name>getValue</name>
+        <param>
+          <type>size_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>N *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref></type>
+          <declname>memory_type</declname>
+          <defval>MEM_CPU</defval>
+        </param>
+        <briefdescription>
+<para>Returns the value of a specific point in the matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: specify the column </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: specify the row </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memory_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: defines which memory should be read. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sl::SUCCESS if everything went well, sl::ERROR_CODE_FAILURE otherwise. </para></simplesect>
+<simplesect kind="warning"><para>Not efficient for sl::MEM_GPU, use it on sparse data. </para></simplesect>
+<simplesect kind="note"><para>This function is templated for sl::uchar1, sl::uchar2, sl::uchar3, sl::uchar4, sl::float1, sl::float2, sl::float3, sl::float4. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="471" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1a7a3a502fee40d8e9926f7776d4da6c5a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t sl::Mat::getWidth</definition>
+        <argsstring>() const </argsstring>
+        <name>getWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief Returns the width of the matrix. <simplesect kind="return"><para>The width of the matrix in pixels. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="477" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="477" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1ae0377171f834a13f5b718d00283b2e2e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t sl::Mat::getHeight</definition>
+        <argsstring>() const </argsstring>
+        <name>getHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief Returns the height of the matrix. <simplesect kind="return"><para>The height of the matrix in pixels. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="485" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="485" bodyend="487"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1ab79ae917f1f3ddc08b7e6795df82d09a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structsl_1_1_resolution" kindref="compound">Resolution</ref></type>
+        <definition>Resolution sl::Mat::getResolution</definition>
+        <argsstring>() const </argsstring>
+        <name>getResolution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief Returns the height of the matrix. <simplesect kind="return"><para>The height of the matrix in pixels. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="493" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="493" bodyend="495"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1a97320c3b504caa8b165a1ebe1a556273" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t sl::Mat::getChannels</definition>
+        <argsstring>() const </argsstring>
+        <name>getChannels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief Returns the number of values stored in one pixel. <simplesect kind="return"><para>The number of values in a pixel. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="501" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="501" bodyend="503"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1a1046f54b9797833af7d0621dd6da9a45" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group___enumerations_1ga17040776536c6a3aea17eb101356af93" kindref="member">MAT_TYPE</ref></type>
+        <definition>MAT_TYPE sl::Mat::getDataType</definition>
+        <argsstring>() const </argsstring>
+        <name>getDataType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief Returns the format of the matrix. <simplesect kind="return"><para>The format of the current <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="509" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="509" bodyend="511"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1ac7c9224a3ceeb7fb1d2b0b009e6e396e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref></type>
+        <definition>MEM sl::Mat::getMemoryType</definition>
+        <argsstring>() const </argsstring>
+        <name>getMemoryType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief Returns the type of memory (CPU and/or GPU). <simplesect kind="return"><para>The type of allocated memory. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="517" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="517" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1a313e2a33fd1cfc40af21991587e86906" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename N</type>
+          </param>
+        </templateparamlist>
+        <type>N *</type>
+        <definition>N* sl::Mat::getPtr</definition>
+        <argsstring>(MEM memory_type=MEM_CPU)</argsstring>
+        <name>getPtr</name>
+        <param>
+          <type><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref></type>
+          <declname>memory_type</declname>
+          <defval>MEM_CPU</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief Returns the CPU or GPU data pointer. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>memory_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: specify whether you want sl::MEM_CPU or sl::MEM_GPU step. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The pointer of the <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> data. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="527" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1a0746f8964345637c8ffe76671dbbbf27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t sl::Mat::getStepBytes</definition>
+        <argsstring>(MEM memory_type=MEM_CPU)</argsstring>
+        <name>getStepBytes</name>
+        <param>
+          <type><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref></type>
+          <declname>memory_type</declname>
+          <defval>MEM_CPU</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief Returns the memory step in Bytes (the Bytes size of one pixel row). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>memory_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: specify whether you want sl::MEM_CPU or sl::MEM_GPU step. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The step in bytes of the specified memory. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="534" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="534" bodyend="542"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1a77d6d01f5dbd2aa6b00105c3b8a42313" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename N</type>
+          </param>
+        </templateparamlist>
+        <type>size_t</type>
+        <definition>size_t sl::Mat::getStep</definition>
+        <argsstring>(MEM memory_type=MEM_CPU)</argsstring>
+        <name>getStep</name>
+        <param>
+          <type><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref></type>
+          <declname>memory_type</declname>
+          <defval>MEM_CPU</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief Returns the memory step in number of elements (the number of values in one pixel row). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>memory_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: specify whether you want sl::MEM_CPU or sl::MEM_GPU step. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The step in number of elements. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="550" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="550" bodyend="552"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1a5dc155a862992b5db3c0bd52b2ed5741" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t sl::Mat::getStep</definition>
+        <argsstring>(MEM memory_type=MEM_CPU)</argsstring>
+        <name>getStep</name>
+        <param>
+          <type><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref></type>
+          <declname>memory_type</declname>
+          <defval>MEM_CPU</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief Returns the memory step in number of elements (the number of values in one pixel row). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>memory_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: specify whether you want sl::MEM_CPU or sl::MEM_GPU step. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The step in number of elements. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="559" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="559" bodyend="579"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1a616798e1a3df0227e051c6151fe3e2f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t sl::Mat::getPixelBytes</definition>
+        <argsstring>()</argsstring>
+        <name>getPixelBytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief Returns the size in bytes of one pixel. <simplesect kind="return"><para>The size in bytes of a pixel. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="585" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="585" bodyend="587"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1a936f74c48e04f96c857a7eb86a29078c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t sl::Mat::getWidthBytes</definition>
+        <argsstring>()</argsstring>
+        <name>getWidthBytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief Returns the size in bytes of a row. <simplesect kind="return"><para>The size in bytes of a row. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="593" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="593" bodyend="595"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1a5eb5bfed23ba76b28cc848d8da599ad7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl::String</type>
+        <definition>sl::String sl::Mat::getInfos</definition>
+        <argsstring>()</argsstring>
+        <name>getInfos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief Return the informations about the <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> into a sl::String. <simplesect kind="return"><para>A string containing the <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> informations. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="601" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1aa99115917d1677af9050b87f97bcb6a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl::Mat::isInit</definition>
+        <argsstring>()</argsstring>
+        <name>isInit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief Defines whether the <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> is initialized or not. <simplesect kind="return"><para>True if current <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> has been allocated (by the constructor or therefore). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="607" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="607" bodyend="609"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1aa3df7ef2cbe034916add734e9b664e5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl::Mat::isMemoryOwner</definition>
+        <argsstring>()</argsstring>
+        <name>isMemoryOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief Returns whether the <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> is the owner of the memory it access. <linebreak/>
+ If not, the memory won&apos;t be freed if the <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> is destroyed. <simplesect kind="return"><para>True if the <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> is owning its memory, else false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="616" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="616" bodyend="618"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mat_1ae3d4df58edaef1e26367d02171143e22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Mat::clone</definition>
+        <argsstring>(const Mat &amp;src)</argsstring>
+        <name>clone</name>
+        <param>
+          <type>const <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+<para>Duplicates <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> by copy (deep copy). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the reference to the <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> to copy. This function copies the data array(s), it mark the new <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> as the memory owner. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="625" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> class can handle multiple matrix format from 1 to 4 channels, with different value types (float or uchar), and can be stored CPU and/or GPU side. <linebreak/>
+<linebreak/>
+ <ref refid="classsl_1_1_mat" kindref="compound">sl::Mat</ref> is defined in a row-major order: <linebreak/>
+ - It means that, in the image buffer, the entire first row is stored first, followed by the entire second row, and so on. <linebreak/>
+<linebreak/>
+ The CPU and GPU buffer aren&apos;t automatically synchronized for performance reasons, you can use <ref refid="classsl_1_1_mat_1adaed7bbba5825fe43059bcb57fdfe8fc" kindref="member">Mat::updateCPUfromGPU</ref> / <ref refid="classsl_1_1_mat_1a9f2b2ab1f9a5c324462c0f88d9f14c1f" kindref="member">Mat::updateGPUfromCPU</ref> to do it. <linebreak/>
+<linebreak/>
+ If you are using the GPU side of the <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> object, you need to make sure to call <ref refid="classsl_1_1_mat_1a15f83c814583c46a7d98d2ef48237cb5" kindref="member">sl::Mat::free()</ref> before destroying the <ref refid="classsl_1_1_camera" kindref="compound">sl::Camera</ref> object. <linebreak/>
+ The destruction of the <ref refid="classsl_1_1_camera" kindref="compound">sl::Camera</ref> object delete the CUDA context needed to free the GPU <ref refid="classsl_1_1_mat" kindref="compound">Mat</ref> memory. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="279">
+        <label>sl::Resolution</label>
+        <link refid="structsl_1_1_resolution"/>
+      </node>
+      <node id="278">
+        <label>sl::Mat</label>
+        <link refid="classsl_1_1_mat"/>
+        <childnode refid="279" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="219" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="219" bodyend="627"/>
+    <listofallmembers>
+      <member refid="classsl_1_1_mat_1a3cf3a9730997fd28539604cf5025f51f" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>alloc</name></member>
+      <member refid="classsl_1_1_mat_1ae0d1c98be47ab299257ba9e2ef891f17" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>alloc</name></member>
+      <member refid="classsl_1_1_mat_1a190686d7a04b1b34a9b9188e40c0c052" prot="private" virt="non-virtual"><scope>sl::Mat</scope><name>channels</name></member>
+      <member refid="classsl_1_1_mat_1ae3d4df58edaef1e26367d02171143e22" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>clone</name></member>
+      <member refid="classsl_1_1_mat_1a23fccd289c42c4ad3d706cedcea1e9bf" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>copyTo</name></member>
+      <member refid="classsl_1_1_mat_1a4f25fd59bc85ad50187cb15ff5589730" prot="private" virt="non-virtual"><scope>sl::Mat</scope><name>data_type</name></member>
+      <member refid="classsl_1_1_mat_1a15f83c814583c46a7d98d2ef48237cb5" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>free</name></member>
+      <member refid="classsl_1_1_mat_1a97320c3b504caa8b165a1ebe1a556273" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>getChannels</name></member>
+      <member refid="classsl_1_1_mat_1a1046f54b9797833af7d0621dd6da9a45" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>getDataType</name></member>
+      <member refid="classsl_1_1_mat_1ae0377171f834a13f5b718d00283b2e2e" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>getHeight</name></member>
+      <member refid="classsl_1_1_mat_1a5eb5bfed23ba76b28cc848d8da599ad7" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>getInfos</name></member>
+      <member refid="classsl_1_1_mat_1ac7c9224a3ceeb7fb1d2b0b009e6e396e" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>getMemoryType</name></member>
+      <member refid="classsl_1_1_mat_1a616798e1a3df0227e051c6151fe3e2f9" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>getPixelBytes</name></member>
+      <member refid="classsl_1_1_mat_1a313e2a33fd1cfc40af21991587e86906" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>getPtr</name></member>
+      <member refid="classsl_1_1_mat_1ab79ae917f1f3ddc08b7e6795df82d09a" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>getResolution</name></member>
+      <member refid="classsl_1_1_mat_1a77d6d01f5dbd2aa6b00105c3b8a42313" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>getStep</name></member>
+      <member refid="classsl_1_1_mat_1a5dc155a862992b5db3c0bd52b2ed5741" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>getStep</name></member>
+      <member refid="classsl_1_1_mat_1a0746f8964345637c8ffe76671dbbbf27" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>getStepBytes</name></member>
+      <member refid="classsl_1_1_mat_1a079ba932c39140166fa17aa5c17e1e57" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>getValue</name></member>
+      <member refid="classsl_1_1_mat_1a7a3a502fee40d8e9926f7776d4da6c5a" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>getWidth</name></member>
+      <member refid="classsl_1_1_mat_1a936f74c48e04f96c857a7eb86a29078c" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>getWidthBytes</name></member>
+      <member refid="classsl_1_1_mat_1a4497d584e71492382344cbb274d29bdf" prot="private" virt="non-virtual"><scope>sl::Mat</scope><name>init</name></member>
+      <member refid="classsl_1_1_mat_1aa99115917d1677af9050b87f97bcb6a8" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>isInit</name></member>
+      <member refid="classsl_1_1_mat_1aa3df7ef2cbe034916add734e9b664e5d" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>isMemoryOwner</name></member>
+      <member refid="classsl_1_1_mat_1a16f95ba4bc89d11589891a8ca5d72894" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>Mat</name></member>
+      <member refid="classsl_1_1_mat_1ab3496d1fb566c43c04b049a5af1cde42" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>Mat</name></member>
+      <member refid="classsl_1_1_mat_1accd96926bc14fba7318cbd0746b2b168" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>Mat</name></member>
+      <member refid="classsl_1_1_mat_1a8a7367699f9a84973b0940aeaa30e7c9" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>Mat</name></member>
+      <member refid="classsl_1_1_mat_1a558864850ec78dc18dbb41cdf1da7fed" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>Mat</name></member>
+      <member refid="classsl_1_1_mat_1ad232a9a6e495b759c9b4a459df99fb85" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>Mat</name></member>
+      <member refid="classsl_1_1_mat_1ac992904132335eb22985491e065d7655" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>Mat</name></member>
+      <member refid="classsl_1_1_mat_1a5cbf29ad487df8966a8e59f3f1a852ec" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>Mat</name></member>
+      <member refid="classsl_1_1_mat_1a6c1cd56ee2424b3da330f6acbf7ecd83" prot="private" virt="non-virtual"><scope>sl::Mat</scope><name>mem_type</name></member>
+      <member refid="classsl_1_1_mat_1a8ba2aa2b51582dc5a8e490d72e160e50" prot="private" virt="non-virtual"><scope>sl::Mat</scope><name>memory_owner</name></member>
+      <member refid="classsl_1_1_mat_1aaa9ada80363236f594da15cab7ad8052" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>name</name></member>
+      <member refid="classsl_1_1_mat_1a29a7f258cc02c36ab5027d179a908917" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>operator=</name></member>
+      <member refid="classsl_1_1_mat_1a5ec5ae50b77a9a5b55a424e0a1b61bf7" prot="private" virt="non-virtual"><scope>sl::Mat</scope><name>pixel_bytes</name></member>
+      <member refid="classsl_1_1_mat_1af1c36403db7a874091cde5180f10c5ca" prot="private" virt="non-virtual"><scope>sl::Mat</scope><name>ptr_cpu</name></member>
+      <member refid="classsl_1_1_mat_1af2b10932849ae34d88a2b40163eab656" prot="private" virt="non-virtual"><scope>sl::Mat</scope><name>ptr_gpu</name></member>
+      <member refid="classsl_1_1_mat_1a079701914ba2ddecdff6f32bd3a8a722" prot="private" virt="non-virtual"><scope>sl::Mat</scope><name>ptr_internal</name></member>
+      <member refid="classsl_1_1_mat_1adc0bef933fe490a0aeb8b9459e76d3d4" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>read</name></member>
+      <member refid="classsl_1_1_mat_1afac32caeb0e2ef070de8179cd9a23a3a" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>setFrom</name></member>
+      <member refid="classsl_1_1_mat_1aa4bc8633e4c27a73ceb4200d0f344a36" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>setTo</name></member>
+      <member refid="classsl_1_1_mat_1a3b8fb9eb875bb023c57447eceb8a93a3" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>setValue</name></member>
+      <member refid="classsl_1_1_mat_1a1b8818e34a401d1ccce177feb461660e" prot="private" virt="non-virtual"><scope>sl::Mat</scope><name>size</name></member>
+      <member refid="classsl_1_1_mat_1a9ce79307b948e7847d72f32572daf735" prot="private" virt="non-virtual"><scope>sl::Mat</scope><name>step_cpu</name></member>
+      <member refid="classsl_1_1_mat_1aecc0472aa384be4ddde60aa5020d7d6c" prot="private" virt="non-virtual"><scope>sl::Mat</scope><name>step_gpu</name></member>
+      <member refid="classsl_1_1_mat_1adaed7bbba5825fe43059bcb57fdfe8fc" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>updateCPUfromGPU</name></member>
+      <member refid="classsl_1_1_mat_1a9f2b2ab1f9a5c324462c0f88d9f14c1f" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>updateGPUfromCPU</name></member>
+      <member refid="classsl_1_1_mat_1af31eed6ba830f84e14c16d3a90f5e8bc" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>verbose</name></member>
+      <member refid="classsl_1_1_mat_1ab287ce4716a4c6c52293fe9c481b65b9" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>write</name></member>
+      <member refid="classsl_1_1_mat_1ab5f2511d0ad0168a5c541c30f165c49d" prot="public" virt="non-virtual"><scope>sl::Mat</scope><name>~Mat</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

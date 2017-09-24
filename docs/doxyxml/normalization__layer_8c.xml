@@ -1,0 +1,417 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="normalization__layer_8c" kind="file" language="C++">
+    <compoundname>normalization_layer.c</compoundname>
+    <includes refid="normalization__layer_8h" local="yes">normalization_layer.h</includes>
+    <includes refid="blas_8h" local="yes">blas.h</includes>
+    <includes local="no">stdio.h</includes>
+    <incdepgraph>
+      <node id="1404">
+        <label>box.h</label>
+        <link refid="box_8h_source"/>
+        <childnode refid="1405" relation="include">
+        </childnode>
+      </node>
+      <node id="1396">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/normalization_layer.c</label>
+        <link refid="normalization_layer.c"/>
+        <childnode refid="1397" relation="include">
+        </childnode>
+        <childnode refid="1413" relation="include">
+        </childnode>
+        <childnode refid="1400" relation="include">
+        </childnode>
+      </node>
+      <node id="1397">
+        <label>normalization_layer.h</label>
+        <link refid="normalization__layer_8h_source"/>
+        <childnode refid="1398" relation="include">
+        </childnode>
+        <childnode refid="1407" relation="include">
+        </childnode>
+        <childnode refid="1408" relation="include">
+        </childnode>
+      </node>
+      <node id="1401">
+        <label>float.h</label>
+      </node>
+      <node id="1399">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1409">
+        <label>data.h</label>
+        <link refid="data_8h_source"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1405" relation="include">
+        </childnode>
+        <childnode refid="1410" relation="include">
+        </childnode>
+        <childnode refid="1411" relation="include">
+        </childnode>
+        <childnode refid="1398" relation="include">
+        </childnode>
+        <childnode refid="1412" relation="include">
+        </childnode>
+      </node>
+      <node id="1408">
+        <label>network.h</label>
+        <link refid="network_8h_source"/>
+        <childnode refid="1405" relation="include">
+        </childnode>
+        <childnode refid="1398" relation="include">
+        </childnode>
+        <childnode refid="1407" relation="include">
+        </childnode>
+        <childnode refid="1409" relation="include">
+        </childnode>
+        <childnode refid="1412" relation="include">
+        </childnode>
+      </node>
+      <node id="1411">
+        <label>list.h</label>
+        <link refid="list_8h_source"/>
+        <childnode refid="1405" relation="include">
+        </childnode>
+      </node>
+      <node id="1410">
+        <label>matrix.h</label>
+        <link refid="matrix_8h_source"/>
+        <childnode refid="1405" relation="include">
+        </childnode>
+      </node>
+      <node id="1405">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="1399" relation="include">
+        </childnode>
+        <childnode refid="1400" relation="include">
+        </childnode>
+        <childnode refid="1402" relation="include">
+        </childnode>
+        <childnode refid="1406" relation="include">
+        </childnode>
+      </node>
+      <node id="1407">
+        <label>layer.h</label>
+        <link refid="layer_8h_source"/>
+        <childnode refid="1405" relation="include">
+        </childnode>
+      </node>
+      <node id="1406">
+        <label>pthread.h</label>
+      </node>
+      <node id="1398">
+        <label>image.h</label>
+        <link refid="image_8h_source"/>
+        <childnode refid="1399" relation="include">
+        </childnode>
+        <childnode refid="1400" relation="include">
+        </childnode>
+        <childnode refid="1401" relation="include">
+        </childnode>
+        <childnode refid="1402" relation="include">
+        </childnode>
+        <childnode refid="1403" relation="include">
+        </childnode>
+        <childnode refid="1404" relation="include">
+        </childnode>
+        <childnode refid="1405" relation="include">
+        </childnode>
+      </node>
+      <node id="1402">
+        <label>string.h</label>
+      </node>
+      <node id="1413">
+        <label>blas.h</label>
+        <link refid="blas_8h_source"/>
+        <childnode refid="1405" relation="include">
+        </childnode>
+      </node>
+      <node id="1403">
+        <label>math.h</label>
+      </node>
+      <node id="1412">
+        <label>tree.h</label>
+        <link refid="tree_8h_source"/>
+        <childnode refid="1405" relation="include">
+        </childnode>
+      </node>
+      <node id="1400">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="normalization__layer_8c_1ab4c22cbeb9a0ba2c9feced7f94179bfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlayer" kindref="compound">layer</ref></type>
+        <definition>layer make_normalization_layer</definition>
+        <argsstring>(int batch, int w, int h, int c, int size, float alpha, float beta, float kappa)</argsstring>
+        <name>make_normalization_layer</name>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>kappa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/normalization_layer.c" line="6" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/normalization_layer.c" bodystart="6" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="normalization__layer_8c_1ae1d304da9d6dc40df88bbc0126adaa29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void resize_normalization_layer</definition>
+        <argsstring>(layer *layer, int w, int h)</argsstring>
+        <name>resize_normalization_layer</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">layer</ref> *</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/normalization_layer.c" line="40" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/normalization_layer.c" bodystart="40" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="normalization__layer_8c_1ac8752bfc267bd86411a37a46e56ec034" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void forward_normalization_layer</definition>
+        <argsstring>(const layer layer, network net)</argsstring>
+        <name>forward_normalization_layer</name>
+        <param>
+          <type>const <ref refid="structlayer" kindref="compound">layer</ref></type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/normalization_layer.c" line="66" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/normalization_layer.c" bodystart="66" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="normalization__layer_8c_1ab2a50eea8cb4be828d34c3b69a5540e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void backward_normalization_layer</definition>
+        <argsstring>(const layer layer, network net)</argsstring>
+        <name>backward_normalization_layer</name>
+        <param>
+          <type>const <ref refid="structlayer" kindref="compound">layer</ref></type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/normalization_layer.c" line="97" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/normalization_layer.c" bodystart="97" bodyend="107"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;normalization_layer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;blas.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><ref refid="structlayer" kindref="compound">layer</ref><sp/>make_normalization_layer(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>alpha,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>beta,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>kappa)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;Local<sp/>Response<sp/>Normalization<sp/>Layer:<sp/>%d<sp/>x<sp/>%d<sp/>x<sp/>%d<sp/>image,<sp/>%d<sp/>size\n&quot;</highlight><highlight class="normal">,<sp/>w,h,c,size);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlayer" kindref="compound">layer</ref><sp/><ref refid="structlayer" kindref="compound">layer</ref><sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>layer.type<sp/>=<sp/>NORMALIZATION;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>layer.batch<sp/>=<sp/>batch;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>layer.h<sp/>=<sp/>layer.out_h<sp/>=<sp/>h;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>layer.w<sp/>=<sp/>layer.out_w<sp/>=<sp/>w;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>layer.c<sp/>=<sp/>layer.out_c<sp/>=<sp/>c;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>layer.kappa<sp/>=<sp/>kappa;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>layer.size<sp/>=<sp/>size;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>layer.alpha<sp/>=<sp/>alpha;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>layer.beta<sp/>=<sp/>beta;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>layer.output<sp/>=<sp/>calloc(h<sp/>*<sp/>w<sp/>*<sp/>c<sp/>*<sp/>batch,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>layer.delta<sp/>=<sp/>calloc(h<sp/>*<sp/>w<sp/>*<sp/>c<sp/>*<sp/>batch,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>layer.squared<sp/>=<sp/>calloc(h<sp/>*<sp/>w<sp/>*<sp/>c<sp/>*<sp/>batch,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>layer.norms<sp/>=<sp/>calloc(h<sp/>*<sp/>w<sp/>*<sp/>c<sp/>*<sp/>batch,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>layer.inputs<sp/>=<sp/>w*h*c;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>layer.outputs<sp/>=<sp/>layer.inputs;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>layer.forward<sp/>=<sp/>forward_normalization_layer;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>layer.backward<sp/>=<sp/>backward_normalization_layer;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>layer.forward_gpu<sp/>=<sp/>forward_normalization_layer_gpu;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>layer.backward_gpu<sp/>=<sp/>backward_normalization_layer_gpu;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>layer.output_gpu<sp/>=<sp/><sp/>cuda_make_array(layer.output,<sp/>h<sp/>*<sp/>w<sp/>*<sp/>c<sp/>*<sp/>batch);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>layer.delta_gpu<sp/>=<sp/><sp/><sp/>cuda_make_array(layer.delta,<sp/>h<sp/>*<sp/>w<sp/>*<sp/>c<sp/>*<sp/>batch);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>layer.squared_gpu<sp/>=<sp/>cuda_make_array(layer.squared,<sp/>h<sp/>*<sp/>w<sp/>*<sp/>c<sp/>*<sp/>batch);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>layer.norms_gpu<sp/>=<sp/><sp/><sp/>cuda_make_array(layer.norms,<sp/>h<sp/>*<sp/>w<sp/>*<sp/>c<sp/>*<sp/>batch);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>layer;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>resize_normalization_layer(layer<sp/>*layer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c<sp/>=<sp/>layer-&gt;c;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch<sp/>=<sp/>layer-&gt;batch;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>layer-&gt;h<sp/>=<sp/>h;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>layer-&gt;w<sp/>=<sp/>w;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>layer-&gt;out_h<sp/>=<sp/>h;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>layer-&gt;out_w<sp/>=<sp/>w;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>layer-&gt;inputs<sp/>=<sp/>w*h*c;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>layer-&gt;outputs<sp/>=<sp/>layer-&gt;inputs;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>layer-&gt;output<sp/>=<sp/>realloc(layer-&gt;output,<sp/>h<sp/>*<sp/>w<sp/>*<sp/>c<sp/>*<sp/>batch<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>layer-&gt;delta<sp/>=<sp/>realloc(layer-&gt;delta,<sp/>h<sp/>*<sp/>w<sp/>*<sp/>c<sp/>*<sp/>batch<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>layer-&gt;squared<sp/>=<sp/>realloc(layer-&gt;squared,<sp/>h<sp/>*<sp/>w<sp/>*<sp/>c<sp/>*<sp/>batch<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>layer-&gt;norms<sp/>=<sp/>realloc(layer-&gt;norms,<sp/>h<sp/>*<sp/>w<sp/>*<sp/>c<sp/>*<sp/>batch<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>cuda_free(layer-&gt;output_gpu);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>cuda_free(layer-&gt;delta_gpu);<sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>cuda_free(layer-&gt;squared_gpu);<sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>cuda_free(layer-&gt;norms_gpu);<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>layer-&gt;output_gpu<sp/>=<sp/><sp/>cuda_make_array(layer-&gt;output,<sp/>h<sp/>*<sp/>w<sp/>*<sp/>c<sp/>*<sp/>batch);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>layer-&gt;delta_gpu<sp/>=<sp/><sp/><sp/>cuda_make_array(layer-&gt;delta,<sp/>h<sp/>*<sp/>w<sp/>*<sp/>c<sp/>*<sp/>batch);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>layer-&gt;squared_gpu<sp/>=<sp/>cuda_make_array(layer-&gt;squared,<sp/>h<sp/>*<sp/>w<sp/>*<sp/>c<sp/>*<sp/>batch);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>layer-&gt;norms_gpu<sp/>=<sp/><sp/><sp/>cuda_make_array(layer-&gt;norms,<sp/>h<sp/>*<sp/>w<sp/>*<sp/>c<sp/>*<sp/>batch);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>forward_normalization_layer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>layer<sp/>layer,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k,b;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w<sp/>=<sp/>layer.w;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h<sp/>=<sp/>layer.h;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c<sp/>=<sp/>layer.c;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>scal_cpu(w*h*c*layer.batch,<sp/>0,<sp/>layer.squared,<sp/>1);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(b<sp/>=<sp/>0;<sp/>b<sp/>&lt;<sp/>layer.batch;<sp/>++b){</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*squared<sp/>=<sp/>layer.squared<sp/>+<sp/>w*h*c*b;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*norms<sp/><sp/><sp/>=<sp/>layer.norms<sp/>+<sp/>w*h*c*b;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*input<sp/><sp/><sp/>=<sp/>net.input<sp/>+<sp/>w*h*c*b;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pow_cpu(w*h*c,<sp/>2,<sp/>input,<sp/>1,<sp/>squared,<sp/>1);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const_cpu(w*h,<sp/>layer.kappa,<sp/>norms,<sp/>1);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(k<sp/>=<sp/>0;<sp/>k<sp/>&lt;<sp/>layer.size/2;<sp/>++k){</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>axpy_cpu(w*h,<sp/>layer.alpha,<sp/>squared<sp/>+<sp/>w*h*k,<sp/>1,<sp/>norms,<sp/>1);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(k<sp/>=<sp/>1;<sp/>k<sp/>&lt;<sp/>layer.c;<sp/>++k){</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>copy_cpu(w*h,<sp/>norms<sp/>+<sp/>w*h*(k-1),<sp/>1,<sp/>norms<sp/>+<sp/>w*h*k,<sp/>1);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>prev<sp/>=<sp/>k<sp/>-<sp/>((layer.size-1)/2)<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>next<sp/>=<sp/>k<sp/>+<sp/>(layer.size/2);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(prev<sp/>&gt;=<sp/>0)<sp/><sp/><sp/><sp/><sp/><sp/>axpy_cpu(w*h,<sp/>-layer.alpha,<sp/>squared<sp/>+<sp/>w*h*prev,<sp/>1,<sp/>norms<sp/>+<sp/>w*h*k,<sp/>1);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(next<sp/>&lt;<sp/>layer.c)<sp/>axpy_cpu(w*h,<sp/><sp/>layer.alpha,<sp/>squared<sp/>+<sp/>w*h*next,<sp/>1,<sp/>norms<sp/>+<sp/>w*h*k,<sp/>1);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>pow_cpu(w*h*c*layer.batch,<sp/>-layer.beta,<sp/>layer.norms,<sp/>1,<sp/>layer.output,<sp/>1);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>mul_cpu(w*h*c*layer.batch,<sp/>net.input,<sp/>1,<sp/>layer.output,<sp/>1);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_normalization_layer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>layer<sp/>layer,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO<sp/>This<sp/>is<sp/>approximate<sp/>;-)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Also<sp/>this<sp/>should<sp/>add<sp/>in<sp/>to<sp/>delta<sp/>instead<sp/>of<sp/>overwritting.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w<sp/>=<sp/>layer.w;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h<sp/>=<sp/>layer.h;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c<sp/>=<sp/>layer.c;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>pow_cpu(w*h*c*layer.batch,<sp/>-layer.beta,<sp/>layer.norms,<sp/>1,<sp/>net.delta,<sp/>1);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>mul_cpu(w*h*c*layer.batch,<sp/>layer.delta,<sp/>1,<sp/>net.delta,<sp/>1);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>forward_normalization_layer_gpu(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>layer<sp/>layer,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k,b;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w<sp/>=<sp/>layer.w;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h<sp/>=<sp/>layer.h;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c<sp/>=<sp/>layer.c;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>scal_gpu(w*h*c*layer.batch,<sp/>0,<sp/>layer.squared_gpu,<sp/>1);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(b<sp/>=<sp/>0;<sp/>b<sp/>&lt;<sp/>layer.batch;<sp/>++b){</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*squared<sp/>=<sp/>layer.squared_gpu<sp/>+<sp/>w*h*c*b;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*norms<sp/><sp/><sp/>=<sp/>layer.norms_gpu<sp/>+<sp/>w*h*c*b;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*input<sp/><sp/><sp/>=<sp/>net.input_gpu<sp/>+<sp/>w*h*c*b;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pow_gpu(w*h*c,<sp/>2,<sp/>input,<sp/>1,<sp/>squared,<sp/>1);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const_gpu(w*h,<sp/>layer.kappa,<sp/>norms,<sp/>1);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(k<sp/>=<sp/>0;<sp/>k<sp/>&lt;<sp/>layer.size/2;<sp/>++k){</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>axpy_gpu(w*h,<sp/>layer.alpha,<sp/>squared<sp/>+<sp/>w*h*k,<sp/>1,<sp/>norms,<sp/>1);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(k<sp/>=<sp/>1;<sp/>k<sp/>&lt;<sp/>layer.c;<sp/>++k){</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>copy_gpu(w*h,<sp/>norms<sp/>+<sp/>w*h*(k-1),<sp/>1,<sp/>norms<sp/>+<sp/>w*h*k,<sp/>1);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>prev<sp/>=<sp/>k<sp/>-<sp/>((layer.size-1)/2)<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>next<sp/>=<sp/>k<sp/>+<sp/>(layer.size/2);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(prev<sp/>&gt;=<sp/>0)<sp/><sp/><sp/><sp/><sp/><sp/>axpy_gpu(w*h,<sp/>-layer.alpha,<sp/>squared<sp/>+<sp/>w*h*prev,<sp/>1,<sp/>norms<sp/>+<sp/>w*h*k,<sp/>1);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(next<sp/>&lt;<sp/>layer.c)<sp/>axpy_gpu(w*h,<sp/><sp/>layer.alpha,<sp/>squared<sp/>+<sp/>w*h*next,<sp/>1,<sp/>norms<sp/>+<sp/>w*h*k,<sp/>1);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>pow_gpu(w*h*c*layer.batch,<sp/>-layer.beta,<sp/>layer.norms_gpu,<sp/>1,<sp/>layer.output_gpu,<sp/>1);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>mul_gpu(w*h*c*layer.batch,<sp/>net.input_gpu,<sp/>1,<sp/>layer.output_gpu,<sp/>1);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_normalization_layer_gpu(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>layer<sp/>layer,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO<sp/>This<sp/>is<sp/>approximate<sp/>;-)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w<sp/>=<sp/>layer.w;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h<sp/>=<sp/>layer.h;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c<sp/>=<sp/>layer.c;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>pow_gpu(w*h*c*layer.batch,<sp/>-layer.beta,<sp/>layer.norms_gpu,<sp/>1,<sp/>net.delta_gpu,<sp/>1);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>mul_gpu(w*h*c*layer.batch,<sp/>layer.delta_gpu,<sp/>1,<sp/>net.delta_gpu,<sp/>1);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/normalization_layer.c"/>
+  </compounddef>
+</doxygen>

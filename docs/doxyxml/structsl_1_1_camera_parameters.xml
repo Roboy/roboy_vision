@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structsl_1_1_camera_parameters" kind="struct" language="C++" prot="public">
+    <compoundname>sl::CameraParameters</compoundname>
+    <includes refid="_core_8hpp" local="no">Core.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsl_1_1_camera_parameters_1ae8557c5fe0a2dbe8abbec47a7bf51367" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::CameraParameters::fx</definition>
+        <argsstring></argsstring>
+        <name>fx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Focal length in pixels along x axis. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="120" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsl_1_1_camera_parameters_1a6004be2d9f8f5d7f11733e97c246b591" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::CameraParameters::fy</definition>
+        <argsstring></argsstring>
+        <name>fy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Focal length in pixels along y axis. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="121" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsl_1_1_camera_parameters_1ae528a72fd0a5b4638039184e64ccd30e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::CameraParameters::cx</definition>
+        <argsstring></argsstring>
+        <name>cx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Optical center along x axis, defined in pixels (usually close to width/2). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="122" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsl_1_1_camera_parameters_1ab2a54a30a080878e504d5147c8c1c74c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::CameraParameters::cy</definition>
+        <argsstring></argsstring>
+        <name>cy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Optical center along y axis, defined in pixels (usually close to height/2). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="123" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsl_1_1_camera_parameters_1a7bb39f9798b20753f474088196f0614c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double sl::CameraParameters::disto[5]</definition>
+        <argsstring>[5]</argsstring>
+        <name>disto</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Distortion factor : [ k1, k2, p1, p2, k3 ]. Radial (k1,k2,k3) and Tangential (p1,p2) distortion. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="124" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsl_1_1_camera_parameters_1af1d059de8c2cee1117dd1ad405eecadc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::CameraParameters::v_fov</definition>
+        <argsstring></argsstring>
+        <name>v_fov</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Vertical field of view after stereo rectification, in degrees. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="125" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsl_1_1_camera_parameters_1a2ffc4753ac15cdb985b77d05e98a9297" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::CameraParameters::h_fov</definition>
+        <argsstring></argsstring>
+        <name>h_fov</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Horizontal field of view after stereo rectification, in degrees. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="126" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsl_1_1_camera_parameters_1ae2d7d4226dee8dd4f666f0ae117f343f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::CameraParameters::d_fov</definition>
+        <argsstring></argsstring>
+        <name>d_fov</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Diagonal field of view after stereo rectification, in degrees. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="127" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsl_1_1_camera_parameters_1af46a5a73f3320a4529fc1f9cd1dd6ec3" prot="public" static="no" mutable="no">
+        <type><ref refid="structsl_1_1_resolution" kindref="compound">Resolution</ref></type>
+        <definition>Resolution sl::CameraParameters::image_size</definition>
+        <argsstring></argsstring>
+        <name>image_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>size in pixels of the images given by the camera. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="128" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structsl_1_1_camera_parameters_1a8cb2aae3c7afa8eddcec3604c061400f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::CameraParameters::SetUp</definition>
+        <argsstring>(float focal_x, float focal_y, float center_x, float center_y)</argsstring>
+        <name>SetUp</name>
+        <param>
+          <type>float</type>
+          <declname>focal_x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>focal_y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>center_x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>center_y</declname>
+        </param>
+        <briefdescription>
+<para>Setups the parameter of a camera. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>focal_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: horizontal focal length. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>focal_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: vertical focal length. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>focal_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: horizontal optical center. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>focal_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: vertical optical center. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="137" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="137" bodyend="142"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Intrinsic parameters of a camera. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>Similar to the <ref refid="structsl_1_1_calibration_parameters" kindref="compound">CalibrationParameters</ref>, those parameters are taken from the settings file (SNXXX.conf) and are modified during the <ref refid="classsl_1_1_camera_1a46f6220e257357d510392317fd620095" kindref="member">sl::Camera::open</ref> call (with or without Self-Calibration). <linebreak/>
+ Those parameters given after <ref refid="classsl_1_1_camera_1a46f6220e257357d510392317fd620095" kindref="member">sl::Camera::open</ref> call, represent the &quot;new camera matrix&quot; that fits/defines each image taken after rectification ( through retrieveImage). </para></simplesect>
+<simplesect kind="note"><para>fx,fy,cx,cy must be the same for Left and Right <ref refid="classsl_1_1_camera" kindref="compound">Camera</ref> once <ref refid="classsl_1_1_camera_1a46f6220e257357d510392317fd620095" kindref="member">sl::Camera::open</ref> has been called. Since distortion is corrected during rectification, distortion should not be considered after <ref refid="classsl_1_1_camera_1a46f6220e257357d510392317fd620095" kindref="member">sl::Camera::open</ref> call. </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="223">
+        <label>sl::Resolution</label>
+        <link refid="structsl_1_1_resolution"/>
+      </node>
+      <node id="222">
+        <label>sl::CameraParameters</label>
+        <link refid="structsl_1_1_camera_parameters"/>
+        <childnode refid="223" relation="usage">
+          <edgelabel>image_size</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="119" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="119" bodyend="143"/>
+    <listofallmembers>
+      <member refid="structsl_1_1_camera_parameters_1ae528a72fd0a5b4638039184e64ccd30e" prot="public" virt="non-virtual"><scope>sl::CameraParameters</scope><name>cx</name></member>
+      <member refid="structsl_1_1_camera_parameters_1ab2a54a30a080878e504d5147c8c1c74c" prot="public" virt="non-virtual"><scope>sl::CameraParameters</scope><name>cy</name></member>
+      <member refid="structsl_1_1_camera_parameters_1ae2d7d4226dee8dd4f666f0ae117f343f" prot="public" virt="non-virtual"><scope>sl::CameraParameters</scope><name>d_fov</name></member>
+      <member refid="structsl_1_1_camera_parameters_1a7bb39f9798b20753f474088196f0614c" prot="public" virt="non-virtual"><scope>sl::CameraParameters</scope><name>disto</name></member>
+      <member refid="structsl_1_1_camera_parameters_1ae8557c5fe0a2dbe8abbec47a7bf51367" prot="public" virt="non-virtual"><scope>sl::CameraParameters</scope><name>fx</name></member>
+      <member refid="structsl_1_1_camera_parameters_1a6004be2d9f8f5d7f11733e97c246b591" prot="public" virt="non-virtual"><scope>sl::CameraParameters</scope><name>fy</name></member>
+      <member refid="structsl_1_1_camera_parameters_1a2ffc4753ac15cdb985b77d05e98a9297" prot="public" virt="non-virtual"><scope>sl::CameraParameters</scope><name>h_fov</name></member>
+      <member refid="structsl_1_1_camera_parameters_1af46a5a73f3320a4529fc1f9cd1dd6ec3" prot="public" virt="non-virtual"><scope>sl::CameraParameters</scope><name>image_size</name></member>
+      <member refid="structsl_1_1_camera_parameters_1a8cb2aae3c7afa8eddcec3604c061400f" prot="public" virt="non-virtual"><scope>sl::CameraParameters</scope><name>SetUp</name></member>
+      <member refid="structsl_1_1_camera_parameters_1af1d059de8c2cee1117dd1ad405eecadc" prot="public" virt="non-virtual"><scope>sl::CameraParameters</scope><name>v_fov</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

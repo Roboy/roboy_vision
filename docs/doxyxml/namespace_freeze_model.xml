@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespace_freeze_model" kind="namespace" language="Python">
+    <compoundname>FreezeModel</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_freeze_model_8py_1ad40be1cbdf0a3a46b461bc14c8c9dcff" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>FreezeModel.dir</definition>
+        <argsstring></argsstring>
+        <name>dir</name>
+        <initializer>= os.path.dirname(os.path.realpath(__file__))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/FreezeModel.py" line="10" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/FreezeModel.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_freeze_model_8py_1a47f6e4a0f0bb0c81422edadcf62bacc2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>FreezeModel.parser</definition>
+        <argsstring></argsstring>
+        <name>parser</name>
+        <initializer>= argparse.ArgumentParser()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/FreezeModel.py" line="54" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/FreezeModel.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_freeze_model_8py_1a1d1b6fe5576785cb952d79492f488dff" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>FreezeModel.type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/FreezeModel.py" line="55" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/FreezeModel.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_freeze_model_8py_1a2d950c71f75af996f322fae5e7156321" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>FreezeModel.str</definition>
+        <argsstring></argsstring>
+        <name>str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/FreezeModel.py" line="55" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/FreezeModel.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_freeze_model_8py_1acbe90799628b9736efe86d94ba39f9ac" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>FreezeModel.help</definition>
+        <argsstring></argsstring>
+        <name>help</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/FreezeModel.py" line="55" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/FreezeModel.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_freeze_model_8py_1a81abe4a460398a48addef6b69e3224fa" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>FreezeModel.args</definition>
+        <argsstring></argsstring>
+        <name>args</name>
+        <initializer>= parser.parse_args()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/FreezeModel.py" line="56" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/FreezeModel.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_freeze_model_8py_1a5f777d07706dea38a99f57d8bca2bcbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def FreezeModel.freeze_graph</definition>
+        <argsstring>(model_folder)</argsstring>
+        <name>freeze_graph</name>
+        <param>
+          <type>model_folder</type>
+          <defname>model_folder</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/FreezeModel.py" line="12" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/FreezeModel.py" bodystart="12" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/FreezeModel.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structsl_1_1_mesh_1_1_indice" kind="struct" language="C++" prot="public">
+    <compoundname>sl::Mesh::Indice</compoundname>
+    <includes refid="_mesh_8hpp" local="no">Mesh.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsl_1_1_mesh_1_1_indice_1a6d4ecd8f4b15532078d4b5239f0a9d08" prot="public" static="no" mutable="no">
+        <type>sl::uint3</type>
+        <definition>sl::uint3 sl::Mesh::Indice::v_vn_ind</definition>
+        <argsstring></argsstring>
+        <name>v_vn_ind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>vertices and normals indices. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="145" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsl_1_1_mesh_1_1_indice_1ab536e0a8c679aa1a55d963bf559b24a9" prot="public" static="no" mutable="no">
+        <type>sl::uint3</type>
+        <definition>sl::uint3 sl::Mesh::Indice::uv_ind</definition>
+        <argsstring></argsstring>
+        <name>uv_ind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>texture coordinates indices. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="146" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Store the index per faces of the associated vertices/normals/texture coordinates. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>Contains data only after you call <ref refid="classsl_1_1_mesh_1a85dba82a0d5a765a5ad9dbb520c53bd0" kindref="member">Mesh::applyTexture()</ref>. </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="144" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="144" bodyend="147"/>
+    <listofallmembers>
+      <member refid="structsl_1_1_mesh_1_1_indice_1ab536e0a8c679aa1a55d963bf559b24a9" prot="public" virt="non-virtual"><scope>sl::Mesh::Indice</scope><name>uv_ind</name></member>
+      <member refid="structsl_1_1_mesh_1_1_indice_1a6d4ecd8f4b15532078d4b5239f0a9d08" prot="public" virt="non-virtual"><scope>sl::Mesh::Indice</scope><name>v_vn_ind</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

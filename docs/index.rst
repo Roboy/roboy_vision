@@ -16,6 +16,16 @@ The most import task in Vision for human interaction is to detect and recognize 
 - Scene and object classification
 
 
+What Roboy Vision can do:
+===========================================================
+
+- Face detection.
+- Speaker detection. 
+- Object detection. 
+- Multitracking. 
+
+
+
 .. _background_prerequisits:
 
 Relevant Background Information and Pre-Requisits

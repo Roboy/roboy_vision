@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structsl_1_1_camera_information" kind="struct" language="C++" prot="public">
+    <compoundname>sl::CameraInformation</compoundname>
+    <includes refid="_core_8hpp" local="no">Core.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsl_1_1_camera_information_1ae6c3ec7de1a1a4ab010e3e1f4f22c758" prot="public" static="no" mutable="no">
+        <type><ref refid="structsl_1_1_calibration_parameters" kindref="compound">CalibrationParameters</ref></type>
+        <definition>CalibrationParameters sl::CameraInformation::calibration_parameters</definition>
+        <argsstring></argsstring>
+        <name>calibration_parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Intrinsic and Extrinsic stereo parameters for rectified images (default). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="164" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsl_1_1_camera_information_1aaee83087fbd009b2ab2f0e634a867a6e" prot="public" static="no" mutable="no">
+        <type><ref refid="structsl_1_1_calibration_parameters" kindref="compound">CalibrationParameters</ref></type>
+        <definition>CalibrationParameters sl::CameraInformation::calibration_parameters_raw</definition>
+        <argsstring></argsstring>
+        <name>calibration_parameters_raw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Intrinsic and Extrinsic stereo parameters for original images (unrectified). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="165" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsl_1_1_camera_information_1a88330f20dd32c0b921a540964b03ddf4" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int sl::CameraInformation::serial_number</definition>
+        <argsstring></argsstring>
+        <name>serial_number</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>camera dependent serial number. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="166" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsl_1_1_camera_information_1a444fcafcb629eb3e066ee28c3339a4c1" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int sl::CameraInformation::firmware_version</definition>
+        <argsstring></argsstring>
+        <name>firmware_version</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current firmware version of the camera. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="167" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classsl_1_1_camera" kindref="compound">Camera</ref> specific parameters. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="217">
+        <label>sl::CameraInformation</label>
+        <link refid="structsl_1_1_camera_information"/>
+        <childnode refid="218" relation="usage">
+          <edgelabel>calibration_parameters</edgelabel>
+          <edgelabel>calibration_parameters_raw</edgelabel>
+        </childnode>
+      </node>
+      <node id="218">
+        <label>sl::CalibrationParameters</label>
+        <link refid="structsl_1_1_calibration_parameters"/>
+        <childnode refid="219" relation="usage">
+          <edgelabel>left_cam</edgelabel>
+          <edgelabel>right_cam</edgelabel>
+        </childnode>
+      </node>
+      <node id="220">
+        <label>sl::Resolution</label>
+        <link refid="structsl_1_1_resolution"/>
+      </node>
+      <node id="219">
+        <label>sl::CameraParameters</label>
+        <link refid="structsl_1_1_camera_parameters"/>
+        <childnode refid="220" relation="usage">
+          <edgelabel>image_size</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="163" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="163" bodyend="168"/>
+    <listofallmembers>
+      <member refid="structsl_1_1_camera_information_1ae6c3ec7de1a1a4ab010e3e1f4f22c758" prot="public" virt="non-virtual"><scope>sl::CameraInformation</scope><name>calibration_parameters</name></member>
+      <member refid="structsl_1_1_camera_information_1aaee83087fbd009b2ab2f0e634a867a6e" prot="public" virt="non-virtual"><scope>sl::CameraInformation</scope><name>calibration_parameters_raw</name></member>
+      <member refid="structsl_1_1_camera_information_1a444fcafcb629eb3e066ee28c3339a4c1" prot="public" virt="non-virtual"><scope>sl::CameraInformation</scope><name>firmware_version</name></member>
+      <member refid="structsl_1_1_camera_information_1a88330f20dd32c0b921a540964b03ddf4" prot="public" virt="non-virtual"><scope>sl::CameraInformation</scope><name>serial_number</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,387 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="local__layer_8h" kind="file" language="C++">
+    <compoundname>local_layer.h</compoundname>
+    <includes refid="cuda_8h" local="yes">cuda.h</includes>
+    <includes refid="image_8h" local="yes">image.h</includes>
+    <includes refid="activations_8h" local="yes">activations.h</includes>
+    <includes refid="layer_8h" local="yes">layer.h</includes>
+    <includes refid="network_8h" local="yes">network.h</includes>
+    <includedby refid="local__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.c</includedby>
+    <includedby refid="network_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.c</includedby>
+    <includedby refid="parser_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c</includedby>
+    <incdepgraph>
+      <node id="1177">
+        <label>box.h</label>
+        <link refid="box_8h_source"/>
+        <childnode refid="1169" relation="include">
+        </childnode>
+      </node>
+      <node id="1175">
+        <label>float.h</label>
+      </node>
+      <node id="1170">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1168">
+        <label>cuda.h</label>
+        <link refid="cuda_8h_source"/>
+        <childnode refid="1169" relation="include">
+        </childnode>
+      </node>
+      <node id="1181">
+        <label>data.h</label>
+        <link refid="data_8h_source"/>
+        <childnode refid="1173" relation="include">
+        </childnode>
+        <childnode refid="1169" relation="include">
+        </childnode>
+        <childnode refid="1182" relation="include">
+        </childnode>
+        <childnode refid="1183" relation="include">
+        </childnode>
+        <childnode refid="1174" relation="include">
+        </childnode>
+        <childnode refid="1184" relation="include">
+        </childnode>
+      </node>
+      <node id="1180">
+        <label>network.h</label>
+        <link refid="network_8h_source"/>
+        <childnode refid="1169" relation="include">
+        </childnode>
+        <childnode refid="1174" relation="include">
+        </childnode>
+        <childnode refid="1179" relation="include">
+        </childnode>
+        <childnode refid="1181" relation="include">
+        </childnode>
+        <childnode refid="1184" relation="include">
+        </childnode>
+      </node>
+      <node id="1178">
+        <label>activations.h</label>
+        <link refid="activations_8h_source"/>
+        <childnode refid="1169" relation="include">
+        </childnode>
+        <childnode refid="1168" relation="include">
+        </childnode>
+        <childnode refid="1176" relation="include">
+        </childnode>
+      </node>
+      <node id="1183">
+        <label>list.h</label>
+        <link refid="list_8h_source"/>
+        <childnode refid="1169" relation="include">
+        </childnode>
+      </node>
+      <node id="1167">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.h</label>
+        <link refid="local_layer.h"/>
+        <childnode refid="1168" relation="include">
+        </childnode>
+        <childnode refid="1174" relation="include">
+        </childnode>
+        <childnode refid="1178" relation="include">
+        </childnode>
+        <childnode refid="1179" relation="include">
+        </childnode>
+        <childnode refid="1180" relation="include">
+        </childnode>
+      </node>
+      <node id="1182">
+        <label>matrix.h</label>
+        <link refid="matrix_8h_source"/>
+        <childnode refid="1169" relation="include">
+        </childnode>
+      </node>
+      <node id="1169">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="1170" relation="include">
+        </childnode>
+        <childnode refid="1171" relation="include">
+        </childnode>
+        <childnode refid="1172" relation="include">
+        </childnode>
+        <childnode refid="1173" relation="include">
+        </childnode>
+      </node>
+      <node id="1179">
+        <label>layer.h</label>
+        <link refid="layer_8h_source"/>
+        <childnode refid="1169" relation="include">
+        </childnode>
+      </node>
+      <node id="1173">
+        <label>pthread.h</label>
+      </node>
+      <node id="1174">
+        <label>image.h</label>
+        <link refid="image_8h_source"/>
+        <childnode refid="1170" relation="include">
+        </childnode>
+        <childnode refid="1171" relation="include">
+        </childnode>
+        <childnode refid="1175" relation="include">
+        </childnode>
+        <childnode refid="1172" relation="include">
+        </childnode>
+        <childnode refid="1176" relation="include">
+        </childnode>
+        <childnode refid="1177" relation="include">
+        </childnode>
+        <childnode refid="1169" relation="include">
+        </childnode>
+      </node>
+      <node id="1172">
+        <label>string.h</label>
+      </node>
+      <node id="1176">
+        <label>math.h</label>
+      </node>
+      <node id="1184">
+        <label>tree.h</label>
+        <link refid="tree_8h_source"/>
+        <childnode refid="1169" relation="include">
+        </childnode>
+      </node>
+      <node id="1171">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="local__layer_8h_1a03ec842604ac51c9ba42c4c4790cb0d4" prot="public" static="no">
+        <type><ref refid="structlayer" kindref="compound">layer</ref></type>
+        <definition>typedef layer local_layer</definition>
+        <argsstring></argsstring>
+        <name>local_layer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.h" line="10" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="local__layer_8h_1ab5a3af6d66cf3b029c24de2e455713b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlayer" kindref="compound">local_layer</ref></type>
+        <definition>local_layer make_local_layer</definition>
+        <argsstring>(int batch, int h, int w, int c, int n, int size, int stride, int pad, ACTIVATION activation)</argsstring>
+        <name>make_local_layer</name>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stride</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pad</declname>
+        </param>
+        <param>
+          <type>ACTIVATION</type>
+          <declname>activation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.h" line="21" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.c" bodystart="26" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="local__layer_8h_1ac42510b93719264f9770baa4475fb578" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void forward_local_layer</definition>
+        <argsstring>(const local_layer layer, network net)</argsstring>
+        <name>forward_local_layer</name>
+        <param>
+          <type>const <ref refid="structlayer" kindref="compound">local_layer</ref></type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.h" line="23" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.c" bodystart="91" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="local__layer_8h_1aab25e7fe9f5f5e20784fd06a53130480" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void backward_local_layer</definition>
+        <argsstring>(local_layer layer, network net)</argsstring>
+        <name>backward_local_layer</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">local_layer</ref></type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.h" line="24" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.c" bodystart="122" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="local__layer_8h_1a1c93322a74295500d1d95d14bc7bcfe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void update_local_layer</definition>
+        <argsstring>(local_layer layer, update_args a)</argsstring>
+        <name>update_local_layer</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">local_layer</ref></type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type><ref refid="structupdate__args" kindref="compound">update_args</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.h" line="25" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.c" bodystart="167" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="local__layer_8h_1aa4cadde4a19dfce60acab22bfaa69d99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bias_output</definition>
+        <argsstring>(float *output, float *biases, int batch, int n, int size)</argsstring>
+        <name>bias_output</name>
+        <param>
+          <type>float *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>biases</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.h" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="local__layer_8h_1a3fe122b5a5807135e39655276f708d98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void backward_bias</definition>
+        <argsstring>(float *bias_updates, float *delta, int batch, int n, int size)</argsstring>
+        <name>backward_bias</name>
+        <param>
+          <type>float *</type>
+          <declname>bias_updates</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>delta</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.h" line="28" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.c" bodystart="423" bodyend="431"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LOCAL_LAYER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOCAL_LAYER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cuda.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;image.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;activations.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;layer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;network.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structlayer" kindref="compound">layer</ref><sp/><ref refid="structlayer" kindref="compound">local_layer</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>forward_local_layer_gpu(<ref refid="structlayer" kindref="compound">local_layer</ref><sp/><ref refid="structlayer" kindref="compound">layer</ref>,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_local_layer_gpu(<ref refid="structlayer" kindref="compound">local_layer</ref><sp/><ref refid="structlayer" kindref="compound">layer</ref>,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update_local_layer_gpu(<ref refid="structlayer" kindref="compound">local_layer</ref><sp/><ref refid="structlayer" kindref="compound">layer</ref>,<sp/><ref refid="structupdate__args" kindref="compound">update_args</ref><sp/>a);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>push_local_layer(<ref refid="structlayer" kindref="compound">local_layer</ref><sp/><ref refid="structlayer" kindref="compound">layer</ref>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pull_local_layer(<ref refid="structlayer" kindref="compound">local_layer</ref><sp/><ref refid="structlayer" kindref="compound">layer</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="structlayer" kindref="compound">local_layer</ref><sp/>make_local_layer(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stride,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pad,<sp/>ACTIVATION<sp/>activation);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>forward_local_layer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlayer" kindref="compound">local_layer</ref><sp/><ref refid="structlayer" kindref="compound">layer</ref>,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_local_layer(<ref refid="structlayer" kindref="compound">local_layer</ref><sp/><ref refid="structlayer" kindref="compound">layer</ref>,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update_local_layer(<ref refid="structlayer" kindref="compound">local_layer</ref><sp/><ref refid="structlayer" kindref="compound">layer</ref>,<sp/><ref refid="structupdate__args" kindref="compound">update_args</ref><sp/>a);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>bias_output(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*output,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*biases,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_bias(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*bias_updates,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*delta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.h"/>
+  </compounddef>
+</doxygen>

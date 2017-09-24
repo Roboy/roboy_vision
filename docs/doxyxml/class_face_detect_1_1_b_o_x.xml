@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_face_detect_1_1_b_o_x" kind="class" language="Python" prot="public">
+    <compoundname>FaceDetect::BOX</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Structure</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_face_detect_1_1_b_o_x_1a6388ea1f3d501ccf0285f88c6f368dd4" prot="private" static="yes" mutable="no">
+        <type><ref refid="structlist" kindref="compound">list</ref></type>
+        <definition>list FaceDetect.BOX::_fields_</definition>
+        <argsstring></argsstring>
+        <name>_fields_</name>
+        <initializer>= [(&quot;x&quot;, c_float),
+                (&quot;y&quot;, c_float),
+                (&quot;w&quot;, c_float),
+                (&quot;h&quot;, c_float)]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/FaceDetect.py" line="106" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/FaceDetect.py" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="202">
+        <label>FaceDetect.BOX</label>
+        <link refid="class_face_detect_1_1_b_o_x"/>
+        <childnode refid="203" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="203">
+        <label>Structure</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="206">
+        <label>list</label>
+        <link refid="structlist"/>
+        <childnode refid="207" relation="usage">
+          <edgelabel>front</edgelabel>
+          <edgelabel>back</edgelabel>
+        </childnode>
+      </node>
+      <node id="204">
+        <label>FaceDetect.BOX</label>
+        <link refid="class_face_detect_1_1_b_o_x"/>
+        <childnode refid="205" relation="public-inheritance">
+        </childnode>
+        <childnode refid="206" relation="usage">
+          <edgelabel>_fields_</edgelabel>
+        </childnode>
+      </node>
+      <node id="207">
+        <label>node</label>
+        <link refid="structnode"/>
+        <childnode refid="207" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="205">
+        <label>Structure</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/FaceDetect.py" line="105" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/FaceDetect.py" bodystart="105" bodyend="112"/>
+    <listofallmembers>
+      <member refid="class_face_detect_1_1_b_o_x_1a6388ea1f3d501ccf0285f88c6f368dd4" prot="private" virt="non-virtual"><scope>FaceDetect::BOX</scope><name>_fields_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="detection__layer_8h" kind="file" language="C++">
+    <compoundname>detection_layer.h</compoundname>
+    <includes refid="layer_8h" local="yes">layer.h</includes>
+    <includes refid="network_8h" local="yes">network.h</includes>
+    <includedby refid="compare_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/compare.c</includedby>
+    <includedby refid="demo_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/demo.c</includedby>
+    <includedby refid="detection__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/detection_layer.c</includedby>
+    <includedby refid="network_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.c</includedby>
+    <includedby refid="parser_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c</includedby>
+    <incdepgraph>
+      <node id="891">
+        <label>box.h</label>
+        <link refid="box_8h_source"/>
+        <childnode refid="882" relation="include">
+        </childnode>
+      </node>
+      <node id="889">
+        <label>float.h</label>
+      </node>
+      <node id="883">
+        <label>stdlib.h</label>
+      </node>
+      <node id="892">
+        <label>data.h</label>
+        <link refid="data_8h_source"/>
+        <childnode refid="886" relation="include">
+        </childnode>
+        <childnode refid="882" relation="include">
+        </childnode>
+        <childnode refid="893" relation="include">
+        </childnode>
+        <childnode refid="894" relation="include">
+        </childnode>
+        <childnode refid="888" relation="include">
+        </childnode>
+        <childnode refid="895" relation="include">
+        </childnode>
+      </node>
+      <node id="887">
+        <label>network.h</label>
+        <link refid="network_8h_source"/>
+        <childnode refid="882" relation="include">
+        </childnode>
+        <childnode refid="888" relation="include">
+        </childnode>
+        <childnode refid="881" relation="include">
+        </childnode>
+        <childnode refid="892" relation="include">
+        </childnode>
+        <childnode refid="895" relation="include">
+        </childnode>
+      </node>
+      <node id="880">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/detection_layer.h</label>
+        <link refid="detection_layer.h"/>
+        <childnode refid="881" relation="include">
+        </childnode>
+        <childnode refid="887" relation="include">
+        </childnode>
+      </node>
+      <node id="894">
+        <label>list.h</label>
+        <link refid="list_8h_source"/>
+        <childnode refid="882" relation="include">
+        </childnode>
+      </node>
+      <node id="893">
+        <label>matrix.h</label>
+        <link refid="matrix_8h_source"/>
+        <childnode refid="882" relation="include">
+        </childnode>
+      </node>
+      <node id="882">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="883" relation="include">
+        </childnode>
+        <childnode refid="884" relation="include">
+        </childnode>
+        <childnode refid="885" relation="include">
+        </childnode>
+        <childnode refid="886" relation="include">
+        </childnode>
+      </node>
+      <node id="881">
+        <label>layer.h</label>
+        <link refid="layer_8h_source"/>
+        <childnode refid="882" relation="include">
+        </childnode>
+      </node>
+      <node id="886">
+        <label>pthread.h</label>
+      </node>
+      <node id="888">
+        <label>image.h</label>
+        <link refid="image_8h_source"/>
+        <childnode refid="883" relation="include">
+        </childnode>
+        <childnode refid="884" relation="include">
+        </childnode>
+        <childnode refid="889" relation="include">
+        </childnode>
+        <childnode refid="885" relation="include">
+        </childnode>
+        <childnode refid="890" relation="include">
+        </childnode>
+        <childnode refid="891" relation="include">
+        </childnode>
+        <childnode refid="882" relation="include">
+        </childnode>
+      </node>
+      <node id="885">
+        <label>string.h</label>
+      </node>
+      <node id="890">
+        <label>math.h</label>
+      </node>
+      <node id="895">
+        <label>tree.h</label>
+        <link refid="tree_8h_source"/>
+        <childnode refid="882" relation="include">
+        </childnode>
+      </node>
+      <node id="884">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="detection__layer_8h_1a3a5018a4d1685b278fc2586711a3a976" prot="public" static="no">
+        <type><ref refid="structlayer" kindref="compound">layer</ref></type>
+        <definition>typedef layer detection_layer</definition>
+        <argsstring></argsstring>
+        <name>detection_layer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/detection_layer.h" line="7" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/detection_layer.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="detection__layer_8h_1abd42da178aad193f61e7e829c34be483" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlayer" kindref="compound">detection_layer</ref></type>
+        <definition>detection_layer make_detection_layer</definition>
+        <argsstring>(int batch, int inputs, int n, int size, int classes, int coords, int rescore)</argsstring>
+        <name>make_detection_layer</name>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>inputs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>classes</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>coords</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rescore</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/detection_layer.h" line="9" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/detection_layer.c" bodystart="14" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="detection__layer_8h_1a9160e6deb288c256697c0b3d3d3a7909" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void forward_detection_layer</definition>
+        <argsstring>(const detection_layer l, network net)</argsstring>
+        <name>forward_detection_layer</name>
+        <param>
+          <type>const <ref refid="structlayer" kindref="compound">detection_layer</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/detection_layer.h" line="10" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/detection_layer.c" bodystart="50" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="detection__layer_8h_1a46eff38e5007c73bf4de33f2b0adbd61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void backward_detection_layer</definition>
+        <argsstring>(const detection_layer l, network net)</argsstring>
+        <name>backward_detection_layer</name>
+        <param>
+          <type>const <ref refid="structlayer" kindref="compound">detection_layer</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/detection_layer.h" line="11" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/detection_layer.c" bodystart="220" bodyend="223"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>DETECTION_LAYER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DETECTION_LAYER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;layer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;network.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structlayer" kindref="compound">layer</ref><sp/><ref refid="structlayer" kindref="compound">detection_layer</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><ref refid="structlayer" kindref="compound">detection_layer</ref><sp/>make_detection_layer(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inputs,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>classes,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>coords,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rescore);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>forward_detection_layer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlayer" kindref="compound">detection_layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_detection_layer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlayer" kindref="compound">detection_layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>forward_detection_layer_gpu(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlayer" kindref="compound">detection_layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_detection_layer_gpu(<ref refid="structlayer" kindref="compound">detection_layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/detection_layer.h"/>
+  </compounddef>
+</doxygen>

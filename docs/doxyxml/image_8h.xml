@@ -1,0 +1,1441 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="image_8h" kind="file" language="C++">
+    <compoundname>image.h</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">float.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">math.h</includes>
+    <includes refid="box_8h" local="yes">box.h</includes>
+    <includes refid="darknet_8h" local="yes">darknet.h</includes>
+    <includedby refid="network_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.h</includedby>
+    <includedby refid="data_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h</includedby>
+    <includedby refid="avgpool__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/avgpool_layer.h</includedby>
+    <includedby refid="convolutional__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h</includedby>
+    <includedby refid="batchnorm__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/batchnorm_layer.h</includedby>
+    <includedby refid="crop__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crop_layer.h</includedby>
+    <includedby refid="data_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c</includedby>
+    <includedby refid="deconvolutional__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/deconvolutional_layer.h</includedby>
+    <includedby refid="demo_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/demo.c</includedby>
+    <includedby refid="demo_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/demo.h</includedby>
+    <includedby refid="image_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c</includedby>
+    <includedby refid="local__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.h</includedby>
+    <includedby refid="maxpool__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.h</includedby>
+    <includedby refid="network_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.c</includedby>
+    <includedby refid="normalization__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/normalization_layer.h</includedby>
+    <includedby refid="reorg__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/reorg_layer.h</includedby>
+    <includedby refid="libyolo_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.h</includedby>
+    <includedby refid="module_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/module.c</includedby>
+    <incdepgraph>
+      <node id="1028">
+        <label>box.h</label>
+        <link refid="box_8h_source"/>
+        <childnode refid="1029" relation="include">
+        </childnode>
+      </node>
+      <node id="1025">
+        <label>float.h</label>
+      </node>
+      <node id="1023">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1029">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="1023" relation="include">
+        </childnode>
+        <childnode refid="1024" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+        <childnode refid="1030" relation="include">
+        </childnode>
+      </node>
+      <node id="1030">
+        <label>pthread.h</label>
+      </node>
+      <node id="1022">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h</label>
+        <link refid="image.h"/>
+        <childnode refid="1023" relation="include">
+        </childnode>
+        <childnode refid="1024" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+        <childnode refid="1027" relation="include">
+        </childnode>
+        <childnode refid="1028" relation="include">
+        </childnode>
+        <childnode refid="1029" relation="include">
+        </childnode>
+      </node>
+      <node id="1026">
+        <label>string.h</label>
+      </node>
+      <node id="1027">
+        <label>math.h</label>
+      </node>
+      <node id="1024">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1043">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/deconvolutional_layer.h</label>
+        <link refid="deconvolutional__layer_8h_source"/>
+      </node>
+      <node id="1051">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/rnn_layer.h</label>
+        <link refid="rnn__layer_8h_source"/>
+      </node>
+      <node id="1052">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/normalization_layer.h</label>
+        <link refid="normalization__layer_8h_source"/>
+      </node>
+      <node id="1046">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/dropout_layer.h</label>
+        <link refid="dropout__layer_8h_source"/>
+      </node>
+      <node id="1035">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h</label>
+        <link refid="convolutional__layer_8h_source"/>
+      </node>
+      <node id="1057">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/demo.h</label>
+        <link refid="demo_8h_source"/>
+      </node>
+      <node id="1040">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/connected_layer.h</label>
+        <link refid="connected__layer_8h_source"/>
+      </node>
+      <node id="1056">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h</label>
+        <link refid="data_8h_source"/>
+        <childnode refid="1032" relation="include">
+        </childnode>
+      </node>
+      <node id="1058">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.h</label>
+        <link refid="libyolo_8h_source"/>
+      </node>
+      <node id="1032">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.h</label>
+        <link refid="network_8h_source"/>
+        <childnode refid="1033" relation="include">
+        </childnode>
+        <childnode refid="1034" relation="include">
+        </childnode>
+        <childnode refid="1035" relation="include">
+        </childnode>
+        <childnode refid="1036" relation="include">
+        </childnode>
+        <childnode refid="1037" relation="include">
+        </childnode>
+        <childnode refid="1038" relation="include">
+        </childnode>
+        <childnode refid="1039" relation="include">
+        </childnode>
+        <childnode refid="1040" relation="include">
+        </childnode>
+        <childnode refid="1041" relation="include">
+        </childnode>
+        <childnode refid="1042" relation="include">
+        </childnode>
+        <childnode refid="1043" relation="include">
+        </childnode>
+        <childnode refid="1044" relation="include">
+        </childnode>
+        <childnode refid="1045" relation="include">
+        </childnode>
+        <childnode refid="1046" relation="include">
+        </childnode>
+        <childnode refid="1047" relation="include">
+        </childnode>
+        <childnode refid="1048" relation="include">
+        </childnode>
+        <childnode refid="1049" relation="include">
+        </childnode>
+        <childnode refid="1050" relation="include">
+        </childnode>
+        <childnode refid="1051" relation="include">
+        </childnode>
+        <childnode refid="1052" relation="include">
+        </childnode>
+        <childnode refid="1053" relation="include">
+        </childnode>
+        <childnode refid="1054" relation="include">
+        </childnode>
+        <childnode refid="1055" relation="include">
+        </childnode>
+      </node>
+      <node id="1039">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.h</label>
+        <link refid="parser_8h_source"/>
+      </node>
+      <node id="1033">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/activation_layer.h</label>
+        <link refid="activation__layer_8h_source"/>
+      </node>
+      <node id="1037">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/detection_layer.h</label>
+        <link refid="detection__layer_8h_source"/>
+      </node>
+      <node id="1048">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.h</label>
+        <link refid="local__layer_8h_source"/>
+      </node>
+      <node id="1038">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/cost_layer.h</label>
+        <link refid="cost__layer_8h_source"/>
+      </node>
+      <node id="1036">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/batchnorm_layer.h</label>
+        <link refid="batchnorm__layer_8h_source"/>
+      </node>
+      <node id="1054">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/route_layer.h</label>
+        <link refid="route__layer_8h_source"/>
+      </node>
+      <node id="1050">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.h</label>
+        <link refid="maxpool__layer_8h_source"/>
+      </node>
+      <node id="1031">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h</label>
+        <link refid="image.h"/>
+        <childnode refid="1032" relation="include">
+        </childnode>
+        <childnode refid="1056" relation="include">
+        </childnode>
+        <childnode refid="1034" relation="include">
+        </childnode>
+        <childnode refid="1035" relation="include">
+        </childnode>
+        <childnode refid="1036" relation="include">
+        </childnode>
+        <childnode refid="1042" relation="include">
+        </childnode>
+        <childnode refid="1043" relation="include">
+        </childnode>
+        <childnode refid="1057" relation="include">
+        </childnode>
+        <childnode refid="1048" relation="include">
+        </childnode>
+        <childnode refid="1050" relation="include">
+        </childnode>
+        <childnode refid="1052" relation="include">
+        </childnode>
+        <childnode refid="1053" relation="include">
+        </childnode>
+        <childnode refid="1058" relation="include">
+        </childnode>
+      </node>
+      <node id="1044">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/region_layer.h</label>
+        <link refid="region__layer_8h_source"/>
+      </node>
+      <node id="1034">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/avgpool_layer.h</label>
+        <link refid="avgpool__layer_8h_source"/>
+      </node>
+      <node id="1049">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/lstm_layer.h</label>
+        <link refid="lstm__layer_8h_source"/>
+      </node>
+      <node id="1053">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/reorg_layer.h</label>
+        <link refid="reorg__layer_8h_source"/>
+      </node>
+      <node id="1045">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/softmax_layer.h</label>
+        <link refid="softmax__layer_8h_source"/>
+      </node>
+      <node id="1041">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crnn_layer.h</label>
+        <link refid="crnn__layer_8h_source"/>
+      </node>
+      <node id="1055">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/shortcut_layer.h</label>
+        <link refid="shortcut__layer_8h_source"/>
+      </node>
+      <node id="1047">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/gru_layer.h</label>
+        <link refid="gru__layer_8h_source"/>
+      </node>
+      <node id="1042">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crop_layer.h</label>
+        <link refid="crop__layer_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="image_8h_1a2813bd82c2d03e2ad15fb37d7614392b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float get_color</definition>
+        <argsstring>(int c, int x, int max)</argsstring>
+        <name>get_color</name>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="22" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="17" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1a681daaccc6b6466cb24f407ed0b369b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void draw_box</definition>
+        <argsstring>(image a, int x1, int y1, int x2, int y2, float r, float g, float b)</argsstring>
+        <name>draw_box</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="23" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="120" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1a00ada3426d4f8d491228b878ac08d56a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void draw_bbox</definition>
+        <argsstring>(image a, box bbox, int w, float r, float g, float b)</argsstring>
+        <name>draw_bbox</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref></type>
+          <declname>bbox</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="24" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="164" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1ac03634a13197398e9a918b7567c64c3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void draw_label</definition>
+        <argsstring>(image a, int r, int c, image label, const float *rgb)</argsstring>
+        <name>draw_label</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>rgb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="25" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="103" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1a44ce3c01e7bfa7c499a68a4d454700c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void write_label</definition>
+        <argsstring>(image a, int r, int c, image *characters, char *string, float *rgb)</argsstring>
+        <name>write_label</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref> *</type>
+          <declname>characters</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>string</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>rgb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1ad40ddbc8c117e8d4acef1ee5d54a948f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structimage" kindref="compound">image</ref></type>
+        <definition>image image_distance</definition>
+        <argsstring>(image a, image b)</argsstring>
+        <name>image_distance</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="27" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="305" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1a8ec7a748f76954ca8c78f19ae3e0002d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void scale_image</definition>
+        <argsstring>(image m, float s)</argsstring>
+        <name>scale_image</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="28" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="762" bodyend="766"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1ad01bd28b7c51abe97fb4128806181a64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structimage" kindref="compound">image</ref></type>
+        <definition>image rotate_crop_image</definition>
+        <argsstring>(image im, float rad, float s, int w, int h, float dx, float dy, float aspect)</argsstring>
+        <name>rotate_crop_image</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>im</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rad</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dy</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>aspect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="29" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="712" bodyend="729"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1ab8a3951478f4e09c9117fbbb551a8a53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structimage" kindref="compound">image</ref></type>
+        <definition>image center_crop_image</definition>
+        <argsstring>(image im, int w, int h)</argsstring>
+        <name>center_crop_image</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>im</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="30" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="703" bodyend="710"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1a16ccc5f4cbac3e5af1accdb9564b7f09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structimage" kindref="compound">image</ref></type>
+        <definition>image random_crop_image</definition>
+        <argsstring>(image im, int w, int h)</argsstring>
+        <name>random_crop_image</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>im</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="31" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="924" bodyend="930"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1aaf387b54e7bd2b26f13df3bcdd054dc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structimage" kindref="compound">image</ref></type>
+        <definition>image random_augment_image</definition>
+        <argsstring>(image im, float angle, float aspect, int low, int high, int w, int h)</argsstring>
+        <name>random_augment_image</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>im</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>aspect</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>low</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>high</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="32" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="959" bodyend="964"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1af056322c4fb4fa6322c536b4d31287aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structaugment__args" kindref="compound">augment_args</ref></type>
+        <definition>augment_args random_augment_args</definition>
+        <argsstring>(image im, float angle, float aspect, int low, int high, int w, int h)</argsstring>
+        <name>random_augment_args</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>im</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>aspect</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>low</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>high</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="33" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="932" bodyend="957"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1ab02b4af717c0ad64b5f395c455390348" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void letterbox_image_into</definition>
+        <argsstring>(image im, int w, int h, image boxed)</argsstring>
+        <name>letterbox_image_into</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>im</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>boxed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="34" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="855" bodyend="869"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1a4097f3a404ee4a00e380b602ca8f7241" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structimage" kindref="compound">image</ref></type>
+        <definition>image resize_max</definition>
+        <argsstring>(image im, int max)</argsstring>
+        <name>resize_max</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>im</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="35" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="892" bodyend="906"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1ad6d1584ee81170a5dae88cc76594f1ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void translate_image</definition>
+        <argsstring>(image m, float s)</argsstring>
+        <name>translate_image</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="36" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="756" bodyend="760"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1a0320f25f8508fb74f62f151f2ffb0e73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void embed_image</definition>
+        <argsstring>(image source, image dest, int dx, int dy)</argsstring>
+        <name>embed_image</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="37" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="339" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1a6c67f94fa4a0a2a7d5a1a8e291e6e38b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void place_image</definition>
+        <argsstring>(image im, int w, int h, int dx, int dy, image canvas)</argsstring>
+        <name>place_image</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>im</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dy</declname>
+        </param>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>canvas</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="38" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="688" bodyend="701"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1ae7f1745db543dd8f176df95e9b94a13e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void saturate_image</definition>
+        <argsstring>(image im, float sat)</argsstring>
+        <name>saturate_image</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>im</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="39" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="1197" bodyend="1203"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1aac856339c78b97ca007639db5effcbf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void exposure_image</definition>
+        <argsstring>(image im, float sat)</argsstring>
+        <name>exposure_image</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>im</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="40" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="1218" bodyend="1224"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1a937abd4132080239cdf564dfab812b5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void distort_image</definition>
+        <argsstring>(image im, float hue, float sat, float val)</argsstring>
+        <name>distort_image</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>im</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>hue</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sat</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="41" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="1226" bodyend="1239"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1abb5117f25454ae5e2ba6e9c8ee0821aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void saturate_exposure_image</definition>
+        <argsstring>(image im, float sat, float exposure)</argsstring>
+        <name>saturate_exposure_image</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>im</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sat</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>exposure</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="42" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="1249" bodyend="1256"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1a8ba0e5a0a203cbff062f48743187c130" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rgb_to_hsv</definition>
+        <argsstring>(image im)</argsstring>
+        <name>rgb_to_hsv</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>im</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="43" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="1023" bodyend="1058"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1ae600c0dc7e1152d5234e680f0a48a21f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hsv_to_rgb</definition>
+        <argsstring>(image im)</argsstring>
+        <name>hsv_to_rgb</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>im</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="44" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="1060" bodyend="1099"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1ac021b5af8295cad3f244b101d0c5e49a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void yuv_to_rgb</definition>
+        <argsstring>(image im)</argsstring>
+        <name>yuv_to_rgb</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>im</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="45" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="976" bodyend="997"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1a050c6b77b28e78d750a3482fcb01927f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rgb_to_yuv</definition>
+        <argsstring>(image im)</argsstring>
+        <name>rgb_to_yuv</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>im</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="46" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="999" bodyend="1020"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1a520411eebcc10ed5d6efb6a7f109c29b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structimage" kindref="compound">image</ref></type>
+        <definition>image collapse_image_layers</definition>
+        <argsstring>(image source, int border)</argsstring>
+        <name>collapse_image_layers</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>border</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="49" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="352" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1ac559fad06b4db8eca4a22e31a0ad31e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structimage" kindref="compound">image</ref></type>
+        <definition>image collapse_images_horz</definition>
+        <argsstring>(image *ims, int n)</argsstring>
+        <name>collapse_images_horz</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref> *</type>
+          <declname>ims</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="50" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="1504" bodyend="1538"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1a3d18634306b4fb03459c8ecc4102ec0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structimage" kindref="compound">image</ref></type>
+        <definition>image collapse_images_vert</definition>
+        <argsstring>(image *ims, int n)</argsstring>
+        <name>collapse_images_vert</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref> *</type>
+          <declname>ims</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="51" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="1469" bodyend="1502"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1a87bd4f423134cfbcbc069e0ac457494a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void show_image_normalized</definition>
+        <argsstring>(image im, const char *name)</argsstring>
+        <name>show_image_normalized</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>im</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="53" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="1540" bodyend="1546"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1a0f21ecba23959fc3a0c39c6273ef3a07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void show_images</definition>
+        <argsstring>(image *ims, int n, char *window)</argsstring>
+        <name>show_images</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref> *</type>
+          <declname>ims</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="54" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="1548" bodyend="1564"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1aca4506d6b501db162ba28243a3232fea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void show_image_layers</definition>
+        <argsstring>(image p, char *name)</argsstring>
+        <name>show_image_layers</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="55" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="634" bodyend="644"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1adae9e4347715c8392eed4a923dbc4928" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void show_image_collapsed</definition>
+        <argsstring>(image p, char *name)</argsstring>
+        <name>show_image_collapsed</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="56" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="646" bodyend="651"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1ab5aa8b00fd5999a26623e97ab2e4939e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_image</definition>
+        <argsstring>(image m)</argsstring>
+        <name>print_image</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="58" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="1452" bodyend="1467"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1a28bb9f835989b2f7e908386421c52837" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structimage" kindref="compound">image</ref></type>
+        <definition>image make_empty_image</definition>
+        <argsstring>(int w, int h, int c)</argsstring>
+        <name>make_empty_image</name>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="60" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="653" bodyend="661"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1ad8288a211a8552fccfdd56b0a9049af0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_image_into</definition>
+        <argsstring>(image src, image dest)</argsstring>
+        <name>copy_image_into</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="61" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="425" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1ab2ddb4ea0bc935f26ce71a731a3241d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float get_pixel</definition>
+        <argsstring>(image m, int x, int y, int c)</argsstring>
+        <name>get_pixel</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="63" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="1423" bodyend="1427"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1afb5311c1f76ab7e8f37ecf36109df851" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float get_pixel_extend</definition>
+        <argsstring>(image m, int x, int y, int c)</argsstring>
+        <name>get_pixel_extend</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="64" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="1428" bodyend="1439"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1a566c2d016eb920d2fee7d3bb055a720b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_pixel</definition>
+        <argsstring>(image m, int x, int y, int c, float val)</argsstring>
+        <name>set_pixel</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="65" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="1440" bodyend="1445"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1a0f7cf32ab3f9dfa21ac055a467c7c1fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void add_pixel</definition>
+        <argsstring>(image m, int x, int y, int c, float val)</argsstring>
+        <name>add_pixel</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="66" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="1446" bodyend="1450"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1a042cf66bb9669d6ca59dcedf2461fc74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float bilinear_interpolate</definition>
+        <argsstring>(image im, float x, float y, int c)</argsstring>
+        <name>bilinear_interpolate</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>im</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="67" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="1258" bodyend="1271"/>
+      </memberdef>
+      <memberdef kind="function" id="image_8h_1a76e824c4e5202297b817c0aeba10944f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structimage" kindref="compound">image</ref></type>
+        <definition>image get_image_layer</definition>
+        <argsstring>(image m, int l)</argsstring>
+        <name>get_image_layer</name>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref></type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h" line="69" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c" bodystart="1413" bodyend="1421"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>IMAGE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IMAGE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;float.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;box.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;darknet.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>OPENCV</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fill_image_from_stream(CvCapture<sp/>*cap,<sp/><ref refid="structimage" kindref="compound">image</ref><sp/>im);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><ref refid="structimage" kindref="compound">image</ref><sp/>ipl_to_image(IplImage*<sp/>src);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ipl_into_image(IplImage*<sp/>src,<sp/><ref refid="structimage" kindref="compound">image</ref><sp/>im);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>flush_stream_buffer(CvCapture<sp/>*cap,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>show_image_cv(<ref refid="structimage" kindref="compound">image</ref><sp/>p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/>IplImage<sp/>*disp);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>get_color(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>draw_box(<ref refid="structimage" kindref="compound">image</ref><sp/>a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>r,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>g,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>b);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>draw_bbox(<ref refid="structimage" kindref="compound">image</ref><sp/>a,<sp/><ref refid="structbox" kindref="compound">box</ref><sp/>bbox,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>r,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>g,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>b);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>draw_label(<ref refid="structimage" kindref="compound">image</ref><sp/>a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>r,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c,<sp/><ref refid="structimage" kindref="compound">image</ref><sp/>label,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*rgb);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>write_label(<ref refid="structimage" kindref="compound">image</ref><sp/>a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>r,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c,<sp/><ref refid="structimage" kindref="compound">image</ref><sp/>*characters,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*rgb);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><ref refid="structimage" kindref="compound">image</ref><sp/>image_distance(<ref refid="structimage" kindref="compound">image</ref><sp/>a,<sp/><ref refid="structimage" kindref="compound">image</ref><sp/>b);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scale_image(<ref refid="structimage" kindref="compound">image</ref><sp/>m,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><ref refid="structimage" kindref="compound">image</ref><sp/>rotate_crop_image(<ref refid="structimage" kindref="compound">image</ref><sp/>im,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rad,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dx,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dy,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>aspect);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><ref refid="structimage" kindref="compound">image</ref><sp/>center_crop_image(<ref refid="structimage" kindref="compound">image</ref><sp/>im,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><ref refid="structimage" kindref="compound">image</ref><sp/>random_crop_image(<ref refid="structimage" kindref="compound">image</ref><sp/>im,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><ref refid="structimage" kindref="compound">image</ref><sp/>random_augment_image(<ref refid="structimage" kindref="compound">image</ref><sp/>im,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>aspect,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>low,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>high,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="structaugment__args" kindref="compound">augment_args</ref><sp/>random_augment_args(<ref refid="structimage" kindref="compound">image</ref><sp/>im,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>aspect,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>low,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>high,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>letterbox_image_into(<ref refid="structimage" kindref="compound">image</ref><sp/>im,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/><ref refid="structimage" kindref="compound">image</ref><sp/>boxed);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="structimage" kindref="compound">image</ref><sp/>resize_max(<ref refid="structimage" kindref="compound">image</ref><sp/>im,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>translate_image(<ref refid="structimage" kindref="compound">image</ref><sp/>m,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>embed_image(<ref refid="structimage" kindref="compound">image</ref><sp/>source,<sp/><ref refid="structimage" kindref="compound">image</ref><sp/>dest,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dy);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>place_image(<ref refid="structimage" kindref="compound">image</ref><sp/>im,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dy,<sp/><ref refid="structimage" kindref="compound">image</ref><sp/>canvas);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>saturate_image(<ref refid="structimage" kindref="compound">image</ref><sp/>im,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sat);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>exposure_image(<ref refid="structimage" kindref="compound">image</ref><sp/>im,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sat);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>distort_image(<ref refid="structimage" kindref="compound">image</ref><sp/>im,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>hue,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sat,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>saturate_exposure_image(<ref refid="structimage" kindref="compound">image</ref><sp/>im,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sat,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>exposure);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rgb_to_hsv(<ref refid="structimage" kindref="compound">image</ref><sp/>im);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>hsv_to_rgb(<ref refid="structimage" kindref="compound">image</ref><sp/>im);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>yuv_to_rgb(<ref refid="structimage" kindref="compound">image</ref><sp/>im);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rgb_to_yuv(<ref refid="structimage" kindref="compound">image</ref><sp/>im);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><ref refid="structimage" kindref="compound">image</ref><sp/>collapse_image_layers(<ref refid="structimage" kindref="compound">image</ref><sp/>source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>border);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><ref refid="structimage" kindref="compound">image</ref><sp/>collapse_images_horz(<ref refid="structimage" kindref="compound">image</ref><sp/>*ims,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><ref refid="structimage" kindref="compound">image</ref><sp/>collapse_images_vert(<ref refid="structimage" kindref="compound">image</ref><sp/>*ims,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>show_image_normalized(<ref refid="structimage" kindref="compound">image</ref><sp/>im,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>show_images(<ref refid="structimage" kindref="compound">image</ref><sp/>*ims,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*window);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>show_image_layers(<ref refid="structimage" kindref="compound">image</ref><sp/>p,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>show_image_collapsed(<ref refid="structimage" kindref="compound">image</ref><sp/>p,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_image(<ref refid="structimage" kindref="compound">image</ref><sp/>m);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><ref refid="structimage" kindref="compound">image</ref><sp/>make_empty_image(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_image_into(<ref refid="structimage" kindref="compound">image</ref><sp/>src,<sp/><ref refid="structimage" kindref="compound">image</ref><sp/>dest);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>get_pixel(<ref refid="structimage" kindref="compound">image</ref><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>get_pixel_extend(<ref refid="structimage" kindref="compound">image</ref><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_pixel(<ref refid="structimage" kindref="compound">image</ref><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add_pixel(<ref refid="structimage" kindref="compound">image</ref><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>bilinear_interpolate(<ref refid="structimage" kindref="compound">image</ref><sp/>im,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><ref refid="structimage" kindref="compound">image</ref><sp/>get_image_layer(<ref refid="structimage" kindref="compound">image</ref><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>l);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.h"/>
+  </compounddef>
+</doxygen>

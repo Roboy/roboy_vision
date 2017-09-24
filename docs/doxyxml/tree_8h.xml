@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="tree_8h" kind="file" language="C++">
+    <compoundname>tree.h</compoundname>
+    <includes refid="darknet_8h" local="yes">darknet.h</includes>
+    <includedby refid="data_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h</includedby>
+    <includedby refid="network_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.h</includedby>
+    <includedby refid="tree_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/tree.c</includedby>
+    <incdepgraph>
+      <node id="1789">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1788">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="1789" relation="include">
+        </childnode>
+        <childnode refid="1790" relation="include">
+        </childnode>
+        <childnode refid="1791" relation="include">
+        </childnode>
+        <childnode refid="1792" relation="include">
+        </childnode>
+      </node>
+      <node id="1792">
+        <label>pthread.h</label>
+      </node>
+      <node id="1791">
+        <label>string.h</label>
+      </node>
+      <node id="1787">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/tree.h</label>
+        <link refid="tree.h"/>
+        <childnode refid="1788" relation="include">
+        </childnode>
+      </node>
+      <node id="1790">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1806">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/deconvolutional_layer.h</label>
+        <link refid="deconvolutional__layer_8h_source"/>
+      </node>
+      <node id="1814">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/rnn_layer.h</label>
+        <link refid="rnn__layer_8h_source"/>
+      </node>
+      <node id="1815">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/normalization_layer.h</label>
+        <link refid="normalization__layer_8h_source"/>
+      </node>
+      <node id="1809">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/dropout_layer.h</label>
+        <link refid="dropout__layer_8h_source"/>
+      </node>
+      <node id="1798">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h</label>
+        <link refid="convolutional__layer_8h_source"/>
+      </node>
+      <node id="1803">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/connected_layer.h</label>
+        <link refid="connected__layer_8h_source"/>
+      </node>
+      <node id="1794">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.h</label>
+        <link refid="data_8h_source"/>
+        <childnode refid="1795" relation="include">
+        </childnode>
+      </node>
+      <node id="1795">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.h</label>
+        <link refid="network_8h_source"/>
+        <childnode refid="1796" relation="include">
+        </childnode>
+        <childnode refid="1797" relation="include">
+        </childnode>
+        <childnode refid="1798" relation="include">
+        </childnode>
+        <childnode refid="1799" relation="include">
+        </childnode>
+        <childnode refid="1800" relation="include">
+        </childnode>
+        <childnode refid="1801" relation="include">
+        </childnode>
+        <childnode refid="1802" relation="include">
+        </childnode>
+        <childnode refid="1803" relation="include">
+        </childnode>
+        <childnode refid="1804" relation="include">
+        </childnode>
+        <childnode refid="1805" relation="include">
+        </childnode>
+        <childnode refid="1806" relation="include">
+        </childnode>
+        <childnode refid="1807" relation="include">
+        </childnode>
+        <childnode refid="1808" relation="include">
+        </childnode>
+        <childnode refid="1809" relation="include">
+        </childnode>
+        <childnode refid="1810" relation="include">
+        </childnode>
+        <childnode refid="1811" relation="include">
+        </childnode>
+        <childnode refid="1812" relation="include">
+        </childnode>
+        <childnode refid="1813" relation="include">
+        </childnode>
+        <childnode refid="1814" relation="include">
+        </childnode>
+        <childnode refid="1815" relation="include">
+        </childnode>
+        <childnode refid="1816" relation="include">
+        </childnode>
+        <childnode refid="1817" relation="include">
+        </childnode>
+        <childnode refid="1818" relation="include">
+        </childnode>
+      </node>
+      <node id="1802">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.h</label>
+        <link refid="parser_8h_source"/>
+      </node>
+      <node id="1796">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/activation_layer.h</label>
+        <link refid="activation__layer_8h_source"/>
+      </node>
+      <node id="1800">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/detection_layer.h</label>
+        <link refid="detection__layer_8h_source"/>
+      </node>
+      <node id="1811">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.h</label>
+        <link refid="local__layer_8h_source"/>
+      </node>
+      <node id="1801">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/cost_layer.h</label>
+        <link refid="cost__layer_8h_source"/>
+      </node>
+      <node id="1799">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/batchnorm_layer.h</label>
+        <link refid="batchnorm__layer_8h_source"/>
+      </node>
+      <node id="1817">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/route_layer.h</label>
+        <link refid="route__layer_8h_source"/>
+      </node>
+      <node id="1813">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.h</label>
+        <link refid="maxpool__layer_8h_source"/>
+      </node>
+      <node id="1807">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/region_layer.h</label>
+        <link refid="region__layer_8h_source"/>
+      </node>
+      <node id="1797">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/avgpool_layer.h</label>
+        <link refid="avgpool__layer_8h_source"/>
+      </node>
+      <node id="1812">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/lstm_layer.h</label>
+        <link refid="lstm__layer_8h_source"/>
+      </node>
+      <node id="1816">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/reorg_layer.h</label>
+        <link refid="reorg__layer_8h_source"/>
+      </node>
+      <node id="1808">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/softmax_layer.h</label>
+        <link refid="softmax__layer_8h_source"/>
+      </node>
+      <node id="1804">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crnn_layer.h</label>
+        <link refid="crnn__layer_8h_source"/>
+      </node>
+      <node id="1793">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/tree.h</label>
+        <link refid="tree.h"/>
+        <childnode refid="1794" relation="include">
+        </childnode>
+        <childnode refid="1795" relation="include">
+        </childnode>
+      </node>
+      <node id="1818">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/shortcut_layer.h</label>
+        <link refid="shortcut__layer_8h_source"/>
+      </node>
+      <node id="1810">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/gru_layer.h</label>
+        <link refid="gru__layer_8h_source"/>
+      </node>
+      <node id="1805">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crop_layer.h</label>
+        <link refid="crop__layer_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="tree_8h_1a3cccde848b06d0d47221be0ae4ea6421" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtree" kindref="compound">tree</ref> *</type>
+        <definition>tree* read_tree</definition>
+        <argsstring>(char *filename)</argsstring>
+        <name>read_tree</name>
+        <param>
+          <type>char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/tree.h" line="5" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/tree.c" bodystart="81" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="tree_8h_1a621b0e70c4d9fb119256ccbe1d6b968b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hierarchy_top_prediction</definition>
+        <argsstring>(float *predictions, tree *hier, float thresh, int stride)</argsstring>
+        <name>hierarchy_top_prediction</name>
+        <param>
+          <type>float *</type>
+          <declname>predictions</declname>
+        </param>
+        <param>
+          <type><ref refid="structtree" kindref="compound">tree</ref> *</type>
+          <declname>hier</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thresh</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stride</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/tree.h" line="6" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/tree.c" bodystart="53" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="tree_8h_1a4f7eed900e89ca83188960a695529f92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float get_hierarchy_probability</definition>
+        <argsstring>(float *x, tree *hier, int c, int stride)</argsstring>
+        <name>get_hierarchy_probability</name>
+        <param>
+          <type>float *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="structtree" kindref="compound">tree</ref> *</type>
+          <declname>hier</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stride</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/tree.h" line="7" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/tree.c" bodystart="27" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>TREE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TREE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;darknet.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="structtree" kindref="compound">tree</ref><sp/>*read_tree(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hierarchy_top_prediction(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*predictions,<sp/><ref refid="structtree" kindref="compound">tree</ref><sp/>*hier,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>thresh,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stride);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>get_hierarchy_probability(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*x,<sp/><ref refid="structtree" kindref="compound">tree</ref><sp/>*hier,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stride);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/tree.h"/>
+  </compounddef>
+</doxygen>

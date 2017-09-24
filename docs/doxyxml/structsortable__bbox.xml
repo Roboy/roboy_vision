@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structsortable__bbox" kind="struct" language="C++" prot="public">
+    <compoundname>sortable_bbox</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsortable__bbox_1acdc0a1d7769cef2735980b97c83f2027" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sortable_bbox::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" line="234" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsortable__bbox_1aefe2d2ab36d7ad2e8a104f99580cc9af" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sortable_bbox::class</definition>
+        <argsstring></argsstring>
+        <name>class</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" line="235" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsortable__bbox_1af53bc942539162632004bec206c8e5b0" prot="public" static="no" mutable="no">
+        <type>float **</type>
+        <definition>float** sortable_bbox::probs</definition>
+        <argsstring></argsstring>
+        <name>probs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" line="236" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsortable__bbox_1a7f9f2d90e273f7454bbd5e841e23e9e1" prot="public" static="no" mutable="no">
+        <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+        <definition>network sortable_bbox::net</definition>
+        <argsstring></argsstring>
+        <name>net</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/compare.c" line="149" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/compare.c" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsortable__bbox_1a2a693ab1fef8df90e937a1ad1c8c0442" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* sortable_bbox::filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/compare.c" line="150" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/compare.c" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsortable__bbox_1ae063121410175a24bbb9ae8fe901c750" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sortable_bbox::classes</definition>
+        <argsstring></argsstring>
+        <name>classes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/compare.c" line="152" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/compare.c" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsortable__bbox_1a1e117d8029d714fce1491365316432f5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sortable_bbox::elo</definition>
+        <argsstring></argsstring>
+        <name>elo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/compare.c" line="153" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/compare.c" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsortable__bbox_1ab168cd8c3a7c1570cf7da7f7e30ab19c" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* sortable_bbox::elos</definition>
+        <argsstring></argsstring>
+        <name>elos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/compare.c" line="154" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/compare.c" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="351">
+        <label>network</label>
+        <link refid="structnetwork"/>
+        <childnode refid="352" relation="usage">
+          <edgelabel>layers</edgelabel>
+        </childnode>
+        <childnode refid="353" relation="usage">
+          <edgelabel>hierarchy</edgelabel>
+        </childnode>
+      </node>
+      <node id="350">
+        <label>sortable_bbox</label>
+        <link refid="structsortable__bbox"/>
+        <childnode refid="351" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="353">
+        <label>tree</label>
+        <link refid="structtree"/>
+      </node>
+      <node id="352">
+        <label>layer</label>
+        <link refid="structlayer"/>
+        <childnode refid="352" relation="usage">
+          <edgelabel>wf</edgelabel>
+          <edgelabel>state_layer</edgelabel>
+          <edgelabel>wg</edgelabel>
+          <edgelabel>self_layer</edgelabel>
+          <edgelabel>uf</edgelabel>
+          <edgelabel>wh</edgelabel>
+          <edgelabel>input_r_layer</edgelabel>
+          <edgelabel>state_save_layer</edgelabel>
+          <edgelabel>ug</edgelabel>
+          <edgelabel>wi</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+        <childnode refid="353" relation="usage">
+          <edgelabel>softmax_tree</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" line="233" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" bodystart="233" bodyend="237"/>
+    <listofallmembers>
+      <member refid="structsortable__bbox_1aefe2d2ab36d7ad2e8a104f99580cc9af" prot="public" virt="non-virtual"><scope>sortable_bbox</scope><name>class</name></member>
+      <member refid="structsortable__bbox_1ae063121410175a24bbb9ae8fe901c750" prot="public" virt="non-virtual"><scope>sortable_bbox</scope><name>classes</name></member>
+      <member refid="structsortable__bbox_1a1e117d8029d714fce1491365316432f5" prot="public" virt="non-virtual"><scope>sortable_bbox</scope><name>elo</name></member>
+      <member refid="structsortable__bbox_1ab168cd8c3a7c1570cf7da7f7e30ab19c" prot="public" virt="non-virtual"><scope>sortable_bbox</scope><name>elos</name></member>
+      <member refid="structsortable__bbox_1a2a693ab1fef8df90e937a1ad1c8c0442" prot="public" virt="non-virtual"><scope>sortable_bbox</scope><name>filename</name></member>
+      <member refid="structsortable__bbox_1acdc0a1d7769cef2735980b97c83f2027" prot="public" virt="non-virtual"><scope>sortable_bbox</scope><name>index</name></member>
+      <member refid="structsortable__bbox_1a7f9f2d90e273f7454bbd5e841e23e9e1" prot="public" virt="non-virtual"><scope>sortable_bbox</scope><name>net</name></member>
+      <member refid="structsortable__bbox_1af53bc942539162632004bec206c8e5b0" prot="public" virt="non-virtual"><scope>sortable_bbox</scope><name>probs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

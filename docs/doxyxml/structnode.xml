@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structnode" kind="struct" language="C++" prot="public">
+    <compoundname>node</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnode_1a3866f55c05d50265b730d8cdeec0a1f8" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* node::val</definition>
+        <argsstring></argsstring>
+        <name>val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="562" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="562" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnode_1aa3e8aa83f864292b5a01210f4453fcc0" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structnode" kindref="compound">node</ref> *</type>
+        <definition>struct node* node::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="563" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="563" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnode_1a7ee3d227c728ce18a86e43ebc301046e" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structnode" kindref="compound">node</ref> *</type>
+        <definition>struct node* node::prev</definition>
+        <argsstring></argsstring>
+        <name>prev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="564" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="564" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="321">
+        <label>node</label>
+        <link refid="structnode"/>
+        <childnode refid="321" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="561" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="561" bodyend="565"/>
+    <listofallmembers>
+      <member refid="structnode_1aa3e8aa83f864292b5a01210f4453fcc0" prot="public" virt="non-virtual"><scope>node</scope><name>next</name></member>
+      <member refid="structnode_1a7ee3d227c728ce18a86e43ebc301046e" prot="public" virt="non-virtual"><scope>node</scope><name>prev</name></member>
+      <member refid="structnode_1a3866f55c05d50265b730d8cdeec0a1f8" prot="public" virt="non-virtual"><scope>node</scope><name>val</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

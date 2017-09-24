@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_5270098623a1e501a01276d094cc269a" kind="dir">
+    <compoundname>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet</compoundname>
+    <innerdir refid="dir_5bf7420977892fa4b3d2649a01419ead">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/examples</innerdir>
+    <innerdir refid="dir_50b8ff9032ae039426cad56e17022add">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include</innerdir>
+    <innerdir refid="dir_ada63930485092fc46fc6f974fc14490">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python</innerdir>
+    <innerdir refid="dir_ba1122989da9720b0192bccecd7de595">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/scripts</innerdir>
+    <innerdir refid="dir_bbfaf8fe10bcfd61f32b244398ea4c78">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/"/>
+  </compounddef>
+</doxygen>

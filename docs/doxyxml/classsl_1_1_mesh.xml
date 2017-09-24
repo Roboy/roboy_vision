@@ -1,0 +1,379 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classsl_1_1_mesh" kind="class" language="C++" prot="public">
+    <compoundname>sl::Mesh</compoundname>
+    <includes refid="_mesh_8hpp" local="no">Mesh.hpp</includes>
+    <innerclass refid="structsl_1_1_mesh_1_1_indice" prot="public">sl::Mesh::Indice</innerclass>
+    <innerclass refid="structsl_1_1_mesh_1_1_texture" prot="public">sl::Mesh::Texture</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsl_1_1_mesh_1ac7a4284697870fdaf2825924dc138afa" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; sl::float3 &gt;</type>
+        <definition>std::vector&lt;sl::float3&gt; sl::Mesh::vertices</definition>
+        <argsstring></argsstring>
+        <name>vertices</name>
+        <briefdescription>
+<para>Vertices are defined by a 3D point {x,y,z}. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="121" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_mesh_1a1bf4407e45db4b4db82b835fb0fb035d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; sl::uint3 &gt;</type>
+        <definition>std::vector&lt;sl::uint3&gt; sl::Mesh::triangles</definition>
+        <argsstring></argsstring>
+        <name>triangles</name>
+        <briefdescription>
+<para>Triangles (or faces) contains the index of its three vertices. </para>        </briefdescription>
+        <detaileddescription>
+<para>It corresponds to the 3 vertices of the triangle {v1, v2, v3}. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="126" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_mesh_1a151f499d5541ffeee6b0572caaf596ba" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; sl::float3 &gt;</type>
+        <definition>std::vector&lt;sl::float3&gt; sl::Mesh::normals</definition>
+        <argsstring></argsstring>
+        <name>normals</name>
+        <briefdescription>
+<para>Normals are defined by three conponant, {nx, ny, nz}. </para>        </briefdescription>
+        <detaileddescription>
+<para>Normals are defined for each vertices (<ref refid="classsl_1_1_mesh_1ac7a4284697870fdaf2825924dc138afa" kindref="member">Mesh::vertices</ref> and <ref refid="classsl_1_1_mesh_1a151f499d5541ffeee6b0572caaf596ba" kindref="member">Mesh::normals</ref> are the same size). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="132" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_mesh_1a0d120710403b59c5a5a0d3603a3d2733" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; sl::float2 &gt;</type>
+        <definition>std::vector&lt;sl::float2&gt; sl::Mesh::uv</definition>
+        <argsstring></argsstring>
+        <name>uv</name>
+        <briefdescription>
+<para><ref refid="structsl_1_1_mesh_1_1_texture" kindref="compound">Texture</ref> coordinates defines 2D points on a texture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="137" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_mesh_1a47d0ad7d5a23c69f3dde291b42585f7a" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; <ref refid="structsl_1_1_mesh_1_1_indice" kindref="compound">Indice</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;Indice&gt; &gt; sl::Mesh::material_indices</definition>
+        <argsstring></argsstring>
+        <name>material_indices</name>
+        <briefdescription>
+<para>Store the list of vertices index affected to each texture image. </para>        </briefdescription>
+        <detaileddescription>
+<para>The first vector has the same size as <ref refid="classsl_1_1_mesh_1af7d74931d215b6eaa46294543c8c90a4" kindref="member">Mesh::textures</ref>, the size of the second vector represents the number of faces associated to this texture. By running over the second vector you can access the vertices/normals and texture coordinates of the current texture. <simplesect kind="note"><para>Contains data only after you call <ref refid="classsl_1_1_mesh_1a85dba82a0d5a765a5ad9dbb520c53bd0" kindref="member">Mesh::applyTexture()</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="155" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_mesh_1af7d74931d215b6eaa46294543c8c90a4" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structsl_1_1_mesh_1_1_texture" kindref="compound">Texture</ref> &gt;</type>
+        <definition>std::vector&lt;Texture&gt; sl::Mesh::textures</definition>
+        <argsstring></argsstring>
+        <name>textures</name>
+        <briefdescription>
+<para>List of textures images. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="170" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsl_1_1_mesh_1a04847d1ef3ba04f01341ac400f5355e6" prot="private" static="no" mutable="no">
+        <type>sl::TextureImagePool</type>
+        <definition>sl::TextureImagePool sl::Mesh::im_pool</definition>
+        <argsstring></argsstring>
+        <name>im_pool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="215" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_mesh_1acbb3cfa212fee57407c56e6142ab07df" prot="private" static="no" mutable="no">
+        <type><ref refid="structsl_1_1_camera_parameters" kindref="compound">sl::CameraParameters</ref></type>
+        <definition>sl::CameraParameters sl::Mesh::cam_param</definition>
+        <argsstring></argsstring>
+        <name>cam_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="216" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_mesh_1a31efcb6adeb503e9c9e8fc91184c3201" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::Mesh::min_d</definition>
+        <argsstring></argsstring>
+        <name>min_d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="217" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_mesh_1ae15e1bf4c257b50dcc15508ca48a7096" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sl::Mesh::max_d</definition>
+        <argsstring></argsstring>
+        <name>max_d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="217" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_mesh_1a155d0ce2d733cef6eeb3e89373174622" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool sl::Mesh::welded</definition>
+        <argsstring></argsstring>
+        <name>welded</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="218" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsl_1_1_mesh_1a6e1ef80e99db017936dc9092cae08c08" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t sl::Mesh::memory</definition>
+        <argsstring></argsstring>
+        <name>memory</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="219" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsl_1_1_mesh_1a4c2a193bcd347d8acfce1c1ef3dd5f58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Mesh::Mesh</definition>
+        <argsstring>()</argsstring>
+        <name>Mesh</name>
+        <briefdescription>
+<para>Default constructor which creates an empty <ref refid="classsl_1_1_mesh" kindref="compound">Mesh</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mesh_1a19636845bd058343070e8467e7f4688a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sl::Mesh::~Mesh</definition>
+        <argsstring>()</argsstring>
+        <name>~Mesh</name>
+        <briefdescription>
+<para><ref refid="classsl_1_1_mesh" kindref="compound">Mesh</ref> destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mesh_1a8c01bcab6a2c9ea55af31aea3ff773ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl::Mesh::filter</definition>
+        <argsstring>(MeshFilterParameters params=MeshFilterParameters())</argsstring>
+        <name>filter</name>
+        <param>
+          <type><ref refid="classsl_1_1_mesh_filter_parameters" kindref="compound">MeshFilterParameters</ref></type>
+          <declname>params</declname>
+          <defval><ref refid="classsl_1_1_mesh_filter_parameters" kindref="compound">MeshFilterParameters</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Filters the mesh according to the given parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: defines the filtering parameters, for more info checkout the <ref refid="classsl_1_1_mesh_filter_parameters" kindref="compound">sl::MeshFilterParameters</ref> documentation. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the filtering was successful, false otherwise.</para></simplesect>
+<simplesect kind="note"><para>The filtering is a costly operation but the resulting mesh is significantly lighter and less noisy, the parameters can be tweaked to get a mesh that fit better the final application. For instance a collision mesh will need to have a coarser, more decimated resolution. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="181" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mesh_1a85dba82a0d5a765a5ad9dbb520c53bd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl::Mesh::applyTexture</definition>
+        <argsstring>(MESH_TEXTURE_FORMAT texture_format=MESH_TEXTURE_RGB)</argsstring>
+        <name>applyTexture</name>
+        <param>
+          <type>MESH_TEXTURE_FORMAT</type>
+          <declname>texture_format</declname>
+          <defval>MESH_TEXTURE_RGB</defval>
+        </param>
+        <briefdescription>
+<para>Applies texture to the mesh. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the texturing was successful, false otherwise.</para></simplesect>
+<simplesect kind="warning"><para>SpatialMappingParams::saveTextureData must be set as true when enabling the spatial mapping to be able to apply the textures. </para></simplesect>
+<simplesect kind="warning"><para>The mesh should be filtered before calling this function since <ref refid="classsl_1_1_mesh_1a8c01bcab6a2c9ea55af31aea3ff773ff" kindref="member">Mesh::filter</ref> will erased the textures, the texturing is also significantly slower on non-filtered meshes. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="191" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mesh_1ad09dbcc5f7dfb0aa68df5a7499d8ea34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl::Mesh::save</definition>
+        <argsstring>(std::string filename, MESH_FILE_FORMAT type=MESH_FILE_OBJ)</argsstring>
+        <name>save</name>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>MESH_FILE_FORMAT</type>
+          <declname>type</declname>
+          <defval>MESH_FILE_OBJ</defval>
+        </param>
+        <briefdescription>
+<para>Saves the mesh into a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the path and filename of the mesh </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: defines the file type (extension) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the file was successfully saved, false otherwise. </para></simplesect>
+<simplesect kind="note"><para>Only the sl::MESH_FILE_OBJ support the textures recording </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mesh_1a92fd49c6754c99d5bb96c9eef5aec631" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl::Mesh::load</definition>
+        <argsstring>(const std::string filename)</argsstring>
+        <name>load</name>
+        <param>
+          <type>const std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Loads the mesh from a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the path and filename of the mesh. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the loading was successful, false otherwise. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="207" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsl_1_1_mesh_1a5c5155f9f8215bfe55ee36c7f99a6d52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl::Mesh::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>Clears all the mesh data (empty the vectors). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="212" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A mesh contains the geometric data of the scene computed by the spatial mapping. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="289">
+        <label>sl::Mesh</label>
+        <link refid="classsl_1_1_mesh"/>
+        <childnode refid="290" relation="usage">
+          <edgelabel>cam_param</edgelabel>
+        </childnode>
+      </node>
+      <node id="291">
+        <label>sl::Resolution</label>
+        <link refid="structsl_1_1_resolution"/>
+      </node>
+      <node id="290">
+        <label>sl::CameraParameters</label>
+        <link refid="structsl_1_1_camera_parameters"/>
+        <childnode refid="291" relation="usage">
+          <edgelabel>image_size</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" line="102" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp" bodystart="102" bodyend="220"/>
+    <listofallmembers>
+      <member refid="classsl_1_1_mesh_1a85dba82a0d5a765a5ad9dbb520c53bd0" prot="public" virt="non-virtual"><scope>sl::Mesh</scope><name>applyTexture</name></member>
+      <member refid="classsl_1_1_mesh_1acbb3cfa212fee57407c56e6142ab07df" prot="private" virt="non-virtual"><scope>sl::Mesh</scope><name>cam_param</name></member>
+      <member refid="classsl_1_1_mesh_1a5c5155f9f8215bfe55ee36c7f99a6d52" prot="public" virt="non-virtual"><scope>sl::Mesh</scope><name>clear</name></member>
+      <member refid="classsl_1_1_mesh_1a8c01bcab6a2c9ea55af31aea3ff773ff" prot="public" virt="non-virtual"><scope>sl::Mesh</scope><name>filter</name></member>
+      <member refid="classsl_1_1_mesh_1a04847d1ef3ba04f01341ac400f5355e6" prot="private" virt="non-virtual"><scope>sl::Mesh</scope><name>im_pool</name></member>
+      <member refid="classsl_1_1_mesh_1a92fd49c6754c99d5bb96c9eef5aec631" prot="public" virt="non-virtual"><scope>sl::Mesh</scope><name>load</name></member>
+      <member refid="classsl_1_1_mesh_1a47d0ad7d5a23c69f3dde291b42585f7a" prot="public" virt="non-virtual"><scope>sl::Mesh</scope><name>material_indices</name></member>
+      <member refid="classsl_1_1_mesh_1ae15e1bf4c257b50dcc15508ca48a7096" prot="private" virt="non-virtual"><scope>sl::Mesh</scope><name>max_d</name></member>
+      <member refid="classsl_1_1_mesh_1a6e1ef80e99db017936dc9092cae08c08" prot="private" virt="non-virtual"><scope>sl::Mesh</scope><name>memory</name></member>
+      <member refid="classsl_1_1_mesh_1a4c2a193bcd347d8acfce1c1ef3dd5f58" prot="public" virt="non-virtual"><scope>sl::Mesh</scope><name>Mesh</name></member>
+      <member refid="classsl_1_1_mesh_1a31efcb6adeb503e9c9e8fc91184c3201" prot="private" virt="non-virtual"><scope>sl::Mesh</scope><name>min_d</name></member>
+      <member refid="classsl_1_1_mesh_1a151f499d5541ffeee6b0572caaf596ba" prot="public" virt="non-virtual"><scope>sl::Mesh</scope><name>normals</name></member>
+      <member refid="classsl_1_1_mesh_1ad09dbcc5f7dfb0aa68df5a7499d8ea34" prot="public" virt="non-virtual"><scope>sl::Mesh</scope><name>save</name></member>
+      <member refid="classsl_1_1_mesh_1af7d74931d215b6eaa46294543c8c90a4" prot="public" virt="non-virtual"><scope>sl::Mesh</scope><name>textures</name></member>
+      <member refid="classsl_1_1_mesh_1a1bf4407e45db4b4db82b835fb0fb035d" prot="public" virt="non-virtual"><scope>sl::Mesh</scope><name>triangles</name></member>
+      <member refid="classsl_1_1_mesh_1a0d120710403b59c5a5a0d3603a3d2733" prot="public" virt="non-virtual"><scope>sl::Mesh</scope><name>uv</name></member>
+      <member refid="classsl_1_1_mesh_1ac7a4284697870fdaf2825924dc138afa" prot="public" virt="non-virtual"><scope>sl::Mesh</scope><name>vertices</name></member>
+      <member refid="classsl_1_1_mesh_1a155d0ce2d733cef6eeb3e89373174622" prot="private" virt="non-virtual"><scope>sl::Mesh</scope><name>welded</name></member>
+      <member refid="classsl_1_1_mesh_1a19636845bd058343070e8467e7f4688a" prot="public" virt="non-virtual"><scope>sl::Mesh</scope><name>~Mesh</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

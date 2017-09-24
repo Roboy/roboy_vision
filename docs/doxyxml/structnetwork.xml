@@ -1,0 +1,751 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structnetwork" kind="struct" language="C++" prot="public">
+    <compoundname>network</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnetwork_1a1c7625720955322d05924a075d013877" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int network::n</definition>
+        <argsstring></argsstring>
+        <name>n</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="412" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a04f448f3f8c3f1314e2b23b429bec827" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int network::batch</definition>
+        <argsstring></argsstring>
+        <name>batch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="413" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="413" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1aaa4dc3920fc905e52573172d45fccd45" prot="public" static="no" mutable="no">
+        <type>size_t *</type>
+        <definition>size_t* network::seen</definition>
+        <argsstring></argsstring>
+        <name>seen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="414" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a185b52d74237f3cd32d2d0186d2d2f5b" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* network::t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="415" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="415" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a7b16b097d1814258e82b58d663692875" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float network::epoch</definition>
+        <argsstring></argsstring>
+        <name>epoch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="416" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="416" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1ab30643da07e0f787ee0cd2058cd41a6e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int network::subdivisions</definition>
+        <argsstring></argsstring>
+        <name>subdivisions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="417" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="417" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a9770423f88b722bafc9d1fd3c6091d75" prot="public" static="no" mutable="no">
+        <type><ref refid="structlayer" kindref="compound">layer</ref> *</type>
+        <definition>layer* network::layers</definition>
+        <argsstring></argsstring>
+        <name>layers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="418" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="418" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a274dce0db2d5175992eb3b273ab09df7" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* network::output</definition>
+        <argsstring></argsstring>
+        <name>output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="419" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="419" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a78121635a0f0c3a1d9991390b4325dc3" prot="public" static="no" mutable="no">
+        <type>learning_rate_policy</type>
+        <definition>learning_rate_policy network::policy</definition>
+        <argsstring></argsstring>
+        <name>policy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="420" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="420" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a978d3e339536cd6bea2270d49d93c35a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float network::learning_rate</definition>
+        <argsstring></argsstring>
+        <name>learning_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="422" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="422" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a495c60ef821ca0ade1c42907c8bc90bf" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float network::momentum</definition>
+        <argsstring></argsstring>
+        <name>momentum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="423" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="423" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a9afd53b100d35dc162e48118ef4f7eea" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float network::decay</definition>
+        <argsstring></argsstring>
+        <name>decay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="424" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a5460d67e44c0877ca016ed12925788fe" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float network::gamma</definition>
+        <argsstring></argsstring>
+        <name>gamma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="425" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a0d9e7af8dde42e28a7fdb0e685b2f23b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float network::scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="426" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1ae38f864b7b9966c38f1882f468131eda" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float network::power</definition>
+        <argsstring></argsstring>
+        <name>power</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="427" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1abaf83235b5968fb68a2dc9215cc67c8c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int network::time_steps</definition>
+        <argsstring></argsstring>
+        <name>time_steps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="428" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a9ed08472400f140c49ecac3ecd1def87" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int network::step</definition>
+        <argsstring></argsstring>
+        <name>step</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="429" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a163b931990a5ac8f456884405de2192b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int network::max_batches</definition>
+        <argsstring></argsstring>
+        <name>max_batches</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="430" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a64c1fa0153559f530cc815fb6b8a95c8" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* network::scales</definition>
+        <argsstring></argsstring>
+        <name>scales</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="431" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a48fb87937b7ff22cf01875d8d5807cc2" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* network::steps</definition>
+        <argsstring></argsstring>
+        <name>steps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="432" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a6e656092c18afdc2bcb72f87d0ed2547" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int network::num_steps</definition>
+        <argsstring></argsstring>
+        <name>num_steps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="433" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="433" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a1e0395e7cbcd9cd93d5c8621bb1a38aa" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int network::burn_in</definition>
+        <argsstring></argsstring>
+        <name>burn_in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="434" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a7274661135ee8efe567aef0e9c0e40f9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int network::adam</definition>
+        <argsstring></argsstring>
+        <name>adam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="436" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a6c56d5eccebbfd39c085766b94cd36b7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float network::B1</definition>
+        <argsstring></argsstring>
+        <name>B1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="437" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a42ea583b98356e06dca647bf95520e5c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float network::B2</definition>
+        <argsstring></argsstring>
+        <name>B2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="438" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="438" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a13a150c894a1f34f08b7f8dff7808ea7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float network::eps</definition>
+        <argsstring></argsstring>
+        <name>eps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="439" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="439" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a529a36505548232d049abcb84fdcf389" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int network::inputs</definition>
+        <argsstring></argsstring>
+        <name>inputs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="441" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="441" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a5268de11127a02d86e6f517cf3b3acc9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int network::outputs</definition>
+        <argsstring></argsstring>
+        <name>outputs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="442" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a794927f8c4d44cd8e85ff39e0d4c9939" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int network::truths</definition>
+        <argsstring></argsstring>
+        <name>truths</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="443" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="443" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a6769bc5e23225cecf0a46eedba29719a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int network::notruth</definition>
+        <argsstring></argsstring>
+        <name>notruth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="444" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a0e57f4230f8ecb07bba0c97cf8f045c7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int network::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="445" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a944b83cb20da2454c6092e07b9a1d3e9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int network::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="445" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a05014921b926874b8a362aa83d98283a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int network::c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="445" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1af98abf1cccd7bfee97b9f7eae752687c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int network::max_crop</definition>
+        <argsstring></argsstring>
+        <name>max_crop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="446" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="446" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a9e52bfae3a850150ed2e32c10ab11bec" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int network::min_crop</definition>
+        <argsstring></argsstring>
+        <name>min_crop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="447" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="447" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a87bf27881ed88606fae1b80f9049e4ca" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int network::center</definition>
+        <argsstring></argsstring>
+        <name>center</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="448" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1abe286813534c121ee16da09c258eaf2e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float network::angle</definition>
+        <argsstring></argsstring>
+        <name>angle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="449" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="449" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1acaa88cf6c30100edff5dc061bfb226bb" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float network::aspect</definition>
+        <argsstring></argsstring>
+        <name>aspect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="450" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="450" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a609572db2c14c55c6c261844cb33fa12" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float network::exposure</definition>
+        <argsstring></argsstring>
+        <name>exposure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="451" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="451" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a9bbb55144a6eca464fbc122f97bf1af8" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float network::saturation</definition>
+        <argsstring></argsstring>
+        <name>saturation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="452" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1ae38058a4e1ad0a334026ecbe01f101f4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float network::hue</definition>
+        <argsstring></argsstring>
+        <name>hue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="453" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="453" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a8ba8b1354e8d018ac74920eb0cd882e8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int network::gpu_index</definition>
+        <argsstring></argsstring>
+        <name>gpu_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="455" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="455" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a36d6158f07498646e400bf6f7e20a705" prot="public" static="no" mutable="no">
+        <type><ref refid="structtree" kindref="compound">tree</ref> *</type>
+        <definition>tree* network::hierarchy</definition>
+        <argsstring></argsstring>
+        <name>hierarchy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="456" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="456" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a8f391155a3ceb60caf07d0ee6c6a93f2" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* network::input</definition>
+        <argsstring></argsstring>
+        <name>input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="458" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="458" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a1453c2cf9a735bde55a281d698797a05" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* network::truth</definition>
+        <argsstring></argsstring>
+        <name>truth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="459" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="459" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a7787a7dde0eea2d91b208c23cdba6286" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* network::delta</definition>
+        <argsstring></argsstring>
+        <name>delta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="460" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="460" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a624719738b94a1d55de651f5dac16b79" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* network::workspace</definition>
+        <argsstring></argsstring>
+        <name>workspace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="461" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="461" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a32e7b55fe8dfa07391b6cdce17b4a2c1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int network::train</definition>
+        <argsstring></argsstring>
+        <name>train</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="462" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="462" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1a67a4b2779829a2891b1e3194b4910334" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int network::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="463" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnetwork_1ac80b4b4eeda5cf4cc4af5c2173d0ad31" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* network::cost</definition>
+        <argsstring></argsstring>
+        <name>cost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="464" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="464" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="317">
+        <label>network</label>
+        <link refid="structnetwork"/>
+        <childnode refid="318" relation="usage">
+          <edgelabel>layers</edgelabel>
+        </childnode>
+        <childnode refid="319" relation="usage">
+          <edgelabel>hierarchy</edgelabel>
+        </childnode>
+      </node>
+      <node id="319">
+        <label>tree</label>
+        <link refid="structtree"/>
+      </node>
+      <node id="318">
+        <label>layer</label>
+        <link refid="structlayer"/>
+        <childnode refid="318" relation="usage">
+          <edgelabel>wf</edgelabel>
+          <edgelabel>state_layer</edgelabel>
+          <edgelabel>wg</edgelabel>
+          <edgelabel>self_layer</edgelabel>
+          <edgelabel>uf</edgelabel>
+          <edgelabel>wh</edgelabel>
+          <edgelabel>input_r_layer</edgelabel>
+          <edgelabel>state_save_layer</edgelabel>
+          <edgelabel>ug</edgelabel>
+          <edgelabel>wi</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+        <childnode refid="319" relation="usage">
+          <edgelabel>softmax_tree</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="411" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="411" bodyend="473"/>
+    <listofallmembers>
+      <member refid="structnetwork_1a7274661135ee8efe567aef0e9c0e40f9" prot="public" virt="non-virtual"><scope>network</scope><name>adam</name></member>
+      <member refid="structnetwork_1abe286813534c121ee16da09c258eaf2e" prot="public" virt="non-virtual"><scope>network</scope><name>angle</name></member>
+      <member refid="structnetwork_1acaa88cf6c30100edff5dc061bfb226bb" prot="public" virt="non-virtual"><scope>network</scope><name>aspect</name></member>
+      <member refid="structnetwork_1a6c56d5eccebbfd39c085766b94cd36b7" prot="public" virt="non-virtual"><scope>network</scope><name>B1</name></member>
+      <member refid="structnetwork_1a42ea583b98356e06dca647bf95520e5c" prot="public" virt="non-virtual"><scope>network</scope><name>B2</name></member>
+      <member refid="structnetwork_1a04f448f3f8c3f1314e2b23b429bec827" prot="public" virt="non-virtual"><scope>network</scope><name>batch</name></member>
+      <member refid="structnetwork_1a1e0395e7cbcd9cd93d5c8621bb1a38aa" prot="public" virt="non-virtual"><scope>network</scope><name>burn_in</name></member>
+      <member refid="structnetwork_1a05014921b926874b8a362aa83d98283a" prot="public" virt="non-virtual"><scope>network</scope><name>c</name></member>
+      <member refid="structnetwork_1a87bf27881ed88606fae1b80f9049e4ca" prot="public" virt="non-virtual"><scope>network</scope><name>center</name></member>
+      <member refid="structnetwork_1ac80b4b4eeda5cf4cc4af5c2173d0ad31" prot="public" virt="non-virtual"><scope>network</scope><name>cost</name></member>
+      <member refid="structnetwork_1a9afd53b100d35dc162e48118ef4f7eea" prot="public" virt="non-virtual"><scope>network</scope><name>decay</name></member>
+      <member refid="structnetwork_1a7787a7dde0eea2d91b208c23cdba6286" prot="public" virt="non-virtual"><scope>network</scope><name>delta</name></member>
+      <member refid="structnetwork_1a7b16b097d1814258e82b58d663692875" prot="public" virt="non-virtual"><scope>network</scope><name>epoch</name></member>
+      <member refid="structnetwork_1a13a150c894a1f34f08b7f8dff7808ea7" prot="public" virt="non-virtual"><scope>network</scope><name>eps</name></member>
+      <member refid="structnetwork_1a609572db2c14c55c6c261844cb33fa12" prot="public" virt="non-virtual"><scope>network</scope><name>exposure</name></member>
+      <member refid="structnetwork_1a5460d67e44c0877ca016ed12925788fe" prot="public" virt="non-virtual"><scope>network</scope><name>gamma</name></member>
+      <member refid="structnetwork_1a8ba8b1354e8d018ac74920eb0cd882e8" prot="public" virt="non-virtual"><scope>network</scope><name>gpu_index</name></member>
+      <member refid="structnetwork_1a0e57f4230f8ecb07bba0c97cf8f045c7" prot="public" virt="non-virtual"><scope>network</scope><name>h</name></member>
+      <member refid="structnetwork_1a36d6158f07498646e400bf6f7e20a705" prot="public" virt="non-virtual"><scope>network</scope><name>hierarchy</name></member>
+      <member refid="structnetwork_1ae38058a4e1ad0a334026ecbe01f101f4" prot="public" virt="non-virtual"><scope>network</scope><name>hue</name></member>
+      <member refid="structnetwork_1a67a4b2779829a2891b1e3194b4910334" prot="public" virt="non-virtual"><scope>network</scope><name>index</name></member>
+      <member refid="structnetwork_1a8f391155a3ceb60caf07d0ee6c6a93f2" prot="public" virt="non-virtual"><scope>network</scope><name>input</name></member>
+      <member refid="structnetwork_1a529a36505548232d049abcb84fdcf389" prot="public" virt="non-virtual"><scope>network</scope><name>inputs</name></member>
+      <member refid="structnetwork_1a9770423f88b722bafc9d1fd3c6091d75" prot="public" virt="non-virtual"><scope>network</scope><name>layers</name></member>
+      <member refid="structnetwork_1a978d3e339536cd6bea2270d49d93c35a" prot="public" virt="non-virtual"><scope>network</scope><name>learning_rate</name></member>
+      <member refid="structnetwork_1a163b931990a5ac8f456884405de2192b" prot="public" virt="non-virtual"><scope>network</scope><name>max_batches</name></member>
+      <member refid="structnetwork_1af98abf1cccd7bfee97b9f7eae752687c" prot="public" virt="non-virtual"><scope>network</scope><name>max_crop</name></member>
+      <member refid="structnetwork_1a9e52bfae3a850150ed2e32c10ab11bec" prot="public" virt="non-virtual"><scope>network</scope><name>min_crop</name></member>
+      <member refid="structnetwork_1a495c60ef821ca0ade1c42907c8bc90bf" prot="public" virt="non-virtual"><scope>network</scope><name>momentum</name></member>
+      <member refid="structnetwork_1a1c7625720955322d05924a075d013877" prot="public" virt="non-virtual"><scope>network</scope><name>n</name></member>
+      <member refid="structnetwork_1a6769bc5e23225cecf0a46eedba29719a" prot="public" virt="non-virtual"><scope>network</scope><name>notruth</name></member>
+      <member refid="structnetwork_1a6e656092c18afdc2bcb72f87d0ed2547" prot="public" virt="non-virtual"><scope>network</scope><name>num_steps</name></member>
+      <member refid="structnetwork_1a274dce0db2d5175992eb3b273ab09df7" prot="public" virt="non-virtual"><scope>network</scope><name>output</name></member>
+      <member refid="structnetwork_1a5268de11127a02d86e6f517cf3b3acc9" prot="public" virt="non-virtual"><scope>network</scope><name>outputs</name></member>
+      <member refid="structnetwork_1a78121635a0f0c3a1d9991390b4325dc3" prot="public" virt="non-virtual"><scope>network</scope><name>policy</name></member>
+      <member refid="structnetwork_1ae38f864b7b9966c38f1882f468131eda" prot="public" virt="non-virtual"><scope>network</scope><name>power</name></member>
+      <member refid="structnetwork_1a9bbb55144a6eca464fbc122f97bf1af8" prot="public" virt="non-virtual"><scope>network</scope><name>saturation</name></member>
+      <member refid="structnetwork_1a0d9e7af8dde42e28a7fdb0e685b2f23b" prot="public" virt="non-virtual"><scope>network</scope><name>scale</name></member>
+      <member refid="structnetwork_1a64c1fa0153559f530cc815fb6b8a95c8" prot="public" virt="non-virtual"><scope>network</scope><name>scales</name></member>
+      <member refid="structnetwork_1aaa4dc3920fc905e52573172d45fccd45" prot="public" virt="non-virtual"><scope>network</scope><name>seen</name></member>
+      <member refid="structnetwork_1a9ed08472400f140c49ecac3ecd1def87" prot="public" virt="non-virtual"><scope>network</scope><name>step</name></member>
+      <member refid="structnetwork_1a48fb87937b7ff22cf01875d8d5807cc2" prot="public" virt="non-virtual"><scope>network</scope><name>steps</name></member>
+      <member refid="structnetwork_1ab30643da07e0f787ee0cd2058cd41a6e" prot="public" virt="non-virtual"><scope>network</scope><name>subdivisions</name></member>
+      <member refid="structnetwork_1a185b52d74237f3cd32d2d0186d2d2f5b" prot="public" virt="non-virtual"><scope>network</scope><name>t</name></member>
+      <member refid="structnetwork_1abaf83235b5968fb68a2dc9215cc67c8c" prot="public" virt="non-virtual"><scope>network</scope><name>time_steps</name></member>
+      <member refid="structnetwork_1a32e7b55fe8dfa07391b6cdce17b4a2c1" prot="public" virt="non-virtual"><scope>network</scope><name>train</name></member>
+      <member refid="structnetwork_1a1453c2cf9a735bde55a281d698797a05" prot="public" virt="non-virtual"><scope>network</scope><name>truth</name></member>
+      <member refid="structnetwork_1a794927f8c4d44cd8e85ff39e0d4c9939" prot="public" virt="non-virtual"><scope>network</scope><name>truths</name></member>
+      <member refid="structnetwork_1a944b83cb20da2454c6092e07b9a1d3e9" prot="public" virt="non-virtual"><scope>network</scope><name>w</name></member>
+      <member refid="structnetwork_1a624719738b94a1d55de651f5dac16b79" prot="public" virt="non-virtual"><scope>network</scope><name>workspace</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="cuda_8h" kind="file" language="C++">
+    <compoundname>cuda.h</compoundname>
+    <includes refid="darknet_8h" local="yes">darknet.h</includes>
+    <includedby refid="activations_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/activations.h</includedby>
+    <includedby refid="activation__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/activation_layer.c</includedby>
+    <includedby refid="avgpool__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/avgpool_layer.h</includedby>
+    <includedby refid="avgpool__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/avgpool_layer.c</includedby>
+    <includedby refid="convolutional__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h</includedby>
+    <includedby refid="connected__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/connected_layer.c</includedby>
+    <includedby refid="cost__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/cost_layer.c</includedby>
+    <includedby refid="crnn__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crnn_layer.c</includedby>
+    <includedby refid="crop__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crop_layer.c</includedby>
+    <includedby refid="data_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/data.c</includedby>
+    <includedby refid="deconvolutional__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/deconvolutional_layer.h</includedby>
+    <includedby refid="detection__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/detection_layer.c</includedby>
+    <includedby refid="dropout__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/dropout_layer.c</includedby>
+    <includedby refid="gemm_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/gemm.c</includedby>
+    <includedby refid="gru__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/gru_layer.c</includedby>
+    <includedby refid="image_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c</includedby>
+    <includedby refid="layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/layer.c</includedby>
+    <includedby refid="local__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.h</includedby>
+    <includedby refid="lstm__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/lstm_layer.c</includedby>
+    <includedby refid="maxpool__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.h</includedby>
+    <includedby refid="maxpool__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.c</includedby>
+    <includedby refid="reorg__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/reorg_layer.h</includedby>
+    <includedby refid="region__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/region_layer.c</includedby>
+    <includedby refid="reorg__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/reorg_layer.c</includedby>
+    <includedby refid="rnn__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/rnn_layer.c</includedby>
+    <includedby refid="route__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/route_layer.c</includedby>
+    <includedby refid="shortcut__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/shortcut_layer.c</includedby>
+    <includedby refid="softmax__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/softmax_layer.c</includedby>
+    <includedby refid="_camera_8hpp" local="no">/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp</includedby>
+    <includedby refid="types_8hpp" local="no">/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp</includedby>
+    <incdepgraph>
+      <node id="693">
+        <label>stdlib.h</label>
+      </node>
+      <node id="691">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/cuda.h</label>
+        <link refid="cuda.h"/>
+        <childnode refid="692" relation="include">
+        </childnode>
+      </node>
+      <node id="692">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="693" relation="include">
+        </childnode>
+        <childnode refid="694" relation="include">
+        </childnode>
+        <childnode refid="695" relation="include">
+        </childnode>
+        <childnode refid="696" relation="include">
+        </childnode>
+      </node>
+      <node id="696">
+        <label>pthread.h</label>
+      </node>
+      <node id="695">
+        <label>string.h</label>
+      </node>
+      <node id="694">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="703">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/deconvolutional_layer.h</label>
+        <link refid="deconvolutional__layer_8h_source"/>
+      </node>
+      <node id="707">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/rnn_layer.h</label>
+        <link refid="rnn__layer_8h_source"/>
+      </node>
+      <node id="700">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h</label>
+        <link refid="convolutional__layer_8h_source"/>
+      </node>
+      <node id="701">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/connected_layer.h</label>
+        <link refid="connected__layer_8h_source"/>
+      </node>
+      <node id="697">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/cuda.h</label>
+        <link refid="cuda.h"/>
+        <childnode refid="698" relation="include">
+        </childnode>
+        <childnode refid="708" relation="include">
+        </childnode>
+        <childnode refid="700" relation="include">
+        </childnode>
+        <childnode refid="703" relation="include">
+        </childnode>
+        <childnode refid="705" relation="include">
+        </childnode>
+        <childnode refid="709" relation="include">
+        </childnode>
+        <childnode refid="710" relation="include">
+        </childnode>
+        <childnode refid="711" relation="include">
+        </childnode>
+        <childnode refid="713" relation="include">
+        </childnode>
+      </node>
+      <node id="699">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/activation_layer.h</label>
+        <link refid="activation__layer_8h_source"/>
+      </node>
+      <node id="698">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/activations.h</label>
+        <link refid="activations_8h_source"/>
+        <childnode refid="699" relation="include">
+        </childnode>
+        <childnode refid="700" relation="include">
+        </childnode>
+        <childnode refid="701" relation="include">
+        </childnode>
+        <childnode refid="702" relation="include">
+        </childnode>
+        <childnode refid="703" relation="include">
+        </childnode>
+        <childnode refid="704" relation="include">
+        </childnode>
+        <childnode refid="705" relation="include">
+        </childnode>
+        <childnode refid="706" relation="include">
+        </childnode>
+        <childnode refid="707" relation="include">
+        </childnode>
+      </node>
+      <node id="705">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.h</label>
+        <link refid="local__layer_8h_source"/>
+      </node>
+      <node id="713">
+        <label>/home/ubuntu/workspace/roboy_vision/src/zed/sl/types.hpp</label>
+        <link refid="types_8hpp_source"/>
+        <childnode refid="714" relation="include">
+        </childnode>
+      </node>
+      <node id="709">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.h</label>
+        <link refid="maxpool__layer_8h_source"/>
+      </node>
+      <node id="712">
+        <label>/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp</label>
+        <link refid="utils_8hpp_source"/>
+      </node>
+      <node id="708">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/avgpool_layer.h</label>
+        <link refid="avgpool__layer_8h_source"/>
+      </node>
+      <node id="706">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/lstm_layer.h</label>
+        <link refid="lstm__layer_8h_source"/>
+      </node>
+      <node id="710">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/reorg_layer.h</label>
+        <link refid="reorg__layer_8h_source"/>
+      </node>
+      <node id="714">
+        <label>/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp</label>
+        <link refid="_core_8hpp_source"/>
+        <childnode refid="711" relation="include">
+        </childnode>
+        <childnode refid="715" relation="include">
+        </childnode>
+      </node>
+      <node id="711">
+        <label>/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp</label>
+        <link refid="_camera_8hpp_source"/>
+        <childnode refid="712" relation="include">
+        </childnode>
+      </node>
+      <node id="702">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crnn_layer.h</label>
+        <link refid="crnn__layer_8h_source"/>
+      </node>
+      <node id="715">
+        <label>/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp</label>
+        <link refid="_mesh_8hpp_source"/>
+        <childnode refid="711" relation="include">
+        </childnode>
+      </node>
+      <node id="704">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/gru_layer.h</label>
+        <link refid="gru__layer_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CUDA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CUDA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;darknet.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>check_error(cudaError_t<sp/>status);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">cublasHandle_t<sp/>blas_handle();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*cuda_make_int_array(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*x,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cuda_random(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*x_gpu,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cuda_compare(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*x_gpu,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*x,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">dim3<sp/>cuda_gridsize(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>CUDNN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">cudnnHandle_t<sp/>cudnn_handle();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/cuda.h"/>
+  </compounddef>
+</doxygen>

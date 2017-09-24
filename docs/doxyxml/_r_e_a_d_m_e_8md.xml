@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>pyyolo</highlight></codeline>
+<codeline><highlight class="normal">pyyolo<sp/>is<sp/>a<sp/>simple<sp/>wrapper<sp/>for<sp/>YOLO.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Building</highlight></codeline>
+<codeline><highlight class="normal">1.<sp/>git<sp/>clone<sp/>--recursive<sp/>https://github.com/thomaspark-pkj/pyyolo.git</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>(optional)<sp/>Set<sp/>GPU=1<sp/>and<sp/>CUDNN=1<sp/>in<sp/>Makefile<sp/>to<sp/>use<sp/>GPU.</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>make</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>rm<sp/>-rf<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">5.<sp/>python<sp/>setup.py<sp/>build<sp/>(use<sp/>setup_gpu.py<sp/>for<sp/>GPU)</highlight></codeline>
+<codeline><highlight class="normal">6.<sp/>sudo<sp/>python<sp/>setup.py<sp/>install<sp/>(use<sp/>setup_gpu.py<sp/>for<sp/>GPU)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Test</highlight></codeline>
+<codeline><highlight class="normal">Edit<sp/>parameters<sp/>in<sp/>example.py</highlight></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">python<sp/>example.py</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">Result</highlight></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">{&apos;right&apos;:<sp/>194,<sp/>&apos;bottom&apos;:<sp/>353,<sp/>&apos;top&apos;:<sp/>264,<sp/>&apos;class&apos;:<sp/>&apos;dog&apos;,<sp/>&apos;prob&apos;:<sp/>0.8198755383491516,<sp/>&apos;left&apos;:<sp/>71}</highlight></codeline>
+<codeline><highlight class="normal">{&apos;right&apos;:<sp/>594,<sp/>&apos;bottom&apos;:<sp/>338,<sp/>&apos;top&apos;:<sp/>109,<sp/>&apos;class&apos;:<sp/>&apos;horse&apos;,<sp/>&apos;prob&apos;:<sp/>0.6106302738189697,<sp/>&apos;left&apos;:<sp/>411}</highlight></codeline>
+<codeline><highlight class="normal">{&apos;right&apos;:<sp/>274,<sp/>&apos;bottom&apos;:<sp/>381,<sp/>&apos;top&apos;:<sp/>101,<sp/>&apos;class&apos;:<sp/>&apos;person&apos;,<sp/>&apos;prob&apos;:<sp/>0.702547550201416,<sp/>&apos;left&apos;:<sp/>184}</highlight></codeline>
+<codeline><highlight class="normal">{&apos;right&apos;:<sp/>583,<sp/>&apos;bottom&apos;:<sp/>347,<sp/>&apos;top&apos;:<sp/>137,<sp/>&apos;class&apos;:<sp/>&apos;sheep&apos;,<sp/>&apos;prob&apos;:<sp/>0.7186083197593689,<sp/>&apos;left&apos;:<sp/>387}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/README.md"/>
+  </compounddef>
+</doxygen>

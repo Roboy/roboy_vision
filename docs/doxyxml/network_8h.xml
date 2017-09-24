@@ -1,0 +1,492 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="network_8h" kind="file" language="C++">
+    <compoundname>network.h</compoundname>
+    <includes refid="darknet_8h" local="yes">darknet.h</includes>
+    <includes refid="image_8h" local="yes">image.h</includes>
+    <includes refid="layer_8h" local="yes">layer.h</includes>
+    <includes refid="data_8h" local="yes">data.h</includes>
+    <includes refid="tree_8h" local="yes">tree.h</includes>
+    <includedby refid="activation__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/activation_layer.h</includedby>
+    <includedby refid="avgpool__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/avgpool_layer.h</includedby>
+    <includedby refid="convolutional__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h</includedby>
+    <includedby refid="batchnorm__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/batchnorm_layer.h</includedby>
+    <includedby refid="compare_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/compare.c</includedby>
+    <includedby refid="detection__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/detection_layer.h</includedby>
+    <includedby refid="cost__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/cost_layer.h</includedby>
+    <includedby refid="parser_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.h</includedby>
+    <includedby refid="connected__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/connected_layer.h</includedby>
+    <includedby refid="crnn__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crnn_layer.h</includedby>
+    <includedby refid="crop__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crop_layer.h</includedby>
+    <includedby refid="deconvolutional__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/deconvolutional_layer.h</includedby>
+    <includedby refid="demo_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/demo.c</includedby>
+    <includedby refid="region__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/region_layer.h</includedby>
+    <includedby refid="softmax__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/softmax_layer.h</includedby>
+    <includedby refid="dropout__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/dropout_layer.h</includedby>
+    <includedby refid="gru__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/gru_layer.h</includedby>
+    <includedby refid="local__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.h</includedby>
+    <includedby refid="lstm__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/lstm_layer.h</includedby>
+    <includedby refid="maxpool__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.h</includedby>
+    <includedby refid="network_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.c</includedby>
+    <includedby refid="rnn__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/rnn_layer.h</includedby>
+    <includedby refid="normalization__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/normalization_layer.h</includedby>
+    <includedby refid="reorg__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/reorg_layer.h</includedby>
+    <includedby refid="route__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/route_layer.h</includedby>
+    <includedby refid="shortcut__layer_8h" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/shortcut_layer.h</includedby>
+    <includedby refid="libyolo_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c</includedby>
+    <incdepgraph>
+      <node id="1366">
+        <label>box.h</label>
+        <link refid="box_8h_source"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+      </node>
+      <node id="1364">
+        <label>float.h</label>
+      </node>
+      <node id="1359">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1368">
+        <label>data.h</label>
+        <link refid="data_8h_source"/>
+        <childnode refid="1362" relation="include">
+        </childnode>
+        <childnode refid="1358" relation="include">
+        </childnode>
+        <childnode refid="1369" relation="include">
+        </childnode>
+        <childnode refid="1370" relation="include">
+        </childnode>
+        <childnode refid="1363" relation="include">
+        </childnode>
+        <childnode refid="1371" relation="include">
+        </childnode>
+      </node>
+      <node id="1357">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.h</label>
+        <link refid="network.h"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+        <childnode refid="1363" relation="include">
+        </childnode>
+        <childnode refid="1367" relation="include">
+        </childnode>
+        <childnode refid="1368" relation="include">
+        </childnode>
+        <childnode refid="1371" relation="include">
+        </childnode>
+      </node>
+      <node id="1370">
+        <label>list.h</label>
+        <link refid="list_8h_source"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+      </node>
+      <node id="1369">
+        <label>matrix.h</label>
+        <link refid="matrix_8h_source"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+      </node>
+      <node id="1358">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="1359" relation="include">
+        </childnode>
+        <childnode refid="1360" relation="include">
+        </childnode>
+        <childnode refid="1361" relation="include">
+        </childnode>
+        <childnode refid="1362" relation="include">
+        </childnode>
+      </node>
+      <node id="1367">
+        <label>layer.h</label>
+        <link refid="layer_8h_source"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+      </node>
+      <node id="1362">
+        <label>pthread.h</label>
+      </node>
+      <node id="1363">
+        <label>image.h</label>
+        <link refid="image_8h_source"/>
+        <childnode refid="1359" relation="include">
+        </childnode>
+        <childnode refid="1360" relation="include">
+        </childnode>
+        <childnode refid="1364" relation="include">
+        </childnode>
+        <childnode refid="1361" relation="include">
+        </childnode>
+        <childnode refid="1365" relation="include">
+        </childnode>
+        <childnode refid="1366" relation="include">
+        </childnode>
+        <childnode refid="1358" relation="include">
+        </childnode>
+      </node>
+      <node id="1361">
+        <label>string.h</label>
+      </node>
+      <node id="1365">
+        <label>math.h</label>
+      </node>
+      <node id="1371">
+        <label>tree.h</label>
+        <link refid="tree_8h_source"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+      </node>
+      <node id="1360">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1383">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/deconvolutional_layer.h</label>
+        <link refid="deconvolutional__layer_8h_source"/>
+      </node>
+      <node id="1391">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/rnn_layer.h</label>
+        <link refid="rnn__layer_8h_source"/>
+      </node>
+      <node id="1392">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/normalization_layer.h</label>
+        <link refid="normalization__layer_8h_source"/>
+      </node>
+      <node id="1386">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/dropout_layer.h</label>
+        <link refid="dropout__layer_8h_source"/>
+      </node>
+      <node id="1375">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h</label>
+        <link refid="convolutional__layer_8h_source"/>
+      </node>
+      <node id="1380">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/connected_layer.h</label>
+        <link refid="connected__layer_8h_source"/>
+      </node>
+      <node id="1372">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.h</label>
+        <link refid="network.h"/>
+        <childnode refid="1373" relation="include">
+        </childnode>
+        <childnode refid="1374" relation="include">
+        </childnode>
+        <childnode refid="1375" relation="include">
+        </childnode>
+        <childnode refid="1376" relation="include">
+        </childnode>
+        <childnode refid="1377" relation="include">
+        </childnode>
+        <childnode refid="1378" relation="include">
+        </childnode>
+        <childnode refid="1379" relation="include">
+        </childnode>
+        <childnode refid="1380" relation="include">
+        </childnode>
+        <childnode refid="1381" relation="include">
+        </childnode>
+        <childnode refid="1382" relation="include">
+        </childnode>
+        <childnode refid="1383" relation="include">
+        </childnode>
+        <childnode refid="1384" relation="include">
+        </childnode>
+        <childnode refid="1385" relation="include">
+        </childnode>
+        <childnode refid="1386" relation="include">
+        </childnode>
+        <childnode refid="1387" relation="include">
+        </childnode>
+        <childnode refid="1388" relation="include">
+        </childnode>
+        <childnode refid="1389" relation="include">
+        </childnode>
+        <childnode refid="1390" relation="include">
+        </childnode>
+        <childnode refid="1391" relation="include">
+        </childnode>
+        <childnode refid="1392" relation="include">
+        </childnode>
+        <childnode refid="1393" relation="include">
+        </childnode>
+        <childnode refid="1394" relation="include">
+        </childnode>
+        <childnode refid="1395" relation="include">
+        </childnode>
+      </node>
+      <node id="1379">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.h</label>
+        <link refid="parser_8h_source"/>
+      </node>
+      <node id="1373">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/activation_layer.h</label>
+        <link refid="activation__layer_8h_source"/>
+      </node>
+      <node id="1377">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/detection_layer.h</label>
+        <link refid="detection__layer_8h_source"/>
+      </node>
+      <node id="1388">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.h</label>
+        <link refid="local__layer_8h_source"/>
+      </node>
+      <node id="1378">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/cost_layer.h</label>
+        <link refid="cost__layer_8h_source"/>
+      </node>
+      <node id="1376">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/batchnorm_layer.h</label>
+        <link refid="batchnorm__layer_8h_source"/>
+      </node>
+      <node id="1394">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/route_layer.h</label>
+        <link refid="route__layer_8h_source"/>
+      </node>
+      <node id="1390">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/maxpool_layer.h</label>
+        <link refid="maxpool__layer_8h_source"/>
+      </node>
+      <node id="1384">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/region_layer.h</label>
+        <link refid="region__layer_8h_source"/>
+      </node>
+      <node id="1374">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/avgpool_layer.h</label>
+        <link refid="avgpool__layer_8h_source"/>
+      </node>
+      <node id="1389">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/lstm_layer.h</label>
+        <link refid="lstm__layer_8h_source"/>
+      </node>
+      <node id="1393">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/reorg_layer.h</label>
+        <link refid="reorg__layer_8h_source"/>
+      </node>
+      <node id="1385">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/softmax_layer.h</label>
+        <link refid="softmax__layer_8h_source"/>
+      </node>
+      <node id="1381">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crnn_layer.h</label>
+        <link refid="crnn__layer_8h_source"/>
+      </node>
+      <node id="1395">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/shortcut_layer.h</label>
+        <link refid="shortcut__layer_8h_source"/>
+      </node>
+      <node id="1387">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/gru_layer.h</label>
+        <link refid="gru__layer_8h_source"/>
+      </node>
+      <node id="1382">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crop_layer.h</label>
+        <link refid="crop__layer_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="network_8h_1a07a0d80b8ee64d2219c8441593606434" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void compare_networks</definition>
+        <argsstring>(network n1, network n2, data d)</argsstring>
+        <name>compare_networks</name>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>n1</declname>
+        </param>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>n2</declname>
+        </param>
+        <param>
+          <type><ref refid="structdata" kindref="compound">data</ref></type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.h" line="18" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.c" bodystart="549" bodyend="572"/>
+      </memberdef>
+      <memberdef kind="function" id="network_8h_1addd27f6072159c492dde3da46567734b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* get_layer_string</definition>
+        <argsstring>(LAYER_TYPE a)</argsstring>
+        <name>get_layer_string</name>
+        <param>
+          <type>LAYER_TYPE</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.h" line="19" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.c" bodystart="118" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="network_8h_1ad2dcde69603d71857d11484ae99bd8fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+        <definition>network make_network</definition>
+        <argsstring>(int n)</argsstring>
+        <name>make_network</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.h" line="21" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.c" bodystart="171" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="network_8h_1aaa77e8c97a6c4963b95512f377725e0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float network_accuracy_multi</definition>
+        <argsstring>(network net, data d, int n)</argsstring>
+        <name>network_accuracy_multi</name>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <param>
+          <type><ref refid="structdata" kindref="compound">data</ref></type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.h" line="24" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.c" bodystart="601" bodyend="607"/>
+      </memberdef>
+      <memberdef kind="function" id="network_8h_1a7a804bdac41f35d78938f15579109979" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int get_predicted_class_network</definition>
+        <argsstring>(network net)</argsstring>
+        <name>get_predicted_class_network</name>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.h" line="25" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.c" bodystart="237" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="network_8h_1aded1fe29d38b99e33a816677a4c01078" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_network</definition>
+        <argsstring>(network net)</argsstring>
+        <name>print_network</name>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.h" line="26" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.c" bodystart="532" bodyend="547"/>
+      </memberdef>
+      <memberdef kind="function" id="network_8h_1a6ae710d2d9ad32cfdec1f925f48c2b50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int resize_network</definition>
+        <argsstring>(network *net, int w, int h)</argsstring>
+        <name>resize_network</name>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref> *</type>
+          <declname>net</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.h" line="27" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.c" bodystart="324" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="network_8h_1a580b7921ad9619b4b41009bcdc486e1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void calc_network_cost</definition>
+        <argsstring>(network net)</argsstring>
+        <name>calc_network_cost</name>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.h" line="28" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.c" bodystart="223" bodyend="235"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Oh<sp/>boy,<sp/>why<sp/>am<sp/>I<sp/>about<sp/>to<sp/>do<sp/>this....</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>NETWORK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NETWORK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;darknet.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;image.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;layer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;data.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;tree.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>train_network_datum_gpu(<ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*network_predict_gpu(<ref refid="structnetwork" kindref="compound">network</ref><sp/>net,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*input);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pull_network_output(<ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>compare_networks(<ref refid="structnetwork" kindref="compound">network</ref><sp/>n1,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>n2,<sp/><ref refid="structdata" kindref="compound">data</ref><sp/>d);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*get_layer_string(LAYER_TYPE<sp/>a);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="structnetwork" kindref="compound">network</ref><sp/>make_network(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>network_accuracy_multi(<ref refid="structnetwork" kindref="compound">network</ref><sp/>net,<sp/><ref refid="structdata" kindref="compound">data</ref><sp/>d,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>get_predicted_class_network(<ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_network(<ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>resize_network(<ref refid="structnetwork" kindref="compound">network</ref><sp/>*net,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calc_network_cost(<ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.h"/>
+  </compounddef>
+</doxygen>

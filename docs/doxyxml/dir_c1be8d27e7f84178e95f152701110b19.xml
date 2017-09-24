@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_c1be8d27e7f84178e95f152701110b19" kind="dir">
+    <compoundname>/home/ubuntu/workspace/roboy_vision/src/data</compoundname>
+    <innerdir refid="dir_999b82adbf8b7669bcf863886e7d11a0">/home/ubuntu/workspace/roboy_vision/src/data/labels</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/data/"/>
+  </compounddef>
+</doxygen>

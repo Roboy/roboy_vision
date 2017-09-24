@@ -1,0 +1,1224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="blas_8h" kind="file" language="C++">
+    <compoundname>blas.h</compoundname>
+    <includes refid="darknet_8h" local="yes">darknet.h</includes>
+    <includedby refid="activation__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/activation_layer.c</includedby>
+    <includedby refid="batchnorm__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/batchnorm_layer.c</includedby>
+    <includedby refid="blas_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.c</includedby>
+    <includedby refid="connected__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/connected_layer.c</includedby>
+    <includedby refid="convolutional__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.c</includedby>
+    <includedby refid="cost__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/cost_layer.c</includedby>
+    <includedby refid="crnn__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crnn_layer.c</includedby>
+    <includedby refid="deconvolutional__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/deconvolutional_layer.c</includedby>
+    <includedby refid="detection__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/detection_layer.c</includedby>
+    <includedby refid="gru__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/gru_layer.c</includedby>
+    <includedby refid="image_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/image.c</includedby>
+    <includedby refid="local__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/local_layer.c</includedby>
+    <includedby refid="lstm__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/lstm_layer.c</includedby>
+    <includedby refid="matrix_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/matrix.c</includedby>
+    <includedby refid="network_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.c</includedby>
+    <includedby refid="normalization__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/normalization_layer.c</includedby>
+    <includedby refid="parser_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c</includedby>
+    <includedby refid="region__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/region_layer.c</includedby>
+    <includedby refid="reorg__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/reorg_layer.c</includedby>
+    <includedby refid="rnn__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/rnn_layer.c</includedby>
+    <includedby refid="route__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/route_layer.c</includedby>
+    <includedby refid="shortcut__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/shortcut_layer.c</includedby>
+    <includedby refid="softmax__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/softmax_layer.c</includedby>
+    <incdepgraph>
+      <node id="400">
+        <label>stdlib.h</label>
+      </node>
+      <node id="399">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="400" relation="include">
+        </childnode>
+        <childnode refid="401" relation="include">
+        </childnode>
+        <childnode refid="402" relation="include">
+        </childnode>
+        <childnode refid="403" relation="include">
+        </childnode>
+      </node>
+      <node id="403">
+        <label>pthread.h</label>
+      </node>
+      <node id="402">
+        <label>string.h</label>
+      </node>
+      <node id="398">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h</label>
+        <link refid="blas.h"/>
+        <childnode refid="399" relation="include">
+        </childnode>
+      </node>
+      <node id="401">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="blas_8h_1a342ca7301ce3569b4e709b26d0c6a824" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void flatten</definition>
+        <argsstring>(float *x, int size, int layers, int batch, int forward)</argsstring>
+        <name>flatten</name>
+        <param>
+          <type>float *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>layers</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>forward</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="5" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.c" bodystart="32" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1a50faafc66cb2a46626f678e7c23b31a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pm</definition>
+        <argsstring>(int M, int N, float *A)</argsstring>
+        <name>pm</name>
+        <param>
+          <type>int</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="6" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/utils.c" bodystart="171" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1ac381fb40806eeb0c63fdb1d7e029bfde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float *</type>
+        <definition>float* random_matrix</definition>
+        <argsstring>(int rows, int cols)</argsstring>
+        <name>random_matrix</name>
+        <param>
+          <type>int</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cols</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="7" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/gemm.c" bodystart="30" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1abec5c296a1f7f8fb79e08ca2c1ab8c53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void time_random_matrix</definition>
+        <argsstring>(int TA, int TB, int m, int k, int n)</argsstring>
+        <name>time_random_matrix</name>
+        <param>
+          <type>int</type>
+          <declname>TA</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>TB</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="8" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/gemm.c" bodystart="40" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1a35a86f53b12419497b789d1b115ca244" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void reorg_cpu</definition>
+        <argsstring>(float *x, int w, int h, int c, int batch, int stride, int forward, float *out)</argsstring>
+        <name>reorg_cpu</name>
+        <param>
+          <type>float *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stride</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>forward</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="9" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.c" bodystart="9" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1ad4152e1ba8b8c9d4f55dca4f77fa369d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_blas</definition>
+        <argsstring>()</argsstring>
+        <name>test_blas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="11" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1a60c968dc197b97a03b399f557235e7a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void inter_cpu</definition>
+        <argsstring>(int NX, float *X, int NY, float *Y, int B, float *OUT)</argsstring>
+        <name>inter_cpu</name>
+        <param>
+          <type>int</type>
+          <declname>NX</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>NY</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>Y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>OUT</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="13" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.c" bodystart="191" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1a2c06810d0224f04aa209bad96c756c82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void deinter_cpu</definition>
+        <argsstring>(int NX, float *X, int NY, float *Y, int B, float *OUT)</argsstring>
+        <name>deinter_cpu</name>
+        <param>
+          <type>int</type>
+          <declname>NX</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>NY</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>Y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>OUT</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="14" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.c" bodystart="175" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1a36bc6cbf78387dee1d17efdee986906e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mult_add_into_cpu</definition>
+        <argsstring>(int N, float *X, float *Y, float *Z)</argsstring>
+        <name>mult_add_into_cpu</name>
+        <param>
+          <type>int</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>Y</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>Z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="15" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.c" bodystart="211" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1aca992f6ed5cd6b7abca80bca89df397f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void const_cpu</definition>
+        <argsstring>(int N, float ALPHA, float *X, int INCX)</argsstring>
+        <name>const_cpu</name>
+        <param>
+          <type>int</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ALPHA</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>INCX</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="17" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.c" bodystart="139" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1a2ec50100d7aaab656a1032e4d36f9226" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void constrain_gpu</definition>
+        <argsstring>(int N, float ALPHA, float *X, int INCX)</argsstring>
+        <name>constrain_gpu</name>
+        <param>
+          <type>int</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ALPHA</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>INCX</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1a16c351b80490408aa433f16fa6e5bf40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pow_cpu</definition>
+        <argsstring>(int N, float ALPHA, float *X, int INCX, float *Y, int INCY)</argsstring>
+        <name>pow_cpu</name>
+        <param>
+          <type>int</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ALPHA</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>INCX</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>Y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>INCY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="19" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.c" bodystart="151" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1a265d9895cb0bd21d1e87aa1285f08914" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mul_cpu</definition>
+        <argsstring>(int N, float *X, int INCX, float *Y, int INCY)</argsstring>
+        <name>mul_cpu</name>
+        <param>
+          <type>int</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>INCX</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>Y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>INCY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="20" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.c" bodystart="145" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1a0e56f560dd08e165d6b5439ce93c7859" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fill_cpu</definition>
+        <argsstring>(int N, float ALPHA, float *X, int INCX)</argsstring>
+        <name>fill_cpu</name>
+        <param>
+          <type>int</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ALPHA</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>INCX</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="22" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.c" bodystart="169" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1a77e3437c6b4b2145550ee11d13634afc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float dot_cpu</definition>
+        <argsstring>(int N, float *X, int INCX, float *Y, int INCY)</argsstring>
+        <name>dot_cpu</name>
+        <param>
+          <type>int</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>INCX</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>Y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>INCY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="23" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.c" bodystart="254" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1a1bb12768d691b88dec3f6c7539adff47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_gpu_blas</definition>
+        <argsstring>()</argsstring>
+        <name>test_gpu_blas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1a53bd02f1fc7a910986ff52f1a572ea35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shortcut_cpu</definition>
+        <argsstring>(int batch, int w1, int h1, int c1, float *add, int w2, int h2, int c2, float *out)</argsstring>
+        <name>shortcut_cpu</name>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>add</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c2</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="25" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.c" bodystart="68" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1aa9b8a32d8aae40aa9a7834e58e09974f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mean_cpu</definition>
+        <argsstring>(float *x, int batch, int filters, int spatial, float *mean)</argsstring>
+        <name>mean_cpu</name>
+        <param>
+          <type>float *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>filters</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>spatial</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>mean</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="27" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.c" bodystart="94" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1a0b814616350ba7a38fc885e0497011a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void variance_cpu</definition>
+        <argsstring>(float *x, float *mean, int batch, int filters, int spatial, float *variance)</argsstring>
+        <name>variance_cpu</name>
+        <param>
+          <type>float *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>mean</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>filters</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>spatial</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>variance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="28" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.c" bodystart="110" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1ad2afef6b2dde26f2a1098e42f8b48e8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void scale_bias</definition>
+        <argsstring>(float *output, float *scales, int batch, int n, int size)</argsstring>
+        <name>scale_bias</name>
+        <param>
+          <type>float *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>scales</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="30" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.c" bodystart="411" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1ad294f39c089d9017cbf8614bc584409d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void backward_scale_cpu</definition>
+        <argsstring>(float *x_norm, float *delta, int batch, int n, int size, float *scale_updates)</argsstring>
+        <name>backward_scale_cpu</name>
+        <param>
+          <type>float *</type>
+          <declname>x_norm</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>delta</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>scale_updates</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="31" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/batchnorm_layer.c" bodystart="72" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1a87f9e84fdeb71dfa36fcd5fc6a65f4fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mean_delta_cpu</definition>
+        <argsstring>(float *delta, float *variance, int batch, int filters, int spatial, float *mean_delta)</argsstring>
+        <name>mean_delta_cpu</name>
+        <param>
+          <type>float *</type>
+          <declname>delta</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>variance</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>filters</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>spatial</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>mean_delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="32" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/batchnorm_layer.c" bodystart="87" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1a5468ae76e1f7a1cfa35cf3c974d2ef8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void variance_delta_cpu</definition>
+        <argsstring>(float *x, float *delta, float *mean, float *variance, int batch, int filters, int spatial, float *variance_delta)</argsstring>
+        <name>variance_delta_cpu</name>
+        <param>
+          <type>float *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>delta</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>mean</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>variance</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>filters</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>spatial</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>variance_delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="33" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/batchnorm_layer.c" bodystart="102" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1a85baa02a320f2f8e6939d775c38b357c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void normalize_delta_cpu</definition>
+        <argsstring>(float *x, float *mean, float *variance, float *mean_delta, float *variance_delta, int batch, int filters, int spatial, float *delta)</argsstring>
+        <name>normalize_delta_cpu</name>
+        <param>
+          <type>float *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>mean</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>variance</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>mean_delta</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>variance_delta</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>filters</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>spatial</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="34" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/batchnorm_layer.c" bodystart="117" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1a520d4b34b247df84cf9a5f632cec4c12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void smooth_l1_cpu</definition>
+        <argsstring>(int n, float *pred, float *truth, float *delta, float *error)</argsstring>
+        <name>smooth_l1_cpu</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>pred</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>truth</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>delta</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="36" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.c" bodystart="217" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1afb4d0ba7eb3b84de29d4aeed84fdd514" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void l2_cpu</definition>
+        <argsstring>(int n, float *pred, float *truth, float *delta, float *error)</argsstring>
+        <name>l2_cpu</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>pred</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>truth</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>delta</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="37" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.c" bodystart="244" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1ae49b2e6518954df9e14463e82d3c5058" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void l1_cpu</definition>
+        <argsstring>(int n, float *pred, float *truth, float *delta, float *error)</argsstring>
+        <name>l1_cpu</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>pred</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>truth</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>delta</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="38" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.c" bodystart="234" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1a99500a4eaf41c0cda99997fbbd72568e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void weighted_sum_cpu</definition>
+        <argsstring>(float *a, float *b, float *s, int num, float *c)</argsstring>
+        <name>weighted_sum_cpu</name>
+        <param>
+          <type>float *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="39" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.c" bodystart="50" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1a88db58ad177115373264d3f52828fe5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void weighted_delta_cpu</definition>
+        <argsstring>(float *a, float *b, float *s, float *da, float *db, float *ds, int n, float *dc)</argsstring>
+        <name>weighted_delta_cpu</name>
+        <param>
+          <type>float *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>da</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>db</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>ds</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>dc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="40" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.c" bodystart="58" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1a31c4f0273f3c5639ae7734d24e11274a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void softmax</definition>
+        <argsstring>(float *input, int n, float temp, int stride, float *output)</argsstring>
+        <name>softmax</name>
+        <param>
+          <type>float *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>temp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stride</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="42" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.c" bodystart="262" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="blas_8h_1ad328f3d0648b19a98fafc221e43ed73d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void softmax_cpu</definition>
+        <argsstring>(float *input, int n, int batch, int batch_offset, int groups, int group_offset, int stride, float temp, float *output)</argsstring>
+        <name>softmax_cpu</name>
+        <param>
+          <type>float *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>batch_offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>groups</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>group_offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stride</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>temp</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h" line="43" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.c" bodystart="281" bodyend="289"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>BLAS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLAS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;darknet.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>flatten(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>layers,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>forward);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pm(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>M,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*A);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*random_matrix(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rows,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cols);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>time_random_matrix(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>TA,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>TB,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reorg_cpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stride,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>forward,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*out);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_blas();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>inter_cpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>NX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*X,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>NY,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*Y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>B,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*OUT);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>deinter_cpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>NX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*X,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>NY,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*Y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>B,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*OUT);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mult_add_into_cpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*X,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*Y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*Z);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>const_cpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ALPHA,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*X,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INCX);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>constrain_gpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ALPHA,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>X,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INCX);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pow_cpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ALPHA,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*X,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INCX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*Y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INCY);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mul_cpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*X,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INCX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*Y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INCY);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fill_cpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ALPHA,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>X,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INCX);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dot_cpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*X,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INCX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*Y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INCY);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_gpu_blas();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>shortcut_cpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*add,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*out);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mean_cpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filters,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spatial,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*mean);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>variance_cpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*mean,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filters,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spatial,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*variance);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scale_bias(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*output,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*scales,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_scale_cpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*x_norm,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*delta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*scale_updates);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mean_delta_cpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*delta,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*variance,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filters,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spatial,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*mean_delta);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/>variance_delta_cpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*delta,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*mean,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*variance,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filters,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spatial,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*variance_delta);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>normalize_delta_cpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*mean,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*variance,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*mean_delta,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*variance_delta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filters,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spatial,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*delta);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>smooth_l1_cpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*pred,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*truth,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*delta,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*error);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>l2_cpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*pred,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*truth,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*delta,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*error);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>l1_cpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*pred,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*truth,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*delta,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*error);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>weighted_sum_cpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*a,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*s,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*c);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>weighted_delta_cpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*a,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*s,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*da,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*db,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*ds,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*dc);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>softmax(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*input,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>temp,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stride,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*output);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>softmax_cpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*input,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch_offset,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>groups,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>group_offset,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stride,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>temp,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*output);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cuda.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;tree.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>axpy_gpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ALPHA,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>X,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INCX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>Y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INCY);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>axpy_gpu_offset(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ALPHA,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>X,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>OFFX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INCX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>Y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>OFFY,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INCY);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_gpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>X,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INCX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>Y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INCY);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_gpu_offset(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>X,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>OFFX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INCX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>Y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>OFFY,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INCY);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add_gpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ALPHA,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>X,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INCX);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>supp_gpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ALPHA,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>X,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INCX);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mask_gpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>X,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>mask_num,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>mask);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scale_mask_gpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>X,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>mask_num,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>mask,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scale);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>const_gpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ALPHA,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*X,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INCX);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pow_gpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ALPHA,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*X,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INCX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*Y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INCY);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mul_gpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*X,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INCX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*Y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INCY);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mean_gpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filters,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spatial,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*mean);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>variance_gpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*mean,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filters,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spatial,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*variance);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>normalize_gpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*mean,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*variance,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filters,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spatial);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>normalize_delta_gpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*mean,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*variance,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*mean_delta,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*variance_delta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filters,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spatial,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*delta);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fast_mean_delta_gpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*delta,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*variance,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filters,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spatial,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*mean_delta);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fast_variance_delta_gpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*delta,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*mean,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*variance,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filters,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spatial,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*variance_delta);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fast_variance_gpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*mean,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filters,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spatial,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*variance);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fast_mean_gpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filters,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spatial,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*mean);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>shortcut_gpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*add,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*out);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scale_bias_gpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*output,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*biases,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_scale_gpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*x_norm,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*delta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*scale_updates);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scale_bias_gpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*output,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*biases,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add_bias_gpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*output,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*biases,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_bias_gpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*bias_updates,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*delta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>smooth_l1_gpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*pred,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*truth,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*delta,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*error);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>l2_gpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*pred,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*truth,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*delta,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*error);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>l1_gpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*pred,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*truth,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*delta,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*error);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>weighted_delta_gpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*a,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*s,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*da,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*db,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*ds,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*dc);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>weighted_sum_gpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*a,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*s,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*c);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mult_add_into_gpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*a,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*c);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>inter_gpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>NX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*X,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>NY,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*Y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>B,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*OUT);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>deinter_gpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>NX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*X,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>NY,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*Y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>B,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*OUT);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reorg_gpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stride,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>forward,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*out);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>softmax_gpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*input,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch_offset,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>groups,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>group_offset,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stride,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>temp,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*output);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>adam_update_gpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*w,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*d,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*m,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*v,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>B1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>B2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>eps,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>decay,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rate,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>adam_gpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*m,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*v,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>B1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>B2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rate,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>eps,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>flatten_gpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spatial,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>layers,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>forward,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*out);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>softmax_tree(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*input,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spatial,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stride,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>temp,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*output,<sp/><ref refid="structtree" kindref="compound">tree</ref><sp/>hier);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/blas.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,644 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="convolutional__layer_8h" kind="file" language="C++">
+    <compoundname>convolutional_layer.h</compoundname>
+    <includes refid="cuda_8h" local="yes">cuda.h</includes>
+    <includes refid="image_8h" local="yes">image.h</includes>
+    <includes refid="activations_8h" local="yes">activations.h</includes>
+    <includes refid="layer_8h" local="yes">layer.h</includes>
+    <includes refid="network_8h" local="yes">network.h</includes>
+    <includedby refid="batchnorm__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/batchnorm_layer.c</includedby>
+    <includedby refid="connected__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/connected_layer.c</includedby>
+    <includedby refid="convolutional__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.c</includedby>
+    <includedby refid="crnn__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crnn_layer.c</includedby>
+    <includedby refid="deconvolutional__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/deconvolutional_layer.c</includedby>
+    <includedby refid="network_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.c</includedby>
+    <includedby refid="parser_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c</includedby>
+    <incdepgraph>
+      <node id="561">
+        <label>box.h</label>
+        <link refid="box_8h_source"/>
+        <childnode refid="553" relation="include">
+        </childnode>
+      </node>
+      <node id="559">
+        <label>float.h</label>
+      </node>
+      <node id="551">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h</label>
+        <link refid="convolutional_layer.h"/>
+        <childnode refid="552" relation="include">
+        </childnode>
+        <childnode refid="558" relation="include">
+        </childnode>
+        <childnode refid="562" relation="include">
+        </childnode>
+        <childnode refid="563" relation="include">
+        </childnode>
+        <childnode refid="564" relation="include">
+        </childnode>
+      </node>
+      <node id="554">
+        <label>stdlib.h</label>
+      </node>
+      <node id="552">
+        <label>cuda.h</label>
+        <link refid="cuda_8h_source"/>
+        <childnode refid="553" relation="include">
+        </childnode>
+      </node>
+      <node id="565">
+        <label>data.h</label>
+        <link refid="data_8h_source"/>
+        <childnode refid="557" relation="include">
+        </childnode>
+        <childnode refid="553" relation="include">
+        </childnode>
+        <childnode refid="566" relation="include">
+        </childnode>
+        <childnode refid="567" relation="include">
+        </childnode>
+        <childnode refid="558" relation="include">
+        </childnode>
+        <childnode refid="568" relation="include">
+        </childnode>
+      </node>
+      <node id="564">
+        <label>network.h</label>
+        <link refid="network_8h_source"/>
+        <childnode refid="553" relation="include">
+        </childnode>
+        <childnode refid="558" relation="include">
+        </childnode>
+        <childnode refid="563" relation="include">
+        </childnode>
+        <childnode refid="565" relation="include">
+        </childnode>
+        <childnode refid="568" relation="include">
+        </childnode>
+      </node>
+      <node id="562">
+        <label>activations.h</label>
+        <link refid="activations_8h_source"/>
+        <childnode refid="553" relation="include">
+        </childnode>
+        <childnode refid="552" relation="include">
+        </childnode>
+        <childnode refid="560" relation="include">
+        </childnode>
+      </node>
+      <node id="567">
+        <label>list.h</label>
+        <link refid="list_8h_source"/>
+        <childnode refid="553" relation="include">
+        </childnode>
+      </node>
+      <node id="566">
+        <label>matrix.h</label>
+        <link refid="matrix_8h_source"/>
+        <childnode refid="553" relation="include">
+        </childnode>
+      </node>
+      <node id="553">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="554" relation="include">
+        </childnode>
+        <childnode refid="555" relation="include">
+        </childnode>
+        <childnode refid="556" relation="include">
+        </childnode>
+        <childnode refid="557" relation="include">
+        </childnode>
+      </node>
+      <node id="563">
+        <label>layer.h</label>
+        <link refid="layer_8h_source"/>
+        <childnode refid="553" relation="include">
+        </childnode>
+      </node>
+      <node id="557">
+        <label>pthread.h</label>
+      </node>
+      <node id="558">
+        <label>image.h</label>
+        <link refid="image_8h_source"/>
+        <childnode refid="554" relation="include">
+        </childnode>
+        <childnode refid="555" relation="include">
+        </childnode>
+        <childnode refid="559" relation="include">
+        </childnode>
+        <childnode refid="556" relation="include">
+        </childnode>
+        <childnode refid="560" relation="include">
+        </childnode>
+        <childnode refid="561" relation="include">
+        </childnode>
+        <childnode refid="553" relation="include">
+        </childnode>
+      </node>
+      <node id="556">
+        <label>string.h</label>
+      </node>
+      <node id="560">
+        <label>math.h</label>
+      </node>
+      <node id="568">
+        <label>tree.h</label>
+        <link refid="tree_8h_source"/>
+        <childnode refid="553" relation="include">
+        </childnode>
+      </node>
+      <node id="555">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="convolutional__layer_8h_1a3d5c19fbd473fc9ef62fec3f3a31b318" prot="public" static="no">
+        <type><ref refid="structlayer" kindref="compound">layer</ref></type>
+        <definition>typedef layer convolutional_layer</definition>
+        <argsstring></argsstring>
+        <name>convolutional_layer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h" line="10" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="convolutional__layer_8h_1a94af3fcd581f20f2f616155595940e1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlayer" kindref="compound">convolutional_layer</ref></type>
+        <definition>convolutional_layer make_convolutional_layer</definition>
+        <argsstring>(int batch, int h, int w, int c, int n, int size, int stride, int padding, ACTIVATION activation, int batch_normalize, int binary, int xnor, int adam)</argsstring>
+        <name>make_convolutional_layer</name>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stride</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>padding</declname>
+        </param>
+        <param>
+          <type>ACTIVATION</type>
+          <declname>activation</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>batch_normalize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>binary</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>xnor</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>adam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h" line="28" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.c" bodystart="166" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="convolutional__layer_8h_1a291c28a7422b93446758e12f95944bb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void resize_convolutional_layer</definition>
+        <argsstring>(convolutional_layer *layer, int w, int h)</argsstring>
+        <name>resize_convolutional_layer</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">convolutional_layer</ref> *</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h" line="29" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.c" bodystart="358" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="convolutional__layer_8h_1af06089b527a802f3f4f53be471fad8ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void forward_convolutional_layer</definition>
+        <argsstring>(const convolutional_layer layer, network net)</argsstring>
+        <name>forward_convolutional_layer</name>
+        <param>
+          <type>const <ref refid="structlayer" kindref="compound">convolutional_layer</ref></type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h" line="30" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.c" bodystart="433" bodyend="473"/>
+      </memberdef>
+      <memberdef kind="function" id="convolutional__layer_8h_1a9bede9546c99ac4e1ab8ba3523d9d62b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void update_convolutional_layer</definition>
+        <argsstring>(convolutional_layer layer, update_args a)</argsstring>
+        <name>update_convolutional_layer</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">convolutional_layer</ref></type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type><ref refid="structupdate__args" kindref="compound">update_args</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h" line="31" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.c" bodystart="513" bodyend="532"/>
+      </memberdef>
+      <memberdef kind="function" id="convolutional__layer_8h_1af891e49008bd5cc4651f38bc9feddffe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structimage" kindref="compound">image</ref> *</type>
+        <definition>image* visualize_convolutional_layer</definition>
+        <argsstring>(convolutional_layer layer, char *window, image *prev_weights)</argsstring>
+        <name>visualize_convolutional_layer</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">convolutional_layer</ref></type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="structimage" kindref="compound">image</ref> *</type>
+          <declname>prev_weights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h" line="32" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.c" bodystart="584" bodyend="597"/>
+      </memberdef>
+      <memberdef kind="function" id="convolutional__layer_8h_1aa2ba9c5688fe3b221afba283cd60dd04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void binarize_weights</definition>
+        <argsstring>(float *weights, int n, int size, float *binary)</argsstring>
+        <name>binarize_weights</name>
+        <param>
+          <type>float *</type>
+          <declname>weights</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>binary</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h" line="33" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.c" bodystart="28" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="convolutional__layer_8h_1a00eb21237b64c4f49eabe4e7f3f2cef1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void swap_binary</definition>
+        <argsstring>(convolutional_layer *l)</argsstring>
+        <name>swap_binary</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">convolutional_layer</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h" line="34" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.c" bodystart="15" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="convolutional__layer_8h_1a32000d09bcfb7d6b65b07d5c4654ddb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void binarize_weights2</definition>
+        <argsstring>(float *weights, int n, int size, char *binary, float *scales)</argsstring>
+        <name>binarize_weights2</name>
+        <param>
+          <type>float *</type>
+          <declname>weights</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>binary</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>scales</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="convolutional__layer_8h_1a9ca66a8948216280fa732c63667198d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void backward_convolutional_layer</definition>
+        <argsstring>(convolutional_layer layer, network net)</argsstring>
+        <name>backward_convolutional_layer</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">convolutional_layer</ref></type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h" line="37" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.c" bodystart="475" bodyend="511"/>
+      </memberdef>
+      <memberdef kind="function" id="convolutional__layer_8h_1ad6cf2da6713f5eb405eb21cb5bfe8dc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void add_bias</definition>
+        <argsstring>(float *output, float *biases, int batch, int n, int size)</argsstring>
+        <name>add_bias</name>
+        <param>
+          <type>float *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>biases</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h" line="39" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.c" bodystart="399" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="convolutional__layer_8h_1a3fe122b5a5807135e39655276f708d98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void backward_bias</definition>
+        <argsstring>(float *bias_updates, float *delta, int batch, int n, int size)</argsstring>
+        <name>backward_bias</name>
+        <param>
+          <type>float *</type>
+          <declname>bias_updates</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>delta</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h" line="40" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.c" bodystart="423" bodyend="431"/>
+      </memberdef>
+      <memberdef kind="function" id="convolutional__layer_8h_1aa69edcecd3e3a89897907ec2efd6413f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structimage" kindref="compound">image</ref></type>
+        <definition>image get_convolutional_image</definition>
+        <argsstring>(convolutional_layer layer)</argsstring>
+        <name>get_convolutional_image</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">convolutional_layer</ref></type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h" line="42" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.c" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="convolutional__layer_8h_1a083c004da3175489eb440a93fc5beed6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structimage" kindref="compound">image</ref></type>
+        <definition>image get_convolutional_delta</definition>
+        <argsstring>(convolutional_layer layer)</argsstring>
+        <name>get_convolutional_delta</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">convolutional_layer</ref></type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h" line="43" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.c" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="convolutional__layer_8h_1aa7414f39a78cf8f5294dbd497e459501" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structimage" kindref="compound">image</ref></type>
+        <definition>image get_convolutional_weight</definition>
+        <argsstring>(convolutional_layer layer, int i)</argsstring>
+        <name>get_convolutional_weight</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">convolutional_layer</ref></type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h" line="44" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.c" bodystart="535" bodyend="541"/>
+      </memberdef>
+      <memberdef kind="function" id="convolutional__layer_8h_1a3ff29e84717c593951e350574cdf5508" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int convolutional_out_height</definition>
+        <argsstring>(convolutional_layer layer)</argsstring>
+        <name>convolutional_out_height</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">convolutional_layer</ref></type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h" line="46" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.c" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="convolutional__layer_8h_1a66d5cb61b1475c871c5c3812dfc30756" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int convolutional_out_width</definition>
+        <argsstring>(convolutional_layer layer)</argsstring>
+        <name>convolutional_out_width</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">convolutional_layer</ref></type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h" line="47" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.c" bodystart="71" bodyend="74"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CONVOLUTIONAL_LAYER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONVOLUTIONAL_LAYER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cuda.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;image.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;activations.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;layer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;network.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structlayer" kindref="compound">layer</ref><sp/><ref refid="structlayer" kindref="compound">convolutional_layer</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>forward_convolutional_layer_gpu(<ref refid="structlayer" kindref="compound">convolutional_layer</ref><sp/><ref refid="structlayer" kindref="compound">layer</ref>,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_convolutional_layer_gpu(<ref refid="structlayer" kindref="compound">convolutional_layer</ref><sp/><ref refid="structlayer" kindref="compound">layer</ref>,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update_convolutional_layer_gpu(<ref refid="structlayer" kindref="compound">convolutional_layer</ref><sp/><ref refid="structlayer" kindref="compound">layer</ref>,<sp/><ref refid="structupdate__args" kindref="compound">update_args</ref><sp/>a);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>push_convolutional_layer(<ref refid="structlayer" kindref="compound">convolutional_layer</ref><sp/><ref refid="structlayer" kindref="compound">layer</ref>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pull_convolutional_layer(<ref refid="structlayer" kindref="compound">convolutional_layer</ref><sp/><ref refid="structlayer" kindref="compound">layer</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add_bias_gpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*output,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*biases,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_bias_gpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*bias_updates,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*delta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>adam_update_gpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*w,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*d,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*m,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*v,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>B1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>B2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>eps,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>decay,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rate,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>CUDNN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cudnn_convolutional_setup(<ref refid="structlayer" kindref="compound">layer</ref><sp/>*l);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><ref refid="structlayer" kindref="compound">convolutional_layer</ref><sp/>make_convolutional_layer(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stride,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>padding,<sp/>ACTIVATION<sp/>activation,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch_normalize,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>binary,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>xnor,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>adam);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>resize_convolutional_layer(<ref refid="structlayer" kindref="compound">convolutional_layer</ref><sp/>*<ref refid="structlayer" kindref="compound">layer</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>forward_convolutional_layer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlayer" kindref="compound">convolutional_layer</ref><sp/><ref refid="structlayer" kindref="compound">layer</ref>,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update_convolutional_layer(<ref refid="structlayer" kindref="compound">convolutional_layer</ref><sp/><ref refid="structlayer" kindref="compound">layer</ref>,<sp/><ref refid="structupdate__args" kindref="compound">update_args</ref><sp/>a);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><ref refid="structimage" kindref="compound">image</ref><sp/>*visualize_convolutional_layer(<ref refid="structlayer" kindref="compound">convolutional_layer</ref><sp/><ref refid="structlayer" kindref="compound">layer</ref>,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*window,<sp/><ref refid="structimage" kindref="compound">image</ref><sp/>*prev_weights);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>binarize_weights(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*weights,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*binary);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>swap_binary(<ref refid="structlayer" kindref="compound">convolutional_layer</ref><sp/>*l);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>binarize_weights2(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*weights,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*binary,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*scales);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_convolutional_layer(<ref refid="structlayer" kindref="compound">convolutional_layer</ref><sp/><ref refid="structlayer" kindref="compound">layer</ref>,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add_bias(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*output,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*biases,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_bias(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*bias_updates,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*delta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><ref refid="structimage" kindref="compound">image</ref><sp/>get_convolutional_image(<ref refid="structlayer" kindref="compound">convolutional_layer</ref><sp/><ref refid="structlayer" kindref="compound">layer</ref>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><ref refid="structimage" kindref="compound">image</ref><sp/>get_convolutional_delta(<ref refid="structlayer" kindref="compound">convolutional_layer</ref><sp/><ref refid="structlayer" kindref="compound">layer</ref>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><ref refid="structimage" kindref="compound">image</ref><sp/>get_convolutional_weight(<ref refid="structlayer" kindref="compound">convolutional_layer</ref><sp/><ref refid="structlayer" kindref="compound">layer</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>convolutional_out_height(<ref refid="structlayer" kindref="compound">convolutional_layer</ref><sp/><ref refid="structlayer" kindref="compound">layer</ref>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>convolutional_out_width(<ref refid="structlayer" kindref="compound">convolutional_layer</ref><sp/><ref refid="structlayer" kindref="compound">layer</ref>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.h"/>
+  </compounddef>
+</doxygen>

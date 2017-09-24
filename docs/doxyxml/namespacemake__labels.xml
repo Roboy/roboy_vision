@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacemake__labels" kind="namespace" language="Python">
+    <compoundname>make_labels</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="make__labels_8py_1a5adbbe2d0f4bd88d6e2dde06d28500f1" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string make_labels.font</definition>
+        <argsstring></argsstring>
+        <name>font</name>
+        <initializer>= &apos;futura-normal&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/data/labels/make_labels.py" line="5" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/data/labels/make_labels.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="make__labels_8py_1a59a6be9cc3c1e6d624e87425d6e0b592" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def make_labels.make_labels</definition>
+        <argsstring>(s)</argsstring>
+        <name>make_labels</name>
+        <param>
+          <type>s</type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/data/labels/make_labels.py" line="7" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/data/labels/make_labels.py" bodystart="7" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/data/labels/make_labels.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="darknet_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">![Darknet<sp/>Logo](http://pjreddie.com/media/files/darknet-black-small.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#Darknet#</highlight></codeline>
+<codeline><highlight class="normal">Darknet<sp/>is<sp/>an<sp/>open<sp/>source<sp/>neural<sp/>network<sp/>framework<sp/>written<sp/>in<sp/>C<sp/>and<sp/>CUDA.<sp/>It<sp/>is<sp/>fast,<sp/>easy<sp/>to<sp/>install,<sp/>and<sp/>supports<sp/>CPU<sp/>and<sp/>GPU<sp/>computation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>more<sp/>information<sp/>see<sp/>the<sp/>[Darknet<sp/>project<sp/>website](http://pjreddie.com/darknet).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>questions<sp/>or<sp/>issues<sp/>please<sp/>use<sp/>the<sp/>[Google<sp/>Group](https://groups.google.com/forum/#!forum/darknet).</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/README.md"/>
+  </compounddef>
+</doxygen>

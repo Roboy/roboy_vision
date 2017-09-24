@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>/home/ubuntu/workspace/roboy_vision/src</compoundname>
+    <innerdir refid="dir_c1be8d27e7f84178e95f152701110b19">/home/ubuntu/workspace/roboy_vision/src/data</innerdir>
+    <innerdir refid="dir_95d2254d458c3fe7f6c0d146595558fa">/home/ubuntu/workspace/roboy_vision/src/pyyolo</innerdir>
+    <innerdir refid="dir_d339c7f4ae4c5a2cd564de3c5a271e5f">/home/ubuntu/workspace/roboy_vision/src/vision_service</innerdir>
+    <innerdir refid="dir_312b8be5e38154290ec5606af79d7e60">/home/ubuntu/workspace/roboy_vision/src/zed</innerdir>
+    <innerfile refid="_describe_scene_srv_8py">DescribeSceneSrv.py</innerfile>
+    <innerfile refid="_face_detect_8py">FaceDetect.py</innerfile>
+    <innerfile refid="_find_object_srv_8py">FindObjectSrv.py</innerfile>
+    <innerfile refid="_freeze_model_8py">FreezeModel.py</innerfile>
+    <innerfile refid="multiprocess_8py">multiprocess.py</innerfile>
+    <innerfile refid="_multitracking_8py">Multitracking.py</innerfile>
+    <innerfile refid="_new_facial_features_msg_8py">NewFacialFeaturesMsg.py</innerfile>
+    <innerfile refid="_object_recognition_8py">ObjectRecognition.py</innerfile>
+    <innerfile refid="_recognise_face_8py">RecogniseFace.py</innerfile>
+    <innerfile refid="_roboy_vision_8py">RoboyVision.py</innerfile>
+    <innerfile refid="_ros_msg_util_8py">RosMsgUtil.py</innerfile>
+    <innerfile refid="_speaker_detect_8py">SpeakerDetect.py</innerfile>
+    <innerfile refid="_transform_coordinates_8py">TransformCoordinates.py</innerfile>
+    <innerfile refid="_visualizer_8py">Visualizer.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/"/>
+  </compounddef>
+</doxygen>

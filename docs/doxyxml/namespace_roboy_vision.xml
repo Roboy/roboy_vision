@@ -1,0 +1,383 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespace_roboy_vision" kind="namespace" language="Python">
+    <compoundname>RoboyVision</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_roboy_vision_1ae4f8f162c22a5ed59dcb27e9a48eb829" prot="public" static="no" mutable="no">
+        <type><ref refid="structlist" kindref="compound">list</ref></type>
+        <definition>list RoboyVision.procs</definition>
+        <argsstring></argsstring>
+        <name>procs</name>
+        <initializer>= []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" line="50" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_roboy_vision_1a4cd81cb70ee4e0f6ef54a82dac679120" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RoboyVision.CameraQueue</definition>
+        <argsstring></argsstring>
+        <name>CameraQueue</name>
+        <initializer>= Queue()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" line="51" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_roboy_vision_1ab4bcecb6e81ca693803541c8d949d38b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RoboyVision.FrameQueue</definition>
+        <argsstring></argsstring>
+        <name>FrameQueue</name>
+        <initializer>= Queue()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" line="52" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_roboy_vision_1a79c124eaedd51404dfb2812516016d51" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RoboyVision.RectQueue</definition>
+        <argsstring></argsstring>
+        <name>RectQueue</name>
+        <initializer>= Queue()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" line="53" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_roboy_vision_1a19fb7461108e0ab1c692d58cea1e830f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RoboyVision.TrackQueue</definition>
+        <argsstring></argsstring>
+        <name>TrackQueue</name>
+        <initializer>= Queue()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" line="54" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_roboy_vision_1af424ee31901bd89116f39b551a124825" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RoboyVision.VisualQueue</definition>
+        <argsstring></argsstring>
+        <name>VisualQueue</name>
+        <initializer>= Queue()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" line="55" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_roboy_vision_1a08a8fbadcc280bdcfeba429412b9d9d6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RoboyVision.SpeakerQueue</definition>
+        <argsstring></argsstring>
+        <name>SpeakerQueue</name>
+        <initializer>= Queue()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" line="56" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_roboy_vision_1ad7a1375e832903f4afd21558ddba9074" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RoboyVision.FacePointQueue</definition>
+        <argsstring></argsstring>
+        <name>FacePointQueue</name>
+        <initializer>= Queue()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" line="57" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_roboy_vision_1a64f55fd4b47a071afa2858f78b38716d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RoboyVision.ObjectsQueue</definition>
+        <argsstring></argsstring>
+        <name>ObjectsQueue</name>
+        <initializer>= Queue()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" line="58" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_roboy_vision_1a911e8e79f60e3f17606a6dba83ea7f8f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RoboyVision.detectFaceProc</definition>
+        <argsstring></argsstring>
+        <name>detectFaceProc</name>
+        <initializer>= \</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" line="63" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_roboy_vision_1a49d1f0214e09ad8de35277518599b083" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RoboyVision.target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" line="64" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_roboy_vision_1ab5499988a43249ee53d45db39194b71a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RoboyVision.detectFaces</definition>
+        <argsstring></argsstring>
+        <name>detectFaces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" line="64" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_roboy_vision_1aafbacc2059b739c120dba2ca65506a2f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RoboyVision.args</definition>
+        <argsstring></argsstring>
+        <name>args</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" line="64" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_roboy_vision_1a00b8269e1c2c452da634cc813a4be42d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RoboyVision.SpeakerProc</definition>
+        <argsstring></argsstring>
+        <name>SpeakerProc</name>
+        <initializer>= \</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" line="66" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_roboy_vision_1ac42de27993e3fe48f49c10c933344330" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RoboyVision.speakerDetect</definition>
+        <argsstring></argsstring>
+        <name>speakerDetect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" line="67" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_roboy_vision_1a6f6704bdf417c19c1a99a419f4335283" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RoboyVision.detectFaces</definition>
+        <argsstring>(CameraQueue, FrameQueue, RectQueue, FacePointQueue, SpeakerQueue)</argsstring>
+        <name>detectFaces</name>
+        <param>
+          <type>CameraQueue</type>
+          <defname>CameraQueue</defname>
+        </param>
+        <param>
+          <type>FrameQueue</type>
+          <defname>FrameQueue</defname>
+        </param>
+        <param>
+          <type>RectQueue</type>
+          <defname>RectQueue</defname>
+        </param>
+        <param>
+          <type>FacePointQueue</type>
+          <defname>FacePointQueue</defname>
+        </param>
+        <param>
+          <type>SpeakerQueue</type>
+          <defname>SpeakerQueue</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" line="18" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" bodystart="18" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_roboy_vision_1ada3f0d5a189db260ec982966536357b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RoboyVision.tracking</definition>
+        <argsstring>(RectQueue, TrackQueue)</argsstring>
+        <name>tracking</name>
+        <param>
+          <type>RectQueue</type>
+          <defname>RectQueue</defname>
+        </param>
+        <param>
+          <type>TrackQueue</type>
+          <defname>TrackQueue</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" line="28" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_roboy_vision_1a354587118b03a9aec0cf73330354028d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RoboyVision.speakerDetect</definition>
+        <argsstring>(FacePointQueue, SpeakerQueue, FrameQueue, VisualQueue)</argsstring>
+        <name>speakerDetect</name>
+        <param>
+          <type>FacePointQueue</type>
+          <defname>FacePointQueue</defname>
+        </param>
+        <param>
+          <type>SpeakerQueue</type>
+          <defname>SpeakerQueue</defname>
+        </param>
+        <param>
+          <type>FrameQueue</type>
+          <defname>FrameQueue</defname>
+        </param>
+        <param>
+          <type>VisualQueue</type>
+          <defname>VisualQueue</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" line="31" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_roboy_vision_1abb31e45214580a0a535918d6baf3bbf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RoboyVision.recogniseFace</definition>
+        <argsstring>(RectsQueue)</argsstring>
+        <name>recogniseFace</name>
+        <param>
+          <type>RectsQueue</type>
+          <defname>RectsQueue</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" line="35" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_roboy_vision_1a0e8dcdbbadc8dff971bdd092e81dd9f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RoboyVision.visualizer</definition>
+        <argsstring>(CameraQueue, RectQueue, FacePointQueue, SpeakerQueue, FrameQueue, VisualQueue)</argsstring>
+        <name>visualizer</name>
+        <param>
+          <type>CameraQueue</type>
+          <defname>CameraQueue</defname>
+        </param>
+        <param>
+          <type>RectQueue</type>
+          <defname>RectQueue</defname>
+        </param>
+        <param>
+          <type>FacePointQueue</type>
+          <defname>FacePointQueue</defname>
+        </param>
+        <param>
+          <type>SpeakerQueue</type>
+          <defname>SpeakerQueue</defname>
+        </param>
+        <param>
+          <type>FrameQueue</type>
+          <defname>FrameQueue</defname>
+        </param>
+        <param>
+          <type>VisualQueue</type>
+          <defname>VisualQueue</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" line="38" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_roboy_vision_1af4861a4505db46863a3dc83ed49e6878" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RoboyVision.ObjectRecognise</definition>
+        <argsstring>(CameraQueue, ObjectsQueue)</argsstring>
+        <name>ObjectRecognise</name>
+        <param>
+          <type>CameraQueue</type>
+          <defname>CameraQueue</defname>
+        </param>
+        <param>
+          <type>ObjectsQueue</type>
+          <defname>ObjectsQueue</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" line="42" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" bodystart="42" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>@package RoboyVision
+1. This is the main module.
+2. Each other components are created as seperate processes and spawned.
+3. This also creates Message queues and passes them onto different processes
+</verbatim> </para>    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/RoboyVision.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

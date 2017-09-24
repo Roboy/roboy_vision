@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_9ca374cf318daf1d05102cde9723090d" kind="dir">
+    <compoundname>/home/ubuntu/workspace/roboy_vision/src/zed/sl</compoundname>
+    <innerfile refid="_camera_8hpp">Camera.hpp</innerfile>
+    <innerfile refid="_core_8hpp">Core.hpp</innerfile>
+    <innerfile refid="defines_8hpp">defines.hpp</innerfile>
+    <innerfile refid="_mesh_8hpp">Mesh.hpp</innerfile>
+    <innerfile refid="types_8hpp">types.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/"/>
+  </compounddef>
+</doxygen>

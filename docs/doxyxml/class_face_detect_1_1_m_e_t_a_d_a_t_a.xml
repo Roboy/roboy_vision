@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_face_detect_1_1_m_e_t_a_d_a_t_a" kind="class" language="Python" prot="public">
+    <compoundname>FaceDetect::METADATA</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Structure</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_face_detect_1_1_m_e_t_a_d_a_t_a_1a5185f98ef62dfd371a794166b668f23c" prot="private" static="yes" mutable="no">
+        <type><ref refid="structlist" kindref="compound">list</ref></type>
+        <definition>list FaceDetect.METADATA::_fields_</definition>
+        <argsstring></argsstring>
+        <name>_fields_</name>
+        <initializer>= [(&quot;classes&quot;, c_int),
+                (&quot;names&quot;, POINTER(c_char_p))]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/FaceDetect.py" line="120" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/FaceDetect.py" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="303">
+        <label>Structure</label>
+      </node>
+      <node id="302">
+        <label>FaceDetect.METADATA</label>
+        <link refid="class_face_detect_1_1_m_e_t_a_d_a_t_a"/>
+        <childnode refid="303" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="306">
+        <label>list</label>
+        <link refid="structlist"/>
+        <childnode refid="307" relation="usage">
+          <edgelabel>front</edgelabel>
+          <edgelabel>back</edgelabel>
+        </childnode>
+      </node>
+      <node id="307">
+        <label>node</label>
+        <link refid="structnode"/>
+        <childnode refid="307" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="305">
+        <label>Structure</label>
+      </node>
+      <node id="304">
+        <label>FaceDetect.METADATA</label>
+        <link refid="class_face_detect_1_1_m_e_t_a_d_a_t_a"/>
+        <childnode refid="305" relation="public-inheritance">
+        </childnode>
+        <childnode refid="306" relation="usage">
+          <edgelabel>_fields_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/FaceDetect.py" line="119" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/FaceDetect.py" bodystart="119" bodyend="126"/>
+    <listofallmembers>
+      <member refid="class_face_detect_1_1_m_e_t_a_d_a_t_a_1a5185f98ef62dfd371a794166b668f23c" prot="private" virt="non-virtual"><scope>FaceDetect::METADATA</scope><name>_fields_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

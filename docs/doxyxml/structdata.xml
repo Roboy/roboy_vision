@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structdata" kind="struct" language="C++" prot="public">
+    <compoundname>data</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdata_1a9de96028e1598b323d91ffb059cd48b2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int data::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="503" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="503" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata_1adbac4a041922ac9e6c47953f5fa23126" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int data::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="503" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="503" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata_1a1f37ae26b26b12ef5c70a12957826e87" prot="public" static="no" mutable="no">
+        <type><ref refid="structmatrix" kindref="compound">matrix</ref></type>
+        <definition>matrix data::X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="504" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="504" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata_1a30946bde3a05e40df6fbb49c5dd9b627" prot="public" static="no" mutable="no">
+        <type><ref refid="structmatrix" kindref="compound">matrix</ref></type>
+        <definition>matrix data::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="505" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="505" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata_1a3ef4c4e942b1f2b6a5e64e7fb7e12491" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int data::shallow</definition>
+        <argsstring></argsstring>
+        <name>shallow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="506" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="506" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata_1afba4d3b06050db7a30b0b11809ae6e23" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* data::num_boxes</definition>
+        <argsstring></argsstring>
+        <name>num_boxes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="507" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="507" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata_1a8379df4ef55945c6fdb778dd581dce55" prot="public" static="no" mutable="no">
+        <type><ref refid="structbox" kindref="compound">box</ref> **</type>
+        <definition>box** data::boxes</definition>
+        <argsstring></argsstring>
+        <name>boxes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="508" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="508" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="226">
+        <label>matrix</label>
+        <link refid="structmatrix"/>
+      </node>
+      <node id="225">
+        <label>data</label>
+        <link refid="structdata"/>
+        <childnode refid="226" relation="usage">
+          <edgelabel>y</edgelabel>
+          <edgelabel>X</edgelabel>
+        </childnode>
+        <childnode refid="227" relation="usage">
+          <edgelabel>boxes</edgelabel>
+        </childnode>
+      </node>
+      <node id="227">
+        <label>box</label>
+        <link refid="structbox"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="502" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="502" bodyend="509"/>
+    <listofallmembers>
+      <member refid="structdata_1a8379df4ef55945c6fdb778dd581dce55" prot="public" virt="non-virtual"><scope>data</scope><name>boxes</name></member>
+      <member refid="structdata_1adbac4a041922ac9e6c47953f5fa23126" prot="public" virt="non-virtual"><scope>data</scope><name>h</name></member>
+      <member refid="structdata_1afba4d3b06050db7a30b0b11809ae6e23" prot="public" virt="non-virtual"><scope>data</scope><name>num_boxes</name></member>
+      <member refid="structdata_1a3ef4c4e942b1f2b6a5e64e7fb7e12491" prot="public" virt="non-virtual"><scope>data</scope><name>shallow</name></member>
+      <member refid="structdata_1a9de96028e1598b323d91ffb059cd48b2" prot="public" virt="non-virtual"><scope>data</scope><name>w</name></member>
+      <member refid="structdata_1a1f37ae26b26b12ef5c70a12957826e87" prot="public" virt="non-virtual"><scope>data</scope><name>X</name></member>
+      <member refid="structdata_1a30946bde3a05e40df6fbb49c5dd9b627" prot="public" virt="non-virtual"><scope>data</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

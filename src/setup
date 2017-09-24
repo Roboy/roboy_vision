@@ -1,0 +1,13 @@
+# /bin/bash
+export PYTHONPATH=
+export PATH=~/miniconda3/bin:$PATH
+
+conda create -n Roboy python=3.5
+source activate Roboy
+
+cd ~/
+pip install -r Vision/requirements.txt
+conda install -c menpo opencv3=3.2.0
+conda install -c conda-forge tensorflow=1.0.0
+conda install -c menpo dlib
+pip install jupyter

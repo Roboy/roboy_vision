@@ -1,0 +1,415 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="crop__layer_8c" kind="file" language="C++">
+    <compoundname>crop_layer.c</compoundname>
+    <includes refid="crop__layer_8h" local="yes">crop_layer.h</includes>
+    <includes refid="cuda_8h" local="yes">cuda.h</includes>
+    <includes local="no">stdio.h</includes>
+    <incdepgraph>
+      <node id="661">
+        <label>box.h</label>
+        <link refid="box_8h_source"/>
+        <childnode refid="662" relation="include">
+        </childnode>
+      </node>
+      <node id="658">
+        <label>float.h</label>
+      </node>
+      <node id="656">
+        <label>stdlib.h</label>
+      </node>
+      <node id="670">
+        <label>cuda.h</label>
+        <link refid="cuda_8h_source"/>
+        <childnode refid="662" relation="include">
+        </childnode>
+      </node>
+      <node id="666">
+        <label>data.h</label>
+        <link refid="data_8h_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="662" relation="include">
+        </childnode>
+        <childnode refid="667" relation="include">
+        </childnode>
+        <childnode refid="668" relation="include">
+        </childnode>
+        <childnode refid="655" relation="include">
+        </childnode>
+        <childnode refid="669" relation="include">
+        </childnode>
+      </node>
+      <node id="665">
+        <label>network.h</label>
+        <link refid="network_8h_source"/>
+        <childnode refid="662" relation="include">
+        </childnode>
+        <childnode refid="655" relation="include">
+        </childnode>
+        <childnode refid="664" relation="include">
+        </childnode>
+        <childnode refid="666" relation="include">
+        </childnode>
+        <childnode refid="669" relation="include">
+        </childnode>
+      </node>
+      <node id="668">
+        <label>list.h</label>
+        <link refid="list_8h_source"/>
+        <childnode refid="662" relation="include">
+        </childnode>
+      </node>
+      <node id="667">
+        <label>matrix.h</label>
+        <link refid="matrix_8h_source"/>
+        <childnode refid="662" relation="include">
+        </childnode>
+      </node>
+      <node id="662">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="656" relation="include">
+        </childnode>
+        <childnode refid="657" relation="include">
+        </childnode>
+        <childnode refid="659" relation="include">
+        </childnode>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="664">
+        <label>layer.h</label>
+        <link refid="layer_8h_source"/>
+        <childnode refid="662" relation="include">
+        </childnode>
+      </node>
+      <node id="663">
+        <label>pthread.h</label>
+      </node>
+      <node id="655">
+        <label>image.h</label>
+        <link refid="image_8h_source"/>
+        <childnode refid="656" relation="include">
+        </childnode>
+        <childnode refid="657" relation="include">
+        </childnode>
+        <childnode refid="658" relation="include">
+        </childnode>
+        <childnode refid="659" relation="include">
+        </childnode>
+        <childnode refid="660" relation="include">
+        </childnode>
+        <childnode refid="661" relation="include">
+        </childnode>
+        <childnode refid="662" relation="include">
+        </childnode>
+      </node>
+      <node id="659">
+        <label>string.h</label>
+      </node>
+      <node id="660">
+        <label>math.h</label>
+      </node>
+      <node id="669">
+        <label>tree.h</label>
+        <link refid="tree_8h_source"/>
+        <childnode refid="662" relation="include">
+        </childnode>
+      </node>
+      <node id="653">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crop_layer.c</label>
+        <link refid="crop_layer.c"/>
+        <childnode refid="654" relation="include">
+        </childnode>
+        <childnode refid="670" relation="include">
+        </childnode>
+        <childnode refid="657" relation="include">
+        </childnode>
+      </node>
+      <node id="654">
+        <label>crop_layer.h</label>
+        <link refid="crop__layer_8h_source"/>
+        <childnode refid="655" relation="include">
+        </childnode>
+        <childnode refid="664" relation="include">
+        </childnode>
+        <childnode refid="665" relation="include">
+        </childnode>
+      </node>
+      <node id="657">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="crop__layer_8c_1ac6f2c6a5e02e43850f58f270c54979ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structimage" kindref="compound">image</ref></type>
+        <definition>image get_crop_image</definition>
+        <argsstring>(crop_layer l)</argsstring>
+        <name>get_crop_image</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">crop_layer</ref></type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crop_layer.c" line="5" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crop_layer.c" bodystart="5" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="crop__layer_8c_1ac89649562df2e02048a14ee7d3031603" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void backward_crop_layer</definition>
+        <argsstring>(const crop_layer l, network net)</argsstring>
+        <name>backward_crop_layer</name>
+        <param>
+          <type>const <ref refid="structlayer" kindref="compound">crop_layer</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crop_layer.c" line="13" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crop_layer.c" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="crop__layer_8c_1addbf6e0994dd78f264806c95f041d509" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void backward_crop_layer_gpu</definition>
+        <argsstring>(const crop_layer l, network net)</argsstring>
+        <name>backward_crop_layer_gpu</name>
+        <param>
+          <type>const <ref refid="structlayer" kindref="compound">crop_layer</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crop_layer.c" line="14" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crop_layer.c" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="crop__layer_8c_1a5c4c012097250ab0c110ea62f77d2fbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlayer" kindref="compound">crop_layer</ref></type>
+        <definition>crop_layer make_crop_layer</definition>
+        <argsstring>(int batch, int h, int w, int c, int crop_height, int crop_width, int flip, float angle, float saturation, float exposure)</argsstring>
+        <name>make_crop_layer</name>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>crop_height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>crop_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flip</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>saturation</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>exposure</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crop_layer.c" line="16" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crop_layer.c" bodystart="16" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="crop__layer_8c_1a7ff2df8313ba1720524d0ea88bafb0d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void resize_crop_layer</definition>
+        <argsstring>(layer *l, int w, int h)</argsstring>
+        <name>resize_crop_layer</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">layer</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crop_layer.c" line="48" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crop_layer.c" bodystart="48" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="crop__layer_8c_1a3f6d911552bc14f5ab27fe81a6574899" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void forward_crop_layer</definition>
+        <argsstring>(const crop_layer l, network net)</argsstring>
+        <name>forward_crop_layer</name>
+        <param>
+          <type>const <ref refid="structlayer" kindref="compound">crop_layer</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crop_layer.c" line="67" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crop_layer.c" bodystart="67" bodyend="102"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;crop_layer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cuda.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="structimage" kindref="compound">image</ref><sp/>get_crop_image(<ref refid="structlayer" kindref="compound">crop_layer</ref><sp/>l)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h<sp/>=<sp/>l.out_h;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w<sp/>=<sp/>l.out_w;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c<sp/>=<sp/>l.out_c;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>float_to_image(w,h,c,l.output);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_crop_layer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlayer" kindref="compound">crop_layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net){}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_crop_layer_gpu(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlayer" kindref="compound">crop_layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net){}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><ref refid="structlayer" kindref="compound">crop_layer</ref><sp/>make_crop_layer(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>crop_height,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>crop_width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flip,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>saturation,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>exposure)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;Crop<sp/>Layer:<sp/>%d<sp/>x<sp/>%d<sp/>-&gt;<sp/>%d<sp/>x<sp/>%d<sp/>x<sp/>%d<sp/>image\n&quot;</highlight><highlight class="normal">,<sp/>h,w,crop_height,crop_width,c);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlayer" kindref="compound">crop_layer</ref><sp/>l<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>l.type<sp/>=<sp/>CROP;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>l.batch<sp/>=<sp/>batch;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>l.h<sp/>=<sp/>h;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>l.w<sp/>=<sp/>w;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>l.c<sp/>=<sp/>c;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>l.scale<sp/>=<sp/>(float)crop_height<sp/>/<sp/>h;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>l.flip<sp/>=<sp/>flip;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>l.angle<sp/>=<sp/>angle;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>l.saturation<sp/>=<sp/>saturation;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>l.exposure<sp/>=<sp/>exposure;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>l.out_w<sp/>=<sp/>crop_width;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>l.out_h<sp/>=<sp/>crop_height;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>l.out_c<sp/>=<sp/>c;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>l.inputs<sp/>=<sp/>l.w<sp/>*<sp/>l.h<sp/>*<sp/>l.c;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>l.outputs<sp/>=<sp/>l.out_w<sp/>*<sp/>l.out_h<sp/>*<sp/>l.out_c;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>l.output<sp/>=<sp/>calloc(l.outputs*batch,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>l.forward<sp/>=<sp/>forward_crop_layer;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>l.backward<sp/>=<sp/>backward_crop_layer;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>l.forward_gpu<sp/>=<sp/>forward_crop_layer_gpu;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>l.backward_gpu<sp/>=<sp/>backward_crop_layer_gpu;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>l.output_gpu<sp/>=<sp/>cuda_make_array(l.output,<sp/>l.outputs*batch);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>l.rand_gpu<sp/><sp/><sp/>=<sp/>cuda_make_array(0,<sp/>l.batch*8);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>resize_crop_layer(<ref refid="structlayer" kindref="compound">layer</ref><sp/>*l,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>l-&gt;w<sp/>=<sp/>w;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>l-&gt;h<sp/>=<sp/>h;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>l-&gt;out_w<sp/>=<sp/><sp/>l-&gt;scale*w;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>l-&gt;out_h<sp/>=<sp/><sp/>l-&gt;scale*h;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>l-&gt;inputs<sp/>=<sp/>l-&gt;w<sp/>*<sp/>l-&gt;h<sp/>*<sp/>l-&gt;c;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>l-&gt;outputs<sp/>=<sp/>l-&gt;out_h<sp/>*<sp/>l-&gt;out_w<sp/>*<sp/>l-&gt;out_c;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>l-&gt;output<sp/>=<sp/>realloc(l-&gt;output,<sp/>l-&gt;batch*l-&gt;outputs*</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>cuda_free(l-&gt;output_gpu);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>l-&gt;output_gpu<sp/>=<sp/>cuda_make_array(l-&gt;output,<sp/>l-&gt;outputs*l-&gt;batch);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>forward_crop_layer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlayer" kindref="compound">crop_layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,j,c,b,row,col;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flip<sp/>=<sp/>(l.flip<sp/>&amp;&amp;<sp/>rand()%2);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dh<sp/>=<sp/>rand()%(l.h<sp/>-<sp/>l.out_h<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dw<sp/>=<sp/>rand()%(l.w<sp/>-<sp/>l.out_w<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scale<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>trans<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(l.noadjust){</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scale<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trans<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!net.train){</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>flip<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dh<sp/>=<sp/>(l.h<sp/>-<sp/>l.out_h)/2;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dw<sp/>=<sp/>(l.w<sp/>-<sp/>l.out_w)/2;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(b<sp/>=<sp/>0;<sp/>b<sp/>&lt;<sp/>l.batch;<sp/>++b){</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(c<sp/>=<sp/>0;<sp/>c<sp/>&lt;<sp/>l.c;<sp/>++c){</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>l.out_h;<sp/>++i){</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>l.out_w;<sp/>++j){</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(flip){</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>col<sp/>=<sp/>l.w<sp/>-<sp/>dw<sp/>-<sp/>j<sp/>-<sp/>1;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>col<sp/>=<sp/>j<sp/>+<sp/>dw;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>row<sp/>=<sp/>i<sp/>+<sp/>dh;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index<sp/>=<sp/>col+l.w*(row+l.h*(c<sp/>+<sp/>l.c*b));<sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l.output[count++]<sp/>=<sp/>net.input[index]*scale<sp/>+<sp/>trans;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/crop_layer.c"/>
+  </compounddef>
+</doxygen>

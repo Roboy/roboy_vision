@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="utils_8hpp" kind="file" language="C++">
+    <compoundname>utils.hpp</compoundname>
+    <includes local="no">cstdio</includes>
+    <includes local="no">cstring</includes>
+    <includes local="no">signal.h</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">chrono</includes>
+    <includes local="no">thread</includes>
+    <includes local="no">mutex</includes>
+    <includes local="no">sys/stat.h</includes>
+    <includes local="no">opencv2/opencv.hpp</includes>
+    <includes refid="_camera_8hpp" local="no">sl/Camera.hpp</includes>
+    <includedby refid="zed_roboy_8cpp" local="yes">/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.cpp</includedby>
+    <incdepgraph>
+      <node id="2064">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="2074">
+        <label>iomanip</label>
+      </node>
+      <node id="2093">
+        <label>limits</label>
+      </node>
+      <node id="2092">
+        <label>cstdint</label>
+      </node>
+      <node id="2087">
+        <label>device_launch_parameters.h</label>
+      </node>
+      <node id="2081">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2091">
+        <label>sl/defines.hpp</label>
+        <link refid="defines_8hpp_source"/>
+        <childnode refid="2092" relation="include">
+        </childnode>
+        <childnode refid="2058" relation="include">
+        </childnode>
+        <childnode refid="2075" relation="include">
+        </childnode>
+        <childnode refid="2078" relation="include">
+        </childnode>
+        <childnode refid="2093" relation="include">
+        </childnode>
+        <childnode refid="2088" relation="include">
+        </childnode>
+      </node>
+      <node id="2079">
+        <label>cuda.h</label>
+        <link refid="cuda_8h_source"/>
+        <childnode refid="2080" relation="include">
+        </childnode>
+      </node>
+      <node id="2085">
+        <label>cuda_runtime.h</label>
+      </node>
+      <node id="2070">
+        <label>cmath</label>
+      </node>
+      <node id="2065">
+        <label>opencv2/opencv.hpp</label>
+      </node>
+      <node id="2090">
+        <label>string</label>
+      </node>
+      <node id="2076">
+        <label>memory.h</label>
+      </node>
+      <node id="2073">
+        <label>fstream</label>
+      </node>
+      <node id="2068">
+        <label>sl/types.hpp</label>
+        <link refid="types_8hpp_source"/>
+        <childnode refid="2069" relation="include">
+        </childnode>
+        <childnode refid="2061" relation="include">
+        </childnode>
+        <childnode refid="2070" relation="include">
+        </childnode>
+        <childnode refid="2057" relation="include">
+        </childnode>
+        <childnode refid="2060" relation="include">
+        </childnode>
+        <childnode refid="2058" relation="include">
+        </childnode>
+        <childnode refid="2071" relation="include">
+        </childnode>
+        <childnode refid="2072" relation="include">
+        </childnode>
+        <childnode refid="2073" relation="include">
+        </childnode>
+        <childnode refid="2074" relation="include">
+        </childnode>
+        <childnode refid="2075" relation="include">
+        </childnode>
+        <childnode refid="2076" relation="include">
+        </childnode>
+        <childnode refid="2063" relation="include">
+        </childnode>
+        <childnode refid="2077" relation="include">
+        </childnode>
+        <childnode refid="2062" relation="include">
+        </childnode>
+        <childnode refid="2078" relation="include">
+        </childnode>
+        <childnode refid="2079" relation="include">
+        </childnode>
+        <childnode refid="2085" relation="include">
+        </childnode>
+        <childnode refid="2086" relation="include">
+        </childnode>
+        <childnode refid="2087" relation="include">
+        </childnode>
+        <childnode refid="2088" relation="include">
+        </childnode>
+      </node>
+      <node id="2080">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="2081" relation="include">
+        </childnode>
+        <childnode refid="2082" relation="include">
+        </childnode>
+        <childnode refid="2083" relation="include">
+        </childnode>
+        <childnode refid="2084" relation="include">
+        </childnode>
+      </node>
+      <node id="2084">
+        <label>pthread.h</label>
+      </node>
+      <node id="2056">
+        <label>/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp</label>
+        <link refid="utils.hpp"/>
+        <childnode refid="2057" relation="include">
+        </childnode>
+        <childnode refid="2058" relation="include">
+        </childnode>
+        <childnode refid="2059" relation="include">
+        </childnode>
+        <childnode refid="2060" relation="include">
+        </childnode>
+        <childnode refid="2061" relation="include">
+        </childnode>
+        <childnode refid="2062" relation="include">
+        </childnode>
+        <childnode refid="2063" relation="include">
+        </childnode>
+        <childnode refid="2064" relation="include">
+        </childnode>
+        <childnode refid="2065" relation="include">
+        </childnode>
+        <childnode refid="2066" relation="include">
+        </childnode>
+      </node>
+      <node id="2083">
+        <label>string.h</label>
+      </node>
+      <node id="2057">
+        <label>cstdio</label>
+      </node>
+      <node id="2071">
+        <label>ctime</label>
+      </node>
+      <node id="2088">
+        <label>unistd.h</label>
+      </node>
+      <node id="2078">
+        <label>vector</label>
+      </node>
+      <node id="2059">
+        <label>signal.h</label>
+      </node>
+      <node id="2067">
+        <label>sl/Core.hpp</label>
+        <link refid="_core_8hpp_source"/>
+        <childnode refid="2068" relation="include">
+        </childnode>
+      </node>
+      <node id="2077">
+        <label>sstream</label>
+      </node>
+      <node id="2060">
+        <label>cstdlib</label>
+      </node>
+      <node id="2075">
+        <label>iostream</label>
+      </node>
+      <node id="2072">
+        <label>ctype.h</label>
+      </node>
+      <node id="2066">
+        <label>sl/Camera.hpp</label>
+        <link refid="_camera_8hpp_source"/>
+        <childnode refid="2067" relation="include">
+        </childnode>
+        <childnode refid="2089" relation="include">
+        </childnode>
+        <childnode refid="2091" relation="include">
+        </childnode>
+        <childnode refid="2079" relation="include">
+        </childnode>
+        <childnode refid="2065" relation="include">
+        </childnode>
+      </node>
+      <node id="2063">
+        <label>mutex</label>
+      </node>
+      <node id="2086">
+        <label>cuda_runtime_api.h</label>
+      </node>
+      <node id="2061">
+        <label>chrono</label>
+      </node>
+      <node id="2062">
+        <label>thread</label>
+      </node>
+      <node id="2089">
+        <label>sl/Mesh.hpp</label>
+        <link refid="_mesh_8hpp_source"/>
+        <childnode refid="2078" relation="include">
+        </childnode>
+        <childnode refid="2090" relation="include">
+        </childnode>
+        <childnode refid="2073" relation="include">
+        </childnode>
+        <childnode refid="2067" relation="include">
+        </childnode>
+      </node>
+      <node id="2069">
+        <label>algorithm</label>
+      </node>
+      <node id="2082">
+        <label>stdio.h</label>
+      </node>
+      <node id="2058">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_info_option" prot="public">InfoOption</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="utils_8hpp_1a3624cfba0f3c5e425a9889b54deb7c36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testFileExist</definition>
+        <argsstring>(std::string &amp;filename)</argsstring>
+        <name>testFileExist</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp" line="25" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp" bodystart="25" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="utils_8hpp_1ab30da7c31a8ee9856748e4d01fd1a4de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void parse_args</definition>
+        <argsstring>(int argc, char **argv, InfoOption &amp;info)</argsstring>
+        <name>parse_args</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_info_option" kindref="compound">InfoOption</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="utils_8hpp_1aa5c2334b40e8eae4aca7b4a632b67543" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void recordVideo</definition>
+        <argsstring>(sl::Mat &amp;image)</argsstring>
+        <name>recordVideo</name>
+        <param>
+          <type><ref refid="classsl_1_1_mat" kindref="compound">sl::Mat</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="utils_8hpp_1ab0f86aca1ba4d03f1105fe2751c90ae3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void recordImages</definition>
+        <argsstring>(sl::Mat &amp;image)</argsstring>
+        <name>recordImages</name>
+        <param>
+          <type><ref refid="classsl_1_1_mat" kindref="compound">sl::Mat</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="utils_8hpp_1a7a7e50f6a8bfaa9f2f371b25c1c4cd6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initActions</definition>
+        <argsstring>(sl::Camera *zed, InfoOption &amp;modes)</argsstring>
+        <name>initActions</name>
+        <param>
+          <type><ref refid="classsl_1_1_camera" kindref="compound">sl::Camera</ref> *</type>
+          <declname>zed</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_info_option" kindref="compound">InfoOption</ref> &amp;</type>
+          <declname>modes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="utils_8hpp_1a9a67ae7bc50ed3d0588f4eb8f044ebfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void manageActions</definition>
+        <argsstring>(sl::Camera *zed, char &amp;key, InfoOption &amp;modes)</argsstring>
+        <name>manageActions</name>
+        <param>
+          <type><ref refid="classsl_1_1_camera" kindref="compound">sl::Camera</ref> *</type>
+          <declname>zed</declname>
+        </param>
+        <param>
+          <type>char &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_info_option" kindref="compound">InfoOption</ref> &amp;</type>
+          <declname>modes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="utils_8hpp_1a263bf4b0e5864298378abb88c4556155" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void exitActions</definition>
+        <argsstring>()</argsstring>
+        <name>exitActions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="utils_8hpp_1a7d3003ae2aee2894b7372283701d5774" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void generateImageToRecord</definition>
+        <argsstring>(sl::Camera *zed, InfoOption &amp;modes, sl::Mat &amp;out)</argsstring>
+        <name>generateImageToRecord</name>
+        <param>
+          <type><ref refid="classsl_1_1_camera" kindref="compound">sl::Camera</ref> *</type>
+          <declname>zed</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_info_option" kindref="compound">InfoOption</ref> &amp;</type>
+          <declname>modes</declname>
+        </param>
+        <param>
+          <type><ref refid="classsl_1_1_mat" kindref="compound">sl::Mat</ref> &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp" line="44" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__UTILS_SVO_RECORDING_INCLUDE__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__UTILS_SVO_RECORDING_INCLUDE__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdio&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;signal.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thread&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/stat.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;opencv2/opencv.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sl/Camera.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="struct_info_option" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_info_option" kindref="compound">InfoOption</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>svo_path;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>recordingMode<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>output_path;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>computeDisparity<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>videoMode<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>testFileExist(std::string<sp/>&amp;filename)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">_stat64<sp/>buffer;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(_stat64(filename.c_str(),<sp/>&amp;buffer)<sp/>==<sp/>0);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">stat64<sp/>buffer;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(stat64(filename.c_str(),<sp/>&amp;buffer)<sp/>==<sp/>0);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>parse_args(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/><ref refid="struct_info_option" kindref="compound">InfoOption</ref><sp/>&amp;info);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>recordVideo(<ref refid="classsl_1_1_mat" kindref="compound">sl::Mat</ref><sp/>&amp;<ref refid="structimage" kindref="compound">image</ref>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>recordImages(<ref refid="classsl_1_1_mat" kindref="compound">sl::Mat</ref><sp/>&amp;image);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initActions(<ref refid="classsl_1_1_camera" kindref="compound">sl::Camera</ref><sp/>*zed,<sp/><ref refid="struct_info_option" kindref="compound">InfoOption</ref><sp/>&amp;modes);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>manageActions(<ref refid="classsl_1_1_camera" kindref="compound">sl::Camera</ref><sp/>*zed,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>&amp;key,<sp/><ref refid="struct_info_option" kindref="compound">InfoOption</ref><sp/>&amp;modes);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>exitActions();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>generateImageToRecord(<ref refid="classsl_1_1_camera" kindref="compound">sl::Camera</ref><sp/>*zed,<sp/><ref refid="struct_info_option" kindref="compound">InfoOption</ref><sp/>&amp;modes,<sp/><ref refid="classsl_1_1_mat" kindref="compound">sl::Mat</ref><sp/>&amp;out);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp"/>
+  </compounddef>
+</doxygen>

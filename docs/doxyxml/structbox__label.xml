@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structbox__label" kind="struct" language="C++" prot="public">
+    <compoundname>box_label</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbox__label_1a70328738c0d38547cd93d2fa59310a31" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int box_label::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="549" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="549" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbox__label_1a50bbc824640977cfbd11b7d129c488d3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float box_label::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="550" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="550" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbox__label_1ae188dc93ed34cce2910afcd3b5e43730" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float box_label::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="550" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="550" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbox__label_1ad866cd941fd0704a6ab79c068d3b2aff" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float box_label::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="550" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="550" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbox__label_1a16f7c9ecdbd1919c153e7b3aa07f8d64" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float box_label::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="550" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="550" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbox__label_1adbd27415d605f29a7022298fd615ed75" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float box_label::left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="551" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="551" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbox__label_1a4c7c88557656ba121f112021522b5837" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float box_label::right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="551" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="551" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbox__label_1a1f60ec698e94e15cc51a2d5d9e07126c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float box_label::top</definition>
+        <argsstring></argsstring>
+        <name>top</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="551" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="551" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbox__label_1a284fc060d46feacdf929ec53dca7c643" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float box_label::bottom</definition>
+        <argsstring></argsstring>
+        <name>bottom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="551" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="551" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="548" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="548" bodyend="552"/>
+    <listofallmembers>
+      <member refid="structbox__label_1a284fc060d46feacdf929ec53dca7c643" prot="public" virt="non-virtual"><scope>box_label</scope><name>bottom</name></member>
+      <member refid="structbox__label_1a16f7c9ecdbd1919c153e7b3aa07f8d64" prot="public" virt="non-virtual"><scope>box_label</scope><name>h</name></member>
+      <member refid="structbox__label_1a70328738c0d38547cd93d2fa59310a31" prot="public" virt="non-virtual"><scope>box_label</scope><name>id</name></member>
+      <member refid="structbox__label_1adbd27415d605f29a7022298fd615ed75" prot="public" virt="non-virtual"><scope>box_label</scope><name>left</name></member>
+      <member refid="structbox__label_1a4c7c88557656ba121f112021522b5837" prot="public" virt="non-virtual"><scope>box_label</scope><name>right</name></member>
+      <member refid="structbox__label_1a1f60ec698e94e15cc51a2d5d9e07126c" prot="public" virt="non-virtual"><scope>box_label</scope><name>top</name></member>
+      <member refid="structbox__label_1ad866cd941fd0704a6ab79c068d3b2aff" prot="public" virt="non-virtual"><scope>box_label</scope><name>w</name></member>
+      <member refid="structbox__label_1a50bbc824640977cfbd11b7d129c488d3" prot="public" virt="non-virtual"><scope>box_label</scope><name>x</name></member>
+      <member refid="structbox__label_1ae188dc93ed34cce2910afcd3b5e43730" prot="public" virt="non-virtual"><scope>box_label</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

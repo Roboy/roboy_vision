@@ -1,0 +1,676 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_core_8hpp" kind="file" language="C++">
+    <compoundname>Core.hpp</compoundname>
+    <includes refid="types_8hpp" local="no">sl/types.hpp</includes>
+    <includedby refid="_camera_8hpp" local="yes">/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp</includedby>
+    <includedby refid="_mesh_8hpp" local="no">/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp</includedby>
+    <incdepgraph>
+      <node id="1960">
+        <label>iomanip</label>
+      </node>
+      <node id="1975">
+        <label>device_launch_parameters.h</label>
+      </node>
+      <node id="1969">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1967">
+        <label>cuda.h</label>
+        <link refid="cuda_8h_source"/>
+        <childnode refid="1968" relation="include">
+        </childnode>
+      </node>
+      <node id="1973">
+        <label>cuda_runtime.h</label>
+      </node>
+      <node id="1953">
+        <label>cmath</label>
+      </node>
+      <node id="1962">
+        <label>memory.h</label>
+      </node>
+      <node id="1959">
+        <label>fstream</label>
+      </node>
+      <node id="1950">
+        <label>sl/types.hpp</label>
+        <link refid="types_8hpp_source"/>
+        <childnode refid="1951" relation="include">
+        </childnode>
+        <childnode refid="1952" relation="include">
+        </childnode>
+        <childnode refid="1953" relation="include">
+        </childnode>
+        <childnode refid="1954" relation="include">
+        </childnode>
+        <childnode refid="1955" relation="include">
+        </childnode>
+        <childnode refid="1956" relation="include">
+        </childnode>
+        <childnode refid="1957" relation="include">
+        </childnode>
+        <childnode refid="1958" relation="include">
+        </childnode>
+        <childnode refid="1959" relation="include">
+        </childnode>
+        <childnode refid="1960" relation="include">
+        </childnode>
+        <childnode refid="1961" relation="include">
+        </childnode>
+        <childnode refid="1962" relation="include">
+        </childnode>
+        <childnode refid="1963" relation="include">
+        </childnode>
+        <childnode refid="1964" relation="include">
+        </childnode>
+        <childnode refid="1965" relation="include">
+        </childnode>
+        <childnode refid="1966" relation="include">
+        </childnode>
+        <childnode refid="1967" relation="include">
+        </childnode>
+        <childnode refid="1973" relation="include">
+        </childnode>
+        <childnode refid="1974" relation="include">
+        </childnode>
+        <childnode refid="1975" relation="include">
+        </childnode>
+        <childnode refid="1976" relation="include">
+        </childnode>
+      </node>
+      <node id="1968">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="1969" relation="include">
+        </childnode>
+        <childnode refid="1970" relation="include">
+        </childnode>
+        <childnode refid="1971" relation="include">
+        </childnode>
+        <childnode refid="1972" relation="include">
+        </childnode>
+      </node>
+      <node id="1972">
+        <label>pthread.h</label>
+      </node>
+      <node id="1971">
+        <label>string.h</label>
+      </node>
+      <node id="1954">
+        <label>cstdio</label>
+      </node>
+      <node id="1957">
+        <label>ctime</label>
+      </node>
+      <node id="1976">
+        <label>unistd.h</label>
+      </node>
+      <node id="1966">
+        <label>vector</label>
+      </node>
+      <node id="1949">
+        <label>/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp</label>
+        <link refid="Core.hpp"/>
+        <childnode refid="1950" relation="include">
+        </childnode>
+      </node>
+      <node id="1964">
+        <label>sstream</label>
+      </node>
+      <node id="1955">
+        <label>cstdlib</label>
+      </node>
+      <node id="1961">
+        <label>iostream</label>
+      </node>
+      <node id="1958">
+        <label>ctype.h</label>
+      </node>
+      <node id="1963">
+        <label>mutex</label>
+      </node>
+      <node id="1974">
+        <label>cuda_runtime_api.h</label>
+      </node>
+      <node id="1952">
+        <label>chrono</label>
+      </node>
+      <node id="1965">
+        <label>thread</label>
+      </node>
+      <node id="1951">
+        <label>algorithm</label>
+      </node>
+      <node id="1970">
+        <label>stdio.h</label>
+      </node>
+      <node id="1956">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1979">
+        <label>/home/ubuntu/workspace/roboy_vision/src/zed/utils.hpp</label>
+        <link refid="utils_8hpp_source"/>
+      </node>
+      <node id="1977">
+        <label>/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp</label>
+        <link refid="Core.hpp"/>
+        <childnode refid="1978" relation="include">
+        </childnode>
+        <childnode refid="1980" relation="include">
+        </childnode>
+      </node>
+      <node id="1978">
+        <label>/home/ubuntu/workspace/roboy_vision/src/zed/sl/Camera.hpp</label>
+        <link refid="_camera_8hpp_source"/>
+        <childnode refid="1979" relation="include">
+        </childnode>
+      </node>
+      <node id="1980">
+        <label>/home/ubuntu/workspace/roboy_vision/src/zed/sl/Mesh.hpp</label>
+        <link refid="_mesh_8hpp_source"/>
+        <childnode refid="1978" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structsl_1_1_resolution" prot="public">sl::Resolution</innerclass>
+    <innerclass refid="structsl_1_1_camera_parameters" prot="public">sl::CameraParameters</innerclass>
+    <innerclass refid="structsl_1_1_calibration_parameters" prot="public">sl::CalibrationParameters</innerclass>
+    <innerclass refid="structsl_1_1_camera_information" prot="public">sl::CameraInformation</innerclass>
+    <innerclass refid="classsl_1_1_mat" prot="public">sl::Mat</innerclass>
+    <innerclass refid="classsl_1_1_rotation" prot="public">sl::Rotation</innerclass>
+    <innerclass refid="classsl_1_1_translation" prot="public">sl::Translation</innerclass>
+    <innerclass refid="classsl_1_1_orientation" prot="public">sl::Orientation</innerclass>
+    <innerclass refid="classsl_1_1_transform" prot="public">sl::Transform</innerclass>
+    <innernamespace refid="namespacesl">sl</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>SOFTWARE<sp/>LICENSE</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>BY<sp/>USING<sp/>YOUR<sp/>ZED<sp/>CAMERA<sp/>YOU<sp/>AGREE<sp/>TO<sp/>THIS<sp/>SOFTWARE<sp/>LICENSE.<sp/>BEFORE<sp/>SETTING<sp/>IT<sp/>UP,</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>PLEASE<sp/>READ<sp/>THIS<sp/>SOFTWARE<sp/>LICENSE<sp/>CAREFULLY.<sp/>IF<sp/>YOU<sp/>DO<sp/>NOT<sp/>ACCEPT<sp/>THIS</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>SOFTWARE<sp/>LICENSE,<sp/>DO<sp/>NOT<sp/>USE<sp/>YOUR<sp/>ZED<sp/>CAMERA.<sp/>RETURN<sp/>IT<sp/>TO<sp/>UNUSED<sp/>TO</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>STEREOLABS<sp/>FOR<sp/>A<sp/>REFUND.<sp/>Contact<sp/>STEREOLABS<sp/>at<sp/>contact@stereolabs.com</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>1.<sp/>Definitions</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>&quot;Authorized<sp/>Accessory&quot;<sp/>means<sp/>a<sp/>STEREOLABS<sp/>branded<sp/>ZED,<sp/>and<sp/>a<sp/>STEREOLABS</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>licensed,<sp/>third<sp/>party<sp/>branded,<sp/>ZED<sp/>hardware<sp/>accessory<sp/>whose<sp/>packaging</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>bears<sp/>the<sp/>official<sp/>&quot;Licensed<sp/>for<sp/>ZED&quot;<sp/>logo.<sp/>The<sp/>ZED<sp/>Camera<sp/>is<sp/>an<sp/>Authorized</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/>Accessory<sp/>solely<sp/>for<sp/>purTransform<sp/>of<sp/>this<sp/>Software<sp/>license.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>&quot;Software&quot;<sp/>means<sp/>the<sp/>Software<sp/>Development<sp/>Kit,<sp/>pre-installed<sp/>in<sp/>the<sp/>ZED</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>USB<sp/>flash<sp/>drive<sp/>included<sp/>in<sp/>the<sp/>ZED<sp/>packaging,<sp/>and<sp/>including<sp/>any</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>updates<sp/>STEREOLABS<sp/>may<sp/>make<sp/>available<sp/>from<sp/>time<sp/>to<sp/>time.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>&quot;Unauthorized<sp/>Accessories&quot;<sp/>means<sp/>all<sp/>hardware<sp/>accessories<sp/>other<sp/>than</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>an<sp/>Authorized<sp/>Accessory.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>&quot;Unauthorized<sp/>Software&quot;<sp/>means<sp/>any<sp/>software<sp/>not<sp/>distributed<sp/>by<sp/>STEREOLABS.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>&quot;You&quot;<sp/>means<sp/>the<sp/>user<sp/>of<sp/>a<sp/>ZED<sp/>Camera.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>2.<sp/>License</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>a.<sp/>The<sp/>Software<sp/>is<sp/>licensed<sp/>to<sp/>You,<sp/>not<sp/>sold.<sp/>You<sp/>are<sp/>licensed<sp/>to<sp/>use<sp/>the</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>Software<sp/>only<sp/>as<sp/>pre-installed<sp/>in<sp/>Your<sp/>ZED<sp/>USB<sp/>flash<sp/>drive,<sp/>and<sp/>updated<sp/>by</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>STEREOLABS<sp/>from<sp/>time<sp/>to<sp/>time.<sp/>You<sp/>may<sp/>not<sp/>copy<sp/>or<sp/>reverse<sp/>engineer<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>b.<sp/>As<sp/>conditions<sp/>to<sp/>this<sp/>Software<sp/>license,<sp/>You<sp/>agree<sp/>that:</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>i.<sp/>You<sp/>will<sp/>use<sp/>Your<sp/>Software<sp/>with<sp/>ZED<sp/>Camera<sp/>only<sp/>and<sp/>not<sp/>with<sp/>any</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>other<sp/>device<sp/>(including).<sp/>You<sp/>will<sp/>not<sp/>use<sp/>Unauthorized<sp/>Accessories.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/>They<sp/>may<sp/>not<sp/>work<sp/>or<sp/>may<sp/>stop<sp/>working<sp/>permanently<sp/>after<sp/>a<sp/>Software<sp/>update.</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>ii.<sp/>You<sp/>will<sp/>not<sp/>use<sp/>or<sp/>install<sp/>any<sp/>Unauthorized<sp/>Software.</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/>If<sp/>You<sp/>do,<sp/>Your<sp/>ZED<sp/>Camera<sp/>may<sp/>stop<sp/>working<sp/>permanently<sp/>at<sp/>that<sp/>time</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/>or<sp/>after<sp/>a<sp/>later<sp/>Software<sp/>update.</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>iii.<sp/>You<sp/>will<sp/>not<sp/>attempt<sp/>to<sp/>defeat<sp/>or<sp/>circumvent<sp/>any<sp/>Software</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/>technical<sp/>limitation,<sp/>security,<sp/>or<sp/>anti-piracy<sp/>system.<sp/>If<sp/>You<sp/>do,</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*<sp/>Your<sp/>ZED<sp/>Camera<sp/>may<sp/>stop<sp/>working<sp/>permanently<sp/>at<sp/>that<sp/>time<sp/>or<sp/>after<sp/>a</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/>later<sp/>Software<sp/>update.</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>iv.<sp/>STEREOLABS<sp/>may<sp/>use<sp/>technical<sp/>measures,<sp/>including<sp/>Software</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/>updates,<sp/>to<sp/>limit<sp/>use<sp/>of<sp/>the<sp/>Software<sp/>to<sp/>the<sp/>ZED<sp/>Camera,<sp/>to<sp/>prevent</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>use<sp/>of<sp/>Unauthorized<sp/>Accessories,<sp/>and<sp/>to<sp/>protect<sp/>the<sp/>technical<sp/>limitations,</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/>security<sp/>and<sp/>anti-piracy<sp/>systems<sp/>in<sp/>the<sp/>ZED<sp/>Camera.</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>v.<sp/>STEREOLABS<sp/>may<sp/>update<sp/>the<sp/>Software<sp/>from<sp/>time<sp/>to<sp/>time<sp/>without</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*<sp/>further<sp/>notice<sp/>to<sp/>You,<sp/>for<sp/>example,<sp/>to<sp/>update<sp/>any<sp/>technical<sp/>limitation,</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*<sp/>security,<sp/>or<sp/>anti-piracy<sp/>system.</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/>3.<sp/>Warranty</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/>The<sp/>Software<sp/>is<sp/>covered<sp/>by<sp/>the<sp/>Limited<sp/>Warranty<sp/>for<sp/>Your<sp/>ZED<sp/>Camera,</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*<sp/>and<sp/>STEREOLABS<sp/>gives<sp/>no<sp/>other<sp/>guarantee,<sp/>warranty,<sp/>or<sp/>condition<sp/>for</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*<sp/>the<sp/>Software.<sp/>No<sp/>one<sp/>else<sp/>may<sp/>give<sp/>any<sp/>guarantee,<sp/>warranty,<sp/>or<sp/>condition</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*<sp/>on<sp/>STEREOLABS&apos;s<sp/>behalf.</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*<sp/>4.<sp/>EXCLUSION<sp/>OF<sp/>CERTAIN<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*<sp/>STEREOLABS<sp/>IS<sp/>NOT<sp/>RESPONSIBLE<sp/>FOR<sp/>ANY<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>OR</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*<sp/>CONSEQUENTIAL<sp/>DAMAGES;<sp/>ANY<sp/>LOSS<sp/>OF<sp/>DATA,<sp/>PRIVACY,<sp/>CONFIDENTIALITY,<sp/>OR</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*<sp/>PROFITS;<sp/>OR<sp/>ANY<sp/>INABILITY<sp/>TO<sp/>USE<sp/>THE<sp/>SOFTWARE.<sp/>THESE<sp/>EXCLUSIONS<sp/>APPLY</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*<sp/>EVEN<sp/>IF<sp/>STEREOLABS<sp/>HAS<sp/>BEEN<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>THESE<sp/>DAMAGES,</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*<sp/>AND<sp/>EVEN<sp/>IF<sp/>ANY<sp/>REMEDY<sp/>FAILS<sp/>OF<sp/>ITS<sp/>ESSENTIAL<sp/>PURTransform.</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/>*<sp/>5.<sp/>Choice<sp/>of<sp/>Law</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*<sp/>French<sp/>law<sp/>governs<sp/>the<sp/>interpretation<sp/>of<sp/>this<sp/>Software<sp/>license<sp/>and<sp/>any</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*<sp/>claim<sp/>that<sp/>STEREOLABS<sp/>has<sp/>breached<sp/>it,<sp/>regardless<sp/>of<sp/>conflict<sp/>of</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*<sp/>law<sp/>principles.</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__CORE_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__CORE_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sl/types.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesl" kindref="compound">sl</ref><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="structsl_1_1_resolution" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsl_1_1_resolution" kindref="compound">Resolution</ref><sp/>{</highlight></codeline>
+<codeline lineno="79" refid="structsl_1_1_resolution_1ac4dc47fc9738ccc5e1c8c37c0528eda3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structsl_1_1_resolution_1ac4dc47fc9738ccc5e1c8c37c0528eda3" kindref="member">width</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="80" refid="structsl_1_1_resolution_1a46ec383ce0c4d4941df656a29abfdc96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structsl_1_1_resolution_1a46ec383ce0c4d4941df656a29abfdc96" kindref="member">height</ref>;<sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsl_1_1_resolution" kindref="compound">Resolution</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>w_<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>h_<sp/>=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>width<sp/>=<sp/>w_;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>height<sp/>=<sp/>h_;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="structsl_1_1_resolution_1a641f0d53dca216b7cc64d5db7d846d99" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structsl_1_1_resolution_1a641f0d53dca216b7cc64d5db7d846d99" kindref="member">area</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>width<sp/>*<sp/><ref refid="structsl_1_1_resolution_1a46ec383ce0c4d4941df656a29abfdc96" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="structsl_1_1_resolution_1ae94d2282121e73497bf79b1443d7eb26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structsl_1_1_resolution_1ae94d2282121e73497bf79b1443d7eb26" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsl_1_1_resolution" kindref="compound">Resolution</ref><sp/>&amp;that)</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((width<sp/>==<sp/>that.<ref refid="structsl_1_1_resolution_1ac4dc47fc9738ccc5e1c8c37c0528eda3" kindref="member">width</ref>)<sp/>&amp;&amp;<sp/>(height<sp/>==<sp/>that.<ref refid="structsl_1_1_resolution_1a46ec383ce0c4d4941df656a29abfdc96" kindref="member">height</ref>));</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="structsl_1_1_resolution_1a8e45d634d3d1764a7658e95ce1e0c33a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structsl_1_1_resolution_1a8e45d634d3d1764a7658e95ce1e0c33a" kindref="member">operator!=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsl_1_1_resolution" kindref="compound">Resolution</ref><sp/>&amp;that)</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((width<sp/>!=<sp/>that.<ref refid="structsl_1_1_resolution_1ac4dc47fc9738ccc5e1c8c37c0528eda3" kindref="member">width</ref>)<sp/>||<sp/>(height<sp/>!=<sp/>that.<ref refid="structsl_1_1_resolution_1a46ec383ce0c4d4941df656a29abfdc96" kindref="member">height</ref>));</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="structsl_1_1_camera_parameters" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsl_1_1_camera_parameters" kindref="compound">CameraParameters</ref><sp/>{</highlight></codeline>
+<codeline lineno="120" refid="structsl_1_1_camera_parameters_1ae8557c5fe0a2dbe8abbec47a7bf51367" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structsl_1_1_camera_parameters_1ae8557c5fe0a2dbe8abbec47a7bf51367" kindref="member">fx</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="121" refid="structsl_1_1_camera_parameters_1a6004be2d9f8f5d7f11733e97c246b591" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structsl_1_1_camera_parameters_1a6004be2d9f8f5d7f11733e97c246b591" kindref="member">fy</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="122" refid="structsl_1_1_camera_parameters_1ae528a72fd0a5b4638039184e64ccd30e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structsl_1_1_camera_parameters_1ae528a72fd0a5b4638039184e64ccd30e" kindref="member">cx</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="123" refid="structsl_1_1_camera_parameters_1ab2a54a30a080878e504d5147c8c1c74c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structsl_1_1_camera_parameters_1ab2a54a30a080878e504d5147c8c1c74c" kindref="member">cy</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="124" refid="structsl_1_1_camera_parameters_1a7bb39f9798b20753f474088196f0614c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>disto[5];<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125" refid="structsl_1_1_camera_parameters_1af1d059de8c2cee1117dd1ad405eecadc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structsl_1_1_camera_parameters_1af1d059de8c2cee1117dd1ad405eecadc" kindref="member">v_fov</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126" refid="structsl_1_1_camera_parameters_1a2ffc4753ac15cdb985b77d05e98a9297" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structsl_1_1_camera_parameters_1a2ffc4753ac15cdb985b77d05e98a9297" kindref="member">h_fov</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127" refid="structsl_1_1_camera_parameters_1ae2d7d4226dee8dd4f666f0ae117f343f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structsl_1_1_camera_parameters_1ae2d7d4226dee8dd4f666f0ae117f343f" kindref="member">d_fov</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="128" refid="structsl_1_1_camera_parameters_1af46a5a73f3320a4529fc1f9cd1dd6ec3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsl_1_1_resolution" kindref="compound">Resolution</ref><sp/><ref refid="structsl_1_1_camera_parameters_1af46a5a73f3320a4529fc1f9cd1dd6ec3" kindref="member">image_size</ref>;<sp/></highlight></codeline>
+<codeline lineno="137" refid="structsl_1_1_camera_parameters_1a8cb2aae3c7afa8eddcec3604c061400f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsl_1_1_camera_parameters_1a8cb2aae3c7afa8eddcec3604c061400f" kindref="member">SetUp</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>focal_x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>focal_y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>center_x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>center_y)<sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fx<sp/>=<sp/>focal_x;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fy<sp/>=<sp/>focal_y;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cx<sp/>=<sp/>center_x;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cy<sp/>=<sp/>center_y;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="structsl_1_1_calibration_parameters" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsl_1_1_calibration_parameters" kindref="compound">CalibrationParameters</ref><sp/>{</highlight></codeline>
+<codeline lineno="153" refid="structsl_1_1_calibration_parameters_1a46045947724ca76311296836c5989773" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sl::float3<sp/><ref refid="structsl_1_1_calibration_parameters_1a46045947724ca76311296836c5989773" kindref="member">R</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="154" refid="structsl_1_1_calibration_parameters_1a0f72982f8ea18cd9cfee87d7bf1ba2c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sl::float3<sp/><ref refid="structsl_1_1_calibration_parameters_1a0f72982f8ea18cd9cfee87d7bf1ba2c5" kindref="member">T</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="155" refid="structsl_1_1_calibration_parameters_1ad3cbed4dbccac5ccc3522ce034aff39d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsl_1_1_camera_parameters" kindref="compound">CameraParameters</ref><sp/><ref refid="structsl_1_1_calibration_parameters_1ad3cbed4dbccac5ccc3522ce034aff39d" kindref="member">left_cam</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="156" refid="structsl_1_1_calibration_parameters_1a5d26d384acb4cfbf1064fa700bd4ba50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsl_1_1_camera_parameters" kindref="compound">CameraParameters</ref><sp/><ref refid="structsl_1_1_calibration_parameters_1a5d26d384acb4cfbf1064fa700bd4ba50" kindref="member">right_cam</ref>;<sp/></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="structsl_1_1_camera_information" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsl_1_1_camera_information" kindref="compound">CameraInformation</ref><sp/>{</highlight></codeline>
+<codeline lineno="164" refid="structsl_1_1_camera_information_1ae6c3ec7de1a1a4ab010e3e1f4f22c758" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsl_1_1_calibration_parameters" kindref="compound">CalibrationParameters</ref><sp/><ref refid="structsl_1_1_camera_information_1ae6c3ec7de1a1a4ab010e3e1f4f22c758" kindref="member">calibration_parameters</ref>;<sp/></highlight></codeline>
+<codeline lineno="165" refid="structsl_1_1_camera_information_1aaee83087fbd009b2ab2f0e634a867a6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsl_1_1_calibration_parameters" kindref="compound">CalibrationParameters</ref><sp/><ref refid="structsl_1_1_camera_information_1aaee83087fbd009b2ab2f0e634a867a6e" kindref="member">calibration_parameters_raw</ref>;<sp/></highlight></codeline>
+<codeline lineno="166" refid="structsl_1_1_camera_information_1a88330f20dd32c0b921a540964b03ddf4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>serial_number<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="167" refid="structsl_1_1_camera_information_1a444fcafcb629eb3e066ee28c3339a4c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>firmware_version<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="174" refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref><sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MEM_CPU<sp/>=<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MEM_GPU<sp/>=<sp/>2<sp/><sp/></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref><sp/>operator|(<ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref><sp/>a,<sp/><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref><sp/>b)<sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(a)<sp/>|<sp/>static_cast&lt;int&gt;(b));</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="group___enumerations_1ga94ef27af8db885e1f68672c1e55b8d28" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___enumerations_1ga94ef27af8db885e1f68672c1e55b8d28" kindref="member">COPY_TYPE</ref><sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>COPY_TYPE_CPU_CPU,<sp/></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>COPY_TYPE_CPU_GPU,<sp/></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>COPY_TYPE_GPU_GPU,<sp/></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>COPY_TYPE_GPU_CPU<sp/><sp/></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200" refid="group___enumerations_1ga17040776536c6a3aea17eb101356af93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___enumerations_1ga17040776536c6a3aea17eb101356af93" kindref="member">MAT_TYPE</ref><sp/>{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MAT_TYPE_32F_C1,<sp/></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MAT_TYPE_32F_C2,<sp/></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MAT_TYPE_32F_C3,<sp/></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MAT_TYPE_32F_C4,<sp/></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MAT_TYPE_8U_C1,<sp/></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MAT_TYPE_8U_C2,<sp/></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MAT_TYPE_8U_C3,<sp/></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MAT_TYPE_8U_C4<sp/><sp/></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="219" refid="classsl_1_1_mat" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SL_CORE_EXPORT_DLL<sp/><ref refid="classsl_1_1_mat" kindref="compound">Mat</ref><sp/>{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>Array<sp/>size.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsl_1_1_resolution" kindref="compound">Resolution</ref><sp/>size;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Number<sp/>of<sp/>values<sp/>by<sp/>pixels.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>channels<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>GPU<sp/>Step<sp/>of<sp/>the<sp/>Mat<sp/>in<sp/>Bytes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>step_gpu<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CPU<sp/>Step<sp/>of<sp/>the<sp/>Mat<sp/>in<sp/>Bytes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>step_cpu<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>size<sp/>in<sp/>bytes<sp/>of<sp/>one<sp/>pixel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>pixel_bytes<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Data<sp/>format.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga17040776536c6a3aea17eb101356af93" kindref="member">MAT_TYPE</ref><sp/>data_type;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Type<sp/>of<sp/>allocated<sp/>memory.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref><sp/>mem_type<sp/>=<sp/>sl::MEM_CPU;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pointer<sp/>to<sp/>memory<sp/>on<sp/>HOST/CPU,<sp/>if<sp/>available.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uchar1<sp/>*ptr_cpu<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pointer<sp/>to<sp/>memory<sp/>on<sp/>DEVICE/GPU,<sp/>if<sp/>available.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uchar1<sp/>*ptr_gpu<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pointer<sp/>to<sp/>internal<sp/>memory.<sp/>internal<sp/>use<sp/>only</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uchar1<sp/>*ptr_internal<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Defines<sp/>if<sp/>the<sp/>Mat<sp/>is<sp/>initialized.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>init<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Defines<sp/>if<sp/>the<sp/>memory<sp/>is<sp/>owned<sp/>(and<sp/>thus<sp/>freed)<sp/>or<sp/>shared.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>memory_owner<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Variable<sp/>used<sp/>in<sp/>verbose<sp/>mode<sp/>to<sp/>indicate<sp/>witch<sp/>Mat<sp/>is<sp/>printing<sp/>informations.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sl::String<sp/>name;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Whether<sp/>the<sp/>MAT<sp/>can<sp/>display<sp/>informations<sp/>or<sp/>not.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>verbose<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267" refid="classsl_1_1_mat_1a16f95ba4bc89d11589891a8ca5d72894" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_mat_1a16f95ba4bc89d11589891a8ca5d72894" kindref="member">Mat</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_mat" kindref="compound">Mat</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structsl_1_1_resolution_1ac4dc47fc9738ccc5e1c8c37c0528eda3" kindref="member">width</ref>,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structsl_1_1_resolution_1a46ec383ce0c4d4941df656a29abfdc96" kindref="member">height</ref>,<sp/><ref refid="group___enumerations_1ga17040776536c6a3aea17eb101356af93" kindref="member">MAT_TYPE</ref><sp/>mat_type,<sp/><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref><sp/>memory_type<sp/>=<sp/>MEM_CPU);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_mat" kindref="compound">Mat</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>height,<sp/><ref refid="group___enumerations_1ga17040776536c6a3aea17eb101356af93" kindref="member">MAT_TYPE</ref><sp/>mat_type,<sp/>sl::uchar1<sp/>*ptr,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>step,<sp/><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref><sp/>memory_type<sp/>=<sp/>MEM_CPU);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_mat" kindref="compound">Mat</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>height,<sp/><ref refid="group___enumerations_1ga17040776536c6a3aea17eb101356af93" kindref="member">MAT_TYPE</ref><sp/>mat_type,<sp/>sl::uchar1<sp/>*ptr_cpu,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>step_cpu,<sp/>sl::uchar1<sp/>*ptr_gpu,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>step_gpu);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_mat" kindref="compound">Mat</ref>(<ref refid="structsl_1_1_resolution" kindref="compound">sl::Resolution</ref><sp/>resolution,<sp/><ref refid="group___enumerations_1ga17040776536c6a3aea17eb101356af93" kindref="member">MAT_TYPE</ref><sp/>mat_type,<sp/><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref><sp/>memory_type<sp/>=<sp/>MEM_CPU);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_mat" kindref="compound">Mat</ref>(<ref refid="structsl_1_1_resolution" kindref="compound">sl::Resolution</ref><sp/>resolution,<sp/><ref refid="group___enumerations_1ga17040776536c6a3aea17eb101356af93" kindref="member">MAT_TYPE</ref><sp/>mat_type,<sp/>sl::uchar1<sp/>*ptr,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>step,<sp/><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref><sp/>memory_type<sp/>=<sp/>MEM_CPU);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_mat" kindref="compound">Mat</ref>(<ref refid="structsl_1_1_resolution" kindref="compound">sl::Resolution</ref><sp/>resolution,<sp/><ref refid="group___enumerations_1ga17040776536c6a3aea17eb101356af93" kindref="member">MAT_TYPE</ref><sp/>mat_type,<sp/>sl::uchar1<sp/>*ptr_cpu,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>step_cpu,<sp/>sl::uchar1<sp/>*ptr_gpu,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>step_gpu);</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_mat" kindref="compound">Mat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_mat" kindref="compound">sl::Mat</ref><sp/>&amp;mat);</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>alloc(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>height,<sp/><ref refid="group___enumerations_1ga17040776536c6a3aea17eb101356af93" kindref="member">MAT_TYPE</ref><sp/>mat_type,<sp/><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref><sp/>memory_type<sp/>=<sp/>MEM_CPU);</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>alloc(<ref refid="structsl_1_1_resolution" kindref="compound">sl::Resolution</ref><sp/>resolution,<sp/><ref refid="group___enumerations_1ga17040776536c6a3aea17eb101356af93" kindref="member">MAT_TYPE</ref><sp/>mat_type,<sp/><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref><sp/>memory_type<sp/>=<sp/>MEM_CPU);</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~<ref refid="classsl_1_1_mat" kindref="compound">Mat</ref>();</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>free(<ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref><sp/>memory_type<sp/>=<sp/>MEM_CPU<sp/>|<sp/>MEM_GPU);</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_mat" kindref="compound">Mat</ref><sp/>&amp;operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_mat" kindref="compound">Mat</ref><sp/>&amp;that);</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref><sp/>updateCPUfromGPU();</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref><sp/>updateGPUfromCPU();</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref><sp/>copyTo(<ref refid="classsl_1_1_mat" kindref="compound">Mat</ref><sp/>&amp;dst,<sp/><ref refid="group___enumerations_1ga94ef27af8db885e1f68672c1e55b8d28" kindref="member">COPY_TYPE</ref><sp/>cpyType<sp/>=<sp/>COPY_TYPE_CPU_CPU)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref><sp/>setFrom(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_mat" kindref="compound">Mat</ref><sp/>&amp;src,<sp/><ref refid="group___enumerations_1ga94ef27af8db885e1f68672c1e55b8d28" kindref="member">COPY_TYPE</ref><sp/>cpyType<sp/>=<sp/>COPY_TYPE_CPU_CPU);</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref><sp/>read(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>filePath);</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref><sp/>write(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>filePath);</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"></highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref><sp/>setTo(T<sp/>value,<sp/><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref><sp/>memory_type<sp/>=<sp/>MEM_CPU);</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>N&gt;</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref><sp/>setValue(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>y,<sp/>N<sp/>value,<sp/><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref><sp/>memory_type<sp/>=<sp/>MEM_CPU);</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"></highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>N&gt;</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">ERROR_CODE</ref><sp/>getValue(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>y,<sp/>N<sp/>*value,<sp/><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref><sp/>memory_type<sp/>=<sp/>MEM_CPU);</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"></highlight></codeline>
+<codeline lineno="477" refid="classsl_1_1_mat_1a7a3a502fee40d8e9926f7776d4da6c5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_mat_1a7a3a502fee40d8e9926f7776d4da6c5a" kindref="member">getWidth</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>size.<ref refid="structsl_1_1_resolution_1ac4dc47fc9738ccc5e1c8c37c0528eda3" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight></codeline>
+<codeline lineno="485" refid="classsl_1_1_mat_1ae0377171f834a13f5b718d00283b2e2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_mat_1ae0377171f834a13f5b718d00283b2e2e" kindref="member">getHeight</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>size.<ref refid="structsl_1_1_resolution_1a46ec383ce0c4d4941df656a29abfdc96" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"></highlight></codeline>
+<codeline lineno="493" refid="classsl_1_1_mat_1ab79ae917f1f3ddc08b7e6795df82d09a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structsl_1_1_resolution" kindref="compound">Resolution</ref><sp/><ref refid="classsl_1_1_mat_1ab79ae917f1f3ddc08b7e6795df82d09a" kindref="member">getResolution</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>size;</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"></highlight></codeline>
+<codeline lineno="501" refid="classsl_1_1_mat_1a97320c3b504caa8b165a1ebe1a556273" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_mat_1a97320c3b504caa8b165a1ebe1a556273" kindref="member">getChannels</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>channels;</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"></highlight></codeline>
+<codeline lineno="509" refid="classsl_1_1_mat_1a1046f54b9797833af7d0621dd6da9a45" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="group___enumerations_1ga17040776536c6a3aea17eb101356af93" kindref="member">MAT_TYPE</ref><sp/><ref refid="classsl_1_1_mat_1a1046f54b9797833af7d0621dd6da9a45" kindref="member">getDataType</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data_type;</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"></highlight></codeline>
+<codeline lineno="517" refid="classsl_1_1_mat_1ac7c9224a3ceeb7fb1d2b0b009e6e396e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref><sp/><ref refid="classsl_1_1_mat_1ac7c9224a3ceeb7fb1d2b0b009e6e396e" kindref="member">getMemoryType</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mem_type;</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>N&gt;</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>N<sp/>*getPtr(<ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref><sp/>memory_type<sp/>=<sp/>MEM_CPU);</highlight></codeline>
+<codeline lineno="528"><highlight class="normal"></highlight></codeline>
+<codeline lineno="534" refid="classsl_1_1_mat_1a0746f8964345637c8ffe76671dbbbf27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_mat_1a0746f8964345637c8ffe76671dbbbf27" kindref="member">getStepBytes</ref>(<ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref><sp/>memory_type<sp/>=<sp/>MEM_CPU)<sp/>{</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(memory_type)<sp/>{</highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>MEM_CPU:</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>step_cpu;</highlight></codeline>
+<codeline lineno="538"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>MEM_GPU:</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>step_gpu;</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="543"><highlight class="normal"></highlight></codeline>
+<codeline lineno="549"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>N&gt;</highlight></codeline>
+<codeline lineno="550" refid="classsl_1_1_mat_1a77d6d01f5dbd2aa6b00105c3b8a42313" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_mat_1a77d6d01f5dbd2aa6b00105c3b8a42313" kindref="member">getStep</ref>(<ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref><sp/>memory_type<sp/>=<sp/>MEM_CPU)<sp/>{</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getStepBytes(memory_type)<sp/>/<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(N);</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"></highlight></codeline>
+<codeline lineno="559" refid="classsl_1_1_mat_1a5dc155a862992b5db3c0bd52b2ed5741" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_mat_1a5dc155a862992b5db3c0bd52b2ed5741" kindref="member">getStep</ref>(<ref refid="group___enumerations_1gacce221d511ce5c81441e88b6b67dece3" kindref="member">MEM</ref><sp/>memory_type<sp/>=<sp/>MEM_CPU)<sp/>{</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(data_type)<sp/>{</highlight></codeline>
+<codeline lineno="561"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>sl::MAT_TYPE_32F_C1:</highlight></codeline>
+<codeline lineno="562"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getStep&lt;sl::float1&gt;(memory_type);</highlight></codeline>
+<codeline lineno="563"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>sl::MAT_TYPE_32F_C2:</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getStep&lt;sl::float2&gt;(memory_type);</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>sl::MAT_TYPE_32F_C3:</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getStep&lt;sl::float3&gt;(memory_type);</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>sl::MAT_TYPE_32F_C4:</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getStep&lt;sl::float4&gt;(memory_type);</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>sl::MAT_TYPE_8U_C1:</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getStep&lt;sl::uchar1&gt;(memory_type);</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>sl::MAT_TYPE_8U_C2:</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getStep&lt;sl::uchar2&gt;(memory_type);</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>sl::MAT_TYPE_8U_C3:</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getStep&lt;sl::uchar3&gt;(memory_type);</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>sl::MAT_TYPE_8U_C4:</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getStep&lt;sl::uchar4&gt;(memory_type);</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"></highlight></codeline>
+<codeline lineno="585" refid="classsl_1_1_mat_1a616798e1a3df0227e051c6151fe3e2f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_mat_1a616798e1a3df0227e051c6151fe3e2f9" kindref="member">getPixelBytes</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pixel_bytes;</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"></highlight></codeline>
+<codeline lineno="593" refid="classsl_1_1_mat_1a936f74c48e04f96c857a7eb86a29078c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_mat_1a936f74c48e04f96c857a7eb86a29078c" kindref="member">getWidthBytes</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pixel_bytes<sp/>*<sp/>size.<ref refid="structsl_1_1_resolution_1ac4dc47fc9738ccc5e1c8c37c0528eda3" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"></highlight></codeline>
+<codeline lineno="601"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sl::String<sp/>getInfos();</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"></highlight></codeline>
+<codeline lineno="607" refid="classsl_1_1_mat_1aa99115917d1677af9050b87f97bcb6a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_mat_1aa99115917d1677af9050b87f97bcb6a8" kindref="member">isInit</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>init;</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="610"><highlight class="normal"></highlight></codeline>
+<codeline lineno="616" refid="classsl_1_1_mat_1aa3df7ef2cbe034916add734e9b664e5d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_mat_1aa3df7ef2cbe034916add734e9b664e5d" kindref="member">isMemoryOwner</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>memory_owner;</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"></highlight></codeline>
+<codeline lineno="625"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>clone(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_mat" kindref="compound">Mat</ref><sp/>&amp;src);</highlight></codeline>
+<codeline lineno="626"><highlight class="normal"></highlight></codeline>
+<codeline lineno="627"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"></highlight></codeline>
+<codeline lineno="629"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SL_CORE_EXPORT_DLL<sp/>Rotation;</highlight></codeline>
+<codeline lineno="630"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SL_CORE_EXPORT_DLL<sp/>Translation;</highlight></codeline>
+<codeline lineno="631"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SL_CORE_EXPORT_DLL<sp/>Orientation;</highlight></codeline>
+<codeline lineno="632"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SL_CORE_EXPORT_DLL<sp/>Transform;</highlight></codeline>
+<codeline lineno="633"><highlight class="normal"></highlight></codeline>
+<codeline lineno="638" refid="classsl_1_1_rotation" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SL_CORE_EXPORT_DLL<sp/>Rotation<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_matrix3f" kindref="compound">Matrix3f</ref><sp/>{</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="643"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Rotation();</highlight></codeline>
+<codeline lineno="644"><highlight class="normal"></highlight></codeline>
+<codeline lineno="649"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Rotation(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Rotation<sp/>&amp;rotation);</highlight></codeline>
+<codeline lineno="650"><highlight class="normal"></highlight></codeline>
+<codeline lineno="655"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Rotation(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_matrix3f" kindref="compound">Matrix3f</ref><sp/>&amp;mat);</highlight></codeline>
+<codeline lineno="656"><highlight class="normal"></highlight></codeline>
+<codeline lineno="662"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Rotation(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Orientation<sp/>&amp;orientation);</highlight></codeline>
+<codeline lineno="663"><highlight class="normal"></highlight></codeline>
+<codeline lineno="669"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Rotation(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Translation<sp/>&amp;axis);</highlight></codeline>
+<codeline lineno="670"><highlight class="normal"></highlight></codeline>
+<codeline lineno="675"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setOrientation(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Orientation<sp/>&amp;orientation);</highlight></codeline>
+<codeline lineno="676"><highlight class="normal"></highlight></codeline>
+<codeline lineno="681"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Orientation<sp/>getOrientation();</highlight></codeline>
+<codeline lineno="682"><highlight class="normal"></highlight></codeline>
+<codeline lineno="687"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sl::Vector3&lt;float&gt;<sp/>getRotationVector();</highlight></codeline>
+<codeline lineno="688"><highlight class="normal"></highlight></codeline>
+<codeline lineno="693"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setRotationVector(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sl::Vector3&lt;float&gt;<sp/>&amp;vec_rot);</highlight></codeline>
+<codeline lineno="694"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="695"><highlight class="normal"></highlight></codeline>
+<codeline lineno="702" refid="classsl_1_1_translation" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SL_CORE_EXPORT_DLL<sp/>Translation<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Vector3&lt;float&gt;<sp/>{</highlight></codeline>
+<codeline lineno="703"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="707"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Translation();</highlight></codeline>
+<codeline lineno="708"><highlight class="normal"></highlight></codeline>
+<codeline lineno="713"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Translation(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Translation<sp/>&amp;translation);</highlight></codeline>
+<codeline lineno="714"><highlight class="normal"></highlight></codeline>
+<codeline lineno="721"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Translation(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t3);</highlight></codeline>
+<codeline lineno="722"><highlight class="normal"></highlight></codeline>
+<codeline lineno="727"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Translation(Vector3&lt;float&gt;<sp/>in);</highlight></codeline>
+<codeline lineno="728"><highlight class="normal"></highlight></codeline>
+<codeline lineno="734"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Translation<sp/>operator*(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Orientation<sp/>&amp;mat)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="735"><highlight class="normal"></highlight></codeline>
+<codeline lineno="739"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>normalize();</highlight></codeline>
+<codeline lineno="740"><highlight class="normal"></highlight></codeline>
+<codeline lineno="746"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Translation<sp/>normalize(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Translation<sp/>&amp;tr);</highlight></codeline>
+<codeline lineno="747"><highlight class="normal"></highlight></codeline>
+<codeline lineno="753"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>&amp;operator()(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="754"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="755"><highlight class="normal"></highlight></codeline>
+<codeline lineno="760" refid="classsl_1_1_orientation" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SL_CORE_EXPORT_DLL<sp/>Orientation<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Vector4&lt;float&gt;<sp/>{</highlight></codeline>
+<codeline lineno="761"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="765"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Orientation();</highlight></codeline>
+<codeline lineno="766"><highlight class="normal"></highlight></codeline>
+<codeline lineno="771"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Orientation(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Orientation<sp/>&amp;orientation);</highlight></codeline>
+<codeline lineno="772"><highlight class="normal"></highlight></codeline>
+<codeline lineno="777"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Orientation(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector4&lt;float&gt;<sp/>&amp;in);</highlight></codeline>
+<codeline lineno="778"><highlight class="normal"></highlight></codeline>
+<codeline lineno="784"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Orientation(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Rotation<sp/>&amp;rotation);</highlight></codeline>
+<codeline lineno="785"><highlight class="normal"></highlight></codeline>
+<codeline lineno="791"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Orientation(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Translation<sp/>&amp;tr1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Translation<sp/>&amp;tr2);</highlight></codeline>
+<codeline lineno="792"><highlight class="normal"></highlight></codeline>
+<codeline lineno="798"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>operator()(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="799"><highlight class="normal"></highlight></codeline>
+<codeline lineno="805"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Orientation<sp/>operator*(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Orientation<sp/>&amp;orientation)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="806"><highlight class="normal"></highlight></codeline>
+<codeline lineno="811"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setRotation(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Rotation<sp/>&amp;rotation);</highlight></codeline>
+<codeline lineno="812"><highlight class="normal"></highlight></codeline>
+<codeline lineno="817"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Rotation<sp/>getRotation()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="818"><highlight class="normal"></highlight></codeline>
+<codeline lineno="822"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setIdentity();</highlight></codeline>
+<codeline lineno="823"><highlight class="normal"></highlight></codeline>
+<codeline lineno="828"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Orientation<sp/>identity();</highlight></codeline>
+<codeline lineno="829"><highlight class="normal"></highlight></codeline>
+<codeline lineno="833"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setZeros();</highlight></codeline>
+<codeline lineno="834"><highlight class="normal"></highlight></codeline>
+<codeline lineno="839"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Orientation<sp/>zeros();</highlight></codeline>
+<codeline lineno="840"><highlight class="normal"></highlight></codeline>
+<codeline lineno="844"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>normalise();</highlight></codeline>
+<codeline lineno="845"><highlight class="normal"></highlight></codeline>
+<codeline lineno="851"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Orientation<sp/>normalise(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Orientation<sp/>&amp;orient);</highlight></codeline>
+<codeline lineno="852"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="853"><highlight class="normal"></highlight></codeline>
+<codeline lineno="859" refid="classsl_1_1_transform" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SL_CORE_EXPORT_DLL<sp/>Transform<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref><sp/>{</highlight></codeline>
+<codeline lineno="860"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="864"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Transform();</highlight></codeline>
+<codeline lineno="865"><highlight class="normal"></highlight></codeline>
+<codeline lineno="870"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Transform(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Transform<sp/>&amp;motion);</highlight></codeline>
+<codeline lineno="871"><highlight class="normal"></highlight></codeline>
+<codeline lineno="876"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Transform(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsl_1_1_matrix4f" kindref="compound">Matrix4f</ref><sp/>&amp;mat);</highlight></codeline>
+<codeline lineno="877"><highlight class="normal"></highlight></codeline>
+<codeline lineno="883"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Transform(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Rotation<sp/>&amp;rotation,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Translation<sp/>&amp;translation);</highlight></codeline>
+<codeline lineno="884"><highlight class="normal"></highlight></codeline>
+<codeline lineno="890"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Transform(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Orientation<sp/>&amp;orientation,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Translation<sp/>&amp;translation);</highlight></codeline>
+<codeline lineno="891"><highlight class="normal"></highlight></codeline>
+<codeline lineno="896"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setRotation(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Rotation<sp/>&amp;rotation);</highlight></codeline>
+<codeline lineno="897"><highlight class="normal"></highlight></codeline>
+<codeline lineno="903"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Rotation<sp/>getRotation()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="904"><highlight class="normal"></highlight></codeline>
+<codeline lineno="909"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setTranslation(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Translation<sp/>&amp;translation);</highlight></codeline>
+<codeline lineno="910"><highlight class="normal"></highlight></codeline>
+<codeline lineno="916"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Translation<sp/>getTranslation()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="917"><highlight class="normal"></highlight></codeline>
+<codeline lineno="922"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setOrientation(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Orientation<sp/>&amp;orientation);</highlight></codeline>
+<codeline lineno="923"><highlight class="normal"></highlight></codeline>
+<codeline lineno="929"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Orientation<sp/>getOrientation()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="930"><highlight class="normal"></highlight></codeline>
+<codeline lineno="935"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sl::Vector3&lt;float&gt;<sp/>getRotationVector();</highlight></codeline>
+<codeline lineno="936"><highlight class="normal"></highlight></codeline>
+<codeline lineno="941"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setRotationVector(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sl::Vector3&lt;float&gt;<sp/>&amp;vec_rot);</highlight></codeline>
+<codeline lineno="942"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="943"><highlight class="normal"></highlight></codeline>
+<codeline lineno="945"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SL_CORE_EXPORT_DLL<sp/>TextureImage<sp/>{</highlight></codeline>
+<codeline lineno="946"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="947"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TextureImage(<ref refid="classsl_1_1_mat" kindref="compound">sl::Mat</ref><sp/>&amp;img_,<sp/><ref refid="classsl_1_1_transform" kindref="compound">sl::Transform</ref><sp/>&amp;path_);</highlight></codeline>
+<codeline lineno="948"><highlight class="normal"></highlight></codeline>
+<codeline lineno="949"><highlight class="normal"></highlight></codeline>
+<codeline lineno="950"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~TextureImage()<sp/>{</highlight></codeline>
+<codeline lineno="951"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>img.free();</highlight></codeline>
+<codeline lineno="952"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="953"><highlight class="normal"></highlight></codeline>
+<codeline lineno="954"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>clear()<sp/>{</highlight></codeline>
+<codeline lineno="955"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>img.free();</highlight></codeline>
+<codeline lineno="956"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="957"><highlight class="normal"></highlight></codeline>
+<codeline lineno="958"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_mat" kindref="compound">sl::Mat</ref><sp/>img;</highlight></codeline>
+<codeline lineno="959"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_transform" kindref="compound">sl::Transform</ref><sp/>path;</highlight></codeline>
+<codeline lineno="960"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="962"></codeline>
+<codeline lineno="964"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SL_CORE_EXPORT_DLL<sp/>TextureImagePool<sp/>{</highlight></codeline>
+<codeline lineno="965"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="966"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TextureImagePool()<sp/>{</highlight></codeline>
+<codeline lineno="967"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="968"><highlight class="normal"></highlight></codeline>
+<codeline lineno="969"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~TextureImagePool()<sp/>{</highlight></codeline>
+<codeline lineno="970"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clear();</highlight></codeline>
+<codeline lineno="971"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="972"><highlight class="normal"></highlight></codeline>
+<codeline lineno="973"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;TextureImage&gt;<sp/>v;</highlight></codeline>
+<codeline lineno="974"><highlight class="normal"></highlight></codeline>
+<codeline lineno="975"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size()<sp/>{</highlight></codeline>
+<codeline lineno="976"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)v.size();</highlight></codeline>
+<codeline lineno="977"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="978"><highlight class="normal"></highlight></codeline>
+<codeline lineno="979"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>stack(<ref refid="classsl_1_1_mat" kindref="compound">sl::Mat</ref><sp/>&amp;<ref refid="structimage" kindref="compound">image</ref>,<sp/><ref refid="classsl_1_1_transform" kindref="compound">sl::Transform</ref><sp/>&amp;path);</highlight></codeline>
+<codeline lineno="980"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>concat(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TextureImagePool<sp/>&amp;that);</highlight></codeline>
+<codeline lineno="981"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TextureImagePool<sp/>&amp;operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TextureImagePool<sp/>&amp;that);</highlight></codeline>
+<codeline lineno="982"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>clear();</highlight></codeline>
+<codeline lineno="983"><highlight class="normal"></highlight></codeline>
+<codeline lineno="984"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="985"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::mutex<sp/>mtx;</highlight></codeline>
+<codeline lineno="986"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="988"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="989"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__CORE_HPP__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp"/>
+  </compounddef>
+</doxygen>

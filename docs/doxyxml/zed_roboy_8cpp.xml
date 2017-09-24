@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="zed_roboy_8cpp" kind="file" language="C++">
+    <compoundname>zedRoboy.cpp</compoundname>
+    <includes refid="_camera_8hpp" local="no">sl/Camera.hpp</includes>
+    <includes refid="utils_8hpp" local="yes">utils.hpp</includes>
+    <incdepgraph>
+      <node id="2140">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="2115">
+        <label>iomanip</label>
+      </node>
+      <node id="2136">
+        <label>limits</label>
+      </node>
+      <node id="2135">
+        <label>cstdint</label>
+      </node>
+      <node id="2130">
+        <label>device_launch_parameters.h</label>
+      </node>
+      <node id="2124">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2134">
+        <label>sl/defines.hpp</label>
+        <link refid="defines_8hpp_source"/>
+        <childnode refid="2135" relation="include">
+        </childnode>
+        <childnode refid="2111" relation="include">
+        </childnode>
+        <childnode refid="2116" relation="include">
+        </childnode>
+        <childnode refid="2121" relation="include">
+        </childnode>
+        <childnode refid="2136" relation="include">
+        </childnode>
+        <childnode refid="2131" relation="include">
+        </childnode>
+      </node>
+      <node id="2122">
+        <label>cuda.h</label>
+        <link refid="cuda_8h_source"/>
+        <childnode refid="2123" relation="include">
+        </childnode>
+      </node>
+      <node id="2128">
+        <label>cuda_runtime.h</label>
+      </node>
+      <node id="2108">
+        <label>cmath</label>
+      </node>
+      <node id="2137">
+        <label>opencv2/opencv.hpp</label>
+      </node>
+      <node id="2133">
+        <label>string</label>
+      </node>
+      <node id="2117">
+        <label>memory.h</label>
+      </node>
+      <node id="2114">
+        <label>fstream</label>
+      </node>
+      <node id="2105">
+        <label>sl/types.hpp</label>
+        <link refid="types_8hpp_source"/>
+        <childnode refid="2106" relation="include">
+        </childnode>
+        <childnode refid="2107" relation="include">
+        </childnode>
+        <childnode refid="2108" relation="include">
+        </childnode>
+        <childnode refid="2109" relation="include">
+        </childnode>
+        <childnode refid="2110" relation="include">
+        </childnode>
+        <childnode refid="2111" relation="include">
+        </childnode>
+        <childnode refid="2112" relation="include">
+        </childnode>
+        <childnode refid="2113" relation="include">
+        </childnode>
+        <childnode refid="2114" relation="include">
+        </childnode>
+        <childnode refid="2115" relation="include">
+        </childnode>
+        <childnode refid="2116" relation="include">
+        </childnode>
+        <childnode refid="2117" relation="include">
+        </childnode>
+        <childnode refid="2118" relation="include">
+        </childnode>
+        <childnode refid="2119" relation="include">
+        </childnode>
+        <childnode refid="2120" relation="include">
+        </childnode>
+        <childnode refid="2121" relation="include">
+        </childnode>
+        <childnode refid="2122" relation="include">
+        </childnode>
+        <childnode refid="2128" relation="include">
+        </childnode>
+        <childnode refid="2129" relation="include">
+        </childnode>
+        <childnode refid="2130" relation="include">
+        </childnode>
+        <childnode refid="2131" relation="include">
+        </childnode>
+      </node>
+      <node id="2123">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="2124" relation="include">
+        </childnode>
+        <childnode refid="2125" relation="include">
+        </childnode>
+        <childnode refid="2126" relation="include">
+        </childnode>
+        <childnode refid="2127" relation="include">
+        </childnode>
+      </node>
+      <node id="2127">
+        <label>pthread.h</label>
+      </node>
+      <node id="2138">
+        <label>utils.hpp</label>
+        <link refid="utils_8hpp_source"/>
+        <childnode refid="2109" relation="include">
+        </childnode>
+        <childnode refid="2111" relation="include">
+        </childnode>
+        <childnode refid="2139" relation="include">
+        </childnode>
+        <childnode refid="2110" relation="include">
+        </childnode>
+        <childnode refid="2107" relation="include">
+        </childnode>
+        <childnode refid="2120" relation="include">
+        </childnode>
+        <childnode refid="2118" relation="include">
+        </childnode>
+        <childnode refid="2140" relation="include">
+        </childnode>
+        <childnode refid="2137" relation="include">
+        </childnode>
+        <childnode refid="2103" relation="include">
+        </childnode>
+      </node>
+      <node id="2126">
+        <label>string.h</label>
+      </node>
+      <node id="2109">
+        <label>cstdio</label>
+      </node>
+      <node id="2112">
+        <label>ctime</label>
+      </node>
+      <node id="2131">
+        <label>unistd.h</label>
+      </node>
+      <node id="2121">
+        <label>vector</label>
+      </node>
+      <node id="2139">
+        <label>signal.h</label>
+      </node>
+      <node id="2104">
+        <label>sl/Core.hpp</label>
+        <link refid="_core_8hpp_source"/>
+        <childnode refid="2105" relation="include">
+        </childnode>
+      </node>
+      <node id="2119">
+        <label>sstream</label>
+      </node>
+      <node id="2102">
+        <label>/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.cpp</label>
+        <link refid="zedRoboy.cpp"/>
+        <childnode refid="2103" relation="include">
+        </childnode>
+        <childnode refid="2138" relation="include">
+        </childnode>
+      </node>
+      <node id="2110">
+        <label>cstdlib</label>
+      </node>
+      <node id="2116">
+        <label>iostream</label>
+      </node>
+      <node id="2113">
+        <label>ctype.h</label>
+      </node>
+      <node id="2103">
+        <label>sl/Camera.hpp</label>
+        <link refid="_camera_8hpp_source"/>
+        <childnode refid="2104" relation="include">
+        </childnode>
+        <childnode refid="2132" relation="include">
+        </childnode>
+        <childnode refid="2134" relation="include">
+        </childnode>
+        <childnode refid="2122" relation="include">
+        </childnode>
+        <childnode refid="2137" relation="include">
+        </childnode>
+      </node>
+      <node id="2118">
+        <label>mutex</label>
+      </node>
+      <node id="2129">
+        <label>cuda_runtime_api.h</label>
+      </node>
+      <node id="2107">
+        <label>chrono</label>
+      </node>
+      <node id="2120">
+        <label>thread</label>
+      </node>
+      <node id="2132">
+        <label>sl/Mesh.hpp</label>
+        <link refid="_mesh_8hpp_source"/>
+        <childnode refid="2121" relation="include">
+        </childnode>
+        <childnode refid="2133" relation="include">
+        </childnode>
+        <childnode refid="2114" relation="include">
+        </childnode>
+        <childnode refid="2104" relation="include">
+        </childnode>
+      </node>
+      <node id="2106">
+        <label>algorithm</label>
+      </node>
+      <node id="2125">
+        <label>stdio.h</label>
+      </node>
+      <node id="2111">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacestd">std</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="zed_roboy_8cpp_1a1d241e1d34592e8f64f2d9939996c7f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsl_1_1_camera" kindref="compound">sl::Camera</ref></type>
+        <definition>sl::Camera InitCamera</definition>
+        <argsstring>()</argsstring>
+        <name>InitCamera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.cpp" line="6" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.cpp" bodystart="6" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="zed_roboy_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.cpp" line="52" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.cpp" bodystart="52" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;sl/Camera.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;utils.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><ref refid="classsl_1_1_camera" kindref="compound">sl::Camera</ref><sp/>InitCamera<sp/>()<sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Parse<sp/>command<sp/>line<sp/>arguments<sp/>and<sp/>store<sp/>them<sp/>in<sp/>a<sp/>Option<sp/>structure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_info_option" kindref="compound">InfoOption</ref><sp/>modes;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>parse_args(argc,<sp/>argv,<sp/>modes);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>ZED<sp/>camera<sp/>and<sp/>Configure<sp/>parameters<sp/>according<sp/>to<sp/>command<sp/>line<sp/>options</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_camera" kindref="compound">sl::Camera</ref><sp/>zed;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsl_1_1_init_parameters" kindref="compound">sl::InitParameters</ref><sp/>initParameters;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!modes.recordingMode)<sp/>initParameters.<ref refid="classsl_1_1_init_parameters_1afa93c49d837c36e191aeb05ddd4369da" kindref="member">svo_input_filename</ref><sp/>=<sp/>modes.svo_path.c_str();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>initParameters.<ref refid="classsl_1_1_init_parameters_1a6fbbd31329da260c1850e8cd8e58d1dd" kindref="member">camera_fps</ref><sp/>=<sp/>30;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!modes.computeDisparity)<sp/>initParameters.<ref refid="classsl_1_1_init_parameters_1aecbfd32ca0b028752777dc971e0d09c3" kindref="member">depth_mode</ref><sp/>=<sp/>sl::DEPTH_MODE_NONE;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Open<sp/>the<sp/>ZED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">sl::ERROR_CODE</ref><sp/>err<sp/>=<sp/>zed.<ref refid="classsl_1_1_camera_1a46f6220e257357d510392317fd620095" kindref="member">open</ref>(initParameters);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err<sp/>!=<sp/>sl::SUCCESS)<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>sl::errorCode2str(err)<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>zed.<ref refid="classsl_1_1_camera_1aea6e65a70af62fd36574d2f0e9ab9337" kindref="member">close</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;<sp/></highlight><highlight class="comment">//<sp/>Quit<sp/>if<sp/>an<sp/>error<sp/>occurred</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>recording<sp/>mode<sp/>has<sp/>been<sp/>activated,<sp/>enable<sp/>the<sp/>recording<sp/>module.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(modes.recordingMode)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___enumerations_1ga6d4d2970f41dc0b475772623fac9c6cd" kindref="member">sl::ERROR_CODE</ref><sp/>err<sp/>=<sp/>zed.<ref refid="classsl_1_1_camera_1a91f24c692fe0200c8869410bbd4d86f5" kindref="member">enableRecording</ref>(modes.svo_path.c_str(),<sp/>sl::SVO_COMPRESSION_MODE::SVO_COMPRESSION_MODE_LOSSLESS);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err<sp/>!=<sp/>sl::SUCCESS)<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error<sp/>while<sp/>recording.<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>errorCode2str(err)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>err<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err<sp/>==<sp/>sl::ERROR_CODE_SVO_RECORDING_ERROR)<sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Note<sp/>:<sp/>This<sp/>error<sp/>mostly<sp/>comes<sp/>from<sp/>a<sp/>wrong<sp/>path<sp/>or<sp/>missing<sp/>writting<sp/>permissions...&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>zed.<ref refid="classsl_1_1_camera_1aea6e65a70af62fd36574d2f0e9ab9337" kindref="member">close</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Setup<sp/>key,<sp/>images,<sp/>times</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Defines<sp/>actions<sp/>to<sp/>do,<sp/>according<sp/>to<sp/>options</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>initActions(&amp;zed,<sp/>modes);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>zed;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv){</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">InitCamera()</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">return<sp/>0</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/zedRoboy.cpp"/>
+  </compounddef>
+</doxygen>

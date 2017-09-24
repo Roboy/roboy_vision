@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structkvp" kind="struct" language="C++" prot="public">
+    <compoundname>kvp</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structkvp_1ada553aa3459987ea43b7219868ba0a8f" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* kvp::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/option_list.h" line="6" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/option_list.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structkvp_1acfabb2665bc533f70cce1d708b6e6053" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* kvp::val</definition>
+        <argsstring></argsstring>
+        <name>val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/option_list.h" line="7" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/option_list.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structkvp_1a655effdf8a3be7aca94fe4f199f026fb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int kvp::used</definition>
+        <argsstring></argsstring>
+        <name>used</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/option_list.h" line="8" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/option_list.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/option_list.h" line="5" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/option_list.h" bodystart="5" bodyend="9"/>
+    <listofallmembers>
+      <member refid="structkvp_1ada553aa3459987ea43b7219868ba0a8f" prot="public" virt="non-virtual"><scope>kvp</scope><name>key</name></member>
+      <member refid="structkvp_1a655effdf8a3be7aca94fe4f199f026fb" prot="public" virt="non-virtual"><scope>kvp</scope><name>used</name></member>
+      <member refid="structkvp_1acfabb2665bc533f70cce1d708b6e6053" prot="public" virt="non-virtual"><scope>kvp</scope><name>val</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

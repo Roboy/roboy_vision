@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="parser_8h" kind="file" language="C++">
+    <compoundname>parser.h</compoundname>
+    <includes refid="darknet_8h" local="yes">darknet.h</includes>
+    <includes refid="network_8h" local="yes">network.h</includes>
+    <includedby refid="compare_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/compare.c</includedby>
+    <includedby refid="demo_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/demo.c</includedby>
+    <includedby refid="network_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.c</includedby>
+    <includedby refid="parser_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c</includedby>
+    <includedby refid="libyolo_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/libyolo.c</includedby>
+    <incdepgraph>
+      <node id="1508">
+        <label>box.h</label>
+        <link refid="box_8h_source"/>
+        <childnode refid="1499" relation="include">
+        </childnode>
+      </node>
+      <node id="1506">
+        <label>float.h</label>
+      </node>
+      <node id="1500">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1510">
+        <label>data.h</label>
+        <link refid="data_8h_source"/>
+        <childnode refid="1503" relation="include">
+        </childnode>
+        <childnode refid="1499" relation="include">
+        </childnode>
+        <childnode refid="1511" relation="include">
+        </childnode>
+        <childnode refid="1512" relation="include">
+        </childnode>
+        <childnode refid="1505" relation="include">
+        </childnode>
+        <childnode refid="1513" relation="include">
+        </childnode>
+      </node>
+      <node id="1504">
+        <label>network.h</label>
+        <link refid="network_8h_source"/>
+        <childnode refid="1499" relation="include">
+        </childnode>
+        <childnode refid="1505" relation="include">
+        </childnode>
+        <childnode refid="1509" relation="include">
+        </childnode>
+        <childnode refid="1510" relation="include">
+        </childnode>
+        <childnode refid="1513" relation="include">
+        </childnode>
+      </node>
+      <node id="1498">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.h</label>
+        <link refid="parser.h"/>
+        <childnode refid="1499" relation="include">
+        </childnode>
+        <childnode refid="1504" relation="include">
+        </childnode>
+      </node>
+      <node id="1512">
+        <label>list.h</label>
+        <link refid="list_8h_source"/>
+        <childnode refid="1499" relation="include">
+        </childnode>
+      </node>
+      <node id="1511">
+        <label>matrix.h</label>
+        <link refid="matrix_8h_source"/>
+        <childnode refid="1499" relation="include">
+        </childnode>
+      </node>
+      <node id="1499">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="1500" relation="include">
+        </childnode>
+        <childnode refid="1501" relation="include">
+        </childnode>
+        <childnode refid="1502" relation="include">
+        </childnode>
+        <childnode refid="1503" relation="include">
+        </childnode>
+      </node>
+      <node id="1509">
+        <label>layer.h</label>
+        <link refid="layer_8h_source"/>
+        <childnode refid="1499" relation="include">
+        </childnode>
+      </node>
+      <node id="1503">
+        <label>pthread.h</label>
+      </node>
+      <node id="1505">
+        <label>image.h</label>
+        <link refid="image_8h_source"/>
+        <childnode refid="1500" relation="include">
+        </childnode>
+        <childnode refid="1501" relation="include">
+        </childnode>
+        <childnode refid="1506" relation="include">
+        </childnode>
+        <childnode refid="1502" relation="include">
+        </childnode>
+        <childnode refid="1507" relation="include">
+        </childnode>
+        <childnode refid="1508" relation="include">
+        </childnode>
+        <childnode refid="1499" relation="include">
+        </childnode>
+      </node>
+      <node id="1502">
+        <label>string.h</label>
+      </node>
+      <node id="1507">
+        <label>math.h</label>
+      </node>
+      <node id="1513">
+        <label>tree.h</label>
+        <link refid="tree_8h_source"/>
+        <childnode refid="1499" relation="include">
+        </childnode>
+      </node>
+      <node id="1501">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="parser_8h_1aade614c34aca38291ab50604530b7634" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void save_network</definition>
+        <argsstring>(network net, char *filename)</argsstring>
+        <name>save_network</name>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.h" line="6" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="parser_8h_1a3023bd127bf593fa76d0ed61fdd23d87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void save_weights_double</definition>
+        <argsstring>(network net, char *filename)</argsstring>
+        <name>save_weights_double</name>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.h" line="7" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>PARSER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARSER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;darknet.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;network.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>save_network(<ref refid="structnetwork" kindref="compound">network</ref><sp/>net,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>save_weights_double(<ref refid="structnetwork" kindref="compound">network</ref><sp/>net,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.h"/>
+  </compounddef>
+</doxygen>

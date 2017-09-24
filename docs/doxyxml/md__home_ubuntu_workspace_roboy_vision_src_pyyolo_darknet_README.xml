@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="md__home_ubuntu_workspace_roboy_vision_src_pyyolo_darknet_README" kind="page">
+    <compoundname>md__home_ubuntu_workspace_roboy_vision_src_pyyolo_darknet_README</compoundname>
+    <title>README</title>
+    <detaileddescription>
+<para><image type="html" name="darknet-black-small.png"></image>
+</para><para>#Darknet# Darknet is an open source neural network framework written in C and CUDA. It is fast, easy to install, and supports CPU and GPU computation.</para><para>For more information see the <ulink url="http://pjreddie.com/darknet">Darknet project website</ulink>.</para><para>For questions or issues please use the <ulink url="https://groups.google.com/forum/#!forum/darknet">Google Group</ulink>. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

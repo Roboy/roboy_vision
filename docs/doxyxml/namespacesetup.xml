@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacesetup" kind="namespace" language="Python">
+    <compoundname>setup</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="setup_8py_1afcb0ccb6a74e20b81f2e6349351d7b41" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>setup.module</definition>
+        <argsstring></argsstring>
+        <name>module</name>
+        <initializer>= Extension(&apos;pyyolo&apos;,
+	library_dirs=[&apos;.&apos;],
+	libraries=[&apos;yolo&apos;],
+	include_dirs=[numpy.get_include(), &apos;./darknet/include&apos;],
+	sources = [&apos;module.c&apos;])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/setup.py" line="4" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/setup.py" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="setup_8py_1ab3a7a0638d76a01367c5bc3cc699447f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>setup.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/setup.py" line="10" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/setup.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="setup_8py_1a2aa722b36a933088812b50ea79b97a5c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>setup.version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/setup.py" line="11" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/setup.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="setup_8py_1aedf461ec52a946bda975938ba0b93ec0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>setup.description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/setup.py" line="12" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/setup.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="setup_8py_1a1bf56ea61d1e9865f316116dca2fbfea" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>setup.ext_modules</definition>
+        <argsstring></argsstring>
+        <name>ext_modules</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/setup.py" line="13" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/setup.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/setup.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

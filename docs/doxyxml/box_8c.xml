@@ -1,0 +1,831 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="box_8c" kind="file" language="C++">
+    <compoundname>box.c</compoundname>
+    <includes refid="box_8h" local="yes">box.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <incdepgraph>
+      <node id="405">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c</label>
+        <link refid="box.c"/>
+        <childnode refid="406" relation="include">
+        </childnode>
+        <childnode refid="409" relation="include">
+        </childnode>
+        <childnode refid="412" relation="include">
+        </childnode>
+        <childnode refid="408" relation="include">
+        </childnode>
+      </node>
+      <node id="406">
+        <label>box.h</label>
+        <link refid="box_8h_source"/>
+        <childnode refid="407" relation="include">
+        </childnode>
+      </node>
+      <node id="408">
+        <label>stdlib.h</label>
+      </node>
+      <node id="407">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="408" relation="include">
+        </childnode>
+        <childnode refid="409" relation="include">
+        </childnode>
+        <childnode refid="410" relation="include">
+        </childnode>
+        <childnode refid="411" relation="include">
+        </childnode>
+      </node>
+      <node id="411">
+        <label>pthread.h</label>
+      </node>
+      <node id="410">
+        <label>string.h</label>
+      </node>
+      <node id="412">
+        <label>math.h</label>
+      </node>
+      <node id="409">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structsortable__bbox" prot="public">sortable_bbox</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="box_8c_1a3a91c383316adfc6dfc023e2168d0f35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structbox" kindref="compound">box</ref></type>
+        <definition>box float_to_box</definition>
+        <argsstring>(float *f, int stride)</argsstring>
+        <name>float_to_box</name>
+        <param>
+          <type>float *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stride</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" line="6" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" bodystart="6" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="box_8c_1a0a70286448dcb4dfca4ead3539e48a87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdbox" kindref="compound">dbox</ref></type>
+        <definition>dbox derivative</definition>
+        <argsstring>(box a, box b)</argsstring>
+        <name>derivative</name>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" line="16" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" bodystart="16" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="box_8c_1a49bbaf2c74dad0f7bbca22c9e41286ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float overlap</definition>
+        <argsstring>(float x1, float w1, float x2, float w2)</argsstring>
+        <name>overlap</name>
+        <param>
+          <type>float</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>w1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>w2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" line="67" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" bodystart="67" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="box_8c_1a306e7943e82df234b6f9d9c70def621c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float box_intersection</definition>
+        <argsstring>(box a, box b)</argsstring>
+        <name>box_intersection</name>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" line="78" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" bodystart="78" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="box_8c_1a6f5e94eb9c925d29647fd649799b8066" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float box_union</definition>
+        <argsstring>(box a, box b)</argsstring>
+        <name>box_union</name>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" line="87" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" bodystart="87" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="box_8c_1ae14a614fc4d26ebb552d23615dfea313" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float box_iou</definition>
+        <argsstring>(box a, box b)</argsstring>
+        <name>box_iou</name>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" line="94" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="box_8c_1a6ac422ecf58a8311afa95c9bbd701ac8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float box_rmse</definition>
+        <argsstring>(box a, box b)</argsstring>
+        <name>box_rmse</name>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" line="99" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" bodystart="99" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="box_8c_1ad94a4ec073b2f6ee903fb0b5ab454cb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdbox" kindref="compound">dbox</ref></type>
+        <definition>dbox dintersect</definition>
+        <argsstring>(box a, box b)</argsstring>
+        <name>dintersect</name>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" line="107" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" bodystart="107" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="box_8c_1ac771494b82a6acf3d931e2036f78f1a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdbox" kindref="compound">dbox</ref></type>
+        <definition>dbox dunion</definition>
+        <argsstring>(box a, box b)</argsstring>
+        <name>dunion</name>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" line="122" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" bodystart="122" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="box_8c_1ad9de7c64851fda7bea43a7aabc1e0c96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_dunion</definition>
+        <argsstring>()</argsstring>
+        <name>test_dunion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" line="136" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" bodystart="136" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="box_8c_1a1ddd84257551f7fd38df886550e67359" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_dintersect</definition>
+        <argsstring>()</argsstring>
+        <name>test_dintersect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" line="158" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" bodystart="158" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="box_8c_1a61a6530aed2c56cc5917c66260b306bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_box</definition>
+        <argsstring>()</argsstring>
+        <name>test_box</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" line="181" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" bodystart="181" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="box_8c_1a15facf6a91a4b408bb26ad32d0413673" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdbox" kindref="compound">dbox</ref></type>
+        <definition>dbox diou</definition>
+        <argsstring>(box a, box b)</argsstring>
+        <name>diou</name>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" line="210" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" bodystart="210" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="box_8c_1a67617304f07b28a123702a7f7b133e28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int nms_comparator</definition>
+        <argsstring>(const void *pa, const void *pb)</argsstring>
+        <name>nms_comparator</name>
+        <param>
+          <type>const void *</type>
+          <declname>pa</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>pb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" line="239" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" bodystart="239" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="box_8c_1a21f299f3f6722d1630c1329e06e7e786" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void do_nms_obj</definition>
+        <argsstring>(box *boxes, float **probs, int total, int classes, float thresh)</argsstring>
+        <name>do_nms_obj</name>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref> *</type>
+          <declname>boxes</declname>
+        </param>
+        <param>
+          <type>float **</type>
+          <declname>probs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>classes</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thresh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" line="249" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" bodystart="249" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="box_8c_1a3c719caa7a4e6d55e8e65377d15e7ee6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void do_nms_sort</definition>
+        <argsstring>(box *boxes, float **probs, int total, int classes, float thresh)</argsstring>
+        <name>do_nms_sort</name>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref> *</type>
+          <declname>boxes</declname>
+        </param>
+        <param>
+          <type>float **</type>
+          <declname>probs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>classes</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thresh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" line="277" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" bodystart="277" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="box_8c_1a124ef9ab227c55e64b4dcf800c48d682" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void do_nms</definition>
+        <argsstring>(box *boxes, float **probs, int total, int classes, float thresh)</argsstring>
+        <name>do_nms</name>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref> *</type>
+          <declname>boxes</declname>
+        </param>
+        <param>
+          <type>float **</type>
+          <declname>probs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>classes</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thresh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" line="307" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" bodystart="307" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="box_8c_1a23847cb8fe7a4a099fa65441b9b5ed59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structbox" kindref="compound">box</ref></type>
+        <definition>box encode_box</definition>
+        <argsstring>(box b, box anchor)</argsstring>
+        <name>encode_box</name>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref></type>
+          <declname>anchor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" line="327" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" bodystart="327" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="box_8c_1a3f03cdff65f176b2f77ee92346f2a7fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structbox" kindref="compound">box</ref></type>
+        <definition>box decode_box</definition>
+        <argsstring>(box b, box anchor)</argsstring>
+        <name>decode_box</name>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="structbox" kindref="compound">box</ref></type>
+          <declname>anchor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" line="337" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c" bodystart="337" bodyend="345"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;box.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><ref refid="structbox" kindref="compound">box</ref><sp/>float_to_box(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*f,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stride)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>b;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>b.x<sp/>=<sp/>f[0];</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>b.y<sp/>=<sp/>f[1*stride];</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>b.w<sp/>=<sp/>f[2*stride];</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>b.h<sp/>=<sp/>f[3*stride];</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>b;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><ref refid="structdbox" kindref="compound">dbox</ref><sp/>derivative(<ref refid="structbox" kindref="compound">box</ref><sp/>a,<sp/><ref refid="structbox" kindref="compound">box</ref><sp/>b)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdbox" kindref="compound">dbox</ref><sp/>d;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>d.dx<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>d.dw<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>l1<sp/>=<sp/>a.x<sp/>-<sp/>a.w/2;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>l2<sp/>=<sp/>b.x<sp/>-<sp/>b.w/2;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(l1<sp/>&gt;<sp/>l2){</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d.dx<sp/>-=<sp/>1;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d.dw<sp/>+=<sp/>.5;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>r1<sp/>=<sp/>a.x<sp/>+<sp/>a.w/2;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>r2<sp/>=<sp/>b.x<sp/>+<sp/>b.w/2;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(r1<sp/>&lt;<sp/>r2){</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d.dx<sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d.dw<sp/>+=<sp/>.5;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(l1<sp/>&gt;<sp/>r2)<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d.dx<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d.dw<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(r1<sp/>&lt;<sp/>l2){</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d.dx<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d.dw<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>d.dy<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>d.dh<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t1<sp/>=<sp/>a.y<sp/>-<sp/>a.h/2;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t2<sp/>=<sp/>b.y<sp/>-<sp/>b.h/2;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(t1<sp/>&gt;<sp/>t2){</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d.dy<sp/>-=<sp/>1;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d.dh<sp/>+=<sp/>.5;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>b1<sp/>=<sp/>a.y<sp/>+<sp/>a.h/2;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>b2<sp/>=<sp/>b.y<sp/>+<sp/>b.h/2;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(b1<sp/>&lt;<sp/>b2){</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d.dy<sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d.dh<sp/>+=<sp/>.5;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(t1<sp/>&gt;<sp/>b2)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d.dy<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d.dh<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(b1<sp/>&lt;<sp/>t2){</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d.dy<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d.dh<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>overlap(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>w1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>w2)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>l1<sp/>=<sp/>x1<sp/>-<sp/>w1/2;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>l2<sp/>=<sp/>x2<sp/>-<sp/>w2/2;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>left<sp/>=<sp/>l1<sp/>&gt;<sp/>l2<sp/>?<sp/>l1<sp/>:<sp/>l2;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>r1<sp/>=<sp/>x1<sp/>+<sp/>w1/2;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>r2<sp/>=<sp/>x2<sp/>+<sp/>w2/2;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>right<sp/>=<sp/>r1<sp/>&lt;<sp/>r2<sp/>?<sp/>r1<sp/>:<sp/>r2;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>right<sp/>-<sp/>left;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>box_intersection(<ref refid="structbox" kindref="compound">box</ref><sp/>a,<sp/><ref refid="structbox" kindref="compound">box</ref><sp/>b)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>w<sp/>=<sp/>overlap(a.x,<sp/>a.w,<sp/>b.x,<sp/>b.w);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>h<sp/>=<sp/>overlap(a.y,<sp/>a.h,<sp/>b.y,<sp/>b.h);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(w<sp/>&lt;<sp/>0<sp/>||<sp/>h<sp/>&lt;<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>area<sp/>=<sp/>w*h;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>area;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>box_union(<ref refid="structbox" kindref="compound">box</ref><sp/>a,<sp/><ref refid="structbox" kindref="compound">box</ref><sp/>b)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>box_intersection(a,<sp/>b);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>u<sp/>=<sp/>a.w*a.h<sp/>+<sp/>b.w*b.h<sp/>-<sp/>i;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>u;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>box_iou(<ref refid="structbox" kindref="compound">box</ref><sp/>a,<sp/><ref refid="structbox" kindref="compound">box</ref><sp/>b)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>box_intersection(a,<sp/>b)/box_union(a,<sp/>b);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>box_rmse(<ref refid="structbox" kindref="compound">box</ref><sp/>a,<sp/><ref refid="structbox" kindref="compound">box</ref><sp/>b)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sqrt(pow(a.x-b.x,<sp/>2)<sp/>+<sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pow(a.y-b.y,<sp/>2)<sp/>+<sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pow(a.w-b.w,<sp/>2)<sp/>+<sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pow(a.h-b.h,<sp/>2));</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><ref refid="structdbox" kindref="compound">dbox</ref><sp/>dintersect(<ref refid="structbox" kindref="compound">box</ref><sp/>a,<sp/><ref refid="structbox" kindref="compound">box</ref><sp/>b)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>w<sp/>=<sp/>overlap(a.x,<sp/>a.w,<sp/>b.x,<sp/>b.w);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>h<sp/>=<sp/>overlap(a.y,<sp/>a.h,<sp/>b.y,<sp/>b.h);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdbox" kindref="compound">dbox</ref><sp/>dover<sp/>=<sp/>derivative(a,<sp/>b);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdbox" kindref="compound">dbox</ref><sp/>di;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>di.dw<sp/>=<sp/>dover.dw*h;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>di.dx<sp/>=<sp/>dover.dx*h;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>di.dh<sp/>=<sp/>dover.dh*w;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>di.dy<sp/>=<sp/>dover.dy*w;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>di;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><ref refid="structdbox" kindref="compound">dbox</ref><sp/>dunion(<ref refid="structbox" kindref="compound">box</ref><sp/>a,<sp/><ref refid="structbox" kindref="compound">box</ref><sp/>b)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdbox" kindref="compound">dbox</ref><sp/>du;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdbox" kindref="compound">dbox</ref><sp/>di<sp/>=<sp/>dintersect(a,<sp/>b);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>du.dw<sp/>=<sp/>a.h<sp/>-<sp/>di.dw;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>du.dh<sp/>=<sp/>a.w<sp/>-<sp/>di.dh;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>du.dx<sp/>=<sp/>-di.dx;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>du.dy<sp/>=<sp/>-di.dy;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>du;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_dunion()</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>a<sp/>=<sp/>{0,<sp/>0,<sp/>1,<sp/>1};</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>dxa=<sp/>{0+.0001,<sp/>0,<sp/>1,<sp/>1};</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>dya=<sp/>{0,<sp/>0+.0001,<sp/>1,<sp/>1};</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>dwa=<sp/>{0,<sp/>0,<sp/>1+.0001,<sp/>1};</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>dha=<sp/>{0,<sp/>0,<sp/>1,<sp/>1+.0001};</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>b<sp/>=<sp/>{.5,<sp/>.5,<sp/>.2,<sp/>.2};</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdbox" kindref="compound">dbox</ref><sp/>di<sp/>=<sp/>dunion(a,b);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Union:<sp/>%f<sp/>%f<sp/>%f<sp/>%f\n&quot;</highlight><highlight class="normal">,<sp/>di.dx,<sp/>di.dy,<sp/>di.dw,<sp/>di.dh);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>inter<sp/>=<sp/><sp/>box_union(a,<sp/>b);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>xinter<sp/>=<sp/>box_union(dxa,<sp/>b);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>yinter<sp/>=<sp/>box_union(dya,<sp/>b);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>winter<sp/>=<sp/>box_union(dwa,<sp/>b);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>hinter<sp/>=<sp/>box_union(dha,<sp/>b);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>xinter<sp/>=<sp/>(xinter<sp/>-<sp/>inter)/(.0001);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>yinter<sp/>=<sp/>(yinter<sp/>-<sp/>inter)/(.0001);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>winter<sp/>=<sp/>(winter<sp/>-<sp/>inter)/(.0001);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>hinter<sp/>=<sp/>(hinter<sp/>-<sp/>inter)/(.0001);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Union<sp/>Manual<sp/>%f<sp/>%f<sp/>%f<sp/>%f\n&quot;</highlight><highlight class="normal">,<sp/>xinter,<sp/>yinter,<sp/>winter,<sp/>hinter);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_dintersect()</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>a<sp/>=<sp/>{0,<sp/>0,<sp/>1,<sp/>1};</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>dxa=<sp/>{0+.0001,<sp/>0,<sp/>1,<sp/>1};</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>dya=<sp/>{0,<sp/>0+.0001,<sp/>1,<sp/>1};</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>dwa=<sp/>{0,<sp/>0,<sp/>1+.0001,<sp/>1};</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>dha=<sp/>{0,<sp/>0,<sp/>1,<sp/>1+.0001};</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>b<sp/>=<sp/>{.5,<sp/>.5,<sp/>.2,<sp/>.2};</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdbox" kindref="compound">dbox</ref><sp/>di<sp/>=<sp/>dintersect(a,b);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Inter:<sp/>%f<sp/>%f<sp/>%f<sp/>%f\n&quot;</highlight><highlight class="normal">,<sp/>di.dx,<sp/>di.dy,<sp/>di.dw,<sp/>di.dh);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>inter<sp/>=<sp/><sp/>box_intersection(a,<sp/>b);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>xinter<sp/>=<sp/>box_intersection(dxa,<sp/>b);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>yinter<sp/>=<sp/>box_intersection(dya,<sp/>b);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>winter<sp/>=<sp/>box_intersection(dwa,<sp/>b);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>hinter<sp/>=<sp/>box_intersection(dha,<sp/>b);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>xinter<sp/>=<sp/>(xinter<sp/>-<sp/>inter)/(.0001);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>yinter<sp/>=<sp/>(yinter<sp/>-<sp/>inter)/(.0001);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>winter<sp/>=<sp/>(winter<sp/>-<sp/>inter)/(.0001);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>hinter<sp/>=<sp/>(hinter<sp/>-<sp/>inter)/(.0001);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Inter<sp/>Manual<sp/>%f<sp/>%f<sp/>%f<sp/>%f\n&quot;</highlight><highlight class="normal">,<sp/>xinter,<sp/>yinter,<sp/>winter,<sp/>hinter);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_box()</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>test_dintersect();</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>test_dunion();</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>a<sp/>=<sp/>{0,<sp/>0,<sp/>1,<sp/>1};</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>dxa=<sp/>{0+.00001,<sp/>0,<sp/>1,<sp/>1};</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>dya=<sp/>{0,<sp/>0+.00001,<sp/>1,<sp/>1};</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>dwa=<sp/>{0,<sp/>0,<sp/>1+.00001,<sp/>1};</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>dha=<sp/>{0,<sp/>0,<sp/>1,<sp/>1+.00001};</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>b<sp/>=<sp/>{.5,<sp/>0,<sp/>.2,<sp/>.2};</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>iou<sp/>=<sp/>box_iou(a,b);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>iou<sp/>=<sp/>(1-iou)*(1-iou);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%f\n&quot;</highlight><highlight class="normal">,<sp/>iou);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdbox" kindref="compound">dbox</ref><sp/>d<sp/>=<sp/>diou(a,<sp/>b);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%f<sp/>%f<sp/>%f<sp/>%f\n&quot;</highlight><highlight class="normal">,<sp/>d.dx,<sp/>d.dy,<sp/>d.dw,<sp/>d.dh);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>xiou<sp/>=<sp/>box_iou(dxa,<sp/>b);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>yiou<sp/>=<sp/>box_iou(dya,<sp/>b);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>wiou<sp/>=<sp/>box_iou(dwa,<sp/>b);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>hiou<sp/>=<sp/>box_iou(dha,<sp/>b);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>xiou<sp/>=<sp/>((1-xiou)*(1-xiou)<sp/>-<sp/>iou)/(.00001);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>yiou<sp/>=<sp/>((1-yiou)*(1-yiou)<sp/>-<sp/>iou)/(.00001);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>wiou<sp/>=<sp/>((1-wiou)*(1-wiou)<sp/>-<sp/>iou)/(.00001);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>hiou<sp/>=<sp/>((1-hiou)*(1-hiou)<sp/>-<sp/>iou)/(.00001);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;manual<sp/>%f<sp/>%f<sp/>%f<sp/>%f\n&quot;</highlight><highlight class="normal">,<sp/>xiou,<sp/>yiou,<sp/>wiou,<sp/>hiou);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><ref refid="structdbox" kindref="compound">dbox</ref><sp/>diou(<ref refid="structbox" kindref="compound">box</ref><sp/>a,<sp/><ref refid="structbox" kindref="compound">box</ref><sp/>b)</highlight></codeline>
+<codeline lineno="211"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>u<sp/>=<sp/>box_union(a,b);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>box_intersection(a,b);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdbox" kindref="compound">dbox</ref><sp/>di<sp/>=<sp/>dintersect(a,b);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdbox" kindref="compound">dbox</ref><sp/>du<sp/>=<sp/>dunion(a,b);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdbox" kindref="compound">dbox</ref><sp/>dd<sp/>=<sp/>{0,0,0,0};</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(i<sp/>&lt;=<sp/>0<sp/>||<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dd.dx<sp/>=<sp/>b.x<sp/>-<sp/>a.x;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dd.dy<sp/>=<sp/>b.y<sp/>-<sp/>a.y;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dd.dw<sp/>=<sp/>b.w<sp/>-<sp/>a.w;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dd.dh<sp/>=<sp/>b.h<sp/>-<sp/>a.h;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dd;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>dd.dx<sp/>=<sp/>2*pow((1-(i/u)),1)*(di.dx*u<sp/>-<sp/>du.dx*i)/(u*u);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>dd.dy<sp/>=<sp/>2*pow((1-(i/u)),1)*(di.dy*u<sp/>-<sp/>du.dy*i)/(u*u);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>dd.dw<sp/>=<sp/>2*pow((1-(i/u)),1)*(di.dw*u<sp/>-<sp/>du.dw*i)/(u*u);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>dd.dh<sp/>=<sp/>2*pow((1-(i/u)),1)*(di.dh*u<sp/>-<sp/>du.dh*i)/(u*u);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dd;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="structsortable__bbox" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>**probs;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal">}<sp/><ref refid="structsortable__bbox" kindref="compound">sortable_bbox</ref>;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nms_comparator(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pa,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pb)</highlight></codeline>
+<codeline lineno="240"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsortable__bbox" kindref="compound">sortable_bbox</ref><sp/>a<sp/>=<sp/>*(<ref refid="structsortable__bbox" kindref="compound">sortable_bbox</ref><sp/>*)pa;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsortable__bbox" kindref="compound">sortable_bbox</ref><sp/>b<sp/>=<sp/>*(<ref refid="structsortable__bbox" kindref="compound">sortable_bbox</ref><sp/>*)pb;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>diff<sp/>=<sp/>a.probs[a.index][b.class]<sp/>-<sp/>b.probs[b.index][b.class];</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(diff<sp/>&lt;<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(diff<sp/>&gt;<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>do_nms_obj(<ref refid="structbox" kindref="compound">box</ref><sp/>*boxes,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>**probs,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>total,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>classes,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>thresh)</highlight></codeline>
+<codeline lineno="250"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>j,<sp/>k;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsortable__bbox" kindref="compound">sortable_bbox</ref><sp/>*s<sp/>=<sp/>calloc(total,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structsortable__bbox" kindref="compound">sortable_bbox</ref>));</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>total;<sp/>++i){</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s[i].index<sp/>=<sp/>i;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s[i].class<sp/>=<sp/>classes;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s[i].probs<sp/>=<sp/>probs;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>qsort(s,<sp/>total,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structsortable__bbox" kindref="compound">sortable_bbox</ref>),<sp/>nms_comparator);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>total;<sp/>++i){</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(probs[s[i].index][classes]<sp/>==<sp/>0)<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>a<sp/>=<sp/>boxes[s[i].index];</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(j<sp/>=<sp/>i+1;<sp/>j<sp/>&lt;<sp/>total;<sp/>++j){</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>b<sp/>=<sp/>boxes[s[j].index];</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(box_iou(a,<sp/>b)<sp/>&gt;<sp/>thresh){</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(k<sp/>=<sp/>0;<sp/>k<sp/>&lt;<sp/>classes+1;<sp/>++k){</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>probs[s[j].index][k]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>free(s);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>do_nms_sort(<ref refid="structbox" kindref="compound">box</ref><sp/>*boxes,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>**probs,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>total,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>classes,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>thresh)</highlight></codeline>
+<codeline lineno="278"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>j,<sp/>k;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsortable__bbox" kindref="compound">sortable_bbox</ref><sp/>*s<sp/>=<sp/>calloc(total,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structsortable__bbox" kindref="compound">sortable_bbox</ref>));</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>total;<sp/>++i){</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s[i].index<sp/>=<sp/>i;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s[i].class<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s[i].probs<sp/>=<sp/>probs;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(k<sp/>=<sp/>0;<sp/>k<sp/>&lt;<sp/>classes;<sp/>++k){</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>total;<sp/>++i){</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s[i].class<sp/>=<sp/>k;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qsort(s,<sp/>total,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structsortable__bbox" kindref="compound">sortable_bbox</ref>),<sp/>nms_comparator);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>total;<sp/>++i){</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(probs[s[i].index][k]<sp/>==<sp/>0)<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>a<sp/>=<sp/>boxes[s[i].index];</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(j<sp/>=<sp/>i+1;<sp/>j<sp/>&lt;<sp/>total;<sp/>++j){</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>b<sp/>=<sp/>boxes[s[j].index];</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(box_iou(a,<sp/>b)<sp/>&gt;<sp/>thresh){</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>probs[s[j].index][k]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/>free(s);</highlight></codeline>
+<codeline lineno="305"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>do_nms(<ref refid="structbox" kindref="compound">box</ref><sp/>*boxes,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>**probs,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>total,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>classes,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>thresh)</highlight></codeline>
+<codeline lineno="308"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>j,<sp/>k;</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>total;<sp/>++i){</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>any<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(k<sp/>=<sp/>0;<sp/>k<sp/>&lt;<sp/>classes;<sp/>++k)<sp/>any<sp/>=<sp/>any<sp/>||<sp/>(probs[i][k]<sp/>&gt;<sp/>0);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!any)<sp/>{</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(j<sp/>=<sp/>i+1;<sp/>j<sp/>&lt;<sp/>total;<sp/>++j){</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(box_iou(boxes[i],<sp/>boxes[j])<sp/>&gt;<sp/>thresh){</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(k<sp/>=<sp/>0;<sp/>k<sp/>&lt;<sp/>classes;<sp/>++k){</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(probs[i][k]<sp/>&lt;<sp/>probs[j][k])<sp/>probs[i][k]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>probs[j][k]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><ref refid="structbox" kindref="compound">box</ref><sp/>encode_box(<ref refid="structbox" kindref="compound">box</ref><sp/>b,<sp/><ref refid="structbox" kindref="compound">box</ref><sp/>anchor)</highlight></codeline>
+<codeline lineno="328"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>encode;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/>encode.x<sp/>=<sp/>(b.x<sp/>-<sp/>anchor.x)<sp/>/<sp/>anchor.w;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>encode.y<sp/>=<sp/>(b.y<sp/>-<sp/>anchor.y)<sp/>/<sp/>anchor.h;</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/>encode.w<sp/>=<sp/>log2(b.w<sp/>/<sp/>anchor.w);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>encode.h<sp/>=<sp/>log2(b.h<sp/>/<sp/>anchor.h);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>encode;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><ref refid="structbox" kindref="compound">box</ref><sp/>decode_box(<ref refid="structbox" kindref="compound">box</ref><sp/>b,<sp/><ref refid="structbox" kindref="compound">box</ref><sp/>anchor)</highlight></codeline>
+<codeline lineno="338"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbox" kindref="compound">box</ref><sp/>decode;</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/>decode.x<sp/>=<sp/>b.x<sp/>*<sp/>anchor.w<sp/>+<sp/>anchor.x;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/>decode.y<sp/>=<sp/>b.y<sp/>*<sp/>anchor.h<sp/>+<sp/>anchor.y;</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/>decode.w<sp/>=<sp/>pow(2.,<sp/>b.w)<sp/>*<sp/>anchor.w;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/>decode.h<sp/>=<sp/>pow(2.,<sp/>b.h)<sp/>*<sp/>anchor.h;</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>decode;</highlight></codeline>
+<codeline lineno="345"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/box.c"/>
+  </compounddef>
+</doxygen>

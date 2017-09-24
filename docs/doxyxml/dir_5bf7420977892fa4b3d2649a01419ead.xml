@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_5bf7420977892fa4b3d2649a01419ead" kind="dir">
+    <compoundname>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/examples</compoundname>
+    <innerfile refid="art_8c">art.c</innerfile>
+    <innerfile refid="captcha_8c">captcha.c</innerfile>
+    <innerfile refid="cifar_8c">cifar.c</innerfile>
+    <innerfile refid="classifier_8c">classifier.c</innerfile>
+    <innerfile refid="coco_8c">coco.c</innerfile>
+    <innerfile refid="darknet_8c">darknet.c</innerfile>
+    <innerfile refid="detector_8c">detector.c</innerfile>
+    <innerfile refid="dice_8c">dice.c</innerfile>
+    <innerfile refid="go_8c">go.c</innerfile>
+    <innerfile refid="lsd_8c">lsd.c</innerfile>
+    <innerfile refid="nightmare_8c">nightmare.c</innerfile>
+    <innerfile refid="regressor_8c">regressor.c</innerfile>
+    <innerfile refid="rnn_8c">rnn.c</innerfile>
+    <innerfile refid="rnn__vid_8c">rnn_vid.c</innerfile>
+    <innerfile refid="segmenter_8c">segmenter.c</innerfile>
+    <innerfile refid="super_8c">super.c</innerfile>
+    <innerfile refid="swag_8c">swag.c</innerfile>
+    <innerfile refid="tag_8c">tag.c</innerfile>
+    <innerfile refid="voxel_8c">voxel.c</innerfile>
+    <innerfile refid="writing_8c">writing.c</innerfile>
+    <innerfile refid="yolo_8c">yolo.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/examples/"/>
+  </compounddef>
+</doxygen>

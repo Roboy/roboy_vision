@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacedarknet" kind="namespace" language="Python">
+    <compoundname>darknet</compoundname>
+    <innerclass refid="classdarknet_1_1_i_m_a_g_e" prot="public">darknet::IMAGE</innerclass>
+    <innerclass refid="classdarknet_1_1_m_e_t_a_d_a_t_a" prot="public">darknet::METADATA</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="darknet_8py_1ab817163f62e1395d5b07a0efe5a9a5ba" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>darknet.lib</definition>
+        <argsstring></argsstring>
+        <name>lib</name>
+        <initializer>= CDLL(&quot;/home/pjreddie/documents/darknet/libdarknet.so&quot;, RTLD_GLOBAL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" line="13" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="darknet_8py_1a4e9a5fc4a3c6b775fdfa9eaee9aaf382" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>darknet.argtypes</definition>
+        <argsstring></argsstring>
+        <name>argtypes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" line="14" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="darknet_8py_1a236a643b258c1e18e3051a0460b4717d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>darknet.restype</definition>
+        <argsstring></argsstring>
+        <name>restype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" line="15" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="darknet_8py_1adc6a45d045e33aea7cdb3d217a6a7d35" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>darknet.net</definition>
+        <argsstring></argsstring>
+        <name>net</name>
+        <initializer>= load_net(&quot;cfg/densenet.cfg&quot;, &quot;/home/pjreddie/trained/densenet201.weights&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" line="65" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="darknet_8py_1a8b219a8d8f4bb0f2038e8052dfe0a5bb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>darknet.im</definition>
+        <argsstring></argsstring>
+        <name>im</name>
+        <initializer>= load_img(&quot;data/wolf.jpg&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" line="66" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="darknet_8py_1ae61a1edabe435136c755d64a6183a9c0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>darknet.meta</definition>
+        <argsstring></argsstring>
+        <name>meta</name>
+        <initializer>= load_meta(&quot;cfg/imagenet1k.data&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" line="67" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="darknet_8py_1a629a082bbccbf514099ed3739cffa567" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>darknet.r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <initializer>= classify(net, meta, im)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" line="68" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="darknet_8py_1a55bfccf3e10e7ad37a0bb5225ca7b776" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def darknet.load_meta</definition>
+        <argsstring>(f)</argsstring>
+        <name>load_meta</name>
+        <param>
+          <type>f</type>
+          <defname>f</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" line="19" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" bodystart="19" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="darknet_8py_1a0641586c644d9f96da13aed7e23da442" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def darknet.load_net</definition>
+        <argsstring>(cfg, weights)</argsstring>
+        <name>load_net</name>
+        <param>
+          <type>cfg</type>
+          <defname>cfg</defname>
+        </param>
+        <param>
+          <type>weights</type>
+          <defname>weights</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" line="24" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" bodystart="24" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="darknet_8py_1a9ea019cfb9d29da58c288f249bd05104" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def darknet.load_img</definition>
+        <argsstring>(f)</argsstring>
+        <name>load_img</name>
+        <param>
+          <type>f</type>
+          <defname>f</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" line="30" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" bodystart="30" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="darknet_8py_1aa8ac0b20162d7e926a0d34ce8442bc4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def darknet.letterbox_img</definition>
+        <argsstring>(im, w, h)</argsstring>
+        <name>letterbox_img</name>
+        <param>
+          <type>im</type>
+          <defname>im</defname>
+        </param>
+        <param>
+          <type>w</type>
+          <defname>w</defname>
+        </param>
+        <param>
+          <type>h</type>
+          <defname>h</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" line="36" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" bodystart="36" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="darknet_8py_1afb8a70bd3aa5c8bd6501dddd340cd512" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def darknet.predict</definition>
+        <argsstring>(net, im)</argsstring>
+        <name>predict</name>
+        <param>
+          <type>net</type>
+          <defname>net</defname>
+        </param>
+        <param>
+          <type>im</type>
+          <defname>im</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" line="42" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" bodystart="42" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="darknet_8py_1a6f04d83a940049bd6ec10ab0ce9480eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def darknet.classify</definition>
+        <argsstring>(net, meta, im)</argsstring>
+        <name>classify</name>
+        <param>
+          <type>net</type>
+          <defname>net</defname>
+        </param>
+        <param>
+          <type>meta</type>
+          <defname>meta</defname>
+        </param>
+        <param>
+          <type>im</type>
+          <defname>im</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" line="48" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" bodystart="48" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="darknet_8py_1ad9e80613f05cae2c080cc23355dd5647" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def darknet.detect</definition>
+        <argsstring>(net, meta, im)</argsstring>
+        <name>detect</name>
+        <param>
+          <type>net</type>
+          <defname>net</defname>
+        </param>
+        <param>
+          <type>meta</type>
+          <defname>meta</defname>
+        </param>
+        <param>
+          <type>im</type>
+          <defname>im</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" line="56" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" bodystart="56" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/python/darknet.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_object_recognition_1_1_i_m_a_g_e" kind="class" language="Python" prot="public">
+    <compoundname>ObjectRecognition::IMAGE</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Structure</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_object_recognition_1_1_i_m_a_g_e_1ad423ea1ac8ece62d996c84d00da6b221" prot="private" static="yes" mutable="no">
+        <type><ref refid="structlist" kindref="compound">list</ref></type>
+        <definition>list ObjectRecognition.IMAGE::_fields_</definition>
+        <argsstring></argsstring>
+        <name>_fields_</name>
+        <initializer>= [(&quot;w&quot;, c_int),
+                (&quot;h&quot;, c_int),
+                (&quot;c&quot;, c_int),
+                (&quot;data&quot;, POINTER(c_float))]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="43" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="241">
+        <label>Structure</label>
+      </node>
+      <node id="240">
+        <label>ObjectRecognition.IMAGE</label>
+        <link refid="class_object_recognition_1_1_i_m_a_g_e"/>
+        <childnode refid="241" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="244">
+        <label>list</label>
+        <link refid="structlist"/>
+        <childnode refid="245" relation="usage">
+          <edgelabel>front</edgelabel>
+          <edgelabel>back</edgelabel>
+        </childnode>
+      </node>
+      <node id="245">
+        <label>node</label>
+        <link refid="structnode"/>
+        <childnode refid="245" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="243">
+        <label>Structure</label>
+      </node>
+      <node id="242">
+        <label>ObjectRecognition.IMAGE</label>
+        <link refid="class_object_recognition_1_1_i_m_a_g_e"/>
+        <childnode refid="243" relation="public-inheritance">
+        </childnode>
+        <childnode refid="244" relation="usage">
+          <edgelabel>_fields_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" line="42" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/ObjectRecognition.py" bodystart="42" bodyend="49"/>
+    <listofallmembers>
+      <member refid="class_object_recognition_1_1_i_m_a_g_e_1ad423ea1ac8ece62d996c84d00da6b221" prot="private" virt="non-virtual"><scope>ObjectRecognition::IMAGE</scope><name>_fields_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

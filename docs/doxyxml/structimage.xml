@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structimage" kind="struct" language="C++" prot="public">
+    <compoundname>image</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structimage_1aa6480e4024a0d5ca8d36b4145b3ceb43" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int image::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="486" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="486" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structimage_1a30e2caee481a59608823b3bcec8a139f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int image::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="487" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="487" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structimage_1aa67d2491c4d17dd240453d69dfc99482" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int image::c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="488" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="488" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structimage_1aed7e0704080213b735419d6661251a0a" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* image::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="489" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="489" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="485" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="485" bodyend="490"/>
+    <listofallmembers>
+      <member refid="structimage_1aa67d2491c4d17dd240453d69dfc99482" prot="public" virt="non-virtual"><scope>image</scope><name>c</name></member>
+      <member refid="structimage_1aed7e0704080213b735419d6661251a0a" prot="public" virt="non-virtual"><scope>image</scope><name>data</name></member>
+      <member refid="structimage_1a30e2caee481a59608823b3bcec8a139f" prot="public" virt="non-virtual"><scope>image</scope><name>h</name></member>
+      <member refid="structimage_1aa6480e4024a0d5ca8d36b4145b3ceb43" prot="public" virt="non-virtual"><scope>image</scope><name>w</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

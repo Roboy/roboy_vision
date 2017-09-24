@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structsl_1_1_calibration_parameters" kind="struct" language="C++" prot="public">
+    <compoundname>sl::CalibrationParameters</compoundname>
+    <includes refid="_core_8hpp" local="no">Core.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsl_1_1_calibration_parameters_1a46045947724ca76311296836c5989773" prot="public" static="no" mutable="no">
+        <type>sl::float3</type>
+        <definition>sl::float3 sl::CalibrationParameters::R</definition>
+        <argsstring></argsstring>
+        <name>R</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classsl_1_1_rotation" kindref="compound">Rotation</ref> (using Rodrigues&apos; transformation) between the two sensors. Defined as &apos;tilt&apos;, &apos;convergence&apos; and &apos;roll&apos;. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="153" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsl_1_1_calibration_parameters_1a0f72982f8ea18cd9cfee87d7bf1ba2c5" prot="public" static="no" mutable="no">
+        <type>sl::float3</type>
+        <definition>sl::float3 sl::CalibrationParameters::T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classsl_1_1_translation" kindref="compound">Translation</ref> between the two sensors. T.x is the distance between the two cameras (baseline) in the sl::UNIT chosen during <ref refid="classsl_1_1_camera_1a46f6220e257357d510392317fd620095" kindref="member">sl::Camera::open</ref> (mm, cm, meters, inches...). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="154" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsl_1_1_calibration_parameters_1ad3cbed4dbccac5ccc3522ce034aff39d" prot="public" static="no" mutable="no">
+        <type><ref refid="structsl_1_1_camera_parameters" kindref="compound">CameraParameters</ref></type>
+        <definition>CameraParameters sl::CalibrationParameters::left_cam</definition>
+        <argsstring></argsstring>
+        <name>left_cam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Intrinsic parameters of the left camera </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="155" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsl_1_1_calibration_parameters_1a5d26d384acb4cfbf1064fa700bd4ba50" prot="public" static="no" mutable="no">
+        <type><ref refid="structsl_1_1_camera_parameters" kindref="compound">CameraParameters</ref></type>
+        <definition>CameraParameters sl::CalibrationParameters::right_cam</definition>
+        <argsstring></argsstring>
+        <name>right_cam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Intrinsic parameters of the right camera </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="156" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Intrinsic parameters of each cameras and extrinsic (translation and rotation). </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>The calibration/rectification process, called during <ref refid="classsl_1_1_camera_1a46f6220e257357d510392317fd620095" kindref="member">sl::Camera::open</ref>, is using the raw parameters defined in the SNXXX.conf file, where XXX is the ZED Serial Number. <linebreak/>
+ Those values may be adjusted or not by the Self-Calibration to get a proper image alignment. After <ref refid="classsl_1_1_camera_1a46f6220e257357d510392317fd620095" kindref="member">sl::Camera::open</ref> is done (with or without Self-Calibration activated) success, most of the stereo parameters (except Baseline of course) should be 0 or very close to 0. <linebreak/>
+ It means that images after rectification process (given by retrieveImage()) are aligned as if they were taken by a &quot;perfect&quot; stereo camera, defined by the new <ref refid="structsl_1_1_calibration_parameters" kindref="compound">CalibrationParameters</ref>. </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="211">
+        <label>sl::CalibrationParameters</label>
+        <link refid="structsl_1_1_calibration_parameters"/>
+        <childnode refid="212" relation="usage">
+          <edgelabel>left_cam</edgelabel>
+          <edgelabel>right_cam</edgelabel>
+        </childnode>
+      </node>
+      <node id="213">
+        <label>sl::Resolution</label>
+        <link refid="structsl_1_1_resolution"/>
+      </node>
+      <node id="212">
+        <label>sl::CameraParameters</label>
+        <link refid="structsl_1_1_camera_parameters"/>
+        <childnode refid="213" relation="usage">
+          <edgelabel>image_size</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" line="152" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/zed/sl/Core.hpp" bodystart="152" bodyend="157"/>
+    <listofallmembers>
+      <member refid="structsl_1_1_calibration_parameters_1ad3cbed4dbccac5ccc3522ce034aff39d" prot="public" virt="non-virtual"><scope>sl::CalibrationParameters</scope><name>left_cam</name></member>
+      <member refid="structsl_1_1_calibration_parameters_1a46045947724ca76311296836c5989773" prot="public" virt="non-virtual"><scope>sl::CalibrationParameters</scope><name>R</name></member>
+      <member refid="structsl_1_1_calibration_parameters_1a5d26d384acb4cfbf1064fa700bd4ba50" prot="public" virt="non-virtual"><scope>sl::CalibrationParameters</scope><name>right_cam</name></member>
+      <member refid="structsl_1_1_calibration_parameters_1a0f72982f8ea18cd9cfee87d7bf1ba2c5" prot="public" virt="non-virtual"><scope>sl::CalibrationParameters</scope><name>T</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

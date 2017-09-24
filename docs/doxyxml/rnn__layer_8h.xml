@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="rnn__layer_8h" kind="file" language="C++">
+    <compoundname>rnn_layer.h</compoundname>
+    <includes refid="activations_8h" local="yes">activations.h</includes>
+    <includes refid="layer_8h" local="yes">layer.h</includes>
+    <includes refid="network_8h" local="yes">network.h</includes>
+    <includedby refid="network_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.c</includedby>
+    <includedby refid="parser_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c</includedby>
+    <includedby refid="rnn__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/rnn_layer.c</includedby>
+    <incdepgraph>
+      <node id="1632">
+        <label>box.h</label>
+        <link refid="box_8h_source"/>
+        <childnode refid="1621" relation="include">
+        </childnode>
+      </node>
+      <node id="1619">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/rnn_layer.h</label>
+        <link refid="rnn_layer.h"/>
+        <childnode refid="1620" relation="include">
+        </childnode>
+        <childnode refid="1628" relation="include">
+        </childnode>
+        <childnode refid="1629" relation="include">
+        </childnode>
+      </node>
+      <node id="1631">
+        <label>float.h</label>
+      </node>
+      <node id="1622">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1626">
+        <label>cuda.h</label>
+        <link refid="cuda_8h_source"/>
+        <childnode refid="1621" relation="include">
+        </childnode>
+      </node>
+      <node id="1633">
+        <label>data.h</label>
+        <link refid="data_8h_source"/>
+        <childnode refid="1625" relation="include">
+        </childnode>
+        <childnode refid="1621" relation="include">
+        </childnode>
+        <childnode refid="1634" relation="include">
+        </childnode>
+        <childnode refid="1635" relation="include">
+        </childnode>
+        <childnode refid="1630" relation="include">
+        </childnode>
+        <childnode refid="1636" relation="include">
+        </childnode>
+      </node>
+      <node id="1629">
+        <label>network.h</label>
+        <link refid="network_8h_source"/>
+        <childnode refid="1621" relation="include">
+        </childnode>
+        <childnode refid="1630" relation="include">
+        </childnode>
+        <childnode refid="1628" relation="include">
+        </childnode>
+        <childnode refid="1633" relation="include">
+        </childnode>
+        <childnode refid="1636" relation="include">
+        </childnode>
+      </node>
+      <node id="1620">
+        <label>activations.h</label>
+        <link refid="activations_8h_source"/>
+        <childnode refid="1621" relation="include">
+        </childnode>
+        <childnode refid="1626" relation="include">
+        </childnode>
+        <childnode refid="1627" relation="include">
+        </childnode>
+      </node>
+      <node id="1635">
+        <label>list.h</label>
+        <link refid="list_8h_source"/>
+        <childnode refid="1621" relation="include">
+        </childnode>
+      </node>
+      <node id="1634">
+        <label>matrix.h</label>
+        <link refid="matrix_8h_source"/>
+        <childnode refid="1621" relation="include">
+        </childnode>
+      </node>
+      <node id="1621">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="1622" relation="include">
+        </childnode>
+        <childnode refid="1623" relation="include">
+        </childnode>
+        <childnode refid="1624" relation="include">
+        </childnode>
+        <childnode refid="1625" relation="include">
+        </childnode>
+      </node>
+      <node id="1628">
+        <label>layer.h</label>
+        <link refid="layer_8h_source"/>
+        <childnode refid="1621" relation="include">
+        </childnode>
+      </node>
+      <node id="1625">
+        <label>pthread.h</label>
+      </node>
+      <node id="1630">
+        <label>image.h</label>
+        <link refid="image_8h_source"/>
+        <childnode refid="1622" relation="include">
+        </childnode>
+        <childnode refid="1623" relation="include">
+        </childnode>
+        <childnode refid="1631" relation="include">
+        </childnode>
+        <childnode refid="1624" relation="include">
+        </childnode>
+        <childnode refid="1627" relation="include">
+        </childnode>
+        <childnode refid="1632" relation="include">
+        </childnode>
+        <childnode refid="1621" relation="include">
+        </childnode>
+      </node>
+      <node id="1624">
+        <label>string.h</label>
+      </node>
+      <node id="1627">
+        <label>math.h</label>
+      </node>
+      <node id="1636">
+        <label>tree.h</label>
+        <link refid="tree_8h_source"/>
+        <childnode refid="1621" relation="include">
+        </childnode>
+      </node>
+      <node id="1623">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="rnn__layer_8h_1a9eb27e94dddf5106a6eca773540242a9" prot="public" static="no">
+        <name>USET</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/rnn_layer.h" line="8" column="12" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/rnn_layer.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="rnn__layer_8h_1a03678a37818a63d16b5900f42500daaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlayer" kindref="compound">layer</ref></type>
+        <definition>layer make_rnn_layer</definition>
+        <argsstring>(int batch, int inputs, int outputs, int steps, ACTIVATION activation, int batch_normalize, int adam)</argsstring>
+        <name>make_rnn_layer</name>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>inputs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>outputs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>steps</declname>
+        </param>
+        <param>
+          <type>ACTIVATION</type>
+          <declname>activation</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>batch_normalize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>adam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/rnn_layer.h" line="10" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/rnn_layer.c" bodystart="29" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="rnn__layer_8h_1ab0e6e3a00a31334156f3a178837218a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void forward_rnn_layer</definition>
+        <argsstring>(layer l, network net)</argsstring>
+        <name>forward_rnn_layer</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">layer</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/rnn_layer.h" line="12" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/rnn_layer.c" bodystart="89" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="rnn__layer_8h_1a05fc3a1b5aefb27605afc121072faa1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void backward_rnn_layer</definition>
+        <argsstring>(layer l, network net)</argsstring>
+        <name>backward_rnn_layer</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">layer</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/rnn_layer.h" line="13" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/rnn_layer.c" bodystart="130" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="rnn__layer_8h_1a60c152985aed791433025435f8001610" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void update_rnn_layer</definition>
+        <argsstring>(layer l, update_args a)</argsstring>
+        <name>update_rnn_layer</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">layer</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="structupdate__args" kindref="compound">update_args</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/rnn_layer.h" line="14" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/rnn_layer.c" bodystart="82" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RNN_LAYER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RNN_LAYER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;activations.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;layer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;network.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USET</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><ref refid="structlayer" kindref="compound">layer</ref><sp/>make_rnn_layer(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inputs,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>outputs,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>steps,<sp/>ACTIVATION<sp/>activation,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch_normalize,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>adam);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>forward_rnn_layer(<ref refid="structlayer" kindref="compound">layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_rnn_layer(<ref refid="structlayer" kindref="compound">layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update_rnn_layer(<ref refid="structlayer" kindref="compound">layer</ref><sp/>l,<sp/><ref refid="structupdate__args" kindref="compound">update_args</ref><sp/>a);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>forward_rnn_layer_gpu(<ref refid="structlayer" kindref="compound">layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_rnn_layer_gpu(<ref refid="structlayer" kindref="compound">layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update_rnn_layer_gpu(<ref refid="structlayer" kindref="compound">layer</ref><sp/>l,<sp/><ref refid="structupdate__args" kindref="compound">update_args</ref><sp/>a);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>push_rnn_layer(<ref refid="structlayer" kindref="compound">layer</ref><sp/>l);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pull_rnn_layer(<ref refid="structlayer" kindref="compound">layer</ref><sp/>l);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/rnn_layer.h"/>
+  </compounddef>
+</doxygen>

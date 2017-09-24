@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structaugment__args" kind="struct" language="C++" prot="public">
+    <compoundname>augment_args</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structaugment__args_1a974bba52935c8bd5e95a306d1bd88acd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int augment_args::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="476" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="476" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structaugment__args_1afb11ad51cc544deb41ef00c118869612" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int augment_args::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="477" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="477" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structaugment__args_1a3bbc9156f890de21ce14876c552baaf2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float augment_args::scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="478" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="478" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structaugment__args_1ad40390f9fe68f5079f95789b6673b2e9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float augment_args::rad</definition>
+        <argsstring></argsstring>
+        <name>rad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="479" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="479" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structaugment__args_1a74675af1ca9ba9cfc2f97da65fad1ff7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float augment_args::dx</definition>
+        <argsstring></argsstring>
+        <name>dx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="480" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structaugment__args_1aee2e7812e750cd312082426e3a2fc7a2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float augment_args::dy</definition>
+        <argsstring></argsstring>
+        <name>dy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="481" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="481" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structaugment__args_1aa5494cb275d1704ac87f9c6eca904453" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float augment_args::aspect</definition>
+        <argsstring></argsstring>
+        <name>aspect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="482" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="482" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" line="475" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/include/darknet.h" bodystart="475" bodyend="483"/>
+    <listofallmembers>
+      <member refid="structaugment__args_1aa5494cb275d1704ac87f9c6eca904453" prot="public" virt="non-virtual"><scope>augment_args</scope><name>aspect</name></member>
+      <member refid="structaugment__args_1a74675af1ca9ba9cfc2f97da65fad1ff7" prot="public" virt="non-virtual"><scope>augment_args</scope><name>dx</name></member>
+      <member refid="structaugment__args_1aee2e7812e750cd312082426e3a2fc7a2" prot="public" virt="non-virtual"><scope>augment_args</scope><name>dy</name></member>
+      <member refid="structaugment__args_1afb11ad51cc544deb41ef00c118869612" prot="public" virt="non-virtual"><scope>augment_args</scope><name>h</name></member>
+      <member refid="structaugment__args_1ad40390f9fe68f5079f95789b6673b2e9" prot="public" virt="non-virtual"><scope>augment_args</scope><name>rad</name></member>
+      <member refid="structaugment__args_1a3bbc9156f890de21ce14876c552baaf2" prot="public" virt="non-virtual"><scope>augment_args</scope><name>scale</name></member>
+      <member refid="structaugment__args_1a974bba52935c8bd5e95a306d1bd88acd" prot="public" virt="non-virtual"><scope>augment_args</scope><name>w</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

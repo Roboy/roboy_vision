@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="batchnorm__layer_8h" kind="file" language="C++">
+    <compoundname>batchnorm_layer.h</compoundname>
+    <includes refid="image_8h" local="yes">image.h</includes>
+    <includes refid="layer_8h" local="yes">layer.h</includes>
+    <includes refid="network_8h" local="yes">network.h</includes>
+    <includedby refid="batchnorm__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/batchnorm_layer.c</includedby>
+    <includedby refid="connected__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/connected_layer.c</includedby>
+    <includedby refid="convolutional__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/convolutional_layer.c</includedby>
+    <includedby refid="deconvolutional__layer_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/deconvolutional_layer.c</includedby>
+    <includedby refid="network_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/network.c</includedby>
+    <includedby refid="parser_8c" local="yes">/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/parser.c</includedby>
+    <incdepgraph>
+      <node id="377">
+        <label>box.h</label>
+        <link refid="box_8h_source"/>
+        <childnode refid="378" relation="include">
+        </childnode>
+      </node>
+      <node id="374">
+        <label>float.h</label>
+      </node>
+      <node id="372">
+        <label>stdlib.h</label>
+      </node>
+      <node id="382">
+        <label>data.h</label>
+        <link refid="data_8h_source"/>
+        <childnode refid="379" relation="include">
+        </childnode>
+        <childnode refid="378" relation="include">
+        </childnode>
+        <childnode refid="383" relation="include">
+        </childnode>
+        <childnode refid="384" relation="include">
+        </childnode>
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="385" relation="include">
+        </childnode>
+      </node>
+      <node id="381">
+        <label>network.h</label>
+        <link refid="network_8h_source"/>
+        <childnode refid="378" relation="include">
+        </childnode>
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="380" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+        <childnode refid="385" relation="include">
+        </childnode>
+      </node>
+      <node id="384">
+        <label>list.h</label>
+        <link refid="list_8h_source"/>
+        <childnode refid="378" relation="include">
+        </childnode>
+      </node>
+      <node id="383">
+        <label>matrix.h</label>
+        <link refid="matrix_8h_source"/>
+        <childnode refid="378" relation="include">
+        </childnode>
+      </node>
+      <node id="378">
+        <label>darknet.h</label>
+        <link refid="darknet_8h_source"/>
+        <childnode refid="372" relation="include">
+        </childnode>
+        <childnode refid="373" relation="include">
+        </childnode>
+        <childnode refid="375" relation="include">
+        </childnode>
+        <childnode refid="379" relation="include">
+        </childnode>
+      </node>
+      <node id="370">
+        <label>/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/batchnorm_layer.h</label>
+        <link refid="batchnorm_layer.h"/>
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="380" relation="include">
+        </childnode>
+        <childnode refid="381" relation="include">
+        </childnode>
+      </node>
+      <node id="380">
+        <label>layer.h</label>
+        <link refid="layer_8h_source"/>
+        <childnode refid="378" relation="include">
+        </childnode>
+      </node>
+      <node id="379">
+        <label>pthread.h</label>
+      </node>
+      <node id="371">
+        <label>image.h</label>
+        <link refid="image_8h_source"/>
+        <childnode refid="372" relation="include">
+        </childnode>
+        <childnode refid="373" relation="include">
+        </childnode>
+        <childnode refid="374" relation="include">
+        </childnode>
+        <childnode refid="375" relation="include">
+        </childnode>
+        <childnode refid="376" relation="include">
+        </childnode>
+        <childnode refid="377" relation="include">
+        </childnode>
+        <childnode refid="378" relation="include">
+        </childnode>
+      </node>
+      <node id="375">
+        <label>string.h</label>
+      </node>
+      <node id="376">
+        <label>math.h</label>
+      </node>
+      <node id="385">
+        <label>tree.h</label>
+        <link refid="tree_8h_source"/>
+        <childnode refid="378" relation="include">
+        </childnode>
+      </node>
+      <node id="373">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="batchnorm__layer_8h_1a08ae8cf0672f794aeba5d835fe8679d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlayer" kindref="compound">layer</ref></type>
+        <definition>layer make_batchnorm_layer</definition>
+        <argsstring>(int batch, int w, int h, int c)</argsstring>
+        <name>make_batchnorm_layer</name>
+        <param>
+          <type>int</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/batchnorm_layer.h" line="8" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/batchnorm_layer.c" bodystart="6" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="batchnorm__layer_8h_1a81e1c9cbb68e655da05845802d9cdea0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void forward_batchnorm_layer</definition>
+        <argsstring>(layer l, network net)</argsstring>
+        <name>forward_batchnorm_layer</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">layer</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/batchnorm_layer.h" line="9" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/batchnorm_layer.c" bodystart="135" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="batchnorm__layer_8h_1a82c768cb86812e916df726da7c514321" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void backward_batchnorm_layer</definition>
+        <argsstring>(layer l, network net)</argsstring>
+        <name>backward_batchnorm_layer</name>
+        <param>
+          <type><ref refid="structlayer" kindref="compound">layer</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="structnetwork" kindref="compound">network</ref></type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/batchnorm_layer.h" line="10" column="1" bodyfile="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/batchnorm_layer.c" bodystart="157" bodyend="172"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>BATCHNORM_LAYER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATCHNORM_LAYER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;image.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;layer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;network.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><ref refid="structlayer" kindref="compound">layer</ref><sp/>make_batchnorm_layer(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>batch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>forward_batchnorm_layer(<ref refid="structlayer" kindref="compound">layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_batchnorm_layer(<ref refid="structlayer" kindref="compound">layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>forward_batchnorm_layer_gpu(<ref refid="structlayer" kindref="compound">layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>backward_batchnorm_layer_gpu(<ref refid="structlayer" kindref="compound">layer</ref><sp/>l,<sp/><ref refid="structnetwork" kindref="compound">network</ref><sp/>net);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pull_batchnorm_layer(<ref refid="structlayer" kindref="compound">layer</ref><sp/>l);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>push_batchnorm_layer(<ref refid="structlayer" kindref="compound">layer</ref><sp/>l);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/workspace/roboy_vision/src/pyyolo/darknet/src/batchnorm_layer.h"/>
+  </compounddef>
+</doxygen>
