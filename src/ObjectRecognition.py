@@ -169,10 +169,10 @@ def Initialize():
 def detectObjects(frame):
 
     if not detect_net:
-	Initialize()	
-	print("Its empty")
+       Initialize()	
+    # print("Its empty")
     # LOAD DETECTION NET
-    #ret, frame = CameraFrame.read()
+    # ret, frame = CameraFrame.read()
     # RUN OBJECT DETECTION ON FRAME
     frame = frame[0:376, 0:500]
     if detect_net:

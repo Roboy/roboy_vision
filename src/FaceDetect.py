@@ -11,7 +11,7 @@ import dlib
 import cv2
 #import RosMsgUtil
 import pickle
-
+import pdb
 
 from ctypes import *
 import math
@@ -25,9 +25,10 @@ def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue)
     predictor = dlib.shape_predictor("../models/dlib/shape_predictor_68_face_landmarks.dat")
     #fourcc = cv2.VideoWriter_fourcc(*'XVID')
     #outVideo = cv2.VideoWriter('outputRoboy.mp4',fourcc, 20.0, (800,533))
+    # pdb.set_trace()
     vs = cv2.VideoCapture(0)
-    detect_net = load_net("../darknet/cfg/yolo.cfg", "../darknet/yolo.weights", 0)
-    detect_meta = load_meta("../darknet/cfg/coco.data")
+    detect_net = load_net(b"../darknet/cfg/yolo.cfg", b"../darknet/yolo.weights", 0)
+    detect_meta = load_meta(b"../darknet/cfg/coco.data")
     counter = 0
     while True:
         """
