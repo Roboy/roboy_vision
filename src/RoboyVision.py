@@ -5,7 +5,7 @@
 """
 import os
  
-from multiprocessing import Process,Queue
+from multiprocessing import Process, Queue, Array
 import FaceDetect
 import Multitracking
 import SpeakerDetect
@@ -16,12 +16,12 @@ import sys
 import Visualizer
 import DescribeSceneSrv
 
-def detectFaces(CameraQueue,FrameQueue,RectQueue,FacePointQueue,SpeakerQueue):
+def detectFaces(CameraQueue,FrameQueue,RectQueue,FacePointQueue,SpeakerQueue,res):
     # print('module name:', __name__)
     # print('parent process:', os.getppid())
     # print('process id:', os.getpid())
 	#Start the face detection
-    FaceDetect.StartDetection(CameraQueue,FrameQueue,RectQueue,FacePointQueue,SpeakerQueue)
+    FaceDetect.StartDetection(CameraQueue,FrameQueue,RectQueue,FacePointQueue,SpeakerQueue,res)
     sys.exit()
     print ("Terminated")
 
@@ -44,8 +44,8 @@ def ObjectRecognise(CameraQueue,ObjectsQueue):
     ObjectRecognition.detectObjects(CameraQueue,ObjectsQueue)
     print("as")
 
-def startDescribeSceneSrv():
-    DescribeSceneSrv.startDescribeSceneSrc()
+def startDescribeSceneSrv(res):
+    DescribeSceneSrv.startDescribeSceneSrv(res)
 
 
 
@@ -60,17 +60,19 @@ if __name__ == '__main__':
     SpeakerQueue = Queue()
     FacePointQueue = Queue()
     ObjectsQueue = Queue()
+
+    res = Array('i', range(2))
     #visualizerProc = Process( \
     #    target=visualizer, args=(CameraQueue,RectQueue, FacePointQueue, SpeakerQueue, FrameQueue, \
     #                             VisualQueue))
 
     detectFaceProc = \
-    Process(target=detectFaces,args=(CameraQueue,FrameQueue,RectQueue,FacePointQueue,SpeakerQueue))
+    Process(target=detectFaces,args=(CameraQueue,FrameQueue,RectQueue,FacePointQueue,SpeakerQueue,res))
     #trackProc = Process(target=tracking,args=(RectQueue,TrackQueue,))
     SpeakerProc = \
     Process(target=speakerDetect,args=(FacePointQueue,SpeakerQueue,FrameQueue,VisualQueue))
     describeSceneProc = \
-    Process(target=speakerDetect)
+    Process(target=startDescribeSceneSrv,args=(res,))
     #recogniseFaceProc = Process(target=recogniseFace,args=(RectQueue,))
     #detectObjectsProc = Process(target=ObjectRecognise,args=(CameraQueue,ObjectsQueue,))
     procs.append(detectFaceProc)
@@ -87,6 +89,7 @@ if __name__ == '__main__':
         cv2.imshow("frame",FrameQueue.get())
         cv2.moveWindow("frame",20,20)
         cv2.waitKey(2)
+        # print(VisualQueue.get())
     detectFaceProc.join()
     SpeakerProc.join()
     #visualizerProc.join()

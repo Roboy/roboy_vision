@@ -8,7 +8,7 @@ import json as json
 # # from config import params_setup
 # from lib import data_utils
 
-async def describescene_service_callback():
+async def describescene_service_callback(res):
     async with websockets.connect('ws://localhost:9090') as websocket:
 
         # advertise the service
@@ -23,12 +23,12 @@ async def describescene_service_callback():
         while True:
             try:
                 # pdb.set_trace()
-                request = await websocket   .recv()
+                request = await websocket.recv()
 
                 srv_response = {}
                 answer = {}
                 # describe scene function must be called here
-                answer["objects_detected"] = ["Look","yourself! Moron"]
+                answer["objects_detected"] = "x"+str(res[0])#["Look","yourself! Moron"]
 
                 srv_response["values"] = answer
                 srv_response["op"] = "service_response"
@@ -42,6 +42,6 @@ async def describescene_service_callback():
             except Exception as e:
                 logging.exception("Oopsie! Got an exception in DescribeSceneSrv")
 
-def startDescribeSceneSrv():
+def startDescribeSceneSrv(res):
     logging.basicConfig(level=logging.INFO)
-    asyncio.get_event_loop().run_until_complete(describescene_service_callback())
+    asyncio.get_event_loop().run_until_complete(describescene_service_callback(res))

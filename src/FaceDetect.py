@@ -4,6 +4,12 @@
 3. The position(rect) of the face is sent to the main process throught the RectQueue.
 4. Frame queue is as a future reference to send data to the main process
 """
+from __future__ import print_function
+
+import logging
+import asyncio
+import websockets
+import json as json
 
 from imutils import face_utils
 import imutils
@@ -16,10 +22,29 @@ import pdb
 from ctypes import *
 import math
 import random
+import sys
 
 import numpy as np
 
-def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue):
+result = None
+
+import pdb
+
+class ForkedPdb(pdb.Pdb):
+    """A Pdb subclass that may be used
+    from a forked multiprocessing child
+
+    """
+    def interaction(self, *args, **kwargs):
+        _stdin = sys.stdin
+        try:
+            sys.stdin = open('/dev/stdin')
+            pdb.Pdb.interaction(self, *args, **kwargs)
+        finally:
+            sys.stdin = _stdin
+
+
+def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue,res):
     print("[INFO] loading facial landmark predictor...")
     detector = dlib.get_frontal_face_detector()
     predictor = dlib.shape_predictor("../models/dlib/shape_predictor_68_face_landmarks.dat")
@@ -41,7 +66,7 @@ def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue)
         #frame = imutils.resize(frame, width=800)\
         frame = frame[0:376, 0:500]
 
-       	detectObjects(frame,detect_net,detect_meta) 
+       	res = detectObjects(frame,detect_net,detect_meta) 
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         # detect faces in the grayscale frame
         rects = detector(gray, 0)
@@ -85,7 +110,6 @@ def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue)
         FrameQueue.put(frame)  
      #   outVideo.write(frame)
         RectQueue.put(rects)
-
 
 
 def sample(probs):
@@ -234,7 +258,6 @@ DONE = 0
 def Initialize():
     DONE = 0
     
-	 
 def detectObjects(frame,detect_net,detect_meta):
     #ret, frame = CameraFrame.read()
     # RUN OBJECT DETECTION ON FRAME
@@ -242,4 +265,47 @@ def detectObjects(frame,detect_net,detect_meta):
     if detect_net:
         result = detect(detect_net, detect_meta, frame, thresh=0.5)
         img = draw_results(result, frame)
+        # if len(result)!=0 and result is not None:
+        #     ForkedPdb().set_trace()
+    return [len(result),1]
        
+
+async def describescene_service_callback():
+    async with websockets.connect('ws://localhost:9090') as websocket:
+
+        # advertise the service
+        await websocket.send("{ \"op\": \"advertise_service\",\
+                      \"type\": \"roboy_communication_cognition/DescribeScene\",\
+                      \"service\": \"/roboy/cognition/vision/DescribeScene\"\
+                    }")
+
+        i = 1  # counter for the service request IDs
+
+        # wait for the service request, generate the answer, and send it back
+        while True:
+            try:
+                # pdb.set_trace()
+                request = await websocket.recv()
+
+                srv_response = {}
+                answer = {}
+                # describe scene function must be called here
+                # result = detectObjects(frame)
+                ForkedPdb().set_trace()
+                answer["objects_detected"] = str(result[0][0])
+               
+                srv_response["values"] = answer
+                srv_response["op"] = "service_response"
+                srv_response["id"] = "service_request:/roboy/cognition/vision/DescribeScene:" + str(i)
+                srv_response["result"] = True
+                srv_response["service"] = "/roboy/cognition/vision/DescribeScene"
+                i += 1
+
+                await websocket.send(json.dumps(srv_response))
+
+            except Exception as e:
+                logging.exception("Oopsie! Got an exception in DescribeSceneSrv")
+
+def startDescribeSceneSrv():
+    logging.basicConfig(level=logging.INFO)
+    asyncio.get_event_loop().run_until_complete(describescene_service_callback())
