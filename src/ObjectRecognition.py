@@ -149,6 +149,7 @@ def detect(net, meta, image, thresh=.5, hier_thresh=.5, nms=.45):
 def draw_results(res, img):
 
     for element in res:
+        print("Object is :",element[1]," coords are: ",element[2])
         box = element[2]
         xmin = int(box[0] - box[2] / 2. + 1)
         xmax = int(box[0] + box[2] / 2. + 1)
@@ -169,7 +170,7 @@ def Initialize():
 def detectObjects(frame):
 
     if not detect_net:
-	Initialize()	
+	Initialize()
 	print("Its empty")
     # LOAD DETECTION NET
     #ret, frame = CameraFrame.read()

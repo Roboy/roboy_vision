@@ -1,64 +1,47 @@
-import dlib
-import cv2
-import RosMsgUtil
-import sys
-import pickle
 from __future__ import print_function
 
-import os
-import sys
 import logging
-
 import asyncio
 import websockets
 import json as json
-import RoboyVision
 
-import pdb
+# # from config import params_setup
+# from lib import data_utils
 
-async def service_callback():
+async def describescene_service_callback():
     async with websockets.connect('ws://localhost:9090') as websocket:
 
         # advertise the service
         await websocket.send("{ \"op\": \"advertise_service\",\
-                          \"type\": \"vision_service/srv/DescribeScene\",\
-                          \"service\": \"/roboy/cognition/vision/DescribeScene\"\
-                        }")
+                      \"type\": \"roboy_communication_cognition/DescribeScene\",\
+                      \"service\": \"/roboy/cognition/vision/DescribeScene\"\
+                    }")
 
         i = 1  # counter for the service request IDs
 
+        # wait for the service request, generate the answer, and send it back
         while True:
             try:
-                request = await websocket.recv()
+                # pdb.set_trace()
+                request = await websocket   .recv()
 
-                #placeholder for real objects queue
-                FoundObjects= ObjectRects.getQueue();
+                srv_response = {}
+                answer = {}
+                # describe scene function must be called here
+                answer["objects_detected"] = ["Look","yourself! Moron"]
 
-                ObjectsList = {}
-
-                #structure of FoundObjects: type, x, y, z
-
-                for obj in FoundObjects:
-                    ObjectsList.append((obj[0], obj[1]))
-
-                sorted(ObjectsList, key=lambda x: x[1], reverse=False) #sort for second value (x coord)
-                ObjectsString = [] #array of strings to send
-
-                for i in ObjectsList:
-                    ObjectsString.append(i[0])
-
-                message["values"] = ObjectsString
-                message["op"] = "service_response"
-                message["id"] = "message:/roboy/cognition/vision/DescribeScene:" + str(i)
-                message["service"] = "/roboy/cognition/vision/DescribeScene"
+                srv_response["values"] = answer
+                srv_response["op"] = "service_response"
+                srv_response["id"] = "service_request:/roboy/cognition/vision/DescribeScene:" + str(i)
+                srv_response["result"] = True
+                srv_response["service"] = "/roboy/cognition/vision/DescribeScene"
                 i += 1
 
-                await websocket.send(json.dumps(message))
+                await websocket.send(json.dumps(srv_response))
 
             except Exception as e:
-                logging.exception("Oopsie! Got an exception in vision/coordinates")
+                logging.exception("Oopsie! Got an exception in DescribeSceneSrv")
 
-        logging.basicConfig(level=logging.INFO)
-        asyncio.get_event_loop().run_until_complete(service_callback())
-
-
+def startDescribeSceneSrv():
+    logging.basicConfig(level=logging.INFO)
+    asyncio.get_event_loop().run_until_complete(describescene_service_callback())

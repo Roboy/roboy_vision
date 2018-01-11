@@ -78,7 +78,7 @@ def SendFaceCoordinates(id, speaking, position, i):
         message["op"] = "publish"
         message["id"] = "message:/roboy/cognition/vision/FaceCoordinates:" + str(i)
         message["topic"] = "/roboy/cognition/vision/FaceCoordinates"
-      
+
         ws.send(json.dumps(message))
     except Exception as e:
             logging.exception("Something went wrong in SendFaceCoordinates in RosMsgUtil.py")

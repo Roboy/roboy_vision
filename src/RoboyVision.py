@@ -14,6 +14,7 @@ import cv2
 import ObjectRecognition
 import sys
 import Visualizer
+import DescribeSceneSrv
 
 def detectFaces(CameraQueue,FrameQueue,RectQueue,FacePointQueue,SpeakerQueue):
     # print('module name:', __name__)
@@ -43,6 +44,9 @@ def ObjectRecognise(CameraQueue,ObjectsQueue):
     ObjectRecognition.detectObjects(CameraQueue,ObjectsQueue)
     print("as")
 
+def startDescribeSceneSrv():
+    DescribeSceneSrv.startDescribeSceneSrc()
+
 
 
 
@@ -65,11 +69,14 @@ if __name__ == '__main__':
     #trackProc = Process(target=tracking,args=(RectQueue,TrackQueue,))
     SpeakerProc = \
     Process(target=speakerDetect,args=(FacePointQueue,SpeakerQueue,FrameQueue,VisualQueue))
+    describeSceneProc = \
+    Process(target=speakerDetect)
     #recogniseFaceProc = Process(target=recogniseFace,args=(RectQueue,))
     #detectObjectsProc = Process(target=ObjectRecognise,args=(CameraQueue,ObjectsQueue,))
     procs.append(detectFaceProc)
     #procs.append(trackProc)
     procs.append(SpeakerProc)
+    procs.append(describeSceneProc)
     #procs.append(recogniseFaceProc)
     #procs.append(visualizerProc)
     #procs.append(detectObjectsProc)
