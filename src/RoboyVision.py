@@ -5,7 +5,7 @@
 """
 import os
  
-from multiprocessing import Process, Queue, Array
+from multiprocessing import Process, Queue
 import FaceDetect
 import Multitracking
 import SpeakerDetect
@@ -16,12 +16,12 @@ import sys
 import Visualizer
 import DescribeSceneSrv
 
-def detectFaces(CameraQueue,FrameQueue,RectQueue,FacePointQueue,SpeakerQueue,res):
+def detectFaces(CameraQueue,FrameQueue,RectQueue,FacePointQueue,SpeakerQueue,ObjectsQueue):
     # print('module name:', __name__)
     # print('parent process:', os.getppid())
     # print('process id:', os.getpid())
 	#Start the face detection
-    FaceDetect.StartDetection(CameraQueue,FrameQueue,RectQueue,FacePointQueue,SpeakerQueue,res)
+    FaceDetect.StartDetection(CameraQueue,FrameQueue,RectQueue,FacePointQueue,SpeakerQueue,ObjectsQueue)
     sys.exit()
     print ("Terminated")
 
@@ -44,8 +44,8 @@ def ObjectRecognise(CameraQueue,ObjectsQueue):
     ObjectRecognition.detectObjects(CameraQueue,ObjectsQueue)
     print("as")
 
-def startDescribeSceneSrv(res):
-    DescribeSceneSrv.startDescribeSceneSrv(res)
+def startDescribeSceneSrv(ObjectsQueue):
+    DescribeSceneSrv.startDescribeSceneSrv(ObjectsQueue)
 
 
 
@@ -61,18 +61,17 @@ if __name__ == '__main__':
     FacePointQueue = Queue()
     ObjectsQueue = Queue()
 
-    res = Array('i', range(2))
     #visualizerProc = Process( \
     #    target=visualizer, args=(CameraQueue,RectQueue, FacePointQueue, SpeakerQueue, FrameQueue, \
     #                             VisualQueue))
 
     detectFaceProc = \
-    Process(target=detectFaces,args=(CameraQueue,FrameQueue,RectQueue,FacePointQueue,SpeakerQueue,res))
+    Process(target=detectFaces,args=(CameraQueue,FrameQueue,RectQueue,FacePointQueue,SpeakerQueue,ObjectsQueue))
     #trackProc = Process(target=tracking,args=(RectQueue,TrackQueue,))
     SpeakerProc = \
     Process(target=speakerDetect,args=(FacePointQueue,SpeakerQueue,FrameQueue,VisualQueue))
     describeSceneProc = \
-    Process(target=startDescribeSceneSrv,args=(res,))
+    Process(target=startDescribeSceneSrv,args=(ObjectsQueue,))
     #recogniseFaceProc = Process(target=recogniseFace,args=(RectQueue,))
     #detectObjectsProc = Process(target=ObjectRecognise,args=(CameraQueue,ObjectsQueue,))
     procs.append(detectFaceProc)
@@ -84,14 +83,18 @@ if __name__ == '__main__':
     #procs.append(detectObjectsProc)
     for proc in procs:
         proc.start()
-
+    # i=0
     while True:
         cv2.imshow("frame",FrameQueue.get())
         cv2.moveWindow("frame",20,20)
         cv2.waitKey(2)
-        # print(VisualQueue.get())
-    detectFaceProc.join()
-    SpeakerProc.join()
+        
+    for proc in procs:
+        proc.join()
+    # detectFaceProc.join()
+    # SpeakerProc.join()
+    # describeSceneProc.join()
+    # print(res.value)
     #visualizerProc.join()
     #detectObjectsProc.join()
    # recogniseFaceProc.join()
