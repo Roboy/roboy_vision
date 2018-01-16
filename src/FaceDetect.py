@@ -4,6 +4,13 @@
 3. The position(rect) of the face is sent to the main process throught the RectQueue.
 4. Frame queue is as a future reference to send data to the main process
 """
+from __future__ import print_function
+import time
+
+import logging
+import asyncio
+import websockets
+import json as json
 
 from imutils import face_utils
 import imutils
@@ -11,23 +18,29 @@ import dlib
 import cv2
 #import RosMsgUtil
 import pickle
-
+import pdb
 
 from ctypes import *
 import math
 import random
+import sys
 
 import numpy as np
 
-def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue):
+
+from ForkedPdb import ForkedPdb 
+from multiprocessing import Array, Value, sharedctypes
+
+def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue,ObjectsQueue):
     print("[INFO] loading facial landmark predictor...")
     detector = dlib.get_frontal_face_detector()
     predictor = dlib.shape_predictor("../models/dlib/shape_predictor_68_face_landmarks.dat")
     #fourcc = cv2.VideoWriter_fourcc(*'XVID')
     #outVideo = cv2.VideoWriter('outputRoboy.mp4',fourcc, 20.0, (800,533))
+    # pdb.set_trace()
     vs = cv2.VideoCapture(0)
-    detect_net = load_net("../darknet/cfg/yolo.cfg", "../darknet/yolo.weights", 0)
-    detect_meta = load_meta("../darknet/cfg/coco.data")
+    detect_net = load_net(b"../darknet/cfg/yolo.cfg", b"../darknet/yolo.weights", 0)
+    detect_meta = load_meta(b"../darknet/cfg/coco.data")
     counter = 0
     while True:
         """
@@ -40,7 +53,12 @@ def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue)
         #frame = imutils.resize(frame, width=800)\
         frame = frame[0:376, 0:500]
 
-       	detectObjects(frame,detect_net,detect_meta) 
+        if ObjectsQueue.empty():
+       	    ObjectsQueue.put(detectObjects(frame,detect_net,detect_meta))
+        else:
+            ObjectsQueue.get()
+            ObjectsQueue.put(detectObjects(frame,detect_net,detect_meta))
+
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         # detect faces in the grayscale frame
         rects = detector(gray, 0)
@@ -82,9 +100,8 @@ def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue)
 
         FacepointQueue.put(pickle.dumps(facepoints))
         FrameQueue.put(frame)  
-     #   outVideo.write(frame)
+        # outVideo.write(frame)
         RectQueue.put(rects)
-
 
 
 def sample(probs):
@@ -233,7 +250,6 @@ DONE = 0
 def Initialize():
     DONE = 0
     
-	 
 def detectObjects(frame,detect_net,detect_meta):
     #ret, frame = CameraFrame.read()
     # RUN OBJECT DETECTION ON FRAME
@@ -241,4 +257,10 @@ def detectObjects(frame,detect_net,detect_meta):
     if detect_net:
         result = detect(detect_net, detect_meta, frame, thresh=0.5)
         img = draw_results(result, frame)
+            
+    objects=[]
+    for el in result:
+        objects.append(el[0].decode("utf-8"))
+    return objects
+
        
