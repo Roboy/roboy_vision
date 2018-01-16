@@ -42,5 +42,6 @@ async def detectface_service_callback():
             except Exception as e:
                 logging.exception("Oopsie! Got an exception in DetectFaceSrv")
 
-logging.basicConfig(level=logging.INFO)
-asyncio.get_event_loop().run_until_complete(detectface_service_callback())
+def startDetectFace(ObjectsQueue):
+    logging.basicConfig(level=logging.INFO)
+    asyncio.get_event_loop().run_until_complete(detectface_service_callback(ObjectsQueue))

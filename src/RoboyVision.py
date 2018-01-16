@@ -14,7 +14,7 @@ import cv2
 import ObjectRecognition
 import sys
 import Visualizer
-import DescribeSceneSrv
+import VisionSrv
 
 def detectFaces(CameraQueue,FrameQueue,RectQueue,FacePointQueue,SpeakerQueue,ObjectsQueue):
     # print('module name:', __name__)
@@ -32,23 +32,30 @@ def tracking(RectQueue,TrackQueue):
 def speakerDetect(FacePointQueue,SpeakerQueue,FrameQueue,VisualQueue):
     SpeakerDetect.DetectSpeaker(FacePointQueue,SpeakerQueue,FrameQueue,VisualQueue)
 
-
 def recogniseFace(RectsQueue):
     RecogniseFace.recogniseFace(RectsQueue)
 
 def visualizer(CameraQueue,RectQueue,FacePointQueue,SpeakerQueue,FrameQueue,VisualQueue):
     Visualizer.StartVisualization(CameraQueue,RectQueue,FacePointQueue,SpeakerQueue,FrameQueue,VisualQueue)
 
-
 def ObjectRecognise(CameraQueue,ObjectsQueue):
     ObjectRecognition.detectObjects(CameraQueue,ObjectsQueue)
     print("as")
 
 def startDescribeSceneSrv(ObjectsQueue):
-    DescribeSceneSrv.startDescribeSceneSrv(ObjectsQueue)
+    VisionSrv.startDescribeSceneSrv(ObjectsQueue)
 
+def startFindObjectsSrv(ObjectsQueue, RectQueue):
+    VisionSrv.startFindObjectsSrv(ObjectsQueue, RectQueue)
 
+def startGetObjectSrv(ObjectsQueue):
+    VisionSrv.startGetObjectSrv(ObjectsQueue)
 
+def startLookAtSpeakerSrv(ObjectsQueue):
+    VisionSrv.startLookAtSpeakerSrv(ObjectsQueue)
+
+def startDetectFace(ObjectsQueue):
+    VisionSrv.startDetectFace(ObjectsQueue)
 
 if __name__ == '__main__':
     procs = []
@@ -61,23 +68,43 @@ if __name__ == '__main__':
     FacePointQueue = Queue()
     ObjectsQueue = Queue()
 
+
     #visualizerProc = Process( \
     #    target=visualizer, args=(CameraQueue,RectQueue, FacePointQueue, SpeakerQueue, FrameQueue, \
     #                             VisualQueue))
 
     detectFaceProc = \
     Process(target=detectFaces,args=(CameraQueue,FrameQueue,RectQueue,FacePointQueue,SpeakerQueue,ObjectsQueue))
-    #trackProc = Process(target=tracking,args=(RectQueue,TrackQueue,))
+    trackProc = Process(target=tracking,args=(RectQueue,TrackQueue,))
     SpeakerProc = \
     Process(target=speakerDetect,args=(FacePointQueue,SpeakerQueue,FrameQueue,VisualQueue))
+
     describeSceneProc = \
     Process(target=startDescribeSceneSrv,args=(ObjectsQueue,))
+
+    findObjectsProc = \
+    Process(target=startFindObjectsSrv, args=(ObjectsQueue, RectQueue))
+
+    # getObjectsProc = \
+    # Process(target=startGetObjectSrv, args=(GetObjectsQueue,))
+
+    lookAtSpeakerProc = \
+    Process(target=startLookAtSpeakerSrv, args=(ObjectsQueue,))
+
+    detectFaceSrvProc = \
+    Process(target=startDetectFace, args=(ObjectsQueue,))
+
+
     #recogniseFaceProc = Process(target=recogniseFace,args=(RectQueue,))
     #detectObjectsProc = Process(target=ObjectRecognise,args=(CameraQueue,ObjectsQueue,))
     procs.append(detectFaceProc)
     #procs.append(trackProc)
     procs.append(SpeakerProc)
     procs.append(describeSceneProc)
+    procs.append(findObjectsProc)
+    # procs.append(getObjectsProc)
+    procs.append(lookAtSpeakerProc)
+    procs.append(detectFaceSrvProc)
     #procs.append(recogniseFaceProc)
     #procs.append(visualizerProc)
     #procs.append(detectObjectsProc)
