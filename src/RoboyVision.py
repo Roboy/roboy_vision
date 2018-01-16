@@ -70,7 +70,7 @@ if __name__ == '__main__':
 
 
     #visualizerProc = Process( \
-    #    target=visualizer, args=(CameraQueue,RectQueue, FacePointQueue, SpeakerQueue, FrameQueue, \
+    #    target=visualizer, arg         s=(CameraQueue,RectQueue, FacePointQueue, SpeakerQueue, FrameQueue, \
     #                             VisualQueue))
 
     detectFaceProc = \
@@ -94,6 +94,7 @@ if __name__ == '__main__':
     detectFaceSrvProc = \
     Process(target=startDetectFace, args=(ObjectsQueue,))
 
+    Process(target=speakerDetect, args=())
 
     #recogniseFaceProc = Process(target=recogniseFace,args=(RectQueue,))
     #detectObjectsProc = Process(target=ObjectRecognise,args=(CameraQueue,ObjectsQueue,))
@@ -108,6 +109,7 @@ if __name__ == '__main__':
     #procs.append(recogniseFaceProc)
     #procs.append(visualizerProc)
     #procs.append(detectObjectsProc)
+
     for proc in procs:
         proc.start()
     # i=0
