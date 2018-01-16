@@ -61,7 +61,7 @@ if __name__ == '__main__':
     FacePointQueue = Queue()
     ObjectsQueue = Queue()
     #visualizerProc = Process( \
-    #    target=visualizer, args=(CameraQueue,RectQueue, FacePointQueue, SpeakerQueue, FrameQueue, \
+    #    target=visualizer, arg         s=(CameraQueue,RectQueue, FacePointQueue, SpeakerQueue, FrameQueue, \
     #                             VisualQueue))
 
     detectFaceProc = \
@@ -70,16 +70,12 @@ if __name__ == '__main__':
     SpeakerProc = \
     Process(target=speakerDetect,args=(FacePointQueue,SpeakerQueue,FrameQueue,VisualQueue))
     describeSceneProc = \
-    Process(target=speakerDetect)
+    Process(target=speakerDetect, args=())
     #recogniseFaceProc = Process(target=recogniseFace,args=(RectQueue,))
     #detectObjectsProc = Process(target=ObjectRecognise,args=(CameraQueue,ObjectsQueue,))
     procs.append(detectFaceProc)
     #procs.append(trackProc)
     procs.append(SpeakerProc)
-    procs.append(describeSceneProc)
-    #procs.append(recogniseFaceProc)
-    #procs.append(visualizerProc)
-    #procs.append(detectObjectsProc)
     for proc in procs:
         proc.start()
 
