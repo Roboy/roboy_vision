@@ -16,6 +16,7 @@ import sys
 import Visualizer
 import VisionSrv
 
+
 def detectFaces(CameraQueue,FrameQueue,RectQueue,FacePointQueue,SpeakerQueue,ObjectsQueue):
     # print('module name:', __name__)
     # print('parent process:', os.getppid())
@@ -54,8 +55,8 @@ def startGetObjectSrv(ObjectsQueue):
 def startLookAtSpeakerSrv(ObjectsQueue):
     VisionSrv.startLookAtSpeakerSrv(ObjectsQueue)
 
-def startDetectFace(ObjectsQueue):
-    VisionSrv.startDetectFace(ObjectsQueue)
+def startDetectFace(FacePointQueue):
+    VisionSrv.startDetectFace(FacePointQueue)
 
 if __name__ == '__main__':
     procs = []
@@ -75,7 +76,7 @@ if __name__ == '__main__':
 
     detectFaceProc = \
     Process(target=detectFaces,args=(CameraQueue,FrameQueue,RectQueue,FacePointQueue,SpeakerQueue,ObjectsQueue))
-    trackProc = Process(target=tracking,args=(RectQueue,TrackQueue,))
+    # trackProc = Process(target=tracking,args=(RectQueue,TrackQueue,))
     SpeakerProc = \
     Process(target=speakerDetect,args=(FacePointQueue,SpeakerQueue,FrameQueue,VisualQueue))
 
@@ -83,16 +84,16 @@ if __name__ == '__main__':
     Process(target=startDescribeSceneSrv,args=(ObjectsQueue,))
 
     findObjectsProc = \
-    Process(target=startFindObjectsSrv, args=(ObjectsQueue, RectQueue))
+    Process(target=startFindObjectsSrv, args=(ObjectsQueue, RectQueue,))
 
     # getObjectsProc = \
     # Process(target=startGetObjectSrv, args=(GetObjectsQueue,))
 
-    lookAtSpeakerProc = \
-    Process(target=startLookAtSpeakerSrv, args=(ObjectsQueue,))
+    # lookAtSpeakerProc = \
+    # Process(target=startLookAtSpeakerSrv, args=(ObjectsQueue,))
 
     detectFaceSrvProc = \
-    Process(target=startDetectFace, args=(ObjectsQueue,))
+    Process(target=startDetectFace, args=(FacePointQueue,))
 
     Process(target=speakerDetect, args=())
 
@@ -104,7 +105,7 @@ if __name__ == '__main__':
     procs.append(describeSceneProc)
     procs.append(findObjectsProc)
     # procs.append(getObjectsProc)
-    procs.append(lookAtSpeakerProc)
+    # procs.append(lookAtSpeakerProc)
     procs.append(detectFaceSrvProc)
     #procs.append(recogniseFaceProc)
     #procs.append(visualizerProc)

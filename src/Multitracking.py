@@ -38,7 +38,7 @@ def StartTracking(RectsQueue,TrackQueue):
 		for a,rect in enumerate(rects):
 			#print ("Rect is:",rect)
 			trackpoint = rect.left(),rect.top(),rect.right()-rect.left(),rect.bottom()-rect.top()
-			#print (trackpoint)
+			# print (trackpoint)
 			tracker.add(image,trackpoint)
 		counter = 0
 		while counter < 100:

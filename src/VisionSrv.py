@@ -4,10 +4,24 @@ import logging
 import asyncio
 import websockets
 import json as json
-
 from ForkedPdb import ForkedPdb
 # # from config import params_setup
 # from lib import data_utils
+
+from imutils import face_utils
+import imutils
+import dlib
+import cv2
+#import RosMsgUtil
+import pickle
+import pdb
+
+from ctypes import *
+import math
+import random
+import sys
+
+import numpy as np
 
 async def describescene_service_callback(ObjectsQueue):
     async with websockets.connect('ws://localhost:9090') as websocket:
@@ -66,8 +80,24 @@ async def findobject_service_callback(ObjectsQueue, RectQueue):
                 # find object function must be implemented here
                 objects = ObjectsQueue.get()
                 rects = RectQueue.get()
-                print(rects)
+
+                # for counter in RectQueue:
+                #     print(counter)
+                #     for elem in counter:
+                #         print(elem)
+                #         print(type(elem))
+                #         print(elem.dcenter)
+
+                for elem in rects:
+                    print(type(elem))
+                    print(elem.dcenter)
+
+                # print(rects)
                 print('Somehow got here')
+
+
+
+                # ForkedPdb.set_trace()
 
                 if type in objects:
                     answer["found"] = True
@@ -178,7 +208,7 @@ async def lookatspeaker_service_callback(ObjectsQueue):
             except Exception as e:
                 logging.exception("Oopsie! Got an exception in LookAtSpeakerSrv")
 
-async def detectface_service_callback(ObjectsQueue):
+async def detectface_service_callback(FacePointQueue):
     async with websockets.connect('ws://localhost:9090') as websocket:
 
         # advertise the service
@@ -198,6 +228,11 @@ async def detectface_service_callback(ObjectsQueue):
                 srv_response = {}
                 answer = {}
                 # detectface function must be called here
+
+                # facepoints = FacePointQueue.get()
+                # print(facepoints)
+                # print('Somehow got here')
+
                 answer["face_detected"] = True
 
                 srv_response["values"] = answer

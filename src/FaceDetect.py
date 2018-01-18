@@ -28,7 +28,7 @@ import sys
 import numpy as np
 
 
-from ForkedPdb import ForkedPdb 
+from ForkedPdb import ForkedPdb
 from multiprocessing import Array, Value, sharedctypes
 
 def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue,ObjectsQueue):
@@ -81,7 +81,7 @@ def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue,
             cv2.rectangle(frame, p1, p2, (0,0,255,10))
             shape = predictor(gray, rect)
             shape = face_utils.shape_to_np(shape)
-            facepoints[counter] =shape
+            facepoints[counter] = shape
             #print ("Rect from face_detect:",rect,"Detected face width: ",rect.right()-rect.left()," height:",rect.bottom()-rect.top())
             if SpeakerDict:
                 #print("Person:",SpeakerDict[counter])
@@ -102,6 +102,20 @@ def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue,
         FrameQueue.put(frame)  
         # outVideo.write(frame)
         RectQueue.put(rects)
+        # one_elememt = RectQueue.get()
+        # for rect in one_elememt:
+        #     print(rect.top)
+        #     print(rect.right)
+        #     print(rect.bottom)
+        #     print(rect.left)
+
+        # test = RectQueue.get()
+        # for rectangle in test:
+        #     print(type(rectangle))
+        #     print(rectangle.dcenter)
+        # for elem in FacepointQueue.get():
+        #     for point in elem:
+        #         print(point)
 
 
 def sample(probs):
@@ -257,8 +271,8 @@ def detectObjects(frame,detect_net,detect_meta):
     if detect_net:
         result = detect(detect_net, detect_meta, frame, thresh=0.5)
         img = draw_results(result, frame)
-            
     objects=[]
+
     for el in result:
         objects.append(el[0].decode("utf-8"))
     return objects
