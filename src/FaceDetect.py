@@ -24,6 +24,7 @@ from ctypes import *
 import math
 import random
 import sys
+import pdb
 
 import numpy as np
 
@@ -102,8 +103,14 @@ def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue,
         FrameQueue.put(frame)  
         # outVideo.write(frame)
         RectQueue.put(rects)
+        # ForkedPdb().set_trace()
         # one_elememt = RectQueue.get()
-        # for rect in one_elememt:
+        # print(rects.count())
+        # i=0
+        # print("counting rects")
+        # for rect in rects:
+        #     print("Rect #", i)
+        #     i += 1
         #     print(rect.top)
         #     print(rect.right)
         #     print(rect.bottom)
@@ -272,9 +279,9 @@ def detectObjects(frame,detect_net,detect_meta):
         result = detect(detect_net, detect_meta, frame, thresh=0.5)
         img = draw_results(result, frame)
     objects=[]
+    coords=[]
 
     for el in result:
         objects.append(el[0].decode("utf-8"))
+        coords.append(el[2])
     return objects
-
-       

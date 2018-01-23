@@ -58,7 +58,7 @@ async def describescene_service_callback(ObjectsQueue):
             except Exception as e:
                 logging.exception("Oopsie! Got an exception in DescribeSceneSrv")
 
-async def findobject_service_callback(ObjectsQueue, RectQueue):
+async def findobject_service_callback(ObjectsQueue):
     async with websockets.connect('ws://localhost:9090') as websocket:
 
         # advertise the service
@@ -79,7 +79,6 @@ async def findobject_service_callback(ObjectsQueue, RectQueue):
                 answer = {}
                 # find object function must be implemented here
                 objects = ObjectsQueue.get()
-                rects = RectQueue.get()
 
                 # for counter in RectQueue:
                 #     print(counter)
@@ -88,27 +87,46 @@ async def findobject_service_callback(ObjectsQueue, RectQueue):
                 #         print(type(elem))
                 #         print(elem.dcenter)
 
-                for elem in rects:
-                    print(type(elem))
-                    print(elem.dcenter)
+                # for elem in rects:
+                #     print(type(elem))
+                #     print(elem.dcenter)
 
                 # print(rects)
                 print('Somehow got here')
+                # for object in objects:
+                #     print("x coordinate: "+ object[2])
 
+                for item in object[0]:
+                    if type == object[0]:
+                        object[0].index()
 
+                for i in range(object[0]):
+                    if type == object[0][i]:
+                        answer["found"] = True
+                        answer["x"] = object[1][i]
+                        answer["y"] = object[1][i]
+                        answer["z"] = 0
 
-                # ForkedPdb.set_trace()
-
-                if type in objects:
-                    answer["found"] = True
-                    answer["x"] = 1000
-                    answer["y"] = 1000
-                    answer["z"] = 1000
-                else:
+                if type not in objects[0]:
                     answer["found"] = False
                     answer["x"] = 0
                     answer["y"] = 0
                     answer["z"] = 0
+
+
+                # if type in objects:
+                #     # answer["found"] = True
+                #     # answer["x"] = object[]
+                #     # answer["y"]= object[1][2][2]
+                #     answer["found"] = True
+                #     answer["x"] = 100
+                #     answer["y"] = 100
+                #     answer["z"] = 100
+                # else:
+                #     answer["found"] = False
+                #     answer["x"] = 0
+                #     answer["y"] = 0
+                #     answer["z"] = 0
 
                 srv_response["values"] = answer
                 srv_response["op"] = "service_response"
@@ -252,9 +270,9 @@ def startDescribeSceneSrv(ObjectsQueue):
     logging.basicConfig(level=logging.INFO)
     asyncio.get_event_loop().run_until_complete(describescene_service_callback(ObjectsQueue))
 
-def startFindObjectsSrv(ObjectsQueue, RectQueue):
+def startFindObjectsSrv(ObjectsQueue):
     logging.basicConfig(level=logging.INFO)
-    asyncio.get_event_loop().run_until_complete(findobject_service_callback(ObjectsQueue, RectQueue))
+    asyncio.get_event_loop().run_until_complete(findobject_service_callback(ObjectsQueue))
 
 # def startGetObjectSrv(ObjectsQueue):
 #     logging.basicConfig(level=logging.INFO)

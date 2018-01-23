@@ -46,8 +46,8 @@ def ObjectRecognise(CameraQueue,ObjectsQueue):
 def startDescribeSceneSrv(ObjectsQueue):
     VisionSrv.startDescribeSceneSrv(ObjectsQueue)
 
-def startFindObjectsSrv(ObjectsQueue, RectQueue):
-    VisionSrv.startFindObjectsSrv(ObjectsQueue, RectQueue)
+def startFindObjectsSrv(ObjectsQueue):
+    VisionSrv.startFindObjectsSrv(ObjectsQueue)
 
 def startGetObjectSrv(ObjectsQueue):
     VisionSrv.startGetObjectSrv(ObjectsQueue)
@@ -84,7 +84,7 @@ if __name__ == '__main__':
     Process(target=startDescribeSceneSrv,args=(ObjectsQueue,))
 
     findObjectsProc = \
-    Process(target=startFindObjectsSrv, args=(ObjectsQueue, RectQueue,))
+    Process(target=startFindObjectsSrv, args=(ObjectsQueue,))
 
     # getObjectsProc = \
     # Process(target=startGetObjectSrv, args=(GetObjectsQueue,))
