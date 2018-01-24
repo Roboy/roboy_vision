@@ -43,8 +43,8 @@ async def describescene_service_callback(ObjectsQueue):
                 answer = {}
                 # retrieve the list of objects from the queue
                 objects = ObjectsQueue.get()
-                answer["objects_detected"] = objects
-                print(answer["objects_detected"])
+                answer["objects_detected"] = objects[0]
+                # print(answer["objects_detected"])
 
                 srv_response["values"] = answer
                 srv_response["op"] = "service_response"
@@ -74,59 +74,24 @@ async def findobject_service_callback(ObjectsQueue):
             try:
 
                 request = await websocket.recv()
-                type = json.loads(request)["args"]["type"]
+                type_new = json.loads(request)["args"]["type"]
                 srv_response = {}
                 answer = {}
                 # find object function must be implemented here
                 objects = ObjectsQueue.get()
 
-                # for counter in RectQueue:
-                #     print(counter)
-                #     for elem in counter:
-                #         print(elem)
-                #         print(type(elem))
-                #         print(elem.dcenter)
 
-                # for elem in rects:
-                #     print(type(elem))
-                #     print(elem.dcenter)
-
-                # print(rects)
-                print('Somehow got here')
-                # for object in objects:
-                #     print("x coordinate: "+ object[2])
-
-                for item in object[0]:
-                    if type == object[0]:
-                        object[0].index()
-
-                for i in range(object[0]):
-                    if type == object[0][i]:
-                        answer["found"] = True
-                        answer["x"] = object[1][i]
-                        answer["y"] = object[1][i]
-                        answer["z"] = 0
-
-                if type not in objects[0]:
+                if type_new in objects[0]:
+                    index = objects[0].index(type_new)
+                    answer["found"] = True
+                    answer["x"] = objects[1][index][0]
+                    answer["y"] = objects[1][index][1]
+                    answer["z"] = 0
+                else:
                     answer["found"] = False
                     answer["x"] = 0
                     answer["y"] = 0
                     answer["z"] = 0
-
-
-                # if type in objects:
-                #     # answer["found"] = True
-                #     # answer["x"] = object[]
-                #     # answer["y"]= object[1][2][2]
-                #     answer["found"] = True
-                #     answer["x"] = 100
-                #     answer["y"] = 100
-                #     answer["z"] = 100
-                # else:
-                #     answer["found"] = False
-                #     answer["x"] = 0
-                #     answer["y"] = 0
-                #     answer["z"] = 0
 
                 srv_response["values"] = answer
                 srv_response["op"] = "service_response"
@@ -247,11 +212,23 @@ async def detectface_service_callback(FacePointQueue):
                 answer = {}
                 # detectface function must be called here
 
+                facepoints = FacePointQueue.get()
+                # print(facepoints)
+                print(pickle.loads(facepoints))
+                print(type(facepoints))
+
+                if pickle.loads(facepoints):
+                    answer["face_detected"] = True
+                else:
+                    answer["face_detected"] = False
+
                 # facepoints = FacePointQueue.get()
                 # print(facepoints)
                 # print('Somehow got here')
+                # FacePointQueue
+                # if FacePointQueue
 
-                answer["face_detected"] = True
+                # answer["face_detected"] = True
 
                 srv_response["values"] = answer
                 srv_response["op"] = "service_response"
@@ -282,7 +259,7 @@ def startLookAtSpeakerSrv(ObjectsQueue):
     logging.basicConfig(level=logging.INFO)
     asyncio.get_event_loop().run_until_complete(lookatspeaker_service_callback(ObjectsQueue))
 
-def startDetectFace(ObjectsQueue):
+def startDetectFace(FacePointQueue):
     logging.basicConfig(level=logging.INFO)
-    asyncio.get_event_loop().run_until_complete(detectface_service_callback(ObjectsQueue))
+    asyncio.get_event_loop().run_until_complete(detectface_service_callback(FacePointQueue))
 

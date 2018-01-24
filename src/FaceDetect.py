@@ -103,26 +103,6 @@ def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue,
         FrameQueue.put(frame)  
         # outVideo.write(frame)
         RectQueue.put(rects)
-        # ForkedPdb().set_trace()
-        # one_elememt = RectQueue.get()
-        # print(rects.count())
-        # i=0
-        # print("counting rects")
-        # for rect in rects:
-        #     print("Rect #", i)
-        #     i += 1
-        #     print(rect.top)
-        #     print(rect.right)
-        #     print(rect.bottom)
-        #     print(rect.left)
-
-        # test = RectQueue.get()
-        # for rectangle in test:
-        #     print(type(rectangle))
-        #     print(rectangle.dcenter)
-        # for elem in FacepointQueue.get():
-        #     for point in elem:
-        #         print(point)
 
 
 def sample(probs):
@@ -284,4 +264,4 @@ def detectObjects(frame,detect_net,detect_meta):
     for el in result:
         objects.append(el[0].decode("utf-8"))
         coords.append(el[2])
-    return objects
+    return objects, coords
