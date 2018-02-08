@@ -182,7 +182,7 @@ async def lookatspeaker_service_callback(ObjectsQueue):
                 srv_response["op"] = "service_response"
                 srv_response["id"] = "service_request:/roboy/cognition/vision/LookAtSpeaker:" + str(i)
                 srv_response["result"] = True
-                srv_response["service"] = "/roboy/cognition/vision/Loo  kAtSpeaker"
+                srv_response["service"] = "/roboy/cognition/vision/LookAtSpeaker"
                 i += 1
 
                 await websocket.send(json.dumps(srv_response))
@@ -212,7 +212,7 @@ async def detectface_service_callback(FacePointQueue):
                 answer = {}
                 # detectface function must be called here
 
-                facepoints = FacePointQueue.get()
+                facepoints = FacePointQueue.get_nowait()
                 # print(facepoints)
                 print(pickle.loads(facepoints))
                 print(type(facepoints))
