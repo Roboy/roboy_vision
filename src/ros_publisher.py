@@ -29,7 +29,9 @@ class WebsocketROSPublisher(object):
         :param int port: Port of the websocket server, defaults to 9090.
         """
         print("Connecting to websocket: {}:{}".format(websocket_ip, port))
-        self.ws = websockets.connect('ws://' + websocket_ip + ':' + str(port))
+        self.ws = websockets
+        self.ws.connect('ws://' + websocket_ip + ':' + str(port))
+        print('Connected')
         # self.ws = websocket.create_connection(
         #     'ws://' + websocket_ip + ':' + str(port))
         self._advertise_dict = {}
@@ -80,7 +82,7 @@ class WebsocketROSPublisher(object):
         json_msg = json.dumps(msg)
         self.ws.send(json_msg)
 
-    def publish(self, topic_name, ros_message, type):
+    def publish(self, topic_name, ros_message):
         """
         Publish on a topic given ROS message thru rosbridge.
         :param str topic_name: ROS topic name.
@@ -96,7 +98,9 @@ class WebsocketROSPublisher(object):
         else:
             # Not advertised, so we advertise
             # topic_type = ros_message._type
-            topic_type =
+            # print('test')
+            # print(ros_message['op'])
+            topic_type = ros_message['op']
             self._advertise(topic_name, topic_type)
         # Converting ROS message to a dictionary thru YAML
         # ros_message_as_dict = yaml.load(ros_message.__str__())
@@ -105,7 +109,6 @@ class WebsocketROSPublisher(object):
 
 
 if __name__ == '__main__':
-    print('okok')
     # facialfeatures = WebsocketROSPublisher('129.187.142.21')
     pub = WebsocketROSPublisher('localhost')
     # FaceCoordinates = importlib.util.spec_from_file_location("FaceCoordinates.msg","/home/roboy/cognition_ws/src/roboy_cognition/roboy_communication/roboy_communication_cognition/msg")
@@ -124,14 +127,15 @@ if __name__ == '__main__':
     message["z"] = 100.00
 
     face_coord_msg={}
-    face_coord_msg["op"] = "publish"
-    # face_coord_msg["id"] = "message:/roboy/cognition/vision/FaceCoordinates:"+ str(i)
+    face_coord_msg["op"] = "advertise"
+    face_coord_msg["id"] = "message:/roboy/cognition/vision/FaceCoordinates:"
     face_coord_msg["topic"] ="/roboy/cognition/vision/FaceCoordinates"
     face_coord_msg["msg"] = message
 
     try:
         while True:
             print("Publishing FaceCoordinatesMsg")
+            print(face_coord_msg['topic'])
             pub.publish('/FaceCoordinates', face_coord_msg)
             print("Done")
     except KeyboardInterrupt:
