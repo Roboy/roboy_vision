@@ -34,15 +34,21 @@ async def FaceCoordinates_callback():
         #                     \"type\": \"vision_service/msg/FaceCoordinates\"\
         #                 }")
 
-        print('test')
-        websocket.send("{ \"op\": \"advertise\",\
-                            \"topic\": \"/roboy/cognition/vision/FaceCoordinates\",\
-                              \"type\": \"roboy_communication_cognition/FaceCoordinates\"\
-                            }")
-        websocket.send("{ \"op\": \"subscribe\",\
-                            \"topic\": \"/roboy/cognition/vision/FaceCoordinates\",\
-                              \"type\": \"roboy_communication_cognition/FaceCoordinates\"\
-                            }")
+        # print('test')
+        # while True:
+            await websocket.send("{ \"op\": \"advertise\",\
+                                \"topic\": \"/roboy/cognition/vision/FaceCoordinates\",\
+                                  \"type\": \"roboy_communication_cognition/FaceCoordinates\"\
+                                }")
+
+            websocket.send("{ \"op\": \"advertise_service\",\
+                          \"type\": \"roboy_communication_cognition/FindObject\",\
+                          \"service\": \"/roboy/cognition/vision/FindObject\"\
+                        }")
+            # websocket.send("{ \"op\": \"subscribe\",\
+            #                     \"topic\": \"/roboy/cognition/vision/FaceCoordinates\",\
+            #                       \"type\": \"roboy_communication_cognition/FaceCoordinates\"\
+            #                     }")
 
         # i = 1  # counter for the service request IDs
         #

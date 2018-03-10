@@ -9,6 +9,7 @@ import cv2
 import sys
 import pickle
 import json as json
+import Ros_Publisher
 
 def DetectSpeaker(FacepointQueue,SpeakerQueue,FrameQueue,VisualQueue):
     distances = {1:list()}
@@ -51,13 +52,17 @@ def DetectSpeaker(FacepointQueue,SpeakerQueue,FrameQueue,VisualQueue):
             speakers[id] = speaking
 
             coordinates = {shape[33][0], shape[33][1], 0}
+            centercoords= (shape[54]+shape[48])/2
+
+            # print(type(shape))
+            # print(shape.size)
+            # print(shape)
+
+            # Ros_Publisher.publishFaceCoordinates(id, speaking, centercoords)
+            # Ros_Publisher.publishNewFacialFeatures(speaking, shape)
 
             face = {'id': id,
                     'speaking': speaking,
                     'coordinates': coordinates}
-
-
-
-
 
         SpeakerQueue.put(speakers)

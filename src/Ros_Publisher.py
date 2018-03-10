@@ -22,78 +22,81 @@ import math
 import random
 import sys
 
+import time
+
 import numpy as np
 
 
-async def FaceCoordinates_callback():
+async def NewFacialFeatures(speaker, coordinates):
     async with websockets.connect('ws://localhost:9090') as websocket:
+        print('test')
 
-        # advertise the topic
-        # await websocket.send("{ \"op\": \"advertise\",\
-        #                      \"topic\": \"/roboy/cognition/vision/FaceCoordinates\",\
-        #                     \"type\": \"vision_service/msg/FaceCoordinates\"\
-        #                 }")
-        websocket.send("{ \"op\": \"advertise\",\
-                            \"topic\": \"/roboy/cognition/vision/FaceCoordinates\",\
-                              \"type\": \"Bool\"\
+        await websocket.send("{ \"op\": \"advertise\",\
+                            \"topic\": \"/roboy/cognition/vision/NewFacialFeatures\",\
+                              \"type\": \"roboy_communication_cognition/NewFacialFeatures\"\
                             }")
-
-        # i = 1  # counter for the service request IDs
-        #
-        # # wait for the service request, generate the answer, and send it back
-        # while True:
-        #     try:
-        #         request = await websocket.recv()
-        #
-        #         srv_response = {}
-        #         answer = {}
-        #         # retrieve the list of objects from the queue
-        #         objects = ObjectsQueue.get()
-        #         answer["objects_detected"] = objects[0]
-        #         # print(answer["objects_detected"])
-        #
-        #         srv_response["values"] = answer
-        #         srv_response["op"] = "advertise"
-        #         srv_response["id"] = "service_request:/roboy/cognition/vision/DescribeScene:" + str(i)
-        #         srv_response["result"] = True
-        #         srv_response["service"] = "/roboy/cognition/vision/DescribeScene"
-        #         i += 1
-        #
-        #         await websocket.send(json.dumps(srv_response))
-        #
-        #     except Exception as e:
-        #         logging.exception("Oopsie! Got an exception in DescribeSceneSrv")
-
-        i = 1
         while True:
+            time.sleep(1)
             try:
 
                     values = {}
                     message = {}
 
-                    # values["id"] = 123
-                    # values["speaking"] = True
-                    # values["x"] = 100.00
-                    # values["y"] = 100.00
-                    # values["z"] = 100.00
+                    values["speaking"] = speaker
+                    values["ff"] = [100] * 128
+                    # print(type(values["ff"]))
+                    print(type(values["ff"]))
+                    # values["ff"] = coordinates
+
+                    # message["values"] = values
+                    message["op"] = "publish"
+                    message["topic"] = "/roboy/cognition/vision/NewFacialFeatures"
+                    message["msg"] = values
+
+                    await websocket.send(json.dumps(message))
+
+            except Exception as e:
+                logging.exception("Oopsie! Got an exception in vision/NewFacialFeatures")
+
+async def FaceCoordinates_callback(id, speaker, coordinates):
+    async with websockets.connect('ws://localhost:9090') as websocket:
+            try:
+
+                    values = {}
+                    message = {}
+
+                    values["id"] = id
+                    values["speaking"] = speaker
+                    values["x"] = coordinates[0]
+                    values["y"] = coordinates[1]
+                    values["z"] = 100.00
 
                     # message["values"] = values
                     message["op"] = "publish"
                     message["topic"] = "/roboy/cognition/vision/FaceCoordinates"
                     # message["id"] = "message:/roboy/cognition/vision/FaceCoordinates:" + str(i)
-                    # message["msg"] = "/roboy/cognition/vision/FaceCoordinates"
-                    message["msg"] = "Bool [data=true]"
-                    i += 1
+                    message["msg"] = values
+                    # message["msg"] = "Bool [data=true]"
 
                     await websocket.send(json.dumps(message))
-                    print('running')
+                    # print('running')
 
             except Exception as e:
                 logging.exception("Oopsie! Got an exception in vision/FaceCoordinates")
 
-if __name__ == '__main__':
+def publishFaceCoordinates(id, speaker, coordinates):
+    logging.basicConfig(level=logging.INFO)
+    asyncio.get_event_loop().run_until_complete(FaceCoordinates_callback(id, speaker, coordinates))
+
+def publishNewFacialFeatures(speaker, coordinates):
+    logging.basicConfig(level=logging.INFO)
+    asyncio.get_event_loop().run_until_complete(NewFacialFeatures(speaker, coordinates))
+
+# if __name__ == '__main__':
     # logging.basicConfig(level=logging.INFO)
     # test = Process(target=asyncio.get_event_loop().run_until_complete(FaceCoordinates_callback()))
     # Process(target=asyncio.get_event_loop().run_until_complete(FaceCoordinates_callback()))
-    logging.basicConfig(level=logging.INFO)
-    asyncio.get_event_loop().run_until_complete(FaceCoordinates_callback())
+    # logging.basicConfig(level=logging.INFO)
+    # asyncio.get_event_loop().run_until_complete(FaceCoordinates_callback())
+    # logging.basicConfig(level=logging.INFO)
+    # asyncio.get_event_loop().run_until_complete(NewFacialFeatures())

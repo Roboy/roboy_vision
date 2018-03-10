@@ -32,6 +32,9 @@ async def describescene_service_callback(ObjectsQueue):
                       \"service\": \"/roboy/cognition/vision/DescribeScene\"\
                     }")
 
+
+        # ForkedPdb().set_trace()
+
         i = 1  # counter for the service request IDs
 
         # wait for the service request, generate the answer, and send it back

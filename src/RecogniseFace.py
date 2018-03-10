@@ -25,6 +25,7 @@ from models.mtcnn.align_dlib import AlignDlib
 from scipy import misc
 import pickle
 from sklearn.svm import SVC
+import Ros_Publisher
 IMAGE_SIZE = 160
 def recogniseFace(RectsQueue):
     start = time.time()
@@ -40,8 +41,10 @@ def recogniseFace(RectsQueue):
     print("Time taken:",time.time()-start," Seconds")
     vs = cv2.VideoCapture(0)
     facesEmbeddings = []
+    print('started recognition')
     if not vs:
         sys.exit()
+        # Ros_Publisher.publishNewFacialFeatures(speaking, shape)
     while True:
         rects = RectsQueue.get()
         FaceVal = []

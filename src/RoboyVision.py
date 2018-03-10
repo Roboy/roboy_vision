@@ -15,7 +15,7 @@ import ObjectRecognition
 import sys
 import Visualizer
 import VisionSrv
-
+import Ros_Advertiser
 
 def detectFaces(CameraQueue,FrameQueue,RectQueue,FacePointQueue,SpeakerQueue,ObjectsQueue):
     # print('module name:', __name__)
@@ -58,6 +58,9 @@ def startLookAtSpeakerSrv(ObjectsQueue):
 def startDetectFace(FacePointQueue):
     VisionSrv.startDetectFace(FacePointQueue)
 
+def startAdvertisingTopics():
+    Ros_Advertiser.startAdvertising()
+
 if __name__ == '__main__':
     procs = []
     CameraQueue = Queue()
@@ -95,7 +98,11 @@ if __name__ == '__main__':
     detectFaceSrvProc = \
     Process(target=startDetectFace, args=(FacePointQueue,))
 
+
     Process(target=speakerDetect, args=())
+
+    advertiseTopics = \
+    Process(target=startAdvertisingTopics, args=())
 
     #recogniseFaceProc = Process(target=recogniseFace,args=(RectQueue,))
     #detectObjectsProc = Process(target=ObjectRecognise,args=(CameraQueue,ObjectsQueue,))
@@ -110,6 +117,7 @@ if __name__ == '__main__':
     #procs.append(recogniseFaceProc)
     #procs.append(visualizerProc)
     #procs.append(detectObjectsProc)
+    procs.append(advertiseTopics)
 
     for proc in procs:
         proc.start()
