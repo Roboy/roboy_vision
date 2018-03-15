@@ -98,5 +98,5 @@ def publishNewFacialFeatures(speaker, coordinates):
     # Process(target=asyncio.get_event_loop().run_until_complete(FaceCoordinates_callback()))
     # logging.basicConfig(level=logging.INFO)
     # asyncio.get_event_loop().run_until_complete(FaceCoordinates_callback())
-    # logging.basicConfig(level=logging.INFO)
-    # asyncio.get_event_loop().run_until_complete(NewFacialFeatures())
+    logging.basicConfig(level=logging.INFO)
+    asyncio.get_event_loop().run_until_complete(NewFacialFeatures())
