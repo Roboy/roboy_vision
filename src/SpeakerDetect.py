@@ -55,7 +55,7 @@ def DetectSpeaker(FacepointQueue,SpeakerQueue,FrameQueue,VisualQueue):
             centercoords= (shape[54]+shape[48])/2
 
             # print(type(shape))
-            # print(shape.size)
+            print(shape.size)
             # print(shape)
 
             Ros_Publisher.publishFaceCoordinates(id, speaking, centercoords)

@@ -1,0 +1,71 @@
+history
+clear
+roslaunch ros
+ros
+ll
+cd src/
+pwd
+l
+cd roboy_vision/
+cd roboy_cognition/
+cd cognition_ws/
+echo hello world
+help
+chmod -x ZED_SDK_Linux_Ubuntu16_v2.3.3.run
+sudo ./ZED_SDK_Linux_Ubuntu16_v2.3.3.run
+chmod -x ZED_SDK_Linux_Ubuntu16_v2.3.3.run 
+cd Downloads/
+cd
+roslaunch rosbridge_server rosbridge_websocket.launch -v
+~/intelFPGA/17.0/embedded/embedded_command_shell.sh 
+scp devel/lib/roboy_plexus/roboy_plexus root@129.187.142.36:~
+catkin_make install
+catkin_make
+mv build/ ~/tmp/
+mv devel/ ~/tmp/
+ls
+git push
+git branch
+git barnch
+git commit -m "fixed traj record/replay"
+git add *
+git diff src/main.cpp
+git status
+cd src/roboy_plexus/
+scp devel/lib/roboy_plexus/roboy_plexus root@129.187.142.11:~
+rqt
+clion &
+~/.steam/ubuntu12_32/steam-runtime/run.sh devel/lib/vive_ros/vive_node&
+~/.steam/ubuntu12_32/steam-runtime/run.sh devel/lib/vive_ros/vive_node
+killall vrmonitor 
+killall vrcompositor 
+killall vr*
+ps -al
+rqt&
+source devel/setup.bash 
+ifconfig
+grep -rnwe "main"
+cd ../roboy_plexus/
+git pull
+cd src/roboy_communication/
+./devel/lib/darkroom_rqt/test_this 
+less ~/test.xml 
+subl ~/test.xml 
+ls ~
+./devel/lib/roboy_plexus/roboy_plexus 
+rm -rf devel/ build/
+ssh root@129.187.142.11
+sudo nmap -nsP 129.187.142.255/24
+sudo screen /dev/ttyUSB0 115200
+ifconfog
+rosservice call /roboy/middleware/StopRecordTrajectory "{}" 
+rviz&
+roscore&
+cd ..
+cd roboy_darkroom/
+cd roboy_rqt_plugins/
+rosservice  call /roboy/middleware/ReplayTrajectory "value: 'ttt.xml'" 
+idList: [0,1,2,3,4,5]" 
+rosservice call /roboy/middleware/StartRecordTrajectory "name: 'ttt.xml'
+- [0,1,2,3,4,5]" 
+idList:

@@ -25,12 +25,21 @@ import math
 import random
 import sys
 import pdb
-
 import numpy as np
 
+import pyzed.camera as zcam
+import pyzed.types as tp
+import pyzed.core as core
+import pyzed.defines as sl
 
 from ForkedPdb import ForkedPdb
 from multiprocessing import Array, Value, sharedctypes
+
+import pyzed.camera as zcam
+import pyzed.types as tp
+import pyzed.core as core
+import pyzed.defines as sl
+
 
 def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue,ObjectsQueue):
     print("[INFO] loading facial landmark predictor...")
@@ -40,6 +49,20 @@ def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue,
     #outVideo = cv2.VideoWriter('outputRoboy.mp4',fourcc, 20.0, (800,533))
     # pdb.set_trace()
     vs = cv2.VideoCapture(0)
+    #
+    # init = zcam.PyInitParameters()
+    # cam = zcam.PyZEDCamera()
+    #
+    # if not cam.is_opened():
+    #     print("Opening ZED Camera...")
+    # status = cam.open(init)
+    # if status != tp.PyERROR_CODE.PySUCCESS:
+    #     print(repr(status))
+    #     exit()
+    #
+    # runtime = zcam.PyRuntimeParameters()
+    # mat = core.PyMat()
+
     detect_net = load_net(b"../darknet/cfg/yolo.cfg", b"../darknet/yolo.weights", 0)
     detect_meta = load_meta(b"../darknet/cfg/coco.data")
     counter = 0
@@ -48,11 +71,19 @@ def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue,
         grab the frame from the threaded video stream, resize it to
         have a maximum width of 800 pixels, and convert it to
         grayscale"""
+
+        # cam.retrieve_image(mat, sl.PyVIEW.PyVIEW_LEFT)
+        # frame = mat.get_data()
         ok,frame = vs.read()
+        # print(frame)
         if not ok:
             break;
-        #frame = imutils.resize(frame, width=800)\
+        # frame = imutils.resize(frame, width=800)\
         frame = frame[0:376, 0:500]
+        print(frame.size)
+        print(type(frame))
+        print(frame.size)
+        # print(frame.size)
 
         if ObjectsQueue.empty():
        	    ObjectsQueue.put(detectObjects(frame,detect_net,detect_meta))

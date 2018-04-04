@@ -1,0 +1,6 @@
+[submodule "zed-ros-wrapper"]
+	path = zed-ros-wrapper
+	url = https://github.com/stereolabs/zed-ros-wrapper.git
+[submodule "zed-python-wrapper"]
+	path = zed-python-wrapper
+	url = https://github.com/stereolabs/zed-python.git
