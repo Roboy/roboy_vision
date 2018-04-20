@@ -8,7 +8,7 @@ import websockets
 
 
 async def advertise_topics():
-    async with websockets.connect('ws://localhost:9090') as websocket:
+    async with websockets.connect('ws://localhost:9999') as websocket:
 
         await websocket.send("{ \"op\": \"advertise\",\
                             \"topic\": \"/roboy/cognition/vision/NewFacialFeatures\",\
@@ -18,6 +18,11 @@ async def advertise_topics():
         await websocket.send("{ \"op\": \"advertise\",\
                             \"topic\": \"/roboy/cognition/vision/FaceCoordinates\",\
                               \"type\": \"roboy_communication_cognition/FaceCoordinates\"\
+                            }")
+
+        await websocket.send("{ \"op\": \"advertise\",\
+                            \"topic\": \"/roboy/cognition/vision/CameraStream\",\
+                              \"type\": \"roboy_communication_cognition/Floats\"\
                             }")
         while True:
             time.sleep(1)

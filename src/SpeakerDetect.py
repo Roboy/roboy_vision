@@ -59,6 +59,7 @@ def DetectSpeaker(FacepointQueue,SpeakerQueue,FrameQueue,VisualQueue):
             # print(shape)
 
             Ros_Publisher.publishFaceCoordinates(id, speaking, centercoords)
+            # Ros_Publisher.publishCameraFrame(FrameQueue.get())
             # Ros_Publisher.publishNewFacialFeatures(speaking, shape)
 
             face = {'id': id,

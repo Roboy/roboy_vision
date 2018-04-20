@@ -26,6 +26,7 @@ import random
 import sys
 import pdb
 import numpy as np
+import Ros_Publisher
 
 import pyzed.camera as zcam
 import pyzed.types as tp
@@ -40,8 +41,12 @@ import pyzed.types as tp
 import pyzed.core as core
 import pyzed.defines as sl
 
+camera_settings = sl.PyCAMERA_SETTINGS.PyCAMERA_SETTINGS_BRIGHTNESS
+str_camera_settings = "BRIGHTNESS"
+step_camera_settings = 1
 
-def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue,ObjectsQueue):
+
+def StartDetection(SnapshotQueue, CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue,ObjectsQueue):
     print("[INFO] loading facial landmark predictor...")
     detector = dlib.get_frontal_face_detector()
     predictor = dlib.shape_predictor("../models/dlib/shape_predictor_68_face_landmarks.dat")
@@ -49,13 +54,14 @@ def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue,
     #outVideo = cv2.VideoWriter('outputRoboy.mp4',fourcc, 20.0, (800,533))
     # pdb.set_trace()
     vs = cv2.VideoCapture(0)
-    #
+
     # init = zcam.PyInitParameters()
-    # cam = zcam.PyZEDCamera()
+    # # init.camera_fps = 20
+    # vs = zcam.PyZEDCamera()
     #
-    # if not cam.is_opened():
+    # if not vs.is_opened():
     #     print("Opening ZED Camera...")
-    # status = cam.open(init)
+    # status = vs.open(init)
     # if status != tp.PyERROR_CODE.PySUCCESS:
     #     print(repr(status))
     #     exit()
@@ -72,18 +78,33 @@ def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue,
         have a maximum width of 800 pixels, and convert it to
         grayscale"""
 
-        # cam.retrieve_image(mat, sl.PyVIEW.PyVIEW_LEFT)
-        # frame = mat.get_data()
-        ok,frame = vs.read()
+        ok,frame = vs.read() # frame is a color image height, width, color
+        # print("done")
+        # FramePub.run(frame)
         # print(frame)
+        # err = vs.grab(runtime)
+        # if err == tp.PyERROR_CODE.PySUCCESS:
+        #     vs.retrieve_image(mat, sl.PyVIEW.PyVIEW_LEFT)
+        #     # frame = np.array(mat.get_data())
+        #     frame = mat.get_data()
+        #     print('SHIT')
+        #     # print(type(frame))
+        #     print(frame.shape)
+        #     # print(frame)
+        #     frame = frame[0:376, 0:500, :3]
+        #     # print(frame.size)
+        #     # print(frame)
+        #     print(frame.shape)
+        # else:
+        #     print('Could not get frame')
+        #     break
+
         if not ok:
             break;
         # frame = imutils.resize(frame, width=800)\
-        frame = frame[0:376, 0:500]
-        print(frame.size)
-        print(type(frame))
-        print(frame.size)
-        # print(frame.size)
+        # frame = frame[0:376, 0:500]
+        # Ros_Publisher.publishCameraFrame(frame)
+        # print("done")
 
         if ObjectsQueue.empty():
        	    ObjectsQueue.put(detectObjects(frame,detect_net,detect_meta))
@@ -105,6 +126,7 @@ def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue,
         for rect in rects:
             counter +=1
             font = cv2.FONT_HERSHEY_SIMPLEX
+            # frame = np.array(frame)
             cv2.putText(frame,str(counter),(rect.left()-10,rect.top()-10),\
                         font, 2, (200,255,155), 13,\
                        cv2.LINE_AA)
@@ -131,7 +153,8 @@ def StartDetection(CameraQueue,FrameQueue,RectQueue,FacepointQueue,SpeakerQueue,
                         cv2.circle(frame, (x, y), 2, (0, 0, 255), -1)
 
         FacepointQueue.put(pickle.dumps(facepoints))
-        FrameQueue.put(frame)  
+        FrameQueue.put(frame)
+        SnapshotQueue.put(frame)
         # outVideo.write(frame)
         RectQueue.put(rects)
 
@@ -232,6 +255,7 @@ network_detect.argtypes = [c_void_p, IMAGE, c_float, c_float, c_float, POINTER(B
 
 def detect(net, meta, image, thresh=.5, hier_thresh=.5, nms=.45):
     # check if image is an OpenCV frame
+    # image = np.array(image)
 
     if isinstance(image, np.ndarray):
         # GET C,H,W, and DATA values
@@ -265,7 +289,13 @@ def detect(net, meta, image, thresh=.5, hier_thresh=.5, nms=.45):
 
 
 def draw_results(res, img):
-
+    # print(type(img))
+    # print(img.shape)
+    # print(img.dtype)
+    # img = np.array(img)
+    # print(type(img))
+    # print(img.shape)
+    # print(img.dtype)
     for element in res:
         box = element[2]
         xmin = int(box[0] - box[2] / 2. + 1)

@@ -9,7 +9,7 @@ import json as json
 # from lib import data_utils
 
 async def detectface_service_callback():
-    async with websockets.connect('ws://localhost:9090') as websocket:
+    async with websockets.connect('ws://localhost:9999') as websocket:
 
         # advertise the service
         await websocket.send("{ \"op\": \"advertise_service\",\

@@ -171,11 +171,11 @@ def Initialize():
     DONE = 0
     detect_net = load_net("../darknet/cfg/yolo.cfg", "../darknet/yolo.weights", 0)
     detect_meta = load_meta("../darknet/cfg/coco.data")
-	 
+
 def detectObjects(frame):
 
     if not detect_net:
-       Initialize()	
+       Initialize()
     # print("Its empty")
     # LOAD DETECTION NET
     # ret, frame = CameraFrame.read()
@@ -191,7 +191,7 @@ def detectObjects(frame):
 
 
 async def describescene_service_callback(frame):
-    async with websockets.connect('ws://localhost:9090') as websocket:
+    async with websockets.connect('ws://localhost:9999') as websocket:
 
         # advertise the service
         await websocket.send("{ \"op\": \"advertise_service\",\
@@ -212,7 +212,7 @@ async def describescene_service_callback(frame):
                 # describe scene function must be called here
                 result = detectObjects(frame)
                 answer["objects_detected"] = str(result[0][0])
-               
+
                 srv_response["values"] = answer
                 srv_response["op"] = "service_response"
                 srv_response["id"] = "service_request:/roboy/cognition/vision/DescribeScene:" + str(i)

@@ -24,7 +24,7 @@ import sys
 import numpy as np
 
 async def describescene_service_callback(ObjectsQueue):
-    async with websockets.connect('ws://localhost:9090') as websocket:
+    async with websockets.connect('ws://localhost:9999') as websocket:
 
         # advertise the service
         await websocket.send("{ \"op\": \"advertise_service\",\
@@ -62,7 +62,7 @@ async def describescene_service_callback(ObjectsQueue):
                 logging.exception("Oopsie! Got an exception in DescribeSceneSrv")
 
 async def findobject_service_callback(ObjectsQueue):
-    async with websockets.connect('ws://localhost:9090') as websocket:
+    async with websockets.connect('ws://localhost:9999') as websocket:
 
         # advertise the service
         await websocket.send("{ \"op\": \"advertise_service\",\
@@ -111,7 +111,7 @@ async def findobject_service_callback(ObjectsQueue):
                 logging.exception("Oopsie! Got an exception in FindObjectSrv")
 
 # async def getobject_service_callback(ObjectsQueue):
-#     async with websockets.connect('ws://localhost:9090') as websocket:
+#     async with websockets.connect('ws://localhost:9999') as websocket:
 #
 #         # advertise the service
 #         await websocket.send("{ \"op\": \"advertise_service\",\
@@ -160,7 +160,7 @@ async def findobject_service_callback(ObjectsQueue):
 #                 logging.exception("Oopsie! Got an exception in GetObjectSrv")
 
 async def lookatspeaker_service_callback(ObjectsQueue):
-    async with websockets.connect('ws://localhost:9090') as websocket:
+    async with websockets.connect('ws://localhost:9999') as websocket:
 
         # advertise the service
         await websocket.send("{ \"op\": \"advertise_service\",\
@@ -194,8 +194,47 @@ async def lookatspeaker_service_callback(ObjectsQueue):
             except Exception as e:
                 logging.exception("Oopsie! Got an exception in LookAtSpeakerSrv")
 
+
+async def snapshot_service_callback(SnapshotQueue):
+    async with websockets.connect('ws://localhost:9999') as websocket:
+
+        # advertise the service
+        await websocket.send("{ \"op\": \"advertise_service\",\
+                      \"type\": \"roboy_communication_cognition/Snapshot\",\
+                      \"service\": \"/roboy/cognition/vision/GetSnapshot\"\
+                    }")
+
+        i = 1  # counter for the service request IDs
+
+        # wait for the service request, generate the answer, and send it back
+        while True:
+            try:
+                # pdb.set_trace()
+                request = await websocket.recv()
+
+                srv_response = {}
+                answer = {}
+                # Look at speaker function must be called here
+                # answer["turned"] = False
+
+                frames = SnapshotQueue.get()
+                answer["data"] = frames.flatten().tolist()
+
+                srv_response["values"] = answer
+                srv_response["op"] = "service_response"
+                srv_response["id"] = "service_request:/roboy/cognition/vision/GetSnapshot:" + str(i)
+                # srv_response["result"] = True
+                srv_response["service"] = "/roboy/cognition/vision/GetSnapshot"
+                i += 1
+
+                await websocket.send(json.dumps(srv_response))
+
+
+            except Exception as e:
+                logging.exception("Oopsie! Got an exception in LookAtSpeakerSrv")
+
 async def detectface_service_callback(FacePointQueue):
-    async with websockets.connect('ws://localhost:9090') as websocket:
+    async with websockets.connect('ws://localhost:9999') as websocket:
 
         # advertise the service
         await websocket.send("{ \"op\": \"advertise_service\",\
@@ -243,7 +282,7 @@ async def detectface_service_callback(FacePointQueue):
                 await websocket.send(json.dumps(srv_response))
 
             except Exception as e:
-                logging.exception("Oopsie! Got an exception in DetectFaceSrv")
+                logging.exception("Oopsie! Got an exception in GetSnapshot")
 
 
 def startDescribeSceneSrv(ObjectsQueue):
@@ -265,4 +304,8 @@ def startLookAtSpeakerSrv(ObjectsQueue):
 def startDetectFace(FacePointQueue):
     logging.basicConfig(level=logging.INFO)
     asyncio.get_event_loop().run_until_complete(detectface_service_callback(FacePointQueue))
+
+def startGetSnapshotSrv(SnapshotQueue):
+    logging.basicConfig(level=logging.INFO)
+    asyncio.get_event_loop().run_until_complete(snapshot_service_callback(SnapshotQueue))
 
