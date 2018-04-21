@@ -6,7 +6,7 @@ import websocket
 import json as json
 import numpy as np
 ws = websocket.WebSocket();
-ws.connect('ws://localhost:9999')   
+ws.connect('ws://localhost:9090')   
 
 def AdvertiseNewFacialFeatures():
     ws.send("{ \"op\": \"advertise\",\

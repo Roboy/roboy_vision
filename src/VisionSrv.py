@@ -24,7 +24,7 @@ import sys
 import numpy as np
 
 async def describescene_service_callback(ObjectsQueue):
-    async with websockets.connect('ws://localhost:9999') as websocket:
+    async with websockets.connect('ws://localhost:9090') as websocket:
 
         # advertise the service
         await websocket.send("{ \"op\": \"advertise_service\",\
@@ -62,7 +62,7 @@ async def describescene_service_callback(ObjectsQueue):
                 logging.exception("Oopsie! Got an exception in DescribeSceneSrv")
 
 async def findobject_service_callback(ObjectsQueue):
-    async with websockets.connect('ws://localhost:9999') as websocket:
+    async with websockets.connect('ws://localhost:9090') as websocket:
 
         # advertise the service
         await websocket.send("{ \"op\": \"advertise_service\",\
@@ -111,7 +111,7 @@ async def findobject_service_callback(ObjectsQueue):
                 logging.exception("Oopsie! Got an exception in FindObjectSrv")
 
 # async def getobject_service_callback(ObjectsQueue):
-#     async with websockets.connect('ws://localhost:9999') as websocket:
+#     async with websockets.connect('ws://localhost:9090') as websocket:
 #
 #         # advertise the service
 #         await websocket.send("{ \"op\": \"advertise_service\",\
@@ -160,7 +160,7 @@ async def findobject_service_callback(ObjectsQueue):
 #                 logging.exception("Oopsie! Got an exception in GetObjectSrv")
 
 async def lookatspeaker_service_callback(ObjectsQueue):
-    async with websockets.connect('ws://localhost:9999') as websocket:
+    async with websockets.connect('ws://localhost:9090') as websocket:
 
         # advertise the service
         await websocket.send("{ \"op\": \"advertise_service\",\
@@ -196,7 +196,7 @@ async def lookatspeaker_service_callback(ObjectsQueue):
 
 
 async def snapshot_service_callback(SnapshotQueue):
-    async with websockets.connect('ws://localhost:9999') as websocket:
+    async with websockets.connect('ws://localhost:9090') as websocket:
 
         # advertise the service
         await websocket.send("{ \"op\": \"advertise_service\",\
@@ -234,7 +234,7 @@ async def snapshot_service_callback(SnapshotQueue):
                 logging.exception("Oopsie! Got an exception in LookAtSpeakerSrv")
 
 async def detectface_service_callback(FacePointQueue):
-    async with websockets.connect('ws://localhost:9999') as websocket:
+    async with websockets.connect('ws://localhost:9090') as websocket:
 
         # advertise the service
         await websocket.send("{ \"op\": \"advertise_service\",\

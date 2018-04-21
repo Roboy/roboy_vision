@@ -22,11 +22,11 @@ https://gist.github.com/awesomebytes/67ef305a2d9072ac64b786af292f5907
 
 
 class WebsocketROSPublisher(object):
-    def __init__(self, websocket_ip, port=9999):
+    def __init__(self, websocket_ip, port=9090):
         """
         Class to manage publishing to ROS thru a rosbridge websocket.
         :param str websocket_ip: IP of the machine with the rosbridge server.
-        :param int port: Port of the websocket server, defaults to 9999.
+        :param int port: Port of the websocket server, defaults to 9090.
         """
         print("Connecting to websocket: {}:{}".format(websocket_ip, port))
         self.ws = websockets

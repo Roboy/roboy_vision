@@ -191,7 +191,7 @@ def detectObjects(frame):
 
 
 async def describescene_service_callback(frame):
-    async with websockets.connect('ws://localhost:9999') as websocket:
+    async with websockets.connect('ws://localhost:9090') as websocket:
 
         # advertise the service
         await websocket.send("{ \"op\": \"advertise_service\",\

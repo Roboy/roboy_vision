@@ -26,7 +26,7 @@ import numpy as np
 
 
 async def FaceCoordinates_callback():
-    async with websockets.connect('ws://localhost:9999') as websocket:
+    async with websockets.connect('ws://localhost:9090') as websocket:
 
         # advertise the topic
         # await websocket.send("{ \"op\": \"advertise\",\

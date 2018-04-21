@@ -16,7 +16,6 @@ import sys
 import Visualizer
 import VisionSrv
 import Ros_Advertiser
-from FrameStreamer import FrameStreamer
 
 def detectFaces(Snapshotqueue, CameraQueue,FrameQueue,RectQueue,FacePointQueue,SpeakerQueue,ObjectsQueue):
     # print('module name:', __name__)
@@ -66,8 +65,7 @@ def startAdvertisingTopics():
     Ros_Advertiser.startAdvertising()
 
 if __name__ == '__main__':
-    fp = FrameStreamer()
-    # fp.advertise()
+
     procs = []
     CameraQueue = Queue()
     FrameQueue = Queue()
