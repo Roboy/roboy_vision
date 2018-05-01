@@ -31,7 +31,7 @@ import time
 
 
 async def NewFacialFeatures(speaker, coordinates):
-    async with websockets.connect('ws://129.187.142.46:9090') as websocket:
+    async with websockets.connect('ws://localhost:9090') as websocket:
         print('test')
 
         await websocket.send("{ \"op\": \"advertise\",\
@@ -62,7 +62,7 @@ async def NewFacialFeatures(speaker, coordinates):
                 logging.exception("Oopsie! Got an exception in vision/NewFacialFeatures")
 
 async def CameraFrame(frame):
-    #     async with websockets.connect('ws://129.187.142.46:9090') as websocket:
+    #     async with websockets.connect('ws://localhost:9090') as websocket:
     #
     #     # # # await websocket.send("{ \"op\": \"advertise\",\
     #     # #                                     \"topic\": \"/roboy/cognition/vision/CameraStream\",\
@@ -86,7 +86,7 @@ async def CameraFrame(frame):
     #
     # except Exception as e:
     #     logging.exception("Oopsie! Got an exception in vision/CameraStream")
-        async with websockets.connect('ws://129.187.142.46:9090') as websocket:
+        async with websockets.connect('ws://localhost:9090') as websocket:
             try:
 
                 values = {}
@@ -109,7 +109,7 @@ async def CameraFrame(frame):
                 logging.exception("Oopsie! Got an exception in vision/FaceCoordinates")
 
 async def FaceCoordinates_callback(id, speaker, coordinates):
-    async with websockets.connect('ws://129.187.142.46:9090') as websocket:
+    async with websockets.connect('ws://localhost:9090') as websocket:
             try:
 
                     values = {}
@@ -144,7 +144,7 @@ def publishNewFacialFeatures(speaker, coordinates):
 
 def publishCameraFrame(frame):
     global websocket
-    websocket = websockets.connect('ws://129.187.142.46:9090')
+    websocket = websockets.connect('ws://localhost:9090')
     logging.basicConfig(level=logging.INFO)
     asyncio.get_event_loop().run_until_complete(CameraFrame(frame))
 
