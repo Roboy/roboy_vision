@@ -1,0 +1,4 @@
+<launch>
+	<node name="roboy_speech_recognition" pkg="roboy_speech_recognition" type="stt_server.py" output="screen" />
+	<node name="matrix_led_control" pkg="led_control" type="leds.py" output="screen" />
+</launch>

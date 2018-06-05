@@ -1,0 +1,3 @@
+<launch>
+	<node name="roboy_snapchat_filter" pkg="roboy_snapchat_filter" type="snapchat_server.py" output="screen" />
+</launch>
